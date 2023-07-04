@@ -1,2 +1,4 @@
 /.vscode
 *.class
+*.editorconfig
+/enrichment/src/test
