@@ -2,3 +2,5 @@
 *.class
 *.editorconfig
 /enrichment/src/test
+/enrichment/lib
+/enrichment/target
