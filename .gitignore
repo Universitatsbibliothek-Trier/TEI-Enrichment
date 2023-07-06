@@ -1,6 +1,6 @@
 /.vscode
 *.class
 *.editorconfig
-/enrichment/src/test
-/enrichment/lib
-/enrichment/target
+/tei_enrichment/src/test
+/tei_enrichment/lib
+/tei_enrichment/target

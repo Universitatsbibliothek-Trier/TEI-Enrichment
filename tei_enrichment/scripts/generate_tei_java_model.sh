@@ -23,7 +23,7 @@
 
 script_dir=$(dirname $0)
 java_src="$script_dir/../src/main/java"
-xjc="$script_dir/../lib/jaxb-ri-4.0.3-RI/jaxb-ri/bin/xjc.sh"
+xjc="$script_dir/../lib/jaxb-ri-4.0.0/jaxb-ri/bin/xjc.sh"
 
 $xjc \
   -extension \
