@@ -3,6 +3,7 @@ package de.uni_trier.bibliothek;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
@@ -16,25 +17,27 @@ import java.io.IOException;
  */
 public class Main extends Application {
     private static Scene scene;
+    private static EnrichmentController eController;
 
     public static void main(String[] args) {
         // System.out.println("Hello World!");
         launch();
+        // eController = new EnrichmentController();
+        // eController.buttonText();
+        // eController.checkBoxOne();
     }
 
     public void start(Stage stage) throws IOException {
-        stage.setTitle("Oh hi Mark");
-
-        // Parent root = FXMLLoader.load(getClass().getResource("/main_window.fxml"));
-        GridPane gridPane = new GridPane();
-        gridPane.setAlignment(Pos.CENTER);
-        gridPane.setStyle("-fx-background-color: gray");
-
-        Scene scene = new Scene(gridPane, 900, 575);
-
-        // scene = new Scene(loadFXML("primary"), 640, 480);
+        stage.setTitle("TEI Enrichment");
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/javafx_layout/gridpane_enrichment.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, 900, 575);
         stage.setScene(scene);
         stage.show();
+        eController = fxmlLoader.getController();
+        eController.checkBoxOne();
+        eController.changeButtonText();
+
     }
 
     // static void setRoot(String fxml) throws IOException {

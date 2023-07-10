@@ -33,4 +33,5 @@ cd "$script_dir/../"
 #ocrPath="/home/ackels/Dokumente/ocr-to-tei-pipeline-1/OCR-To-TEI/src/main/resources/ocrOutputFiles/nickbayern/"
 # teiPathName="/home/ackels/Dokumente/ocr-to-tei-pipeline-1/TEI_CSV_Output/TEI_created_Band1.xml"
 
-mvn -q -e compile exec:java
+#mvn -q -e compile exec:java
+mvn clean javafx:run
