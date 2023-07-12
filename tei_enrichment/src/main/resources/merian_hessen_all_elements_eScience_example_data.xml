@@ -1,0 +1,2015 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>M.Z. Topographia Hassiæ, Et Regionum Vicinarum. Das ist Grundstrukturierte
+                    TEI-Daten.</title>
+                <respStmt>
+                    <resp>created at</resp>
+                    <name>Universitätsbibliothek Trier</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Veröffentlicht unter CC-0-Lizenz</p>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Merian, Matthaeus, der Ältere</author>
+                        <author>Zeiller, Martin</author>
+                        <author>Frankfurt am Main</author>
+                        <title>M.Z. Topographia Hassiæ, Et Regionum Vicinarum. Das ist: Beschreibung
+                            und eigentliche Abbildung der vornehmsten Städte und Plätze in Hessen/
+                            und denen benachbarten Landschafften, als Buchen, Wetterau, Westerwald,
+                            Löhngau, Nassau, Solms, Hanau, Witgenstein, und andern.</title>
+                        <edition>In dieser andern Edition mit sonderm Fleiß durchgangen/ von vorigen
+                            Fehlern corrigirt, gebessert und vermehret.</edition>
+                        <imprint>
+                            <pubPlace>Franckfurt am Mayn</pubPlace>
+                            <publisher>Zum Truck verlegt von denen Merianischen Erben</publisher>
+                            <date>1685</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title>Topographia Germaniae</title>
+                        <biblScope>Band 07</biblScope>
+                    </series>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+
+            <pb n="[1]" />
+            <div type="frontispiece">
+                <figure />
+                <p><lb />TOPOGRAPHIA <lb />Hassiæ et Regionum Vici⸗ <lb />narum. <lb />Das iſt <lb />Beſchreibung
+                    der <choice>
+                        <abbr>vornẽb⸗ſten<lb /></abbr>
+                        <expan>vornemb⸗ſten<lb /></expan>
+                    </choice> Stätte vnd
+                    Plätze in <lb />Heſſen / vnd den benachbahꝛten <lb />Landtſchaften / als Buchen
+                    / Naſſau <lb />Wetteraw / Weſterwaldt / Wittgen <lb />ſtein / Lohngaw / vnd
+                    andern. <lb />Franckfurt durch <lb /> Matt <lb />Merian.</p>
+            </div>
+
+            <pb n="[2]" />
+            <titlePage type="main">
+                <figure />
+                <lb />
+                <docTitle>
+                    <titlePart type="main">M. Z. <lb />TOPOGRAPHIA <lb />HASSIÆ, <lb />ET REGIONUM <lb />
+                        VICINARUM</titlePart>
+                    <lb />
+                    <titlePart type="sub">Das iſt: <lb />Beſchreibung und eigentliche Abbildung der <lb />vornehmſten
+                        Staͤdte und Plaͤtze in Heſſen / und denen be⸗ <lb />nachbarten Landſchafften
+                        / als Buchen / Wetterau / Weſter⸗ <lb />wald / Loͤhngau / Naſſau / Solms /
+                        Hanau / Witgenſtein / <lb />und andern.</titlePart>
+                </docTitle>
+                <lb />
+                <byline>Jn dieſer andern Edition mit ſonderm Fleiß durchgangen / <lb />von vorigen
+                    Fehlern corrigirt / gebeſſert <lb />und vermehret.</byline>
+                <lb />
+                <docImprint><pubPlace>Franckfurt am Mayn /</pubPlace>
+                    <lb /><publisher>Zum Truck
+                    verlegt von denen Merianiſchen Erben.</publisher>
+                        <lb /><docDate>Jm Jahr M DC LV.</docDate></docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="3" />
+            <fw type="pageNum">3</fw>
+            <figure />
+
+            <div type="overview">
+                <lb />
+                <head>Beſchreibung der vornehmſten Staͤdte und <lb />Plaͤtze in <name ref="https://d-nb.info/gnd/4462311-2">Heſſen</name>  / und den
+                    benachbarten Landſchafften / <lb />als Buchen / Naſſau / Wetterau / Weſterwald /
+                    Wittgen⸗ <lb />ſtein / Loͤhngau / und andern.</head>
+                <lb />
+                <p>ES gehoͤren in den Hochloͤblichen <name ref="https://d-nb.info/gnd/4462311-2">Ober⸗Rheiniſchen </name><lb />Creyß / (deſſen
+                    ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ <lb />ſchoff zu Wormbs und der
+                    <name ref="https://d-nb.info/gnd/4462311-2">Kaiser Karl</name> und 
+                    <name ref="https://d-nb.info/gnd/4462311-2">Otto</name>
+                    Herr Pfaltzgraf Ludwig Philips <lb />zu Simmern ꝛc. ſeynd /) die Biſchoͤffe von
+                    Worms / Speyer / <lb />Straßburg / Baſel / Biſantz / Sitten / Loſanna / Metz /
+                    Tull / <lb />Verdun / und Genff; der Hochmeiſter des Johanniter Ordens / <lb />die
+                    Pfaltzgrafen / wegen der Graffſchafft Spanheim / Zwey⸗ <lb />bruͤcken / und
+                    Veldentz; die Landgraffen in Heſſen; die Hertzoge in Lothringen; die <lb />Hertzoge
+                    in Savoja; die Aebte von Fulda / Hirſchfeld oder Herßfeld / Murbach / Muͤn⸗ <lb />ſter
+                    in S. Gregorienthal / und Pfriem im Bißthum Chur: die Abtißin von Kauffin⸗ <lb />gen;
+                    die Proͤbſte zu Weiſſenburg / und Odenheim; die Graffen und Herren von <lb />Naſſau⸗Sarbruͤcken;
+                    die Wetterauiſche Graffen; die Rheingraffen; die von Falcken⸗ <lb />ſtein; von
+                    Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein / Moͤrsburg / <lb />Rapoltſtein
+                    / Rapoltzkirch / ꝛc. Die Adeliche Collegia zu Gelnhauſen / und Friedberg: <lb />Die
+                    Staͤdte Baſel / Keyſerſperg / Tuͤrckheim / Muͤnſter in S. Gregorienthal; Ober⸗ <lb />Ehenheim
+                    / Colmar / Straßburg / Roßheim / Schlettſtatt / Hagenau / Cron⸗Weiſſen⸗ <lb />burg
+                    / Landau / Muͤlhauſen im Sundgoͤw / Speyer / Wormbs / Franckfurt / Fried⸗ <lb />berg
+                    / Wetzlar / Metz / Tull / Verdun / Kauffmans⸗Sarbruͤck / Biſantz / und Genff. <lb />Darunter
+                    gleichwol nunmehr ſich viel befinden / die eximirt werden: als die Biſchoͤffe <lb />zu
+                    Sitten / Loſann / Metz / Tull / Verdun / und Genff: der Abt zu Pfriem / im Biß⸗ <lb />thum
+                    Chur: die Graffſchafft Bitſch: die Staͤdte / Baſel / Muͤlhauſen im Sundgoͤw / <lb />Metz
+                    / Tull / Verdun / Kauffmans⸗Sarbruͤck / Genff / ꝛc. Von welchen zum Theil in <lb />Beſchreibung
+                    des Schweitzerlands / des Elſaß / der Untern⸗Pfaltz / (daſelbſten auch <lb />Savoja
+                    / Lothringen / Biſantz / Metz / Tull / Verdun / Bitſch / und Kauffmans⸗Sar⸗ <lb />bruͤck
+                    / einkommen ſeyn) und des Chur⸗und Unter⸗Rheiniſchen Creyſes / allbereit <lb />von
+                    uns moͤglicher / und gebuͤhrender Bericht / geſchehen. Die uͤbrige aber / und
+                    ihre <lb />vornehmſte und bekanteſte Staͤdte und Orthe ſollen in dieſem Tractat
+                    eingebracht <lb />werden; wie auch Gelnhauſen / und die Graffſchafft
+                    Naſſau⸗Beylſtein / ꝛc. ſo ſonſten <lb />zum Nieder⸗Rheiniſchen Creyß gehoͤrig
+                    ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten <lb />zum Weſtphaͤliſchen Creyß
+                    gezogen wird. <lb />Und erſtlich zwar / was das hochloͤbliche Fuͤrſtenthum und
+                    Landgraffſchafft Heſſen <lb />anbelangt / ſo hat Wilhelm Dilich eine Chronic
+                    davon ausgehen laſſen; damit aber <lb />nicht jederman zufrieden geweſen /
+                    dieweil er im erſten Theil derſelben geſchrieben / das <lb />Ober⸗Heſſen / ſo
+                    viel das Lager anbetrifft / unter andern / in ſich auch begreiffe / die Graff⸗ <lb />ſchafft
+                    Dietz / das Rinckgau / die Wetterau / und derſelben etliche Reichs⸗item Ha⸗ <lb />nauiſch⸗Jſenbera⸗und
+                    Maͤyntziſche Staͤdte und Schloͤſſer; die Graffſchafften Koͤ⸗ <fw type="catch">nigſtein
+                    /</fw>
+                    <fw type="sig">A 2</fw>
+                    <pb n="[4]" />
+                    <fw type="pageNum"><choice>
+                            <sic>2</sic>
+                            <corr>4</corr>
+                        </choice></fw>
+                    <fw type="header">Beſchreibung
+                    der fuͤrnehmſten Ort</fw>
+                    <lb />nigſtein / Solms / Naſſau / Witgenſtein / unter
+                    dem Vorwand / daß die Wetterau in Heſ⸗ <lb />ſen / weder dem Lager / noch der
+                    Herrſchafft nach / gelegen / und die Wetterauiſche Grafen / <lb />oder Staͤdte /
+                    das Fuͤrſtenthum Heſſen anderſt nicht / als was etwan Lehenſchafft / <lb />Schutz
+                    / Geleyt oder dergleichen ſonderbare Beding / particulariter mitbringen / re- <lb />cognoſciren;
+                    ſondern eine gar abgeſonderte Landſchafft / ſowol als der Hundsruck / <lb />Weſterich
+                    / und andere / jederzeit geweſen / und noch. Was aber die Graffſchafft Naſſau⸗ <lb />Dillenberg
+                    belange / iſt dieſelbe nicht allein nicht unter Heſſen gelegen / ſondern auch
+                    nicht <lb />in dem Creyſe / darein Heſſen gehoͤrig / ſondern in dem
+                    Weſtphaͤliſchen Creyſe; wie auch <lb />Seyn / Virneburg / und andere anſehnliche
+                    Graff⸗und Herrſchafften mehr / begriffen. <lb />Alſo ziehet beſagter Autor das
+                    Stifft Herßfeld / und andere Orthe / zu Nieder⸗Heſſen. <lb />Es iſt aber darbey
+                    zu mercken / daß er einen Unterſchied zwiſchen Nieder⸗Heſſen / und <lb />dem
+                    niedern Fuͤrſtenthum Heſſen machet / und zu dieſem letztern weder beſagte Stifſt
+                    / <lb />noch auch die Graffſchafft Ziegenhain / die ſonſten Heßiſch iſt / ziehen
+                    thut: Als wie er <lb />auch Ober⸗Heſſen / darzu er obbeſagte anderer Herren Land
+                    und Staͤdte rechnet / viel <lb />groͤſſer / als das Ober⸗Fuͤrſtenthum Heſſen
+                    machet. Nieder⸗Heſſen liegt eigentlich zwi⸗ <lb />ſchen dem Werra⸗und
+                    Diemelſtrom / zur Seiten / gegen Mitternachtwerts / hab es das <lb />Hertzogthum
+                    Braunſchweig: gegen Aufgang das Eißfeld / und Thuͤringen; gegen <lb />Mittag das
+                    Franckenland / und einen Theil der Wetterau; gegen Abend Ober⸗Heſ⸗ <lb />ſen;
+                    die Graffſchafft Waldeck / und das Stifft Paderborn. Petrus Bertius haͤlts auch <lb />mit
+                    dem Dilichio, was die obverſtandene frembde Herrſchafften belangt; und ſagt da⸗ <lb />her
+                    er Dilichius, daß des Heſſen⸗Landes Laͤnge ſich von Mittagwerts jenſeit des
+                    Mayns / <lb />gegen der Pfaltz / anhebe / und ende ſich an der Weſer / an den
+                    Braunſchweigiſch und <lb />Paderborniſchen Grentzen gegen Mitternacht: Auf der
+                    rechten Seiten / nacher Auf⸗ <lb />gang der Sonnen / liegt das Thuͤringer Land /
+                    ſamt den angrentzenden Francken; <lb />und zur Lincken / oder gegen Abend / der
+                    Rhein / das Trieriſche / Coͤllniſche / Bergiſche <lb />Gebiete / und endlich
+                    auch ein Antheil von Weſtphalen. Maginus begreifft die Gren⸗ <lb />tzen in wenig
+                    Worten / und ſagt / Heſſen⸗Land habe von Morgen Thuͤringen / und <lb />von
+                    Mittag das Franckenland / von Abend Weſtphalen / und von Mitternacht das <lb />Hertzogthum
+                    Braunſchweig / das Bißthum Minden / und andere Orthe. Ober⸗Heſ⸗ <lb />ſen
+                    grentzet mit Francken / der Pfaltz / Maͤyntz / Trier / und Coͤlln: Und das
+                    Nieder⸗ <lb />Heſſen mit Buchen / Thuͤringen / dem Eyßfelde / Braunſchweig /
+                    Paderborn / und <lb />Weſtphalen; welches untere Fuͤrſtenthum ſonſten zwiſchen
+                    Thuͤringen / den Abteyen / <lb />Fulda und Herßfeld / dem Bißthum Paderborn /
+                    dem Hertzogthum Braunſchweig / <lb />und dem Eißfeld gelegen iſt. <lb />Es iſt
+                    Heſſen ein Berg⸗und Waldreich Land. Der Berge erſtlich zu gedencken / ſo ſe⸗ <lb />tzen
+                    wir fornan den beruͤhmten Griechiſchen Geographum Ptolomæum, der lib. 2. cap. <lb />11.
+                    Geogr. zweyerley Heßiſcher Gebirge gedencket / als der Montium Melibocorum. <lb />Dahero
+                    kommt das Wort Catzenelenbogen / aus dem Cattimelibocenſes, nemlich die <lb />Catti
+                    vom Gebirge Meliboco, wie Rhenanus 1. rerum German. pag. 56. gedencket / <lb />und
+                    ſich ruͤhmet / daß er der erſte ſeye / ſo dieſen Urſprung erwieſen. Das andere <lb />Heßiſche
+                    Gebirg nennet gedachter Scribent Montes Abnobios. Von dieſen Gebir⸗ <lb />gen wo
+                    ſie gelegen / befinden ſich unterſchiedliche Meynungen / darvon an ſeinem <lb />Orth
+                    ſoll gedacht werden. Unter den Gebirgen des Lands / deren Namen noch <lb />jetzo
+                    im Brauch / iſt der Vogelsberg / wegen ſeiner Laͤnge und Groͤſſe der bekannteſt
+                    / <lb />und liegen auff demſelben viel feiner Orth / als Ulrichſtein / Stormfels
+                    / Schotten. <lb />Was ſonſten vor Berge und Waͤlder in beyden Fuͤrſtenthumben /
+                    unter welchen das <lb />Nieder⸗Fuͤrſtenthum ein recht Wald⸗Land iſt / ſeyen /
+                    kan man beſehen in der Coſmo- <lb />graphia Johann Rauen / cap. XIV. vom
+                    Heſſen⸗Land pag. 408. 409. 410. Jn dieſen <lb />Bergen giebt es allerley Metall
+                    / inſonderheit von Silber / Kupffer / Bley und Eiſen: <lb />Es giebt auch gute
+                    Steinbruͤche / ſchoͤnen weiſſen Alabaſter / auch Schifferſtein / <lb />Tuffſtein
+                    / Gibs / Kalckſtein / und Stein⸗Kohlen: Und in den vielen Waͤldern ſtattliche <lb />Jagten
+                    und Maſt. Der Reinhards⸗Wald unter Caſſel / nacher dem Braunſchwei⸗ <lb />ger⸗Land
+                    gelegen / faͤhet bey Jmmenhauſen an / und hat in der Laͤnge und Breite <fw
+                        type="catch">bey</fw>
+                    <pb n="5" />
+                    <fw type="pageNum">5</fw>
+            <fw type="header">in Heſſen / vnd den benachbarten Landen.</fw>
+            <figure />
+                    </p>
+                    </div>
+            <lb />
+            <div type="article" corresp="art_1_3_Grueningen">
+                <head><name ref="https://d-nb.info/gnd/4462311-2" xml:id="art_1_3_Grueningen">Allendorff</name> / an der Werra.</head>
+                <lb />
+                <p>JSt ein Stadt in Nieder⸗Heſſen / <lb />zugenandt in den Sohden. Soll <lb />wegen
+                    der Saltz⸗Sohden ſo viel <lb />heiſſen / als Hallendorff / inmaſſen auch <lb />andere
+                    Orth von ihren Sohden oder Suͤl⸗ <lb />tzen / alſo genent werden. Hingegen ſagt <lb />man
+                    auch / daß die Stadt von etlichen <lb />Doͤrffern / ſo in dieſer Gegend gelegen
+                    / <lb />und von welcher auch noch etwas Anzei⸗ <lb />gung und zerfallene
+                    Gemaͤuer uͤbrig ſeyn / <lb />zuſammen gebauet / und derowegen Al⸗ <lb />lein
+                    Dorff genennet worden / aus wel⸗ <lb />chen hernach der Nahm Allendorff er⸗ <lb />wachſen.
+                    Dieſe Stadt ligt in einer luſtigen <lb />Gegend / mit hohen Bergen umbſchloſ⸗ <lb />ſen.
+                    Und hat es da / wegen Theilug des <lb />Strohms / drey ſteinerne Bruͤcken uͤber <lb />die
+                    Werra; uͤber welche zwo Bruͤcke gehen <lb />auß der Statt biß zum Saltzbronnen
+                    und <lb />Sohden, deren etwa bey 60. Dahero die <lb />Stadt und das gantze Land,
+                    in welches <lb />das Saltz haͤuffig verfuͤhret wird / groſſen <lb />Nutzen haben
+                    / wie ſolches auch dieſe Vers <lb />andeuten: <lb />Urbi dant magnis pons, mons,
+                    fons, com- <lb />moda rebus, <lb />Qualia vix alibi Teutona terra tenet. <lb />Dieſer
+                    Ort / ſo ziemblich weit umbfan⸗ <lb />gen iſt / hatte 2. Kirchen / und ein
+                    ſchoͤnes <lb />Rathhauß / war auch ſonſten ziemblich <lb />ſtarck und eng
+                    beyſammen gebauet / auſſer / <lb />daß kein Fuͤrſtliches Schloß / ſondern nur <lb />ein
+                    Ampthauß da war; welches aber alles <lb />des Jahrs 1637. eingeaͤſchert worden /
+                    daß <lb />ſchier nichts ſtehen blieben. Wird aber / oh⸗ <lb />ne Zweiffel/
+                    nunmehr fein wieder gebauet <lb />ſeyn. Zwiſchen dieſer Statt / und den So⸗ <lb />den
+                    oder Saltzwerck (ſo wegen der vielen <lb />Gebaͤuen der Soͤder / und auch
+                    anderer / <lb />eine eigene Gemeinde / und Staͤttlein / doch <lb />ohne Mauren /
+                    machet /) iſt eine dreyfache <lb />ſchoͤne ſteinerne Brucken; dieweil ſich die <lb />Werra
+                    diß Orts auch in ſo viel Fluͤſſe thei⸗ <lb />let. Beſagtes Saltzwerck belangend
+                    / iſt <lb />ſolches ein ſonderlich wunderbahres Ge⸗ <lb />ſchoͤpff / und groſſe
+                    Gnad Gottes / daß die <lb />Quelle ſo ſtarck iſt / daß ſie ſo bald etliche <lb />Muͤhlen
+                    treiben koͤnte; geſtalt dann / burch <lb />die Waſſerkunſt / der Brunne in
+                    gewiſſe <lb />Sammelkaſten gezogen / und von darauß / <lb />vor der Statt / wol
+                    ein Muſqueten Schuß <lb />hinauß / in viele unterſchiedliche Leckwer⸗ <lb />cke
+                    und Koͤten / gefuͤhret wird / deren im <lb />Soden Fleck gelegnen zugeſchweigen
+                    . Und <lb />iſt dieſes Saltz weit beſſer / und kraͤfftiger / <lb />als viel
+                    anders / ſo an umliegenden Orten / <lb />und Saltzwercken / gemacht wird. Der <lb />Brunne
+                    ligt gantz in der Ebne / ſehr tieff / <lb />und faſt an einem ſumpfechten Ort /
+                    und <lb />wird durch ein Pompenwerck mit Pferden / <lb />an einem lauffenden
+                    Schwengel / in ein be⸗ <lb />ſonders daruͤber gebautes Hauß / gezogen. <lb />Die
+                    Koͤten und Pfannen / darinne das <lb />Saltz geſotten wird / ligen rings umb den <lb />Brunnen
+                    her / und ſeyn deren ſehr viel; und <lb />werden zu dieſem Saltzwerck nicht
+                    allein <lb />die Kohlen am Meißner / ſondern auch viel <lb />hundert oder
+                    tauſend Schock reiſich ge⸗ <lb />braucht / auch ein groſſe Menge Schied⸗ <lb />holtz
+                    verbrant. Doch iſt das Saltz / welches <lb />bey Holtz und Reiſig geſotten wird
+                    / weit <lb />kraͤfftiger / und beſtaͤndiger / als jenes / ſo <lb />mit
+                    Steinkohlen erhitzet wird. Dann / ne⸗ <lb />ben dem Schwefel eine ſonderliche
+                    Feuch⸗ <lb />tigkeit in den Steinkolen iſt / welche das ſie⸗ <lb />dende Saltz
+                    an ſich zeucht. Es ligt die ge⸗ <lb />melte Stadt Allendorff / unnd zugehoͤrig <lb />Ampt
+                    (ſo gering iſt / und in wenig Dorff⸗ <lb />ſchafften beſtehet;) wie auch die
+                    gemelte <lb />Soden oder Saltzwerck / gar in einem ſehr <lb />geringen Bezirck /
+                    zwiſchen ſehr hohen <lb />Bergen / ſo voller Steinklippen ſeyn; dar⸗ <lb />unter
+                    ſonderlich der Goburg / und Hoͤhe⸗ <lb />berg / den Vorzug haben. Jn den Waͤlden
+                    / <lb />ſo viel deſſen der Stadt zugehoͤrig / wie auch <lb />an der hohen
+                    Fuͤrſte ( ſo ein Vorgebuͤrg / <lb />und Gehoͤltz / des Meißners iſt / ) hat die <fw
+                        type="catch">Statt</fw>
+                <fw type="sig">C 2</fw>
+                <pb n="20" />
+                <fw
+                        type="pageNum">20</fw>
+                <fw type="header">Beſchreibung der vornehmſten Orth</fw>
+                <lb />
+                    Statt die Freyheit / vor allen andern im <lb />Lande / daß ſie von S. Veits /
+                    biß auf S. <lb />Bartholomaͤi Tag / roth Wildpreth; und <lb />dann von S.
+                    Michaels / bis auf S. An⸗ <lb />dreas Tag / ſchwartz Wildpreth / jagen und <lb />fangen
+                    moͤge / aber nicht ſchieſſen: derhal⸗ <lb />ben auch ihrer Weidleut keiner
+                    einige Buͤch⸗ <lb />ſe mit auffs Jagen bringen darff. Der <lb />Handel und die <choice>
+                        <sic>Nahrnng</sic>
+                        <corr>Nahrung</corr>
+                    </choice> / iſt ſonſten / we⸗ <lb />gen
+                    des Saltzwercks / zimlich ſtarck allda; <lb />und weil wenig Frucht dieſes Orts
+                    wach⸗ <lb />ſet; ſo hat die Natur ſolches mit zimlichem <lb />gutem Weinwachs
+                    erſetzet. <lb />Die Arth des Saltzbronnens iſt einer <lb />wunderbahren
+                    Beſchaffenheit / nemlich je <lb />hoͤher das Waſſer in der Werra / je mehr <lb />auch
+                    der Sohle in dem Bronn; je mehr a <lb />ber derſelben / je kraͤfftiger ſie
+                    befunden / <lb />nemlich 8. loͤtig / und hingegen je weniger / <lb />je
+                    unkraͤfftiger / und am Gewicht geringer. <lb />Es iſt aber der Bronn ſehr ſtarck
+                    / alſo daß <lb />er bey 84. Kohten und Pfannen / zu verſe⸗ <lb />hen genugſam /
+                    in welcher er durch ein be⸗ <lb />ſonder Kunſtwerck geleitet wird. So hat <lb />man
+                    uͤber das erſtlich im Jahr 1579. mit <lb />Stein⸗Kohlen zu ſieden angefangen /
+                    auch <lb />ſolche Arth des Siedens nunmehr alſo an⸗ <lb />geordnet / daß / wo
+                    man dazumahlen 22. <lb />Maaß Kohlen verbrauchen muͤſſen / anje⸗ <lb />tzo 12.
+                    gnug ſeyn. Die Herren Landgrafſen <lb />in Heſſen haben den Orth mit
+                    unterſchied⸗ <lb />lichen Freyheiten begabt. Es ſeyn auch vor <lb />Alters viel
+                    feſte Berghaͤuſer zur Defen⸗ <lb />ſion der Sohden anfaͤnglich erbauet wor⸗ <lb />den:
+                    Vor andern aber das jenige / ſo gleich <lb />obig den Sohden auf dem Berg
+                    geſtan⸗ <lb />den / und Weſterburg genand worden iſt. <lb />Bey dieſem Teutſchen
+                    Krieg iſt allhier zu <lb />underſchieden mahlen groſſer Schade ge⸗ <lb />ſchehen
+                    / ſonderlich Anno 1632. da der von <lb />Pappenheim Witzenhauſen / Eſchwegen / <lb />und
+                    Drendelburg erobert / deren Occupi⸗ <lb />rung gedacht wird im 2. Theil des
+                    Theatri <lb />Europæi. Jn dieſer Statt iſt geboren <lb />der wohlberuͤmte
+                    Theologus D. Balthaſar  <lb />
+					<table>
+                        <row>
+                            <cell cols="2" rendition="#bottomBraced">Dieterich der Dritte.</cell>
+                        </row>
+                        <row>
+                            <cell cols="3" rendition="#bottomBraced">Dieterich der Vierdt.</cell>
+                            <cell>Gotschalck. <lb />Wilhelm / ἄπαις.</cell>
+                        </row>
+                        <row>
+                            <cell>Gotschalck.</cell>
+                            <cell>Joh. Dieterich der <lb />fuͤnffte ſtarb. <lb />1571.</cell>
+                            <cell>Frantz <lb />ſtarb <lb />ohne Kinder.</cell>
+                        </row>
+                        <row>
+                            <cell>Chriſtoff ſtarb vor <lb />dem Vatter 1567.</cell>
+                        </row>
+                        <row>
+                            <cell>Walpurga dieſes Tochter / ward zur <lb />Ehe genommen von Graf
+                    Frantzen <lb />zu Waldecken / Joannis Pii Sohne.</cell>
+                        </row>
+                    </table> 
+					<lb />Menzerus.</p>
+            </div>
+            <lb />
+            <div type="article">
+                <head>Arolſen.</head>
+                <lb />
+                <p>LJgt in der Graffſchaft Waldeck / und iſt <lb />Anfangs ein Cloſter geweſen /
+                    darnach zu <lb />einem Graͤfflichen Sitz gemacht worden. <lb />Volquinus, Graf
+                    zu Waldeck / ward im <lb />Jahr 1131. zum Edelvogt von der Stiffte⸗ <lb />rin
+                    Orpe erwoͤhlet uͤber dieſes Cloſter; wel⸗ <lb />ches auch im Jahr 1234. begabete
+                    Adolff <lb />Graff zu Schwalenberg mit dem Bocken⸗ <lb />ſtrot / einem Wald. Jm
+                    Jahr 1640. hielte <lb />allda Beylaͤger der Schwediſche General <lb />Feld⸗Marſchalck
+                    Banner umb den 16. 26. <lb />Septembr. mit einem Fuͤrſtlichen Marg⸗ <lb />graͤffiſchen
+                    Fraͤulein von Baden⸗Dur⸗ <lb />lach / welche allhie / in der Reſidentz ihres <lb />Schwagern
+                    / Herrn Graffen Volradens <lb />von Waldeck / ſich damahln befunden: dem <lb />Bericht
+                    nach / hatte dieſen Orth An. 1650. <lb />im Hornung / Herr Graf Georg Friede⸗ <lb />rich
+                    zu Waldeck.</p>
+            </div>
+            <lb />
+            <div type="article">
+                <head>Aſſenheim.</head>
+                <lb />
+                <p>Aſſenheim / iſt ein altes Staͤttlein / und hat <lb />ſeiner Antiquitet viel
+                    Zeugnnſſen / alſo dz <lb />dafuͤr gehalten wird / es auch noch zuruͤck in <lb />paganiſmum
+                    reichet / wie das genandte <lb />Steinhauß auf dem Marckt / oder Straſſen / <lb />und
+                    ſonderlich der groſſe hohe dicke Anti⸗ <lb />quitaͤten Thurn ausweiſet / welcher
+                    Thurn <lb />wol dem Lug ins Land / oder Solothurn / <lb />oder ſonſten faſt
+                    nachoͤhmet / wie die Ge⸗ <lb />ſtalt und Ehnlichkeit ausweiſet. Bey den <lb />Zeiten
+                    der Tempel⸗Herren iſt es ein feiner <lb />veſter Orth geweſen / und der Tempel
+                    bey <lb />dem Thurn / deſſen Stuͤck noch ſtehet / iſt <lb />wol zu ſehen / als
+                    ein recht Antiquitaͤt. Das <lb />Waſſer Nidd gehet faſt umb das Caſtrum <lb />und
+                    Staͤttlein herumb. Bey der Ober⸗ <lb />Pforten ſihet man / daß es ein
+                    wolverwahr⸗ <lb />ter Orth geweſen / dann das Waſſer rings <lb />umbher gangen /
+                    mit auffziehenden Bruͤ⸗ <lb />cken verwahrt. Es hat ein treflich Frucht⸗ <lb />land
+                    / und iſt quaſi meditullium Wettera- <lb />viæ: Hat einen trefflichen Weinwachs <lb />in
+                    unterſchiedenen Bergen: Gut Almey / <lb />Weyde / und zimlich Wieſen: Auch hat
+                    es <lb />gute Beholtzung aus <choice>
+                        <abbr>dreyẽ</abbr>
+                        <expan>dreyen</expan>
+                    </choice> Waͤlden. Lang⸗ <lb />hard
+                    / Auwen / und Hanau genandt. Und <lb />ob es woldreyer Herꝛn Bottmaͤßigkeit un⸗ <lb />terworffen
+                    / Jſenburg / Solms / und Ha⸗ <lb />nau / ſo iſt es doch nicht ſchuldig
+                    Frondienſt <lb />zu thun. Es hat dieſes Staͤttlein und Bur⸗ <lb />gerſchafft ein
+                    gute Fiſcherey von dem groſ⸗ <lb />ſen Steg und guͤldenen Badden (alſo ge⸗ <lb />nant)
+                    an / biß an die Muͤhl / dabey ſich die <lb />Burgerey wol befindet.</p>
+            </div>
+        </body>
+
+        <back>
+            <fw type="catch">Namen⸗</fw>
+            <pb n="[152]" />
+            <figure />
+            <lb />
+            <div type="index">
+                <head>Namen ⸗Regiſter</head>
+                <lb />
+                <p>Der Landſchafften / Gaͤw / Thaͤler / Staͤdt / Staͤdtlein / <lb />Flecken /
+                    Doͤrffer / Cloͤſter / Schloͤſſer / Waſſer / Berge / Waͤlder / <lb />Hoſpitalen /
+                    ꝛc. ſo in dieſem Tractat von Heſſen / und theils an⸗ <lb />grentzenden Landen /
+                    ꝛc. zu finden. <lb /></p>
+                <div>
+                    <head>A.</head>
+                    <list>
+                        <lb />
+                        <item>AAr / <ref>fl. 18.</ref></item>
+                        <lb />
+                        <item>Abbtswald / <ref>5.</ref></item>
+                        <lb />
+                        <item>Abnobii montes, <ref>4.</ref><ref> 8.</ref></item>
+                        <lb />
+                        <item>Adolffs⸗Eck / <ref>95.</ref></item>
+                        <lb />
+                        <item>Aldenborg / <ref>110.</ref></item>
+                        <lb />
+                        <item>Alheimer / <ref>15.</ref></item>
+                        <lb />
+                        <item>Allendorff / <ref>19.</ref> <ref>20.</ref>
+                        </item>
+                        <lb />
+                        <item>Alsfeld / <ref>21.</ref></item>
+                        <lb />
+                        <item>Altenberg / <ref>15.</ref></item>
+                        <lb />
+                        <item>Altenwied / <ref>118.</ref></item>
+                        <lb />
+                        <item>Amerbach / <ref>66.</ref></item>
+                        <lb />
+                        <item>Ana / <ref>fl. 31.</ref></item>
+                        <lb />
+                        <item>Andreasberg / <ref>70.</ref></item>
+                        <lb />
+                        <item>Arde / <ref>fl. 122.</ref></item>
+                        <lb />
+                        <item>Arenburg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Arenſtein / <ref>16.</ref></item>
+                        <lb />
+                        <item>Arnſpurg / <ref>99.</ref></item>
+                        <lb />
+                        <item>Arolſen / <ref>18.</ref> <ref>22.</ref> <ref>107.</ref></item>
+                        <lb />
+                        <item>Aſſenheim / <ref>22.</ref>
+                        </item>
+                        <lb />
+                        <item>Auerberg / <ref>150.</ref>
+                        </item>
+                        <lb />
+                        <item>Auw / <ref>23.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+                <div>
+                    <head>B.</head>
+                    <list>
+                        <lb />
+                        <item>BArchfeld / <ref>121.</ref></item>
+                        <lb />
+                        <item>Batavia, <ref>9.</ref></item>
+                        <lb />
+                        <item>Battenberg / <ref>22.</ref></item>
+                        <lb />
+                        <item>Battenfeld / <ref>22.</ref></item>
+                        <lb />
+                        <item>Beylſtein / <ref>14.</ref> <ref>23.</ref>
+                        </item>
+                        <lb />
+                        <item>Bensburg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Bernshauſen / <ref>120.</ref> <ref>121.</ref></item>
+                        <lb />
+                        <item>Bensheim / <ref>16.</ref> <ref>151.</ref></item>
+                        <lb />
+                        <item>Berenbach / <ref>23.</ref></item>
+                        <lb />
+                        <item>Berff / <ref>fl. 5.</ref></item>
+                        <lb />
+                        <item>Bergen / <ref>66.</ref></item>
+                        <lb />
+                        <item>Beringen / <ref>136.</ref></item>
+                        <lb />
+                        <item>Berleba / <ref>fl. 23.</ref></item>
+                        <lb />
+                        <item>Berleburg / <ref>16.</ref> <ref>17.</ref> <ref>23.</ref></item>
+                        <lb />
+                        <item>Berlipſch. / <ref>144.</ref></item>
+                        <lb />
+                        <item>Berſtatt / <ref>122.</ref> <ref>128.</ref></item>
+                        <lb />
+                        <item>Beſelich / <ref>23.</ref> <ref>82.</ref> <ref>86.</ref> <ref>117.</ref></item>
+                        <lb />
+                        <item>Biberſtein / <ref>24.</ref> <ref>65.</ref> <ref>66.</ref></item>
+                        <lb />
+                        <item>Bickenbach / <ref>24.</ref> <ref>94.</ref>
+                        <ref>150.</ref></item>
+                        <lb />
+                        <item>Bidencapp / <ref>24.</ref></item>
+                        <lb />
+                        <item>Bielſtein / <ref>44.</ref></item>
+                        <lb />
+                        <item>Bierſtein / <ref>24.</ref></item>
+                        <lb />
+                        <item>Biggenborg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Blanckenaw / <ref>70.</ref></item>
+                        <lb />
+                        <item>Blanckenberg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Blanckenſtein / <ref>24.</ref></item>
+                        <lb />
+                        <item>Bleidenſtatt / <ref>122.</ref></item>
+                        <lb />
+                        <item>Bobenhauſen / <ref>25.</ref></item>
+                        <lb />
+                        <item>Bockenſtrot / <ref>22.</ref></item>
+                        <lb />
+                        <item>Bockersburg / <ref>67.</ref></item>
+                        <lb />
+                        <item>Boineburg / <ref>25.</ref> <ref>99.</ref></item>
+                        <lb />
+                        <item>Boͤneburg / <ref>129.</ref></item>
+                        <lb />
+                        <item>Bonameß / <ref>25.</ref></item>
+                        <lb />
+                        <item>Borcken / <ref>25.</ref></item>
+                        <lb />
+                        <item>Borckhofen / <ref>28.</ref></item>
+                        <lb />
+                        <item>Braubach / <ref>26.</ref> <ref>114.</ref>
+                        <ref>122.</ref></item>
+                        <lb />
+                        <item>Braunfelß / <ref>16.</ref> <ref>26.</ref></item>
+                        <lb />
+                        <item>Braunsberg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Breitungen / <ref>121.</ref></item>
+                        <lb />
+                        <item>Broterode / <ref>121.</ref></item>
+                        <lb />
+                        <item>Bruckenaw / <ref>26.</ref> <ref>65.</ref></item>
+                        <lb />
+                        <item>Brungesrode / <ref>111.</ref></item>
+                        <lb />
+                        <item>Buchen / <ref>14.</ref> <ref>64.</ref></item>
+                        <lb />
+                        <item>Buchonia, <ref>14.</ref></item>
+                        <lb />
+                        <item>Buͤdingen / <ref>27.</ref></item>
+                        <lb />
+                        <item>Buddefeld / <ref>23.</ref></item>
+                        <lb />
+                        <item>Burbach / <ref>15.</ref> <ref>27.</ref></item>
+                        <lb />
+                        <item>Burckhaſungen / <ref>28.</ref></item>
+                        <lb />
+                        <item>Bureberg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Burggemuͤnden / <ref>27.</ref></item>
+                        <lb />
+                        <item>Burgraffen Roda / <ref>95.</ref></item>
+                        <fw type="catch">Burg⸗</fw>
+                        <pb n="[153]" />
+                        <fw
+                            type="header">Namen⸗Regiſter.</fw>
+                        <lb />
+                        <item>Burg Schwalbach <ref>122.</ref></item>
+                        <lb />
+                        <item>Butzbach <ref>28.</ref></item>
+                        <lb />
+                        <item>Bylſtein <ref>30.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>C.</head>
+                    <list>
+                        <lb />
+                        <item>CAlmberg <ref>15.</ref></item>
+                        <lb />
+                        <item>Camberg <ref>15.</ref> <ref> 16.</ref> <ref>30.</ref></item>
+                        <lb />
+                        <item>Capel <ref>114.</ref></item>
+                        <lb />
+                        <item>Cappel <ref>30.</ref></item>
+                        <lb />
+                        <item>Carthauß <ref>46.</ref></item>
+                        <lb />
+                        <item>Caſſel <ref>30.</ref></item>
+                        <lb />
+                        <item>Caſtorisberg <ref>107.</ref></item>
+                        <lb />
+                        <item>Catti <ref>6.</ref> <ref>7.</ref></item>
+                        <lb />
+                        <item>Cattwick <ref>9.</ref></item>
+                        <lb />
+                        <item>Catz <ref>75.</ref></item>
+                        <lb />
+                        <item>Catzenelenbogen <ref>9.</ref> <ref>28.</ref> <ref>74.</ref> <ref>122.</ref></item>
+                        <lb />
+                        <item>Chriſtenberg <ref>49.</ref> <ref>107.</ref></item>
+                        <lb />
+                        <item>Clarenthal <ref>144.</ref></item>
+                        <lb />
+                        <item>Conradsdorff <ref>91.</ref> <ref>111.</ref></item>
+                        <lb />
+                        <item>Corbach <ref>91.</ref>
+                        <ref>37.</ref></item>
+                        <lb />
+                        <item>Coͤrnberg <ref>131.</ref></item>
+                        <lb />
+                        <item>Creutzberg <ref>137.</ref></item>
+                        <lb />
+                        <item>Creutzburg <ref>67.</ref></item>
+                        <lb />
+                        <item>Cronberg <ref>37.</ref></item>
+                        <lb />
+                        <item>Cronburg <ref>16.</ref> <ref>37.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+                <div>
+                    <head>D.</head>
+                    <list>
+                        <lb />
+                        <item>DArmbſtatt <ref>38.</ref></item>
+                        <lb />
+                        <item>Dauſſenaw <ref>15.</ref></item>
+                        <lb />
+                        <item> Dernerzent <ref>15.</ref></item>
+                        <lb />
+                        <item>Dierſtein <ref>38.</ref>
+                        <ref>82.</ref> <ref>86.</ref></item>
+                        <lb />
+                        <item>Dietz <ref>9.</ref> <ref>15.</ref> <ref>38.</ref> <ref>82.</ref> <ref>86.</ref></item>
+                        <lb />
+                        <item>Dietzhoͤltze <ref>15.</ref></item>
+                        <lb />
+                        <item>Dill / <ref>fl. 17.</ref></item>
+                        <lb />
+                        <item>Dillenberg <ref>15.</ref> <ref>16.</ref> <ref>17.</ref> <ref>39.</ref></item>
+                        <lb />
+                        <item>Dinwerde <ref>132.</ref></item>
+                        <lb />
+                        <item>Dorla <ref>134.</ref></item>
+                        <lb />
+                        <item>Dornberg <ref>134.</ref></item>
+                        <lb />
+                        <item>Doͤrnberg <ref>150.</ref>
+                        </item>
+                        <lb />
+                        <item>Dornheim <ref>134.</ref></item>
+                        <lb />
+                        <item>Drachenfelß <ref>16.</ref></item>
+                        <lb />
+                        <item>Dreiderberg <ref>39.</ref></item>
+                        <lb />
+                        <item>Drendelborg <ref>39.</ref></item>
+                        <lb />
+                        <item>Drey⸗Eyche <ref>50.</ref></item>
+                        <lb />
+                        <item>Dreyß <ref>20.</ref> <ref>136.</ref></item>
+                        <lb />
+                        <item>Driedorff <ref>15.</ref> <ref>40.</ref></item>
+                        <lb />
+                        <item>Druſſel / <ref>fl. 31.</ref></item>
+                        <lb />
+                        <item>Druſſenberg <ref>120.</ref></item>
+                        <lb />
+                        <item>Duͤllbaw <ref>70.</ref></item>
+                        <lb />
+                        <item>Dymmel / <ref>fl. 86.</ref></item>
+                        <lb />
+                        <item>Dynßberg <ref>98.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+                <div>
+                    <head>E.</head>
+                    <list>
+                        <lb />
+                        <item>EBersbach <ref>15.</ref></item>
+                        <lb />
+                        <item>Eder / <ref>fl. 5.</ref> <ref>23.</ref></item>
+                        <lb />
+                        <item>Ehrenbreitſtein <ref>16.</ref></item>
+                        <lb />
+                        <item>Eichen <ref>89.</ref></item>
+                        <lb />
+                        <item>Eichsfeld <ref>135.</ref></item>
+                        <lb />
+                        <item>Einrich <ref>143.</ref></item>
+                        <lb />
+                        <item>Eiſenberg <ref>37.</ref> <ref>138.</ref></item>
+                        <lb />
+                        <item>Eißberg <ref>127.</ref></item>
+                        <lb />
+                        <item>Ellar <ref>15.</ref> <ref>82.</ref></item>
+                        <lb />
+                        <item>Ellſoff <ref>15.</ref></item>
+                        <lb />
+                        <item>Elmershauſen <ref>146.</ref></item>
+                        <lb />
+                        <item>Elß / <ref>fl. 18.</ref></item>
+                        <lb />
+                        <item>Elſter / <ref>fl. 144.</ref></item>
+                        <lb />
+                        <item>Embs <ref>40.</ref></item>
+                        <lb />
+                        <item>Emrichenhain <ref>15.</ref></item>
+                        <lb />
+                        <item>Epſtein <ref>28.</ref> <ref>114.</ref></item>
+                        <lb />
+                        <item>Eſchwege <ref>42.</ref> <ref>108.</ref></item>
+                        <lb />
+                        <item>Eſtengericht <ref>15.</ref></item>
+                        <lb />
+                        <item>Eyff <ref>22.</ref></item>
+                        <lb />
+                        <item>Eyffa / <ref>fl. 5.</ref> <ref>22.</ref></item>
+                        <lb />
+                        <item>Eylhauſen <ref>18.</ref></item>
+                        <lb />
+                        <item>Eyſenberg <ref>18.</ref> <ref>36.</ref></item>
+                        <lb />
+                        <item>Eyterfeld <ref>66.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>F.</head>
+                    <list>
+                        <lb />
+                        <item>FAch <ref>137.</ref></item>
+                        <lb />
+                        <item>Fagonia <ref>14.</ref></item>
+                        <lb />
+                        <item>Falckenberg <ref>92.</ref></item>
+                        <lb />
+                        <item>Falckenſtein <ref>80.</ref> <ref>110.</ref></item>
+                        <lb />
+                        <item>Faurbach <ref>28.</ref></item>
+                        <lb />
+                        <item>Felda / <ref>fl. 26.</ref></item>
+                        <lb />
+                        <item>Feldberg <ref>37.</ref></item>
+                        <lb />
+                        <item>Felßberg <ref>45.</ref></item>
+                        <lb />
+                        <item>Feltzburg <ref>45.</ref></item>
+                        <lb />
+                        <item>Ferndorff <ref>15.</ref></item>
+                        <lb />
+                        <item>Fetzberg <ref>77.</ref></item>
+                        <lb />
+                        <item>Flacht <ref>15.</ref></item>
+                        <lb />
+                        <item>Flieten <ref>65.</ref></item>
+                        <lb />
+                        <item>Franckenberg <ref>46.</ref> <ref>83.</ref></item>
+                        <lb />
+                        <item>Franckenſtein <ref>10.</ref> <ref>67.</ref></item>
+                        <lb />
+                        <item>Franckfurt <ref>50.</ref> <ref>ſeq. 59.</ref></item>
+                        <lb />
+                        <item>Frauenberg <ref>22.</ref> <ref>70.</ref> <ref>107.</ref></item>
+                        <lb />
+                        <item>Frauenſee <ref>121.</ref> <ref>137.</ref></item>
+                        <lb />
+                        <item>Freuſperg <ref>16.</ref> <ref>143.</ref></item>
+                        <lb />
+                        <item>Freudenberg <ref>15.</ref> <ref>59.</ref></item>
+                        <lb />
+                        <item>Freyen Dietz <ref>86.</ref></item>
+                        <lb />
+                        <item>Freyenhagen <ref>18.</ref> <ref>138.</ref></item>
+                        <lb />
+                        <item>Freyenhain <ref>98.</ref></item>
+                        <lb />
+                        <item>Freyſtatt <ref>39.</ref></item>
+                        <lb />
+                        <item>Frickhofen <ref>15.</ref></item>
+                        <lb />
+                        <item>Fridberg <ref>16.</ref> <ref>28.</ref> <ref>59.</ref></item>
+                        <lb />
+                        <item>Friedewald <ref>64.</ref></item>
+                        <lb />
+                        <item>Fridrichsburg <ref>59.</ref></item>
+                        <lb />
+                        <item>Friling <ref>18.</ref></item>
+                        <lb />
+                        <item>Fulda / <ref>fl. 31.</ref> <ref>64.</ref></item>
+                        <lb />
+                        <item>Fuldiſche Marck <ref>15.</ref></item>
+                        <fw type="catch">Fuͤrſten⸗</fw>
+                        <fw
+                            type="sig">u</fw>
+                        <pb n="[154]" />
+                        <fw type="header">Namen⸗Regiſter.</fw>
+                        <lb />
+                        <item>Fuͤrſtenberg <ref>18.</ref></item>
+                        <lb />
+                        <item>Fuͤrſteneck <ref>65.</ref></item>
+                        <lb />
+                        <item>Fuͤrſtenſtein <ref>44.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>G.</head>
+                    <list>
+                        <lb />
+                        <item>GEhuͤlfensberg <ref>43.</ref></item>
+                        <lb />
+                        <item>Geiſa <ref>18.</ref> <ref>65.</ref> <ref>70.</ref></item>
+                        <lb />
+                        <item>Geiſel. <ref>65.</ref></item>
+                        <lb />
+                        <item>Geißmar <ref>23.</ref> <ref>71.</ref></item>
+                        <lb />
+                        <item>Gelnhauſen <ref>71.</ref></item>
+                        <lb />
+                        <item>Gemuͤnden <ref>73.</ref></item>
+                        <lb />
+                        <item>Georgenberg <ref>49.</ref></item>
+                        <lb />
+                        <item>Gerau <ref>16.</ref> <ref>73.</ref></item>
+                        <lb />
+                        <item>Germerode <ref>30.</ref></item>
+                        <lb />
+                        <item>Geßburg <ref>113.</ref></item>
+                        <lb />
+                        <item>Gewer <ref>74.</ref> <ref>122.</ref></item>
+                        <lb />
+                        <item>Gewershauſen <ref>75</ref></item>
+                        <lb />
+                        <item>Gieſelwerder <ref>23.</ref> <ref>148.</ref></item>
+                        <lb />
+                        <item>Gieſſen <ref>75.</ref></item>
+                        <lb />
+                        <item>Gilſenberg <ref>113.</ref></item>
+                        <lb />
+                        <item>Glauberg <ref>111.</ref></item>
+                        <lb />
+                        <item>Gleiberg <ref>14.</ref> <ref>16.</ref> <ref>78.</ref></item>
+                        <lb />
+                        <item>Gleichen <ref>145.</ref></item>
+                        <lb />
+                        <item>Gnadenthal <ref>38.</ref> <ref>78.</ref></item>
+                        <lb />
+                        <item>Goar <ref>74.</ref> <ref>122.</ref></item>
+                        <lb />
+                        <item>Goarshauſen <ref>75.</ref></item>
+                        <lb />
+                        <item>Grabfeld <ref>14.</ref></item>
+                        <lb />
+                        <item>Grebenau <ref>78.</ref></item>
+                        <lb />
+                        <item>Grebenſtein <ref>78.</ref></item>
+                        <lb />
+                        <item>Greiffenſtein <ref>16.</ref> <ref>79.</ref> <ref>86.</ref></item>
+                        <lb />
+                        <item>Grenff / <ref>fl. 111.</ref></item>
+                        <lb />
+                        <item>Grenſau <ref>137.</ref></item>
+                        <lb />
+                        <item>Groſſenberingen <ref>136.</ref></item>
+                        <lb />
+                        <item>Groſſen⸗Linden <ref>77.</ref></item>
+                        <lb />
+                        <item>Grunau <ref>84.</ref>
+                        <ref>122.</ref></item>
+                        <lb />
+                        <item>Grunberg <ref>79.</ref></item>
+                        <lb />
+                        <item>Gudensberg <ref>80.</ref> <ref>108.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+
+                <div>
+                    <head>H.</head>
+                    <list>
+                        <lb />
+                        <item>HAbichswald <ref>35.</ref></item>
+                        <lb />
+                        <item>Hachenburg <ref>16.</ref> <ref>27.</ref> <ref>81.</ref> <ref>143.</ref></item>
+                        <lb />
+                        <item>Hadamar <ref>148.</ref> <ref>130.</ref></item>
+                        <lb />
+                        <item>Haͤger <ref>15.</ref> <ref>82</ref></item>
+                        <lb />
+                        <item>Haͤgerſtruthe <ref>15.</ref></item>
+                        <lb />
+                        <item>Hain in der Drey Eich <ref>83.</ref></item>
+                        <lb />
+                        <item>Haina <ref>73.</ref> <ref>82.</ref></item>
+                        <lb />
+                        <item>Hallenberg <ref>121.</ref></item>
+                        <lb />
+                        <item>Hammelburg <ref>65.</ref> <ref>67.</ref> <ref>84</ref></item>
+                        <lb />
+                        <item>Hanau <ref>22.</ref> <ref>85</ref></item>
+                        <lb />
+                        <item>Haſelſtein <ref>65.</ref> <ref>66</ref></item>
+                        <lb />
+                        <item>Haſungen <ref>146.</ref></item>
+                        <lb />
+                        <item>Hattenhauſen <ref>67.</ref></item>
+                        <lb />
+                        <item>Haugk <ref>100.</ref></item>
+                        <lb />
+                        <item>Haune <ref>88.</ref></item>
+                        <lb />
+                        <item>Hauneck <ref>88.</ref></item>
+                        <lb />
+                        <item>Haußberg <ref>115.</ref></item>
+                        <lb />
+                        <item>Hayrich <ref>18.</ref></item>
+                        <lb />
+                        <item>Heen <ref>15.</ref></item>
+                        <lb />
+                        <item>Heiligenberg <ref>46.</ref></item>
+                        <lb />
+                        <item>Heina <ref>49.</ref> <ref>73.</ref> <ref>82.</ref></item>
+                        <lb />
+                        <item>Helffenſtein <ref>16.</ref></item>
+                        <lb />
+                        <item>Helmershauſen <ref>40.</ref>
+                        <ref>86.</ref></item>
+                        <lb />
+                        <item>Hennenburg <ref>28.</ref></item>
+                        <lb />
+                        <item>Heraldts <ref>65.</ref></item>
+                        <lb />
+                        <item>Herborn <ref>15.</ref> <ref>86.</ref></item>
+                        <lb />
+                        <item>Herbrachtshauſen <ref>67.</ref></item>
+                        <lb />
+                        <item>Herbſtein <ref>65.</ref></item>
+                        <lb />
+                        <item>Heringen <ref>87.</ref></item>
+                        <lb />
+                        <item>Hermanſtein <ref>87.</ref></item>
+                        <lb />
+                        <item>Herrich <ref>122.</ref></item>
+                        <lb />
+                        <item>Herrn Breitungen <ref>121.</ref></item>
+                        <lb />
+                        <item>Herßfeld <ref>4.</ref> <ref>87.</ref></item>
+                        <lb />
+                        <item>Herſtelle <ref>40.</ref></item>
+                        <lb />
+                        <item>Hertzberg <ref>78.</ref> <ref>90.</ref></item>
+                        <lb />
+                        <item>Heſſen <ref>3. ſeqq.</ref></item>
+                        <lb />
+                        <item>Heſſenſtein <ref>49.</ref></item>
+                        <lb />
+                        <item>Heyde <ref>115.</ref> <ref>132.</ref></item>
+                        <lb />
+                        <item>Hilgenbach <ref>15.</ref> <ref>96.</ref></item>
+                        <lb />
+                        <item>Hildewartshauſen <ref>67.</ref></item>
+                        <lb />
+                        <item>Hirſchberg <ref>15.</ref></item>
+                        <lb />
+                        <item>Hirſchfeld <ref>87.</ref></item>
+                        <lb />
+                        <item>Hirtzberg <ref>90.</ref></item>
+                        <lb />
+                        <item>Hirtzenhan <ref>91.</ref></item>
+                        <lb />
+                        <item>Hoͤckelheim <ref>83.</ref> <ref>91.</ref></item>
+                        <lb />
+                        <item>Hoff <ref>110.</ref></item>
+                        <lb />
+                        <item>Hoff Geißmar <ref>71.</ref></item>
+                        <lb />
+                        <item>Hoffhem <ref>38.</ref> <ref>83.</ref></item>
+                        <lb />
+                        <item>Hoͤhe <ref>28.</ref> <ref>94.</ref> <ref>109.</ref> <ref>143.</ref></item>
+                        <lb />
+                        <item>Hoheberg <ref>8.</ref></item>
+                        <lb />
+                        <item>Hohen⸗Weiſſel <ref>28.</ref></item>
+                        <lb />
+                        <item>Hoheruͤck <ref>18.</ref></item>
+                        <lb />
+                        <item>Hohnſtein <ref>122.</ref></item>
+                        <lb />
+                        <item>Hohnſtett <ref>15.</ref></item>
+                        <lb />
+                        <item>Holtzhauſen <ref>122.</ref></item>
+                        <lb />
+                        <item>Holtzkirch <ref>70.</ref></item>
+                        <lb />
+                        <item>Homberg <ref>21.</ref> <ref>91.</ref> <ref>93.</ref></item>
+                        <lb />
+                        <item>Homburg <ref>16.</ref> <ref>24.</ref> <ref>94.</ref></item>
+                        <lb />
+                        <item>Honſtetten <ref>15.</ref></item>
+                        <lb />
+                        <item>Horneburg <ref>16.</ref></item>
+                        <lb />
+                        <item>Hoͤrre <ref>15</ref></item>
+                        <lb />
+                        <item>Hotzfeld <ref>94.</ref></item>
+                        <lb />
+                        <item>Hoſſenfeld <ref>65.</ref></item>
+                        <lb />
+                        <item>Hunfeld <ref>66.</ref> <ref>68.</ref> <ref>95.</ref></item>
+                        <lb />
+                        <item>Hungen <ref>99.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>J.</head>
+                    <list>
+                        <lb />
+                        <item>JBa <ref>131.</ref></item>
+                        <lb />
+                        <item>Jdtſtein <ref>14.</ref> <ref>95.</ref></item>
+                        <lb />
+                        <item>Jlmſtatt <ref>95.</ref></item>
+                        <fw type="catch"> Jmmen⸗</fw>
+                        <pb
+                            n="[155]" />
+                        <fw type="header"> Namen⸗Regiſter.</fw>
+                        <lb />
+                        <item>Jmmenhauſen / <ref>5.</ref> <ref>96.</ref></item>
+                        <lb />
+                        <item>Jnſelberg / <ref>120.</ref></item>
+                        <lb />
+                        <item>Jodlesheim / <ref>37.</ref></item>
+                        <lb />
+                        <item>Johannsberg / <ref>70.</ref>
+                        <ref>90.</ref></item>
+                        <lb />
+                        <item>Joſſe / <ref>18.</ref></item>
+                        <lb />
+                        <item>Jſenberg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Jſenburg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Jtter / <ref>10.</ref> <ref>96.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>K.</head>
+                    <list>
+                        <lb />
+                        <item>KAlenberg / <ref>98.</ref></item>
+                        <lb />
+                        <item>Kalteych / <ref>15.</ref></item>
+                        <lb />
+                        <item>Kauffungen / <ref>83.</ref> <ref>97.</ref>
+                        <ref>144.</ref></item>
+                        <lb />
+                        <item>Kaͤppel / <ref>96.</ref></item>
+                        <lb />
+                        <item>Keichen / <ref>61.</ref></item>
+                        <lb />
+                        <item>Kelſterbach / <ref>97.</ref></item>
+                        <lb />
+                        <item>Kellerberg / <ref>23.</ref></item>
+                        <lb />
+                        <item>Kerſpenhauß / <ref>18.</ref></item>
+                        <lb />
+                        <item>Keſterburg / <ref>49.</ref></item>
+                        <lb />
+                        <item>Kintz / Kintzig / <ref>fl. 72.</ref></item>
+                        <lb />
+                        <item>Kirchberg / <ref>15.</ref> <ref>16.</ref></item>
+                        <lb />
+                        <item>Kirchberg / <ref>49.</ref></item>
+                        <lb />
+                        <item>Kirchhayn / <ref>97.</ref></item>
+                        <lb />
+                        <item>Kirdorff / <ref>15.</ref></item>
+                        <lb />
+                        <item>Kirpurg / <ref>15</ref></item>
+                        <lb />
+                        <item>Kleyburg. S. Gleiberg.</item>
+                        <lb />
+                        <item>Knuͤll / <ref>128.</ref></item>
+                        <lb />
+                        <item>Koͤnigsberg / <ref>77.</ref> <ref>98.</ref></item>
+                        <lb />
+                        <item>Koͤnigſteden / <ref>84.</ref></item>
+                        <lb />
+                        <item>Koͤnigſtein / <ref>16.</ref> <ref>28.</ref></item>
+                        <lb />
+                        <item>Koͤnigſtein / <ref>114.</ref></item>
+                        <lb />
+                        <item>Koͤnigſtul / <ref>114.</ref></item>
+                        <lb />
+                        <item>Kranchſtein / <ref>38.</ref></item>
+                        <lb />
+                        <item>Krockenburg / <ref>86.</ref></item>
+                        <lb />
+                        <item>Kuͤhemarck / <ref>133.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>L.</head>
+                    <list>
+                        <lb />
+                        <item>LAhr / <ref>150.</ref></item>
+                        <lb />
+                        <item>Landau / <ref>18.</ref> <ref>98.</ref></item>
+                        <lb />
+                        <item>Laneck / <ref>18.</ref></item>
+                        <lb />
+                        <item>Langeberg / <ref>110.</ref></item>
+                        <lb />
+                        <item>Langen / <ref>16.</ref></item>
+                        <lb />
+                        <item>Langenhein / <ref>28.</ref> <ref>148.</ref></item>
+                        <lb />
+                        <item>Langen Schwalbach / <ref>122.</ref></item>
+                        <lb />
+                        <item>Langhard / <ref>22.</ref></item>
+                        <lb />
+                        <item>Langheck / <ref>117.</ref></item>
+                        <lb />
+                        <item>Lanſtein / <ref>18.</ref> <ref>114.</ref></item>
+                        <lb />
+                        <item>Lanus, <ref>fl. 18.</ref></item>
+                        <lb />
+                        <item>Laſphe / <ref>98.</ref></item>
+                        <lb />
+                        <item>Laubach / <ref>99.</ref></item>
+                        <lb />
+                        <item>Lewenberg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Licha / <ref>99.</ref></item>
+                        <lb />
+                        <item>Lichtenau / <ref>99.</ref></item>
+                        <lb />
+                        <item>Liechtenberg. <ref>151.</ref></item>
+                        <lb />
+                        <item>Liebenau / <ref>99.</ref></item>
+                        <lb />
+                        <item>Liebenſchied / <ref>99.</ref></item>
+                        <lb />
+                        <item>Limpurg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Loehrbach / <ref>136.</ref></item>
+                        <lb />
+                        <item>Loelbach / <ref>83.</ref></item>
+                        <lb />
+                        <item>Loganus, <ref>fl. 18.</ref></item>
+                        <lb />
+                        <item>Lomb / <ref>fl. 20.</ref></item>
+                        <lb />
+                        <item>Lon / <ref>fl. 5.</ref> <ref>18.</ref> <ref>26.</ref>
+                        <ref>41.</ref></item>
+                        <lb />
+                        <item>Longaw / <ref>17.</ref></item>
+                        <lb />
+                        <item>Loͤnberg / <ref>15.</ref></item>
+                        <lb />
+                        <item>Lorch / <ref>28.</ref></item>
+                        <lb />
+                        <item>Lorley / 75.</item>
+                        <lb />
+                        <item>Lors / <ref>16.</ref></item>
+                        <lb />
+                        <item>Loſſa / <ref>fl. 31.</ref> <ref>99.</ref></item>
+                        <lb />
+                        <item>Loshauſen / <ref>136.</ref></item>
+                        <lb />
+                        <item>Lovenburg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Luder / <ref>65.</ref></item>
+                        <lb />
+                        <item>Ludwigs⸗Eck / <ref>115.</ref></item>
+                        <lb />
+                        <item>Ludwigſtein / <ref>100.</ref></item>
+                        <lb />
+                        <item>Lutreſen / <ref>98.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>M.</head>
+                    <list>
+                        <lb />
+                        <item>MAckenzell / <ref>65.</ref></item>
+                        <lb />
+                        <item>Malberg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Malcheberg / <ref>151.</ref></item>
+                        <lb />
+                        <item>Marburg / <ref>100. ſeqq.</ref></item>
+                        <lb />
+                        <item>Mardorff / <ref>67.</ref></item>
+                        <lb />
+                        <item>Maͤrenberg / <ref>15.</ref></item>
+                        <lb />
+                        <item>Mariebron / <ref>100.</ref></item>
+                        <lb />
+                        <item>Marienſtatt / <ref>16.</ref></item>
+                        <lb />
+                        <item>Marxburg / <ref>26.</ref></item>
+                        <lb />
+                        <item>Mattium, <ref>100.</ref></item>
+                        <lb />
+                        <item>Mattmell / <ref>8.</ref></item>
+                        <lb />
+                        <item>Mayn / <ref>fl. 50.</ref></item>
+                        <lb />
+                        <item>Meiſſener / <ref>30.</ref> <ref>44.</ref></item>
+                        <lb />
+                        <item>Meliboci Montes. <ref>4.</ref> <ref>135.</ref> <ref>150. feq.</ref></item>
+                        <lb />
+                        <item>Melnau / <ref>23.</ref> <ref>140.</ref></item>
+                        <lb />
+                        <item>Melſtatt / <ref>66.</ref></item>
+                        <lb />
+                        <item>Melſungen / <ref>108.</ref></item>
+                        <lb />
+                        <item>Mengeringhauſen / <ref>18.</ref> <ref>107.</ref></item>
+                        <lb />
+                        <item>Mengerskirchen / <ref>107.</ref></item>
+                        <lb />
+                        <item>Meraburg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Merenberg / <ref>78.</ref></item>
+                        <lb />
+                        <item>Merla / <ref>80.</ref></item>
+                        <lb />
+                        <item>Merxhauſen / <ref>83.</ref> <ref>107.</ref></item>
+                        <lb />
+                        <item>Milſungen / <ref>108.</ref></item>
+                        <lb />
+                        <item>Mintzenberg / <ref>109.</ref></item>
+                        <lb />
+                        <item>Mittelſtein / <ref>11.</ref></item>
+                        <lb />
+                        <item>Moͤlnbach / <ref>20.</ref></item>
+                        <lb />
+                        <item>Molſperg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Mongshauß / <ref>18.</ref></item>
+                        <lb />
+                        <item>Morſſen / <ref>115.</ref></item>
+                        <lb />
+                        <item>Muͤnſter / <ref>28.</ref> <ref>30.</ref></item>
+                        <lb />
+                        <item>Muͤntzebach / <ref>fl. 122.</ref></item>
+                        <lb />
+                        <item>Mutten / <ref>65.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <fw
+                    type="catch">N. Naſ⸗</fw>
+                <fw type="sig">U 2</fw>
+                <pb n="[156]" />
+                <fw
+                    type="header">Namen⸗Regiſter.</fw>
+                <div>
+                    <head>N.</head>
+                    <list>
+                        <lb />
+                        <item>NAſſen Erfurt <ref>26.</ref></item>
+                        <lb />
+                        <item>Naſſau <ref>14.</ref> <ref>109.</ref></item>
+                        <lb />
+                        <item>Naſtede <ref>122.</ref></item>
+                        <lb />
+                        <item>Neccar / <ref>fl. 134.</ref></item>
+                        <lb />
+                        <item>Neidenſtein <ref>110.</ref></item>
+                        <lb />
+                        <item>Netphe <ref>15.</ref></item>
+                        <lb />
+                        <item>Neuburg <ref>23.</ref></item>
+                        <lb />
+                        <item>Neu Catzenelenbogen <ref>75.</ref> <ref>122.</ref></item>
+                        <lb />
+                        <item>Neueberg <ref>70.</ref></item>
+                        <lb />
+                        <item>Neuenhoff <ref>65.</ref> <ref>67.</ref></item>
+                        <lb />
+                        <item>Wied <ref>118.</ref></item>
+                        <lb />
+                        <item>Neukirch <ref>111.</ref> <ref>136.</ref></item>
+                        <lb />
+                        <item>Neuſtatt <ref>23.</ref></item>
+                        <lb />
+                        <item>Neze <ref>138.</ref></item>
+                        <lb />
+                        <item>Nidda <ref>10.</ref> <ref>111.</ref></item>
+                        <lb />
+                        <item>Nidda / <ref>fl. 5.</ref> <ref>133.</ref></item>
+                        <lb />
+                        <item>Nider⸗Gemuͤnden <ref>28.</ref></item>
+                        <lb />
+                        <item>Nider⸗Grentzebach <ref>136.</ref></item>
+                        <lb />
+                        <item>Nider⸗Schleitz <ref>67.</ref></item>
+                        <lb />
+                        <item>Nidenſtein <ref>81.</ref> <ref>108.</ref></item>
+                        <lb />
+                        <item>Nider⸗Wetter <ref>140.</ref></item>
+                        <lb />
+                        <item>Niſter / <ref>fl. 16.</ref></item>
+                        <lb />
+                        <item>Nordecken <ref>20.</ref>
+                        <ref>21.</ref></item>
+                        <lb />
+                        <item>Nordmanſtein. <ref>135.</ref></item>
+                        <lb />
+                        <item>Northauſen <ref>32.</ref></item>
+                        <lb />
+                        <item>Northeim <ref>16.</ref></item>
+                        <lb />
+                        <item>Nortzhauſen <ref>32.</ref></item>
+                        <lb />
+                        <item>Numburg <ref>81.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+
+                <div>
+                    <head>O.</head>
+                    <list>
+                        <lb />
+                        <item>OBerburg <ref>128.</ref></item>
+                        <lb />
+                        <item>Obern Weimar.</item>
+                        <item>Such Weimar.</item>
+                        <lb />
+                        <item>Ochſenberg <ref>137.</ref></item>
+                        <lb />
+                        <item>Odernheim <ref>94.</ref></item>
+                        <lb />
+                        <item>Offenbach <ref>97.</ref></item>
+                        <lb />
+                        <item>Ofleyden <ref>94.</ref></item>
+                        <lb />
+                        <item>Ohm / <ref>fl. 5.</ref> <ref>18.</ref> <ref>28.</ref></item>
+                        <lb />
+                        <item>Ommenau <ref>117.</ref></item>
+                        <lb />
+                        <item>Ortenburg <ref>111.</ref></item>
+                        <lb />
+                        <item>Oſterberingen <ref>136.</ref></item>
+                        <lb />
+                        <item>Oſtheim <ref>28.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>P.</head>
+                    <list>
+                        <lb />
+                        <item>PEtersberg <ref>70.</ref> <ref>86.</ref> <ref>89.</ref></item>
+                        <lb />
+                        <item>Philipsburg <ref>26.</ref></item>
+                        <lb />
+                        <item>Philips Eck <ref>30.</ref></item>
+                        <lb />
+                        <item>Pleſſe <ref>11.</ref> <ref>111.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>R.</head>
+                    <list>
+                        <lb />
+                        <item>RAden <ref>18</ref></item>
+                        <lb />
+                        <item>Rantzbach <ref>136.</ref></item>
+                        <lb />
+                        <item>Rauſchenberg <ref>113.</ref></item>
+                        <lb />
+                        <item>Reichelsdorff <ref>131.</ref></item>
+                        <lb />
+                        <item>Reichenbach <ref>25.</ref> <ref>66.</ref> <ref>99.</ref></item>
+                        <lb />
+                        <item>Reichenberg <ref>113.</ref> <ref>122.</ref></item>
+                        <lb />
+                        <item>Reiffenberg <ref>113.</ref></item>
+                        <lb />
+                        <item>Reinhardshauſen <ref>142.</ref></item>
+                        <lb />
+                        <item>Reinhartswald <ref>5.</ref> <ref>147.</ref></item>
+                        <lb />
+                        <item>Rennerod <ref>15.</ref></item>
+                        <lb />
+                        <item>Rens <ref>114.</ref></item>
+                        <lb />
+                        <item>Rheinfels <ref>74.</ref> <ref>122.</ref></item>
+                        <lb />
+                        <item>Rheinheim <ref>94.</ref></item>
+                        <lb />
+                        <item>Rinckau <ref>16.</ref> <ref>28.</ref></item>
+                        <lb />
+                        <item>Rockenſtul <ref>65.</ref></item>
+                        <lb />
+                        <item>Roͤdelheim <ref>99.</ref></item>
+                        <lb />
+                        <item>Rodenburg <ref>108.</ref></item>
+                        <lb />
+                        <item>Romroderberg <ref>22.</ref></item>
+                        <lb />
+                        <item>Ronnenburg <ref>73.</ref></item>
+                        <lb />
+                        <item>Rotenberg <ref>83.</ref> <ref>108.</ref></item>
+                        <lb />
+                        <item>Rotenburg <ref>115.</ref></item>
+                        <lb />
+                        <item>Roſenthal <ref>23.</ref> <ref>83.</ref> <ref>140.</ref></item>
+                        <lb />
+                        <item>Roßdorff <ref>66.</ref> <ref>67.</ref></item>
+                        <lb />
+                        <item>Rothaar <ref>17.</ref></item>
+                        <lb />
+                        <item>Rozenhayn <ref>15.</ref></item>
+                        <lb />
+                        <item>Runckel <ref>117.</ref></item>
+                        <lb />
+                        <item>Ruͤſſelsheim <ref>119.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>S.</head>
+                    <list>
+                        <lb />
+                        <item>SAbbaburg <ref>71.</ref> <ref>147.</ref></item>
+                        <lb />
+                        <item>Sachſenberg <ref>49.</ref></item>
+                        <lb />
+                        <item>Sachſenhauſen <ref>18.</ref> <ref>50.</ref> <ref>138.</ref></item>
+                        <lb />
+                        <item>Saleck <ref>65.</ref> <ref>84.</ref></item>
+                        <lb />
+                        <item>Salmershauſen <ref>136.</ref></item>
+                        <lb />
+                        <item>Salmuͤnſter <ref>119.</ref></item>
+                        <lb />
+                        <item>Saltzungen <ref>67.</ref></item>
+                        <lb />
+                        <item>Schadeck <ref>117.</ref></item>
+                        <lb />
+                        <item>Schaumburg <ref>117.</ref></item>
+                        <lb />
+                        <item>Schawenburg <ref>110.</ref></item>
+                        <lb />
+                        <item>Schelderwald <ref>15.</ref></item>
+                        <lb />
+                        <item>Scherpffenberg <ref>120.</ref></item>
+                        <lb />
+                        <item>Schildeck <ref>27.</ref> <ref>65.</ref></item>
+                        <lb />
+                        <item>Schirnberg <ref>95.</ref></item>
+                        <lb />
+                        <item>Schlitz <ref>119.</ref></item>
+                        <lb />
+                        <item>Schluͤchter <ref>119.</ref></item>
+                        <lb />
+                        <item>Schmalkalden <ref>120.</ref></item>
+                        <lb />
+                        <item>Schoͤnenberg <ref>23.</ref> <ref>39.</ref> <ref>71.</ref> <ref>94.</ref></item>
+                        <lb />
+                        <item>Schoͤnenſtein <ref>83.</ref></item>
+                        <lb />
+                        <item>Schotten <ref>4.</ref> <ref>122.</ref> <ref>130.</ref></item>
+                        <lb />
+                        <item>Schuppach <ref>117.</ref></item>
+                        <lb />
+                        <item>Schwalbach <ref>26.</ref> <ref>122.</ref></item>
+                        <lb />
+                        <item>Schwalm / <ref>fl. 5.</ref> <ref>111.</ref></item>
+                        <lb />
+                        <item>Schwartzenborn <ref>128.</ref></item>
+                        <lb />
+                        <item>Schwartzenfels <ref>67.</ref></item>
+                        <lb />
+                        <item>Schweinsberg <ref>94.</ref> <ref>128.</ref></item>
+                        <lb />
+                        <item>Segodunum <ref>129.</ref></item>
+                        <fw
+                            type="catch">Selboldt</fw>
+                        <pb n="[157]" />
+                        <fw
+                            type="header">Namen⸗Regiſter.</fw>
+                        <lb />
+                        <item>Selboldt <ref>91.</ref></item>
+                        <lb />
+                        <item>Senne / <ref>fl. 27.</ref></item>
+                        <lb />
+                        <item>Senſenſtein <ref>119.</ref></item>
+                        <lb />
+                        <item>Sensfeld <ref>38.</ref></item>
+                        <lb />
+                        <item>Seyn <ref>16.</ref></item>
+                        <lb />
+                        <item>Siburg <ref>16.</ref></item>
+                        <lb />
+                        <item>Sicamborg <ref>16.</ref></item>
+                        <lb />
+                        <item>Sige <ref>129.</ref></item>
+                        <lb />
+                        <item>Sigen <ref>15.</ref> <ref>27.</ref> <ref>129.</ref></item>
+                        <lb />
+                        <item>Simmeshauſen <ref>140.</ref></item>
+                        <lb />
+                        <item>Sinna / <ref>fl. 26.</ref></item>
+                        <lb />
+                        <item>Sinnau <ref>27.</ref></item>
+                        <lb />
+                        <item>Smalkalde <ref>120.</ref></item>
+                        <lb />
+                        <item>Solitaria. <ref>119.</ref></item>
+                        <lb />
+                        <item>Solms <ref>77.</ref> <ref>130.</ref></item>
+                        <lb />
+                        <item>Sontra <ref>108.</ref> <ref>131.</ref></item>
+                        <lb />
+                        <item>Spangenberg <ref>131.</ref></item>
+                        <lb />
+                        <item>Spielberg <ref>25.</ref></item>
+                        <lb />
+                        <item>Spieß Capell <ref>149.</ref></item>
+                        <lb />
+                        <item>Spitzberg <ref>151.</ref></item>
+                        <lb />
+                        <item>Sprenglingen <ref>16.</ref></item>
+                        <lb />
+                        <item>Staden <ref>133.</ref></item>
+                        <lb />
+                        <item>Stauffenberg <ref>16.</ref> <ref>20.</ref> <ref>133.</ref></item>
+                        <lb />
+                        <item>Stein <ref>94.</ref> <ref>109.</ref> <ref>136.</ref></item>
+                        <lb />
+                        <item>Steinbach <ref>121.</ref></item>
+                        <lb />
+                        <item>Steinforſt <ref>22.</ref></item>
+                        <lb />
+                        <item>Steinheim <ref>133.</ref></item>
+                        <lb />
+                        <item>Steinrunckel <ref>117.</ref></item>
+                        <lb />
+                        <item>Stickleberg <ref>150.</ref></item>
+                        <lb />
+                        <item>Stolßberg <ref>67.</ref></item>
+                        <lb />
+                        <item>Stormfels <ref>4.</ref></item>
+                        <lb />
+                        <item>Stromberg <ref>16.</ref> <ref>98.</ref></item>
+                        <lb />
+                        <item>Sula <ref>18.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+
+                <div>
+                    <head>T.</head>
+                    <list>
+                        <lb />
+                        <item>TAurus <ref>137.</ref></item>
+                        <lb />
+                        <item>Thamersfeld <ref>67.</ref></item>
+                        <lb />
+                        <item>Thron <ref>38.</ref> <ref>82.</ref> <ref>86.</ref> <ref>133.</ref></item>
+                        <lb />
+                        <item>Todenhauſen <ref>20.</ref></item>
+                        <lb />
+                        <item>Todenwarth <ref>121.</ref></item>
+                        <lb />
+                        <item>Toſenau <ref>42.</ref></item>
+                        <lb />
+                        <item>Toſtorff <ref>14.</ref></item>
+                        <lb />
+                        <item>Traſeberg <ref>120.</ref></item>
+                        <lb />
+                        <item>Trebur <ref>16.</ref> <ref>134.</ref></item>
+                        <lb />
+                        <item>Trefurt <ref>124.</ref></item>
+                        <lb />
+                        <item>Trendelburg <ref>39.</ref></item>
+                        <lb />
+                        <item>Treyſa <ref>136.</ref></item>
+                        <lb />
+                        <item>Tringenſtein <ref>39.</ref> <ref>137.</ref></item>
+                        <lb />
+                        <item>Turnheim <ref>66.</ref></item>
+                        <lb />
+                        <item>Tuiſta <ref>fl. 18.</ref></item>
+                        <lb />
+                        <item>Tyrenberg <ref>150.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>V.</head>
+                    <list>
+                        <lb />
+                        <item>VAch <ref>137.</ref></item>
+                        <lb />
+                        <item>Vdenhauſen <ref>78.</ref></item>
+                        <lb />
+                        <item>Vier⸗Herren Gericht <ref>15.</ref></item>
+                        <lb />
+                        <item>Vilmar <ref>137.</ref></item>
+                        <lb />
+                        <item>Vlmbach <ref>65.</ref></item>
+                        <lb />
+                        <item>Vlrichſtein <ref>4.</ref> <ref>138.</ref></item>
+                        <lb />
+                        <item>Vmbſtatt <ref>94.</ref> <ref>138.</ref></item>
+                        <lb />
+                        <item>Vnſtrud / <ref>fl. 135.</ref></item>
+                        <lb />
+                        <item>Voͤel <ref>96.</ref></item>
+                        <lb />
+                        <item>Vogelsberg <ref>4.</ref> <ref>122.</ref></item>
+                        <lb />
+                        <item>Vroneck <ref>16.</ref></item>
+                        <lb />
+                        <item>Vſelbach <ref>15.</ref></item>
+                        <lb />
+                        <item>Vtersdorff <ref>18.</ref></item>
+                        <lb />
+                        <item>Vtzberg <ref>138.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>W.</head>
+                    <list>
+                        <lb />
+                        <item>WAlbach / <ref>fl. 21.</ref></item>
+                        <lb />
+                        <item>Waldcappel <ref>30.</ref></item>
+                        <lb />
+                        <item>Waldeck <ref>18.</ref> <ref>138.</ref></item>
+                        <lb />
+                        <item>Waldenburg <ref>67.</ref></item>
+                        <lb />
+                        <item>Walmenach <ref>15.</ref></item>
+                        <lb />
+                        <item>Wanfried <ref>139.</ref></item>
+                        <lb />
+                        <item>Wartenburg <ref>67.</ref></item>
+                        <lb />
+                        <item>Waſſerheim <ref>66.</ref></item>
+                        <lb />
+                        <item>Wechtersbach <ref>25.</ref> <ref>140.</ref></item>
+                        <lb />
+                        <item>Wederovia <ref>15.</ref></item>
+                        <lb />
+                        <item>Wegfahrt <ref>18.</ref></item>
+                        <lb />
+                        <item>Wehrheim <ref>38.</ref></item>
+                        <lb />
+                        <item>Weidelsberg <ref>146.</ref></item>
+                        <lb />
+                        <item>Weidelburg <ref>146.</ref></item>
+                        <lb />
+                        <item>Weidenau <ref>65.</ref></item>
+                        <lb />
+                        <item>Weidenhauſen <ref>101.</ref></item>
+                        <lb />
+                        <item>Weilburg <ref>14.</ref> <ref>16.</ref> <ref>140.</ref></item>
+                        <lb />
+                        <item>Weilnau <ref>15.</ref></item>
+                        <lb />
+                        <item>Weinmar <ref>100.</ref></item>
+                        <lb />
+                        <item>Weingebuͤrg <ref>80.</ref></item>
+                        <lb />
+                        <item>Weinsberg <ref>21.</ref></item>
+                        <lb />
+                        <item>Weiſſener <ref>30.</ref></item>
+                        <lb />
+                        <item>Weiſſenſtein <ref>31.</ref></item>
+                        <lb />
+                        <item>Weltershauſen <ref>91.</ref></item>
+                        <lb />
+                        <item>Werheim <ref>15.</ref></item>
+                        <lb />
+                        <item>Werra / <ref>fl. 5.</ref> <ref>19.</ref> <ref>42.</ref> <ref>135.</ref></item>
+                        <lb />
+                        <item>Weſer / <ref>fl. 5.</ref></item>
+                        <lb />
+                        <item>Weſterburg <ref>16.</ref> <ref>20.</ref></item>
+                        <lb />
+                        <item>Weſterwald <ref>15.</ref> <ref>16.</ref></item>
+                        <lb />
+                        <item>Wetter <ref>23.</ref> <ref>140.</ref></item>
+                        <lb />
+                        <item>Wetter / <ref>fl. 15.</ref></item>
+                        <lb />
+                        <item>Wetterau <ref>15.</ref></item>
+                        <lb />
+                        <item>Wetterburg <ref>18.</ref> <ref>107.</ref></item>
+                        <lb />
+                        <item>Wetzlar <ref>140.</ref></item>
+                        <lb />
+                        <item>Weyers <ref>65.</ref></item>
+                        <lb />
+                        <item>Wied <ref>16.</ref> <ref>130.</ref></item>
+                        <lb />
+                        <item>Wildeck <ref>67.</ref></item>
+                        <lb />
+                        <item>Wildenberg <ref>130.</ref></item>
+                        <fw
+                            type="catch">Wil⸗</fw>
+                        <fw type="sig">U 3</fw>
+                        <pb n="[158]" />
+                        <fw
+                            type="header">Namen⸗Regiſter.</fw>
+                        <figure />
+                        <lb />
+                        <item>Wildungen / <ref>18.</ref> <ref>141.</ref></item>
+                        <lb />
+                        <item>Wilhelmsburg / <ref>120.</ref></item>
+                        <lb />
+                        <item>Wilmershauſen / <ref>66.</ref></item>
+                        <lb />
+                        <item>Windecken / <ref>142.</ref></item>
+                        <lb />
+                        <item>Winden / <ref>21.</ref></item>
+                        <lb />
+                        <item>Wißbaden / <ref>14.</ref> <ref>28.</ref> <ref>142.</ref></item>
+                        <lb />
+                        <item>Witgenſtein / <ref>16.</ref> <ref>98.</ref></item>
+                        <lb />
+                        <item>Witzenhauſen / <ref>146.</ref></item>
+                        <lb />
+                        <item>Wohr / <ref>fl. 73.</ref></item>
+                        <lb />
+                        <item>Wolckenberg / <ref>16.</ref></item>
+                        <lb />
+                        <item>Wolckerſtorff / <ref>49.</ref> <ref>83.</ref></item>
+                        <lb />
+                        <item>Wolffenhauſen / <ref>117.</ref></item>
+                        <lb />
+                        <item>Wolffsanger / <ref>31.</ref></item>
+                        <lb />
+                        <item>Wolffsberingen / <ref>136.</ref></item>
+                        <lb />
+                        <item>Wolffshagen / <ref>146.</ref></item>
+                        <lb />
+                        <item><choice>
+                                <sic>Mormel</sic>
+                                <corr>Wormel</corr>
+                            </choice> / <ref>98.</ref></item>
+                        <lb />
+                    </list>
+                </div>
+
+                <div>
+                    <head>Z.</head>
+                    <list>
+                        <lb />
+                        <item>ZAppenburg / <ref>147.</ref></item>
+                        <lb />
+                        <item>Zell / <ref>70.</ref> <ref>136.</ref></item>
+                        <lb />
+                        <item>Zeutzheim / <ref>15.</ref></item>
+                        <lb />
+                        <item>Ziegenberg / <ref>148.</ref></item>
+                        <lb />
+                        <item>Ziegenhain / <ref>10.</ref> <ref>148.</ref></item>
+                        <lb />
+                        <item>Zierenberg / <ref>150.</ref></item>
+                        <lb />
+                        <item>Zwingenberg / <ref>150.</ref></item>
+                    </list>
+                </div>
+
+            </div>
+            <fw type="catch">Ver⸗</fw>
+            <pb n="[159]" />
+            <figure />
+            <lb />
+            <div type="index">
+                <head>Verzeichniß der Kupffer / darnach ſich der Buchbinder <lb />zu richten hat.</head>
+                <lb />
+                <list>
+                    <item>1. Land⸗Charte Ober⸗Heſſen. <ref>3</ref></item>
+                    <item>2. Nieder Heſſen. <ref> 9</ref></item>
+                    <item>3. Wetterau. <ref>15</ref></item>
+                    <item>4. <list>
+                            <item>Alsfeldt.</item>
+                            <item>Allendorff.</item>
+                            <item>Battenberg.</item>
+                        </list> <ref>20</ref></item>
+
+                    <item> 5. <list>
+                            <item>Allendorff.</item>
+                            <item>Arolſen.</item>
+                            <item>Blanckenſtein.</item>
+                        </list> <ref>23</ref></item>
+
+                    <item> 6. <list>
+                            <item>Aſſenheim.</item>
+                            <item>Bidencapp.</item>
+                            <item>Borcken.</item>
+                        </list> <ref>24</ref></item>
+
+                    <item> 7. <list>
+                            <item>Braunfels.</item>
+                            <item>Greiffenſtein.</item>
+                        </list> <ref>26</ref></item>
+                    <item> 8.<list>
+                            <item>Braubach.</item>
+                            <item>Butzbach.</item>
+                        </list> <ref>28</ref></item>
+                    <item> 9.<list>
+                            <item>Berleburg.</item>
+                            <item>Wald-Cappel.</item>
+                            <item>Dreydelburg.</item>
+                        </list> <ref>30</ref></item>
+                    <item>10. Caſſel im Grund. <ref>32</ref></item>
+                    <item>11.<list>
+                            <item>in Proſpect.</item>
+                            <item>Buͤdingen.</item>
+                            <item>Cronberg.</item>
+                        </list> <ref>34</ref></item>
+                    <item> 12.<list>
+                            <item>Corbach.</item>
+                            <item>Dietz.</item>
+                        </list> <ref>37</ref></item>
+                    <item> 13. <list>
+                            <item>Darmſtadt.</item>
+                            <item>Dillenburg.</item>
+                        </list> <ref>38</ref></item>
+                    <item>14. Embſer Bad. <ref>40</ref></item>
+                    <item>15. <list>
+                            <item>Eſchwege</item>
+                            <item>Franckeberg.</item>
+                        </list> <ref>42</ref></item>
+                    <item>16. Franckfurt im Grund. <ref>50</ref></item>
+                    <item>17. Die Bruͤcke daſelbſt. <ref>52</ref></item>
+                    <item>18. Friedberg. <ref>60</ref></item>
+                    <item>19. <list>
+                            <item>Felsberg.</item>
+                            <item>Fulda.</item>
+                        </list> <ref>65</ref></item>
+                    <item>20. Gelnhauſen. <ref>72</ref></item>
+                    <item>21. <list>
+                            <item>Hof⸗Geißmar.</item>
+                            <item>Gerau.</item>
+                        </list> <ref>73</ref></item>
+                    <item> 22. <list>
+                            <item>S. Goar.</item>
+                            <item>Gieſſen.</item>
+                        </list> <ref>74</ref></item>
+                    <item> 23. <list>
+                            <item>Gemuͤndt.</item>
+                            <item>Grebenſtein.</item>
+                            <item>Helmershauſen.</item>
+                        </list> <ref>78</ref></item>
+                    <item> 24. <list>
+                            <item>Neu⸗Catzenelenbogen.</item>
+                            <item>Goarshauſen.</item>
+                            <item>Gruͤnberg.</item>
+                        </list> <ref>79</ref></item>
+                    <item> 25. <list>
+                            <item>Merlaw.</item>
+                            <item>Grunaw.</item>
+                        </list> <ref>80</ref></item>
+                    <item> 26. <list>
+                            <item>Haina.</item>
+                            <item>Hamelburg.</item>
+                        </list> <ref>83</ref></item>
+                    <item>27. Hanau im Grund. <ref>85</ref></item>
+                    <item>28. in Proſpect. <ref>86</ref></item>
+                    <item> 29. <list>
+                            <item>Gudensberg.</item>
+                            <item>Herborn.</item>
+                        </list> <ref>87</ref></item>
+                    <item> 30. <list>
+                            <item>Herßfeldt.</item>
+                            <item>Homburg.</item>
+                        </list> <ref>89</ref></item>
+                    <item> 31. <list>
+                            <item>Homburg.</item>
+                            <item>Eichen.</item>
+                        </list> <ref>93</ref></item>
+                    <item> 32. <list>
+                            <item>Homburg vor der Hoͤhe.</item>
+                            <item>Haͤger.</item>
+                            <item>Jmmenhauſen.</item>
+                        </list> <ref>94</ref></item>
+                    <item> 33. <list>
+                            <item>Adolffs Eck.</item>
+                            <item>Jlmſtatt.</item>
+                        </list> <ref>95</ref></item>
+                    <item> 34. <list>
+                            <item>Jdſtein.</item>
+                            <item>Jtter</item>
+                        </list> <ref>96</ref></item>
+                    <item> 35. <list>
+                            <item>Kelſterbach.</item>
+                            <item>Ofſenbach.</item>
+                        </list> <ref>97</ref></item>
+                    <item> 36. <list>
+                            <item>Kirchhain.</item>
+                            <item>Laſphe.</item>
+                        </list> <ref>98</ref></item>
+                    <item> 37. <list>
+                            <item>Landau.</item>
+                            <item>Liebenau.</item>
+                        </list> <ref>99</ref></item>
+                    <item> 38. <list>
+                            <item>Laubach.</item>
+                            <item>Licha.</item>
+                        </list> <ref>99</ref></item>
+                    <item>39. Marpurg. <ref>100</ref></item>
+                    <item>40. <list>
+                            <item>Mengershauſen.</item>
+                            <item>Milſungen.</item>
+                            <item>Naſſau.</item>
+                        </list> <ref>109</ref></item>
+                    <item> 41. <list>
+                            <item>Muͤntzeberg.</item>
+                            <item>Nidda.</item>
+                        </list> <ref>110</ref></item>
+                    <item> 42. <list>
+                            <item>Ortenburg.</item>
+                            <item>Rauſchenberg.</item>
+                        </list> <ref>111</ref></item>
+                    <item> 43. <list>
+                            <item>Neukirch.</item>
+                            <item>Pleß.</item>
+                            <item>Gleichen.</item>
+                        </list> <ref>112</ref></item>
+                    <item>44. Reichenberg. <ref>113</ref></item>
+                    <item>45. <list>
+                            <item>Runckel.</item>
+                            <item>Reiffenberg.</item>
+                        </list> <ref>117</ref></item>
+                    <item> 46. <list>
+                            <item>Epſtein.</item>
+                            <item>Ruͤſſelsheim.</item>
+                        </list> <ref>119</ref></item>
+                    <item> 47. <list>
+                            <item>Rotenburg.</item>
+                            <item>Schluͤchter.</item>
+                        </list> <ref>119</ref></item>
+                    <fw
+                        type="catch">48. Schmal⸗</fw>
+                    <pb
+                        n="[160]" />
+                    <figure />
+                    <item>48. <list>
+                            <item>Schmalkalden.</item>
+                            <item>Spangenberg.</item>
+                        </list> <ref>120</ref></item>
+                    <item> 49. <list>
+                            <item>Schotten.</item>
+                            <item>Siegen.</item>
+                        </list> <ref>122</ref></item>
+                    <item>50. Schwalbach. <ref>122</ref></item>
+                    <item>51. <list>
+                            <item>AltCatzenelenbogen</item>
+                            <item>Hohnſtein.</item>
+                        </list> <ref>123</ref></item>
+                    <item> 52. <list>
+                            <item>Sontra.</item>
+                            <item>Stauffenberg.</item>
+                            <item>Schwartzenborn.</item>
+                        </list> <ref>132</ref></item>
+                    <item> 53. <list>
+                            <item>Treiſa.</item>
+                            <item>Vach.</item>
+                        </list> <ref>136</ref></item>
+                    <item> 54. <list>
+                            <item>Wildungen.</item>
+                            <item>Ulrichſtein.</item>
+                            <item>Wanfried.</item>
+                        </list> <ref>138</ref></item>
+                    <item> 55. <list>
+                            <item>Waldeck.</item>
+                            <item>Wetter.</item>
+                            <item>Zierenberg.</item>
+                        </list> <ref>139</ref></item>
+                    <item>56. Weilburg. <ref>140</ref></item>
+                    <item>57. Wetzlar. <ref>141</ref></item>
+                    <item>58. Wißbaden. <ref>142</ref></item>
+                    <item>59. <list>
+                            <item>Witzenhauſen.</item>
+                            <item>Wolffshagen.</item>
+                        </list> <ref>144</ref></item>
+                    <item> 60. <list>
+                            <item>Zappenburg.</item>
+                            <item>Gieſelwerder.</item>
+                        </list> <ref>147</ref></item>
+                    <item> 61. <list>
+                            <item>Ziegenhain / im Grund.</item>
+                            <item>in Proſpect.</item>
+                        </list> <ref>149</ref></item>
+                    <item> 62. <list>
+                            <item>Ziegenberg.</item>
+                            <item>Ludwigſtein.</item>
+                            <item>Zwingenberg.</item>
+                            <item>Liechtenberg.</item>
+                        </list> <ref>150</ref></item>
+                </list>
+                <p><choice>
+                        <sic>&#xfffc;</sic>
+                        <corr>⁂</corr>
+                    </choice></p>
+            </div>
+            <lb />
+            <figure />
+
+        </back>
+    </text>
+
+</TEI>
