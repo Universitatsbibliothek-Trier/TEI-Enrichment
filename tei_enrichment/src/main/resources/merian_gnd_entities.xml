@@ -2,28 +2,6 @@
 <TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd">
-    <!-- bereits vorkommende elemente:
-    - choice - abbr - expan
-    - choice - sic - corr
-    - list mit item 
-    - table mit row, cell
-    - figure
-
-    - fw-Elemente: sig, header, pagenum, catch
-    - div-Elemente: frontispiece, overview, preface (stimmt die Position?), article (mit attribut corresp), additional (stimmt die Position?), index
-    - in text-Element: front mit titlePage, body, back
-
-
-
-    fehlende Elemente:
-    -  Band in zwei Teilbände aufteilen (Band kopieren): group?
-    -  gap
-    -  Div-Attribut im Namensregister
-    -  milestone
-    -  eventuell: appendix?, summary?, miscellanea?, dedication?
-    -  include einer zweiten XML-Datei mit register der GND-Elemente mit entsprechender ID, angereichert mit weiteren Elementen für die Kategorien, Bundesländer (oder z.B. Kantone), Geokoordinaten und Namensvarianten 
-    -  include einer dritten XML-Datei für Glossar mit IDs
-    -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -122,35 +100,34 @@
                     benachbarten Landſchafften / <lb />als Buchen / Naſſau / Wetterau / Weſterwald /
                     Wittgen⸗ <lb />ſtein / Loͤhngau / und andern.</head>
                 <lb />
-                <p>ES gehoͤren in den Hochloͤblichen <name ref="https://d-nb.info/gnd/4462311-2">
-                    <!-- Geografikum --> Ober⸗Rheiniſchen </name><lb />Creyß / (deſſen
+                <p>ES gehoͤren in den Hochloͤblichen <name ref="https://d-nb.info/gnd/4462311-2">Ober⸗Rheiniſchen </name><lb />Creyß / (deſſen
                     ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ <lb />ſchoff zu Wormbs und der
-                    <name ref="https://d-nb.info/gnd/1129384780">Kaiser Karl <!-- Person --> </name> und 
-                    <name ref="https://d-nb.info/gnd/1129384780">Otto</name>
+                    <name ref="https://d-nb.info/gnd/4462311-2">Kaiser Karl</name> und 
+                    <name ref="https://d-nb.info/gnd/4462311-2">Otto</name>
                     Herr Pfaltzgraf Ludwig Philips <lb />zu Simmern ꝛc. ſeynd /) die Biſchoͤffe von
                     Worms / Speyer / <lb />Straßburg / Baſel / Biſantz / Sitten / Loſanna / Metz /
                     Tull / <lb />Verdun / und Genff; der Hochmeiſter des Johanniter Ordens / <lb />die
                     Pfaltzgrafen / wegen der Graffſchafft Spanheim / Zwey⸗ <lb />bruͤcken / und
                     Veldentz; die Landgraffen in Heſſen; die Hertzoge in Lothringen; die <lb />Hertzoge
-                    in Savoja; die Aebte von Fulda / oder <name ref="https://d-nb.info/gnd/4079167-1">Herßfeld<!-- Ereignis (eigentlich: Schlagwort? --> </name>  / Murbach / Muͤn⸗ <lb />ſter
+                    in Savoja; die Aebte von Fulda / Hirſchfeld oder Herßfeld / Murbach / Muͤn⸗ <lb />ſter
                     in S. Gregorienthal / und Pfriem im Bißthum Chur: die Abtißin von Kauffin⸗ <lb />gen;
                     die Proͤbſte zu Weiſſenburg / und Odenheim; die Graffen und Herren von <lb />Naſſau⸗Sarbruͤcken;
                     die Wetterauiſche Graffen; die Rheingraffen; die von Falcken⸗ <lb />ſtein; von
                     Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein / Moͤrsburg / <lb />Rapoltſtein
                     / Rapoltzkirch / ꝛc. Die Adeliche Collegia zu Gelnhauſen / und Friedberg: <lb />Die
-                    Staͤdte Baſel / Keyſerſperg / <name ref="https://d-nb.info/gnd/1083842994">Tuͤrckheim <!-- Werk --> </name>/ Muͤnſter in S. Gregorienthal; Ober⸗ <lb /><name ref="https://d-nb.info/gnd/10070065-2">Ehenheim<!-- Körperschaft --></name>
+                    Staͤdte Baſel / Keyſerſperg / Tuͤrckheim / Muͤnſter in S. Gregorienthal; Ober⸗ <lb />Ehenheim
                     / Colmar / Straßburg / Roßheim / Schlettſtatt / Hagenau / Cron⸗Weiſſen⸗ <lb />burg
-                    / Landau / Muͤlhauſen im Sundgoͤw / Speyer / <name ref="https://d-nb.info/gnd/1091513589">Wormbs<!-- Konferenz oder Veranstaltung --></name> / Franckfurt / Fried⸗ <lb />berg
+                    / Landau / Muͤlhauſen im Sundgoͤw / Speyer / Wormbs / Franckfurt / Fried⸗ <lb />berg
                     / Wetzlar / Metz / Tull / Verdun / Kauffmans⸗Sarbruͤck / Biſantz / und Genff. <lb />Darunter
                     gleichwol nunmehr ſich viel befinden / die eximirt werden: als die Biſchoͤffe <lb />zu
                     Sitten / Loſann / Metz / Tull / Verdun / und Genff: der Abt zu Pfriem / im Biß⸗ <lb />thum
                     Chur: die Graffſchafft Bitſch: die Staͤdte / Baſel / Muͤlhauſen im Sundgoͤw / <lb />Metz
-                    / Tull / Verdun / Kauffmans⸗Sarbruͤck / <name ref="https://d-nb.info/gnd/12917680X">Genff<!-- Familie --></name> / ꝛc. Von welchen zum Theil in <lb />Beſchreibung
+                    / Tull / Verdun / Kauffmans⸗Sarbruͤck / Genff / ꝛc. Von welchen zum Theil in <lb />Beſchreibung
                     des Schweitzerlands / des Elſaß / der Untern⸗Pfaltz / (daſelbſten auch <lb />Savoja
                     / Lothringen / Biſantz / Metz / Tull / Verdun / Bitſch / und Kauffmans⸗Sar⸗ <lb />bruͤck
                     / einkommen ſeyn) und des Chur⸗und Unter⸗Rheiniſchen Creyſes / allbereit <lb />von
                     uns moͤglicher / und gebuͤhrender Bericht / geſchehen. Die uͤbrige aber / und
-                    ihre <lb />beſch<supplied cert="high">e</supplied>hen
+                    ihre <lb />beſch<supplied>e</supplied>hen
                     vornehmſte und bekanteſte Staͤdte und Orthe ſollen in dieſem Tractat
                     eingebracht <lb />werden; wie auch Gelnhauſen / und die Graffſchafft
                     Naſſau⸗Beylſtein / ꝛc. ſo ſonſten <lb />zum Nieder⸗Rheiniſchen Creyß gehoͤrig
@@ -723,17 +700,6 @@
             <lb />
             <figure />
 
-            <!--
-                includes anpassen: 
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                href="merian_gnd_entities.xml" xpointer="blo_persons"
-                xml:id="import_persons">
-                <xi:fallback> </xi:fallback>
-            </xi:include>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                href="merian_register" xpointer="blo_places" xml:id="import_places">
-                <xi:fallback> </xi:fallback>
-            </xi:include> -->
 
         </back>
     </text>
