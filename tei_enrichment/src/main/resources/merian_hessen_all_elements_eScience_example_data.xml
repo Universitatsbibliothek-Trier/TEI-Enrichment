@@ -8,7 +8,7 @@
     - list mit item 
     - table mit row, cell
     - figure
-
+    - w
     - fw-Elemente: sig, header, pagenum, catch
     - div-Elemente: frontispiece, overview, preface (stimmt die Position?), article (mit attribut corresp), additional (stimmt die Position?), index
     - in text-Element: front mit titlePage, body, back
@@ -156,7 +156,7 @@
                     Naſſau⸗Beylſtein / ꝛc. ſo ſonſten <lb />zum Nieder⸗Rheiniſchen Creyß gehoͤrig
                     ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten <lb />zum Weſtphaͤliſchen Creyß
                     gezogen wird. <lb />Und erſtlich zwar / was das hochloͤbliche Fuͤrſtenthum und
-                    Landgraffſchafft Heſſen <lb />anbelangt / ſo hat Wilhelm Dilich eine Chronic
+                    <w lemma="synonym" xml:id="hessen_syn_1">Landgraffſchafft</w>  <lb />anbelangt / ſo hat Wilhelm Dilich eine Chronic
                     davon ausgehen laſſen; damit aber <lb />nicht jederman zufrieden geweſen /
                     dieweil er im erſten Theil derſelben geſchrieben / das <lb />Ober⸗Heſſen / ſo
                     viel das Lager anbetrifft / unter andern / in ſich auch begreiffe / die Graff⸗ <lb />ſchafft
