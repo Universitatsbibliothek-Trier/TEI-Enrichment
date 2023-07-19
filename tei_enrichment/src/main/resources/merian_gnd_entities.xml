@@ -39,9 +39,23 @@
                         <title>Topographia Germaniae</title>
                         <biblScope>Band 07</biblScope>
                     </series>
-                </biblStruct>
+                </biblStruct> 
             </sourceDesc>
         </fileDesc>
+
+        <!-- <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person>
+                    </person>
+                </listPerson>
+                <listPlace>
+                </listPlace>
+                <listOrg>
+                </listOrg>
+            </particDesc> -->
+
+        <!-- </profileDesc> -->
     </teiHeader>
     <text>
         <body>
@@ -51,6 +65,7 @@
                     <place xml:id="band_07_place0001">
                         <placeName>Schloss Regensburg </placeName>
                         <location>
+                            <region>Rheinland-Pfalz</region>
                             <geo>48.92194 11.6819</geo>
                         </location>
 
@@ -65,7 +80,7 @@
                 </listPlace> -->
 
                 <listPerson xml:id="merian_entities_person">
-                    <person xml:id="band_07_person0001">
+                    <person xml:id="band_07_person_Paul_Goldmann">
                         <persName ref="https://d-nb.info/gnd/4462311-2"> Paul Goldmann </persName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/7695021-9</idno>
                     </person>
@@ -74,7 +89,7 @@
 
 
                 <listEvent xml:id="merian_entities_event">
-                    <event xml:id="band_07_event0001">
+                    <event xml:id="band_07_event_">
                         <label>Barbourville</label>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079167-1</idno>
                     </event>

@@ -45,6 +45,7 @@
             </publicationStmt>
             <sourceDesc>
 
+            
                 <biblStruct>
                     <monogr>
                         <author>Merian, Matthaeus, der Ältere</author>
@@ -67,19 +68,68 @@
                         <biblScope>Band 07</biblScope>
                     </series>
                 </biblStruct>
+                
+                
+                <!-- <listPlace xml:id="merian_entities_place">
+                    <place xml:id="band_07_place0001">
+                        <placeName>Schloss Regensburg </placeName>
+                        <location>
+                            <district>
+        
+                            </district>
+                            <geo>48.92194 11.6819</geo>
+                        </location>
+        
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7695021-9</idno>
+                    </place>
+                </listPlace>
+
+        
+                <listPerson xml:id="merian_entities_person">
+                    <person xml:id="band_07_person0001">
+                        <persName ref="https://d-nb.info/gnd/4462311-2"> Paul Goldmann </persName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7695021-9</idno>
+                    </person>
+                    < hier auch familie rein
+                </listPerson>
+        
+        
+                <listEvent xml:id="merian_entities_event">
+                    <event xml:id="band_07_event0001">
+                        <label>Barbourville</label>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079167-1</idno>
+                    </event>
+                      < hier auch veranstaltung oder konferenz rein
+                </listEvent>
+        
+                <listObject xml:id="merian_entities_object">
+                    <object xml:id="band_07_object0001">
+                        <objectIdentifier>
+                            <objectName>Hessische Chronica</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/1083842994</idno>
+                        </objectIdentifier>
+                    </object>
+                </listObject>
+        
+                <listOrg xml:id="merian_entities_org">
+                    <org xml:id="band_07_org0001">
+                        <orgName> Studentenwerk Trier </orgName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/215001-3</idno>
+                    </org>
+                </listOrg> -->
+
             </sourceDesc>
         </fileDesc>
-<!-- Alternative zu xi:include (?): 
-        <encodingDesc>
+
+        <!-- <encodingDesc>
             <listPrefixDef>
                 <prefixDef ident="mgnd"
                     matchPattern="([a-z]+)"
                     replacementPattern="merian_gnd_entities.xml#$1">
-
                 </prefixDef>
             </listPrefixDef>
-        </encodingDesc>
-    -->
+        </encodingDesc> -->
+
 
     </teiHeader>
     <text>
@@ -94,7 +144,8 @@
                         <expan>vornemb⸗ſten<lb /></expan>
                     </choice> Stätte vnd
                     Plätze in <lb />Heſſen / vnd den benachbahꝛten <lb />Landtſchaften / als Buchen
-                    / Naſſau <lb />Wetteraw / Weſterwaldt / Wittgen <lb />ſtein / Lohngaw / vnd
+                    / Naſſau <lb />Wetteraw / <name
+                    ref="#band_07_place_Schloss_Regensburg"><!-- Geografikum -->Schloss Regensburg</name> / Wittgen <lb />ſtein / Lohngaw / vnd
                     andern. <lb />Franckfurt durch <lb /> Matt <lb />Merian.</p>
             </div>
 
@@ -161,29 +212,28 @@
 
                         <div type="overview">
                             <lb />
-                            <head>Beſchreibung der vornehmſten Staͤdte und <lb />Plaͤtze in <name
-                                    ref="mgnd:Schloss_Regensburg">Heſſen</name> / und den
+                            <head>Beſchreibung der vornehmſten Staͤdte und <lb />Plaͤtze in Heſſen / und den
                                 benachbarten Landſchafften / <lb />als Buchen / Naſſau / Wetterau /
                                 Weſterwald / Wittgen⸗ <lb />ſtein / Loͤhngau / und andern.</head>
                             <lb />
                             <p>ES gehoͤren in den Hochloͤblichen <name
-                                    ref="band_07_place0001">
-                                    <!-- Geografikum --> Ober⸗Rheiniſchen </name><lb />Creyß
+                                    ref="#band_07_place_Regensburg">
+                                    <!-- Geografikum --> Regensburg </name><lb />Creyß
                                 / (deſſen ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ <lb />ſchoff
-                                zu Wormbs und der <name ref="https://d-nb.info/gnd/1129384780">Kaiser
-                                Karl <!-- Person -->
+                                zu Wormbs und der <name ref="#band_07_person_Trier">Kaiser
+                                Trier <!-- Person -->
                                 </name> und <name
-                                    ref="https://d-nb.info/gnd/1129384780">Otto</name> Herr
+                                    ref="#band_07_Paul_Goldmann">Paul Goldmann<!-- Person --></name> Herr
                                 Pfaltzgraf Ludwig Philips <lb />zu Simmern ꝛc. ſeynd /) die
                                 Biſchoͤffe von Worms / Speyer / <lb />Straßburg / Baſel / Biſantz /
-                                Sitten / Loſanna / Metz / Tull / <lb />Verdun / und Genff; der
+                                Sitten / Loſanna / Metz / Tull / <lb />Verdun / und <name
+                                ref="#band_07_place_Grüningen"><!-- Geografikum --> Schloss Grüningen</name>; der
                                 Hochmeiſter des Johanniter Ordens / <lb />die Pfaltzgrafen / wegen
                                 der Graffſchafft Spanheim / Zwey⸗ <lb />bruͤcken / und Veldentz; die
-                                Landgraffen in Heſſen; die <rs ref="https://d-nb.info/gnd/1053437072">Hertzoge</rs>
+                                Landgraffen in Heſſen; der <rs ref="#band_07_Paul_Goldmann">Herr</rs>
                                 in Lothringen; die <lb />Hertzoge
                                 in Savoja; die Aebte von Fulda / oder <name
-                                    ref="https://d-nb.info/gnd/4079167-1">Herßfeld<!-- Ereignis
-                                    (eigentlich: Schlagwort? -->
+                                    ref="#band_07_event_Erster_Weltkrieg">Herßfeld<!-- Ereignis-->
                                 </name>
                                 / Murbach / Muͤn⸗ <lb />ſter in S. Gregorienthal / und Pfriem im
                                 Bißthum Chur: die Abtißin von Kauffin⸗ <lb />gen; die Proͤbſte zu
@@ -191,15 +241,13 @@
                                 die Wetterauiſche Graffen; die Rheingraffen; die von Falcken⸗ <lb />ſtein;
                                 von Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein /
                                 Moͤrsburg / <lb />Rapoltſtein / Rapoltzkirch / ꝛc. Die Adeliche
-                                Collegia zu Gelnhauſen / und Friedberg: <lb />Die Staͤdte Baſel /
-                                Keyſerſperg / <name ref="https://d-nb.info/gnd/1083842994">
-                                Tuͤrckheim <!-- Werk -->
-                                </name>/ Muͤnſter in S.
+                                Collegia zu Gelnhauſen / und Friedberg: <lb />Die <name ref="#band_07_object_Chronik">
+                                Chronik <!-- Werk --> </name>/ Muͤnſter in S.
                                 Gregorienthal; Ober⸗ <lb /><name
-                                    ref="https://d-nb.info/gnd/10070065-2">Studentenwerk Trier<!-- Körperschaft --></name> / Colmar
+                                    ref="#band_07_org_Studentenwerk_Trier">Studentenwerk Trier<!-- Körperschaft --></name> / Colmar
                                 / Straßburg / Roßheim / Schlettſtatt / Hagenau / Cron⸗Weiſſen⸗ <lb />burg
                                 / Landau / Muͤlhauſen im Sundgoͤw / Speyer / <name
-                                    ref="https://d-nb.info/gnd/1091513589">Wormbs<!-- Konferenz oder
+                                    ref="#band_07_event_Wormser_Religionsgespräche">Wormser Religionsgespräche<!-- Konferenz oder
                                     Veranstaltung --></name> /
                                 Franckfurt / Fried⸗ <lb />berg / Wetzlar / Metz / Tull / Verdun /
                                 Kauffmans⸗Sarbruͤck / Biſantz / und Genff. <lb />Darunter gleichwol
@@ -208,11 +256,11 @@
                                 Pfriem / im Biß⸗ <lb />thum Chur: die Graffſchafft Bitſch: die
                                 Staͤdte / Baſel / Muͤlhauſen im Sundgoͤw / <lb />Metz / Tull /
                                 Verdun / Kauffmans⸗Sarbruͤck / <name
-                                    ref="https://d-nb.info/gnd/12917680X">Genff<!-- Familie --></name> / ꝛc. Von
+                                    ref="#band_07_person_O_Kelly">O'Kelly<!-- Familie --></name> / ꝛc. Von
                                 welchen zum Theil in <lb />Beſchreibung des Schweitzerlands / des
                                 Elſaß / der Untern⸗Pfaltz / (daſelbſten auch <lb />Savoja /
                                 Lothringen / Biſantz / Metz / Tull / Verdun / Bitſch / und
-                                Kauffmans⸗Sar⸗ <lb />bruͤck / einkommen ſeyn) und des Chur⸗und
+                                Kauffmans⸗Sar⸗ <lb />bruͤck / einkommen ſeyn) und des <name ref="#band_07_event_Dreißigjähriger_Krieg">Dreißigjähriger Krieg</name>Chur⸗und
                                 Unter⸗Rheiniſchen Creyſes / allbereit <lb />von uns moͤglicher / und
                                 gebuͤhrender Bericht / geſchehen. Die uͤbrige aber / und ihre <lb />
                                 beſch<supplied cert="high">e</supplied>hen vornehmſte und bekanteſte
@@ -222,10 +270,8 @@
                                 Naſſau⸗Dillenberg / ſo ſonſten <lb />zum Weſtphaͤliſchen Creyß
                                 gezogen wird. <lb />Und erſtlich zwar / was das hochloͤbliche
                                 Fuͤrſtenthum und <w lemma="Landgraffschafft"> Landgraffſchafft</w>  
-                                    <!-- <w lemma="Landgraffschafft" corresp="Landgraffschafft">
-                                        Landgraffſchafft</w> -->
                                         <lb />anbelangt / ſo hat Wilhelm Dilich eine
-                                <name ref="https://d-nb.info/gnd/1083842994" > <!-- Werk -->Chronic</name> davon ausgehen laſſen; damit aber <lb />nicht jederman
+                                <name ref="#band_07_object_Hessische_Chronica" > <!-- Werk -->Hessische Chronica</name> davon ausgehen laſſen; damit aber <lb />nicht jederman
                                 zufrieden geweſen / dieweil er im erſten Theil derſelben geſchrieben
                                 / das <lb />Ober⸗Heſſen / ſo viel das Lager anbetrifft / unter
                                 andern / in ſich auch begreiffe / die Graff⸗ <lb />ſchafft Dietz /
@@ -322,9 +368,8 @@
                             </p>
                         </div>
                         <lb />
-                        <div type="article" corresp="#art_1_3_Grueningen">
-                            <head><name ref="https://d-nb.info/gnd/4462311-2"
-                                    xml:id="art_1_3_Grueningen">Allendorff</name> / an der Werra.</head>
+                        <div type="article" corresp="#band_07_place0003">
+                            <head><name ref="#band_07_place0003">Allendorff</name> / an der Werra.</head>
                             <lb />
                             <p>JSt ein Stadt in Nieder⸗Heſſen / <lb />zugenandt in den Sohden. Soll <lb />wegen
                                 der Saltz⸗Sohden ſo viel <lb />heiſſen / als Hallendorff / inmaſſen
@@ -721,9 +766,9 @@
                             </p>
                         </div>
                         <lb />
-                        <div type="article" corresp="art_1_3_Trueningen">
-                            <head><name ref="https://d-nb.info/gnd/4462311-2"
-                                    xml:id="art_1_3_Trueningen">Allendorff</name> / an der Werra.</head>
+                        <div type="article" corresp="#band_07_place0002">
+                            <head><name ref="#band_07_place0003"
+                                   >Allendorff</name> / an der Werra.</head>
                             <lb />
                             <p>JSt ein Stadt in Nieder⸗Heſſen / <lb />zugenandt in den Sohden. Soll <lb />wegen
                                 der Saltz⸗Sohden ſo viel <lb />heiſſen / als Hallendorff / inmaſſen
@@ -1282,6 +1327,13 @@
             </div>
             <lb />
             <figure />
+
+       
+
+               
+        
+
+            
             
 <!-- provisorische Alternative statt xi:include: Liste im back:
             <div>
@@ -1331,9 +1383,95 @@
                 <xi:fallback> </xi:fallback>
             </xi:include>
               -->
+              <div type="entities"> 
+              <listPlace xml:id="band_07_entities_place">
+                <place xml:id="band_07_place_Schloss_Regensburg">
+                    <placeName>Schloss Regensburg-Weichs</placeName>
+                    <placeName>Schloss Weichs (Regensburg)</placeName>
+                    <location>
+                        <district>Bayern</district>
+                        <geo>12.095560 49.015000</geo>
+                    </location>    
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/7695021-9</idno>
+                </place>
+                <place xml:id="band_07_place_Regensburg">
+                    <placeName>Regensburg </placeName>
+                    <location>
+                        <district>Bayern</district>
+                        <geo>48.92194 11.6819</geo>
+                    </location>    
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/4048989-9</idno>
+                </place>
+                <place xml:id="band_07_place_Schloss_Grüningen">
+                    <placeName>Schloss Grüningen </placeName>
+                    <location>
+                        <district>Kanton Zürich</district>
+                    </location>    
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/4583907-4</idno>
+                </place>
+            </listPlace>
+    
+            <!-- <listPlace xml:id="merian_entities">
+              <place xml:id="Schloss_Regensburg">
+                 <placeName ref="https://d-nb.info/gnd/4462311-2"/>    
+              </place>
+            </listPlace> -->
+    
+            <listPerson xml:id="band_07_entities_person">
+                <person xml:id="band_07_Paul_Goldmann">
+                    <persName> Paul Goldmann </persName>
+                    <persName> Saul Goldmann </persName>
+                    <persName> Saul Goodman </persName>
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/1205814876</idno>
+                </person>
+                <person xml:id="band_07_person_O_Kelly">
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/1062805615 </idno>
+                </person>
 
-
-        </back>
+                
+                <!-- hier auch familie rein-->
+            </listPerson>
+    
+    
+            <listEvent xml:id="band_07_entities_event">
+                <event xml:id="band_07_event_Erster_Weltkrieg">
+                    <label>Erster Weltkrieg</label>
+                    <label>1. Weltkrieg</label>
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079163-4</idno>
+                </event>
+                <event xml:id="band_07_event_Dreißigjähriger_Krieg">
+                    <label>Dreißigjähriger Krieg</label>
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/4012985-8</idno>
+                </event>
+                <event xml:id="band_07_event_Wormser_Religionsgespräche">
+                    <label>Wormser Religionsgespräche</label>
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/1092546847</idno>
+                </event>
+                  <!-- hier auch veranstaltung oder konferenz rein-->
+            </listEvent>
+    
+            <listObject xml:id="band07_entities_object">
+                <object xml:id="band_07_object_Chronik">
+                    <objectIdentifier>
+                        <objectName>Chronik</objectName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1237790557</idno>
+                    </objectIdentifier>
+                </object>
+                <object xml:id="band_07_object_Hessische_Chronica">
+                    <objectIdentifier>
+                        <objectName>Hessische Chronica</objectName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4579228-8 </idno>
+                    </objectIdentifier>
+                </object>
+            </listObject>
+    
+            <listOrg xml:id="band07_entities_org">
+                <org xml:id="band_07_org_Studentenwerk_Trier">
+                    <orgName> Studentenwerk Trier </orgName>
+                    <idno type="URI" subtype="GND">https://d-nb.info/gnd/215001-3</idno>
+                </org>
+            </listOrg>
+        </div>     
+        </back>        
     </text>
-
 </TEI>
