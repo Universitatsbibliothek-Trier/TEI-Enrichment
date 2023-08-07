@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd">
+    <!-- <TEI> -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Merian online: Index vorhandener Entitäten. </title>
+                <author>Team Merian online</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Beta draft.</edition>
+            </editionStmt>
+            <extent>
+                <!-- description of the size of the resource; we could add the amount of entitities
+                automatically when the file is updated -->
+            </extent>
+            <publicationStmt>
+                <publisher>Universitätsbibliothek Trier</publisher>
+                <pubPlace>Trier</pubPlace>
+                <date>2023</date>
+                <idno>1</idno>
+                <availability>
+                    <p>CC-0-Lizenz</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="merian_orgs">
+                <!-- information about the source from which
+                    the resource was derived, for example the entries and IDs of entitities we want to index -->
+                <listOrg xml:id="entities_org">
+                    <org xml:id="org_Elektrizitätswerk_Trier">
+                        <orgName> Elektrizitätswerk Trier </orgName>
+                        <orgName> Städtisches Elektrizitätswerk Trier </orgName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/213942-X </idno>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <note>Hier könnte eine Kurzbeschreibung stehen.</note>
+                    </org>
+                </listOrg>
+            </div>
+        </body>
+    </text>
+</TEI>

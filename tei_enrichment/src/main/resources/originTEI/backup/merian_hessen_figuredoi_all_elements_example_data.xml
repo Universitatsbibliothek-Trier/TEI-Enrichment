@@ -112,11 +112,17 @@
                     <body>
                         <pb n="3" facs="test3.jpg" />
                         <fw type="pageNum">3</fw>
-                        <figure>
+                        <figure corresp="#band_07_place_Schloss_Regensburg">
                         <head>Lorem ipsum</head>
                         <p>Lorem ipsum</p>
                         <list><item>lorem ipsum</item></list>
                         </figure>
+						<figure corresp="#band_07_art_paul_goldmann">
+                            <figDesc>
+                                <idno  type="DOI">1234</idno>
+                            </figDesc>
+						</figure>
+						<pb/>
 
                         <div type="overview">
                             <lb />
@@ -1328,6 +1334,7 @@
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/213942-X </idno>
                     </org>
                 </listOrg>
+
             </div>
         </back>
     </text>
