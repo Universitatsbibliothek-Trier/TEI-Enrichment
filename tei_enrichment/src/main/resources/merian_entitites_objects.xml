@@ -42,6 +42,7 @@
                             <objectName>Chronic</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/1237790557</idno>
                         </objectIdentifier>
+                        <link target="merian_hessen.xml#band_07"></link>
                         <note>Hier steht eine Kurzbeschreibung</note>
                     </object>
                     <object xml:id="object_Hessische_Chronica">
@@ -49,6 +50,7 @@
                             <objectName>Hessische Chronica</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4579228-8 </idno>
                         </objectIdentifier>
+                        <link target="merian_hessen.xml#band_07"></link>
                     </object>
                 </listObject>
             </div>

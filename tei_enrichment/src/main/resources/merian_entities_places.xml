@@ -36,7 +36,7 @@
                 <!-- information about the source from which
                     the resource was derived, for example the entries and IDs of entitities we want to index -->
                 <listPlace xml:id="entities_place">
-                    <place xml:id="place_Nassau" type="staat">
+                    <place xml:id="place_Nassau" type="memberstate">
                         <placeName>Nassau</placeName>
                         <placeName>Staat Nassau </placeName>
                         <placeName>Herzogtum Nassau </placeName>
@@ -46,7 +46,8 @@
                             <region>Hessen</region>
                             <geo>50.3167 7.8</geo>
                         </location>
-                        <note>Hier könnte eine Kurzbeschreibunge stehen</note>
+                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
+                        <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4041265-9</idno>
                     </place>
                     <place xml:id="place_Schloss_Regensburg" type="memorial">
@@ -56,6 +57,9 @@
                             <region>Bayern</region>
                             <geo>12.095560 49.015000</geo>
                         </location>
+                        <link target="merian_hessen.xml#band_07_art_Schloss_Regensburg" />
+                        <link target="merian_hessen.xml#band_07_figure_001_01" />
+                        <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/7695021-9</idno>
                     </place>
                     <place xml:id="place_Regensburg" type="place">
@@ -76,21 +80,32 @@
                             <region>Bayern</region>
                             <geo>48.92194 11.6819</geo>
                         </location>
+                        <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4048989-9</idno>
                     </place>
-                    <place xml:id="place_Schloss_Grüningen">
+                    <place xml:id="place_Schloss_Grüningen" type="memorial">
                         <placeName>Schloss Grüningen </placeName>
                         <location>
                             <region>Kanton Zürich</region>
                         </location>
+                        <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4583907-4</idno>
                     </place>
-                    <place xml:id="place_Schloss_Hexenagger">
+                    <place xml:id="place_Schloss_Hexenagger" type="memorial">
                         <placeName>Schloss Hexenagger</placeName>
                         <location>
                             <region>Bayern</region>
                             <geo>011.686170 48.920580</geo>
                         </location>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4260868-5</idno>
+                    </place>
+                    <place xml:id="place_Deutschland" type="country">
+                        <placeName>Deutschland</placeName>
+                        <location>
+                            <geo>010.500000 051.500000</geo>
+                        </location>
+                        <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4260868-5</idno>
                     </place>
                 </listPlace>

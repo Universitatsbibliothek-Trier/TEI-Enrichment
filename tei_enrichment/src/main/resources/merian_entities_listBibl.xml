@@ -32,32 +32,17 @@
     </teiHeader>
     <text>
         <body>
-            <div xml:id="merian_persons">
+            <div xml:id="merian_listBibl">
                 <!-- information about the source from which
                     the resource was derived, for example the entries and IDs of entitities we want to index -->
-                <listPerson xml:id="entities_person">
-                    <person xml:id="person_Paul_Goldmann" role="wirtschaftswissenschaftler">
-                        <persName> Paul Goldmann </persName>
-                        <persName> Saul Goldmann </persName>
-                        <persName> Saul Goodman </persName>
-                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
-                        <birth when="1755"/>
-                        <death when="1824"/>
-                        <link target="merian_hessen.xml#band_07_art_paul_goldmann" />
-                        <link target="merian_hessen.xml#band_07_art_some_5" />
+                <listBibl xml:id="entities_listBibl">
+                    <bibl xml:id="listBibl_der_Sandmann">
+                        <title>Der Sandmann</title>
+                        <note>Inhalt: Der Sandmann erzählt in selbstreferenzieller Brechung (Anrede des Erzählers an den Leser, Reflexion über mögliche Erzähltechniken, Briefmontage) das Abgleiten des Studenten Nathanael in den Wahnsinn, wobei die Polyperspektivität des Erzählens die Unterscheidung zwischen gesunder und kranker Wahrnehmung relativiert. </note>
                         <link target="merian_hessen.xml#band_07"></link>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1205814876</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q3138</idno>
-                    </person>
-
-                    <person xml:id="person_O_Kelly" role="könig">
-                        <persName> O'Kelly </persName>
-                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
-                        <link target="merian_hessen.xml#band_07"></link>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1062805615 </idno>
-                    </person>
-                    <!-- hier auch familie -->
-                </listPerson>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4198693-3</idno>
+                    </bibl>   
+                </listBibl>
             </div>
         </body>
     </text>

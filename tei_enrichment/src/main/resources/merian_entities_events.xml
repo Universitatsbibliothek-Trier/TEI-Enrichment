@@ -45,7 +45,7 @@
                         </desc>
                         <note>Hier steht eine kurze Beschreibung des Events.</note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079163-4</idno>
-                        <link target="#band_07"></link>
+                        <link target="merian_hessen.xml#band_07"></link>
                     </event>
                     <event xml:id="event_Dreißigjähriger_Krieg">
                         <label>Dreißigjähriger Krieg</label>
@@ -54,7 +54,7 @@
                             <date to="1648"/>
                         </desc>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4012985-8</idno>
-                        <link target="#band_07"></link>
+                        <link target="merian_hessen.xml#band_07"></link>
                     </event>
                     <event xml:id="event_Wormser_Religionsgespräche">
                         <label>Wormser Religionsgespräche</label>
@@ -62,7 +62,7 @@
                             <date when="1914"/>
                         </desc>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1092546847</idno>
-                        <link target="#band_07"></link>
+                        <link target="merian_hessen.xml#band_07"></link>
                     </event>
                     <!-- hier auch veranstaltung oder konferenz-->
                 </listEvent>

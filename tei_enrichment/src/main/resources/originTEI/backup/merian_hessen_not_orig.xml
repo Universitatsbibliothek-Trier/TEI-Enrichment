@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd">
     <teiHeader>
         <fileDesc>
@@ -44,67 +43,76 @@
     </teiHeader>
     <text>
         <front>
-
-            <pb n="[1]" />
+            <pb n="1" facs="DOI.jpg"/>
             <div type="frontispiece">
                 <figure />
-                <p><lb />TOPOGRAPHIA <lb />Hassiæ et Regionum Vici⸗ <lb />narum. <lb />Das iſt <lb />Beſchreibung
+                <p><lb />TOPOGRAPHIA <lb /><name ref="https://d-nb.info/gnd/4240073-9">Hassiæ</name> et Regionum Vici⸗ <lb />narum. <lb />Das iſt <lb />Beſchreibung
                     der <choice>
                         <abbr>vornẽb⸗ſten<lb /></abbr>
                         <expan>vornemb⸗ſten<lb /></expan>
                     </choice> Stätte vnd
-                    Plätze in <lb />Heſſen / vnd den benachbahꝛten <lb />Landtſchaften / als Buchen
-                    / Naſſau <lb />Wetteraw / Weſterwaldt / Wittgen <lb />ſtein / Lohngaw / vnd
-                    andern. <lb />Franckfurt durch <lb /> Matt <lb />Merian.</p>
+                    Plätze in <lb /><name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> / vnd den benachbahꝛten <lb />Landtſchaften / als <name ref="https://d-nb.info/gnd/4371007-4!!!">Buchen</name>
+                    / <name ref="https://d-nb.info/gnd/4203270-2">Naſſau</name> <lb /><name ref="https://d-nb.info/gnd/4065855-7">Wetteraw</name> / <name ref="https://d-nb.info/gnd/4065773-5">Weſterwaldt</name> / <name ref="https://d-nb.info/gnd/4350182-5">Wittgen <lb />ſtein</name > / <name ref="???">Lohngaw</name> / vnd
+                    andern. <lb /><name ref="https://d-nb.info/gnd/4018118-2">Franckfurt</name> durch <lb /> <name ref="https://d-nb.info/gnd/118581090"><choice><abbr>Matt</abbr><expan>Matthaeus</expan></choice> <lb />Merian</name>.</p>
             </div>
-
-            <pb n="[2]" />
+            <pb n="2" facs="DOI.jpg"/>
+            <pb n="3" facs="DOI.jpg"/>
             <titlePage type="main">
                 <figure />
                 <lb />
                 <docTitle>
-                    <titlePart type="main">M. Z. <lb />TOPOGRAPHIA <lb />HASSIÆ, <lb />ET REGIONUM <lb />
+                    <titlePart type="main"><name ref="https://d-nb.info/gnd/118772392"><choice><abbr>M. Z.</abbr><expan>Martin Zeiller</expan></choice></name> <lb />TOPOGRAPHIA <lb /><name ref="https://d-nb.info/gnd/4240073-9">HASSIÆ</name>, <lb />ET REGIONUM <lb />
                         VICINARUM</titlePart>
                     <lb />
-                    <titlePart type="sub">Das iſt: <lb />Beſchreibung und eigentliche Abbildung der <lb />vornehmſten
-                        Staͤdte und Plaͤtze in Heſſen / und denen be⸗ <lb />nachbarten Landſchafften
-                        / als Buchen / Wetterau / Weſter⸗ <lb />wald / Loͤhngau / Naſſau / Solms /
-                        Hanau / Witgenſtein / <lb />und andern.</titlePart>
+                    <titlePart type="desc">Das iſt: <lb />Beſchreibung und eigentliche Abbildung der <lb />vornehmſten
+                        Staͤdte und Plaͤtze in <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> / und denen be⸗ <lb />nachbarten Landſchafften
+                        / als <name ref="https://d-nb.info/gnd/4371007-4">Buchen</name> / <name ref="https://d-nb.info/gnd/4065855-7">Wetterau</name> / <name ref="https://d-nb.info/gnd/4065773-5">Weſter⸗ <lb />wald</name> / <name ref="???">Loͤhngau</name> / <name ref="https://d-nb.info/gnd/4203270-2">Naſſau</name> / <name ref="https://d-nb.info/gnd/4528964-5">Solms</name> /
+                        <name ref="https://d-nb.info/gnd/4023202-5">Hanau</name> / <name ref="https://d-nb.info/gnd/4350182-5">Witgenſtein</name> / <lb />und andern.</titlePart>
                 </docTitle>
                 <lb />
-                <byline>Jn dieſer andern Edition mit ſonderm Fleiß durchgangen / <lb />von vorigen
-                    Fehlern corrigirt / gebeſſert <lb />und vermehret.</byline>
+                <docEdition>Jn dieſer andern Edition mit ſonderm Fleiß durchgangen / <lb />von vorigen
+                    Fehlern corrigirt / gebeſſert <lb />und vermehret.</docEdition>
                 <lb />
-                <docImprint><pubPlace>Franckfurt am Mayn /</pubPlace>
+                <docImprint><pubPlace><name ref="https://d-nb.info/gnd/4018118-2">Franckfurt am Mayn</name> /</pubPlace>
                     <lb /><publisher>Zum Truck
-                    verlegt von denen Merianiſchen Erben.</publisher>
-                        <lb /><docDate>Jm Jahr M DC LV.</docDate></docImprint>
+                    verlegt von denen <name ref="https://d-nb.info/gnd/6009670-6">Merianiſchen Erben</name>.</publisher>
+                        <lb /><docDate>Jm Jahr <num value="1655">M DC LV</num>.</docDate></docImprint>
             </titlePage>
+            <pb n="4" facs="DOI.jpg"/>
+            <pb n="5" facs="DOI.jpg"/>
+            <pb n="6" facs="DOI.jpg"/>
+            <figure xml:id="stichID"><graphic url="stichDOI.jpg"/></figure>
+            <pb n="7" facs="DOI.jpg"/>
         </front>
         <body>
-            <pb n="3" />
+            <pb n="8" facs="DOI.jpg"/>
             <fw type="pageNum">3</fw>
             <figure />
 
             <div type="overview">
                 <lb />
-                <head>Beſchreibung der vornehmſten Staͤdte und <lb />Plaͤtze in Heſſen / und den
-                    benachbarten Landſchafften / <lb />als Buchen / Naſſau / Wetterau / Weſterwald /
-                    Wittgen⸗ <lb />ſtein / Loͤhngau / und andern.</head>
+                <head>Beſchreibung der vornehmſten Staͤdte und <lb />Plaͤtze in <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> / und den
+                    benachbarten Landſchafften / <lb />als <name ref="https://d-nb.info/gnd/4371007-4">Buchen</name> / <name ref="https://d-nb.info/gnd/4203270-2">Naſſau</name> / <name ref="https://d-nb.info/gnd/4065855-7">Wetterau</name> / <name ref="https://d-nb.info/gnd/4065773-5">Weſterwald</name> /
+                    <name ref="https://d-nb.info/gnd/4350182-5">Wittgen⸗ <lb />ſtein</name> / <name ref="???">Loͤhngau</name> / und andern.</head>
                 <lb />
-                <p>ES gehoͤren in den Hochloͤblichen Ober⸗Rheiniſchen <lb />Creyß / (deſſen
-                    ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ <lb />ſchoff zu Wormbs und der
-                    Herr Pfaltzgraf Ludwig Philips <lb />zu Simmern ꝛc. ſeynd /) die Biſchoͤffe von
-                    Worms / Speyer / <lb />Straßburg / Baſel / Biſantz / Sitten / Loſanna / Metz /
-                    Tull / <lb />Verdun / und Genff; der Hochmeiſter des Johanniter Ordens / <lb />die
-                    Pfaltzgrafen / wegen der Graffſchafft Spanheim / Zwey⸗ <lb />bruͤcken / und
-                    Veldentz; die Landgraffen in Heſſen; die Hertzoge in Lothringen; die <lb />Hertzoge
-                    in Savoja; die Aebte von Fulda / Hirſchfeld oder Herßfeld / Murbach / Muͤn⸗ <lb />ſter
-                    in S. Gregorienthal / und Pfriem im Bißthum Chur: die Abtißin von Kauffin⸗ <lb />gen;
-                    die Proͤbſte zu Weiſſenburg / und Odenheim; die Graffen und Herren von <lb />Naſſau⸗Sarbruͤcken;
-                    die Wetterauiſche Graffen; die Rheingraffen; die von Falcken⸗ <lb />ſtein; von
-                    Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein / Moͤrsburg / <lb />Rapoltſtein
-                    / Rapoltzkirch / ꝛc. Die Adeliche Collegia zu Gelnhauſen / und Friedberg: <lb />Die
+                <p>ES gehoͤren in den Hochloͤblichen <name ref="https://d-nb.info/gnd/4116701-6 https://d-nb.info/gnd/115497773">Ober⸗Rheiniſchen <lb />Creyß</name> / (deſſen
+                    ausſchreibende Fuͤrſten dieſer Zeit der Herr <rs ref="https://d-nb.info/gnd/143236229">Bi⸗ <lb />ſchoff zu <name ref="https://d-nb.info/gnd/4119173-0">Wormbs</name></rs> und der
+                    Herr <name ref="https://d-nb.info/gnd/115497773">Pfaltzgraf Ludwig Philips <lb />zu <name ref="https://d-nb.info/gnd/4055044-8">Simmern</name></name> 
+                    <choice>
+                                <orig>ꝛc.</orig>
+                                <reg>etc.</reg>
+                    </choice>
+                     ſeynd /) die Biſchoͤffe von
+                    <name ref="https://d-nb.info/gnd/4119173-0">Worms</name> / <name ref="https://d-nb.info/gnd/4118751-9">Speyer</name> / <lb /><name ref="https://d-nb.info/gnd/4118847-0">Straßburg</name> / <name ref="https://d-nb.info/gnd/4080275-9">Baſel</name> / <name ref="???">Biſantz</name> / <name ref="???">Sitten</name> / <name ref="???">Loſanna</name> / <name ref="https://d-nb.info/gnd/4811504-6">Metz</name> /
+                    <name ref="https://d-nb.info/gnd/4845243-9">Tull</name> / <lb /><name ref="https://d-nb.info/gnd/4451221-1">Verdun</name> / und <name ref="???">Genff</name>; der <rs ref="https://d-nb.info/gnd/117068233">Hochmeiſter des <name ref="https://d-nb.info/gnd/4168735-8">Johanniter Ordens</name></rs> / <lb />die
+                    Pfaltzgrafen / wegen der <name ref="https://d-nb.info/gnd/4105499-4">Graffſchafft Spanheim</name> / <name ref="https://d-nb.info/gnd/4045464-2">Zwey⸗ <lb />bruͤcken</name> / und
+                    <name ref="https://d-nb.info/gnd/4304148-6">Veldentz</name>; die Landgraffen in <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name>; die Hertzoge in <name ref="???">Lothringen</name>; die <lb />Hertzoge
+                    in <name ref="https://d-nb.info/gnd/4051850-4">Savoja</name>; die Aebte von <name ref="https://d-nb.info/gnd/4086566-6">Fulda</name> / <name ref="https://d-nb.info/gnd/5118765-6!!!">Hirſchfeld</name> oder <name ref="https://d-nb.info/gnd/5118765-6">Herßfeld</name> / <name ref="https://d-nb.info/gnd/4335900-0">Murbach</name> / <name ref="https://d-nb.info/gnd/4497639-2">Muͤn⸗ <lb />ſter
+                    in <name ref="???"><choice><abbr>S.</abbr><expan>Sankt</expan></choice> Gregorienthal</name></name> / und <name ref="https://d-nb.info/gnd/4224267-8" cert="high">Pfriem</name> im <name ref="https://d-nb.info/gnd/4060882-7" cert="high">Bißthum Chur</name><note>Bei Pfriem im Bistum Chur dürfte es sich um einen Überlieferungsfehler handeln</note>: die <rs ref="???">Abtißin von <name ref="https://d-nb.info/gnd/507241-4!!!">Kauffin⸗ <lb />gen</name></rs>;
+                    die Proͤbſte zu <name ref="https://d-nb.info/gnd/4498043-7">Weiſſenburg</name> / und <name ref="https://d-nb.info/gnd/4724937-7">Odenheim</name>; die Graffen und Herren von <lb /><name ref="https://d-nb.info/gnd/4115343-1">Naſſau⸗Sarbruͤcken</name>;
+                    die <name ref="https://d-nb.info/gnd/4065855-7">Wetterauiſche</name> Graffen; die <name ref="https://d-nb.info/gnd/143317822">Rheingraffen</name>; die von <name ref="https://d-nb.info/gnd/4844580-0">Falcken⸗ <lb />ſtein</name>; von
+                    <name ref="???">Bitſch</name>; <name ref="https://d-nb.info/gnd/4023202-5">Hanau</name>; <name ref="https://d-nb.info/gnd/7762999-1">Salm</name>; <name ref="https://d-nb.info/gnd/16118171-5">Leiningen</name> / <name ref="https://d-nb.info/gnd/10181398-3">Eyſenburg</name> / <name ref="https://d-nb.info/gnd/4350182-5">Witgenſtein</name> / <name ref="???">Moͤrsburg</name> / <lb /><name ref="https://d-nb.info/gnd/4116909-8">Rapoltſtein</name>
+                    / <name ref="https://d-nb.info/gnd/4728262-9">Rapoltzkirch</name> / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Die Adeliche Collegia zu <name ref="???">Gelnhauſen</name> / und <name ref="???">Friedberg</name>: <lb />Die
                     Staͤdte Baſel / Keyſerſperg / Tuͤrckheim / Muͤnſter in S. Gregorienthal; Ober⸗ <lb />Ehenheim
                     / Colmar / Straßburg / Roßheim / Schlettſtatt / Hagenau / Cron⸗Weiſſen⸗ <lb />burg
                     / Landau / Muͤlhauſen im Sundgoͤw / Speyer / Wormbs / Franckfurt / Fried⸗ <lb />berg
@@ -112,14 +120,14 @@
                     gleichwol nunmehr ſich viel befinden / die eximirt werden: als die Biſchoͤffe <lb />zu
                     Sitten / Loſann / Metz / Tull / Verdun / und Genff: der Abt zu Pfriem / im Biß⸗ <lb />thum
                     Chur: die Graffſchafft Bitſch: die Staͤdte / Baſel / Muͤlhauſen im Sundgoͤw / <lb />Metz
-                    / Tull / Verdun / Kauffmans⸗Sarbruͤck / Genff / ꝛc. Von welchen zum Theil in <lb />Beſchreibung
+                    / Tull / Verdun / Kauffmans⸗Sarbruͤck / Genff / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Von welchen zum Theil in <lb />Beſchreibung
                     des Schweitzerlands / des Elſaß / der Untern⸗Pfaltz / (daſelbſten auch <lb />Savoja
                     / Lothringen / Biſantz / Metz / Tull / Verdun / Bitſch / und Kauffmans⸗Sar⸗ <lb />bruͤck
                     / einkommen ſeyn) und des Chur⸗und Unter⸗Rheiniſchen Creyſes / allbereit <lb />von
                     uns moͤglicher / und gebuͤhrender Bericht / geſchehen. Die uͤbrige aber / und
                     ihre <lb />vornehmſte und bekanteſte Staͤdte und Orthe ſollen in dieſem Tractat
                     eingebracht <lb />werden; wie auch Gelnhauſen / und die Graffſchafft
-                    Naſſau⸗Beylſtein / ꝛc. ſo ſonſten <lb />zum Nieder⸗Rheiniſchen Creyß gehoͤrig
+                    Naſſau⸗Beylſtein / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> ſo ſonſten <lb />zum Nieder⸗Rheiniſchen Creyß gehoͤrig
                     ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten <lb />zum Weſtphaͤliſchen Creyß
                     gezogen wird. <lb />Und erſtlich zwar / was das hochloͤbliche Fuͤrſtenthum und
                     Landgraffſchafft Heſſen <lb />anbelangt / ſo hat Wilhelm Dilich eine Chronic
@@ -130,7 +138,7 @@
                     Maͤyntziſche Staͤdte und Schloͤſſer; die Graffſchafften Koͤ⸗ <fw type="catch">nigſtein
                     /</fw>
                     <fw type="sig">A 2</fw>
-                    <pb n="[4]" />
+                    <pb n="9" facs="DOI.jpg"/>
                     <fw type="pageNum"><choice>
                             <sic>2</sic>
                             <corr>4</corr>
@@ -196,7 +204,7 @@
                     und Maſt. Der Reinhards⸗Wald unter Caſſel / nacher dem Braunſchwei⸗ <lb />ger⸗Land
                     gelegen / faͤhet bey Jmmenhauſen an / und hat in der Laͤnge und Breite <fw
                         type="catch">bey</fw>
-                    <pb n="5" />
+                    <pb n="10" facs="DOI.jpg"/>
                     <fw type="pageNum">5</fw>
                     <fw type="header">in
                     Heſſen und den benachbarten Landen.</fw>
@@ -260,7 +268,7 @@
                     nicht gar weit ober der Stadt Fulda / laufft foͤrters durchs Stifft <fw
                         type="catch">Hirſch⸗</fw>
                     <fw type="sig">A 3</fw>
-                    <pb n="6" />
+                    <pb n="11" facs="DOI.jpg"/>
                     <fw
                         type="pageNum">6</fw>
                     <fw type="header">Beſchreibung der vornehmſten Orth</fw>
@@ -320,10 +328,10 @@
                     / daß man bey den letzten Scriptoribus Romanis, als Marcellino, Eutropio, Zo- <lb />ſimo,
                     Panegyricis, mit keinem Wort mehr derſelben Meldung befindet; ſonder <lb />Zweiffel
                     / weil andere Voͤlcker / ſonderlich die Alemanni, und Franci, ſich erha⸗ <lb />ben
-                    / ꝛc. und ihre Namen in acceſſionem validioris convertirt worden: Und ſagen <lb />Franciſcus
+                    / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> und ihre Namen in acceſſionem validioris convertirt worden: Und ſagen <lb />Franciſcus
                     Irenicus, Andreas Althamerus, und Iacobus Curio, daß die Catti, <fw type="catch">
                     Cheruſci,</fw>
-                    <pb n="7" />
+                    <pb n="12" facs="DOI.jpg"/>
                     <fw type="pageNum">7</fw>
                     <fw type="header">in Heſſen
                     und andern benachbarten Landen.</fw>
@@ -386,7 +394,7 @@
                     dann ſolche Veraͤnderung auch im Wort Waſſer findet / ſo die Nieder⸗Teut⸗ <lb />ſchen
                     Watter nennen. Beſehet ihn / den Cluverium lib. 2. Antiquæ Germaniæ <fw
                         type="catch">cap. 19.</fw>
-                    <pb n="8" />
+                    <pb n="13" facs="DOI.jpg"/>
                     <fw type="pageNum">8</fw>
                     <fw
                         type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
@@ -452,7 +460,11 @@
                     die Cattos gehoͤren. Gegen Mitternacht thun ſich herfuͤr die Montes <lb />Obnobii,
                     jetzt das Heßiſch Gebuͤrg genandt / Angrivaria, Chamauni und gantz Weſt⸗ <fw
                         type="catch">phalen</fw>
-                    <pb n="9" />
+                    <pb n="14" facs="DOI.jpg"/>
+                    <pb n="15" facs="DOI.jpg"/>
+                    <figure xml:id="stichID1"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="16" facs="DOI.jpg"/>
+                    <pb n="17" facs="DOI.jpg"/>
                     <fw type="pageNum">9</fw>
                     <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -490,7 +502,7 @@
                     oder zu Darmſtadt in der Graffſchafft Catzenelenbogen; und die an⸗ <lb />der zu
                     Caſſel / der Hauptſtadt in Nieder⸗Heſſen; davon bey Beſchreibung ſelbiger <lb />Staͤdte
                     wieder etwas geſagt werden wird. <lb />Es ſeynd Heſſen incorporirt folgende
-                    Graffſchafften / ꝛc. 1. Catzenelenbogen / ſo <lb />von den Cattimelibocis, die
+                    Graffſchafften / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> 1. Catzenelenbogen / ſo <lb />von den Cattimelibocis, die
                     in dieſer Gegend / und foͤrters an der Bergſtraſſen / und um <lb />Heydelberg
                     etwan gewohnet / ihren Namen bekommen haben. Wird in die Ober <lb />und Niedere
                     Graffſchafft getheilet / darinnen die vornehmſte Staͤdte / und Orte ſeyn / <lb />Darmſtadt
@@ -517,7 +529,7 @@
                     guͤldene Grafſchafft genannt worden / ſo vorhin eigene Her⸗ <fw type="catch">ren</fw>
                     <fw
                         type="sig">B</fw>
-                    <pb n="10" />
+                    <pb n="18" facs="DOI.jpg"/>
                     <fw type="pageNum">10</fw>
                     <fw type="header">Beſchreibung
                     der vornehmſten Orth</fw>
@@ -579,7 +591,7 @@
                     Herren von Franckenſtein fuͤhrten auch einen Loͤwen / mit einem ver⸗ <lb />kehrten
                     Halſe / die baueten hernach zu den Gezeiten / als die Koͤnige zu <fw
                         type="catch">Franck⸗</fw>
-                    <pb n="11" />
+                    <pb n="19" facs="DOI.jpg"/>
                     <fw type="pageNum">11</fw>
                     <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -642,7 +654,7 @@
                     / alle dieſe Strittigkeiten / und Jrrungen / mit beyder Theil Be⸗ <fw
                         type="catch">lieben /</fw>
                     <fw type="sig">B 2</fw>
-                    <pb n="12" />
+                    <pb n="20" facs="DOI.jpg"/>
                     <fw
                         type="pageNum">12</fw>
                     <fw type="header">Beſchreibung der vornehmſten Orth</fw>
@@ -671,12 +683,12 @@
                     bleiben / gelaſſen / und obſervirt werden ſolle. <lb />Und dieweil zwiſchen
                     denen beſagten beyden Hauptlinien / verwichene Jahr groſſe <lb />Uneinigkeit /
                     und gar ein offentlicher Krieg geweſen / und aber derſelbe / durch Unter⸗ <lb />handlung
-                    Jhr Fuͤrſtl. Durchleucht / Herrn Ernſten / Hertzogen zu Sachſen / ꝛc. des Jahrs <lb />1648.
+                    Jhr Fuͤrſtl. Durchleucht / Herrn Ernſten / Hertzogen zu Sachſen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> des Jahrs <lb />1648.
                     den 14. 24. Aprilis / zu Caſſel / beygelegt worden; wie ſolcher Vergleich in dem <lb />6.
                     Theil des Theatri Europæi, p. 414. ſeqq. voͤllig zu leſen; Als iſt derſelbe
                     hierauf durch <lb />den General⸗zu Oßnabrug / und Muͤnſter / gemachten
                     Frieden⸗Schluß / auch confir⸗ <lb />mirt worden. S. artic. 15. §. quod
-                    Controverſias. <lb />Jhre Roͤm. Kaͤyſ. Maͤyeſt. ꝛc. Herr Ferdinand der Ander /
+                    Controverſias. <lb />Jhre Roͤm. Kaͤyſ. Maͤyeſt. <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Herr Ferdinand der Ander /
                     haben der Darmſtaͤdti⸗ <lb />ſchen Linie dieſe Freyheit ertheilt / daß der
                     Regierende Fuͤrſt / ſo balden Er das 18. Jahr <lb />ſeines Alters ergaͤntzet /
                     gleich wie die Churfuͤrſten / die Regierung ſeines Landes uͤber <lb />ſich
@@ -702,11 +714,11 @@
                     hat Anno 1647. zur Ehe bekommen Herrn Carl Heinrichen <lb />von Thouars,
                     Printzen von Tarente, und Talmont: Ein andere aber / namlich Fr. Char- <lb />lotta,
                     ſo Anno 1627. den 20. Novembris / gebohren / iſt Anno 50. den 12. 22. Hornung / <lb />Jhr
-                    Durchl. Herrn Churfuͤrſt Carl Ludwigen / Pfaltzgrafen bey Rhein ꝛc. <lb />ehelich
+                    Durchl. Herrn Churfuͤrſt Carl Ludwigen / Pfaltzgrafen bey Rhein <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />ehelich
                     beygelegt worden. 3. Herrn Landgraf Hermann / ſo Anno 1607. den 14. Au⸗ <lb />guſti
                     / gebohren / zu Rotenburg Hof haͤlt / in der erſten Ehe / Fr. Sophien Julianen / <fw
                         type="catch">Graͤfin</fw>
-                    <pb n="13" />
+                    <pb n="21" facs="DOI.jpg"/>
                     <fw type="pageNum">13</fw>
                     <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -731,12 +743,12 @@
                     Sophia Eleonora / Herrn Churfuͤrſten Jo⸗ <lb />hann Georgen zu Sachſen Fr.
                     Tochter / ehelichen erzeugt / Herrn L. Ludwigen Anno <lb />30. den 25. Jenner /
                     (ſo Anno 1650. zu Gottorff / im Schleßwiggiſchen / mit Fr. Maria <lb />Eliſabeth
-                    / Herrn Friderichs zu Schleßwigg / und Holſtein / Hertzogens / ꝛc. Fr. Tochter / <lb />Ehelich
+                    / Herrn Friderichs zu Schleßwigg / und Holſtein / Hertzogens / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Fr. Tochter / <lb />Ehelich
                     Beylager gehalten / ) Fr. Magdal. Sibyllen / Anno 31. Herrn L. Georgen / <lb />Anno
                     32. den 29. Sept. wie Goldmeyer / oder Anno 33. wie ein anderer will / Fr. So⸗ <lb />phien
                     Eleonoren / Herrn Landgrafen Wilhelm Chriſtophen zu Homburg Gemahlin / <lb />An.
                     34. Fr. Eliſabethen Amalien / An. 35. und Frau Lodovicen Chriſtinen / Herrn Phi⸗ <lb />lip
-                    Wilhelms / Pfaltzgrafens bey Rhein / Neuburg / ꝛc. Frauen Gemahlin / Anno 36. <lb />ohne
+                    Wilhelms / Pfaltzgrafens bey Rhein / Neuburg / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Frauen Gemahlin / Anno 36. <lb />ohne
                     die / ſo geſtorben. 2. Herrn Landgrafen Johann / Anno 1609. den 17. <lb />Brachmonats
                     / gebohren / und Anno 1651. im Aprilen / ohne Mannliche Leibs⸗Erben / <lb />geſtorben.
                     Seine geweſte Gemahlin / Frau Johannete / gebohrne Graͤfin zu Sayn / <lb />und
@@ -769,7 +781,7 @@
                     berichtet worden / Herrn Philips Ludwigen / Herrn <fw type="catch">Alexan⸗</fw>
                     <fw
                         type="sig">B 3</fw>
-                    <pb n="14" />
+                    <pb n="22" facs="DOI.jpg"/>
                     <fw type="pageNum">14</fw>
                     <fw type="header">Beſchreibung
                     der vornehmſten Orth</fw>
@@ -822,7 +834,7 @@
                     Graffſchafft Naſſau / als <lb />ein groß und weitlaͤuffiges auff beyden Seiten
                     der Loͤhn gelegenes Land / etliche andere <lb />anhangende Graffſchafften / als
                     Weilburg / Jdtſtein / Wißbaden / Dillenberg / <lb />Beilſtein / Gleiberg / Sigen
-                    / Hadamar / ꝛc. Und ſeyn der Graffen von Naſſau Catzen⸗ <lb />elenbogen / oder
+                    / Hadamar / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Und ſeyn der Graffen von Naſſau Catzen⸗ <lb />elenbogen / oder
                     Dillenberg / (darunder begriffen / Beilſtein / Dillenberg / Sigen / Ha⸗ <lb />damar
                     / und Dietz) Grentzen gegen Mittag die Graffſchafft Wißbaden / und Jdtſtein; <lb />vom
                     Morgen Weilburg / und Solms / ſampt Heſſen; gegen Mitternacht Weſtpha⸗ <lb />len
@@ -830,7 +842,11 @@
                     die Graffſchafften Wied / Weſterburg / Trieriſche Orth / und Seyn. Haben <lb />viel
                     Vogtheyen / die vom Petro Bertio lib. 2. Comment. Rerum Germanic. <fw
                         type="catch">cap. 24.</fw>
-                    <pb n="15" />
+                    <pb n="23" facs="DOI.jpg"/>
+                    <pb n="24" facs="DOI.jpg"/>
+                    <figure xml:id="stichID2"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="25" facs="DOI.jpg"/>
+                    <pb n="26" facs="DOI.jpg"/>
                     <fw type="pageNum">15</fw>
                     <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -864,7 +880,7 @@
                     / und der Calmberg; darinnen es ſtattliche Jagten giebt. Die fuͤrnehmſte Waſ⸗ <lb />ſer
                     ſeyn / die Lohn / Sige / und Dille / an welchen feine luſtige Staͤdtlein liegen
                     / als an <lb />der Sig / Sigen; an der Dill / Haͤger / Dillenberg / Herborn; und
-                    an der Lohn / Dietz / ꝛc. <lb />Das Embſerbad haben die Herren Graffen von
+                    an der Lohn / Dietz / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />Das Embſerbad haben die Herren Graffen von
                     Naſſau⸗Dillenberg mit den Herrn <lb />Landgraffen zu Heſſen insgemein. Es giebt
                     auch Sauerbroͤnn in dieſer Lands⸗Art / <lb />als zur Johannsburg / Camberg /
                     Embs / und bey Dauſſenau / welche getruncken den <lb />Stein aus dem Leib
@@ -879,7 +895,7 @@
                     ſolchem Lande gelegen / ſo dem Heil. Roͤmiſchen Reich ohne Mittel zugethan ſeyn
                     / <lb />und in des Reichs Matricul zum Rheiniſchen Creyſe gerechnet / und die
                     Wetteraui⸗ <lb />ſche Graffen genannt werden; als da ſeyn die Graffen von Naſſau
-                    / Hanau / Solms / <lb />Eiſenburg / Sayn / Witgenſtein / und Wiedt / ꝛc. Es
+                    / Hanau / Solms / <lb />Eiſenburg / Sayn / Witgenſtein / und Wiedt / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Es
                     liegt darin ein ziemlich weiter <lb />Strich / die Fuldiſche Marck genannt / ſo
                     der 57. Abt zu Fulda / Hermann von Bu⸗ <lb />chenau / den Graffen von Naſſau
                     erblich verkaufft / von welchen ſelbige fuͤrters an <lb />Herrn Landgraff
@@ -893,7 +909,7 @@
                     die Graffſchafft Koͤnigſtein liegt. Die Wetterauiſche Grentz und Laͤn⸗ <lb />der
                     ſind ohne Meldung des Autoris, in 4. beſchrieben; deſſen Autor aber iſt der <fw
                         type="catch">vorneh⸗</fw>
-                    <pb n="16" />
+                    <pb n="27" facs="DOI.jpg"/>
                     <fw type="pageNum">16</fw>
                     <fw
                         type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
@@ -908,7 +924,7 @@
                     Odenwald / darin Trebur / Langen / Sprendlingen oder <lb />Sprenglingen / Gerau
                     / Lorß / Benßheim / gelegen / das Rinckgau / oder Pagus Rhe- <lb />nenſis,
                     geheiſſen; wie obangezogener Autor des Hiſtoriſchen Berichts von der Wet⸗ <lb />terau
-                    / Rinckau / Weſterwald / Loͤhngau / Hayrich / ꝛc. meldet. <lb />V. Weſterwald /
+                    / Rinckau / Weſterwald / Loͤhngau / Hayrich / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> meldet. <lb />V. Weſterwald /
                     von deme ſchreibt jetztgemelter Autor alſo: Uber die Lohn liegt <lb />ein groß
                     Land und Stuͤck des alten Nemoris Hercinii, ſo heutigs Tags der Weſter⸗ <lb />wald
                     / oder Sylva Heſperia, genannt wird / und vor Zeiten von den Bructeris beſeſſen <lb />worden
@@ -942,9 +958,9 @@
                     / Braunsberg / Bureberg / (nemlich obgemeltes Cloſter Marienſtadt <lb />an der
                     Niſter / ſo vorhin ein Schloß / das man mit der Zeit auch Vroneck genannt hat / <lb />geweſen
                     iſt / ) Camperg / Cronberg / Friedberg / Freußſperg / Gliberg / Jſenberg / <lb />Kirperg
-                    / Molſperg / Stauffenberg / ꝛc. Theils haben auch von den Felſen / und Stei⸗ <lb />nen
+                    / Molſperg / Stauffenberg / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Theils haben auch von den Felſen / und Stei⸗ <lb />nen
                     ihre Nahmen / als Braunfels / Drachenfels / Arenſtein / Ehrenbreitſtein /
-                    Helffen⸗ <lb />ſtein / Koͤnigſtein / Greiffenſtein / Witgenſtein / ꝛc. darunter
+                    Helffen⸗ <lb />ſtein / Koͤnigſtein / Greiffenſtein / Witgenſtein / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> darunter
                     viel Pfaͤltziſche Lehen / ſo <lb />die von Naſſau / Jſenburg / und andere / auch
                     die Ritterſchafft traͤgt; item etliche gan⸗ <lb />tze Graffſchafften / als Seyn
                     / Wied / Solms / und andere. Und hat Churfuͤrſt Ludwig / <lb />Pfaltzgraff / die
@@ -955,7 +971,7 @@
                     Geburts⸗Linie herſtammen. Es grentzet aber <lb />VI. Die Graffſchafft
                     Witgenſtein mit der Graffſchafft Naſſau⸗Dillenberg / <fw type="catch">der</fw>
                     <pb
-                        n="17" />
+                        n="28" facs="DOI.jpg"/>
                     <fw type="pageNum">17</fw>
                     <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -992,11 +1008,11 @@
                     Landgrafen zu Heſſen hinterlaſſene Wittib / geborne Graͤfin zu Sayn / und Wit⸗ <lb />genſtein
                     / Frau zu Homburg / als Mit⸗Jnhaberin der Grafſchafft Sayn (in Weſt⸗ <lb />phalen)
                     und dann Herr Salentin Ernſt / Graf zu Manderſcheid / und Blanckenheim / <lb />Freyherr
-                    zu Jnnckerrath / ꝛc. in Ehevogts Namen Fr. Erneſtinen / Graͤfin zu Man⸗ <lb />derſcheid
+                    zu Jnnckerrath / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> in Ehevogts Namen Fr. Erneſtinen / Graͤfin zu Man⸗ <lb />derſcheid
                     / und Blanckenheim / gebohrner Graͤfin zu Sayn / und Witgenſtein / auch <lb />Mit⸗Jnhaberin
                     der Grafſchafft Sayn. Beym Herrn Limnæo, in addit. ad lib. 4. <lb />de I. publ.
                     p. 540. ſtehet / unter anderm / daß Herr Ernſt zu Sayn / und Wit⸗ <lb />genſtein
-                    / mit Chur⸗Trier / wegen der Schloͤſſer Sayn / Freußburg / Rheinbruck / ꝛc. zu <lb />rechten
+                    / mit Chur⸗Trier / wegen der Schloͤſſer Sayn / Freußburg / Rheinbruck / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> zu <lb />rechten
                     gehabt: Jtem / iſt Anno 1642. eine Informatio Juris, &amp; facti, gedruckt
                     worden / <lb />wie weyland Herrn Graf Ernſten zu Sayn / und Witgenſtein / des
                     Aeltern / nachge⸗ <lb />laſſene beyde Fraͤulein Toͤchter / Erneſtina / und
@@ -1019,7 +1035,7 @@
                     das Logenehe / oder Logengau geheiſſen / wie <fw type="catch">dann</fw>
                     <fw
                         type="sig">C</fw>
-                    <pb n="18" />
+                    <pb n="29" facs="DOI.jpg"/>
                     <fw type="pageNum">18</fw>
                     <fw type="header">Beſchreibung
                     der fuͤrnehmſten Ort</fw>
@@ -1077,12 +1093,12 @@
                     vorgenommen haben / und erſtlich <lb />zwar / ſo iſt da die Stadt</p>
             </div>
             <fw type="catch">Allendorff⸗</fw>
-            <pb n="19" />
+            <pb n="30" facs="DOI.jpg"/>
             <fw type="pageNum">19</fw>
             <fw type="header">in Heſſen / vnd den benachbarten Landen.</fw>
             <figure />
             <lb />
-            <div type="article">
+            <div type="article" corresp="ArtDOI">
                 <head>Allendorff / an der Werra.</head>
                 <lb />
                 <p>JSt ein Stadt in Nieder⸗Heſſen / <lb />zugenandt in den Sohden. Soll <lb />wegen
@@ -1137,7 +1153,7 @@
                     Fuͤrſte ( ſo ein Vorgebuͤrg / <lb />und Gehoͤltz / des Meißners iſt / ) hat die <fw
                         type="catch">Statt</fw>
                 <fw type="sig">C 2</fw>
-                <pb n="20" />
+                <pb n="31" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">20</fw>
                 <fw type="header">Beſchreibung der vornehmſten Orth</fw>
@@ -1213,7 +1229,13 @@
                     Freyherr Conrad von Weins⸗ <lb />berg damals commandirt / alſo daß auch <lb />noch
                     theils die Feldmarck um dieſen Orth <lb />nach deſſen Namen der Weinsberg genand <fw
                         type="catch">wird.</fw>
-                <pb n="21" />
+                <pb n="32" facs="DOI.jpg"/>
+                <pb n="33" facs="DOI.jpg"/>
+                <figure xml:id="stichID3"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID4"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID5"><graphic url="stichDOI.jpg"/></figure>
+                <pb n="34" facs="DOI.jpg"/>
+                <pb n="35" facs="DOI.jpg"/>
                 <fw type="pageNum">21</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -1281,7 +1303,7 @@
                     ſchwere Con⸗ <lb />tribution geſetzt. <fw type="catch">Jn</fw>
                 <fw type="sig">C 3</fw>
                 <pb
-                        n="22" />
+                        n="36" facs="DOI.jpg"/>
                 <fw type="pageNum">22</fw>
                 <fw type="header">Beſchreibung der
                     fuͤrnehmſten Ort</fw>
@@ -1362,7 +1384,13 @@
                     Maͤyntz / und von ſelbigen Stiſt <lb />an Landgraf Heinrichen zu Heſſen umbs <lb />Jahr
                     1464. kommen; dann des Jahrs hat <lb />der Biſchoff zu Maͤyntz Adolphus / ein <fw
                         type="catch">Graff</fw>
-                <pb n="23" />
+                
+                <pb n="37" facs="DOI.jpg"/>
+                <figure xml:id="stichID6"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID7"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID8"><graphic url="stichDOI.jpg"/></figure>
+                <pb n="38" facs="DOI.jpg"/>
+                <pb n="39" facs="DOI.jpg"/>
                 <fw type="pageNum">23</fw>
                 <fw
                         type="header">in Heſſen und denen benachbarten Landen.</fw>
@@ -1427,7 +1455,7 @@
                     </choice> geſagt <lb />worden / von
                     welcher Abraham Saur <lb />ſchreibet in Theatro Urbium pag. 293. <lb />ſequent.
                     daß ſie ſey ein groß Gewaͤlde von <lb />Wildpraͤt / Fiſchen / Waſſer / Wayden /
-                    ꝛc. <lb />und ein ſolch Außkommen habe / daß ein <lb />Graff zu Wittgenſtein /
+                    <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />und ein ſolch Außkommen habe / daß ein <lb />Graff zu Wittgenſtein /
                     nicht mehr dann <lb />Stockfiſch / Haͤring und Wuͤrtze in ſeine <lb />Kuͤchen
                     kauffen doͤrffe.</p>
             </div>
@@ -1441,7 +1469,7 @@
                     deß H. Roͤm. Reichs Fuͤrſt / fuͤr die <lb />Jeſuiter beym Pabſt angehalten / und
                     iſt <lb />ſolches den Patribus zu Hadamar gegeben <lb />worden. V. Joannes
                     Cruſius Soc. J. in <fw type="catch">Aulæ</fw>
-                <pb n="24" />
+                <pb n="40" facs="DOI.jpg"/>
                 <fw type="pageNum">24</fw>
                 <fw
                         type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
@@ -1488,7 +1516,7 @@
                     auf einem Berg. Die Statt / ſo jetzo <lb />gegen Mittag deſſelben Bergs liegt /
                     hat <lb />hiebevor hinder demſelben nach Mitter⸗ <lb />nacht gelegen / wie dann
                     ſelbiger Platz noch <lb />heutiges Tags die alte Statt genennet <lb />wird. Als
-                    Landgraff Heinrichs / gebornen <lb />Hertzogs zu Brabandt und Lothringen ꝛc. <lb />aͤlteſter
+                    Landgraff Heinrichs / gebornen <lb />Hertzogs zu Brabandt und Lothringen <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />aͤlteſter
                     Sohn Henrich / mit dem Vatter in <lb />Wiederwillen gerathen / und vmb das Jahr <lb />Chriſt
                     1248. under andern auch Bidenkopff <lb />zu ſeiner Devotion gebracht / iſt es
                     doch end⸗ <lb />lich zum Vertrag kom̃en / dergeſtalt / daß der <lb />Vatter jhme
@@ -1523,7 +1551,12 @@
                     Beſitz und uͤbrige Verlaſſenſchafſt <lb />an Land ins Loß geſetzt zu zweyen
                     Theilen / <lb />nemblich Bierſtein und Reichenbacher <lb />Gericht fuͤr eins /
                     Wechtersbach und Spiel⸗ <fw type="catch">berger</fw>
-                <pb n="25" />
+                <pb n="41" facs="DOI.jpg"/>
+                <figure xml:id="stichID9"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID10"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID11"><graphic url="stichDOI.jpg"/></figure>
+                <pb n="42" facs="DOI.jpg"/>
+                <pb n="43" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">25</fw>
                 <fw type="header">in Heſſen und denen benachbarten
@@ -1611,7 +1644,7 @@
                 <p>JSt vor Zeiten ein geraume Statt / und <lb />halb Ziegenhainiſch geweſen / aber
                     in den <fw type="catch">inhei⸗</fw>
                 <fw type="sig">D</fw>
-                <pb n="26" />
+                <pb n="44" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">26</fw>
                 <fw type="header">Beſchreibung der vornehmſten Orth</fw>
@@ -1689,7 +1722,11 @@
                     Waͤſſerlein Sinna; daſelbſten An⸗ <lb />fangs vier Adeliche Haͤuſer geſtanden <lb />ſeyn
                     / welcher Herrn / als Burggenoſſen / <lb />allhier gewohnt haben: Und gienge vor <fw
                         type="catch">Alters</fw>
-                <pb n="27" />
+                <pb n="45" facs="DOI.jpg"/>
+                <figure xml:id="stichID12"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID13"><graphic url="stichDOI.jpg"/></figure>
+                <pb n="46" facs="DOI.jpg"/>
+                <pb n="47" facs="DOI.jpg"/>
                 <fw type="pageNum">27</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -1770,7 +1807,7 @@
                     Nachrichtungen. Das hieran in der <fw type="catch">Land⸗</fw>
                 <fw type="sig">D 2</fw>
                 <pb
-                        n="28" />
+                        n="48" facs="DOI.jpg"/>
                 <fw type="pageNum">28</fw>
                 <fw type="header">Beſchreibung der
                     vornehmſten Orth</fw>
@@ -1844,7 +1881,11 @@
                     / welcher daſſelbe beneben <lb />Oſtheim / Hohenweiſſel / Langenhein / <lb />Muͤnſter
                     / Fauerbach / Borckhofen / von <lb />Epſtein erkaufft. Dieſe Statt iſt lange
                     Zeit <fw type="catch">Drey⸗</fw>
-                <pb n="29" />
+                    <pb n="49" facs="DOI.jpg"/>
+                    <figure xml:id="stichID14"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID15"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="50" facs="DOI.jpg"/>
+                    <pb n="51" facs="DOI.jpg"/>
                 <fw type="pageNum">29</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -1904,14 +1945,14 @@
                     gewalthaͤtig ange⸗ <lb />fallen / petardirt, und eingenommen; Dar⸗ <lb />auff
                     dieſelbe bald im folgenden 1646. Jahr <lb />den 19. Aprilis, ſo war der Sontag
                     Jubila- <lb />te, von jhrer Fuͤrſtl. Gn. Herrn Land⸗Graff <lb />Georgen zu
-                    Heſſen / ꝛc. durch Seiner <lb />Fuͤrſtlich. Gnad. General- Lieutenanten <lb />Ernſt
+                    Heſſen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> durch Seiner <lb />Fuͤrſtlich. Gnad. General- Lieutenanten <lb />Ernſt
                     Albrechten von Eberſtein / mit etlichen <lb />Regimentern zu Roß und Fuß
                     angegrif⸗ <lb />fen / mit groben auß dero Veſtung Gieſſen <lb />gefuͤhrten
                     Stuͤcken canonirt, Breche ge⸗ <lb />ſchoſſen / geſtuͤrmbt / und die darin
                     gelegene <lb />Beſatzung ſich zu ergeben genoͤthiget / und <fw type="catch">alſo</fw>
                 <fw
                         type="sig">D 3</fw>
-                <pb n="30" />
+                <pb n="52" facs="DOI.jpg"/>
                 <fw type="pageNum">30</fw>
                 <fw type="header">Beſchreibung
                     der fuͤrnehmſten Ort</fw>
@@ -1988,7 +2029,12 @@
                 <p>Diß iſt die Hauptſtadt des Niedern Fuͤr⸗ <lb />ſtenthums Heſſen / und eine
                     Fuͤrſtliche <lb />Landgraͤfliche Reſidentz und Landes⸗Re⸗ <fw type="catch">gierung
                     /</fw>
-                <pb n="31" />
+                    <pb n="53" facs="DOI.jpg"/>
+                    <pb n="54" facs="DOI.jpg"/>
+                    <figure xml:id="stichID16"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichI17"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID18"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="55" facs="DOI.jpg"/>
                 <fw type="pageNum">31</fw>
                 <fw type="header">in Heſſen und
                     denen benachbarten Landen.</fw>
@@ -2054,13 +2100,13 @@
                     1512. außgebauet wor⸗ <lb />den / die Neuſtaͤtter Muͤhle mit zwoͤlff <lb />Gaͤngen
                     / das Schlachthauß / Fruchthauß <lb />vorm Anneberge / das Viehhauß / und <fw
                         type="catch">Bruͤcke</fw>
-                <pb n="32" />
+                <pb n="56" facs="DOI.jpg"/>
                 <fw type="pageNum">32</fw>
                 <fw
                         type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                 <lb /> Bruͤcke bey der
                     Narrenburg / Cantzley / <lb />Renthof / Zeug⸗Frucht⸗Brau⸗und Saltz⸗ <lb />hauß /
-                    das Theatrum, oder Comœdien- <lb />Hauß / ꝛc. beſichtiget; ſo theils von Land⸗ <lb />Graff
+                    das Theatrum, oder Comœdien- <lb />Hauß / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> beſichtiget; ſo theils von Land⸗ <lb />Graff
                     Wilhelmen / theils von ſeinem Her⸗ <lb />ren Sohn / Landgraff Moritzen / erbauet <lb />worden.
                     Die Statt iſt bey dieſen Kriegs⸗ <lb />Zeiten noch beſſer fortificirt worden;
                     auch <lb />bißhero mit einiger Belaͤgerung unange⸗ <lb />fochten geblieben; Vor
@@ -2111,7 +2157,7 @@
                     / gegen andere ſchoͤne Fuͤrſtliche Ge⸗ <lb />baͤue / und Plaͤtze / und das
                     vierdte Außſehen <lb />gegen Sudweſt laufft gegen die Renn⸗ <lb />bahn / und
                     auff die Veſtung. Jnwendig iſt <lb />es von ſehr ſtattlichen treflichen Gebaͤuen
-                    / <lb />Saͤlen und Gemaͤchern / ꝛc. wie auch ei⸗ <lb />ner ſehr ſchoͤnen /
+                    / <lb />Saͤlen und Gemaͤchern / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> wie auch ei⸗ <lb />ner ſehr ſchoͤnen /
                     hochgewoͤlbten / in die <lb />dritte Wanderung lauffenden Capellen / <lb />ſo
                     gantz uͤber und uͤber mit Spruͤchen der <lb />Heil. Schrifft beſchrieben / hat
                     auch eine <lb />groſſe und herrliche Orgel / und daneben <lb />uͤber einander 2.
@@ -2121,7 +2167,12 @@
                     andern <lb />Wanderung / und wird daher der guͤldene <lb />genannt / weil er mit
                     vielem ausgehauenen <lb />Laubwerck / ſo alle verguͤldet / gezieret iſt. <lb />Hierin
                     findet man in Lebensgroͤſſe die alte <fw type="catch">Land⸗</fw>
-                <pb n="33" />
+
+                    <pb n="57" facs="DOI.jpg"/>
+                    <pb n="58" facs="DOI.jpg"/>
+                    <figure xml:id="stichID19"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="59" facs="DOI.jpg"/>
+                    <pb n="60" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">33</fw>
                 <fw type="header">in Heſſen und andern benachbarten
@@ -2193,7 +2244,7 @@
                     auch der Luſtgarte / iſt rings <lb />herum / gleich einer Jnſel / mit der Fulda <fw
                         type="catch">um⸗</fw>
                 <fw type="sig">E</fw>
-                <pb n="34" />
+                <pb n="61" facs="DOI.jpg"/>
                 <fw type="pageNum">34</fw>
                 <fw
                         type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
@@ -2261,7 +2312,14 @@
                     auffgebautem halb runden Judicir⸗ <lb />oder Richter Spruchshauß. Zu underſt <lb />der
                     Statt / ligt noch ein Fuͤrſtlich faſt vier⸗ <lb />ecktes zugebautes / doch nicht
                     gantz ſteiner⸗ <fw type="catch">nes</fw>
-                <pb n="35" />
+                
+                    <pb n="62" facs="DOI.jpg"/>
+                    <pb n="63" facs="DOI.jpg"/>
+                    <figure xml:id="stichID20"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID21"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID22"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="64" facs="DOI.jpg"/>
+                    <pb n="65" facs="DOI.jpg"/>
                 <fw type="pageNum">35</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -2332,7 +2390,7 @@
                     Weyde / der Forſt genannt / weil es <lb />zuvor ein Wald geweſen / aber / wegen
                     Er <fw type="catch">der</fw>
                 <fw type="sig">E 2</fw>
-                <pb n="36" />
+                <pb n="66" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">36</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -2404,7 +2462,11 @@
                     Gebaͤuen <lb />vermehret / und faſt von neuem auffgerich⸗ <lb />tet. Der Berg
                     darauff das Schloß ſtehet / <lb />iſt reich an Ertz / und hat man auch vor kur⸗ <fw
                         type="catch">tzen</fw>
-                <pb n="[37]" />
+                <pb n="67" facs="DOI.jpg"/>
+                <figure xml:id="stichID23"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID24"><graphic url="stichDOI.jpg"/></figure>
+                <pb n="68" facs="DOI.jpg"/>
+                <pb n="69" facs="DOI.jpg"/>
                 <fw type="pageNum"><choice>
                             <sic>47</sic>
                             <corr>37</corr>
@@ -2435,7 +2497,7 @@
                     Franckenberg / wendete ſich <lb />darauf nach Amoͤneburg / ſo Er einbekam. <lb />Als
                     aber der Herr Landgraff Wilhelm zu <lb />Caſſel wider ankommen / wendete ſich
                     er⸗ <lb />melter von Boͤninghauſen wieder auf <lb />Franckenberg / Arensberg /
-                    ꝛc.</p>
+                    <choice><orig>ꝛc.</orig><reg>etc.</reg></choice></p>
             </div>
             <lb />
             <div type="article">
@@ -2446,7 +2508,7 @@
                     Gegend / ge⸗ <lb />legen / u. mit doppelten Mauren umgeben. <lb />Oben an der
                     Hoͤhe ligt das ſchoͤne Schloß / <lb />mit einem ſehr ſtarcken und dicken Gemaͤur
                     / <lb />alſo / daß ihm der Name Cronberg nicht <lb />umſonſt gegeben worden zu
-                    ſeyn ſcheinet / <lb />angeſehen die menge der Thuͤrn / ꝛc. an den <lb />Mauren.
+                    ſeyn ſcheinet / <lb />angeſehen die menge der Thuͤrn / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> an den <lb />Mauren.
                     Die ſich bemuͤhen / der Teut⸗ <lb />ſchen Staͤtte von den Roͤmern zu deduci⸗ <lb />ren
                     / ſagen / Trajanus habe ſie gebauet wider <lb />die Catten / und anfaͤnglich
                     Trajaniburg <lb />genannt / daraus haͤtten die Nachkom⸗ <lb />men Cronburg
@@ -2468,7 +2530,7 @@
                     1647. <lb />den 25. Mertzen / war das Staͤttlein von <lb />den Heßiſchen /
                     erſtigen. Anno 1649. iſt / <lb />auf anhalten Herrn Hartmuth / und Jo⸗ <lb />hann
                     Daniel von und zu Cronburg / oder <lb />Cronberg / Gebruͤder / vom Herrn Pfaltz⸗ <lb />graff
-                    Ludwig Philipſen / zu Simmern / ꝛc. <lb />als des Ober⸗Rheiniſchen Craiſſes Aus⸗ <lb />ſchreibenden
+                    Ludwig Philipſen / zu Simmern / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />als des Ober⸗Rheiniſchen Craiſſes Aus⸗ <lb />ſchreibenden
                     Fuͤrſten / E. E. Hochweiſen <lb />Rath des H. Roͤm. Reichs Statt Franck⸗ <lb />furt
                     / die Commiſſion auffgetragen wor⸗ <lb />den / die auf ihrem Adelichen Ganerben <lb />Hauß
                     / und Statt Cronburg / Zeitweren⸗ <lb />den Krieges / neuerlich eingefuͤhrte
@@ -2480,7 +2542,7 @@
             </div>
             <fw type="catch">Darm⸗</fw>
             <fw type="sig">E 3</fw>
-            <pb n="38" />
+            <pb n="70" facs="DOI.jpg"/>
             <fw type="pageNum">38</fw>
             <fw type="header">Beſchreibung der fuͤrnehmſten Ort /</fw>
             <lb />
@@ -2517,7 +2579,7 @@
                     und <lb />hinter ſolchem Schloß eine Muͤhle iſt / ſo <lb />der Kunſt halben wol
                     zu ſehen. Es iſt dieſe <lb />Stadt Anno 1622. von dem Graffen von <lb />Manßfeld
                     / und Pfaltzgraff Friedrichen / <lb />Churfuͤrſten / eingenommen / Herr Land⸗ <lb />Graff
-                    Ludwig der juͤngere zu Heſſen ꝛc. <lb />gantz unvermutheter Dinge darin uͤber⸗ <lb />fallen
+                    Ludwig der juͤngere zu Heſſen <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />gantz unvermutheter Dinge darin uͤber⸗ <lb />fallen
                     / auch neben Seiner Fuͤrſtl. Gnaden <lb />zweytem Herrn Sohn gefaͤnglich wegge⸗ <lb />fuͤhrt
                     / ſolche That aber hernach von Koͤnig <lb />Jacobo in Engeland des Churfuͤrſten <lb />Schweher⸗Vater
                     ſelbſt / ſub dato Grenwich <lb />den 17. Junii 1622. un acte de mauvaiſe <lb />odeur
@@ -2550,8 +2612,15 @@
                     / wie oben / im Eingang / bey Ca⸗ <lb />tzenelenbogen / gemeldet worden iſt. Das <lb />Stifft
                     Dietz iſt bekandt. Und Cloſter Dier⸗ <lb />ſtein / Cloſter Gnadenthal / welches
                     ein <lb />Adeliches Jungfrauen⸗Cloſter. Die Stiſt <fw type="catch">und</fw>
-                <pb
-                        n="39" />
+                    <pb n="71" facs="DOI.jpg"/>
+                    <pb n="72" facs="DOI.jpg"/>
+                    <figure xml:id="stichID25"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID26"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="73" facs="DOI.jpg"/>
+                    <figure xml:id="stichID27"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID28"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="74" facs="DOI.jpg"/>
+                    <pb n="75" facs="DOI.jpg"/>
                 <fw type="pageNum">39</fw>
                 <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -2587,7 +2656,7 @@
                     / liget / welcher im Jahr 1598. zu Cat⸗ <lb />wick an der See / in Holland /
                     angeſtrandt / <lb />und bekommen worden. <lb />An. 1617. gehoͤrte dieſe
                     Reſidentz Her⸗ <lb />ren Wilhelm Ludwigen Graffen zu Naſ⸗ <lb />ſau
-                    Catzenelenbogen / geweſten Guberna⸗ <lb />torn in Frißland / ꝛc. Die Statt /
+                    Catzenelenbogen / geweſten Guberna⸗ <lb />torn in Frißland / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Die Statt /
                     oder der <lb />Thal darunter / Weſt⸗Nord⸗und Oſt⸗ <lb />waͤrts umb das Schloß
                     beynahe / rings her <lb />gelegen / hat ein huͤpſch / zierlich ausgebaute <lb />Kirche
                     / darin der Graffen Begraͤbnuß / <lb />doch ohne einige Monlmenten / nur daß ei⸗ <lb />nes
@@ -2633,7 +2702,8 @@
                     </choice> / wiewol nicht ohn
                     Gefahr / hinab ſtei⸗ <lb />gen kan. Dieſe Loͤcher ſind in einem grau⸗ <fw
                         type="catch"> ſamen</fw>
-                <pb n="40" />
+                
+                <pb n="76" facs="DOI.jpg"/>
                 <fw type="pageNum">40</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -2653,7 +2723,7 @@
                     ſtarcken Einkommen; ſonderlich <lb />Frucht Gefaͤllen; und graͤntzet es jenſeit
                     der <lb />Diemoll an das Stifft Paderborn / und der <lb />Spiegel Gebiet;
                     diſſeits aber an den Rei⸗ <lb />charts Walde. Die Dorffſchafften / eines <lb />theils
-                    / als Langenthal / Deiſſel / Lamerden / <lb />Sielen / Eberſchutz / ꝛc. ſeyn
+                    / als Langenthal / Deiſſel / Lamerden / <lb />Sielen / Eberſchutz / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> ſeyn
                     auch ſo groß / <lb />daß ſie vor Flecken paßiren koͤnnen; wie⸗ <lb />wol ſie mit
                     dem Brande auch je zuweilen <lb />ziemlich beſchaͤdiget worden. Ein Meyl <lb />wegs
                     underhalb Trendelburg / an der Die⸗ <lb />mol / ligt das Staͤttlein
@@ -2689,7 +2759,7 @@
                     nutz⸗ <lb />bare und beruͤhmte warme Bad iſt auf der <lb />Seiten des
                     Weſterwalds / zwiſchen den <lb />Staͤttlein Naſſau / und Lanſtein (von je⸗ <lb />derm
                     ohngefehr ein Meyl wegs ) hart auf <lb />dem Waſſer oder Fluß / die Lahn
-                    genennet / ꝛc. <lb />und ohngefehr eine Meyl wegs / oder drey <lb />Stunden
+                    genennet / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />und ohngefehr eine Meyl wegs / oder drey <lb />Stunden
                     gangs / von der Statt Coblentz / <lb />und drey Stunden von Montabaur / einer <lb />Statt
                     auf dem Weſterwald / gelegen. <lb />Sonſten iſt es mit Waͤlden / hohen Ber⸗ <lb />gen
                     / Steinklippen / und Felſen (darunder <lb />Wieſen und Weinberg ſind) umwallet / <lb />und
@@ -2710,7 +2780,13 @@
                     / es walle / oder ſprin⸗ <lb />ge das warme Waſſer in dieſen Baͤdern an <lb />einander
                     / und unauffhoͤrlich / wie man es er⸗ <lb />leyden kan / nicht zu heiß / oder zu
                     kalt / under <fw type="catch">den</fw>
-                <pb n="41" />
+                
+                <pb n="77" facs="DOI.jpg"/>
+                <pb n="78" facs="DOI.jpg"/>
+                <figure xml:id="stichID29"><graphic url="stichDOI.jpg"/></figure>
+    
+                <pb n="79" facs="DOI.jpg"/>
+                <pb n="80" facs="DOI.jpg"/>
                 <fw type="pageNum">41</fw>
                 <fw
                         type="header">in Heſſen / vnd den benachbarten Landen.</fw>
@@ -2810,7 +2886,7 @@
                     unnd Bruͤnnlein ſeynd nuͤtzlich dem <fw type="catch">weiſſen</fw>
                 <fw
                         type="sig">F</fw>
-                <pb n="42" />
+                <pb n="81" facs="DOI.jpg"/>
                 <fw type="pageNum">42</fw>
                 <fw type="header">Beſchreibung
                     der vornehmſten Orth</fw>
@@ -2851,7 +2927,7 @@
                     <lb />des Dilichii Heßiſchen
                     Chronic noch ver⸗ <lb />melden / daß im Jahr 1583. Landgraff <lb />Wilhelm zu
                     Heſſen / das untere Bad / oder <lb />Hoff (ſo der Zeit Herrn Landgraff Geor⸗ <lb />gen
-                    zu Heſſen⸗ Darmſtatt / ꝛc. zugehoͤrig) <lb />mit vielen bequemlichen Gemachen /
+                    zu Heſſen⸗ Darmſtatt / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> zugehoͤrig) <lb />mit vielen bequemlichen Gemachen /
                     den <lb />Badenden zum Unterhalt / und Herberg / <lb />zurichten / und ſetzen
                     laſſen. Nicht fern <lb />vom Embſer Bad ligt der Flecken Toſe⸗ <lb />naw /
                     darbey auch vor etlichen Jahren <lb />an der Lohn ein Sauerbrunn ſich herfuͤr <lb />
@@ -2898,7 +2974,14 @@
                         <expan>Dann</expan>
                     </choice> es im 1555. Jar zuvor /
                     ſonder⸗ <fw type="catch">lich</fw>
-                <pb n="43" />
+                <pb n="82" facs="DOI.jpg"/>
+                <pb n="83" facs="DOI.jpg"/>
+                <figure xml:id="stichID30"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID31"><graphic url="stichDOI.jpg"/></figure>
+
+
+                <pb n="84" facs="DOI.jpg"/>
+                <pb n="85" facs="DOI.jpg"/>
                 <fw type="pageNum">43</fw>
                 <fw
                         type="header">in Heſſen / vnd den benachbarten Landen.</fw>
@@ -2976,7 +3059,7 @@
                     obgemeltem <lb />1637. Jahr / in den Grund abgebrant wor⸗ <fw type="catch">den /</fw>
                 <fw
                         type="sig">F 2</fw>
-                <pb n="44" />
+                <pb n="86" facs="DOI.jpg"/>
                 <fw type="pageNum">44</fw>
                 <fw type="header">Beſchreibung
                     der vornehmſten Orth</fw>
@@ -3049,7 +3132,7 @@
                     / iſt ſie doch nicht zu vergeſſen. Sie <lb />entſpringt im Ampt Liechtenau /
                     beym <lb />Dorff Rommeroda / am Hirſchberge / ge⸗ <fw type="catch">gen</fw>
                 <pb
-                        n="45" />
+                        n="87" facs="DOI.jpg"/>
                 <fw type="pageNum">45</fw>
                 <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -3123,7 +3206,7 @@
                     Fruchtbare weite Felder; jenſeit der <fw type="catch">Eder</fw>
                 <fw type="sig">F
                     3</fw>
-                <pb n="46" />
+                <pb n="88" facs="DOI.jpg"/>
                 <fw type="pageNum">46</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -3211,7 +3294,7 @@
                     deliciis Ger. p. 28.) <lb />Und von dieſer Zeit an iſt Franckenberg am <lb />Heydniſchen
                     Glauben geweſen 200. Jahr / <lb />biß auff S. Bonifacium / da die Francken⸗ <fw
                         type="catch">berger</fw>
-                <pb n="47" />
+                <pb n="89" facs="DOI.jpg"/>
                 <fw type="pageNum">47</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -3319,7 +3402,7 @@
                     war / und Hertzog Heinrich aus <lb />Braband / des Landgraffen Ludwigs / und <lb />S.
                     Eliſabethen Tochter Sophien zweyter <lb />Sohn / ſich um Doͤringen und Heſſen
                     zanck⸗ <fw type="catch">ten /</fw>
-                <pb n="48" />
+                <pb n="90" facs="DOI.jpg"/>
                 <fw type="pageNum">48</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -3427,7 +3510,7 @@
                         <expan>dann</expan>
                     </choice> neuer gebauet worden. <fw
                         type="catch">Aber</fw>
-                <pb n="49" />
+                <pb n="91" facs="DOI.jpg"/>
                 <fw type="pageNum">49</fw>
                 <fw
                         type="header">in Heſſen / vnd den benachbarten Landen.</fw>
@@ -3459,7 +3542,7 @@
                     die Zeit <lb />Kayſer Carls des Groſſen / dieweil es die <lb />aͤltiſte Stadt in
                     Heſſen an der Lohn war: <lb />Es habe aber beſagter Kaͤyſer ſolche Wuͤr⸗ <lb />digkeit
                     von Alsfeld genommen / unnd ſie <lb />gen Franckenberg gelegt / alſo daß alle
-                    die <lb />an der Lohn ihr Ober⸗Gericht daſelbſt ho⸗ <lb />len muͤſten / ꝛc. Auch
+                    die <lb />an der Lohn ihr Ober⸗Gericht daſelbſt ho⸗ <lb />len muͤſten / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Auch
                     ſollen die Alten Saſ⸗ <lb />ſen und Weſtphalen binnen drey Meylen / <lb />ihr
                     Landrecht zu Franckenberg holen. Des <lb />zu Wahrzeichen / ſo holen die von
                     Saſſen⸗ <lb />berg noch heut zu Tag ihr Landrecht zu <lb />Franckenberg / wiewol
@@ -3494,7 +3577,7 @@
             </div>
             <fw type="catch">Franck⸗</fw>
             <fw type="sig">G</fw>
-            <pb n="50" />
+            <pb n="92" facs="DOI.jpg"/>
             <fw type="pageNum">50</fw>
             <fw type="header">Beſchreibung der vornehmſten Orth</fw>
             <lb />
@@ -3574,7 +3657,12 @@
                     beſtimbt / und beſtaͤttiget worden iſt; <lb />als die ſonderlich wol gelegen /
                     und von ihr <lb />Guntherus, in Ligurino, geſchrieben hat: <lb />Sede ſatis
                     nota, rapido quæ proxima <lb /> Mogo, <fw type="catch">Clara</fw>
-                <pb n="51" />
+                <pb n="93" facs="DOI.jpg"/>
+                <pb n="94" facs="DOI.jpg"/>
+                <figure xml:id="stichID32"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="95" facs="DOI.jpg"/>
+                <pb n="96" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">51</fw>
                 <fw
@@ -3648,7 +3736,7 @@
                     gantz Teutſchland vornehmſten Jahr⸗ <fw type="catch">Meſſen /</fw>
                 <fw type="sig">G
                     2</fw>
-                <pb n="52" />
+                <pb n="97" facs="DOI.jpg"/>
                 <fw type="pageNum">52</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -3673,8 +3761,8 @@
                     Fechter insgemein / dem <lb />Rath der Stadt Franckfurt hinderlegt / de⸗ <lb />ren
                     Abſchrifft wir anhero ſetzen wollen / al⸗ <lb />ſo lautendt / Wir Friderich /
                     von GOttes <lb />Gnaden / Roͤmiſcher Kaͤyſer / zu allen Zei⸗ <lb />ten Mehrer
-                    des Reichs/ zu Hungarn / Dal⸗ <lb />matien / Croatien / ꝛc. Koͤnig / Ertzhertzog <lb />zu
-                    Oeſterreich / zu Steyer / zu Kaͤrndten / <lb />und Graf zu Tyrol / ꝛc. Bekennen
+                    des Reichs/ zu Hungarn / Dal⸗ <lb />matien / Croatien / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Koͤnig / Ertzhertzog <lb />zu
+                    Oeſterreich / zu Steyer / zu Kaͤrndten / <lb />und Graf zu Tyrol / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Bekennen
                     offent⸗ <lb />lich mit dieſem Brieff / und thun kund Al⸗ <lb />lermaͤnniglich;
                     Daß wir N. den Meiſtern <lb />des Schwerdts / dieſe ſondere Gnad ge⸗ <lb />than
                     / und ihnen gegoͤnnet <choice>
@@ -3724,7 +3812,12 @@
                     / des Roͤmiſchen im Acht und vier⸗ <lb />tzigſten / des Kaͤyſerthumbs im Sechs
                     und <lb />Dreyßigſten / und des Hungariſchen im <fw type="catch">Neun</fw>
                 <pb
-                        n="53" />
+                        n="98" facs="DOI.jpg"/>
+                <pb n="99" facs="DOI.jpg"/>
+                <figure xml:id="stichID33"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="100" facs="DOI.jpg"/>
+                <pb n="101" facs="DOI.jpg"/>
                 <fw type="pageNum">53</fw>
                 <fw type="header">in Heſſen / vnd den
                     benachbarten Landen.</fw>
@@ -3795,7 +3888,7 @@
                     durch Feuer Schaden gelitten) das Pre⸗ <lb />diger Cloſter / An. 1260. zu
                     eꝛbauen angefan⸗ <fw type="catch">gen /</fw>
                 <fw type="sig">G 3</fw>
-                <pb n="54" />
+                <pb n="102" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">54</fw>
                 <fw type="header">Beſchreibung der vornehmſten Orth</fw>
@@ -3868,7 +3961,7 @@
                     </choice>
                 <fw type="catch">ſich</fw>
                 <pb
-                        n="55" />
+                        n="103" facs="DOI.jpg"/>
                 <fw type="pageNum">55</fw>
                 <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -3933,7 +4026,7 @@
                     Churfuͤrſten zum Roͤmiſchen Koͤ⸗ <lb />nig erwoͤhlet worden. Die andern
                     Churfuͤr⸗ <lb />ſten haben dargegen Carolum IV. ge⸗ <fw type="catch">woͤhlt.</fw>
                 <pb
-                        n="56" />
+                        n="104" facs="DOI.jpg"/>
                 <fw type="pageNum">56</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -4001,7 +4094,7 @@
                     wurde Maximilianus Kaͤyſer <lb />Friederichs des Dritten Sohn zu Franck⸗ <lb />furt
                     erwoͤhlt. <lb />Anno 1495. den letzten Octobris / iſt das <lb />erſte Kaͤyſerl.
                     Cammer⸗Gericht zu Franck⸗ <fw type="catch">furt</fw>
-                <pb n="57" />
+                <pb n="105" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">57</fw>
                 <fw type="header">in Heſſen und den benachbarten
@@ -4048,7 +4141,7 @@
                     Ertzhertzog Matthias zu Oe⸗ <lb />ſterreich / Koͤnig in Vngarn <choice>
                         <abbr>vñ</abbr>
                         <expan>vnd</expan>
-                    </choice> Boͤheim / ꝛc. <lb />zum
+                    </choice> Boͤheim / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />zum
                     Roͤmiſchen Koͤnig erwoͤhlet. <lb />Jn den Jahren 1612. 13. 14. vnd 15. hat <lb />es
                     zwiſchen E. E. Rath vnnd der Burger⸗ <lb />ſchafft zu Franckfurt Widerwillen
                     vnnd <lb />Vnruhe gegeben: Daruͤber auch die Ju⸗ <lb />den (deren es allhie ſehr
@@ -4072,7 +4165,7 @@
                     ſie gleich andern Staͤnd⸗ <lb />ten des Reichs Anno 1635. zum Pra⸗ <fw
                         type="catch">geriſchen</fw>
                 <fw type="sig">H</fw>
-                <pb n="58" />
+                <pb n="106" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">58</fw>
                 <fw type="header">Beſchreibung der vornehmſten Orth</fw>
@@ -4121,7 +4214,7 @@
                     lib. 3. cap. 1. num 17. pag. <lb />207. Pancirollum de Salvatoris noſtri <lb />tunica
                     inconſutili, quæ adhuc Franco- <lb />furti adſervari dicitur, part. 1. rer. <lb />memor.
                     tit. Fibula; Schadæum part. <fw type="catch">4. Slei-</fw>
-                <pb n="59" />
+                <pb n="107" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">59</fw>
                 <fw type="header">in Heſſen / vnd den benachbarten
@@ -4216,7 +4309,7 @@
                     ſiebenhundert Gebaͤu / ſollen <fw type="catch">abge⸗</fw>
                 <fw type="sig">H 2</fw>
                 <pb
-                        n="60" />
+                        n="108" facs="DOI.jpg"/>
                 <fw type="pageNum">60</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -4281,7 +4374,10 @@
                     Sauern. <lb />Obgedachte Burg / ſo nach ihrem Er⸗ <lb />bauer / obgemeltem
                     Kayſer Friderico II. <lb />wie geſagt Fridericheburg genannt wird / <lb />iſt
                     ein weitlaͤufftige Veſtung / auff einem <fw type="catch">Felſen</fw>
-                <pb n="61" />
+                <pb n="109" facs="DOI.jpg"/>
+                <pb n="110" facs="DOI.jpg"/>
+                <pb n="111" facs="DOI.jpg"/>
+                <pb n="112" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">61</fw>
                 <fw type="header">in Heſſen und den benachbarten
@@ -4299,9 +4395,9 @@
                     Reichs Anſchlag iſt Monatlich <lb />12. zu Fuß / oder 48. Guͤlden / und zu Un⸗ <lb />terhaltung
                     des Cammer ⸗ Gerichts zu <lb />Speyer / nach dem erhoͤchten Anſchlag <lb />54.fl.
                     10. Kr. 5. Heller / Jaͤhrlich. Es hat <lb />gleichwol jederweilen zwiſchen der
-                    Burg <lb />und der Stadt / des Stands / ꝛc. halber / <lb />Streit geben; Davon
+                    Burg <lb />und der Stadt / des Stands / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> halber / <lb />Streit geben; Davon
                     der Author des Be⸗ <lb />richts des Heil. Reichs Stadt Friedberg <lb />Stand /
-                    Regalien / ꝛc. betreffend / der <lb />Stadt das Wort thut; hingegen hat die <lb />Kaͤyſerliche
+                    Regalien / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> betreffend / der <lb />Stadt das Wort thut; hingegen hat die <lb />Kaͤyſerliche
                     Burg beſagten Bericht nun⸗ <lb />mehr auch wiederlegen / und ſolche Refu- <lb />ation
                     vor wenig Jahren in offenen Truck <lb />kommen laſſen: So koͤnnen auch Herꝛ <lb />Caſpar
                     Lerch von Duͤrmſtein / de Ordi- <lb />ne Equeſtri Germanico, in fund. 2. ſumm. <lb />135.
@@ -4331,7 +4427,7 @@
                     und Burg Friedberg in ihren Ge⸗ <lb />walt: Aber noch in ſelbigem 40. Jahr / den <lb />erſten
                     Chriſtmonats / Nen. Cal. eroberten <lb />die Kaͤyſer⸗und Baͤyriſchen / beydes
                     wie⸗ <lb />derumb durch Accord; welchen Herꝛ Gott⸗ <lb />fried Huyn / Graf von
-                    Geleen / und zu <lb />Wachtendonck / ꝛc. auff Kayſeriſcher; und <lb />auff der
+                    Geleen / und zu <lb />Wachtendonck / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> auff Kayſeriſcher; und <lb />auff der
                     andern Seyten / Johann Lato⸗ <lb />mus / geweſter Commendant / unterſchrie⸗ <lb />ben
                     haben; vnd iſt darauff den 3. Decemb. <lb />der Außzug geſchehen. <lb />Dieweil
                     H. M. Johann Philip Goͤt⸗ <lb />zen Gluͤckwuͤnſchungs Predig / wegen des <lb />erlangten
@@ -4341,7 +4437,7 @@
                         <abbr>Regiments⸗ <lb /> Burgkmañen</abbr>
                         <expan>Regiments⸗ <lb /> Burgkmannen</expan>
                     </choice>
-                    der Kayſ. und des H. Reichs <lb />BurgkFriedberg / ꝛc. dedicirt / und zu Gieſ⸗ <lb />ſen
+                    der Kayſ. und des H. Reichs <lb />BurgkFriedberg / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> dedicirt / und zu Gieſ⸗ <lb />ſen
                     in 4. gedruckt/ heraus kommen: Als <lb />hab ich folgendes heraus ziehen / und
                     hie⸗ <lb />her bringen wollen. Der ſchreibet nun / un⸗ <lb />ter anderm / p. 48.
                     alſo: Anno 1309. hat <lb />nach Abgang des letzten Graven zu Kay⸗ <lb />chen /
@@ -4349,7 +4445,7 @@
                     des Reichs / die loͤbliche Burgk⸗ <lb />manne / mit ſolcher Graffſchafft
                     genaͤdigſt <lb />belehnt / inveſtirt und confirmiret / auch <lb />ſucceſſu
                     temporis, die Roͤmiſche Kaͤyſer / <lb />mit vielen herꝛlichen Privilegiis, deren
-                    Sie <lb />noch mit groſſem Lob genieſſen / begabet / ꝛc. <lb />Und in der
+                    Sie <lb />noch mit groſſem Lob genieſſen / begabet / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />Und in der
                     Dedication ſagt Er neben an⸗ <lb />derm auch folgendes: An. Chriſti 1620. <lb />den
                     14. Tag Decembris St. Vet. Sind <lb />erſtlich die Spanniſche Kriegs⸗Voͤlcker / <lb />unterm
                     Commando eines Graven von <lb />Nider⸗Jſenburg / hier eingezogen. Auff <lb />die
@@ -4357,7 +4453,7 @@
                     Jahrs / ward der Span. Don Al- <fw
                         type="catch">bero</fw>
                 <fw type="sig">H 3</fw>
-                <pb n="62" />
+                <pb n="113" facs="DOI.jpg"/>
                 <fw type="pageNum">
                     62</fw>
                 <fw type="header">Beſchreibung der vornehmſten Orth</fw>
@@ -4422,7 +4518,7 @@
                     zu Paræi Compagny gelegt wor⸗ <lb />den. Anno 40. den 10. Januar. iſt Herr <lb />Obriſter
                     Roſa Friedbergs maͤchtig wor⸗ <lb />den. Den 6. Febr. iſt Hauptmann Suſe⸗ <lb />wind
                     herkommen / dem den 7. Martii ge⸗ <fw type="catch">folget</fw>
-                <pb n="63" />
+                <pb n="114" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">63</fw>
                 <fw type="header">in Heſſen / vnd den benachbarten
@@ -4493,7 +4589,7 @@
                     / und bey dem am 5. Tag Julii <lb />dieſes 1650. Jahrs / fruͤhe morgens / be⸗ <lb />ſchehenen
                     Abzug / die Kayſ. Burg / vnnd <lb />Reichs Statt Friedberg / wieder in den al⸗ <fw
                         type="catch">ten:</fw>
-                <pb n="64" />
+                <pb n="115" facs="DOI.jpg"/>
                 <fw type="pageNum">64</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -4569,8 +4665,14 @@
                     obgedachten Laͤnd⸗ <lb />lein gelegen / uund Benedictiner Ordens <lb />iſt. Er
                     hat vom Pabſt Zacharia I. erhal⸗ <lb />ten / daß ſolches Cloſter allein dem
                     Roͤmi⸗ <lb />ſchen Stuhl / vnd ſonſten keinem Biſchoſſ / <fw type="catch">ſolte</fw>
-                <pb
-                        n="65" />
+                    <pb n="116" facs="DOI.jpg"/>
+                    <pb n="117" facs="DOI.jpg"/>
+                    <figure xml:id="stichID34"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID35"><graphic url="stichDOI.jpg"/></figure>
+
+                    <pb n="118" facs="DOI.jpg"/>
+                    <pb
+                        n="119" facs="DOI.jpg"/>
                 <fw type="pageNum">65</fw>
                 <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -4630,7 +4732,7 @@
                     Mackenzell. Ampt Neuenhoff/ des <lb />Herrn Abbten Reſidentz. Gegen dem Vo⸗ <lb />gelsberg
                     folgende vier Aempter / als Ulm⸗ <lb />bach / Weydenau / Hoſſenfeld / Heraldts. <lb />Ferners
                     die Cente Flieten / das AmptGei⸗ <lb />ſel/ das Ampt Weyers / Ampt Mutten / <lb />Ampt
-                    Herbſtein / ꝛc. Cent groſſen Luder. <lb />Unter den Aebbten der erſte / ſo ſich
+                    Herbſtein / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Cent groſſen Luder. <lb />Unter den Aebbten der erſte / ſo ſich
                     beyder⸗ <lb />ley Schwerd gebraucht hat / war Thieto, <lb />der An. Chriſti 856.
                     in Anſehen geweſt iſt. <lb />Es werden aber die Aebbte allhie in dieſer <lb />Ordnung
                     gezehlet. 1. St. Sturmus, oder <lb />Sturmio, welcher in Bayern von Adelichen <lb />Eltern
@@ -4651,7 +4753,7 @@
                     / vorgeſtanden. Der 2. Abbt <fw type="catch">war</fw>
                 <fw type="sig">J</fw>
                 <pb
-                        n="66" />
+                        n="120" facs="DOI.jpg"/>
                 <fw type="pageNum">66</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -4740,7 +4842,7 @@
                         <expan>Und</expan>
                     </choice> das Schloß Biberſtein <lb />gebaut.
                     37. Herman. 38. Burchar. welcher <fw type="catch">Hatten⸗</fw>
-                <pb n="67" />
+                <pb n="121" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">67</fw>
                 <fw type="header">in Heſſen und den benachbarten
@@ -4813,7 +4915,7 @@
                     angefangen worden iſt. <fw type="catch">Und</fw>
                 <fw type="sig">J 2</fw>
                 <pb
-                        n="68" />
+                        n="122" facs="DOI.jpg"/>
                 <fw type="pageNum">68</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -4877,17 +4979,17 @@
                     Ordens⸗Rit⸗ <lb />tern / nach Fulda geſetzet hat. Anno 1584. <lb />wurde vom
                     Papſt Gregorn dem XIII. das <lb />Seminarium fuͤr junge Edelleuth aus den <lb />Mittnaͤchtiſchen
                     Landen allhie zu Fulda <lb />angeordnet / daß dieſelbe umbſonſt da un⸗ <lb />terhalten
-                    / und in guten Kuͤnſten / ꝛc. unter⸗ <lb />wieſen werden ſolten. Anno 1591. kam
+                    / und in guten Kuͤnſten / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> unter⸗ <lb />wieſen werden ſolten. Anno 1591. kam
                     ein <lb />Theil des Fuͤrſt Chriſtians von Anhalt <lb />Kriegsvolcks / ſo nach
                     Franckreich zoge / <lb />hieher / und machte ſich an die Jaden. An- <lb />no
                     1600. ward der letzte und zehende Stadt⸗ <lb />halter / im Namen Ertzhertzogs
-                    Maximilia⸗ <lb />ni / Hochmeiſters in Preuſſen / ꝛc. allhie / <lb />Herꝛ Ulrich
+                    Maximilia⸗ <lb />ni / Hochmeiſters in Preuſſen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> allhie / <lb />Herꝛ Ulrich
                     von Stozingen. Und kam <lb />dieſes Jahrs auch allda ein Wunderge⸗ <lb />burt
                     auf die Welt / Weiblichen Geſchlechts / <lb />ſo unter andern / nur ein Ohr /
                     und einen <lb />Schnabel wie die Calecutiſchen / oder Jn⸗ <lb />dianiſchen
                     Hennen / hatte. An. 1601. ward <lb />die ſchoͤne Bruͤck uͤber die Fulda nach <fw
                         type="catch">S. An⸗</fw>
-                <pb n="69" />
+                <pb n="123" facs="DOI.jpg"/>
                 <fw type="pageNum">69</fw>
                 <fw
                         type="header">in Heſſen / vnd den benachbarten Landen.</fw>
@@ -4955,7 +5057,7 @@
                     Schloßgraben geworffen / zum theil <fw type="catch">Hun⸗</fw>
                 <fw type="sig">J 3</fw>
                 <pb
-                        n="70" />
+                        n="124" facs="DOI.jpg"/>
                 <fw type="pageNum">70</fw>
                 <fw type="header">Beſchreibung der
                     vornehmſten Orth</fw>
@@ -4978,7 +5080,7 @@
                     ſchoͤne <lb />eingegrabene Bilder hat) unnd Frauen⸗ <lb />berg / oder S.
                     Marienberg; in deren Mit⸗ <lb />ten gleichſamb (ſo wol die Fuͤrſtliche Abb⸗ <lb />tey
                     / als die Stadt Fulda / und in derſelben / <lb />uͤber obernannte Kirchen / auch
-                    etliche Ca⸗ <lb />pellen / als S. Alexandri / S. Stephani / <lb />S. Pauli / ꝛc.
+                    etliche Ca⸗ <lb />pellen / als S. Alexandri / S. Stephani / <lb />S. Pauli / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice>
                     und etliche Spitaͤl / gelegen <lb />ſeyn. Umb die Stadt Fulda herumb feyn <lb />dieſe
                     Cloͤſter / Neueberg / Andresberg ge⸗ <lb />nandt / Frauenberg / Petersberg /
                     Johanns⸗ <lb />berg / Planckenau / Zell / Duͤllbau / unnd <lb />Holtzkirch zu
@@ -5025,7 +5127,7 @@
                     auch von ihr Dilichium in der Heſ⸗ <lb />ſiſchen Chronick part. 2. pag. 251.
                     ſeqq. <lb />&amp; 256. Chriſtophorus Brouverus lib. 3. <lb />Antiquitat.
                     Fuldenſ. pag. 216. nennets <fw type="catch">Geyſa⸗</fw>
-                <pb n="71" />
+                <pb n="125" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">71</fw>
                 <fw type="header">in Heſſen / vnd den benachbarten
@@ -5102,7 +5204,7 @@
                     / Saalmuͤn⸗ <lb />ſter / Hanau / biß auff Keſtatt / da er in den <lb />Maͤyn
                     faͤlt. Sie / die Stadt aber / ligt bey <lb />einem Berg / und nahend dem Wald <fw
                         type="catch">Speſ⸗</fw>
-                <pb n="72" />
+                <pb n="126" facs="DOI.jpg"/>
                 <fw type="pageNum">72</fw>
                 <fw
                         type="header">Beſchreibung der vornehmſten Orth</fw>
@@ -5115,7 +5217,7 @@
                     cultu divitiisque Sacram. <lb />Cæſaris hinc arcem Friderici nomine <lb />primi, <lb />Quæ
                     magnum decus eſt urbis, &amp; al- <lb />ter honos. <lb />Man ſehe / was D.
                     Philip Knipſchild / <lb />in ſeinem Rechtlichen Bedencken uͤber den <lb />Praͤcedentz
-                    Streit ꝛc. quæſt. 2. p. 132. von <lb />dieſer Burg / und ihrer Contribution zu
+                    Streit <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> quæſt. 2. p. 132. von <lb />dieſer Burg / und ihrer Contribution zu
                     der <lb />Ritter Caſſa, ſchreibet. Die Stadt iſt von <lb />der Burg abgeſondert
                     / und dem Reich vor <lb />ſich ſelbſten unterworffen / und hat ihr ſon⸗ <lb />derbar
                     Dicaſterium; welches wider Weh- <lb />nerum zu mercken, der Tomo 6. Sympho- <lb />rem.
@@ -5166,7 +5268,18 @@
                     expedition <lb />nicht allein den Frantzoſen uͤbel bekom⸗ <lb />men; ſondern
                     auch ſonſten / und ſonderlich <lb />dem Land ſchaͤdlich geweſen; wie dann <fw
                         type="catch">umb</fw>
-                <pb n="73" />
+                        <pb n="127" facs="DOI.jpg"/>
+                        <pb n="128" facs="DOI.jpg"/>
+                        <figure xml:id="stichID36"><graphic url="stichDOI.jpg"/></figure>
+
+                        <pb n="129" facs="DOI.jpg"/>
+                        <pb n="130" facs="DOI.jpg"/>
+                        <figure xml:id="stichID37"><graphic url="stichDOI.jpg"/></figure>
+                        <figure xml:id="stichID38"><graphic url="stichDOI.jpg"/></figure>
+
+                        <pb n="131" facs="DOI.jpg"/>
+                        <pb n="132" facs="DOI.jpg"/>
+                        
                 <fw type="pageNum">73</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -5235,7 +5348,7 @@
             </div>
             <fw type="catch">S. Goar /</fw>
             <fw type="sig">K</fw>
-            <pb n="74" />
+            <pb n="133" facs="DOI.jpg"/>
             <fw type="pageNum">74</fw>
             <fw type="header">Beſchreibung der vornehmſten Orth</fw>
             <lb />
@@ -5306,7 +5419,12 @@
                     Vettern und Brudern <lb />Landgraff Georgen / und aller ſeiner Liebd. <lb />Erben
                     und Nachkom̃en / Fuͤrſten zu Heſſen <lb />Darmſtaͤdtiſcher Lini / erblich und
                     ewiglich <fw type="catch">hie⸗</fw>
-                <pb n="75" />
+                <pb n="134" facs="DOI.jpg"/>
+                <pb n="135" facs="DOI.jpg"/>
+                <figure xml:id="stichID39"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID40"><graphic url="stichDOI.jpg"/></figure>
+                <pb n="136" facs="DOI.jpg"/>
+                <pb n="137" facs="DOI.jpg"/>
                 <fw type="pageNum">75</fw>
                 <fw
                         type="header">in Heſſen / vnd den benachbarten Landen.</fw>
@@ -5379,7 +5497,7 @@
                     gefunden werden / darinn die <lb />Statt Gieſſen zu den Giſſen genant wird. <fw
                         type="catch">Anno</fw>
                 <fw type="sig">K 2</fw>
-                <pb n="76" />
+                <pb n="138" facs="DOI.jpg"/>
                 <fw type="pageNum">
                     76</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -5448,7 +5566,7 @@
                     triſtis hic annus <lb />erat. <lb />Fulmine tacta fuit Giſſæ pars magna ſini- <lb />
                     ſtro; <lb />Avertat poſthac talia fata Deus. <lb />Beſiehe die Inſtit. Orat. D.
                     Cunradi <fw type="catch">Diete-</fw>
-                <pb n="77" />
+                <pb n="139" facs="DOI.jpg"/>
                 <fw type="pageNum">77</fw>
                 <fw
                         type="header">in Heſſen und andern benachbarten Landen.</fw>
@@ -5493,10 +5611,10 @@
                     deſſelben Hauſſes innerſte <lb />Boͤhne iſt gemacht unnd gemahlet / mit <lb />Sonn
                     / Mond und Sternen / den Himmel <lb />fuͤrbildend: weiter findet man darin viel⸗ <lb />faͤltige
                     Gemaͤlder von dem Leyden / Ster⸗ <lb />ben / und Auferſtehung des HErꝛn Chriſti
-                    / <lb />von Aufferſtehung der Todten / vom <lb />Juͤngſten Gericht / ꝛc.
+                    / <lb />von Aufferſtehung der Todten / vom <lb />Juͤngſten Gericht / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice>
                     Deßgleichen / ſo wol <lb />inner⸗als auſſer dem Hauſe / die ſchoͤne E- <lb />pitaphia,
                     und Grabſchrifften. Hierauff <lb />folgen die Auſſenwercke der vier Stadt / <lb />Thoren
-                    / der Wall mit eilff Bollwercken / <lb />ꝛc. Jn der mitte der Statt iſt der
+                    / der Wall mit eilff Bollwercken / <lb /><choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Jn der mitte der Statt iſt der
                     Marckt / <lb />darauff ſteht die Juſtitz / als Galgen / <lb />Wippe / Drilles
                     unnd Eſel. Ferner / die <lb />Kirche / darinn der Altar / der Tauffſtein / <lb />die
                     Cantzel / das Creutz Chriſti; in der Ca⸗ <lb />pell die Bibliotheck / die Orgel
@@ -5506,7 +5624,7 @@
                     und Geigen. Ferner hat <lb />es in der Statt viel treffliche Gebaͤu / als <lb />das
                     Collegium, mit ſeinen Anditoriis, o⸗ <lb />der Zugehoͤr⸗Saͤlen; das
                     Rath⸗Zeug⸗und <lb />Haupthauß / die Kugelronde Roßmuͤhl / <lb />und dergleichen
-                    mehr ꝛc. Siehe Stanisl. <lb />Minck / von Weinsheim / I. I. W. in re- <lb />lat.
+                    mehr <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Siehe Stanisl. <lb />Minck / von Weinsheim / I. I. W. in re- <lb />lat.
                     noviſſ. ex Parnaſſo, de arte Remini- <lb />ſcentiæ, pag. 114. ſeq. Herr
                     Landgraff <lb />Philipps zu Heſſen / ſo zu Butzbach Hoff <lb />gehalten / hat
                     der obgedachten hohen Schul <lb />ſeine gar kunſtreiche / und ſehr theure In- <lb />ſtrumenta
@@ -5519,7 +5637,7 @@
                     neceſſitas) pinnacidium imponitur, <lb />ad obſervandum diſtantias minores. <fw
                         type="catch">Qua-</fw>
                 <fw type="sig">K 3</fw>
-                <pb n="78" />
+                <pb n="140" facs="DOI.jpg"/>
                 <fw type="pageNum">
                     78</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -5602,7 +5720,18 @@
                     Schaufus (welcher ſonder Zweif⸗ <lb />fel ein Mit⸗Ordens⸗Herr daſelbſten / ſon⸗ <lb />ſten
                     aber einer von Adel / unnd deſſen <lb />angewandten Burgmaͤnner zu Alsfeld <fw
                         type="catch">gewe⸗</fw>
-                <pb n="79" />
+                        <pb n="141" facs="DOI.jpg"/>
+                        <figure xml:id="stichID41"><graphic url="stichDOI.jpg"/></figure>
+                        <figure xml:id="stichID42"><graphic url="stichDOI.jpg"/></figure>
+                        <figure xml:id="stichID43"><graphic url="stichDOI.jpg"/></figure>
+
+                        <pb n="142" facs="DOI.jpg"/>
+                        <pb n="143" facs="DOI.jpg"/>
+                        <figure xml:id="stichID44"><graphic url="stichDOI.jpg"/></figure>
+                        <figure xml:id="stichID45"><graphic url="stichDOI.jpg"/></figure>
+
+                        <pb n="144" facs="DOI.jpg"/>
+                        <pb n="145" facs="DOI.jpg"/>
                 <fw type="pageNum">79</fw>
                 <fw
                         type="header">in Heſſen / vnd den benachbarten Landen.</fw>
@@ -5678,7 +5807,7 @@
                     ſtehen dieſe Wort: Nos Hen- <lb />ricus Dei gratia Landgravius, Terræ <lb />Haſſiæ
                     Dominus, una cum Adelheidi <lb />Landgravia conjugata noſtra concedi- <lb />mus
                     dilectis civibus noſtris in Grunen- <fw type="catch">berg</fw>
-                <pb n="80" />
+                <pb n="146" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">80</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -5749,7 +5878,12 @@
                     Langenberg / in ei⸗ <lb />nem Grunde / nicht weit von dem alten ver⸗ <lb />wuͤſten
                     Schloß Falckenſtein / denen E⸗ <lb />delleuthen die Hunde zu Kirchberg genant / <lb />zuſtaͤndig;
                     fleuſt foͤrters durchs Cloſter <fw type="catch">Merx /</fw>
-                <pb n="81" />
+                
+                    <pb n="147" facs="DOI.jpg"/>
+                    <figure xml:id="stichID46"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID47"><graphic url="stichDOI.jpg"/></figure>
+                    <pb n="148" facs="DOI.jpg"/>
+                    <pb n="149" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">81</fw>
                 <fw type="header">in Heſſen vnd den benachbarten
@@ -5824,7 +5958,7 @@
                     auß. <lb />Jm Jahr 1636. auff Abſterben Graff <fw type="catch">Ern⸗</fw>
                 <fw
                         type="sig">L</fw>
-                <pb n="82" />
+                <pb n="150" facs="DOI.jpg"/>
                 <fw type="pageNum">82</fw>
                 <fw type="header">Beſchreibung
                     der vornembſten Orth</fw>
@@ -5841,7 +5975,7 @@
                     Anno 1641. am 31. Maij <lb />haben die Kaͤyſerliche Mayeſt. in dieſer Sach <lb />wider
                     Jhre Chur⸗Fuͤrſtlich. Durchl. Execu- <lb />toriales ergehen laſſen. <lb />Bey
                     den General Reichs Friedens⸗ <lb />Handlungen / iſt / im Jahr 1648. geſchloſ⸗ <lb />ſen
-                    worden / daß Herꝛn Ernſten / Graffen <lb />zu Sayn / ꝛc. Fraw Wittib / wider in
+                    worden / daß Herꝛn Ernſten / Graffen <lb />zu Sayn / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Fraw Wittib / wider in
                     die <lb />Jenige Poſſeſſion deß Schloſſes / Staͤtt⸗ <lb />leins / vnnd Ampts
                     Hachenburg / ſampt zu⸗ <lb />gehoͤr / als auch deß Fleckens Bendorff / <lb />eingeſetzt
                     werden ſoll.</p>
@@ -5855,7 +5989,7 @@
                     1606. den 8. Octob. auff <lb />Abſterben Herrn Graff Johann deß aͤltern <lb />zu
                     Naſſaw vorgenommen worden / hat auß <lb />ſeinen hinderlaſſenen Soͤhnen / Johann <lb />Ludwig
                     / Graffe zu Naſſaw / (jetzo deß H. <lb />Roͤmiſchen Reichs Fuͤrſten zu Naſſaw /
-                    der <lb />Roͤmiſchen Kayſerl. Mayeſt. ꝛc. Gehei⸗ <lb />men Rath / Cammerern /
+                    der <lb />Roͤmiſchen Kayſerl. Mayeſt. <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Gehei⸗ <lb />men Rath / Cammerern /
                     vnd Gevollmaͤch⸗ <lb />tigten in Weſtphalen / vnd vorhero zu den <lb />Muͤnſteriſchen
                     vnnd Oßnabruckiſchen <lb />Friedens Tractaten Geſandten / ſo den 6. <lb />Mertzen
                     / des Jahrs 1653. geſtorben:) die <lb />Herrſchafft Hadamar / Ellar / neben
@@ -5906,7 +6040,12 @@
                     Hoſpital in Heſſen / reich von <lb />Einkommen / vnd wol mit Waͤlden / Acker⸗ <lb />baw
                     / Teichen / vnd anderem verſehen. Wie <lb />es dann an einem groſſen Waldt ligt
                     / auß <fw type="catch">wel⸗</fw>
-                <pb n="83" />
+                <pb n="151" facs="DOI.jpg"/>
+                <figure xml:id="stichID48"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID49"><graphic url="stichDOI.jpg"/></figure>
+                <pb n="152" facs="DOI.jpg"/>
+                <pb n="153" facs="DOI.jpg"/>
+
                 <fw type="pageNum">83</fw>
                 <fw
                         type="header">in Heſſen vnd den benachbarten Landen.</fw>
@@ -5986,7 +6125,7 @@
                 <fw type="catch">Fal⸗</fw>
                 <fw
                         type="sig">L ij</fw>
-                <pb n="[84]" />
+                <pb n="154" facs="DOI.jpg"/>
                 <fw type="pageNum"><choice>
                             <sic>82</sic>
                             <corr>84</corr>
@@ -6082,7 +6221,11 @@
                     Conradus de Malkos nomine <lb /> dictus, <lb />Hamlburg circumdat muris, &amp;
                     mœnia <lb /> fundat. <lb />Zu deß D. Martin Luthers Zeiten haben <fw
                         type="catch">die</fw>
-                <pb n="85" />
+                <pb n="155" facs="DOI.jpg"/>
+                <pb n="156" facs="DOI.jpg"/>
+                <figure xml:id="stichID50"><graphic url="stichDOI.jpg"/></figure>
+                <pb n="157" facs="DOI.jpg"/>
+                <pb n="158" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">85</fw>
                 <fw type="header">in Heſſen vnd den benachbarten
@@ -6116,7 +6259,7 @@
                     vom <lb />Rhein / 2. von Franckſurt / vnd an dem Fluß <lb />Kuͤntz / nahend dem
                     Mayn gelegen. <lb />Dieſe Statt ligt nicht allein wol / vnd an <lb />einem
                     luſtigen Ort / ſondern auch ſchoͤn er⸗ <lb />bawet / mit Waͤllen vnd Graͤben /
-                    ꝛc. wol be⸗ <lb />feſtiget / vnd in die Alte / vnnd Newe Statt / <lb />abgetheilet.
+                    <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> wol be⸗ <lb />feſtiget / vnd in die Alte / vnnd Newe Statt / <lb />abgetheilet.
                     Hat neben der Pfarr⸗auch ein <lb />Niderlaͤnd⸗vnd Frantzoͤſiſche Kirch / vnd ein <lb />ſtattliches
                     Schloß. Der Schwediſ. Obriſt <lb />Hubald hat ſolche den 1. Novembris / An. <lb />1631.
                     mit Liſt eingenommen / vnnd die Alt⸗ <lb />ſtaͤtter von den Newſtaͤttern / durch
@@ -6167,7 +6310,7 @@
                     verheurathet hat; vnnd Anno 53. auff <fw type="catch">dem</fw>
                 <fw type="sig">L
                     iij</fw>
-                <pb n="86" />
+                <pb n="159" facs="DOI.jpg"/>
                 <fw type="pageNum">86</fw>
                 <fw type="header">Beſchreibung
                     der vornembſten Orth</fw>
@@ -6249,7 +6392,19 @@
                     Joh. Heidfeldius, Wilhel- <lb />mus Zepper, (ſo allhie Anno 1607. an der <lb />Peſt
                     geſtorben) Johan. Ulnerus, D. Joh. <lb />Gœddæus, D. Joh. Althuſius, D. Anto- <lb />nius
                     Matthæus, D. Phlippus Henricus <fw type="catch">Hœno-</fw>
-                <pb n="87" />
+                
+                
+                    <pb n="160" facs="DOI.jpg"/>
+                    <pb n="161" facs="DOI.jpg"/>
+                    <figure xml:id="stichID51"><graphic url="stichDOI.jpg"/></figure>
+
+                    <pb n="162" facs="DOI.jpg"/>
+                    <pb n="163" facs="DOI.jpg"/>
+                    <figure xml:id="stichID52"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID53"><graphic url="stichDOI.jpg"/></figure>
+
+                    <pb n="164" facs="DOI.jpg"/>
+                    <pb n="165" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">87</fw>
                 <fw type="header">in Heſſen vnd den benachbarten
@@ -6329,7 +6484,7 @@
                     vnnd Ruthardo <lb />(Freyherrn von Beuren / wie Abraham <lb />Sawer am 201. Blat
                     ſchreibet) wiederumb <lb />auff gebawet. Jſt ein wunderlich / vnd kunſt⸗ <fw
                         type="catch">reich</fw>
-                <pb n="88" />
+                <pb n="166" facs="DOI.jpg"/>
                 <fw type="pageNum">88</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -6376,7 +6531,7 @@
                     ſehr luſtiges / vnd frucht⸗ <lb />bares Laͤndlein / vnnd hat / zu einer
                     Fuͤrſtli⸗ <lb />chen Reſidentz alle erwuͤnſchte Gelegenhei⸗ <lb />ten / als /
                     nottuͤrfftig Wildpret / Schnabel⸗ <lb />weide / Fiſchereyen / Frucht / vnnd
-                    Wieſen⸗ <lb />wachs / Viehezucht / ꝛc. Graͤntzet meiſtlich <lb />mit dem Stifft
+                    Wieſen⸗ <lb />wachs / Viehezucht / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Graͤntzet meiſtlich <lb />mit dem Stifft
                     Fulda / der Graffſchaft Zie⸗ <lb />genhain / vnd Nider⸗Fuͤrſtenthum Heſſen. <lb />Der
                     Fuldaſtrom laufft mitten dardurch / <lb />neben der Statt Hirſchfeld her / da
                     gleich ge⸗ <lb />gen vber der Haunfluß / ſo auch im Stifft <lb />Fulda / bey
@@ -6396,7 +6551,7 @@
                     oder zuſammen graͤntzen / als das <lb />Stifft Fulda / Stifft Hirſchfeld / vnd
                     das <lb />Fuͤrſtenthumb Heſſen. Gedachte Statt <fw type="catch">Hirſch⸗</fw>
                 <pb
-                        n="89" />
+                        n="167" facs="DOI.jpg"/>
                 <fw type="pageNum">89</fw>
                 <fw type="header">in Heſſen vnd den
                     benachbarten Landen.</fw>
@@ -6472,7 +6627,7 @@
                     die ander in Heſſen / zwiſchen Hirſch⸗ <fw type="catch">feld /</fw>
                 <fw
                         type="sig">M</fw>
-                <pb n="90" />
+                <pb n="168" facs="DOI.jpg"/>
                 <fw type="pageNum">90</fw>
                 <fw type="header">Beſchreibung
                     der vornembſten Orth</fw>
@@ -6513,7 +6668,7 @@
                     hatten / Landgraff Philips auß Heſſen <lb />gleich da geweſen / vnd die Aufruhr
                     geſtil⸗ <lb />let hat; daß kein ſonderer Schad allhie da⸗ <lb />mals geſchehen
                     iſt. Vnnd deßwegen ſo ha⸗ <lb />ben auch Jhre Hochfuͤrſtl. Durchl. Ertz⸗ <lb />Hertzog
-                    Leopold Wilhelm von Oeſter⸗ <lb />reich / ꝛc. jetziger Herr Adminiſtrator, als <lb />ſie
+                    Leopold Wilhelm von Oeſter⸗ <lb />reich / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> jetziger Herr Adminiſtrator, als <lb />ſie
                     dieſes Fuͤrſtliche Stifft in Poſſes ange⸗ <lb />nommen / dem Herrn Landgraffen
                     ſein Jus <lb />daran vorbehalten / auch die Religion / wie <lb />ſie vorhin
                     geweſen / freygelaſſen / wie in <lb />tom. 1. Theatri <choice>
@@ -6551,7 +6706,13 @@
                     lange Zeit dieſes Schloß / <lb />welches aber von den Sternern entlich ent⸗ <lb />ſetzt
                     ward. Anjetzo bewohnet es das Ade⸗ <lb />liche Geſchlecht deren von
                     Doͤringenberg <fw type="catch">welches</fw>
-                <pb n="91" />
+                    <pb n="169" facs="DOI.jpg"/>
+                    <pb n="170" facs="DOI.jpg"/>
+                    <figure xml:id="stichID54"><graphic url="stichDOI.jpg"/></figure>
+                    <figure xml:id="stichID55"><graphic url="stichDOI.jpg"/></figure>
+
+                    <pb n="171" facs="DOI.jpg"/>
+                    <pb n="172" facs="DOI.jpg"/>
                 <fw type="pageNum">91</fw>
                 <fw
                         type="header">in Heſſen vnd den benachbarten Landen.</fw>
@@ -6631,7 +6792,7 @@
                     außfuͤhrliche⸗ <lb />re Beſchreibung ſolcher Statt vnd Ampts <fw type="catch">
                     Hom⸗</fw>
                 <fw type="sig">M ij</fw>
-                <pb n="92" />
+                <pb n="173" facs="DOI.jpg"/>
                 <fw type="pageNum">92</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -6704,7 +6865,12 @@
                     / vnnd Weſten / ein vberauß herr⸗ <lb />liches Außſehen / in welchem man den
                     meh⸗ <lb />rertheils deſſen / ſo man auff dem Schloß <lb />Homberg ſihet / auch
                     wahrnehmen kan; in⸗ <fw type="catch">ſonder⸗</fw>
-                <pb n="93" />
+                <pb n="174" facs="DOI.jpg"/>
+                <figure xml:id="stichID56"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID57"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="175" facs="DOI.jpg"/>
+                <pb n="176" facs="DOI.jpg"/>
                 <fw type="pageNum">
                     93</fw>
                 <fw type="header">in Heſſen vnd den benachbarten Landen.</fw>
@@ -6782,7 +6948,7 @@
                     ein Begraͤbnuß / worvon ſie Jaͤhrlichen <lb />etwas Zinß / ſo dann von jedem
                     Verſtorbe⸗ <fw type="catch">nen</fw>
                 <fw type="sig">M iij</fw>
-                <pb n="94" />
+                <pb n="177" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">94</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -6868,7 +7034,23 @@
                     Feld. Von dieſem Namen aber iſt <lb />droben / da von dem Namen Heſſen etwas <lb />Meldung
                     gethan worden / Vrſach zu ſin⸗ <lb />den. Von eben dieſen Hotzfelden poſterirt <lb />der
                     jetzige Kaͤyſerliche Feldt⸗Marſchalck / <fw type="catch">Herr</fw>
-                <pb n="95" />
+                <pb n="178" facs="DOI.jpg"/>
+                <figure xml:id="stichID58"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID59"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="179" facs="DOI.jpg"/>
+                <pb n="180" facs="DOI.jpg"/>
+                <figure xml:id="stichID60"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID61"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID62"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="181" facs="DOI.jpg"/>
+                <pb n="182" facs="DOI.jpg"/>
+                <figure xml:id="stichID63"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID64"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="183" facs="DOI.jpg"/>
+                <pb n="184" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">95</fw>
                 <fw type="header">in Heſſen vnd den benachbarten
@@ -6955,7 +7137,7 @@
                     aber <lb />zum theil von ſeine Bruder Ottone / Prob⸗ <lb />ſten zu Cappenberg /
                     im Jahr 1148. erha⸗ <lb />ben / vnnd nach ermeltem Cloſter Cappen⸗ <lb />berg
                     gebracht worden feyn ſollen. A. 1646. <fw type="catch">im</fw>
-                <pb n="96" />
+                <pb n="185" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">96</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -7048,7 +7230,12 @@
                     ſuchten.</p>
             </div>
             <fw type="catch">Kau⸗</fw>
-            <pb n="97" />
+            <pb n="186" facs="DOI.jpg"/>
+            <figure xml:id="stichID65"><graphic url="stichDOI.jpg"/></figure>
+            <figure xml:id="stichID66"><graphic url="stichDOI.jpg"/></figure>
+
+            <pb n="187" facs="DOI.jpg"/>
+            <pb n="188" facs="DOI.jpg"/>
             <fw type="pageNum">97</fw>
             <fw type="header">in Heſſen vnd den benachbarten Landen.</fw>
             <lb />
@@ -7124,7 +7311,7 @@
                     Nachbarſchafft / auch nit <lb />Seyden geſponnen / ſondern die Kriegs⸗ <fw
                         type="catch">laſt</fw>
                 <fw type="sig">N</fw>
-                <pb n="98" />
+                <pb n="189" facs="DOI.jpg"/>
                 <fw type="pageNum">
                     98</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -7200,7 +7387,22 @@
                 <p>JSt das aͤlteſte Staͤttlein in der Graf⸗ <lb />ſchafft Witgenſtein / vnder dem
                     ho⸗ <lb />hen Berg⸗ vnd Haupt⸗ Schloß Witgen⸗ <lb />ſtein / in dem Thal / an dem
                     Waſſer der <fw type="catch">Loͤhn</fw>
-                <pb n="99" />
+                <pb n="190" facs="DOI.jpg"/>
+                <figure xml:id="stichID67"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID68"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="191" facs="DOI.jpg"/>
+                <pb n="192" facs="DOI.jpg"/>
+                <figure xml:id="stichID69"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID70"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="193" facs="DOI.jpg"/>
+                <pb n="194" facs="DOI.jpg"/>
+                <figure xml:id="stichID71"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID72"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="195" facs="DOI.jpg"/>
+                <pb n="196" facs="DOI.jpg"/>
                 <fw type="pageNum">99</fw>
                 <fw
                         type="header">in Heſſen vnd den benachbarten Landen.</fw>
@@ -7237,7 +7439,7 @@
                 <lb />
                 <p>LJgt ein Meyl wegs von Haͤger / auff <lb />dem Weſterwald. Das Staͤttlein iſt <lb />mit
                     einem Wall / vnnd das Schloß auch <lb />mit Waſſer vmbgeben. Vnd hat auff dem <lb />Schloß
-                    etliche Jahr lang der letzten Gra⸗ <lb />fen von Beylſtein / ꝛc. einer ſeine
+                    etliche Jahr lang der letzten Gra⸗ <lb />fen von Beylſtein / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> einer ſeine
                     Reſidentz / <lb />und Sitz / gehabt. Jſt jetzt Graͤflich Naſ⸗ <lb />ſauiſch.</p>
             </div>
             <lb />
@@ -7290,7 +7492,7 @@
             </div>
             <fw type="catch">Ludwig⸗</fw>
             <fw type="sig">N ij</fw>
-            <pb n="100" />
+            <pb n="197" facs="DOI.jpg"/>
             <fw type="pageNum">100</fw>
             <fw type="header">Beſchreibung der vornembſten Orth</fw>
             <lb />
@@ -7366,8 +7568,11 @@
                     Jahr 1229. es in dem Dorff Mar⸗ <lb />purg keine Kirch / dann allein die
                     Capellen <lb />S. Chiliani / ein Filial zu der Paſtorey zu <lb />Obern⸗Weimar /
                     vnd binnen zweyen Jah⸗ <lb />ren davon ſeparirt war. <fw type="catch">Aber</fw>
-                <pb
-                        n="101" />
+                <pb n="198" facs="DOI.jpg"/>
+                <pb n="199" facs="DOI.jpg"/>
+                <figure xml:id="stichID73"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="200" facs="DOI.jpg"/>
                 <fw type="pageNum">101</fw>
                 <fw type="header">in Heſſen vnd den
                     benachbarten Landen.</fw>
@@ -7433,7 +7638,7 @@
                     heilige Land ziehen / ſtarb aber <lb />entweders zu Ortrant / oder zu Brundus. <fw
                         type="catch">(Obge⸗</fw>
                 <fw type="sig">N iij</fw>
-                <pb n="102" />
+                <pb n="201" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">102</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -7502,7 +7707,7 @@
                         <expan>Vermoͤgen</expan>
                     </choice> dotirt; <lb />innhalt
                     eines daruͤber verfertigten Brieffs. <fw type="catch">Die</fw>
-                <pb n="103" />
+                <pb n="202" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">103</fw>
                 <fw type="header">in Heſſen vnd den benachbarten
@@ -7580,7 +7785,7 @@
                     zu <lb />finden / P. Matthæus Raderus faſt ſo viel <lb />Blaͤtter gemacht / die
                     in dem 1. Theil / von <lb />den Heyligen in Bayern / zu leſen. Siehe <fw
                         type="catch">auch</fw>
-                <pb n="104" />
+                <pb n="203" facs="DOI.jpg"/>
                 <fw type="pageNum">104</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -7641,7 +7846,7 @@
                     ſtaͤtigem <lb />leſen vnd predigen. Die erſte Pfarr⸗Kirch <lb />zu S. Kilian iſt
                     verfallen / vnd An. 1581. <lb />den 31. Julij zur Teutſchen Schulen ge⸗ <lb />macht
                     worden. Es haben bey der Hohen⸗ <fw type="catch">Schul</fw>
-                <pb n="105" />
+                <pb n="204" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">105</fw>
                 <fw type="header">in Heſſen vnd den benachbarten
@@ -7703,7 +7908,7 @@
                     Loniceri, Græci, wel⸗ <lb />cher ſolches gedencket in der Oratione Fune- <lb />bri
                     Ferrarij zu Marpurg 1558. getruckt / <lb />vnnd iſt von dieſem vnnd andern ihren <lb />Nachkommen
                     / die Augſpurgiſche Confeſ⸗ <fw type="catch">ſion</fw>
-                <pb n="106" />
+                <pb n="205" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">106</fw>
                 <fw type="header">Beſchreibung der vornehmbſten Orth</fw>
@@ -7740,7 +7945,7 @@
                     worden: Krafft welchen Ver⸗ <lb />gleichs die Fuͤrſtliche Heſſen⸗Darmſtaͤt⸗ <lb />tiſche
                     Lini / vnder anderm die Statt Mar⸗ <lb />purg / Jtem die Vniverſitaͤt / deren
                     Jura, <lb />Privilegia, Auffſicht / Verwaltung / Vni⸗ <lb />verſitaͤts Gebaͤw /
-                    ꝛc. vnd zwar Erblich <lb />bekommen / darneben ſich verbunden / bey <lb />Jhrer
+                    <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> vnd zwar Erblich <lb />bekommen / darneben ſich verbunden / bey <lb />Jhrer
                     Kaͤyſerl. Mayeſt. entweder newe Pri- <lb />vilegia zu einer Vniverſitaͤt / oder
                     Hohen⸗ <lb />Schul / im Nider⸗Fuͤrſtenthumb Heſſen / <lb />oder die Translation
                     der Gieſſiſchen / fuͤr <lb />die Caſſeliſche Lini / ohne derſelben Vnko⸗ <lb />ſten
@@ -7772,7 +7977,7 @@
                     Da auch benebenſt etlichen jungen <lb />Fuͤrſtlichen Perſonen ſich neun Grafen <lb />
                     befunden. <lb />Jm Jahr 1646. hat Herrn Landgraff <fw type="catch">Wilhelms</fw>
                 <pb
-                        n="107" />
+                        n="206" facs="DOI.jpg"/>
                 <fw type="pageNum">107</fw>
                 <fw type="header">in Heſſen vnd den
                     benachbarten Landen.</fw>
@@ -7809,7 +8014,7 @@
                     Gieſſen / im Jahr 1650. trans⸗ <lb />ferirt; hergegen allhie zu Marpurg / An⸗ <lb />no
                     1653. durch Herrn Landgraf Wilhel⸗ <lb />men / den Sechſten / zu Heſſen⸗Caſſel /
                     die <lb />Vniverſitaͤt / mit groſſer Solennitaͤt / wie⸗ <lb />der auffgerichtet
-                    / vnd gleich Anfangs mit <lb />12. Profeſſoribus verſehen worden iſt / ꝛc. <lb />Ein
+                    / vnd gleich Anfangs mit <lb />12. Profeſſoribus verſehen worden iſt / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />Ein
                     Meyl Wegs von dieſer Statt iſt ein <lb />alt verfallen Schloß zu ſehen / ſo
                     Fraw⸗ <lb />enberg wird genannt / von deſſen Vr⸗ <lb />ſprung / vnd wie es
                     zerſtoͤret worden nichts <lb />bewuſt iſt. So ſoll in dem Burgwald / ſo <lb />etlich
@@ -7854,7 +8059,7 @@
             </div>
             <fw type="catch">Milſun⸗</fw>
             <fw type="sig">O ij</fw>
-            <pb n="108" />
+            <pb n="207" facs="DOI.jpg"/>
             <fw type="pageNum">108</fw>
             <fw type="header">Beſchreibung der vornembſten Orth</fw>
             <lb />
@@ -7904,7 +8109,7 @@
                     eine v⸗ <lb />berfluͤſſige Menge ſehr ſtarcken vnnd ſtra⸗ <lb />cken
                     Eichenholtzes ſtehet / eygenthumbli⸗ <lb />chen gehoͤrig / daber auch alle im
                     Holtz ar⸗ <lb />beitende Handwercker / als / Zimmerleut / <lb />Schreiner /
-                    Faßbender / ꝛc. dieſes Orts <lb />ſehr im Schwang gehen / vnnd zu S<supplied>chi</supplied>ff
+                    Faßbender / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> dieſes Orts <lb />ſehr im Schwang gehen / vnnd zu S<supplied>chi</supplied>ff
                     / <lb />und Floͤſſen die Fulda hinab auff Caſſell <lb /><choice>
                         <sic>gefuͤhrer</sic>
                         <corr>gefuͤhret</corr>
@@ -7924,7 +8129,14 @@
                     vber / jenſeit der Fulda / am V⸗ <lb />fer / vnterm Wildsberge / ein anmuthiger <lb />Sauerbrunne.
                     So ligt in dieſem Ampt / <lb />in einem abſonderlichen Bezirck / zwiſchen <lb />der
                     Fulda / vnd Eder / an der Fulda / das <fw type="catch">groſſe</fw>
-                <pb n="109" />
+                <pb n="208" facs="DOI.jpg"/>
+                <figure xml:id="stichID74"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID75"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID76"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="209" facs="DOI.jpg"/>
+                <pb n="210" facs="DOI.jpg"/>
+
                 <fw
                         type="pageNum">109</fw>
                 <fw type="header">in Heſſen vnd den benachbarten
@@ -7993,7 +8205,7 @@
                     Bogen gewoͤlbter ſchoͤnen Bruͤcken / <lb />an den hohen Berg / darauff das
                     vhralte <lb />weitberuͤhmte Stammhauß / vnd Schloß <lb />Naſſaw gelegen /
                     gefuͤget. Was die Statt <lb />anlangt / iſt dieſelbe in etwas mit Naſſau⸗ <lb />Weilburg;
-                    aber das Schloß mit dem Naſ⸗ <lb />ſau Vraniſchen / ꝛc. vnd dann auch mit dem <lb />Naſſaw
+                    aber das Schloß mit dem Naſ⸗ <lb />ſau Vraniſchen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> vnd dann auch mit dem <lb />Naſſaw
                     Weilburgiſchen / ꝛc Stamm / in <lb />gaͤntzlicher Gemeinſchafft. Mitten an dem <lb />Berg
                     ligt das Adeliche Hauß Stein / den <lb />Junckern deſſelben alten Geſchlechts
                     zu⸗ <lb />ſtaͤndig. Vnd von dieſer Statt / vnnd <lb />Schloß / hat die vhralte
@@ -8009,7 +8221,7 @@
                     Reichs⸗Anſchlaͤge zum <fw type="catch">Roͤmer⸗</fw>
                 <fw type="sig">O iij</fw>
                 <pb
-                        n="110" />
+                        n="211" facs="DOI.jpg"/>
                 <fw type="pageNum">110</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -8080,7 +8292,17 @@
                     Dorff Hoff verruckt.</p>
             </div>
             <fw type="catch">Neukirch⸗</fw>
-            <pb n="111" />
+            <pb n="212" facs="DOI.jpg"/>
+            <figure xml:id="stichID77"><graphic url="stichDOI.jpg"/></figure>
+            <figure xml:id="stichID78"><graphic url="stichDOI.jpg"/></figure>
+
+            <pb n="213" facs="DOI.jpg"/>
+            <pb n="214" facs="DOI.jpg"/>
+            <figure xml:id="stichID79"><graphic url="stichDOI.jpg"/></figure>
+            <figure xml:id="stichID80"><graphic url="stichDOI.jpg"/></figure>
+
+            <pb n="215" facs="DOI.jpg"/>
+            <pb n="216" facs="DOI.jpg"/>
             <fw type="pageNum">111</fw>
             <fw type="header">in Heſſen vnd den benachbarten Landen.</fw>
             <lb />
@@ -8160,7 +8382,7 @@
                     Pro⸗ <lb />ſpect / oder Außſehen / ins Land zu Heſſen / <lb />vnd Braunſchweig /
                     zwiſchen der Weſer / <lb />vnnd Leina; da man eine groſſe menge <fw type="catch">Schloͤſſer
                     /</fw>
-                <pb n="112" />
+                <pb n="217" facs="DOI.jpg"/>
                 <fw type="pageNum">112</fw>
                 <fw type="header">Beſchreibung
                     der vornembſten Orth</fw>
@@ -8239,7 +8461,20 @@
                     Herrſchafft Pleß Monatlich <lb />einfacher Reichs⸗Anſchlag / in der Ma⸗ <lb />tricul
                     / iſt 12. fl. vnnd / zu Vnderhaltung <fw
                         type="catch">deß</fw>
-                <pb n="113" />
+                <pb n="218" facs="DOI.jpg"/>
+                <figure xml:id="stichID81"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID82"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID83"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="219" facs="DOI.jpg"/>
+                <pb n="220" facs="DOI.jpg"/>
+                <figure xml:id="stichID84"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID85"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID86"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="221" facs="DOI.jpg"/>
+                <pb n="222" facs="DOI.jpg"/>
+
                 <fw type="pageNum">113</fw>
                 <fw
                         type="header">in Heſſen vnd den benachbarten Landen.</fw>
@@ -8316,7 +8551,7 @@
                     ſolches Geſchlechts zu. <fw type="catch">Vnden</fw>
                 <fw type="sig">P</fw>
                 <pb
-                        n="114" />
+                        n="223" facs="DOI.jpg"/>
                 <fw type="pageNum">114</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -8399,7 +8634,7 @@
                     ſelbſt erfolgt. Beſiehe Fre- <lb />herum in notis ad P. de Andlo p. 166. a. <lb />item
                     in tomo German. rer. Scriptorib. fol. <lb />337. 427. 436. &amp; part. 2.
                     Origin. Palatin. <fw type="catch">cap. 2.</fw>
-                <pb n="115" />
+                <pb n="224" facs="DOI.jpg"/>
                 <fw type="pageNum">
                     115</fw>
                 <fw type="header">in Heſſen vnd andern benachbarten Landen.</fw>
@@ -8424,7 +8659,7 @@
                     Caſſel / <lb />die erſie an der Fulda / ſo vff derſelben bey⸗ <lb />den Vfern /
                     an einer lieblichen Aw / zwi⸗ <lb />ſen hohen Bergen / gelegen: der Zeit deß <lb />Durchlaͤuchtigen
                     / vnnd Hochgebohrnen <lb />Fuͤrſten / vnnd Herrn / Herrn Hermann / <lb />Landgraffens
-                    zu Heſſen / ꝛc. der Caſſeliſchen <lb />Lini / Hofflager Statt. <lb />Die eine
+                    zu Heſſen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> der Caſſeliſchen <lb />Lini / Hofflager Statt. <lb />Die eine
                     Statt / darinn das Schloß / wel⸗ <lb />ches Anno <choice>
                         <sic>| 1212.</sic>
                         <corr>1212.</corr>
@@ -8481,7 +8716,7 @@
                     Graffen / Edelleut / wie auch der Staͤt⸗ <lb />te Wappen / in jhrer Ordnung / zu
                     finden / <fw type="catch">vnnd</fw>
                 <fw type="sig">P ij</fw>
-                <pb n="116" />
+                <pb n="225" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">116</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -8552,7 +8787,13 @@
                     Vnnd weil dieſer Berg mitten in der <lb />Wildbahne / iſt es ſonderlich zur Zeit
                     wann <lb />die Hirſche ſchreyen / ein trefflicher luſtiger <lb />Orth. Jn dieſen
                     Ampt / am Wildecker <fw type="catch">Forſt /</fw>
-                <pb n="117" />
+                <pb n="226" facs="DOI.jpg"/>
+                <figure xml:id="stichID87"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID88"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="227" facs="DOI.jpg"/>
+                <pb n="228" facs="DOI.jpg"/>
+
                 <fw
                         type="pageNum">117</fw>
                 <fw type="header">in Heſſen vnd den benachbarten
@@ -8618,7 +8859,7 @@
                     Graffen von <lb />Wied / als Gebruͤdern / deren die zween <fw type="catch">Juͤn⸗</fw>
                 <fw
                         type="sig">P iij</fw>
-                <pb n="118" />
+                <pb n="229" facs="DOI.jpg"/>
                 <fw type="pageNum">118</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -8688,7 +8929,19 @@
                     ſich ein redlich Mann / mit <lb />ſeinem Haußweſen / ernehren <lb />koͤnne.</p>
             </div>
             <fw type="catch">Ruͤſſels⸗</fw>
-            <pb n="119" />
+            <pb n="230" facs="DOI.jpg"/>
+            <figure xml:id="stichID89"><graphic url="stichDOI.jpg"/></figure>
+            <figure xml:id="stichID90"><graphic url="stichDOI.jpg"/></figure>
+
+            <pb n="231" facs="DOI.jpg"/>
+            <pb n="232" facs="DOI.jpg"/>
+            <pb n="233" facs="DOI.jpg"/>
+            <figure xml:id="stichID91"><graphic url="stichDOI.jpg"/></figure>
+            <figure xml:id="stichID92"><graphic url="stichDOI.jpg"/></figure>
+
+            <pb n="234" facs="DOI.jpg"/>
+            <pb n="235" facs="DOI.jpg"/>
+
             <fw type="pageNum">119</fw>
             <fw type="header">in Heſſen vnd andern benachbarten Landen.</fw>
             <lb />
@@ -8774,7 +9027,7 @@
                     welcher <lb />ſage / daß Petrus Lotichius zu Schluͤchter / <lb />einem
                     Staͤttlein am Druſenberg gelegen / <fw type="catch">gebo<supplied>⸗</supplied></fw>
                 <pb
-                        n="120" />
+                        n="236" facs="DOI.jpg"/>
                 <fw type="pageNum">120</fw>
                 <fw type="header">Beſchreibung der
                     vornehmbſten Orth</fw>
@@ -8849,7 +9102,13 @@
                     wegen <lb />deß Bundes / ſo die Proteſtierende Teut⸗ <lb />ſche Fuͤrſten / vnnd
                     Staͤndte / zu Kaͤyſer <lb />Carls deß Fuͤnfften Zeiten / A. 1531. allhie <fw
                         type="catch">auff⸗</fw>
-                <pb n="121" />
+                <pb n="237" facs="DOI.jpg"/>
+                <figure xml:id="stichID93"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID94"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="238" facs="DOI.jpg"/>
+                <pb n="239" facs="DOI.jpg"/>
+
                 <fw type="pageNum">121</fw>
                 <fw
                         type="header">in Heſſen und andern benachbarten Landen.</fw>
@@ -8915,7 +9174,7 @@
                     uͤber⸗ <lb />ſandten Bericht / wird alſo gemeldet: <lb />Schmalkalden wird
                     nunmehr / nachdem <fw type="catch">es</fw>
                 <fw type="sig">Q</fw>
-                <pb n="122" />
+                <pb n="240" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">122</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -8973,7 +9232,7 @@
                     aber laulecht. Jſt lieblich / und anmuͤ⸗ <lb />tig / und gibt im trincken einen
                     Geſchmack <lb />eines ſaͤurlichen neuverjarnen Weins. Dero⸗ <lb />wegen er auch
                     der Weinbrunn pflegt ge⸗ <lb />nannt zu werden. Je heller der Himmel / <lb />je
-                    kraͤfftiger die Wuͤrckung / und Geſchmack / <lb />ꝛc. Es hat im Ampt Hohnſtein
+                    kraͤfftiger die Wuͤrckung / und Geſchmack / <lb /><choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Es hat im Ampt Hohnſtein
                     auch Eyſen⸗ <lb />gruben. Und iſt da das Muͤnchs Cloſter / <lb />jetzt
                     Land⸗Hoſpital Gruna / ſo eines auß <lb />den vier hohen Hoſpitalen; dabey auch
                     ein <lb />Sauerbrunn; und ligt eine halbe Meil von <lb />dieſem Cloſter der alt
@@ -8990,7 +9249,22 @@
                     gethan. Auß allem iſt der Extract folgen⸗ <lb />der maſſen zu vernehmen. <lb />Langen⸗Schwalbach
                     / der wegen <lb />ſeiner fuͤrtrefflichen heylſamen Brunnen / <lb />und Baͤdern /
                     beruͤhmbte Fleck / ligt in <fw type="catch">Herrn</fw>
-                <pb n="123" />
+                <pb n="241" facs="DOI.jpg"/>
+                <figure xml:id="stichID95"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID96"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="242" facs="DOI.jpg"/>
+                <pb n="243" facs="DOI.jpg"/>
+                <pb n="244" facs="DOI.jpg"/>
+                <figure xml:id="stichID97"><graphic url="stichDOI.jpg"/></figure>
+                
+                <pb n="245" facs="DOI.jpg"/>
+                <pb n="246" facs="DOI.jpg"/>
+                <figure xml:id="stichID98"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID99"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="247" facs="DOI.jpg"/>
+                <pb n="248" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">123</fw>
                 <fw type="header">in Heſſen und den benachbarten
@@ -9009,7 +9283,7 @@
                     / Klein⸗Schwalbach / underſchieden <lb />werde: Sintemahl Langen⸗Schwalbach <lb />(Ober
                     und Unter Fleck zuſammen ge <lb />rechnet) ohngefehr 1400. Schritt lang iſt / <lb />und
                     allenthalben mit trefflichen huͤbſchen <lb />Wieſen / anmuͤthigen Thaͤlern /
-                    luſtigen <lb />Bergen / ſchoͤnen Huͤgeln / fruchtbahren <lb />Aeckern / ꝛc. und
+                    luſtigen <lb />Bergen / ſchoͤnen Huͤgeln / fruchtbahren <lb />Aeckern / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> und
                     Baͤchen / alſo umbgeben / <lb />daß man ſich nach aller Hertzens Begierde <lb />darinnen
                     / und darbey / erſpatzieren / und <lb />erluſtiren kan. Jſt das Haupt der 14. <lb />
                     Dorff. <lb />Die Lufft iſt ſo geſund / und gut / daß <lb />beydes Menſchen und
@@ -9018,7 +9292,7 @@
                     Linden⸗Brunnen. Seynd gemeinig <lb />lich magere / doch geſunde ſtarcke Leuth / <lb />und
                     hoͤret man nimmer / oder doch ja wun⸗ <lb />der ſelten / einen der ihrigen uͤber
                     Fluͤß / <lb />Hauptſchmertzen / Magenwehe / Hitze der <lb />Leber / Miltzes /
-                    Verſtopffung / Stein / <lb />Fieber / ꝛc. ſich beklagen. <lb />Das Fleiſch
+                    Verſtopffung / Stein / <lb />Fieber / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> ſich beklagen. <lb />Das Fleiſch
                     (bevorab von Hammeln) <lb />iſt auf viel Meyl wegs nicht ſo lieblich / als <lb />daſelbſt
                     / ohn Zweiffel / weiln das Viehe der <lb />kraͤfftigen Kraͤuter / und Blumen /
                     be⸗ <lb />vorab des Quendels / welcher in groſſer <lb />Menge allda auf den
@@ -9040,15 +9314,15 @@
                     trefflichen Ge⸗ <lb />ruchs / und Geſchmackes / daß man es <lb />auf etliche
                     Meyl wegs herumb / da doch <lb />ſonſten auch ſehr gut Brodt zu finden / zum <lb />Praͤſent
                     verſchicket. <lb />So hat man allda junge Hanen / und <lb />Huͤner / dergleichen
-                    Eyer / Butter / Voͤ⸗ <lb />gel / ꝛc. in der Menge; Wiewol bey dem <lb />Kriegsweſen
+                    Eyer / Butter / Voͤ⸗ <lb />gel / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> in der Menge; Wiewol bey dem <lb />Kriegsweſen
                     ſolche Menge / zuſampt <lb />andern nothwendigen Sachen / als Beth⸗ <lb />tungen
-                    / Haußrath / ꝛc. ſehr gering wor⸗ <lb />den. <lb />Von Fiſchen hat man Forellen
-                    / Krebs / <lb />Salmen / Grundeln / ꝛc. Dann das Waſſer / <lb />wie es von der
+                    / Haußrath / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> ſehr gering wor⸗ <lb />den. <lb />Von Fiſchen hat man Forellen
+                    / Krebs / <lb />Salmen / Grundeln / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Dann das Waſſer / <lb />wie es von der
                     Muͤntzenbach / da die ſtaͤrck⸗ <lb />ſten Sauerbronnen ſeynd / herab fleuſt / <lb />verlieret
                     ſeine ſaͤure und ſchaͤrpffe / zuſampt <lb />dem Liechtrothen Mineriſchen Schleim
                     / <lb />alſo / daß man Fiſch darinnen findet; obwol <lb />auf etliche Schritt
                     darvon / oder an dem <lb />Urſprung / keine Fiſch gefunden werden; <lb />ſondern
-                    / wann man ſie / oder auch Krebs / <lb />Froͤſch / ꝛc. daſelbſt hinein wirfft /
+                    / wann man ſie / oder auch Krebs / <lb />Froͤſch / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> daſelbſt hinein wirfft /
                     ſie erſti⸗ <lb />cken / <choice>
                         <sic>uud</sic>
                         <corr>und</corr>
@@ -9061,10 +9335,10 @@
                         <sic>Handreichnng</sic>
                         <corr>Handreichung</corr>
                     </choice> mit Betth⸗ <lb />werck
-                    / Kuͤchengeſchirꝛ / ꝛc. der Nothdurfft <lb />und ihrer Vermoͤglichkeit nach / um
+                    / Kuͤchengeſchirꝛ / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> der Nothdurfft <lb />und ihrer Vermoͤglichkeit nach / um
                     billiche <fw type="catch">Be⸗</fw>
                 <fw type="sig">Q 2</fw>
-                <pb n="124" />
+                <pb n="249" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">124</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -9103,12 +9377,12 @@
                     Grindbrunn unterwerts am <lb />Ende deß Wieſenthals / die Roͤtelbach ge⸗ <lb />nant
                     / nach dem Flecken biß auf hundert <lb />Schritt zu ligend / verurſachet den
                     Grind / <lb />und heilet ihn auch wieder: Jſt wider fluͤßi⸗ <lb />gen beiſſenden
-                    Grind / Frantzoſen / ꝛc. ein <lb />herrliche Artzney. <lb />8. Der Katzenbrunn
+                    Grind / Frantzoſen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> ein <lb />herrliche Artzney. <lb />8. Der Katzenbrunn
                     zwantzig Schritt <lb />von dem vorigen / iſt in keinem Gebrauch. <lb />9. Der
                     Roͤtelbrunn von dem Roͤtelbach <lb />alſo genant / ligt auf vierhundert und
                     zwan⸗ <lb />tzig Schritt vom Grindbrunnen / wird in <lb />Haupt⸗Schwachheiten
                     und Fluͤſſen / deß⸗ <lb />gleichen in dem weiſſen Mutterfluß / auff⸗ <lb />ſtoſſen
-                    der Mutter / ꝛc. gebraucht. <lb />10. Der Weinbrunnen / welcher vorbe⸗ <lb />ſagte
+                    der Mutter / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> gebraucht. <lb />10. Der Weinbrunnen / welcher vorbe⸗ <lb />ſagte
                     Brunnen ſaͤmtlich uͤbertrifft; da⸗ <lb />her er auch zur Praͤſervation / und
                     Cura⸗ <lb />tion / Jaͤhrlich vor andern von viel hun⸗ <lb />dert Perſohnen
                     beſucht / und gebraucht <lb />wird. <lb />Er entſpringt oberhalb dem ober
@@ -9129,7 +9403,7 @@
                     Weinſaͤuerlicht; da⸗ <lb />her ihme auch der Name deß Weinbrun⸗ <lb />nens
                     gegeben worden. <lb />An. 1569. hat dieſer Wein⸗oder Sauer⸗ <fw type="catch">brunn
                     /</fw>
-                <pb n="125" />
+                <pb n="250" facs="DOI.jpg"/>
                 <fw type="pageNum">125</fw>
                 <fw type="header">in Heſſen und
                     andern benachbarten Landen.</fw>
@@ -9137,7 +9411,7 @@
                     meldet / in rechten Gebrauch zu kom⸗ <lb />men angefangen. Allernechſt bey
                     dieſem <lb />Brunnen iſt ein ziembliche groſſe Quell <lb />Sauerwaſſers
                     außgebrochen / welche <lb />Herꝛ Adolff / und Herꝛ Ernſt Gebruͤ⸗ <lb />dere /
-                    Graffen zu Solms / ꝛc. vor vielen <lb />Jahren ſauber mit Steinen Platten ein⸗ <lb />faſſen
+                    Graffen zu Solms / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> vor vielen <lb />Jahren ſauber mit Steinen Platten ein⸗ <lb />faſſen
                     laſſen / auf daß das Volck / ſo den <lb />Weinbrunnen zu holen kommet / ſeine
                     Ge⸗ <lb />faͤß zuvor daraus ſchwencken und ſaͤubern <lb /> moͤge. <lb />Alſo
                     haben ſie auch den / von dem ſich <lb />weit ausbreitenden Waſſer / naß⸗ und <lb />ſuͤmpffigen
@@ -9150,8 +9424,8 @@
                     ſchoͤn luͤſtig verneuert / und mit <lb />friſchen Meyen / oder Laub gezieret:
                     Wie <lb />dann auch noch darbey ein wol auffgebau⸗ <lb />wet Haͤußlein / und
                     darneben eine groſſe <lb />Huͤtte von Lauter friſchen Meyen ge⸗ <lb />macht /
-                    fuͤr hohe Perſonen / ꝛc. umb ſich <lb />fuͤr der Sonnen Hitz / und Regen / deſto
-                    baß <lb />verwahren / mit ſchieſſen / ꝛc. ſich zu beluſti⸗ <lb />gen / oder aber
+                    fuͤr hohe Perſonen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> umb ſich <lb />fuͤr der Sonnen Hitz / und Regen / deſto
+                    baß <lb />verwahren / mit ſchieſſen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> ſich zu beluſti⸗ <lb />gen / oder aber
                     auch abſonderlicher Diſcurs <lb />zu pflegen. <lb />Die aus der Muͤntzenbach
                     zuſammen <lb />lauffende Sauer⸗brunnen machen eine <lb />zimbliche Bach / welche
                     zu groſſer der Ein⸗ <lb />wohner Bequemlichkeit durch den Flecken <lb />fleuſt.
@@ -9197,7 +9471,7 @@
                     anbelangt / ſo ſeyn es <lb />kalte Brunnenquellen / welcher Waſſer <fw
                         type="catch">aber</fw>
                 <fw type="sig">Q 3</fw>
-                <pb n="126" />
+                <pb n="251" facs="DOI.jpg"/>
                 <fw
                         type="pageNum">126</fw>
                 <fw type="header">Beſchreibung der fuͤrnehmſten Ort /</fw>
@@ -9258,18 +9532,18 @@
                     die Waſſer⸗ <lb />ſucht / wann ſie nicht gar uͤberhand genom⸗ <lb />men. Sie
                     heylen offene Geſchwaͤr / o⸗ <lb />der Schaͤden / ſie ſeyen alt oder neu; Jn⸗ <lb />gleichem
                     allerley Unreinigkeit / Grind / <lb />Raͤude / beiſſen und jucken der Haut / <lb />ſampt
-                    dem Scharbock. Sehr viel Poda⸗ <lb />graͤmiſche / Contracte / erlahmte / ꝛc.
+                    dem Scharbock. Sehr viel Poda⸗ <lb />graͤmiſche / Contracte / erlahmte / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice>
                     wel⸗ <lb />che man in das Bad tragen und heben <lb />muͤſſen / ſeynd mit ihrer
                     ſelbſt eygenen <lb />groſſen Verwunderung wiederumb geſund <lb />worden: Wie
                     auch einer am Bruch. <fw type="catch">Wider</fw>
-                <pb n="127" />
+                <pb n="252" facs="DOI.jpg"/>
                 <fw type="pageNum">
                     127</fw>
                 <fw type="header">in Heſſen und den benachbarten Landen.</fw>
                 <lb />
-                    Wider der Guͤlden Adern Schmertzen / ꝛc. <lb />ſeynd ſie gleichfals ſehr
+                    Wider der Guͤlden Adern Schmertzen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />ſeynd ſie gleichfals ſehr
                     dienlich: Auch <lb />kommen ſie allerley Weiber⸗Schwachhei⸗ <lb />ten zu Huͤlff
-                    / und machen fruchtbar / ꝛc. und <lb />koͤnnen zu unterſchiedenen Affecten auch
+                    / und machen fruchtbar / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> und <lb />koͤnnen zu unterſchiedenen Affecten auch
                     ge⸗ <lb />truncken werden / ſonderlich in harten ob <lb />ſtructionibus. <lb />Die
                     Reſponſa Medica de probatione, fa- <lb />cultate, &amp; uſu Acidularum ac
                     fontium Schwal- <lb />baci ſuſurrantium, à celeberrimis aliquot <lb />Medicis ad
@@ -9308,7 +9582,7 @@
                     Es <lb />hat noch an andern Orthen daherumb viel <lb />Echo / aber dieſer iſt
                     der beſte. Es gibt viel <lb />Berge und Thal aller ſeiten; und die Leuthe / <lb />ſo
                     allda die Brunn⸗und⸗Bad⸗Cur halten / <lb />haben offt daſelbſt ihr Kurtzweil /
-                    etwan mit <lb />Trompeten und anderm / ꝛc. Aus welchem / <lb />und auch dem
+                    etwan mit <lb />Trompeten und anderm / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Aus welchem / <lb />und auch dem
                     vorgehenden / zu ſehen / daß <lb />unſere Teutſchen auch in ihrem Vatter⸗ <lb />land
                     allerhand denckwuͤrdige Sachen in <lb />Acht zu nehmen / und ſie nicht ſo einen
                     wei⸗ <lb />ten Weg biß nach Puzzuolo im Koͤnig⸗ <lb />reich Neapolis, die
@@ -9330,7 +9604,7 @@
                     geſchehen / ſo ein Stroh Tach auff einer <lb />Scheuren angezuͤndet / davon in
                     einer <lb />Stund 50. Gebaͤu in dem untern Flecken <lb />abgebronnen. <fw
                         type="catch">Ein</fw>
-                <pb n="128" />
+                <pb n="253" facs="DOI.jpg"/>
                 <fw type="pageNum">128</fw>
                 <fw
                         type="header">Beschreibung der vornembſten Orth</fw>
@@ -9351,7 +9625,7 @@
                         <corr>iſt</corr>
                     </choice> allhie / zu Schwalbach / des
                     Herꝛn Phi⸗ <lb />lipp Wilhelmen / Pfatzgraffens bey Rhein / <lb />und Hertzogens
-                    in Bayern / ꝛc. zu Neu⸗ <lb />burg Fuͤrſtlich Beylager / mit der Fraͤulein <lb />Amelia
+                    in Bayern / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> zu Neu⸗ <lb />burg Fuͤrſtlich Beylager / mit der Fraͤulein <lb />Amelia
                     / Landgraͤffin zu Heſſen / Darmb⸗ <lb />ſtaͤttiſcher Lini / gehalten worden.</p>
             </div>
             <lb />
@@ -9412,7 +9686,7 @@
                     / Kirchen und uͤbrigen 2. Statt⸗ <lb />Pforten / gantz und alſo eingeaͤſchert
                     wor⸗ <lb />den / daß hiervon mehr nit / als zwey kleine <fw type="catch">Haͤuß⸗</fw>
                 <pb
-                        n="129" />
+                        n="254" facs="DOI.jpg"/>
                 <fw type="pageNum">129</fw>
                 <fw type="header">in Heſſen und andern
                     benachbarten Landen.</fw>
@@ -9450,7 +9724,7 @@
                     vermuthlich hernachgehends / als von <lb />dem Fuͤrſten zu Heſſen / ihnen wegen
                     ihrer <lb />Meriten, das Erb⸗Schencken⸗Ambt des <lb />Fuͤrſtenthumbs Heſſen
                     auffgetragen / die <lb />Schencken genandt / ſolchem Orth beyge⸗ <lb />eignet
-                    worden / ꝛc. Jnmaſſen Munſterus <lb />in Coſmograph. lib. 3. tol. 1077. eines
+                    worden / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Jnmaſſen Munſterus <lb />in Coſmograph. lib. 3. tol. 1077. eines
                     Hans <lb />Schenck zu Schweinsberg genandt / ſo in <lb />Anno 1296. auff einem
                     Thurnier zu <lb />Schweinfurth am Maͤyn / wie auch fol. <lb />1276. Conrad
                     Schenckens / welcher im <lb />Jahr 1284. zu Regenſpurg uff dem Thur⸗ <lb />nier
@@ -9484,7 +9758,7 @@
                     die⸗ <lb />ſer Stadt iſt gebohren Tilemannus Stella, <fw type="catch">zuvor</fw>
                 <fw
                         type="sig">R</fw>
-                <pb n="130" />
+                <pb n="255" facs="DOI.jpg"/>
                 <fw type="pageNum">130</fw>
                 <fw type="header">Beſchreibung
                     der vornembſten Orth</fw>
@@ -9552,7 +9826,7 @@
                     4. de jure publ. <lb />p. 536. ſeqq.</p>
             </div>
             <fw type="catch">Sontra.</fw>
-            <pb n="131" />
+            <pb n="256" facs="DOI.jpg"/>
             <fw type="pageNum">131</fw>
             <fw type="header">in Heſſen und den benachbarten Landen.</fw>
             <lb />
@@ -9589,7 +9863,7 @@
                     Fuͤrſtliche Ampt an ſich ſelbſt iſt; nem⸗ <lb />lich / die Baumbaͤcher /
                     Boyneburger / ſo <lb />von dem auf einem ſehr hohen Berge ge⸗ <lb />legnen Hauß
                     Boͤneburg / deſſen Mauren <lb />noch uͤbrig / den Nahmen haben / Treu⸗ <lb />ſchen
-                    / Biedenfeld / Stockheimer / Hun⸗ <lb />delshauſer. Dieden / Werſabe / ꝛc. Der <lb />beſagten
+                    / Biedenfeld / Stockheimer / Hun⸗ <lb />delshauſer. Dieden / Werſabe / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> Der <lb />beſagten
                     Treuſchen Stammhauſe iſt / <lb />Brandenfels; davon auch noch die Mau⸗ <lb />ren
                     uͤbrig; der Baumbaͤcher aber <lb />Dannenberg / ſo noch zum <lb />theil bewohnet
                     wird.</p>
@@ -9634,7 +9908,7 @@
                     harten Scharmuͤtzel / durch <fw type="catch">welchen</fw>
                 <fw type="sig">R 2</fw>
                 <pb
-                        n="132" />
+                        n="257" facs="DOI.jpg"/>
                 <fw type="pageNum">132</fw>
                 <fw type="header">Beſchreibung der
                     fuͤrnehmſten Ort /</fw>
@@ -9690,7 +9964,7 @@
                     Gemaͤuer von ver⸗ <lb />wuͤſteten Doͤrffern / Kirchen / und derglei⸗ <lb />chen
                     darinnen findet / mehr als an einem <lb />Ort im Lande. Des Jahrs 1647. ward <lb />das
                     Staͤdtlein Spangenberg gantz außge⸗ <lb />pluͤndert / das Schloß aber allda von
-                    den <lb />Kaͤyſerl. vergebens beſchoſſen / ꝛc. <lb />Dieſer Fuͤrſtlichen
+                    den <lb />Kaͤyſerl. vergebens beſchoſſen / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />Dieſer Fuͤrſtlichen
                     Nieder⸗Heßiſchen <lb />Stadt / zwiſchen Homburg und Eſchwe⸗ <lb />ge gelegen /
                     Anfang iſt zwar unbewuſt / al⸗ <lb />lein daß man weiß / daß allbereit Anno <lb />1309.
                     ſie im Flor / und vor Alters eine be⸗ <lb />ſondere Herꝛſchafft geweſt iſt. Und
@@ -9704,7 +9978,13 @@
                     wor⸗ <lb />den / da Conradus von Hagnaw zu todt <lb />zwiſchen einer
                     Cammer⸗Thuͤr gedrucket <lb />worden / darvon zu ſehen Valent. Muͤn⸗ <fw
                         type="catch">tzerin</fw>
-                <pb n="133" />
+                <pb n="258" facs="DOI.jpg"/>
+                <figure xml:id="stichID100"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID101"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID102"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="258" facs="DOI.jpg"/>
+                <pb n="258" facs="DOI.jpg"/>
                 <fw type="pageNum">133</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -9798,7 +10078,7 @@
                     wurde von dem Churfuͤrſten zu Trier <fw type="catch">das</fw>
                 <fw type="sig">R 3</fw>
                 <pb
-                        n="134" />
+                        n="261" facs="DOI.jpg"/>
                 <fw type="pageNum">134</fw>
                 <fw type="header">Beſchreibung der
                     vornembſten Orth</fw>
@@ -9879,7 +10159,7 @@
                     Und obzwar die <lb />Herren auch jeder abſonderlicher Religion <lb />ſeyn /
                     bleihen doch die Unterthanen bey <lb />der Lutheriſchen unperturbirt. <fw
                         type="catch">Die</fw>
-                <pb n="135" />
+                <pb n="262" facs="DOI.jpg"/>
                 <fw type="pageNum">135</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -9944,7 +10224,7 @@
                     / ein <lb />Zukoͤmmling der Weſer / wann es nicht die <lb />Weſer ſelbſten iſt.
                     Dann was von alten <lb />Briefen bey dem Stifft Fulda vorhanden / <fw
                         type="catch">in den⸗</fw>
-                <pb n="136" />
+                <pb n="263" facs="DOI.jpg"/>
                 <fw type="pageNum">136</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -10013,7 +10293,12 @@
                     beſagten Berg⸗Keller / und die Graff⸗ <lb />ſchafft Waldegg; allda / hart an der
                     Graͤn⸗ <lb />tze / die ſtattliche Eiſenhuͤtten und Berg⸗ <fw type="catch">werck
                     /</fw>
-                <pb n="137" />
+                <pb n="264" facs="DOI.jpg"/>
+                <figure xml:id="stichID103"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID104"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="265" facs="DOI.jpg"/>
+                <pb n="266" facs="DOI.jpg"/>
                 <fw type="pageNum">137</fw>
                 <fw type="header">in Heſſen und
                     den benachbarten Landen.</fw>
@@ -10095,7 +10380,7 @@
             </div>
             <fw type="catch">Ulrich⸗</fw>
             <fw type="sig">S</fw>
-            <pb n="138" />
+            <pb n="267" facs="DOI.jpg"/>
             <fw type="pageNum">138</fw>
             <fw type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
             <lb />
@@ -10167,8 +10452,21 @@
                     durch Gefandſchafft / <lb />erſchienen / die Herren Georg Friederich / <lb />Johann
                     / und Volrath / Bruͤder / und Vet⸗ <lb />tern / Graven zu Waldeck / Pirmont /
                     und <lb />Culenburg / Freyherren zu Tonna / Pa⸗ <lb />landt / Wittem / Werth /
-                    ꝛc. fuͤr ſich / und <fw type="catch">reſpe-</fw>
-                <pb n="139" />
+                    <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> fuͤr ſich / und <fw type="catch">reſpe-</fw>
+                <pb n="268" facs="DOI.jpg"/>
+                <figure xml:id="stichID105"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID106"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID107"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="269" facs="DOI.jpg"/>
+                <pb n="270" facs="DOI.jpg"/>
+                <figure xml:id="stichID108"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID109"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID110"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="271" facs="DOI.jpg"/>
+                <pb n="272" facs="DOI.jpg"/>
+
                 <fw type="pageNum">
                     139</fw>
                 <fw type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -10253,7 +10551,7 @@
                     iſt eine Altan / und auff beyden ſeiten <fw type="catch">geſchweif⸗</fw>
                 <fw
                         type="sig">S 2</fw>
-                <pb n="140" />
+                <pb n="273" facs="DOI.jpg"/>
                 <fw type="pageNum">140</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -10328,8 +10626,16 @@
                     und wurden viel Edelleuth gefangen. <lb />Jedoch ſo war deß Landgraffen Schaden <lb />am
                     groͤſſeſten; ſtehet in der Franckenbergi⸗ <lb />ſchen Chronic am 38. Blat / und
                     dieſes ge⸗ <lb />ſchahe auff S. Laurentius Tag. <fw type="catch">Umb</fw>
-                <pb
-                        n="141" />
+                <pb n="274" facs="DOI.jpg"/>
+                <figure xml:id="stichID111"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID112"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="275" facs="DOI.jpg"/>
+                <pb n="276" facs="DOI.jpg"/>
+                <figure xml:id="stichID113"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="277" facs="DOI.jpg"/>
+                <pb n="278" facs="DOI.jpg"/>
                 <fw type="pageNum">141</fw>
                 <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -10403,7 +10709,7 @@
                     in dem gantzen Land nicht zu finden <fw type="catch">allhi</fw>
                 <fw type="sig">S
                     3</fw>
-                <pb n="142" />
+                <pb n="279" facs="DOI.jpg"/>
                 <fw type="pageNum">142</fw>
                 <fw type="header">Beſchreibung
                     der vornembſten Orth</fw>
@@ -10472,7 +10778,7 @@
                     / und vielen andern Freyheiten / zu Le⸗ <lb />hen getragen worden ſeyn; An jetzo
                     aber iſt <lb />ſolche Herrſchafft auff der Roͤm. Kaͤyſerl. <lb />Mayeſt.
                     Special-Commiſſion, nach ge⸗ <lb />wehrter anderhalb Jaͤhriger Sequeſtra- <lb />tion,
-                    Herrn Anßhelm Caſimiren Ertz⸗ <lb />biſchoffen zu Maͤyntz / ꝛc. uͤbertragen wor⸗ <lb />den:
+                    Herrn Anßhelm Caſimiren Ertz⸗ <lb />biſchoffen zu Maͤyntz / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> uͤbertragen wor⸗ <lb />den:
                     Deſſen Churfuͤrſtl. Gnaden gleich⸗ <lb />wol den Jnnwohnern ihre Religion frey⸗ <lb />
                     gelaſſen. <lb />Es hat der Churfuͤrſt zu Maͤyntz / Herr <lb />Johann
                     Schweickhard / nach toͤdlichem <lb />Abgang deß jungen letztlebenden Herrn <lb />Graf
@@ -10480,7 +10786,12 @@
                     von Naſſau⸗Weilburg und Sarbruͤ⸗ <lb />cken / allbereit praͤtendirt / als ob
                     durch ab⸗ <lb />ſterben dieſes jungen Herꝛn / die Lehen apart, <fw type="catch">
                     und</fw>
-                <pb n="143" />
+                <pb n="280" facs="DOI.jpg"/>
+                <pb n="281" facs="DOI.jpg"/>
+                <figure xml:id="stichID114"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="282" facs="DOI.jpg"/>
+                <pb n="283" facs="DOI.jpg"/>
                 <fw type="pageNum">143</fw>
                 <fw type="header">in Heſſen und
                     andern benachbarten Landen.</fw>
@@ -10521,7 +10832,7 @@
                     derentwegen es von manchen zur <lb />Abreiſe mit deſto groͤſſerer Begierde /
                     mit⸗ <lb />genommen wird. An Rind⸗Hammel⸗und <lb />Kalbfleiſch / jungen und
                     alten Hanen / und <lb />Huͤnern / desgleichen an Gevoͤgel / Eher / <lb />Butter
-                    / Fiſchwerck / ꝛc. iſt zur gnuͤge zube⸗ <lb />kommen. Auſſer des Weins / ſo
+                    / Fiſchwerck / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> iſt zur gnuͤge zube⸗ <lb />kommen. Auſſer des Weins / ſo
                     ſelbſten an <lb />dem nechſt gelegenen Berg allhie herꝛlich <lb />waͤchſt / hat
                     man vor dieſem auch allerhand <lb />andere / und darunter Bacheracher Wein <lb />allda
                     gehabt. Das Trinckwaſſer aber iſt <lb />nicht zum beſten: Hergegen man aber <lb />Sauerwaſſer
@@ -10554,7 +10865,7 @@
                     und Schuͤtzen von Holtz⸗ <lb />hauſen / den Namen / weil ſolche ihren A⸗ <lb />delichen
                     Sitz / und Wohnung vor dieſem <lb />allda gehabt haben. <lb />Das ſchaͤdliche
                     Kriegsweſen hat zwar <fw type="catch">auch</fw>
-                <pb n="144" />
+                <pb n="284" facs="DOI.jpg"/>
                 <fw type="pageNum">
                     144</fw>
                 <fw type="header">Beſchreibung der vornembſten Orth</fw>
@@ -10587,7 +10898,7 @@
                     / verlohrne Mannheit / der <lb />Mutter⸗Schmertzen / Auffblaͤhen / und <lb />vorſchieſſen
                     / den weiſſen / troͤpfflenden / un⸗ <lb />natuͤrlichen / hinderbliebenen / und
                     allzu⸗ <lb />ſtarcken Monatlichen Fluß / unzeitige Ge⸗ <lb />burt /
-                    unfruchtbarkeit / Grind / Jucken / und <lb />Schwaͤhren der Haut / ꝛc. ein
+                    unfruchtbarkeit / Grind / Jucken / und <lb />Schwaͤhren der Haut / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> ein
                     heylſames <lb />Mittel. Und empfinden daſſelbe ſonder⸗ <lb />lich die
                     Phlegmatiſche / und Melancholi⸗ <lb />ſche / und die von 15. bis 50. Jahr alt
                     ſeyn / <lb />mit ſonderlichem Nutzen. Und iſt allda <lb />durch den gantzen
@@ -10624,8 +10935,12 @@
                     Mayntz / auf der Seiten/ und nicht gar <lb />eine Stunde von gedachtem Wißbaden
                     / <lb />auf des Grafen von Naſſau / ſo zu Jd⸗ <lb />ſtein Hof halte / Grund und
                     Boden / ein <lb />Cloſter St Claræ Ordens / und daſelbſt <fw type="catch">ein</fw>
-                <pb
-                        n="145" />
+                <pb n="285" facs="DOI.jpg"/>
+                <figure xml:id="stichID115"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID116"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="286" facs="DOI.jpg"/>
+                <pb n="287" facs="DOI.jpg"/>
                 <fw type="pageNum">145</fw>
                 <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -10695,7 +11010,7 @@
                     im gedachten Bericht / daß / bey dem <fw type="catch">gemel⸗</fw>
                 <fw type="sig">
                     T</fw>
-                <pb n="146" />
+                <pb n="288" facs="DOI.jpg"/>
                 <fw type="pageNum">146</fw>
                 <fw type="header">Beſchreibung
                     der vornembſten Orth</fw>
@@ -10768,8 +11083,12 @@
                     dieſes <lb />Ampts / iſt nicht uͤbermaͤßig Bergicht / o⸗ <lb />der voller
                     Gehoͤltz; daher gar wenig / oder <lb />kleine Wildbahne dieſes Orts iſt; hat
                     aber <lb />feine Teiche / und Forellen Baͤche. Jn dieſem <fw type="catch">Ampt /</fw>
-                <pb
-                        n="147" />
+                <pb n="289" facs="DOI.jpg"/>
+                <figure xml:id="stichID117"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID118"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="290" facs="DOI.jpg"/>
+                <pb n="291" facs="DOI.jpg"/>
                 <fw type="pageNum">147</fw>
                 <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -10850,7 +11169,7 @@
                     </choice> Wegs in die <fw type="catch">
                     Laͤnge</fw>
                 <fw type="sig">T 2</fw>
-                <pb n="148" />
+                <pb n="292" facs="DOI.jpg"/>
                 <fw type="pageNum">148</fw>
                 <fw
                         type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
@@ -10927,7 +11246,12 @@
                     / Sohn / Fride- <lb />ricus gehalten / ſo der erſte Graff in Anno <lb />1173.
                     allhie worden; von welchem die fol⸗ <lb />gende / biß auff Graff Johann den
                     Groſſen / <fw type="catch">ſo</fw>
-                <pb n="149" />
+                <pb n="293" facs="DOI.jpg"/>
+                <figure xml:id="stichID119"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID120"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="294" facs="DOI.jpg"/>
+                <pb n="295" facs="DOI.jpg"/>
                 <fw type="pageNum">149</fw>
                 <fw
                         type="header">in Heſſen und den benachbarten Landen.</fw>
@@ -11006,7 +11330,7 @@
                     einem <lb />Berge / das alte Schloß / die Landsburg <fw type="catch">ge⸗</fw>
                 <fw
                         type="sig">T 3</fw>
-                <pb n="150" />
+                <pb n="296" facs="DOI.jpg"/>
                 <fw type="pageNum">150</fw>
                 <fw
                         type="header">Beſchreibung der vornembſten Orth</fw>
@@ -11060,7 +11384,7 @@
                 <lb />
                 <p>LJgt in der Obern⸗Graffſchafft Catzen⸗ <lb />elenbogen / und hat den Namen vom <lb />Zwingen
                     / weil man da ein gantzes Heer <lb />auffhalten / umbgeben / und wegen deß ho⸗ <lb />hen
-                    Bergs / der Lachen / Holtz / und Land⸗ <lb />graben / ꝛc. zwingen kan / wie
+                    Bergs / der Lachen / Holtz / und Land⸗ <lb />graben / <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> zwingen kan / wie
                     Sauer in <lb />dem Staͤtt⸗Buch ſaget; der auch am 288. <lb />Blat ſchreibet /
                     daß es einen Landgraben <lb />allda mit flieſſenden Waſſern / ein Meyl <lb />wegs
                     / biß in den Rhein / bey Gernßheim / <lb />habe. Der Stickleberg / oder
@@ -11084,8 +11408,14 @@
                     Viel nutzliche Kraͤuter zu der <lb />Artzney herfuͤr bringet; und den edleſten <lb />Wein
                     an der Bergſtraß gibet; von welchem <lb />Berg man in zehen Herrn Landen / und
                     auff <lb />gar viel Staͤtte herumb ſehen kan. <fw type="catch">Ob⸗</fw>
-                <pb
-                        n="151" />
+                <pb n="297" facs="DOI.jpg"/>
+                <figure xml:id="stichID121"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID122"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID123"><graphic url="stichDOI.jpg"/></figure>
+                <figure xml:id="stichID124"><graphic url="stichDOI.jpg"/></figure>
+
+                <pb n="298" facs="DOI.jpg"/>
+                <pb n="299" facs="DOI.jpg"/>
                 <fw type="pageNum">151</fw>
                 <fw type="header">in Heſſen und den
                     benachbarten Landen.</fw>
@@ -11111,23 +11441,23 @@
                     Schloß und Berghauß Liechten⸗ <lb />berg / am Eingang des Ottenwalds / iſt <lb />faſt
                     in die Vierung gebauet / und mit Ge⸗ <lb />buͤrge und Waͤlden umgeben. <lb />(NB.
                     Auf dem 128. bl. 1. Column. und 30 Zeil <lb />ließ nach Ziegenhain. ) <lb />und
-                    ehe dann Treyſe oder Ziegenhain ꝛc. <lb />E N D E.</p>
+                    ehe dann Treyſe oder Ziegenhain <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> <lb />E N D E.</p>
             </div>
+            <fw type="catch">Namen⸗</fw>
         </body>
 
         <back>
-            <fw type="catch">Namen⸗</fw>
-            <pb n="[152]" />
+            <pb n="300" facs="DOI.jpg"/>
             <figure />
             <lb />
-            <div type="index">
+            <div type="index" n="1">
                 <head>Namen ⸗Regiſter</head>
                 <lb />
                 <p>Der Landſchafften / Gaͤw / Thaͤler / Staͤdt / Staͤdtlein / <lb />Flecken /
                     Doͤrffer / Cloͤſter / Schloͤſſer / Waſſer / Berge / Waͤlder / <lb />Hoſpitalen /
-                    ꝛc. ſo in dieſem Tractat von Heſſen / und theils an⸗ <lb />grentzenden Landen /
-                    ꝛc. zu finden. <lb /></p>
-                <div>
+                    <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> ſo in dieſem Tractat von Heſſen / und theils an⸗ <lb />grentzenden Landen /
+                    <choice><orig>ꝛc.</orig><reg>etc.</reg></choice> zu finden. <lb /></p>
+                <div n="2">
                     <head>A.</head>
                     <list>
                         <lb />
@@ -11178,7 +11508,7 @@
                         <lb />
                     </list>
                 </div>
-                <div>
+                <div n="2">
                     <head>B.</head>
                     <list>
                         <lb />
@@ -11287,7 +11617,7 @@
                         <lb />
                         <item>Burgraffen Roda / <ref>95.</ref></item>
                         <fw type="catch">Burg⸗</fw>
-                        <pb n="[153]" />
+                        <pb n="301" facs="DOI.jpg"/>
                         <fw
                             type="header">Namen⸗Regiſter.</fw>
                         <lb />
@@ -11300,7 +11630,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>C.</head>
                     <list>
                         <lb />
@@ -11347,7 +11677,7 @@
                         <lb />
                     </list>
                 </div>
-                <div>
+                <div n="2">
                     <head>D.</head>
                     <list>
                         <lb />
@@ -11403,7 +11733,7 @@
                         <lb />
                     </list>
                 </div>
-                <div>
+                <div n="2">
                     <head>E.</head>
                     <list>
                         <lb />
@@ -11456,7 +11786,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>F.</head>
                     <list>
                         <lb />
@@ -11524,7 +11854,7 @@
                         <fw type="catch">Fuͤrſten⸗</fw>
                         <fw
                             type="sig">u</fw>
-                        <pb n="[154]" />
+                        <pb n="302" facs="DOI.jpg"/>
                         <fw type="header">Namen⸗Regiſter.</fw>
                         <lb />
                         <item>Fuͤrſtenberg <ref>18.</ref></item>
@@ -11536,7 +11866,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>G.</head>
                     <list>
                         <lb />
@@ -11609,7 +11939,7 @@
                 </div>
 
 
-                <div>
+                <div n="2">
                     <head>H.</head>
                     <list>
                         <lb />
@@ -11747,7 +12077,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>J.</head>
                     <list>
                         <lb />
@@ -11758,7 +12088,7 @@
                         <item>Jlmſtatt <ref>95.</ref></item>
                         <fw type="catch"> Jmmen⸗</fw>
                         <pb
-                            n="[155]" />
+                            n="303" facs="DOI.jpg"/>
                         <fw type="header"> Namen⸗Regiſter.</fw>
                         <lb />
                         <item>Jmmenhauſen / <ref>5.</ref> <ref>96.</ref></item>
@@ -11781,7 +12111,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>K.</head>
                     <list>
                         <lb />
@@ -11839,7 +12169,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>L.</head>
                     <list>
                         <lb />
@@ -11921,7 +12251,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>M.</head>
                     <list>
                         <lb />
@@ -11997,10 +12327,10 @@
                 <fw
                     type="catch">N. Naſ⸗</fw>
                 <fw type="sig">U 2</fw>
-                <pb n="[156]" />
+                <pb n="304" facs="DOI.jpg"/>
                 <fw
                     type="header">Namen⸗Regiſter.</fw>
-                <div>
+                <div n="2">
                     <head>N.</head>
                     <list>
                         <lb />
@@ -12065,7 +12395,7 @@
                 </div>
 
 
-                <div>
+                <div n="2">
                     <head>O.</head>
                     <list>
                         <lb />
@@ -12095,7 +12425,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>P.</head>
                     <list>
                         <lb />
@@ -12110,7 +12440,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>R.</head>
                     <list>
                         <lb />
@@ -12171,7 +12501,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>S.</head>
                     <list>
                         <lb />
@@ -12230,7 +12560,7 @@
                         <item>Segodunum <ref>129.</ref></item>
                         <fw
                             type="catch">Selboldt</fw>
-                        <pb n="[157]" />
+                        <pb n="305" facs="DOI.jpg"/>
                         <fw
                             type="header">Namen⸗Regiſter.</fw>
                         <lb />
@@ -12304,7 +12634,7 @@
                 </div>
 
 
-                <div>
+                <div n="2">
                     <head>T.</head>
                     <list>
                         <lb />
@@ -12343,7 +12673,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>V.</head>
                     <list>
                         <lb />
@@ -12378,7 +12708,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>W.</head>
                     <list>
                         <lb />
@@ -12460,7 +12790,7 @@
                         <fw
                             type="catch">Wil⸗</fw>
                         <fw type="sig">U 3</fw>
-                        <pb n="[158]" />
+                        <pb n="306" facs="DOI.jpg"/>
                         <fw
                             type="header">Namen⸗Regiſter.</fw>
                         <figure />
@@ -12503,7 +12833,7 @@
                     </list>
                 </div>
 
-                <div>
+                <div n="2">
                     <head>Z.</head>
                     <list>
                         <lb />
@@ -12525,7 +12855,7 @@
 
             </div>
             <fw type="catch">Ver⸗</fw>
-            <pb n="[159]" />
+            <pb n="307" facs="DOI.jpg"/>
             <figure />
             <lb />
             <div type="index">
@@ -12697,7 +13027,7 @@
                     <fw
                         type="catch">48. Schmal⸗</fw>
                     <pb
-                        n="[160]" />
+                        n="308" facs="DOI.jpg"/>
                     <figure />
                     <item>48. <list>
                             <item>Schmalkalden.</item>
