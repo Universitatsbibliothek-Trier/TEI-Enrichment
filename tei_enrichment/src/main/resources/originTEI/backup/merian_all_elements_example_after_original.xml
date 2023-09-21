@@ -183,7 +183,7 @@
                     <body>
                         <pb n="3" facs="testdoi3.jpg" />
                         <fw type="pageNum">3</fw>
-                        <figure type ="doublePage" subtype="map" place="left" corresp="mgndpla:place_Schloss_Regensburg" xml:id="band_07_figure_001_01">
+                        <figure type ="doublePage" subtype="map" place="left"  corresp="mgndpla:place_Schloss_Regensburg" xml:id="band_07_figure_001_01">
                             <graphic url="testdoi3_1.jpg"></graphic>
                             <head>Lorem ipsum</head>
                             <p>Lorem ipsum</p>

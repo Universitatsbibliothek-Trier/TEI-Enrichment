@@ -156,7 +156,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="TeiHeader">
     <xs:sequence>
       <xs:element name="fileDesc" type="self:FileDesc" minOccurs="1" maxOccurs="1" />
-      <!-- <xs:element name="encodingDesc" type="self:EncodingDesc" minOccurs="1" maxOccurs="1" /> -->
+      <xs:element name="encodingDesc" type="self:EncodingDesc" minOccurs="1" maxOccurs="1" />
       <!-- EncodingDesc beschreiben als Type -->
     </xs:sequence>
     <xs:attribute name="version">
@@ -174,6 +174,46 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
+
+  <xs:complexType name="EncodingDesc">
+    <xs:sequence>
+      <xs:element name="listPrefixDef" type="self:ListPrefixDef" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ListPrefixDef">
+    <xs:sequence>
+      <xs:element name="prefixDef" type="self:PrefixDef" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PrefixDef"> 
+    <xs:simpleContent>
+    <xs:extension base="self:TitleExtension">
+      <xs:attribute name="ident">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="matchPattern">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="replacementPattern">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+    </xs:extension>
+  </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="TitleExtension">
+      <xs:restriction base="xs:string">
+        <xs:pattern value="\s*"/>
+      </xs:restriction>
+  </xs:simpleType>
 
   <xs:complexType name="FileDesc">
     <xs:sequence>

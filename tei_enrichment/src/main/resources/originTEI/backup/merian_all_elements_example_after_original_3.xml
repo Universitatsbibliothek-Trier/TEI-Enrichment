@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TEI xml:id="band_07" version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
-    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd">
-    <!-- refs genommen bis overview in not_orig -->
-        <!-- xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd"> -->
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd">
+    <!-- xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd"> -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -12,8 +10,7 @@
                 Grundstrukturierte
                     TEI-Daten.</title> -->
                 <title ref="#band_07">M.Z. Topographia Hassiæ, Et Regionum Vicinarum. Das ist
-                    Grundstrukturierte
-                    TEI-Daten.</title>
+                    Grundstrukturierte TEI-Daten.</title>
                 <respStmt>
                     <resp>created at</resp>
                     <name>Universitätsbibliothek Trier</name>
@@ -126,14 +123,8 @@
                     </choice> <lb n="6" /> Stätte
                     vnd Plätze in <lb n="7" />Heſſen / vnd den benachbahꝛten <lb n="8" />Landtſchaften
                     / als Buchen / Naſſau <lb n="9" />Wetteraw / <name
-                        ref="https://d-nb.info/gnd/4240073-9 https://d-nb.info/gnd/4371007-4"><!--
-                        Geografikum -->Schloss
-                    Regensburg</name> / Wittgen <lb n="10" />ſtein / Lohngaw / vnd andern. <lb
-                        n="11" />Franckfurt durch <lb n="12" /> <name
-                        ref="https://d-nb.info/gnd/118581090"><choice>
-                            <abbr>Matt</abbr>
-                            <expan>Matthaeus</expan>
-                        </choice> <lb />Merian</name> <lb
+                        ref="mgndpla:place_Nassau"><!-- Geografikum -->Schloss Regensburg</name> / Wittgen <lb n="10" />ſtein
+                    / Lohngaw / vnd andern. <lb n="11" />Franckfurt durch <lb n="12" /> Matt <lb
                         n="13" />Merian.</p>
             </div>
             <pb n="2" facs="testdoi2.jpg" />
@@ -154,31 +145,25 @@
                 <docEdition>Jn dieſer andern Edition mit ſonderm Fleiß durchgangen / <lb />von
                     vorigen Fehlern corrigirt / gebeſſert <lb />und vermehret.</docEdition>
                 <lb />
-                <docImprint>
-                    <pubPlace>Franckfurt am Mayn /</pubPlace>
-                    <lb />
-                    <publisher>Zum Truck
-                        verlegt von denen Merianiſchen Erben.</publisher>
-                    <lb />
-                    <docDate>Jm Jahr <num value="1655">M DC LV.</num></docDate>
-                </docImprint>
+                <docImprint><pubPlace>Franckfurt am Mayn /</pubPlace>
+                    <lb /><publisher>Zum Truck
+                    verlegt von denen Merianiſchen Erben.</publisher>
+                        <lb /><docDate>Jm Jahr <num
+                            value="1655">M DC LV.</num></docDate></docImprint>
             </titlePage>
 
             <div type="preface">
                 <figure />
                 <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <lb />At
-                    vero eos <choice>
-                        <orig>ꝛc.</orig>
-                        <reg>etc.</reg>
-                    </choice> accusam et justo duo dolores et
-                    ea rebum.<lb /> Stet clita kasd gubergren, no sea takimata sanctus est <name
-                        ref="https://d-nb.info/gnd/4203270-2">Schloss
-                        Hexenagger</name> Lorem ipsum dolor sit amet. <lb />Lorem ipsum dolor sit
-                    amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. <lb />At vero eos et
-                    accusam et justo duo dolores et ea rebum.<lb /> Stet clita kasd gubergren, no
-                    sea takimata sanctus est Lorem ipsum dolor sit amet.<lb /></p>
+                    vero eos et accusam et just duo dolores et ea rebum.<lb /> Stet clita kasd
+                    gubergren, no sea takimata sanctus est <name
+                        ref="mgndpla:place_Schloss_Hexenagger">Schloss Hexenagger</name> Lorem ipsum
+                    dolor sit amet. <lb />Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua. <lb />At vero eos et accusam et justo duo dolores et ea
+                    rebum.<lb /> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                    dolor sit amet.<lb /></p>
             </div>
 
             <div type="dedication">
@@ -202,76 +187,128 @@
                     <body>
                         <pb n="3" facs="testdoi3.jpg" />
                         <fw type="pageNum">3</fw>
+                        <!-- DoublePage.jpg: -->
+                        <figure type="doublePage" subtype="map" place="top"
+                            corresp="mgndpla:place_Schloss_Regensburg"
+                            xml:id="band_07_figure_001_01">
+                            <!-- Welche subtypes die maps haben können, muss noch geklärt werden -->
+                            <figDesc> Dieser Stich wurde aus mehreren Teilen zusammengeklebt <height
+                                    unit="cm" quantity="15" />
+                                <width unit="cm" quantity="50" />
+                            </figDesc>
+                            <graphic url="testdoi3_1.jpg"></graphic>
+                            <head>Rom</head>
+                            <p>Legende:</p>
+                            <list>
+                                <item>Denkmal1</item>
+                            </list>
+                        </figure>
+                        <figure type="doublePage" subtype="map" place="bottom-left"
+                            corresp="mgndpla:place_Schloss_Regensburg"
+                            xml:id="band_07_figure_001_02">
+                            <figDesc> Dieser Stich wurde aus mehreren Teilen zusammengeklebt <height
+                                    unit="cm" quantity="14" />
+                                <width unit="cm" quantity="10" />
+                            </figDesc>
+                            <graphic url="testdoi3_1.jpg"></graphic>
+                        </figure>
+                        <figure type="doublePage" subtype="map" place="bottom-right"
+                            corresp="#band_07_art_paul_goldmann" xml:id="band_07_figure_001_03">
+                            <figDesc> Dieser Stich wurde aus mehreren Teilen zusammengeklebt <height
+                                    unit="cm" quantity="12" />
+                                <width unit="cm" quantity="10" />
+                            </figDesc>
+                            <graphic url="testdoi3_2.jpg"></graphic>
+                        </figure>
+
+
                         <pb n="4" facs="testdoi4.jpg" />
-                        <div type="overview">
+                        <div type="overview" xml:id="band_07_art_overview_1">
                             <lb />
                             <head>Beſchreibung der vornehmſten Staͤdte und <lb />Plaͤtze in <name
-                                    ref="https://d-nb.info/gnd/4065773-5">Deutschland</name> Heſſen
-                                / und den benachbarten Landſchafften / <lb />als Buchen / Naſſau /
+                                    ref="mgndpla:place_Deutschland">Deutschland</name> Heſſen / und
+                                den benachbarten Landſchafften / <lb />als Buchen / Naſſau /
                                 Wetterau / Weſterwald / Wittgen⸗ <lb />ſtein / Loͤhngau / und
                                 andern.</head>
                             <lb />
                             <p>ES gehoͤren in den Hochloͤblichen <name
-                                    ref="https://d-nb.info/gnd/4350182-5">
-                                    <!-- Geografikum --> Regensburg </name><lb />Creyß
-                                / (deſſen ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ <lb />ſchoff
-                                zu Wormbs und der <name ref="https://d-nb.info/gnd/4018118-2">Kaiser
-                                Trier <!--
+                                    ref="mgndpla:place_Regensburg">
+                                    <!-- Geografikum --> Regensburg </name><lb />Creyß /
+                                (deſſen ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ <lb />ſchoff
+                                zu Wormbs und der <name ref="mgndper:person_Trier">Kaiser Trier <!--
                                     Person -->
-                                </name> und <name
-                                    ref="https://d-nb.info/gnd/118581090">Paul Goldmann<!-- Person --></name> Herr
+                                </name>
+                                und <name
+                                    ref="mgndper:person_Paul_Goldmann">Paul Goldmann<!-- Person --></name> Herr
                                 Pfaltzgraf Ludwig Philips <lb />zu Simmern ꝛc. ſeynd /) die
-                                Biſchoͤffe von Worms / Speyer / <lb />Straßburg / Baſel / Biſantz /
-                                Sitten / Loſanna / Metz / Tull / <lb />Verdun / und <name
-                                    ref="https://d-nb.info/gnd/118772392"><!-- Geografikum --> Schloss Grüningen</name>;
-                                der Hochmeiſter des Johanniter Ordens / <lb />die Pfaltzgrafen /
-                                wegen der Graffſchafft Spanheim / Zwey⸗ <lb />bruͤcken / und
-                                Veldentz; die Landgraffen in Heſſen; der <rs
-                                    ref="https://d-nb.info/gnd/4240073-9">Herr</rs> in Lothringen;
-                                die <lb />Hertzoge in Savoja; die Aebte von Fulda / oder <name
-                                    ref="https://d-nb.info/gnd/4240073-9">Herßfeld<!-- Ereignis-->
+                                Biſchoͤffe von place_Dravograd Worms / Speyer / <lb />Straßburg /
+                                Baſel / Biſantz / Sitten / Loſanna / Metz / Tull / <lb />Verdun /
+                                und <name
+                                    ref="mgndpla:place_Grüningen"><!-- Geografikum --> Schloss Grüningen</name>; der
+                                Hochmeiſter des Johanniter Ordens / <lb />die Pfaltzgrafen / wegen
+                                der Graffſchafft <name
+                                    ref="mgndpla:place_Dravograd mgndpla:place_Oberdrauburg">
+                                Traaburg</name> Spanheim / Zwey⸗ <lb />
+                                <choice>
+                                    <sic>Maͤyntzer⸗Bi⸗<lb />ſthu&#xfffc;b</sic>
+                                    <corr>Maͤyntzer⸗Bi⸗<lb />ſthumb</corr>
+                                </choice>
+                                bruͤcken / und Veldentz; die Landgraffen in Heſſen; der <rs
+                                    ref="mgndper:person_Paul_Goldmann">Herr</rs> in Lothringen; die <lb />Hertzoge
+                                in Savoja; die Aebte von Fulda / oder <name
+                                    ref="mgndeve:event_Erster_Weltkrieg">Herßfeld<!-- Ereignis-->
                                 </name>
                                 / Murbach / Muͤn⸗ <lb />ſter in S. Gregorienthal / und Pfriem im
                                 Bißthum Chur: die Abtißin von Kauffin⸗ <lb />gen; die Proͤbſte zu
                                 Weiſſenburg / und Odenheim; die Graffen und Herren von <lb />Naſſau⸗Sarbruͤcken;
                                 die Wetterauiſche Graffen; die Rheingraffen; die von Falcken⸗ <lb />ſtein;
-                                von Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein /
-                                Moͤrsburg / <lb />Rapoltſtein / Rapoltzkirch / ꝛc. Die Adeliche
-                                Collegia zu Gelnhauſen / und Friedberg: <lb />Die <name
-                                    ref="https://d-nb.info/gnd/4371007-4"> Chronik <!-- Werk -->
+                                von Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein / die
+                                zween <name
+                                    ref="mgndeve:event_Kappeler_Krieg_1529 mgndeve:event_Kappeler_Krieg_1531">
+                                CaplerKrieg</name> Moͤrsburg / <lb />Rapoltſtein / Rapoltzkirch /
+                                ꝛc. Die Adeliche Collegia zu Gelnhauſen / und Friedberg: <lb />Die <name
+                                    ref="mgndobj:object_Chronik"> Chronik <!-- Werk -->
                                 </name>
                                 /
-
                                 <name
                                     ref="https://d-nb.info/gnd/4497639-2">Muͤn⸗ <lb />ſter in <name
-                                        ref="???">
-                                        <choice>
+                                        ref="https://d-nb.info/gnd/7656022-3"><choice>
                                             <abbr>S.</abbr>
                                             <expan>Sankt</expan>
                                         </choice>
-                                Gregorienthal </name>
-                                </name> Ober⸗ <lb /><name
-                                    ref="https://d-nb.info/gnd/4065855-7">Elektrizitätswerk Trier<!--
-                                    Körperschaft --></name>
-                                / Colmar / Straßburg / Roßheim / Schlettſtatt / Hagenau /
-                                Cron⸗Weiſſen⸗ <lb />burg / Landau / Muͤlhauſen im Sundgoͤw / Speyer
-                                / <name
-                                    ref="https://d-nb.info/gnd/4065773-5">Wormser Religionsgespräche<!--
-                                    Konferenz oder
-                                    Veranstaltung --></name>
-                                / Franckfurt / Fried⸗ <lb />berg / Wetzlar / Metz / Tull / Verdun /
-                                Kauffmans⸗Sarbruͤck / Biſantz / und Genff. <lb />Darunter gleichwol
-                                nunmehr ſich viel befinden / die eximirt werden: als die Biſchoͤffe <lb />zu
-                                Sitten / Loſann / Metz / Tull / Verdun / und Genff: der Abt zu
-                                Pfriem / im Biß⸗ <lb />thum Chur: die Graffſchafft Bitſch: die
-                                Staͤdte / Baſel / Muͤlhauſen im Sundgoͤw / <lb />Metz / Tull /
-                                Verdun / Kauffmans⸗Sarbruͤck / <name
-                                    ref="https://d-nb.info/gnd/4203270-2">O'Kelly<!-- Familie --></name><note>Die
+                                Gregorienthal</name></name> ; Ober⸗ <lb /><name
+                                    ref="mgndorgs:org_Elektrizitätswerk_Trier">Elektrizitätswerk
+                                Trier<!--
+                                    Körperschaft --></name> / Colmar / Straßburg / Roßheim / Schlettſtatt / Hagenau
+                                / Cron⸗Weiſſen⸗ <lb />burg / Landau / Muͤlhauſen im Sundgoͤw /
+                                Speyer / <name
+                                    ref="mgndeve:event_Wormser_Religionsgespräche">Wormser
+                                Religionsgespräche<!-- Konferenz oder
+                                    Veranstaltung --></name> / Franckfurt / Fried⸗ <lb />berg / Wetzlar
+                                / Metz / Tull / Verdun / Kauffmans⸗Sarbruͤck / Biſantz / und Genff. <lb />Darunter
+                                gleichwol nunmehr ſich viel befinden / die eximirt werden: als die
+                                Biſchoͤffe <lb />zu Sitten / Loſann / Metz 
+                                <choice> <orig>ꝛc.</orig> <reg>etc.</reg> </choice>
+                                / Tull / Verdun / und
+                                Genff: der Abt zu Pfriem / im Biß⸗ <lb />thum Chur: die Graffſchafft
+                                Bitſch: die Staͤdte / Baſel /
+                            
+                            ſeynd mehr Haͤuſer <choice>
+                                <abbr>darniȢ</abbr>
+                                <expan>darnider</expan>
+                            </choice>
+                             Muͤlhauſen im Sundgoͤw / <lb />Metz /
+                                Tull / Verdun / Kauffmans⸗Sarbruͤck / <name
+                                    ref="mgndper:person_O_Kelly">O'Kelly<!-- Familie --></name><note cert="high">Die
                                 ist eine editorische Bemerkung</note> / ꝛc. Von welchen zum Theil in <lb />Beſchreibung
-                                des Schweitzerlands / des Elſaß / der Untern⸗Pfaltz / (daſelbſten
+                                des Schweitzerlands / <choice>
+                                    <abbr>d̕</abbr>
+                                    <expan>der</expan>
+                                </choice>
+                                des Elſaß / der Untern⸗Pfaltz / (daſelbſten
                                 auch <lb />Savoja / Lothringen / Biſantz / Metz / Tull / Verdun /
                                 Bitſch / und Kauffmans⸗Sar⸗ <lb />bruͤck / einkommen ſeyn) und des <name
-                                    ref="https://d-nb.info/gnd/4528964-5"><!-- Ereignis-->Dreißigjähriger Krieg</name>Chur⸗und
+                                    ref="mgndeve:event_Dreißigjähriger_Krieg"><!-- Ereignis-->Dreißigjähriger Krieg</name>Chur⸗und
                                 Unter⸗Rheiniſchen Creyſes / allbereit <lb />von uns moͤglicher / und
                                 gebuͤhrender Bericht / geſchehen. Die uͤbrige aber / und ihre <lb />
                                 beſch<supplied cert="high">e</supplied>hen vornehmſte und bekanteſte
@@ -282,7 +319,7 @@
                                 Weſtphaͤliſchen Creyß gezogen wird. <lb />Und erſtlich zwar / was
                                 das hochloͤbliche Fuͤrſtenthum und <lb />anbelangt / ſo hat Wilhelm
                                 Dilich eine <name
-                                    ref="https://d-nb.info/gnd/4023202-5"> <!-- Werk -->Hessische Chronica</name>
+                                    ref="mgndobj:object_Hessische_Chronica"> <!-- Werk -->Hessische Chronica</name>
                                 davon ausgehen laſſen; damit aber <lb />nicht jederman zufrieden
                                 geweſen / dieweil er im erſten Theil derſelben geſchrieben / das <lb /><w
                                     lemma="Oberhessen">Ober⸗Heſſen</w> / ſo viel das Lager
@@ -293,14 +330,12 @@
                                     type="catch">nigſtein /</fw>
                     <fw type="sig">A 2</fw>
                     <pb n="5"
-                                />
+                                    facs="testdoi5.jpg" />
                     <fw
-                                    type="pageNum">
-                                    <choice>
+                                    type="pageNum"><choice>
                                         <sic>2</sic>
                                         <corr>4</corr>
-                                    </choice>
-                                </fw>
+                                    </choice></fw>
                     <fw
                                     type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb />nigſtein
@@ -310,32 +345,31 @@
                                 das Fuͤrſtenthum Heſſen anderſt nicht / als was etwan Lehenſchafft / <lb />Schutz
                                 / Geleyt oder dergleichen ſonderbare Beding / particulariter
                                 mitbringen / re- <lb />cognoſciren; ſondern eine gar abgeſonderte
-                                Landſchafft / <quote source="https://d-nb.info/gnd/4350182-5">"Der
-                                Sandmann, der fürchterliche Sandmann ist der alte
-                                    Advokat Coppelius, der manchmal bei uns zu Mittage isst! – Aber
-                                die grässlichste Gestalt hätte mir nicht tieferes
-                                    Entsetzen erregen können als eben dieser Coppelius.</quote>
-                                ſowol als der Hundsruck / <lb />Weſterich / und andere / jederzeit
-                                geweſen / und noch. Was aber die Graffſchafft Naſſau⸗ <lb />Dillenberg
-                                belange / iſt dieſelbe nicht allein nicht unter Heſſen gelegen /
-                                ſondern auch nicht <lb />in dem Creyſe / darein Heſſen gehoͤrig /
-                                ſondern in dem Weſtphaͤliſchen Creyſe; wie auch <lb />Seyn /
-                                Virneburg / und andere anſehnliche Graff⸗und Herrſchafften mehr /
-                                begriffen. <lb />
-                    <milestone unit="section" /> ziehet beſagter Autor
-                                das Stifft Herßfeld / und andere Orthe / zu Nieder⸗Heſſen. <lb />Es
-                                iſt aber darbey zu mercken / daß er einen Unterſchied zwiſchen
-                                Nieder⸗Heſſen / und <lb />dem niedern Fuͤrſtenthum Heſſen machet /
-                                und zu dieſem letztern weder beſagte Stifſt / <lb />noch auch die
-                                Graffſchafft Ziegenhain / die ſonſten Heßiſch iſt / ziehen thut: Als
-                                wie er <lb />auch Ober⸗Heſſen / darzu er obbeſagte anderer Herren
-                                Land und Staͤdte rechnet / viel <lb />groͤſſer / als das
-                                Ober⸗Fuͤrſtenthum Heſſen machet. Nieder⸗Heſſen liegt eigentlich zwi⸗ <lb />ſchen
-                                dem Werra⸗und Diemelſtrom / zur Seiten / gegen Mitternachtwerts /
-                                hab es das <lb />Hertzogthum Braunſchweig: gegen Aufgang das Eißfeld
-                                / und Thuͤringen; gegen <lb />Mittag das Franckenland / und einen
-                                Theil der Wetterau; gegen Abend Ober⸗Heſ⸗ <lb />ſen; die
-                                Graffſchafft Waldeck / und das Stifft Paderborn. Petrus Bertius
+                                Landſchafft / <quote source="mgndbibl:listBibl_der_Sandmann">"Der
+                                Sandmann, der fürchterliche Sandmann ist der alte Advokat Coppelius,
+                                der manchmal bei uns zu Mittage isst! – Aber die grässlichste
+                                Gestalt hätte mir nicht tieferes Entsetzen erregen können als eben
+                                dieser Coppelius.</quote> ſowol als der Hundsruck / <lb />Weſterich
+                                / und andere / jederzeit geweſen / und noch. Was aber die
+                                Graffſchafft Naſſau⸗ <lb />Dillenberg belange / iſt dieſelbe nicht
+                                allein nicht unter Heſſen gelegen / ſondern auch nicht <lb />in dem
+                                Creyſe / darein Heſſen gehoͤrig / ſondern in dem Weſtphaͤliſchen
+                                Creyſe; wie auch <lb />Seyn / Virneburg / und andere anſehnliche
+                                Graff⸗und Herrſchafften mehr / begriffen. <lb />
+                    <milestone
+                                    unit="section" /> ziehet beſagter Autor das Stifft Herßfeld /
+                                und andere Orthe / zu Nieder⸗Heſſen. <lb />Es iſt aber darbey zu
+                                mercken / daß er einen Unterſchied zwiſchen Nieder⸗Heſſen / und <lb />dem
+                                niedern Fuͤrſtenthum Heſſen machet / und zu dieſem letztern weder
+                                beſagte Stifſt / <lb />noch auch die Graffſchafft Ziegenhain / die
+                                ſonſten Heßiſch iſt / ziehen thut: Als wie er <lb />auch Ober⸗Heſſen
+                                / darzu er obbeſagte anderer Herren Land und Staͤdte rechnet / viel <lb />groͤſſer
+                                / als das Ober⸗Fuͤrſtenthum Heſſen machet. Nieder⸗Heſſen liegt
+                                eigentlich zwi⸗ <lb />ſchen dem Werra⸗und Diemelſtrom / zur Seiten /
+                                gegen Mitternachtwerts / hab es das <lb />Hertzogthum Braunſchweig:
+                                gegen Aufgang das Eißfeld / und Thuͤringen; gegen <lb />Mittag das
+                                Franckenland / und einen Theil der Wetterau; gegen Abend Ober⸗Heſ⸗ <lb />ſen;
+                                die Graffſchafft Waldeck / und das Stifft Paderborn. Petrus Bertius
                                 haͤlts auch <lb />mit dem Dilichio, was die obverſtandene frembde
                                 Herrſchafften belangt; und ſagt da⸗ <lb />her er Dilichius, daß des
                                 Heſſen⸗Landes Laͤnge ſich von Mittagwerts jenſeit des Mayns / <lb />gegen
@@ -346,8 +380,8 @@
                                 Francken; <lb />und zur Lincken / oder gegen Abend / der Rhein / das
                                 Trieriſche / Coͤllniſche / Bergiſche <lb />Gebiete / und endlich
                                 auch ein Antheil von Weſtphalen. Maginus begreifft die Gren⸗ <lb />tzen
-                                in wenig Worten / und ſagt / Heſſen⸗Land habe von Morgen Thuͤringen
-                                / und <lb />von Mittag das Franckenland / von Abend Weſtphalen / und
+                                in wenig Worten/ und ſagt / Heſſen⸗Land habe von Morgen Thuͤringen /
+                                und <lb />von Mittag das Franckenland / von Abend Weſtphalen / und
                                 von Mitternacht das <lb />Hertzogthum Braunſchweig / das Bißthum
                                 Minden / und andere Orthe. Ober⸗Heſ⸗ <lb />ſen grentzet mit Francken
                                 / der Pfaltz / Maͤyntz / Trier / und Coͤlln: Und das Nieder⸗ <lb />Heſſen
@@ -381,21 +415,30 @@
                                 nacher dem Braunſchwei⸗ <lb />ger⸗Land gelegen / faͤhet bey
                                 Jmmenhauſen an / und hat in der Laͤnge und Breite <fw
                                     type="catch">bey</fw>
-                    <pb n="6" />
+                    <pb n="6" facs="testdoi6.jpg" />
                     <fw
                                     type="pageNum">5</fw>
             <fw
                                     type="header">in Heſſen / vnd den benachbarten Landen.</fw>
-            <figure
-                                    type="doublePage" subtype="map" place="left">
-                                    <graphic url="testdoi3_1.jpg"></graphic>
-                                </figure>
+            <figure />
                             </p>
                         </div>
                         <lb />
-                        <div type="article">
-                            <head><name ref="https://d-nb.info/gnd/4018118-2">Paul Goldmann</name> /
-                                an der Werra.</head>
+                        <div type="transition">
+                            <p>Folgende ſein mehrers bekandt / und wer⸗ <lb />den insgemein fuͤr
+                                gewiſſe Staͤdt / und <lb />Staͤdtlein gehalten / Als:</p>
+                        </div>
+                        <!-- verschachtelte Artikel/Artikel in Artikeln-->
+                        <div type="article" xml:id="doi1" corresp="mgndper:place_Neumarckt_1 mgndper:place_Neumarckt_2"><head><name ref="mgndper:place_Neumarckt_1 mgndpla:place_Neumarckt_2">Neumarckt</name></head><lb/><p>Text von Neumarckt allgemein</p>
+                            <div type="article" xml:id="doi2" corresp="mgndper:place_Neumarckt_1"><head><name ref="mgndpla:place_Neumarckt_1">1.Neumarckt</name></head><lb/><p>Text von Neumarckt_1</p></div>
+                            <div type="article" xml:id="doi3" corresp="mgndper:place_Neumarckt_2"><head><name ref="mgndpla:place_Neumarckt_2">2.Neumarckt</name></head><lb/><p>Text von Neumarckt_2</p></div>
+                        </div>
+
+
+                        <div type="article" xml:id="band_07_art_paul_goldmann"
+                            corresp="mgndper:person_Paul_Goldmann">
+                            <head><name ref="mgndper:person_Paul_Goldmann">Paul Goldmann</name> / an
+                                der Werra.</head>
                             <lb />
                             <p>JSt ein Stadt in Nieder⸗Heſſen / <lb />zugenandt in den Sohden. Soll <lb />wegen
                                 der Saltz⸗Sohden ſo viel <lb />heiſſen / als Hallendorff / inmaſſen
@@ -501,23 +544,23 @@
                                 Occupi⸗ <lb />rung gedacht wird im 2. Theil des Theatri <lb />Europæi.
                                 Jn dieſer Statt iſt geboren <lb />der wohlberuͤmte Theologus D.
                                 Balthaſar <lb />
-					<table>
+                                <!-- Stammbaum.jpg: -->
+                                <table>
                                     <row>
-                                        <cell cols="2">Dieterich der
-                                            Dritte.</cell>
+                                        <cell cols="2">Dieterich der Dritte.</cell>
                                     </row>
                                     <row>
-                                        <cell cols="3">Dieterich der
-                                            Vierdt.</cell>
+                                        <cell cols="3">Dieterich der Vierdt.</cell>
                                         <cell>Gotschalck. <lb />Wilhelm / ἄπαις.</cell>
                                     </row>
                                     <row>
                                         <cell>Gotschalck.</cell>
-                                        <cell>Joh. Dieterich der <lb />fuͤnffte ſtarb. <lb />1571.</cell>
+                                        <cell cols="1">Joh. Dieterich der <lb />fuͤnffte ſtarb. <lb />
+                                1571.</cell>
                                         <cell>Frantz <lb />ſtarb <lb />ohne Kinder.</cell>
                                     </row>
                                     <row>
-                                        <cell>Chriſtoff ſtarb vor <lb />dem Vatter 1567.</cell>
+                                        <cell cols="1">Chriſtoff ſtarb vor <lb />dem Vatter 1567.</cell>
                                     </row>
                                     <row>
                                         <cell>Walpurga dieſes Tochter / ward zur <lb />Ehe genommen
@@ -528,7 +571,7 @@
                                 Menzerus.</p>
                         </div>
                         <lb />
-                        <div type="article">
+                        <div type="article" xml:id="band_07_art_some_article1">
                             <head>Arolſen.</head>
                             <lb />
                             <p>LJgt in der Graffſchaft Waldeck / und iſt <lb />Anfangs ein Cloſter
@@ -546,7 +589,7 @@
                                 zu Waldeck.</p>
                         </div>
                         <lb />
-                        <div type="article">
+                        <div type="article" xml:id="band_07_art_some_article2">
                             <head>Aſſenheim.</head>
                             <lb />
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat <lb />ſeiner
@@ -594,9 +637,9 @@
                         </div>
                         <fw type="catch">Namen⸗</fw>
 
-                        <pb n="8" />
+                        <pb n="8" facs="testdoi8.jpg" />
                         <div type="appendix">
-                            <div type="article">
+                            <div type="article" xml:id="band_07_art_some_article3">
                                 <head>Lorem ipsum</head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -609,7 +652,7 @@
                                     duo dolores et ea rebum.<lb /> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet.<lb /></p>
                             </div>
-                            <div type="article">
+                            <div type="article" xml:id="band_07_art_some_article4">
                                 <head>Lorem ipsum</head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -633,7 +676,7 @@
                         <fw type="pageNum">3</fw>
                         <figure />
 
-                        <div type="overview">
+                        <div type="overview" xml:id="band_07_art_overview_2">
                             <lb />
                             <head>Beſchreibung der vornehmſten Staͤdte und <lb />Plaͤtze in Heſſen /
                                 und den benachbarten Landſchafften / <lb />als Buchen / Naſſau /
@@ -676,7 +719,7 @@
                                 vornehmſte und bekanteſte Staͤdte und Orthe ſollen in dieſem Tractat
                                 eingebracht <lb />werden; wie auch Gelnhauſen / und die Graffſchafft
                                 Naſſau⸗Beylſtein / ꝛc. ſo ſonſten <lb />zum Nieder⸗Rheiniſchen <name
-                                    ref="https://d-nb.info/gnd/6009670-6"><!-- Ereignis-->Dreißigjähriger Krieg</name>
+                                    ref="mgndeve:event_Dreißigjähriger_Krieg"><!-- Ereignis-->Dreißigjähriger Krieg</name>
                                 Creyß gehoͤrig ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten <lb />zum
                                 Weſtphaͤliſchen Creyß gezogen wird. <lb />Und erſtlich zwar / was
                                 das hochloͤbliche Fuͤrſtenthum und <w lemma="Landgrafschaft">
@@ -690,14 +733,12 @@
                                     type="catch">nigſtein /</fw>
                     <fw type="sig">A 2</fw>
                     <pb n="10"
-                                />
+                                    facs="testdoi10.jpg" />
                     <fw
-                                    type="pageNum">
-                                    <choice>
+                                    type="pageNum"><choice>
                                         <sic>2</sic>
                                         <corr>4</corr>
-                                    </choice>
-                                </fw>
+                                    </choice></fw>
                     <fw
                                     type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb />nigſtein
@@ -714,6 +755,7 @@
                                 ſondern in dem Weſtphaͤliſchen Creyſe; wie auch <lb />Seyn /
                                 Virneburg / und andere anſehnliche Graff⸗und Herrſchafften mehr /
                                 begriffen. <lb />
+                                <!-- Milestone.png-->
                     <milestone unit="section" /> ziehet beſagter Autor
                                 das Stifft Herßfeld / und andere Orthe / zu Nieder⸗Heſſen. <lb />Es
                                 iſt aber darbey zu mercken / daß er einen Unterſchied zwiſchen
@@ -773,7 +815,7 @@
                                 nacher dem Braunſchwei⸗ <lb />ger⸗Land gelegen / faͤhet bey
                                 Jmmenhauſen an / und hat in der Laͤnge und Breite <fw
                                     type="catch">bey</fw>
-                    <pb n="11" />
+                    <pb n="11" facs="testdoi11.jpg" />
                     <fw
                                     type="pageNum">5</fw>
             <fw
@@ -782,11 +824,11 @@
                             </p>
                         </div>
                         <lb />
-                        <div type="article"
-                        >
-                            <head><name ref="https://d-nb.info/gnd/4240073-9"
-                                >Regensburg</name> / an
-                                der Werra.</head>
+                        <div type="article" corresp="mgndpla:place_Regensburg"
+                            xml:id="band_07_art_place_Regensburg">
+                            <head><name ref="mgndpla:place_Regensburg"
+                                >Regensburg</name> / an der
+                                Werra.</head>
                             <lb />
                             <p>JSt ein Stadt in Nieder⸗Heſſen / <lb />zugenandt in den Sohden. Soll <lb />wegen
                                 der Saltz⸗Sohden ſo viel <lb />heiſſen / als Hallendorff / inmaſſen
@@ -851,7 +893,7 @@
                                     type="catch">Statt</fw>
                 <fw type="sig">C 2</fw>
                 <pb n="12"
-                                />
+                                    facs="testdoi12.jpg" />
                 <fw
                                     type="pageNum">6</fw>
                 <fw type="header">Beſchreibung der
@@ -894,12 +936,10 @@
                                 Balthaſar <lb />
 					<table>
                                     <row>
-                                        <cell cols="2">Dieterich der
-                                            Dritte.</cell>
+                                        <cell cols="2">Dieterich der Dritte.</cell>
                                     </row>
                                     <row>
-                                        <cell cols="3">Dieterich der
-                                            Vierdt.</cell>
+                                        <cell cols="3">Dieterich der Vierdt.</cell>
                                         <cell>Gotschalck. <lb />Wilhelm / ἄπαις.</cell>
                                     </row>
                                     <row>
@@ -919,7 +959,7 @@
                                 Menzerus.</p>
                         </div>
                         <lb />
-                        <div type="article">
+                        <div type="article" xml:id="band_07_art_some_article5">
                             <head>Arolſen.</head>
                             <lb />
                             <p>LJgt in der Graffſchaft Waldeck / und iſt <lb />Anfangs ein Cloſter
@@ -936,7 +976,7 @@
                                 Hornung / Herr Graf Georg Friede⸗ <lb />rich zu Waldeck.</p>
                         </div>
                         <lb />
-                        <div type="article">
+                        <div type="article" xml:id="band_07_art_Schloss_Regensburg">
                             <head>Aſſenheim.</head>
                             <lb />
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat <lb />ſeiner
@@ -983,20 +1023,58 @@
                                 Lorem ipsum dolor sit amet.<lb /></p>
                         </div>
                         <div type="postface">
-                            <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. <lb />At vero eos et accusam et justo duo
-                                dolores et ea rebum.<lb /> Stet clita kasd gubergren, no sea
-                                takimata sanctus est Lorem ipsum dolor sit amet. <lb />Lorem ipsum
-                                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                voluptua. <lb />At vero eos et accusam et justo duo dolores et ea
-                                rebum.<lb /> Stet clita kasd gubergren, no sea takimata sanctus est
-                                Lorem ipsum dolor sit amet.<lb /></p>
+                            <head>Beſchluß</head>
+                            <p>DJeweil nach Endung dieſes / mir zu⸗ kommen / wie dieſes 1655. Jahr
+                                / den 26 Januarii N. C. zu Wien / dem Herren Her⸗ ren Ertzbertzogen
+                                Leopoldo Ignatio zu Oe⸗ ſterreich / ꝛc. die Erbhuldigung / von den
+                                Staͤnden in Unter⸗Oeſterreich / gelaiſtet worden: Als kan ich nicht
+                                umbgehen / zum Beſchluß / zu vermelden / daß auß ſolchem Actu, und
+                                deſſen Beſchreibung / zu erſehen / 1. Daß auſſer deß Biſchoffs zu
+                                Wien / Herꝛn Philipp Friderich Breiners / auch ein Biſchoff zur
+                                Neuſtadt wieder iſt / ob Er wol mit Nahmen nicht genennet wird. 2.
+                                Daß die Staͤdte / den Ober⸗Oeſterrei⸗ chiſchen gleich gehalten /
+                                unnd nunmehr auch wieder ein Stand / namblich der vier⸗ te /
+                                genennet werden. Und 3. daß dieſer Zeit / die Erb⸗Aempter in
+                                Unter⸗Oeſterreich bedienen folgende Herren / und Geſchlechte / als /
+                                das Erb⸗Hoffmeiſter⸗Ampt / Herꝛ Johann Frantz von Trautſohn / Graff
+                                zu Fleckenſtein: das Erb⸗Caͤmmerer / Herr Seyfrid Leonhart Breiner /
+                                Frey: und Ed⸗ ler Herꝛ zu Staͤtz:des Erbhoffmarſchallen⸗ Ampt / der
+                                alte Fuͤrſt vonEggenberg: Erb⸗ Hoffſtallmeiſters / Herꝛ Frantz
+                                Albrecht / Graff von Harrach; Erb⸗Mundſchen⸗ cken / Herꝛ Julius
+                                Graff von Hardegg: Erbtruchſeſſen / und Erb⸗Stabelmeiſters / Herꝛ
+                                Johann Chriſtoph Graff von Puch⸗ heim / General Feld⸗Marſchall:
+                                Erb⸗Jaͤ⸗ germeiſters / Herꝛ Ott Heinrich / Herꝛ von Zinzendorff /
+                                und Pottendorff: Erb⸗Sil⸗ ber⸗Caͤmmerers / Herꝛ Hans Ludwig Graf von
+                                Kueffſtein / Landshauptmann in O⸗ ber⸗Oeſterreich: Erb⸗Thuͤrhuͤters
+                                / Herꝛ Hans Albrecht von Schoͤnkirch: Erb⸗ Caplans / Herꝛ Johann /
+                                Probſt zu S. Poͤlten: Obriſt Erb⸗Kuͤchkneiſters / Herꝛ Wentzel
+                                Hegenmuͤller / von Duben⸗ weiller / Freyherꝛ zu Albrechtsberg /
+                                Hoff⸗ Cammer⸗Rath: und dann deß Erb⸗Muͤntz⸗ meiſters⸗Ampt / Herꝛ
+                                Conrad / Freyherꝛ von Richthauſen / Edler Herr zu Chaos,
+                                Kaͤyſerlicher Hoff⸗ Cammerrath / unnd Muͤntzmeiſter; ſo ſelbigen
+                                Tags / daran dieſe Erbhuldigung geſchehen / zuvor / morgens fruͤhe /
+                                vor einen Land⸗ mann auffgenommen wor⸗ den iſt. <lb /></p>
                         </div>
+                        <pb n="13" facs="testdoi3.jpg" />
+                        <fw type="pageNum">3</fw>
+                        <!-- MultiPage.jpg: -->
+                        <figure type="multiPage" subtype="cityView"
+                            corresp="mgndpla:place_Schloss_Regensburg" xml:id="band_07_figure_002">
+                            <figDesc> Dieser Stich wurde aus mehreren Teilen zusammengeklebt <height
+                                    unit="cm" quantity="20" />
+                                <width unit="cm" quantity="90" />
+                            </figDesc>
+                            <graphic url="testdoi13.jpg"></graphic>
+                            <head>Lorem ipsum</head>
+                            <p>Lorem ipsum</p>
+                            <list>
+                                <item>lorem ipsum</item>
+                            </list>
+                        </figure>
+
                         <fw type="catch">Namen⸗</fw>
 
-                        <pb n="13" />
+                        <pb n="14" facs="testdoi14.jpg" />
                         <div type="appendix">
                             <div type="article">
                                 <head>Lorem ipsum</head>
@@ -1032,9 +1110,10 @@
 
         <back>
 
-            <pb n="14" />
+            <pb n="15" facs="testdoi15.jpg" />
             <figure />
             <lb />
+            <!-- Namensregister.jpg -->
             <div type="index" n="1">
                 <head>Namen ⸗Regiſter</head>
                 <lb />
@@ -1118,10 +1197,11 @@
             </div>
 
             <fw type="catch">Ver⸗</fw>
-            <pb n="15" />
+            <pb n="16" facs="testdoi16.jpg" />
             <figure />
             <lb />
             <div type="index">
+                <!-- Kupferverzeichnis.jpg: -->
                 <head>Verzeichniß der Kupffer / darnach ſich der Buchbinder <lb />zu richten hat.</head>
                 <lb />
                 <list>
@@ -1290,7 +1370,7 @@
                     <fw
                         type="catch">48. Schmal⸗</fw>
                     <pb
-                        n="16" />
+                        n="17" facs="testdoi17.jpg" />
                     <figure />
                     <item>48. <list>
                             <item>Schmalkalden.</item>
@@ -1346,12 +1426,10 @@
                             <item>Liechtenberg.</item>
                         </list> <ref>150</ref></item>
                 </list>
-                <p>
-                    <choice>
+                <p><choice>
                         <sic>&#xfffc;</sic>
                         <corr>⁂</corr>
-                    </choice>
-                </p>
+                    </choice></p>
             </div>
             <lb />
             <figure />
