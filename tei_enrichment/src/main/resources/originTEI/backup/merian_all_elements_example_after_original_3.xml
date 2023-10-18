@@ -2,7 +2,8 @@
 <TEI xml:id="band_07" version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd">
-    <!-- xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd"> -->
+    <!-- xsi:schemaLocation="http://www.tei-c.org/ns/1.0
+    https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd"> -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -134,22 +135,27 @@
                 <lb n="14" />
                 <docTitle>
                     <titlePart type="main">M. Z. <lb />TOPOGRAPHIA <lb />HASSIÆ, <lb />ET REGIONUM <lb />
-                        VICINARUM</titlePart>
+                VICINARUM</titlePart>
                     <lb n="15" />
                     <titlePart type="sub">Das iſt: <lb n="16" />Beſchreibung und eigentliche
-                        Abbildung der <lb />vornehmſten Staͤdte und Plaͤtze in Heſſen / und denen
-                        be⸗ <lb />nachbarten Landſchafften / als Buchen / Wetterau / Weſter⸗ <lb />wald
-                        / Loͤhngau / Naſſau / Solms / Hanau / Witgenſtein / <lb />und andern.</titlePart>
+                Abbildung der <lb />vornehmſten Staͤdte und Plaͤtze in Heſſen / und denen be⸗ <lb />nachbarten
+                Landſchafften / als Buchen / Wetterau / Weſter⸗ <lb />wald / Loͤhngau / Naſſau /
+                Solms / Hanau / Witgenſtein / <lb />und andern.</titlePart>
                 </docTitle>
                 <lb />
-                <docEdition>Jn dieſer andern Edition mit ſonderm Fleiß durchgangen / <lb />von
-                    vorigen Fehlern corrigirt / gebeſſert <lb />und vermehret.</docEdition>
+                <docEdition>Jn
+                dieſer andern Edition mit ſonderm Fleiß durchgangen / <lb />von vorigen Fehlern
+                corrigirt / gebeſſert <lb />und vermehret.</docEdition>
                 <lb />
-                <docImprint><pubPlace>Franckfurt am Mayn /</pubPlace>
-                    <lb /><publisher>Zum Truck
-                    verlegt von denen Merianiſchen Erben.</publisher>
-                        <lb /><docDate>Jm Jahr <num
-                            value="1655">M DC LV.</num></docDate></docImprint>
+                <docImprint>
+                    <pubPlace>Franckfurt am Mayn /</pubPlace>
+                    <lb />
+                    <publisher>Zum Truck
+                        verlegt von denen Merianiſchen Erben.</publisher>
+                    <lb />
+                    <docDate>Jm Jahr <num
+                            value="1655">M DC LV.</num></docDate>
+                </docImprint>
             </titlePage>
 
             <div type="preface">
@@ -269,8 +275,7 @@
                                 ꝛc. Die Adeliche Collegia zu Gelnhauſen / und Friedberg: <lb />Die <name
                                     ref="mgndobj:object_Chronik"> Chronik <!-- Werk -->
                                 </name>
-                                /
-                                <name
+                                / <name
                                     ref="https://d-nb.info/gnd/4497639-2">Muͤn⸗ <lb />ſter in <name
                                         ref="https://d-nb.info/gnd/7656022-3"><choice>
                                             <abbr>S.</abbr>
@@ -287,27 +292,26 @@
                                     Veranstaltung --></name> / Franckfurt / Fried⸗ <lb />berg / Wetzlar
                                 / Metz / Tull / Verdun / Kauffmans⸗Sarbruͤck / Biſantz / und Genff. <lb />Darunter
                                 gleichwol nunmehr ſich viel befinden / die eximirt werden: als die
-                                Biſchoͤffe <lb />zu Sitten / Loſann / Metz 
-                                <choice> <orig>ꝛc.</orig> <reg>etc.</reg> </choice>
-                                / Tull / Verdun / und
-                                Genff: der Abt zu Pfriem / im Biß⸗ <lb />thum Chur: die Graffſchafft
-                                Bitſch: die Staͤdte / Baſel /
-                            
-                            ſeynd mehr Haͤuſer <choice>
-                                <abbr>darniȢ</abbr>
-                                <expan>darnider</expan>
-                            </choice>
-                             Muͤlhauſen im Sundgoͤw / <lb />Metz /
-                                Tull / Verdun / Kauffmans⸗Sarbruͤck / <name
+                                Biſchoͤffe <lb />zu Sitten / Loſann / Metz <choice>
+                                    <orig>ꝛc.</orig>
+                                    <reg>etc.</reg>
+                                </choice> / Tull
+                                / Verdun / und Genff: der Abt zu Pfriem / im Biß⸗ <lb />thum Chur:
+                                die Graffſchafft Bitſch: die Staͤdte / Baſel / ſeynd mehr Haͤuſer <choice>
+                                    <abbr>darniȢ</abbr>
+                                    <expan>darnider</expan>
+                                </choice>
+                                Muͤlhauſen im Sundgoͤw / <lb />Metz / Tull / Verdun /
+                                Kauffmans⸗Sarbruͤck / <name
                                     ref="mgndper:person_O_Kelly">O'Kelly<!-- Familie --></name><note cert="high">Die
                                 ist eine editorische Bemerkung</note> / ꝛc. Von welchen zum Theil in <lb />Beſchreibung
                                 des Schweitzerlands / <choice>
                                     <abbr>d̕</abbr>
                                     <expan>der</expan>
-                                </choice>
-                                des Elſaß / der Untern⸗Pfaltz / (daſelbſten
-                                auch <lb />Savoja / Lothringen / Biſantz / Metz / Tull / Verdun /
-                                Bitſch / und Kauffmans⸗Sar⸗ <lb />bruͤck / einkommen ſeyn) und des <name
+                                </choice> des
+                                Elſaß / der Untern⸗Pfaltz / (daſelbſten auch <lb />Savoja /
+                                Lothringen / Biſantz / Metz / Tull / Verdun / Bitſch / und
+                                Kauffmans⸗Sar⸗ <lb />bruͤck / einkommen ſeyn) und des <name
                                     ref="mgndeve:event_Dreißigjähriger_Krieg"><!-- Ereignis-->Dreißigjähriger Krieg</name>Chur⸗und
                                 Unter⸗Rheiniſchen Creyſes / allbereit <lb />von uns moͤglicher / und
                                 gebuͤhrender Bericht / geſchehen. Die uͤbrige aber / und ihre <lb />
@@ -332,10 +336,12 @@
                     <pb n="5"
                                     facs="testdoi5.jpg" />
                     <fw
-                                    type="pageNum"><choice>
+                                    type="pageNum">
+                                    <choice>
                                         <sic>2</sic>
                                         <corr>4</corr>
-                                    </choice></fw>
+                                    </choice>
+                                </fw>
                     <fw
                                     type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb />nigſtein
@@ -348,8 +354,9 @@
                                 Landſchafft / <quote source="mgndbibl:listBibl_der_Sandmann">"Der
                                 Sandmann, der fürchterliche Sandmann ist der alte Advokat Coppelius,
                                 der manchmal bei uns zu Mittage isst! – Aber die grässlichste
-                                Gestalt hätte mir nicht tieferes Entsetzen erregen können als eben
-                                dieser Coppelius.</quote> ſowol als der Hundsruck / <lb />Weſterich
+                                    Gestalt hätte mir nicht tieferes Entsetzen erregen können als
+                                eben
+                                    dieser Coppelius.</quote> ſowol als der Hundsruck / <lb />Weſterich
                                 / und andere / jederzeit geweſen / und noch. Was aber die
                                 Graffſchafft Naſſau⸗ <lb />Dillenberg belange / iſt dieſelbe nicht
                                 allein nicht unter Heſſen gelegen / ſondern auch nicht <lb />in dem
@@ -429,9 +436,26 @@
                                 gewiſſe Staͤdt / und <lb />Staͤdtlein gehalten / Als:</p>
                         </div>
                         <!-- verschachtelte Artikel/Artikel in Artikeln-->
-                        <div type="article" xml:id="doi1" corresp="mgndper:place_Neumarckt_1 mgndper:place_Neumarckt_2"><head><name ref="mgndper:place_Neumarckt_1 mgndpla:place_Neumarckt_2">Neumarckt</name></head><lb/><p>Text von Neumarckt allgemein</p>
-                            <div type="article" xml:id="doi2" corresp="mgndper:place_Neumarckt_1"><head><name ref="mgndpla:place_Neumarckt_1">1.Neumarckt</name></head><lb/><p>Text von Neumarckt_1</p></div>
-                            <div type="article" xml:id="doi3" corresp="mgndper:place_Neumarckt_2"><head><name ref="mgndpla:place_Neumarckt_2">2.Neumarckt</name></head><lb/><p>Text von Neumarckt_2</p></div>
+                        <div type="article" xml:id="doi1"
+                            corresp="mgndper:place_Neumarckt_1 mgndper:place_Neumarckt_2">
+                            <head><name ref="mgndper:place_Neumarckt_1 mgndpla:place_Neumarckt_2">
+                                Neumarckt</name></head>
+                            <lb />
+                            <p>Text von Neumarckt allgemein</p>
+                            <div type="article" xml:id="doi2" corresp="mgndper:place_Neumarckt_1">
+                                <head>
+                                    <name ref="mgndpla:place_Neumarckt_1">1.Neumarckt</name>
+                                </head>
+                                <lb />
+                                <p>Text von Neumarckt_1</p>
+                            </div>
+                            <div type="article" xml:id="doi3" corresp="mgndper:place_Neumarckt_2">
+                                <head>
+                                    <name ref="mgndpla:place_Neumarckt_2">2.Neumarckt</name>
+                                </head>
+                                <lb />
+                                <p>Text von Neumarckt_2</p>
+                            </div>
                         </div>
 
 
@@ -735,10 +759,12 @@
                     <pb n="10"
                                     facs="testdoi10.jpg" />
                     <fw
-                                    type="pageNum"><choice>
+                                    type="pageNum">
+                                    <choice>
                                         <sic>2</sic>
                                         <corr>4</corr>
-                                    </choice></fw>
+                                    </choice>
+                                </fw>
                     <fw
                                     type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb />nigſtein
@@ -1024,8 +1050,8 @@
                         </div>
                         <div type="postface">
                             <head>Beſchluß</head>
-                            <p>DJeweil nach Endung dieſes / mir zu⸗ kommen / wie dieſes 1655. Jahr
-                                / den 26 Januarii N. C. zu Wien / dem Herren Her⸗ ren Ertzbertzogen
+                            <p>DJeweil nach Endung dieſes / mir zu⸗ kommen / wie dieſes 1655. Jahr /
+                                den 26 Januarii N. C. zu Wien / dem Herren Her⸗ ren Ertzbertzogen
                                 Leopoldo Ignatio zu Oe⸗ ſterreich / ꝛc. die Erbhuldigung / von den
                                 Staͤnden in Unter⸗Oeſterreich / gelaiſtet worden: Als kan ich nicht
                                 umbgehen / zum Beſchluß / zu vermelden / daß auß ſolchem Actu, und
@@ -1426,10 +1452,12 @@
                             <item>Liechtenberg.</item>
                         </list> <ref>150</ref></item>
                 </list>
-                <p><choice>
+                <p>
+                    <choice>
                         <sic>&#xfffc;</sic>
                         <corr>⁂</corr>
-                    </choice></p>
+                    </choice>
+                </p>
             </div>
             <lb />
             <figure />

@@ -21,28 +21,35 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   attributeFormDefault="unqualified" xmlns:mods="http://www.loc.gov/mods/v3">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace"
     schemaLocation="https://www.w3.org/2009/01/xml.xsd" />
-
-  <xs:element name="TEI">
-    <xs:complexType>
-      <xs:all>
-        <xs:element name="teiHeader" type="self:TeiHeader" />
-        <xs:element name="text" type="self:Text" />
-      </xs:all>
-      <xs:attribute name="version">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:pattern value="\d+.\d" />
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:attribute>
-      <xs:anyAttribute />
-    </xs:complexType>
-  </xs:element>
+  <xs:include schemaLocation="teiHeader.xsd" />
 
   <xs:complexType name="Text">
+    <xs:all>
+      <xs:element name="front" type="self:Front" minOccurs="0" maxOccurs="1" />
+      <xs:element name="body" type="self:Body" minOccurs="0" maxOccurs="1" />
+      <xs:element name="group" type="self:OuterGroup" minOccurs="0" maxOccurs="1" />
+      <!-- todo: -->
+      <!-- <xs:element name="back" type="self:Back" minOccurs="0" maxOccurs="1" /> -->
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="GroupText">
+    <xs:all>
+      <xs:element name="front" type="self:Front" minOccurs="0" maxOccurs="1" />
+      <xs:element name="body" type="self:GroupBody" minOccurs="0" maxOccurs="1" />
+      <xs:element name="group" type="self:OuterGroup" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="OuterGroup">
     <xs:choice>
-      <xs:element name="front" type="self:Front" maxOccurs="1" />
-      <xs:element name="body" type="self:Body" maxOccurs="1" />
+      <xs:element name="group" type="self:InnerGroup" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="InnerGroup">
+    <xs:choice>
+      <xs:element name="text" type="self:GroupText" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -54,8 +61,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     </xs:choice>
   </xs:complexType>
 
-
-
   <xs:complexType name="titlePage" mixed="true">
     <xs:choice maxOccurs="unbounded">
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
@@ -64,54 +69,99 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
       <xs:element name="docTitle" type="self:docTitle" maxOccurs="unbounded" />
       <xs:element name="docEdition" type="self:PFront" maxOccurs="unbounded" />
-      <xs:element name="docImprint" type="self:docImprint" maxOccurs="unbounded"/>
+      <xs:element name="docImprint" type="self:docImprint" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
     </xs:choice>
     <xs:attribute name="type">
-        <xs:simpleType>
-          <xs:restriction base="xs:string"/>
-        </xs:simpleType>
-      </xs:attribute>
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Note" mixed="true">
+    <xs:attribute name="cert">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
   </xs:complexType>
 
   <xs:complexType name="docTitle">
     <xs:choice maxOccurs="unbounded">
       <xs:element name="p" type="self:PFront" />
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
-      <xs:element name="figure" type="self:Figure" maxOccurs="unbounded"/>
-      <xs:element name="titlePart" type="self:titlePart" maxOccurs="unbounded"/>
-
+      <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
+      <xs:element name="titlePart" type="self:titlePart" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
   <xs:complexType name="docImprint">
     <xs:choice maxOccurs="unbounded">
-      <xs:element name="pubPlace" type="self:LbChoiceName" />
-      <xs:element name="publisher" type="self:Publisher" maxOccurs="unbounded"/>
+      <xs:element name="pubPlace" type="self:LbEtc" />
+      <xs:element name="publisher" type="self:Publisher" maxOccurs="unbounded" />
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
       <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
       <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
-      <!-- <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" /> -->
-      <!-- todo: docdate, und num aufnehmen in lbchoicename -->
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="rs" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="docDate" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
-
-
-  <xs:complexType name="LbChoiceName" mixed="true">
+  <xs:complexType name="LbEtc" mixed="true">
     <xs:choice maxOccurs="unbounded">
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" minOccurs="0" />
       <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" minOccurs="0" />
       <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="rs" type="self:NameGND" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="gap" type="self:Gap" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="num" type="self:Num" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="milestone" type="self:Milestone" maxOccurs="unbounded" />
+      <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+    </xs:choice>
+    <xs:attribute name="cert">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="lemma">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="cols">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Table" mixed="true">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="row" type="self:Row" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
-  <!-- <xs:complexType name="docEdition" mixed="true">
-  <xs:choice maxOccurs="unbounded">    
-      <xs:element name="p" type="self:PFront" />
-      <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
-      <xs:element name="figure" type="self:Figure" maxOccurs="unbounded"/>
-  </xs:choice>
-  </xs:complexType> -->
+  <xs:complexType name="Row" mixed="true">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="cell" type="self:LbEtc" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
 
   <xs:simpleType name="docEditionValue">
     <xs:restriction base="xs:string" />
@@ -121,24 +171,64 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:choice maxOccurs="unbounded">
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
       <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
-    </xs:choice>
-    <xs:attribute name="type">
-        <xs:simpleType>
-          <xs:restriction base="xs:string"/>
-        </xs:simpleType>
-      </xs:attribute>
-  </xs:complexType>
-
-  <xs:complexType name="DivFront">
-    <xs:choice maxOccurs="unbounded">
-      <xs:element name="p" type="self:PFront" maxOccurs="unbounded" />
-      <xs:element name="figure" type="self:Figure" maxOccurs="unbounded"/>
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
     </xs:choice>
     <xs:attribute name="type">
       <xs:simpleType>
         <xs:restriction base="xs:string" />
       </xs:simpleType>
     </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="DivFront">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="p" type="self:PFront" maxOccurs="unbounded" />
+      <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
+      <xs:element name="head" type="self:Head" maxOccurs="unbounded" />
+      <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="div" type="self:DivFront" maxOccurs="unbounded" />
+      <xs:element name="pb" type="self:GroupBody" maxOccurs="unbounded" />
+      <xs:element name="milestone" type="self:Milestone" maxOccurs="unbounded" />
+      <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+    </xs:choice>
+    <xs:attribute name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="corresp">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:anyAttribute />
+  </xs:complexType>
+
+  <xs:complexType name="Milestone">
+    <xs:attribute name="unit">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Head" mixed="true">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="rs" type="self:NameGND" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+    </xs:choice>
   </xs:complexType>
 
   <xs:complexType name="PbFront">
@@ -156,25 +246,79 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
 
   <xs:complexType name="PFront" mixed="true">
     <xs:choice maxOccurs="unbounded">
+      <xs:element name="pb" type="self:Pb" maxOccurs="unbounded" />
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
       <xs:element name="fw" type="self:Fw" maxOccurs="unbounded" />
       <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
       <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
       <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="rs" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="num" type="self:Num" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="gap" type="self:Gap" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="milestone" type="self:Milestone" maxOccurs="unbounded" />
+      <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
-  <xs:complexType name="Choice" mixed="true">
+  <xs:complexType name="Gap">
+    <xs:attribute name="unit">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="quantity">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="reason">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Num">
+    <xs:simpleContent>
+      <xs:extension base="self:NumValue">
+        <xs:attribute name="value">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer" />
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="NumValue">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+
+  <xs:complexType name="Choice">
     <xs:choice maxOccurs="unbounded">
-      <xs:element name="abbr" type="self:Abbr" maxOccurs="unbounded" />
-      <xs:element name="expan" type="self:Expan" maxOccurs="unbounded" />
+      <xs:element name="abbr" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="expan" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="orig" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="reg" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
       <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="rs" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="sic" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="corr" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
   <xs:complexType name="NameGND">
-    <xs:simpleContent>
+    <xs:complexContent>
       <xs:extension base="self:NameValue">
         <xs:attribute name="ref">
           <xs:simpleType>
@@ -182,55 +326,194 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
           </xs:simpleType>
         </xs:attribute>
       </xs:extension>
-    </xs:simpleContent>
+    </xs:complexContent>
   </xs:complexType>
 
-  <xs:simpleType name="NameValue">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
+  <xs:complexType name="SourceGND">
+    <xs:complexContent>
+      <xs:extension base="self:NameValue">
+        <xs:attribute name="ref">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="source">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
 
-
-  <xs:simpleType name="Abbr">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:simpleType name="Expan">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
+  <xs:complexType name="NameValue" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="abbr" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="expan" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="rs" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="sic" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="corr" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+    </xs:choice>
+    <!-- <xs:restriction base="xs:string" /> -->
+  </xs:complexType>
 
   <xs:complexType name="Body">
     <xs:choice>
-      <xs:element name="div" type="self:Div" />
+      <xs:element name="div" type="self:DivFront" />
     </xs:choice>
   </xs:complexType>
 
-  <xs:complexType name="Div">
-    <xs:choice>
-      <xs:element name="p" type="self:Pbody" />
+  <xs:complexType name="GroupBody">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="div" type="self:DivFront" maxOccurs="unbounded" />
+      <xs:element name="pb" type="self:Pb" maxOccurs="unbounded" />
+      <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
+      <xs:element name="fw" type="self:Fw" maxOccurs="unbounded" />
+      <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
 
   <xs:complexType name="Pbody" mixed="true">
-    <xs:choice maxOccurs="unbounded">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
       <xs:element name="pb" type="self:Pb" maxOccurs="unbounded" />
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
       <xs:element name="fw" type="self:Fw" maxOccurs="unbounded" />
-      <xs:element name="figure" type="self:Figure" maxOccurs="1" />
+      <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
   <xs:complexType name="Figure">
-    <xs:attribute name="facs">
+    <xs:complexContent>
+      <xs:extension base="self:FigureValue">
+        <xs:attribute name="facs">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="type">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="subtype">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="place">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="corresp">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:anyAttribute />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+  <xs:complexType name="FigureValue">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="graphic" type="self:Graphic" maxOccurs="unbounded" />
+      <xs:element name="figDesc" type="self:FigDesc" maxOccurs="unbounded" />
+      <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
+      <xs:element name="fw" type="self:Fw" maxOccurs="unbounded" />
+      <xs:element name="figure" type="self:Figure" maxOccurs="1" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="head" type="self:Head" maxOccurs="unbounded" />
+      <xs:element name="p" type="self:Pbody" maxOccurs="unbounded" />
+      <xs:element name="list" type="self:FigureList" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="FigureList" mixed="true">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="item" type="self:FigureListItem" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="FigureListItem" mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+        <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      </xs:choice>
+  </xs:complexType>
+
+
+  <xs:complexType name="Graphic">
+    <xs:attribute name="url">
       <xs:simpleType>
         <xs:restriction base="xs:string" />
       </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
 
+  <xs:complexType name="FigDesc" mixed="true">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="height" type="self:Height" maxOccurs="unbounded" />
+      <xs:element name="width" type="self:Width" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="Height" mixed="true">
+    <xs:attribute name="unit">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="quantity">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer" />
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Width" mixed="true">
+    <xs:attribute name="unit">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="quantity">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer" />
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
 
   <xs:complexType name="Fw">
-    <xs:simpleContent>
+    <xs:complexContent>
       <xs:extension base="self:FwValue">
         <xs:attribute name="type">
           <xs:simpleType>
@@ -243,18 +526,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
           </xs:simpleType>
         </xs:attribute>
       </xs:extension>
-    </xs:simpleContent>
+    </xs:complexContent>
   </xs:complexType>
 
 
-  <xs:simpleType name="FwValue">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
+  <xs:complexType name="FwValue" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
 
   <xs:complexType name="Pb">
     <xs:attribute name="n">
       <xs:simpleType>
         <xs:restriction base="xs:integer" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="facs">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
       </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
@@ -266,329 +556,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
-
-  <xs:complexType name="TeiHeader">
-    <xs:sequence>
-      <xs:element name="fileDesc" type="self:FileDesc" minOccurs="1" maxOccurs="1" />
-      <xs:element name="encodingDesc" type="self:EncodingDesc" minOccurs="1" maxOccurs="1" />
-    </xs:sequence>
-    <xs:attribute name="version">
-      <xs:simpleType>
-        <xs:restriction base="xs:string">
-          <xs:pattern value="\d+.\d" />
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-    <xs:attribute name="ID">
-      <xs:simpleType>
-        <xs:restriction base="xs:string">
-          <xs:pattern value="merian\d{4}topographia" />
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-  </xs:complexType>
-
-  <xs:complexType name="EncodingDesc">
-    <xs:sequence>
-      <xs:element name="listPrefixDef" type="self:ListPrefixDef" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="ListPrefixDef">
-    <xs:sequence>
-      <xs:element name="prefixDef" type="self:PrefixDef" minOccurs="1" maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="PrefixDef">
-    <xs:simpleContent>
-      <xs:extension base="self:TitleExtension">
-        <xs:attribute name="ident">
-          <xs:simpleType>
-            <xs:restriction base="xs:string" />
-          </xs:simpleType>
-        </xs:attribute>
-        <xs:attribute name="matchPattern">
-          <xs:simpleType>
-            <xs:restriction base="xs:string" />
-          </xs:simpleType>
-        </xs:attribute>
-        <xs:attribute name="replacementPattern">
-          <xs:simpleType>
-            <xs:restriction base="xs:string" />
-          </xs:simpleType>
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <xs:simpleType name="TitleExtension">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="\s*" />
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:complexType name="FileDesc">
-    <xs:sequence>
-      <xs:element name="titleStmt" type="self:TitleStmt" />
-      <xs:element name="editionStmt" type="self:EditionStmt" />
-      <xs:element name="extent" type="self:Extent" />
-      <xs:element name="publicationStmt" type="self:PublicationStmt" />
-      <xs:element name="seriesStmt" type="self:SeriesStmt" />
-      <xs:element name="sourceDesc" type="self:SourceDesc" minOccurs="1" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-
-  <xs:complexType name="SeriesStmt">
-    <xs:sequence>
-      <xs:element name="title" type="self:Title" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="Title">
-    <xs:simpleContent>
-      <xs:extension base="self:TitleValue">
-        <xs:attribute name="level">
-          <xs:simpleType>
-            <xs:restriction base="xs:string" />
-          </xs:simpleType>
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-
-  <xs:simpleType name="TitleValue">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-
-  <xs:complexType name="Extent">
-    <xs:sequence>
-      <xs:element name="measure" type="self:Measure" maxOccurs="2" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="Measure">
-    <xs:simpleContent>
-      <xs:extension base="self:MeasureValue">
-        <xs:attribute name="unit">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:enumeration value="words" />
-              <xs:enumeration value="vols" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <xs:simpleType name="MeasureValue">
-    <xs:restriction base="xs:integer" />
-  </xs:simpleType>
-
-  <xs:complexType name="EditionStmt">
-    <xs:sequence>
-      <xs:element name="edition" type="self:Edition" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="Edition">
-    <xs:simpleContent>
-      <xs:extension base="self:EditionValue">
-        <xs:attribute name="n">
-          <xs:simpleType>
-            <xs:restriction base="xs:string" />
-          </xs:simpleType>
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <xs:simpleType name="EditionValue">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:complexType name="PublicationStmt">
-    <xs:sequence>
-      <xs:element name="publisher" type="self:Publisher" maxOccurs="1" />
-      <xs:element name="distributor" type="self:Distributor" maxOccurs="1" />
-      <xs:element name="pubPlace" type="self:pubPlace" maxOccurs="1" />
-      <xs:element name="date" type="self:Date" maxOccurs="1" />
-      <xs:element name="availability" type="self:Availability" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="Availability">
-    <xs:sequence>
-      <xs:element name="licence" type="self:Licence" maxOccurs="1" />
-      <xs:element name="p" type="self:PAvail" maxOccurs="1" />
-    </xs:sequence>
-    <xs:attribute name="status">
-      <xs:simpleType>
-        <xs:restriction base="xs:string" />
-      </xs:simpleType>
-    </xs:attribute>
-  </xs:complexType>
-
-
-  <xs:complexType name="Licence">
-    <xs:attribute name="target">
-      <xs:simpleType>
-        <xs:restriction base="xs:string" />
-      </xs:simpleType>
-    </xs:attribute>
-  </xs:complexType>
-
-
-  <xs:simpleType name="PAvail">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-
-  <xs:complexType name="Date">
-    <xs:simpleContent>
-      <xs:extension base="self:DateValue">
-        <xs:attribute name="when">
-          <xs:simpleType>
-            <xs:restriction base="xs:integer" />
-          </xs:simpleType>
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <xs:simpleType name="DateValue">
-    <xs:restriction base="xs:integer" />
-  </xs:simpleType>
-
-
-  <xs:simpleType name="pubPlace">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-
-  <xs:simpleType name="Distributor">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:complexType name="Publisher">
-    <xs:simpleContent>
-      <xs:extension base="self:PublisherValue">
-        <xs:attribute name="ref">
-          <xs:simpleType>
-            <xs:restriction base="xs:string" />
-          </xs:simpleType>
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <xs:simpleType name="PublisherValue">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-
-  <xs:complexType name="TitleStmt">
-    <xs:sequence>
-      <xs:element name="title" type="self:TitleStmtValue" maxOccurs="1" />
-      <xs:element name="respStmt" type="self:RespStmt" maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="RespStmt">
-    <xs:sequence>
-      <xs:element name="resp" type="self:Resp" maxOccurs="1" />
-      <xs:element name="name" type="self:Name" maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:simpleType name="Resp">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:simpleType name="Name">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:complexType name="TitleStmtValue">
-    <xs:simpleContent>
-      <xs:extension base="self:TitleStmtValueRestriction">
-        <xs:attribute name="ref">
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <xs:simpleType name="TitleStmtValueRestriction">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:complexType name="SourceDesc">
-    <xs:sequence>
-      <xs:element name="biblStruct" type="self:BiblStruct" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="BiblStruct">
-    <xs:all>
-      <xs:element name="monogr" type="self:Monogr" minOccurs="1" maxOccurs="1" />
-      <xs:element name="series" type="self:Series" minOccurs="1" maxOccurs="1" />
-    </xs:all>
-    <xs:attribute ref="xml:lang">
-    </xs:attribute>
-  </xs:complexType>
-
-  <xs:complexType name="Monogr">
-    <xs:sequence>
-      <xs:element name="author" type="self:Author" minOccurs="1" maxOccurs="unbounded" />
-      <xs:element name="title" type="self:TitleMonogr" minOccurs="1" maxOccurs="1" />
-      <xs:element name="edition" type="self:EditionMonogr" minOccurs="1" maxOccurs="1" />
-      <xs:element name="imprint" type="self:Imprint" minOccurs="1" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:simpleType name="EditionMonogr">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:simpleType name="Author">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:simpleType name="TitleMonogr">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-
-  <xs:complexType name="Imprint">
-    <xs:sequence>
-      <xs:element name="pubPlace" type="self:pubPlace" minOccurs="1" maxOccurs="1" />
-      <xs:element name="publisher" type="self:Publisher" minOccurs="1" maxOccurs="1" />
-      <xs:element name="date" type="self:Date" minOccurs="1" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-
-  <xs:simpleType name="PublisherImprint">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-
-  <xs:complexType name="Series">
-    <xs:all>
-      <xs:element name="title" type="self:TitleSeries" minOccurs="1" maxOccurs="1" />
-      <xs:element name="biblScope" type="self:BiblScope" minOccurs="1" maxOccurs="1" />
-    </xs:all>
-  </xs:complexType>
-
-  <xs:simpleType name="TitleSeries">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
-
-  <xs:simpleType name="BiblScope">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
 </xs:schema>
