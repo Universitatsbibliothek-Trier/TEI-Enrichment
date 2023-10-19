@@ -116,7 +116,7 @@
         <front>
             <pb n="1" facs="testdoi1.jpg" />
             <div type="frontispiece">
-                <figure />
+                <figure type="motif"/>
                 <p><lb n="1" />TOPOGRAPHIA <lb n="2" />Hassiæ et Regionum Vici⸗ <lb n="3" />narum. <lb
                         n="4" />Das iſt <lb n="5" />Beſchreibung der <choice>
                         <abbr>vornẽb⸗ſten</abbr>

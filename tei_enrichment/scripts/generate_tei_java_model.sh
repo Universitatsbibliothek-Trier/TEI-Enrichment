@@ -29,4 +29,4 @@ $xjc \
   -extension \
   -d $java_src \
   -p "de.uni_trier.bibliothek.xml.tei.model.generated" \
-  "$java_src/../resources/TEIxsd.xsd"
+  "$java_src/../resources/schemes/teiOrigin.xsd"
