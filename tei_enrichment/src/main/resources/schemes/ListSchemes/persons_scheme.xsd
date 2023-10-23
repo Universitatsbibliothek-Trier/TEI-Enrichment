@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @author       René Ackels
+Copyright (c) 2023 Universität Trier
+
+This file is part of OCR-To-TEI.
+
+OCR-To-TEI is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+OCR-To-TEI is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.tei-c.org/ns/1.0"
+  xmlns:self="http://www.tei-c.org/ns/1.0" elementFormDefault="qualified"
+  attributeFormDefault="unqualified" xmlns:mods="http://www.loc.gov/mods/v3">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="https://www.w3.org/2009/01/xml.xsd" />
+
+
+  <xs:element name="TEI">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="teiHeader" type="self:TeiHeader" />
+        <xs:element name="text" type="self:Text" />
+      </xs:all>
+      <xs:attribute name="version">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="\d+.\d" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:anyAttribute />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="TeiHeader">
+    <xs:sequence>
+      <xs:element name="fileDesc" type="self:FileDesc" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="version">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="\d+.\d" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="ID">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="merian\d{4}topographia" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="FileDesc">
+    <xs:sequence>
+      <xs:element name="titleStmt" type="self:TitleStmt" />
+      <xs:element name="editionStmt" type="self:EditionStmt" />
+      <xs:element name="extent" type="self:Extent" />
+      <xs:element name="publicationStmt" type="self:PublicationStmt" />
+      <xs:element name="sourceDesc" type="self:SourceDesc" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="Title">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:complexType name="Extent">
+    <xs:sequence>
+      <xs:element name="measure" type="self:Measure" maxOccurs="2" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Measure">
+    <xs:simpleContent>
+      <xs:extension base="self:MeasureValue">
+        <xs:attribute name="unit">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="words" />
+              <xs:enumeration value="vols" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="MeasureValue">
+    <xs:restriction base="xs:integer" />
+  </xs:simpleType>
+
+  <xs:complexType name="EditionStmt">
+    <xs:sequence>
+      <xs:element name="edition" type="self:Edition" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:simpleType name="Edition">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:complexType name="PublicationStmt">
+    <xs:sequence>
+      <xs:element name="publisher" type="self:Publisher" maxOccurs="1" />
+      <xs:element name="pubPlace" type="self:pubPlace" maxOccurs="1" />
+      <xs:element name="date" type="self:Date" maxOccurs="1" />
+      <xs:element name="idno" type="self:Idno" maxOccurs="1" />
+      <xs:element name="availability" type="self:Availability" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Availability">
+    <xs:sequence>
+      <xs:element name="p" type="self:PAvail" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="PAvail">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:simpleType name="Idno">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:simpleType name="Date">
+    <xs:restriction base="xs:integer" />
+  </xs:simpleType>
+
+
+  <xs:simpleType name="pubPlace">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:simpleType name="Publisher">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+
+  <xs:complexType name="TitleStmt">
+    <xs:sequence>
+      <xs:element name="title" type="self:TitleStmtValue" maxOccurs="1" />
+      <xs:element name="author" type="self:Author" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="Author">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+
+  <xs:simpleType name="TitleStmtValue">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:complexType name="SourceDesc">
+    <xs:sequence>
+      <xs:element name="p" type="self:PAvail" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="Text">
+    <xs:all>
+      <xs:element name="body" type="self:Body" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="Body">
+    <xs:all>
+      <xs:element name="div" type="self:Div" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+  </xs:complexType>
+
+
+  <!-- from here: differences for entity lists -->
+  <xs:complexType name="Div">
+    <xs:all>
+      <xs:element name="listPerson" type="self:ListPerson" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+    <xs:anyAttribute />
+  </xs:complexType>
+
+
+
+  <xs:complexType name="ListPerson">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="person" type="self:Person"  maxOccurs="unbounded" />
+    </xs:choice>
+    <xs:anyAttribute />
+  </xs:complexType>
+
+  <xs:complexType name="Person">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="persName" type="self:PersName"  maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note"  maxOccurs="unbounded" />  
+      <xs:element name="birth" type="self:Birth"  maxOccurs="unbounded" />       
+      <xs:element name="death" type="self:Death"  maxOccurs="unbounded" />       
+      <xs:element name="link" type="self:Link"  maxOccurs="unbounded" />
+      <xs:element name="idno" type="self:PersonIdno"  maxOccurs="unbounded" />              
+    </xs:choice>
+    <xs:attribute name="role">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:anyAttribute />
+  </xs:complexType>
+
+  <xs:complexType name="Birth" mixed="true">
+    <xs:attribute name="when">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Death" mixed="true">
+    <xs:attribute name="when">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="PersonIdno" mixed="true">
+    <xs:attribute name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="subtype">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Link" mixed="true">
+    <xs:attribute name="target">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+
+  <xs:simpleType name="Note">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:simpleType name="PersName">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+</xs:schema>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd">
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../resources/schemes/ListSchemes/persons_scheme.xsd">
     <!-- <TEI> -->
     <teiHeader>
         <fileDesc>
