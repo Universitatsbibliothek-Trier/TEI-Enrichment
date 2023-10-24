@@ -192,14 +192,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:anyAttribute />
   </xs:complexType>
 
-  <!-- <xs:complexType name="list">
-    <xs:choice maxOccurs="unbounded">
-      <xs:element name="listEvent" type="self:ListEvent"  maxOccurs="unbounded" />
-    </xs:choice>
-    <xs:anyAttribute />
-  </xs:complexType> -->
-
-
   <xs:complexType name="ListEvent">
     <xs:choice maxOccurs="unbounded">
       <xs:element name="event" type="self:Event"  maxOccurs="unbounded" />
@@ -255,7 +247,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     </xs:attribute>
   </xs:complexType>
 
-  <xs:complexType name="Link" mixed="true">
+  <xs:complexType name="Link" >
     <xs:attribute name="target">
       <xs:simpleType>
         <xs:restriction base="xs:string"/>

@@ -40,6 +40,7 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -115,11 +116,6 @@
                      <GridPane.margin>
                         <Insets bottom="20.0" left="50.0" top="190.0" />
                      </GridPane.margin></Label>
-                  <TextField id="pathOriginal" fx:id="pathOriginal" maxWidth="600.0" minHeight="30.0" minWidth="20.0" prefHeight="24.0" prefWidth="227.0" GridPane.columnSpan="3">
-                     <GridPane.margin>
-                        <Insets bottom="130.0" left="50.0" top="115.0" />
-                     </GridPane.margin>
-                  </TextField>
                   <TextField id="PathOutput" fx:id="PathOutput" maxWidth="600.0" prefHeight="24.0" prefWidth="227.0" GridPane.columnSpan="3" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <GridPane.margin>
                         <Insets bottom="5.0" left="50.0" top="190.0" />
@@ -143,7 +139,7 @@
                   </Label>
                   <Button id="enrichButton" fx:id="enrichButton" mnemonicParsing="false" text="TEI wählen" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.valignment="TOP">
                      <GridPane.margin>
-                        <Insets top="72.0" />
+                        <Insets top="90.0" />
                      </GridPane.margin>
                   </Button>
                   <Label alignment="TOP_CENTER" text="Optionen:" textAlignment="CENTER" GridPane.valignment="TOP">
@@ -215,6 +211,14 @@
                         <Insets left="155.0" top="20.0" />
                      </GridPane.margin>
                   </Button>
+                  <TextArea fx:id="original_path" prefHeight="183.0" prefWidth="423.0" GridPane.columnSpan="3">
+                     <opaqueInsets>
+                        <Insets right="2.0" />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets bottom="80.0" left="50.0" right="5.0" top="100.0" />
+                     </GridPane.margin>
+                  </TextArea>
                </children>
         </GridPane>
       </children>

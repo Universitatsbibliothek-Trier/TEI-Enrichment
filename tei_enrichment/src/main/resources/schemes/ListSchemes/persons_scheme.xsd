@@ -218,7 +218,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:anyAttribute />
   </xs:complexType>
 
-  <xs:complexType name="Birth" mixed="true">
+  <xs:complexType name="Birth" >
     <xs:attribute name="when">
       <xs:simpleType>
         <xs:restriction base="xs:integer"/>
@@ -226,7 +226,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     </xs:attribute>
   </xs:complexType>
 
-  <xs:complexType name="Death" mixed="true">
+  <xs:complexType name="Death" >
     <xs:attribute name="when">
       <xs:simpleType>
         <xs:restriction base="xs:integer"/>
@@ -247,7 +247,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     </xs:attribute>
   </xs:complexType>
 
-  <xs:complexType name="Link" mixed="true">
+  <xs:complexType name="Link" >
     <xs:attribute name="target">
       <xs:simpleType>
         <xs:restriction base="xs:string"/>

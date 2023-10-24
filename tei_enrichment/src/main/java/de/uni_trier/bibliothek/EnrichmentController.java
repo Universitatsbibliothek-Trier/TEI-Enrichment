@@ -25,6 +25,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -47,7 +48,7 @@ public class EnrichmentController {
 
     @FXML
     private CheckBox checkBoxLines;
-
+ 
     @FXML
     private CheckBox checkBoxSpecials;
 
@@ -58,7 +59,7 @@ public class EnrichmentController {
     private Button enrichButton;
 
     @FXML
-    private TextField pathOriginal;
+    private TextArea original_path;
 
     @FXML
     private Button chosenButton;
@@ -88,7 +89,7 @@ public class EnrichmentController {
                 fileChooser.setTitle("Open Resource File");
                 selectedFile = fileChooser.showOpenDialog(null);
                 String selectedFileString = selectedFile.toString();
-                pathOriginal.setText(selectedFileString);
+                original_path.setText(selectedFileString);
                 // System.out.println("OnAction {} " + event);
             }
         });
