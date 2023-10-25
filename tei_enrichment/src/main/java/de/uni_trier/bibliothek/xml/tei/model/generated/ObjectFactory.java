@@ -31,6 +31,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 public class ObjectFactory {
 
     private final static QName _FwValueChoice_QNAME = new QName("http://www.tei-c.org/ns/1.0", "choice");
+    private final static QName _FwValueSupplied_QNAME = new QName("http://www.tei-c.org/ns/1.0", "supplied");
     private final static QName _FigDescHeight_QNAME = new QName("http://www.tei-c.org/ns/1.0", "height");
     private final static QName _FigDescWidth_QNAME = new QName("http://www.tei-c.org/ns/1.0", "width");
     private final static QName _FigDescNote_QNAME = new QName("http://www.tei-c.org/ns/1.0", "note");
@@ -45,21 +46,21 @@ public class ObjectFactory {
     private final static QName _FigureValueHead_QNAME = new QName("http://www.tei-c.org/ns/1.0", "head");
     private final static QName _FigureValueP_QNAME = new QName("http://www.tei-c.org/ns/1.0", "p");
     private final static QName _FigureValueList_QNAME = new QName("http://www.tei-c.org/ns/1.0", "list");
-    private final static QName _FigureValueSupplied_QNAME = new QName("http://www.tei-c.org/ns/1.0", "supplied");
     private final static QName _FigureValueW_QNAME = new QName("http://www.tei-c.org/ns/1.0", "w");
     private final static QName _FigureValueTable_QNAME = new QName("http://www.tei-c.org/ns/1.0", "table");
+    private final static QName _PbodyDiv_QNAME = new QName("http://www.tei-c.org/ns/1.0", "div");
     private final static QName _PbodyPb_QNAME = new QName("http://www.tei-c.org/ns/1.0", "pb");
-    private final static QName _GroupBodyDiv_QNAME = new QName("http://www.tei-c.org/ns/1.0", "div");
+    private final static QName _BodyRs_QNAME = new QName("http://www.tei-c.org/ns/1.0", "rs");
+    private final static QName _BodyNum_QNAME = new QName("http://www.tei-c.org/ns/1.0", "num");
+    private final static QName _BodyGap_QNAME = new QName("http://www.tei-c.org/ns/1.0", "gap");
+    private final static QName _BodyMilestone_QNAME = new QName("http://www.tei-c.org/ns/1.0", "milestone");
     private final static QName _NameValueAbbr_QNAME = new QName("http://www.tei-c.org/ns/1.0", "abbr");
     private final static QName _NameValueExpan_QNAME = new QName("http://www.tei-c.org/ns/1.0", "expan");
-    private final static QName _NameValueRs_QNAME = new QName("http://www.tei-c.org/ns/1.0", "rs");
     private final static QName _NameValueSic_QNAME = new QName("http://www.tei-c.org/ns/1.0", "sic");
     private final static QName _NameValueCorr_QNAME = new QName("http://www.tei-c.org/ns/1.0", "corr");
     private final static QName _ChoiceOrig_QNAME = new QName("http://www.tei-c.org/ns/1.0", "orig");
     private final static QName _ChoiceReg_QNAME = new QName("http://www.tei-c.org/ns/1.0", "reg");
-    private final static QName _PFrontNum_QNAME = new QName("http://www.tei-c.org/ns/1.0", "num");
-    private final static QName _PFrontGap_QNAME = new QName("http://www.tei-c.org/ns/1.0", "gap");
-    private final static QName _PFrontMilestone_QNAME = new QName("http://www.tei-c.org/ns/1.0", "milestone");
+    private final static QName _ChoiceSeg_QNAME = new QName("http://www.tei-c.org/ns/1.0", "seg");
     private final static QName _ItemRef_QNAME = new QName("http://www.tei-c.org/ns/1.0", "ref");
     private final static QName _RowCell_QNAME = new QName("http://www.tei-c.org/ns/1.0", "cell");
     private final static QName _TableRow_QNAME = new QName("http://www.tei-c.org/ns/1.0", "row");
@@ -762,6 +763,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = FwValue.class)
+    public JAXBElement<LbEtc> createFwValueSupplied(LbEtc value) {
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, FwValue.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Height }{@code >}
      * 
      * @param value
@@ -1044,7 +1058,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = FigureValue.class)
     public JAXBElement<LbEtc> createFigureValueSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, FigureValue.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, FigureValue.class, value);
     }
 
     /**
@@ -1071,6 +1085,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "table", scope = FigureValue.class)
     public JAXBElement<Table> createFigureValueTable(Table value) {
         return new JAXBElement<>(_FigureValueTable_QNAME, Table.class, FigureValue.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DivFront }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link DivFront }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "div", scope = Pbody.class)
+    public JAXBElement<DivFront> createPbodyDiv(DivFront value) {
+        return new JAXBElement<>(_PbodyDiv_QNAME, DivFront.class, Pbody.class, value);
     }
 
     /**
@@ -1148,7 +1175,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = Pbody.class)
     public JAXBElement<LbEtc> createPbodySupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, Pbody.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, Pbody.class, value);
     }
 
     /**
@@ -1187,7 +1214,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "div", scope = GroupBody.class)
     public JAXBElement<DivFront> createGroupBodyDiv(DivFront value) {
-        return new JAXBElement<>(_GroupBodyDiv_QNAME, DivFront.class, GroupBody.class, value);
+        return new JAXBElement<>(_PbodyDiv_QNAME, DivFront.class, GroupBody.class, value);
     }
 
     /**
@@ -1265,7 +1292,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = GroupBody.class)
     public JAXBElement<LbEtc> createGroupBodySupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, GroupBody.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, GroupBody.class, value);
     }
 
     /**
@@ -1292,6 +1319,240 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "table", scope = GroupBody.class)
     public JAXBElement<Table> createGroupBodyTable(Table value) {
         return new JAXBElement<>(_FigureValueTable_QNAME, Table.class, GroupBody.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DivFront }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link DivFront }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "div", scope = Body.class)
+    public JAXBElement<DivFront> createBodyDiv(DivFront value) {
+        return new JAXBElement<>(_PbodyDiv_QNAME, DivFront.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "pb", scope = Body.class)
+    public JAXBElement<Pb> createBodyPb(Pb value) {
+        return new JAXBElement<>(_PbodyPb_QNAME, Pb.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Lb }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Lb }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "lb", scope = Body.class)
+    public JAXBElement<Lb> createBodyLb(Lb value) {
+        return new JAXBElement<>(_FigureValueLb_QNAME, Lb.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Fw }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Fw }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "fw", scope = Body.class)
+    public JAXBElement<Fw> createBodyFw(Fw value) {
+        return new JAXBElement<>(_FigureValueFw_QNAME, Fw.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Figure }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Figure }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "figure", scope = Body.class)
+    public JAXBElement<Figure> createBodyFigure(Figure value) {
+        return new JAXBElement<>(_FigureValueFigure_QNAME, Figure.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Choice }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Choice }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "choice", scope = Body.class)
+    public JAXBElement<Choice> createBodyChoice(Choice value) {
+        return new JAXBElement<>(_FwValueChoice_QNAME, Choice.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link NameGND }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link NameGND }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "name", scope = Body.class)
+    public JAXBElement<NameGND> createBodyName(NameGND value) {
+        return new JAXBElement<>(_FigDescName_QNAME, NameGND.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "quote", scope = Body.class)
+    public JAXBElement<SourceGND> createBodyQuote(SourceGND value) {
+        return new JAXBElement<>(_FigDescQuote_QNAME, SourceGND.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link NameGND }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link NameGND }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "rs", scope = Body.class)
+    public JAXBElement<NameGND> createBodyRs(NameGND value) {
+        return new JAXBElement<>(_BodyRs_QNAME, NameGND.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Num }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Num }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "num", scope = Body.class)
+    public JAXBElement<Num> createBodyNum(Num value) {
+        return new JAXBElement<>(_BodyNum_QNAME, Num.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Gap }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Gap }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "gap", scope = Body.class)
+    public JAXBElement<Gap> createBodyGap(Gap value) {
+        return new JAXBElement<>(_BodyGap_QNAME, Gap.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Note }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Note }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "note", scope = Body.class)
+    public JAXBElement<Note> createBodyNote(Note value) {
+        return new JAXBElement<>(_FigDescNote_QNAME, Note.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = Body.class)
+    public JAXBElement<LbEtc> createBodySupplied(LbEtc value) {
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "w", scope = Body.class)
+    public JAXBElement<LbEtc> createBodyW(LbEtc value) {
+        return new JAXBElement<>(_FigureValueW_QNAME, LbEtc.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Milestone }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Milestone }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "milestone", scope = Body.class)
+    public JAXBElement<Milestone> createBodyMilestone(Milestone value) {
+        return new JAXBElement<>(_BodyMilestone_QNAME, Milestone.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Table }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Table }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "table", scope = Body.class)
+    public JAXBElement<Table> createBodyTable(Table value) {
+        return new JAXBElement<>(_FigureValueTable_QNAME, Table.class, Body.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "pb", scope = NameValue.class)
+    public JAXBElement<Pb> createNameValuePb(Pb value) {
+        return new JAXBElement<>(_PbodyPb_QNAME, Pb.class, NameValue.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Fw }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Fw }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "fw", scope = NameValue.class)
+    public JAXBElement<Fw> createNameValueFw(Fw value) {
+        return new JAXBElement<>(_FigureValueFw_QNAME, Fw.class, NameValue.class, value);
     }
 
     /**
@@ -1369,7 +1630,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "rs", scope = NameValue.class)
     public JAXBElement<NameGND> createNameValueRs(NameGND value) {
-        return new JAXBElement<>(_NameValueRs_QNAME, NameGND.class, NameValue.class, value);
+        return new JAXBElement<>(_BodyRs_QNAME, NameGND.class, NameValue.class, value);
     }
 
     /**
@@ -1434,7 +1695,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = NameValue.class)
     public JAXBElement<LbEtc> createNameValueSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, NameValue.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, NameValue.class, value);
     }
 
     /**
@@ -1503,6 +1764,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "seg", scope = Choice.class)
+    public JAXBElement<LbEtc> createChoiceSeg(LbEtc value) {
+        return new JAXBElement<>(_ChoiceSeg_QNAME, LbEtc.class, Choice.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Lb }{@code >}
      * 
      * @param value
@@ -1551,7 +1825,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "rs", scope = Choice.class)
     public JAXBElement<NameGND> createChoiceRs(NameGND value) {
-        return new JAXBElement<>(_NameValueRs_QNAME, NameGND.class, Choice.class, value);
+        return new JAXBElement<>(_BodyRs_QNAME, NameGND.class, Choice.class, value);
     }
 
     /**
@@ -1603,7 +1877,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = Choice.class)
     public JAXBElement<LbEtc> createChoiceSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, Choice.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, Choice.class, value);
     }
 
     /**
@@ -1720,7 +1994,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "rs", scope = PFront.class)
     public JAXBElement<NameGND> createPFrontRs(NameGND value) {
-        return new JAXBElement<>(_NameValueRs_QNAME, NameGND.class, PFront.class, value);
+        return new JAXBElement<>(_BodyRs_QNAME, NameGND.class, PFront.class, value);
     }
 
     /**
@@ -1733,7 +2007,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "num", scope = PFront.class)
     public JAXBElement<Num> createPFrontNum(Num value) {
-        return new JAXBElement<>(_PFrontNum_QNAME, Num.class, PFront.class, value);
+        return new JAXBElement<>(_BodyNum_QNAME, Num.class, PFront.class, value);
     }
 
     /**
@@ -1746,7 +2020,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "gap", scope = PFront.class)
     public JAXBElement<Gap> createPFrontGap(Gap value) {
-        return new JAXBElement<>(_PFrontGap_QNAME, Gap.class, PFront.class, value);
+        return new JAXBElement<>(_BodyGap_QNAME, Gap.class, PFront.class, value);
     }
 
     /**
@@ -1772,7 +2046,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = PFront.class)
     public JAXBElement<LbEtc> createPFrontSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, PFront.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, PFront.class, value);
     }
 
     /**
@@ -1798,7 +2072,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "milestone", scope = PFront.class)
     public JAXBElement<Milestone> createPFrontMilestone(Milestone value) {
-        return new JAXBElement<>(_PFrontMilestone_QNAME, Milestone.class, PFront.class, value);
+        return new JAXBElement<>(_BodyMilestone_QNAME, Milestone.class, PFront.class, value);
     }
 
     /**
@@ -1863,7 +2137,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "rs", scope = Head.class)
     public JAXBElement<NameGND> createHeadRs(NameGND value) {
-        return new JAXBElement<>(_NameValueRs_QNAME, NameGND.class, Head.class, value);
+        return new JAXBElement<>(_BodyRs_QNAME, NameGND.class, Head.class, value);
     }
 
     /**
@@ -1889,7 +2163,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = Head.class)
     public JAXBElement<LbEtc> createHeadSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, Head.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, Head.class, value);
     }
 
     /**
@@ -1903,6 +2177,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "w", scope = Head.class)
     public JAXBElement<LbEtc> createHeadW(LbEtc value) {
         return new JAXBElement<>(_FigureValueW_QNAME, LbEtc.class, Head.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Fw }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Fw }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "fw", scope = DivFront.class)
+    public JAXBElement<Fw> createDivFrontFw(Fw value) {
+        return new JAXBElement<>(_FigureValueFw_QNAME, Fw.class, DivFront.class, value);
     }
 
     /**
@@ -1980,7 +2267,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = DivFront.class)
     public JAXBElement<LbEtc> createDivFrontSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, DivFront.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, DivFront.class, value);
     }
 
     /**
@@ -2006,20 +2293,20 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "div", scope = DivFront.class)
     public JAXBElement<DivFront> createDivFrontDiv(DivFront value) {
-        return new JAXBElement<>(_GroupBodyDiv_QNAME, DivFront.class, DivFront.class, value);
+        return new JAXBElement<>(_PbodyDiv_QNAME, DivFront.class, DivFront.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GroupBody }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link PbFront }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GroupBody }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link PbFront }{@code >}
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "pb", scope = DivFront.class)
-    public JAXBElement<GroupBody> createDivFrontPb(GroupBody value) {
-        return new JAXBElement<>(_PbodyPb_QNAME, GroupBody.class, DivFront.class, value);
+    public JAXBElement<PbFront> createDivFrontPb(PbFront value) {
+        return new JAXBElement<>(_PbodyPb_QNAME, PbFront.class, DivFront.class, value);
     }
 
     /**
@@ -2032,7 +2319,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "milestone", scope = DivFront.class)
     public JAXBElement<Milestone> createDivFrontMilestone(Milestone value) {
-        return new JAXBElement<>(_PFrontMilestone_QNAME, Milestone.class, DivFront.class, value);
+        return new JAXBElement<>(_BodyMilestone_QNAME, Milestone.class, DivFront.class, value);
     }
 
     /**
@@ -2136,7 +2423,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = TitlePart.class)
     public JAXBElement<LbEtc> createTitlePartSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, TitlePart.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, TitlePart.class, value);
     }
 
     /**
@@ -2189,6 +2476,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "list", scope = Item.class)
     public JAXBElement<List> createItemList(List value) {
         return new JAXBElement<>(_FigureValueList_QNAME, List.class, Item.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Choice }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Choice }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "choice", scope = Item.class)
+    public JAXBElement<Choice> createItemChoice(Choice value) {
+        return new JAXBElement<>(_FwValueChoice_QNAME, Choice.class, Item.class, value);
     }
 
     /**
@@ -2344,7 +2644,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "rs", scope = LbEtc.class)
     public JAXBElement<NameGND> createLbEtcRs(NameGND value) {
-        return new JAXBElement<>(_NameValueRs_QNAME, NameGND.class, LbEtc.class, value);
+        return new JAXBElement<>(_BodyRs_QNAME, NameGND.class, LbEtc.class, value);
     }
 
     /**
@@ -2357,7 +2657,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "gap", scope = LbEtc.class)
     public JAXBElement<Gap> createLbEtcGap(Gap value) {
-        return new JAXBElement<>(_PFrontGap_QNAME, Gap.class, LbEtc.class, value);
+        return new JAXBElement<>(_BodyGap_QNAME, Gap.class, LbEtc.class, value);
     }
 
     /**
@@ -2370,7 +2670,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "num", scope = LbEtc.class)
     public JAXBElement<Num> createLbEtcNum(Num value) {
-        return new JAXBElement<>(_PFrontNum_QNAME, Num.class, LbEtc.class, value);
+        return new JAXBElement<>(_BodyNum_QNAME, Num.class, LbEtc.class, value);
     }
 
     /**
@@ -2396,7 +2696,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = LbEtc.class)
     public JAXBElement<LbEtc> createLbEtcSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, LbEtc.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, LbEtc.class, value);
     }
 
     /**
@@ -2422,7 +2722,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "milestone", scope = LbEtc.class)
     public JAXBElement<Milestone> createLbEtcMilestone(Milestone value) {
-        return new JAXBElement<>(_PFrontMilestone_QNAME, Milestone.class, LbEtc.class, value);
+        return new JAXBElement<>(_BodyMilestone_QNAME, Milestone.class, LbEtc.class, value);
     }
 
     /**
@@ -2452,16 +2752,16 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Publisher }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link Publisher }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "publisher", scope = DocImprint.class)
-    public JAXBElement<Publisher> createDocImprintPublisher(Publisher value) {
-        return new JAXBElement<>(_DocImprintPublisher_QNAME, Publisher.class, DocImprint.class, value);
+    public JAXBElement<LbEtc> createDocImprintPublisher(LbEtc value) {
+        return new JAXBElement<>(_DocImprintPublisher_QNAME, LbEtc.class, DocImprint.class, value);
     }
 
     /**
@@ -2526,7 +2826,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "rs", scope = DocImprint.class)
     public JAXBElement<NameGND> createDocImprintRs(NameGND value) {
-        return new JAXBElement<>(_NameValueRs_QNAME, NameGND.class, DocImprint.class, value);
+        return new JAXBElement<>(_BodyRs_QNAME, NameGND.class, DocImprint.class, value);
     }
 
     /**
@@ -2565,7 +2865,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = DocImprint.class)
     public JAXBElement<LbEtc> createDocImprintSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, DocImprint.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, DocImprint.class, value);
     }
 
     /**
@@ -2656,7 +2956,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = DocTitle.class)
     public JAXBElement<LbEtc> createDocTitleSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, DocTitle.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, DocTitle.class, value);
     }
 
     /**
@@ -2812,7 +3112,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = TitlePage.class)
     public JAXBElement<LbEtc> createTitlePageSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, TitlePage.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, TitlePage.class, value);
     }
 
     /**
@@ -2838,20 +3138,20 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "div", scope = Back.class)
     public JAXBElement<DivFront> createBackDiv(DivFront value) {
-        return new JAXBElement<>(_GroupBodyDiv_QNAME, DivFront.class, Back.class, value);
+        return new JAXBElement<>(_PbodyDiv_QNAME, DivFront.class, Back.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link PbFront }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link PbFront }{@code >}
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "pb", scope = Back.class)
-    public JAXBElement<Pb> createBackPb(Pb value) {
-        return new JAXBElement<>(_PbodyPb_QNAME, Pb.class, Back.class, value);
+    public JAXBElement<PbFront> createBackPb(PbFront value) {
+        return new JAXBElement<>(_PbodyPb_QNAME, PbFront.class, Back.class, value);
     }
 
     /**
@@ -2916,7 +3216,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "supplied", scope = Back.class)
     public JAXBElement<LbEtc> createBackSupplied(LbEtc value) {
-        return new JAXBElement<>(_FigureValueSupplied_QNAME, LbEtc.class, Back.class, value);
+        return new JAXBElement<>(_FwValueSupplied_QNAME, LbEtc.class, Back.class, value);
     }
 
     /**

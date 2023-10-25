@@ -7,7 +7,6 @@
 
 package de.uni_trier.bibliothek.xml.tei.model.generated;
 
-import java.math.BigInteger;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
@@ -32,7 +31,7 @@ import jakarta.xml.bind.annotation.XmlValue;
  *       </attribute>
  *       <attribute name="quantity">
  *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
  *         </simpleType>
  *       </attribute>
@@ -54,7 +53,7 @@ public class Height {
     @XmlAttribute(name = "unit")
     protected String unit;
     @XmlAttribute(name = "quantity")
-    protected BigInteger quantity;
+    protected String quantity;
 
     /**
      * Ruft den Wert der content-Eigenschaft ab.
@@ -109,10 +108,10 @@ public class Height {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
@@ -121,10 +120,10 @@ public class Height {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setQuantity(BigInteger value) {
+    public void setQuantity(String value) {
         this.quantity = value;
     }
 

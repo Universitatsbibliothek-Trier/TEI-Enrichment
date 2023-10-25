@@ -28,6 +28,12 @@ import jakarta.xml.bind.annotation.XmlType;
  *           </restriction>
  *         </simpleType>
  *       </attribute>
+ *       <attribute name="cert">
+ *         <simpleType>
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *           </restriction>
+ *         </simpleType>
+ *       </attribute>
  *     </extension>
  *   </complexContent>
  * </complexType>
@@ -43,6 +49,8 @@ public class NameGND
 
     @XmlAttribute(name = "ref")
     protected String ref;
+    @XmlAttribute(name = "cert")
+    protected String cert;
 
     /**
      * Ruft den Wert der ref-Eigenschaft ab.
@@ -66,6 +74,30 @@ public class NameGND
      */
     public void setRef(String value) {
         this.ref = value;
+    }
+
+    /**
+     * Ruft den Wert der cert-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCert() {
+        return cert;
+    }
+
+    /**
+     * Legt den Wert der cert-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCert(String value) {
+        this.cert = value;
     }
 
 }

@@ -32,6 +32,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <choice maxOccurs="unbounded">
+ *         <element name="fw" type="{http://www.tei-c.org/ns/1.0}Fw" maxOccurs="unbounded"/>
  *         <element name="p" type="{http://www.tei-c.org/ns/1.0}PFront" maxOccurs="unbounded"/>
  *         <element name="figure" type="{http://www.tei-c.org/ns/1.0}Figure" maxOccurs="unbounded"/>
  *         <element name="head" type="{http://www.tei-c.org/ns/1.0}Head" maxOccurs="unbounded"/>
@@ -40,7 +41,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="div" type="{http://www.tei-c.org/ns/1.0}DivFront" maxOccurs="unbounded"/>
- *         <element name="pb" type="{http://www.tei-c.org/ns/1.0}GroupBody" maxOccurs="unbounded"/>
+ *         <element name="pb" type="{http://www.tei-c.org/ns/1.0}PbFront" maxOccurs="unbounded"/>
  *         <element name="milestone" type="{http://www.tei-c.org/ns/1.0}Milestone" maxOccurs="unbounded"/>
  *         <element name="table" type="{http://www.tei-c.org/ns/1.0}Table" maxOccurs="unbounded"/>
  *         <element name="list" type="{http://www.tei-c.org/ns/1.0}List" maxOccurs="unbounded"/>
@@ -73,11 +74,12 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DivFront", propOrder = {
-    "pOrFigureOrHead"
+    "fwOrPOrFigure"
 })
 public class DivFront {
 
     @XmlElementRefs({
+        @XmlElementRef(name = "fw", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "p", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "figure", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "head", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
@@ -91,7 +93,7 @@ public class DivFront {
         @XmlElementRef(name = "table", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "list", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
-    protected java.util.List<JAXBElement<?>> pOrFigureOrHead;
+    protected java.util.List<JAXBElement<?>> fwOrPOrFigure;
     @XmlAttribute(name = "type")
     protected String type;
     @XmlAttribute(name = "corresp")
@@ -102,18 +104,18 @@ public class DivFront {
     private Map<QName, String> otherAttributes = new HashMap<>();
 
     /**
-     * Gets the value of the pOrFigureOrHead property.
+     * Gets the value of the fwOrPOrFigure property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a {@code set} method for the pOrFigureOrHead property.
+     * This is why there is not a {@code set} method for the fwOrPOrFigure property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getPOrFigureOrHead().add(newItem);
+     *    getFwOrPOrFigure().add(newItem);
      * </pre>
      * 
      * 
@@ -121,7 +123,7 @@ public class DivFront {
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link DivFront }{@code >}
      * {@link JAXBElement }{@code <}{@link Figure }{@code >}
-     * {@link JAXBElement }{@code <}{@link GroupBody }{@code >}
+     * {@link JAXBElement }{@code <}{@link Fw }{@code >}
      * {@link JAXBElement }{@code <}{@link Head }{@code >}
      * {@link JAXBElement }{@code <}{@link Lb }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
@@ -130,17 +132,18 @@ public class DivFront {
      * {@link JAXBElement }{@code <}{@link Milestone }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
      * {@link JAXBElement }{@code <}{@link PFront }{@code >}
+     * {@link JAXBElement }{@code <}{@link PbFront }{@code >}
      * {@link JAXBElement }{@code <}{@link Table }{@code >}
      * 
      * 
      * @return
-     *     The value of the pOrFigureOrHead property.
+     *     The value of the fwOrPOrFigure property.
      */
-    public java.util.List<JAXBElement<?>> getPOrFigureOrHead() {
-        if (pOrFigureOrHead == null) {
-            pOrFigureOrHead = new ArrayList<>();
+    public java.util.List<JAXBElement<?>> getFwOrPOrFigure() {
+        if (fwOrPOrFigure == null) {
+            fwOrPOrFigure = new ArrayList<>();
         }
-        return this.pOrFigureOrHead;
+        return this.fwOrPOrFigure;
     }
 
     /**

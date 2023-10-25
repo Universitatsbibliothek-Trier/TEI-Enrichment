@@ -28,7 +28,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <choice maxOccurs="unbounded">
  *         <element name="pubPlace" type="{http://www.tei-c.org/ns/1.0}LbEtc"/>
- *         <element name="publisher" type="{http://www.tei-c.org/ns/1.0}Publisher" maxOccurs="unbounded"/>
+ *         <element name="publisher" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="lb" type="{http://www.tei-c.org/ns/1.0}Lb" maxOccurs="unbounded"/>
  *         <element name="choice" type="{http://www.tei-c.org/ns/1.0}Choice" maxOccurs="unbounded"/>
  *         <element name="name" type="{http://www.tei-c.org/ns/1.0}NameGND" maxOccurs="unbounded"/>
@@ -91,10 +91,10 @@ public class DocImprint {
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
-     * {@link JAXBElement }{@code <}{@link Publisher }{@code >}
      * {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
      * 
      * 

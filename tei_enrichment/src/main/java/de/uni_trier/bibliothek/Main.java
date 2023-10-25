@@ -52,7 +52,6 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
         eController = fxmlLoader.getController();
-        eController.checkBoxOne();
         eController.changeButtonText();
 
     }

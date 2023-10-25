@@ -27,7 +27,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <choice maxOccurs="unbounded">
  *         <element name="div" type="{http://www.tei-c.org/ns/1.0}DivFront" maxOccurs="unbounded"/>
- *         <element name="pb" type="{http://www.tei-c.org/ns/1.0}Pb" maxOccurs="unbounded"/>
+ *         <element name="pb" type="{http://www.tei-c.org/ns/1.0}PbFront" maxOccurs="unbounded"/>
  *         <element name="lb" type="{http://www.tei-c.org/ns/1.0}Lb" maxOccurs="unbounded"/>
  *         <element name="fw" type="{http://www.tei-c.org/ns/1.0}Fw" maxOccurs="unbounded"/>
  *         <element name="figure" type="{http://www.tei-c.org/ns/1.0}Figure" maxOccurs="unbounded"/>
@@ -90,7 +90,7 @@ public class Back {
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link de.uni_trier.bibliothek.xml.tei.model.generated.List }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
-     * {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     * {@link JAXBElement }{@code <}{@link PbFront }{@code >}
      * {@link JAXBElement }{@code <}{@link Table }{@code >}
      * 
      * 
