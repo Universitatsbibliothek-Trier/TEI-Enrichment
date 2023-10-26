@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TEI version="5.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Merian online: Index vorhandener Entitäten. </title>
+                <author>Team Merian online</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Beta draft.</edition>
+            </editionStmt>
+            <extent/>
+            <publicationStmt>
+                <publisher>Universitätsbibliothek Trier</publisher>
+                <pubPlace>Trier</pubPlace>
+                <date>2023</date>
+                <idno>1</idno>
+                <availability>
+                    <p>CC-0-Lizenz</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="merian_objects">
+                <listObject xml:id="entities_object">
+                    <object xml:id="object_Chronik">
+                        <objectIdentifier>
+                            <objectName>Chronik</objectName>
+                            <objectName>Chronic</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/1237790557</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen.xml#band_07"/>
+                        <note>Hier steht eine Kurzbeschreibung</note>
+                    </object>
+                    <object xml:id="object_Hessische_Chronica">
+                        <objectIdentifier>
+                            <objectName>Hessische Chronica</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4579228-8 </idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen.xml#band_07"/>
+                    </object>
+                </listObject>
+            </div>
+        </body>
+    </text>
+</TEI>
