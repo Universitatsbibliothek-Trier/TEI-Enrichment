@@ -167,20 +167,20 @@
                 <figure/>
                 <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb/>At
+                    <lb n="14"/>At
                     vero eos et accusam et just duo dolores et ea rebum.
-                    <lb/> Stet clita kasd
+                    <lb n="15"/> Stet clita kasd
                     gubergren, no sea takimata sanctus est 
                     <name ref="mgndpla:place_Schloss_Hexenagger">Schloss Hexenagger</name> Lorem ipsum
                     dolor sit amet. 
-                    <lb/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    <lb n="16"/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                     sed diam voluptua. 
-                    <lb/>At vero eos et accusam et justo duo dolores et ea
+                    <lb n="17"/>At vero eos et accusam et justo duo dolores et ea
                     rebum.
-                    <lb/> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                    <lb n="18"/> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
                     dolor sit amet.
-                    <lb/>
+                    <lb n="19"/>
                 </p>
             </div>
             <div type="dedication">
@@ -188,19 +188,19 @@
                 <head>Lorem ipsum</head>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb/>At
+                    <lb n="20"/>At
                     vero eos et accusam et justo duo dolores et ea rebum.
-                    <lb/> Stet clita kasd
+                    <lb n="21"/> Stet clita kasd
                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                    <lb/>Lorem
+                    <lb n="22"/>Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb/>At
+                    <lb n="23"/>At
                     vero eos et accusam et justo duo dolores et ea rebum.
-                    <lb/> Stet 
+                    <lb n="24"/> Stet 
                     <gap unit="words" quantity="2" reason="lost"/> clita kasd gubergren, no sea
                     takimata sanctus est Lorem ipsum dolor sit amet.
-                    <lb/>
+                    <lb n="25"/>
                 </p>
             </div>
         </front>
