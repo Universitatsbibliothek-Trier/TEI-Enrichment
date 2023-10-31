@@ -22,18 +22,32 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Body;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Choice;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DivFront;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DocTitle;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Front;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Fw;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Gap;
+import de.uni_trier.bibliothek.xml.tei.model.generated.GroupBody;
+import de.uni_trier.bibliothek.xml.tei.model.generated.GroupText;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Head;
+import de.uni_trier.bibliothek.xml.tei.model.generated.InnerGroup;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Lb;
 import de.uni_trier.bibliothek.xml.tei.model.generated.LbEtc;
+import de.uni_trier.bibliothek.xml.tei.model.generated.NameGND;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Num;
 import de.uni_trier.bibliothek.xml.tei.model.generated.ObjectFactory;
+import de.uni_trier.bibliothek.xml.tei.model.generated.OuterGroup;
 import de.uni_trier.bibliothek.xml.tei.model.generated.PFront;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Pb;
+import de.uni_trier.bibliothek.xml.tei.model.generated.SourceGND;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TEI;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Table;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Text;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TitlePage;
+import de.uni_trier.bibliothek.xml.tei.model.generated.TitlePart;
 import jakarta.xml.bind.JAXBElement;
 
 public class LineCounter {
@@ -54,6 +68,17 @@ public class LineCounter {
 	public static void checkText(Text text) {
 		Front front = text.getFront();
 		checkFront(front);
+		
+		Body body = text.getBody();
+		checkBody(body);
+		if(text.getGroup() != null)
+		{
+			OuterGroup group = text.getGroup();
+			checkOuterGroup(group);
+		}
+		
+		Back back = text.getBack();
+		checkBack(back);
 	}
 
 	public static void checkFront(Front front) {
@@ -64,7 +89,7 @@ public class LineCounter {
 				DivFront divFrontElement = (DivFront) pbOrDivOrTitlePage;
 				checkDivFront(divFrontElement);
 			}
-			if (pbOrDivOrTitlePage instanceof TitlePage) {
+			else if (pbOrDivOrTitlePage instanceof TitlePage) {
 				TitlePage titlePage = (TitlePage) pbOrDivOrTitlePage;
 				checkTitlePage(titlePage);
 			}
@@ -72,15 +97,128 @@ public class LineCounter {
 		}
 	}
 
+	public static void checkBody(Body body) {
+		List<JAXBElement<?>> getDivOrPbOrLbList = body.getDivOrPbOrLb();
+		for (JAXBElement<?> divOrPbOrLbListElement : getDivOrPbOrLbList) {
+			if (divOrPbOrLbListElement.getValue() instanceof DivFront) {
+				DivFront divFrontElement = (DivFront) divOrPbOrLbListElement.getValue();
+				checkDivFront(divFrontElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Lb) {
+				Lb lbElement = (Lb) divOrPbOrLbListElement.getValue();
+				setNinLb(lbElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Fw) {
+				Fw fwElement = (Fw) divOrPbOrLbListElement.getValue();
+				checkFw(fwElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Choice) {
+				Choice choiceElement = (Choice) divOrPbOrLbListElement.getValue();
+				checkChoice(choiceElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof NameGND) {
+				NameGND nameElement = (NameGND) divOrPbOrLbListElement.getValue();
+				checkNameGnd(nameElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof SourceGND) {
+				SourceGND sourceElement = (SourceGND) divOrPbOrLbListElement.getValue();
+				checkSource(sourceElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Gap) {
+				Gap gapElement = (Gap) divOrPbOrLbListElement.getValue();
+				checkGap(gapElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Num) {
+				Num numElement = (Num) divOrPbOrLbListElement.getValue();
+				checkNum(numElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof LbEtc) {
+				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbListElement.getValue();
+				checkLbEtc(lbEtcElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Table) {
+				Table tableElement = (Table) divOrPbOrLbListElement.getValue();
+				checkTable(tableElement);
+			}
+
+		}
+	}
+
+	public static void checkOuterGroup(OuterGroup group) {
+		List<InnerGroup> innerGroupList = group.getGroup();
+		for (InnerGroup innerGroup : innerGroupList) {
+			checkInnerGroup(innerGroup);
+		}
+
+	}
+
+
+	public static void checkInnerGroup(InnerGroup innerGroup) {
+		List<GroupText> groupText = innerGroup.getText();
+		for (GroupText groupTextElement : groupText) {
+			checkInnerGroupText(groupTextElement);
+		}
+
+	}
+
+	public static void checkInnerGroupText(GroupText groupText) {
+		GroupBody groupBody = groupText.getBody();
+		checkGroupBody(groupBody);		
+		Front front = groupText.getFront();
+		checkFront(front);
+	}
+
+		
+	
+
+	public static void checkBack(Back back) {
+		// TODO
+	}
+
 	public static void checkDivFront(DivFront divFrontElement) {
 		List<JAXBElement<?>> divFrontList = divFrontElement.getFwOrPOrFigure();
+		
 		for (JAXBElement<?> divFrontListElement : divFrontList) {
 			if (divFrontListElement.getValue() instanceof PFront) {
 				PFront pElement = (PFront) divFrontListElement.getValue();
 				checkPFront(pElement);
-				// System.out.println("pElements: " + pElement.getContent());
-				
+				// System.out.println("pElements: " + pElement.getContent());				
 			}
+			if (divFrontListElement.getValue() instanceof Fw) {
+				Fw fwElement = (Fw) divFrontListElement.getValue();
+				checkFw(fwElement);
+			}
+			if (divFrontListElement.getValue() instanceof Head) {
+				Head headElement = (Head) divFrontListElement.getValue();
+				checkHead(headElement);
+			}
+			if(divFrontListElement.getValue() instanceof Lb)
+			{
+				Lb lbElement = (Lb)divFrontListElement.getValue();
+				setNinLb(lbElement);
+			}
+			if(divFrontListElement.getValue() instanceof LbEtc)
+			{
+				
+				LbEtc lbEtcElement = (LbEtc)divFrontListElement.getValue();
+				checkLbEtc(lbEtcElement);
+			}
+			if(divFrontListElement.getValue() instanceof DivFront)
+			{
+				DivFront recurisveDivFrontElement = (DivFront)divFrontListElement.getValue();
+				checkDivFront(recurisveDivFrontElement);
+			}
+			if(divFrontListElement.getValue() instanceof Table)
+			{
+				Table tableElement = (Table)divFrontListElement.getValue();
+				checkTable(tableElement);
+			}
+			if(divFrontListElement.getValue() instanceof de.uni_trier.bibliothek.xml.tei.model.generated.List)
+			{
+				de.uni_trier.bibliothek.xml.tei.model.generated.List ListElement = (de.uni_trier.bibliothek.xml.tei.model.generated.List)divFrontListElement.getValue();
+				checkList(ListElement);
+			}
+			
 		}
 	}
 
@@ -104,7 +242,81 @@ public class LineCounter {
 	}
 
 	public static void checkDocTitle(DocTitle docTitle) {
-		//todo
+		List<JAXBElement<?>> docTitleList = docTitle.getPOrLbOrFigure();
+		for (Object docTitleElement : docTitleList) {
+			if (!(docTitleElement instanceof String)) {
+						JAXBElement<?> jaxbElement = (JAXBElement<?>) docTitleElement;
+						if(jaxbElement.getValue() instanceof Lb)
+						{
+							Lb LbElement = (Lb) jaxbElement.getValue();
+							setNinLb(LbElement);
+						}
+						else if(jaxbElement.getValue() instanceof Choice)
+						{
+							Choice choiceElement = (Choice) jaxbElement.getValue();
+							checkChoice(choiceElement);
+						}
+						else if(jaxbElement.getValue() instanceof TitlePart)
+						{
+							TitlePart titlePart = (TitlePart) jaxbElement.getValue();
+							checkTitlePart(titlePart);
+						}
+					}
+
+		}
+
+	}
+
+	public static void checkTitlePart(TitlePart titlePart) {
+		List<Serializable> titlePartList = titlePart.getContent();
+		for (Object titlePartObject : titlePartList) {
+			if (!(titlePartObject instanceof String)) {
+						JAXBElement<?> jaxbElement = (JAXBElement<?>) titlePartObject;
+						if(jaxbElement.getValue() instanceof Lb)
+						{
+							Lb LbElement = (Lb) jaxbElement.getValue();
+							setNinLb(LbElement);
+						}
+						else if(jaxbElement.getValue() instanceof Choice)
+						{
+							Choice choiceElement = (Choice) jaxbElement.getValue();
+							checkChoice(choiceElement);
+						}
+						else if(jaxbElement.getValue() instanceof NameGND)
+						{
+							NameGND nameGND = (NameGND) jaxbElement.getValue();
+							checkNameGnd(nameGND);
+						}
+					}
+
+		}
+
+	}
+
+	public static void checkNameGnd(NameGND nameGND) {
+		List<Serializable> nameGNDList = nameGND.getContent();
+		for (Object nameGNDObject : nameGNDList) {
+			if (!(nameGNDObject instanceof String)) {
+						JAXBElement<?> jaxbElement = (JAXBElement<?>) nameGNDObject;
+						if(jaxbElement.getValue() instanceof Lb)
+						{
+							Lb LbElement = (Lb) jaxbElement.getValue();
+							setNinLb(LbElement);
+						}
+						else if(jaxbElement.getValue() instanceof Choice)
+						{
+							Choice choiceElement = (Choice) jaxbElement.getValue();
+							checkChoice(choiceElement);
+						}
+						else if(jaxbElement.getValue() instanceof NameGND)
+						{
+							NameGND nameInNameGND = (NameGND) jaxbElement.getValue();
+							checkNameGnd(nameInNameGND);
+						}
+					}
+
+		}
+
 	}
 	
 
@@ -146,20 +358,18 @@ public class LineCounter {
 	public static void checkLbEtc(LbEtc lbEtc) {
 
 		List<Serializable> lbEtcList = lbEtc.getContent();
-
 		for (Object lbEtcListElement : lbEtcList) {
 			if (!(lbEtcListElement instanceof String)) {
 				JAXBElement<?> jaxbLbEtcListElement = (JAXBElement<?>) lbEtcListElement;
-				
 				if (jaxbLbEtcListElement.getValue() instanceof Choice) {
 					Choice choice = (Choice)jaxbLbEtcListElement.getValue();
 					checkChoice(choice);
 
 				}
-			 else if (lbEtcListElement instanceof Lb) {
+			 else if (jaxbLbEtcListElement.getValue() instanceof Lb) {
 				
 				Lb LbElement = (Lb) jaxbLbEtcListElement.getValue();
-					setNinLb(LbElement);
+				setNinLb(LbElement);
 				
 			}
 		}
@@ -170,7 +380,7 @@ public class LineCounter {
 
 	public static void setNinLb(Lb lbElement) {
 
-			System.out.println("lb ist: " + lbElement.getN());
+			// System.out.println("lb ist: " + lbElement.getN());
 			lbElement.setN(Integer.toString(lineNumber));
 			lineNumber++;
 

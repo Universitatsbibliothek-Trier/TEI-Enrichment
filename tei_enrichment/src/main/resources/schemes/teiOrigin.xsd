@@ -106,7 +106,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
 
   <xs:complexType name="docTitle">
     <xs:choice maxOccurs="unbounded">
-      <xs:element name="p" type="self:PFront" />
+      <!-- <xs:element name="p" type="self:PFront" /> -->
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
       <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
       <xs:element name="titlePart" type="self:titlePart" maxOccurs="unbounded" />

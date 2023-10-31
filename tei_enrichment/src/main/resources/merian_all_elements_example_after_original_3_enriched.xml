@@ -91,29 +91,32 @@
         <front>
             <pb n="1" facs="testdoi1.jpg"/>
             <div type="frontispiece">
+                <supplied>
+                    <lb n="1"/>
+                </supplied>
                 <figure type="motif"/>
                 <p>
-                    <lb n="1"/>TOPOGRAPHIA 
-                    <lb n="2"/>Hassiæ et Regionum Vici⸗ 
-                    <lb n="3"/>narum. 
-                    <lb n="4"/>Das iſt 
-                    <lb n="5"/>Beſchreibung der 
+                    <lb n="2"/>TOPOGRAPHIA 
+                    <lb n="3"/>Hassiæ et Regionum Vici⸗ 
+                    <lb n="4"/>narum. 
+                    <lb n="5"/>Das iſt 
+                    <lb n="6"/>Beſchreibung der 
                     <choice>
                         <abbr>vornẽb⸗ſten</abbr>
                         <expan>vornemb⸗ſten</expan>
                     </choice> 
-                    <lb n="6"/> Stätte
+                    <lb n="7"/> Stätte
                     vnd Plätze in 
-                    <lb n="7"/>Heſſen / vnd den benachbahꝛten 
-                    <lb n="8"/>Landtſchaften
+                    <lb n="8"/>Heſſen / vnd den benachbahꝛten 
+                    <lb n="9"/>Landtſchaften
                     / als Buchen / Naſſau 
-                    <lb n="9"/>Wetteraw / 
+                    <lb n="10"/>Wetteraw / 
                     <name ref="mgndpla:place_Nassau">Schloss Regensburg</name> / Wittgen 
-                    <lb n="10"/>ſtein
+                    <lb n="11"/>ſtein
                     / Lohngaw / vnd andern. 
-                    <lb n="11"/>Franckfurt durch 
-                    <lb n="12"/> Matt 
-                    <lb n="13"/>Merian.</p>
+                    <lb n="12"/>Franckfurt durch 
+                    <lb n="13"/> Matt 
+                    <lb n="14"/>Merian.</p>
             </div>
             <pb n="2" facs="testdoi2.jpg"/>
             <titlePage type="main">
@@ -125,21 +128,21 @@
                 
                 <docTitle>
                     <titlePart type="main">M. Z. 
-                        <lb/>TOPOGRAPHIA 
-                        <lb/>HASSIÆ, 
-                        <lb/>ET REGIONUM 
-                        <lb/>
+                        <lb n="15"/>TOPOGRAPHIA 
+                        <lb n="16"/>HASSIÆ, 
+                        <lb n="17"/>ET REGIONUM 
+                        <lb n="18"/>
                 VICINARUM</titlePart>
-                    <lb n="15"/>
+                    <lb n="19"/>
                     <titlePart type="sub">Das iſt: 
-                        <lb n="16"/>Beſchreibung und eigentliche
+                        <lb n="20"/>Beſchreibung und eigentliche
                 Abbildung der 
-                        <lb/>vornehmſten Staͤdte und Plaͤtze in Heſſen / und denen be⸗ 
-                        <lb/>nachbarten
+                        <lb n="21"/>vornehmſten Staͤdte und Plaͤtze in Heſſen / und denen be⸗ 
+                        <lb n="22"/>nachbarten
                 Landſchafften / als Buchen / Wetterau / Weſter⸗ 
-                        <lb/>wald / Loͤhngau / Naſſau /
+                        <lb n="23"/>wald / Loͤhngau / Naſſau /
                 Solms / Hanau / Witgenſtein / 
-                        <lb/>und andern.</titlePart>
+                        <lb n="24"/>und andern.</titlePart>
                 </docTitle>
                 
                 <lb/>
@@ -167,20 +170,20 @@
                 <figure/>
                 <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb n="14"/>At
+                    <lb n="25"/>At
                     vero eos et accusam et just duo dolores et ea rebum.
-                    <lb n="15"/> Stet clita kasd
+                    <lb n="26"/> Stet clita kasd
                     gubergren, no sea takimata sanctus est 
                     <name ref="mgndpla:place_Schloss_Hexenagger">Schloss Hexenagger</name> Lorem ipsum
                     dolor sit amet. 
-                    <lb n="16"/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    <lb n="27"/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                     sed diam voluptua. 
-                    <lb n="17"/>At vero eos et accusam et justo duo dolores et ea
+                    <lb n="28"/>At vero eos et accusam et justo duo dolores et ea
                     rebum.
-                    <lb n="18"/> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                    <lb n="29"/> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
                     dolor sit amet.
-                    <lb n="19"/>
+                    <lb n="30"/>
                 </p>
             </div>
             <div type="dedication">
@@ -188,19 +191,19 @@
                 <head>Lorem ipsum</head>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb n="20"/>At
+                    <lb n="31"/>At
                     vero eos et accusam et justo duo dolores et ea rebum.
-                    <lb n="21"/> Stet clita kasd
+                    <lb n="32"/> Stet clita kasd
                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                    <lb n="22"/>Lorem
+                    <lb n="33"/>Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb n="23"/>At
+                    <lb n="34"/>At
                     vero eos et accusam et justo duo dolores et ea rebum.
-                    <lb n="24"/> Stet 
+                    <lb n="35"/> Stet 
                     <gap unit="words" quantity="2" reason="lost"/> clita kasd gubergren, no sea
                     takimata sanctus est Lorem ipsum dolor sit amet.
-                    <lb n="25"/>
+                    <lb n="36"/>
                 </p>
             </div>
         </front>
