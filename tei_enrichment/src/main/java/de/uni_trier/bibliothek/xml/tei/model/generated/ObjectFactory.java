@@ -2297,16 +2297,16 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PbFront }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link PbFront }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "pb", scope = DivFront.class)
-    public JAXBElement<PbFront> createDivFrontPb(PbFront value) {
-        return new JAXBElement<>(_PbodyPb_QNAME, PbFront.class, DivFront.class, value);
+    public JAXBElement<Pb> createDivFrontPb(Pb value) {
+        return new JAXBElement<>(_PbodyPb_QNAME, Pb.class, DivFront.class, value);
     }
 
     /**
@@ -2879,19 +2879,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "w", scope = DocImprint.class)
     public JAXBElement<LbEtc> createDocImprintW(LbEtc value) {
         return new JAXBElement<>(_FigureValueW_QNAME, LbEtc.class, DocImprint.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PFront }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link PFront }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "p", scope = DocTitle.class)
-    public JAXBElement<PFront> createDocTitleP(PFront value) {
-        return new JAXBElement<>(_FigureValueP_QNAME, PFront.class, DocTitle.class, value);
     }
 
     /**

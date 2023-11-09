@@ -233,7 +233,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="div" type="self:DivFront" maxOccurs="unbounded" />
-      <xs:element name="pb" type="self:PbFront" maxOccurs="unbounded" />
+      <xs:element name="pb" type="self:Pb" maxOccurs="unbounded" />
       <xs:element name="milestone" type="self:Milestone" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
       <xs:element name="list" type="self:List" maxOccurs="unbounded" />

@@ -41,7 +41,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="div" type="{http://www.tei-c.org/ns/1.0}DivFront" maxOccurs="unbounded"/>
- *         <element name="pb" type="{http://www.tei-c.org/ns/1.0}PbFront" maxOccurs="unbounded"/>
+ *         <element name="pb" type="{http://www.tei-c.org/ns/1.0}Pb" maxOccurs="unbounded"/>
  *         <element name="milestone" type="{http://www.tei-c.org/ns/1.0}Milestone" maxOccurs="unbounded"/>
  *         <element name="table" type="{http://www.tei-c.org/ns/1.0}Table" maxOccurs="unbounded"/>
  *         <element name="list" type="{http://www.tei-c.org/ns/1.0}List" maxOccurs="unbounded"/>
@@ -132,7 +132,7 @@ public class DivFront {
      * {@link JAXBElement }{@code <}{@link Milestone }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
      * {@link JAXBElement }{@code <}{@link PFront }{@code >}
-     * {@link JAXBElement }{@code <}{@link PbFront }{@code >}
+     * {@link JAXBElement }{@code <}{@link Pb }{@code >}
      * {@link JAXBElement }{@code <}{@link Table }{@code >}
      * 
      * 

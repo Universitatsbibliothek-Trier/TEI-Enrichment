@@ -64,8 +64,9 @@ public class LineCounter {
 	public static TEI countLines(TEI originalTEIParameter) {
 		lineNumber = 1;
 		originalTEI = originalTEIParameter;
-		System.out.println("start counting Lines");
+		// System.out.println("start counting Lines, TEI file: " + originalTEIParameter);
 		Text originText = originalTEI.getText();
+		// System.out.println("start counting Lines, body Text: " + originText.toString());
 		checkText(originText);
 		return originalTEI;
 	}
@@ -74,16 +75,23 @@ public class LineCounter {
 		Front front = text.getFront();
 		checkFront(front);
 		
-		Body body = text.getBody();
-		checkBody(body);
-		if(text.getGroup() != null)
+		if(text.getBody() != null)
 		{
-			OuterGroup group = text.getGroup();
-			checkOuterGroup(group);
+			checkBody(text.getBody());
 		}
 		
-		Back back = text.getBack();
-		checkBack(back);
+		// System.out.println("inhalt von body: " + body.toString() );
+		
+		if(text.getGroup() != null)
+		{
+			checkOuterGroup(text.getGroup());
+		}
+		
+		if(text.getBack() != null)
+		{
+			System.out.println("back ist !null!");
+			checkBack(text.getBack());
+		}
 	}
 
 	public static void checkFront(Front front) {
@@ -101,11 +109,17 @@ public class LineCounter {
 			else if (pbOrDivOrTitlePage instanceof PbFront) {
 				lineNumber = 1;
 			}
+			else if (pbOrDivOrTitlePage instanceof Pb) {
+				lineNumber = 1;
+			}
 
 		}
 	}
 
 	public static void checkBody(Body body) {
+		
+		// System.out.println("body as to string: " + body.toString());
+		// System.out.println("body getDivOrPbOrLb: " + body.getDivOrPbOrLb());
 		List<JAXBElement<?>> getDivOrPbOrLbList = body.getDivOrPbOrLb();
 		for (JAXBElement<?> divOrPbOrLbListElement : getDivOrPbOrLbList) {
 			if (divOrPbOrLbListElement.getValue() instanceof DivFront) {
@@ -148,6 +162,9 @@ public class LineCounter {
 			else if (divOrPbOrLbListElement.getValue() instanceof PbFront) {
 				lineNumber = 1;
 			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Pb) {
+				lineNumber = 1;
+			}
 
 		}
 	}
@@ -170,10 +187,17 @@ public class LineCounter {
 	}
 
 	public static void checkInnerGroupText(GroupText groupText) {
-		GroupBody groupBody = groupText.getBody();
-		checkGroupBody(groupBody);		
-		Front front = groupText.getFront();
-		checkFront(front);
+
+		if(groupText.getBody() != null)
+		{
+			checkGroupBody(groupText.getBody());	
+		}
+		if(groupText.getFront() != null)
+		{
+			checkFront(groupText.getFront());
+		}
+		
+		
 	}
 
 		
@@ -225,40 +249,56 @@ public class LineCounter {
 			else if (divOrPbOrLbListElement.getValue() instanceof PbFront) {
 				lineNumber = 1;
 			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Pb) {
+				lineNumber = 1;
+			}
 
 		}
 	}
 
 	public static void checkBack(Back back) {
+		System.out.println("inhalt von back: " + back.getDivOrPbOrLb());
 		List<JAXBElement<?>> divOrPbOrLb = back.getDivOrPbOrLb();
 		// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
-		for (Object divOrPbOrLbElement : divOrPbOrLb) {
-			if (divOrPbOrLbElement instanceof DivFront) {
-				DivFront divFrontElement = (DivFront) divOrPbOrLbElement;
+		for (JAXBElement<?> divOrPbOrLbElement : divOrPbOrLb) {
+			System.out.println("divOrPbOrLbElement liste wird gecheckt");
+			if (divOrPbOrLbElement.getValue() instanceof DivFront) {
+				System.out.println("divfront gefunden");
+				DivFront divFrontElement = (DivFront) divOrPbOrLbElement.getValue();
 				checkDivFront(divFrontElement);
 			}
-			else if (divOrPbOrLbElement instanceof Table) {
-				Table table = (Table) divOrPbOrLbElement;
+			else if (divOrPbOrLbElement.getValue() instanceof Table) {
+				System.out.println("table gefunden");
+				Table table = (Table) divOrPbOrLbElement.getValue();
 				checkTable(table);
 			}
-			else if (divOrPbOrLbElement instanceof de.uni_trier.bibliothek.xml.tei.model.generated.List) {
-				de.uni_trier.bibliothek.xml.tei.model.generated.List list = (de.uni_trier.bibliothek.xml.tei.model.generated.List) divOrPbOrLbElement;
+			else if (divOrPbOrLbElement.getValue() instanceof de.uni_trier.bibliothek.xml.tei.model.generated.List) {
+				System.out.println("liste gefunden");
+				de.uni_trier.bibliothek.xml.tei.model.generated.List list = (de.uni_trier.bibliothek.xml.tei.model.generated.List) divOrPbOrLbElement.getValue();
 				checkList(list);
 			}
-			else if (divOrPbOrLbElement instanceof PbFront) {
+			else if (divOrPbOrLbElement.getValue() instanceof PbFront) {
+				System.out.println("pbfront gefunden");
 				lineNumber = 1;
 			}
-			else if (divOrPbOrLbElement instanceof LbEtc) {
-				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbElement;
+			else if (divOrPbOrLbElement.getValue() instanceof LbEtc) {
+				System.out.println("lbetc gefunden");
+				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbElement.getValue();
 				checkLbEtc(lbEtcElement);
 			}
-			else if (divOrPbOrLbElement instanceof Lb) {
-				Lb lbElement = (Lb) divOrPbOrLbElement;
+			else if (divOrPbOrLbElement.getValue() instanceof Lb) {
+				System.out.println("lb element gefunden");
+				Lb lbElement = (Lb) divOrPbOrLbElement.getValue();
 				setNinLb(lbElement);
 			}
-			else if (divOrPbOrLbElement instanceof Fw) {
-				Fw fwElement = (Fw) divOrPbOrLbElement;
+			else if (divOrPbOrLbElement.getValue() instanceof Fw) {
+				System.out.println("fw gefunden");
+				Fw fwElement = (Fw) divOrPbOrLbElement.getValue();
 				checkFw(fwElement);
+			}
+			else if (divOrPbOrLbElement.getValue() instanceof Pb) {
+				System.out.println("pb gefunden");
+				lineNumber = 1;
 			}
 
 
@@ -284,6 +324,12 @@ public class LineCounter {
 				Fw fwElement = (Fw) jaxbElement.getValue();
 				checkFw(fwElement);
 			}	
+			else if (jaxbElement.getValue() instanceof Pb) {
+				lineNumber = 1;
+			}
+			else if (jaxbElement.getValue() instanceof PbFront) {
+				lineNumber = 1;
+			}		
 			}
 
 
@@ -404,8 +450,15 @@ public class LineCounter {
 			}
 			else if(divFrontListElement.getValue() instanceof Pb)
 			{
+				System.out.println("pb element gefunden");
 				lineNumber = 1;
 			}
+			else if(divFrontListElement.getValue() instanceof PbFront)
+			{
+				System.out.println("pbfront element gefunden");
+				lineNumber = 1;
+			}
+
 
 			
 		}
@@ -518,7 +571,7 @@ public class LineCounter {
 	}
 
 	public static void checkDocTitle(DocTitle docTitle) {
-		List<JAXBElement<?>> docTitleList = docTitle.getPOrLbOrFigure();
+		List<JAXBElement<?>> docTitleList = docTitle.getLbOrFigureOrTitlePart();
 		for (Object docTitleElement : docTitleList) {
 			if (!(docTitleElement instanceof String)) {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) docTitleElement;

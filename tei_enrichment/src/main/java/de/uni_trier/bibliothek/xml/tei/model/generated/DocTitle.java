@@ -27,7 +27,6 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <choice maxOccurs="unbounded">
- *         <element name="p" type="{http://www.tei-c.org/ns/1.0}PFront"/>
  *         <element name="lb" type="{http://www.tei-c.org/ns/1.0}Lb" maxOccurs="unbounded"/>
  *         <element name="figure" type="{http://www.tei-c.org/ns/1.0}Figure" maxOccurs="unbounded"/>
  *         <element name="titlePart" type="{http://www.tei-c.org/ns/1.0}titlePart" maxOccurs="unbounded"/>
@@ -46,12 +45,11 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "docTitle", propOrder = {
-    "pOrLbOrFigure"
+    "lbOrFigureOrTitlePart"
 })
 public class DocTitle {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "p", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "lb", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "figure", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "titlePart", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
@@ -61,21 +59,21 @@ public class DocTitle {
         @XmlElementRef(name = "quote", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
-    protected List<JAXBElement<?>> pOrLbOrFigure;
+    protected List<JAXBElement<?>> lbOrFigureOrTitlePart;
 
     /**
-     * Gets the value of the pOrLbOrFigure property.
+     * Gets the value of the lbOrFigureOrTitlePart property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a {@code set} method for the pOrLbOrFigure property.
+     * This is why there is not a {@code set} method for the lbOrFigureOrTitlePart property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getPOrLbOrFigure().add(newItem);
+     *    getLbOrFigureOrTitlePart().add(newItem);
      * </pre>
      * 
      * 
@@ -87,19 +85,18 @@ public class DocTitle {
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
-     * {@link JAXBElement }{@code <}{@link PFront }{@code >}
      * {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
      * {@link JAXBElement }{@code <}{@link TitlePart }{@code >}
      * 
      * 
      * @return
-     *     The value of the pOrLbOrFigure property.
+     *     The value of the lbOrFigureOrTitlePart property.
      */
-    public List<JAXBElement<?>> getPOrLbOrFigure() {
-        if (pOrLbOrFigure == null) {
-            pOrLbOrFigure = new ArrayList<>();
+    public List<JAXBElement<?>> getLbOrFigureOrTitlePart() {
+        if (lbOrFigureOrTitlePart == null) {
+            lbOrFigureOrTitlePart = new ArrayList<>();
         }
-        return this.pOrLbOrFigure;
+        return this.lbOrFigureOrTitlePart;
     }
 
 }

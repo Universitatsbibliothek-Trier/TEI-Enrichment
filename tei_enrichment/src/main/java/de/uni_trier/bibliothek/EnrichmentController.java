@@ -97,7 +97,7 @@ public class EnrichmentController {
                     }
 
                     if (checkBoxEntities.isSelected()) {
-                        System.out.println("checkbox selected!");
+                        System.out.println("checkbox Entitätenlisten erstellen selected!");
                         TEIJavaObjectsList = EntityListEnricher.enrichList(TEIJavaObjectsList);
                         teiFile = (TEI) TEIJavaObjectsList.get(0);
                         EntityListCreator.createEnrichedEntityLists(teiPathName, TEIJavaObjectsList);
