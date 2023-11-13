@@ -121,43 +121,43 @@
                 
                 <figure/>
                 
-                <lb n="1"/>
+                <lb n="14"/>
                 
                 <docTitle>
                     <titlePart type="main">M. Z. 
-                        <lb n="2"/>TOPOGRAPHIA 
-                        <lb n="3"/>HASSIÆ, 
-                        <lb n="4"/>ET REGIONUM 
-                        <lb n="5"/>
+                        <lb/>TOPOGRAPHIA 
+                        <lb/>HASSIÆ, 
+                        <lb/>ET REGIONUM 
+                        <lb/>
                 VICINARUM</titlePart>
-                    <lb n="6"/>
+                    <lb n="15"/>
                     <titlePart type="sub">Das iſt: 
-                        <lb n="7"/>Beſchreibung und eigentliche
+                        <lb n="16"/>Beſchreibung und eigentliche
                 Abbildung der 
-                        <lb n="8"/>vornehmſten Staͤdte und Plaͤtze in Heſſen / und denen be⸗ 
-                        <lb n="9"/>nachbarten
+                        <lb/>vornehmſten Staͤdte und Plaͤtze in Heſſen / und denen be⸗ 
+                        <lb/>nachbarten
                 Landſchafften / als Buchen / Wetterau / Weſter⸗ 
-                        <lb n="10"/>wald / Loͤhngau / Naſſau /
+                        <lb/>wald / Loͤhngau / Naſſau /
                 Solms / Hanau / Witgenſtein / 
-                        <lb n="11"/>und andern.</titlePart>
+                        <lb/>und andern.</titlePart>
                 </docTitle>
                 
-                <lb n="12"/>
+                <lb/>
                 
                 <docEdition>Jn
                 dieſer andern Edition mit ſonderm Fleiß durchgangen / 
-                    <lb n="13"/>von vorigen Fehlern
+                    <lb/>von vorigen Fehlern
                 corrigirt / gebeſſert 
-                    <lb n="14"/>und vermehret.</docEdition>
+                    <lb/>und vermehret.</docEdition>
                 
-                <lb n="15"/>
+                <lb/>
                 
                 <docImprint>
                     <pubPlace>Franckfurt am Mayn /</pubPlace>
-                    <lb n="16"/>
+                    <lb/>
                     <publisher>Zum Truck
                         verlegt von denen Merianiſchen Erben.</publisher>
-                    <lb n="17"/>
+                    <lb/>
                     <docDate>Jm Jahr 
                         <num value="1655">M DC LV.</num>
                     </docDate>
@@ -167,20 +167,20 @@
                 <figure/>
                 <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb n="18"/>At
+                    <lb/>At
                     vero eos et accusam et just duo dolores et ea rebum.
-                    <lb n="19"/> Stet clita kasd
+                    <lb/> Stet clita kasd
                     gubergren, no sea takimata sanctus est 
                     <name ref="mgndpla:place_Schloss_Hexenagger">Schloss Hexenagger</name> Lorem ipsum
                     dolor sit amet. 
-                    <lb n="20"/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    <lb/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                     sed diam voluptua. 
-                    <lb n="21"/>At vero eos et accusam et justo duo dolores et ea
+                    <lb/>At vero eos et accusam et justo duo dolores et ea
                     rebum.
-                    <lb n="22"/> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                    <lb/> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
                     dolor sit amet.
-                    <lb n="23"/>
+                    <lb/>
                 </p>
             </div>
             <div type="dedication">
@@ -188,19 +188,19 @@
                 <head>Lorem ipsum</head>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb n="24"/>At
+                    <lb/>At
                     vero eos et accusam et justo duo dolores et ea rebum.
-                    <lb n="25"/> Stet clita kasd
+                    <lb/> Stet clita kasd
                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                    <lb n="26"/>Lorem
+                    <lb/>Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    <lb n="27"/>At
+                    <lb/>At
                     vero eos et accusam et justo duo dolores et ea rebum.
-                    <lb n="28"/> Stet 
+                    <lb/> Stet 
                     <gap unit="words" quantity="2" reason="lost"/> clita kasd gubergren, no sea
                     takimata sanctus est Lorem ipsum dolor sit amet.
-                    <lb n="29"/>
+                    <lb/>
                 </p>
             </div>
         </front>
@@ -242,74 +242,74 @@
                         </figure>
                         <pb n="4" facs="testdoi4.jpg"/>
                         <div type="overview" xml:id="band_07_art_overview_1">
-                            <lb n="1"/>
+                            <lb/>
                             <head>Beſchreibung der vornehmſten Staͤdte und 
-                                <lb n="2"/>Plaͤtze in 
+                                <lb/>Plaͤtze in 
                                 <name ref="mgndpla:place_Deutschland">Deutschland</name> Heſſen / und
                                 den benachbarten Landſchafften / 
-                                <lb n="3"/>als Buchen / Naſſau /
+                                <lb/>als Buchen / Naſſau /
                                 Wetterau / Weſterwald / Wittgen⸗ 
-                                <lb n="4"/>ſtein / Loͤhngau / und
+                                <lb/>ſtein / Loͤhngau / und
                                 andern.</head>
-                            <lb n="5"/>
+                            <lb/>
                             <p>ES gehoͤren in den Hochloͤblichen 
                                 <name ref="mgndpla:place_Regensburg">
                                      Regensburg </name>
-                                <lb n="6"/>Creyß /
+                                <lb/>Creyß /
                                 (deſſen ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ 
-                                <lb n="7"/>ſchoff
+                                <lb/>ſchoff
                                 zu Wormbs und der 
                                 <name ref="mgndper:person_Trier">Kaiser Trier 
                                 </name>
                                 und 
                                 <name ref="mgndper:person_Paul_Goldmann">Paul Goldmann</name> Herr
                                 Pfaltzgraf Ludwig Philips 
-                                <lb n="8"/>zu Simmern ꝛc. ſeynd /) die
+                                <lb/>zu Simmern ꝛc. ſeynd /) die
                                 Biſchoͤffe von place_Dravograd Worms / Speyer / 
-                                <lb n="9"/>Straßburg /
+                                <lb/>Straßburg /
                                 Baſel / Biſantz / Sitten / Loſanna / Metz / Tull / 
-                                <lb n="10"/>Verdun /
+                                <lb/>Verdun /
                                 und 
                                 <name ref="mgndpla:place_Grüningen"> Schloss Grüningen</name>; der
                                 Hochmeiſter des Johanniter Ordens / 
-                                <lb n="11"/>die Pfaltzgrafen / wegen
+                                <lb/>die Pfaltzgrafen / wegen
                                 der Graffſchafft 
                                 <name ref="mgndpla:place_Dravograd mgndpla:place_Oberdrauburg">
                                 Traaburg</name> Spanheim / Zwey⸗ 
-                                <lb n="12"/>
+                                <lb/>
                                 
                                 <choice>
                                     <sic>Maͤyntzer⸗Bi⸗
-                                        <lb n="13"/>ſthu￼b</sic>
+                                        <lb/>ſthu￼b</sic>
                                     <corr>Maͤyntzer⸗Bi⸗
-                                        <lb n="14"/>ſthumb</corr>
+                                        <lb/>ſthumb</corr>
                                 </choice>
                                 bruͤcken / und Veldentz; die Landgraffen in Heſſen; der 
                                 <rs ref="mgndper:person_Paul_Goldmann">Herr</rs> in Lothringen; die 
-                                <lb n="15"/>Hertzoge
+                                <lb/>Hertzoge
                                 in Savoja; die Aebte von Fulda / oder 
                                 <name ref="mgndeve:event_Erster_Weltkrieg">Herßfeld
                                 </name>
                                 / Murbach / Muͤn⸗ 
-                                <lb n="16"/>ſter in S. Gregorienthal / und Pfriem im
+                                <lb/>ſter in S. Gregorienthal / und Pfriem im
                                 Bißthum Chur: die Abtißin von Kauffin⸗ 
-                                <lb n="17"/>gen; die Proͤbſte zu
+                                <lb/>gen; die Proͤbſte zu
                                 Weiſſenburg / und Odenheim; die Graffen und Herren von 
-                                <lb n="18"/>Naſſau⸗Sarbruͤcken;
+                                <lb/>Naſſau⸗Sarbruͤcken;
                                 die Wetterauiſche Graffen; die Rheingraffen; die von Falcken⸗ 
-                                <lb n="19"/>ſtein;
+                                <lb/>ſtein;
                                 von Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein / die
                                 zween 
                                 <name ref="mgndeve:event_Kappeler_Krieg_1529 mgndeve:event_Kappeler_Krieg_1531">
                                 CaplerKrieg</name> Moͤrsburg / 
-                                <lb n="20"/>Rapoltſtein / Rapoltzkirch /
+                                <lb/>Rapoltſtein / Rapoltzkirch /
                                 ꝛc. Die Adeliche Collegia zu Gelnhauſen / und Friedberg: 
-                                <lb n="21"/>Die 
+                                <lb/>Die 
                                 <name ref="mgndobj:object_Chronik"> Chronik 
                                 </name>
                                 / 
                                 <name ref="https://d-nb.info/gnd/4497639-2">Muͤn⸗ 
-                                    <lb n="22"/>ſter in 
+                                    <lb/>ſter in 
                                     <name ref="https://d-nb.info/gnd/7656022-3">
                                         <choice>
                                             <abbr>S.</abbr>
@@ -317,79 +317,79 @@
                                         </choice>
                                 Gregorienthal</name>
                                 </name> ; Ober⸗ 
-                                <lb n="23"/>
+                                <lb/>
                                 <name ref="mgndorgs:org_Elektrizitätswerk_Trier">Elektrizitätswerk
                                 Trier</name> / Colmar / Straßburg / Roßheim / Schlettſtatt / Hagenau
                                 / Cron⸗Weiſſen⸗ 
-                                <lb n="24"/>burg / Landau / Muͤlhauſen im Sundgoͤw /
+                                <lb/>burg / Landau / Muͤlhauſen im Sundgoͤw /
                                 Speyer / 
                                 <name ref="mgndeve:event_Wormser_Religionsgespräche">Wormser
                                 Religionsgespräche</name> / Franckfurt / Fried⸗ 
-                                <lb n="25"/>berg / Wetzlar
+                                <lb/>berg / Wetzlar
                                 / Metz / Tull / Verdun / Kauffmans⸗Sarbruͤck / Biſantz / und Genff. 
-                                <lb n="26"/>Darunter
+                                <lb/>Darunter
                                 gleichwol nunmehr ſich viel befinden / die eximirt werden: als die
                                 Biſchoͤffe 
-                                <lb n="27"/>zu Sitten / Loſann / Metz 
+                                <lb/>zu Sitten / Loſann / Metz 
                                 <choice>
                                     <orig>ꝛc.</orig>
                                     <reg>etc.</reg>
                                 </choice> / Tull
                                 / Verdun / und Genff: der Abt zu Pfriem / im Biß⸗ 
-                                <lb n="28"/>thum Chur:
+                                <lb/>thum Chur:
                                 die Graffſchafft Bitſch: die Staͤdte / Baſel / ſeynd mehr Haͤuſer 
                                 <choice>
                                     <abbr>darniȢ</abbr>
                                     <expan>darnider</expan>
                                 </choice>
                                 Muͤlhauſen im Sundgoͤw / 
-                                <lb n="29"/>Metz / Tull / Verdun /
+                                <lb/>Metz / Tull / Verdun /
                                 Kauffmans⸗Sarbruͤck / 
                                 <name ref="mgndper:person_O_Kelly">O'Kelly</name>
                                 <note cert="high">Die
                                 ist eine editorische Bemerkung</note> / ꝛc. Von welchen zum Theil in 
-                                <lb n="30"/>Beſchreibung
+                                <lb/>Beſchreibung
                                 des Schweitzerlands / 
                                 <choice>
                                     <abbr>d̕</abbr>
                                     <expan>der</expan>
                                 </choice> des
                                 Elſaß / der Untern⸗Pfaltz / (daſelbſten auch 
-                                <lb n="31"/>Savoja /
+                                <lb/>Savoja /
                                 Lothringen / Biſantz / Metz / Tull / Verdun / Bitſch / und
                                 Kauffmans⸗Sar⸗ 
-                                <lb n="32"/>bruͤck / einkommen ſeyn) und des 
+                                <lb/>bruͤck / einkommen ſeyn) und des 
                                 <name ref="mgndeve:event_Dreißigjähriger_Krieg">Dreißigjähriger Krieg</name>Chur⸗und
                                 Unter⸗Rheiniſchen Creyſes / allbereit 
-                                <lb n="33"/>von uns moͤglicher / und
+                                <lb/>von uns moͤglicher / und
                                 gebuͤhrender Bericht / geſchehen. Die uͤbrige aber / und ihre 
-                                <lb n="34"/>
+                                <lb/>
                                 beſch
                                 <supplied cert="high">e</supplied>hen vornehmſte und bekanteſte
                                 Staͤdte und Orthe ſollen in dieſem 
                                 <w lemma="Abhandlung">Tractat</w>
                                 eingebracht 
-                                <lb n="35"/>werden; wie auch Gelnhauſen / und die Graffſchafft
+                                <lb/>werden; wie auch Gelnhauſen / und die Graffſchafft
                                 Naſſau⸗Beylſtein / ꝛc. ſo ſonſten 
-                                <lb n="36"/>zum Nieder⸗Rheiniſchen Creyß
+                                <lb/>zum Nieder⸗Rheiniſchen Creyß
                                 gehoͤrig ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten 
-                                <lb n="37"/>zum
+                                <lb/>zum
                                 Weſtphaͤliſchen Creyß gezogen wird. 
-                                <lb n="38"/>Und erſtlich zwar / was
+                                <lb/>Und erſtlich zwar / was
                                 das hochloͤbliche Fuͤrſtenthum und 
-                                <lb n="39"/>anbelangt / ſo hat Wilhelm
+                                <lb/>anbelangt / ſo hat Wilhelm
                                 Dilich eine 
                                 <name ref="mgndobj:object_Hessische_Chronica"> Hessische Chronica</name>
                                 davon ausgehen laſſen; damit aber 
-                                <lb n="40"/>nicht jederman zufrieden
+                                <lb/>nicht jederman zufrieden
                                 geweſen / dieweil er im erſten Theil derſelben geſchrieben / das 
-                                <lb n="41"/>
+                                <lb/>
                                 <w lemma="Oberhessen">Ober⸗Heſſen</w> / ſo viel das Lager
                                 anbetrifft / unter andern / in ſich auch begreiffe / die Graff⸗ 
-                                <lb n="42"/>ſchafft
+                                <lb/>ſchafft
                                 Dietz / das Rinckgau / die Wetterau / und derſelben etliche
                                 Reichs⸗item Ha⸗ 
-                                <lb n="43"/>nauiſch⸗Jſenbera⸗und Maͤyntziſche Staͤdte und
+                                <lb/>nauiſch⸗Jſenbera⸗und Maͤyntziſche Staͤdte und
                                 Schloͤſſer; die Graffſchafften Koͤ⸗ 
                                 <fw type="catch">nigſtein /</fw>
                     
@@ -407,17 +407,17 @@
                     
                                 <fw type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     
-                                <lb n="1"/>nigſtein
+                                <lb/>nigſtein
                                 / Solms / Naſſau / Witgenſtein / unter dem Vorwand / daß die
                                 Wetterau in Heſ⸗ 
-                                <lb n="2"/>ſen / weder dem Lager / noch der Herrſchafft
+                                <lb/>ſen / weder dem Lager / noch der Herrſchafft
                                 nach / gelegen / und die Wetterauiſche Grafen / 
-                                <lb n="3"/>oder Staͤdte /
+                                <lb/>oder Staͤdte /
                                 das Fuͤrſtenthum Heſſen anderſt nicht / als was etwan Lehenſchafft / 
-                                <lb n="4"/>Schutz
+                                <lb/>Schutz
                                 / Geleyt oder dergleichen ſonderbare Beding / particulariter
                                 mitbringen / re- 
-                                <lb n="5"/>cognoſciren; ſondern eine gar abgeſonderte
+                                <lb/>cognoſciren; ſondern eine gar abgeſonderte
                                 Landſchafft / 
                                 <quote source="mgndbibl:listBibl_der_Sandmann">"Der
                                 Sandmann, der fürchterliche Sandmann ist der alte Advokat Coppelius,
@@ -425,117 +425,117 @@
                                     Gestalt hätte mir nicht tieferes Entsetzen erregen können als
                                 eben
                                     dieser Coppelius.</quote> ſowol als der Hundsruck / 
-                                <lb n="6"/>Weſterich
+                                <lb/>Weſterich
                                 / und andere / jederzeit geweſen / und noch. Was aber die
                                 Graffſchafft Naſſau⸗ 
-                                <lb n="7"/>Dillenberg belange / iſt dieſelbe nicht
+                                <lb/>Dillenberg belange / iſt dieſelbe nicht
                                 allein nicht unter Heſſen gelegen / ſondern auch nicht 
-                                <lb n="8"/>in dem
+                                <lb/>in dem
                                 Creyſe / darein Heſſen gehoͤrig / ſondern in dem Weſtphaͤliſchen
                                 Creyſe; wie auch 
-                                <lb n="9"/>Seyn / Virneburg / und andere anſehnliche
+                                <lb/>Seyn / Virneburg / und andere anſehnliche
                                 Graff⸗und Herrſchafften mehr / begriffen. 
-                                <lb n="10"/>
+                                <lb/>
                     
                                 <milestone unit="section"/> ziehet beſagter Autor das Stifft Herßfeld /
                                 und andere Orthe / zu Nieder⸗Heſſen. 
-                                <lb n="11"/>Es iſt aber darbey zu
+                                <lb/>Es iſt aber darbey zu
                                 mercken / daß er einen Unterſchied zwiſchen Nieder⸗Heſſen / und 
-                                <lb n="12"/>dem
+                                <lb/>dem
                                 niedern Fuͤrſtenthum Heſſen machet / und zu dieſem letztern weder
                                 beſagte Stifſt / 
-                                <lb n="13"/>noch auch die Graffſchafft Ziegenhain / die
+                                <lb/>noch auch die Graffſchafft Ziegenhain / die
                                 ſonſten Heßiſch iſt / ziehen thut: Als wie er 
-                                <lb n="14"/>auch Ober⸗Heſſen
+                                <lb/>auch Ober⸗Heſſen
                                 / darzu er obbeſagte anderer Herren Land und Staͤdte rechnet / viel 
-                                <lb n="15"/>groͤſſer
+                                <lb/>groͤſſer
                                 / als das Ober⸗Fuͤrſtenthum Heſſen machet. Nieder⸗Heſſen liegt
                                 eigentlich zwi⸗ 
-                                <lb n="16"/>ſchen dem Werra⸗und Diemelſtrom / zur Seiten /
+                                <lb/>ſchen dem Werra⸗und Diemelſtrom / zur Seiten /
                                 gegen Mitternachtwerts / hab es das 
-                                <lb n="17"/>Hertzogthum Braunſchweig:
+                                <lb/>Hertzogthum Braunſchweig:
                                 gegen Aufgang das Eißfeld / und Thuͤringen; gegen 
-                                <lb n="18"/>Mittag das
+                                <lb/>Mittag das
                                 Franckenland / und einen Theil der Wetterau; gegen Abend Ober⸗Heſ⸗ 
-                                <lb n="19"/>ſen;
+                                <lb/>ſen;
                                 die Graffſchafft Waldeck / und das Stifft Paderborn. Petrus Bertius
                                 haͤlts auch 
-                                <lb n="20"/>mit dem Dilichio, was die obverſtandene frembde
+                                <lb/>mit dem Dilichio, was die obverſtandene frembde
                                 Herrſchafften belangt; und ſagt da⸗ 
-                                <lb n="21"/>her er Dilichius, daß des
+                                <lb/>her er Dilichius, daß des
                                 Heſſen⸗Landes Laͤnge ſich von Mittagwerts jenſeit des Mayns / 
-                                <lb n="22"/>gegen
+                                <lb/>gegen
                                 der Pfaltz / anhebe / und ende ſich an der Weſer / an den
                                 Braunſchweigiſch und 
-                                <lb n="23"/>Paderborniſchen Grentzen gegen
+                                <lb/>Paderborniſchen Grentzen gegen
                                 Mitternacht: Auf der rechten Seiten / nacher Auf⸗ 
-                                <lb n="24"/>gang der
+                                <lb/>gang der
                                 Sonnen / liegt das Thuͤringer Land / ſamt den angrentzenden
                                 Francken; 
-                                <lb n="25"/>und zur Lincken / oder gegen Abend / der Rhein / das
+                                <lb/>und zur Lincken / oder gegen Abend / der Rhein / das
                                 Trieriſche / Coͤllniſche / Bergiſche 
-                                <lb n="26"/>Gebiete / und endlich
+                                <lb/>Gebiete / und endlich
                                 auch ein Antheil von Weſtphalen. Maginus begreifft die Gren⸗ 
-                                <lb n="27"/>tzen
+                                <lb/>tzen
                                 in wenig Worten/ und ſagt / Heſſen⸗Land habe von Morgen Thuͤringen /
                                 und 
-                                <lb n="28"/>von Mittag das Franckenland / von Abend Weſtphalen / und
+                                <lb/>von Mittag das Franckenland / von Abend Weſtphalen / und
                                 von Mitternacht das 
-                                <lb n="29"/>Hertzogthum Braunſchweig / das Bißthum
+                                <lb/>Hertzogthum Braunſchweig / das Bißthum
                                 Minden / und andere Orthe. Ober⸗Heſ⸗ 
-                                <lb n="30"/>ſen grentzet mit Francken
+                                <lb/>ſen grentzet mit Francken
                                 / der Pfaltz / Maͤyntz / Trier / und Coͤlln: Und das Nieder⸗ 
-                                <lb n="31"/>Heſſen
+                                <lb/>Heſſen
                                 mit Buchen / Thuͤringen / dem Eyßfelde / Braunſchweig / Paderborn /
                                 und 
-                                <lb n="32"/>Weſtphalen; welches untere Fuͤrſtenthum ſonſten zwiſchen
+                                <lb/>Weſtphalen; welches untere Fuͤrſtenthum ſonſten zwiſchen
                                 Thuͤringen / den Abteyen / 
-                                <lb n="33"/>Fulda und Herßfeld / dem Bißthum
+                                <lb/>Fulda und Herßfeld / dem Bißthum
                                 Paderborn / dem Hertzogthum Braunſchweig / 
-                                <lb n="34"/>und dem Eißfeld
+                                <lb/>und dem Eißfeld
                                 gelegen iſt. 
-                                <lb n="35"/>Es iſt Heſſen ein Berg⸗und Waldreich Land. Der
+                                <lb/>Es iſt Heſſen ein Berg⸗und Waldreich Land. Der
                                 Berge erſtlich zu gedencken / ſo ſe⸗ 
-                                <lb n="36"/>tzen wir fornan den
+                                <lb/>tzen wir fornan den
                                 beruͤhmten Griechiſchen Geographum Ptolomæum, der lib. 2. cap. 
-                                <lb n="37"/>11.
+                                <lb/>11.
                                 Geogr. zweyerley Heßiſcher Gebirge gedencket / als der Montium
                                 Melibocorum. 
-                                <lb n="38"/>Dahero kommt das Wort Catzenelenbogen / aus dem
+                                <lb/>Dahero kommt das Wort Catzenelenbogen / aus dem
                                 Cattimelibocenſes, nemlich die 
-                                <lb n="39"/>Catti vom Gebirge Meliboco, wie
+                                <lb/>Catti vom Gebirge Meliboco, wie
                                 Rhenanus 1. rerum German. pag. 56. gedencket / 
-                                <lb n="40"/>und ſich
+                                <lb/>und ſich
                                 ruͤhmet / daß er der erſte ſeye / ſo dieſen Urſprung erwieſen. Das
                                 andere 
-                                <lb n="41"/>Heßiſche Gebirg nennet gedachter Scribent Montes
+                                <lb/>Heßiſche Gebirg nennet gedachter Scribent Montes
                                 Abnobios. Von dieſen Gebir⸗ 
-                                <lb n="42"/>gen wo ſie gelegen / befinden ſich
+                                <lb/>gen wo ſie gelegen / befinden ſich
                                 unterſchiedliche Meynungen / darvon an ſeinem 
-                                <lb n="43"/>Orth ſoll
+                                <lb/>Orth ſoll
                                 gedacht werden. Unter den Gebirgen des Lands / deren Namen noch 
-                                <lb n="44"/>jetzo
+                                <lb/>jetzo
                                 im Brauch / iſt der Vogelsberg / wegen ſeiner Laͤnge und Groͤſſe der
                                 bekannteſt / 
-                                <lb n="45"/>und liegen auff demſelben viel feiner Orth / als
+                                <lb/>und liegen auff demſelben viel feiner Orth / als
                                 Ulrichſtein / Stormfels / Schotten. 
-                                <lb n="46"/>Was ſonſten vor Berge und
+                                <lb/>Was ſonſten vor Berge und
                                 Waͤlder in beyden Fuͤrſtenthumben / unter welchen das 
-                                <lb n="47"/>Nieder⸗Fuͤrſtenthum
+                                <lb/>Nieder⸗Fuͤrſtenthum
                                 ein recht Wald⸗Land iſt / ſeyen / kan man beſehen in der Coſmo- 
-                                <lb n="48"/>graphia
+                                <lb/>graphia
                                 Johann Rauen / cap. XIV. vom Heſſen⸗Land pag. 408. 409. 410. Jn
                                 dieſen 
-                                <lb n="49"/>Bergen giebt es allerley Metall / inſonderheit von
+                                <lb/>Bergen giebt es allerley Metall / inſonderheit von
                                 Silber / Kupffer / Bley und Eiſen: 
-                                <lb n="50"/>Es giebt auch gute
+                                <lb/>Es giebt auch gute
                                 Steinbruͤche / ſchoͤnen weiſſen Alabaſter / auch Schifferſtein / 
-                                <lb n="51"/>Tuffſtein
+                                <lb/>Tuffſtein
                                 / Gibs / Kalckſtein / und Stein⸗Kohlen: Und in den vielen Waͤldern
                                 ſtattliche 
-                                <lb n="52"/>Jagten und Maſt. Der Reinhards⸗Wald unter Caſſel /
+                                <lb/>Jagten und Maſt. Der Reinhards⸗Wald unter Caſſel /
                                 nacher dem Braunſchwei⸗ 
-                                <lb n="53"/>ger⸗Land gelegen / faͤhet bey
+                                <lb/>ger⸗Land gelegen / faͤhet bey
                                 Jmmenhauſen an / und hat in der Laͤnge und Breite 
                                 <fw type="catch">bey</fw>
                     
@@ -548,26 +548,26 @@
                                 <figure/>
                             </p>
                         </div>
-                        <lb n="1"/>
+                        <lb/>
                         <div type="transition">
                             <p>Folgende ſein mehrers bekandt / und wer⸗ 
-                                <lb n="2"/>den insgemein fuͤr
+                                <lb/>den insgemein fuͤr
                                 gewiſſe Staͤdt / und 
-                                <lb n="3"/>Staͤdtlein gehalten / Als:</p>
+                                <lb/>Staͤdtlein gehalten / Als:</p>
                         </div>
                         <div type="article" corresp="mgndper:place_Neumarckt_1 mgndper:place_Neumarckt_2" xml:id="doi1">
                             <head>
                                 <name ref="mgndper:place_Neumarckt_1 mgndpla:place_Neumarckt_2">
                                 Neumarckt</name>
                             </head>
-                            <lb n="4"/>
+                            <lb/>
                             <p>Text von Neumarckt allgemein</p>
                             <div type="article" corresp="mgndper:place_Neumarckt_1" xml:id="doi2">
                                 <head>
                                     
                                     <name ref="mgndpla:place_Neumarckt_1">1.Neumarckt</name>
                                 </head>
-                                <lb n="5"/>
+                                <lb/>
                                 <p>Text von Neumarckt_1</p>
                             </div>
                             <div type="article" corresp="mgndper:place_Neumarckt_2" xml:id="doi3">
@@ -575,7 +575,7 @@
                                     
                                     <name ref="mgndpla:place_Neumarckt_2">2.Neumarckt</name>
                                 </head>
-                                <lb n="6"/>
+                                <lb/>
                                 <p>Text von Neumarckt_2</p>
                             </div>
                         </div>
@@ -583,152 +583,152 @@
                             <head>
                                 <name ref="mgndper:person_Paul_Goldmann">Paul Goldmann</name> / an
                                 der Werra.</head>
-                            <lb n="7"/>
+                            <lb/>
                             <p>JSt ein Stadt in Nieder⸗Heſſen / 
-                                <lb n="8"/>zugenandt in den Sohden. Soll 
-                                <lb n="9"/>wegen
+                                <lb/>zugenandt in den Sohden. Soll 
+                                <lb/>wegen
                                 der Saltz⸗Sohden ſo viel 
-                                <lb n="10"/>heiſſen / als Hallendorff / inmaſſen
+                                <lb/>heiſſen / als Hallendorff / inmaſſen
                                 auch 
-                                <lb n="11"/>andere Orth von ihren Sohden oder Suͤl⸗ 
-                                <lb n="12"/>tzen / alſo
+                                <lb/>andere Orth von ihren Sohden oder Suͤl⸗ 
+                                <lb/>tzen / alſo
                                 genent werden. Hingegen ſagt 
-                                <lb n="13"/>man auch / daß die Stadt von
+                                <lb/>man auch / daß die Stadt von
                                 etlichen 
-                                <lb n="14"/>Doͤrffern / ſo in dieſer Gegend gelegen / 
-                                <lb n="15"/>und
+                                <lb/>Doͤrffern / ſo in dieſer Gegend gelegen / 
+                                <lb/>und
                                 von welcher auch noch etwas Anzei⸗ 
-                                <lb n="16"/>gung und zerfallene
+                                <lb/>gung und zerfallene
                                 Gemaͤuer uͤbrig ſeyn / 
-                                <lb n="17"/>zuſammen gebauet / und derowegen Al⸗ 
-                                <lb n="18"/>lein
+                                <lb/>zuſammen gebauet / und derowegen Al⸗ 
+                                <lb/>lein
                                 Dorff genennet worden / aus wel⸗ 
-                                <lb n="19"/>chen hernach der Nahm
+                                <lb/>chen hernach der Nahm
                                 Allendorff er⸗ 
-                                <lb n="20"/>wachſen. Dieſe Stadt ligt in einer luſtigen 
-                                <lb n="21"/>Gegend
+                                <lb/>wachſen. Dieſe Stadt ligt in einer luſtigen 
+                                <lb/>Gegend
                                 / mit hohen Bergen umbſchloſ⸗ 
-                                <lb n="22"/>ſen. Und hat es da / wegen
+                                <lb/>ſen. Und hat es da / wegen
                                 Theilug des 
-                                <lb n="23"/>Strohms / drey ſteinerne Bruͤcken uͤber 
-                                <lb n="24"/>die
+                                <lb/>Strohms / drey ſteinerne Bruͤcken uͤber 
+                                <lb/>die
                                 Werra; uͤber welche zwo Bruͤcke gehen 
-                                <lb n="25"/>auß der Statt biß zum
+                                <lb/>auß der Statt biß zum
                                 Saltzbronnen und 
-                                <lb n="26"/>Sohden, deren etwa bey 60. Dahero die 
-                                <lb n="27"/>Stadt
+                                <lb/>Sohden, deren etwa bey 60. Dahero die 
+                                <lb/>Stadt
                                 und das gantze Land, in welches 
-                                <lb n="28"/>das Saltz haͤuffig verfuͤhret
+                                <lb/>das Saltz haͤuffig verfuͤhret
                                 wird / groſſen 
-                                <lb n="29"/>Nutzen haben / wie ſolches auch dieſe Vers 
-                                <lb n="30"/>
+                                <lb/>Nutzen haben / wie ſolches auch dieſe Vers 
+                                <lb/>
                                 andeuten: 
-                                <lb n="31"/>Urbi dant magnis pons, mons, fons, com- 
-                                <lb n="32"/>moda
+                                <lb/>Urbi dant magnis pons, mons, fons, com- 
+                                <lb/>moda
                                 rebus, 
-                                <lb n="33"/>Qualia vix alibi Teutona terra tenet. 
-                                <lb n="34"/>Dieſer Ort
+                                <lb/>Qualia vix alibi Teutona terra tenet. 
+                                <lb/>Dieſer Ort
                                 / ſo ziemblich weit umbfan⸗ 
-                                <lb n="35"/>gen iſt / hatte 2. Kirchen / und
+                                <lb/>gen iſt / hatte 2. Kirchen / und
                                 ein ſchoͤnes 
-                                <lb n="36"/>Rathhauß / war auch ſonſten ziemblich 
-                                <lb n="37"/>ſtarck
+                                <lb/>Rathhauß / war auch ſonſten ziemblich 
+                                <lb/>ſtarck
                                 und eng beyſammen gebauet / auſſer / 
-                                <lb n="38"/>daß kein Fuͤrſtliches
+                                <lb/>daß kein Fuͤrſtliches
                                 Schloß / ſondern nur 
-                                <lb n="39"/>ein Ampthauß da war; welches aber alles 
-                                <lb n="40"/>des
+                                <lb/>ein Ampthauß da war; welches aber alles 
+                                <lb/>des
                                 Jahrs 1637. eingeaͤſchert worden / daß 
-                                <lb n="41"/>ſchier nichts ſtehen
+                                <lb/>ſchier nichts ſtehen
                                 blieben. Wird aber / oh⸗ 
-                                <lb n="42"/>ne Zweiffel/ nunmehr fein wieder
+                                <lb/>ne Zweiffel/ nunmehr fein wieder
                                 gebauet 
-                                <lb n="43"/>ſeyn. Zwiſchen dieſer Statt / und den So⸗ 
-                                <lb n="44"/>den
+                                <lb/>ſeyn. Zwiſchen dieſer Statt / und den So⸗ 
+                                <lb/>den
                                 oder Saltzwerck (ſo wegen der vielen 
-                                <lb n="45"/>Gebaͤuen der Soͤder / und
+                                <lb/>Gebaͤuen der Soͤder / und
                                 auch anderer / 
-                                <lb n="46"/>eine eigene Gemeinde / und Staͤttlein / doch 
-                                <lb n="47"/>ohne
+                                <lb/>eine eigene Gemeinde / und Staͤttlein / doch 
+                                <lb/>ohne
                                 Mauren / machet /) iſt eine dreyfache 
-                                <lb n="48"/>ſchoͤne ſteinerne
+                                <lb/>ſchoͤne ſteinerne
                                 Brucken; dieweil ſich die 
-                                <lb n="49"/>Werra diß Orts auch in ſo viel
+                                <lb/>Werra diß Orts auch in ſo viel
                                 Fluͤſſe thei⸗ 
-                                <lb n="50"/>let. Beſagtes Saltzwerck belangend / iſt 
-                                <lb n="51"/>ſolches
+                                <lb/>let. Beſagtes Saltzwerck belangend / iſt 
+                                <lb/>ſolches
                                 ein ſonderlich wunderbahres Ge⸗ 
-                                <lb n="52"/>ſchoͤpff / und groſſe Gnad
+                                <lb/>ſchoͤpff / und groſſe Gnad
                                 Gottes / daß die 
-                                <lb n="53"/>Quelle ſo ſtarck iſt / daß ſie ſo bald
+                                <lb/>Quelle ſo ſtarck iſt / daß ſie ſo bald
                                 etliche 
-                                <lb n="54"/>Muͤhlen treiben koͤnte; geſtalt dann / burch 
-                                <lb n="55"/>die
+                                <lb/>Muͤhlen treiben koͤnte; geſtalt dann / burch 
+                                <lb/>die
                                 Waſſerkunſt / der Brunne in gewiſſe 
-                                <lb n="56"/>Sammelkaſten gezogen / und
+                                <lb/>Sammelkaſten gezogen / und
                                 von darauß / 
-                                <lb n="57"/>vor der Statt / wol ein Muſqueten Schuß 
-                                <lb n="58"/>hinauß
+                                <lb/>vor der Statt / wol ein Muſqueten Schuß 
+                                <lb/>hinauß
                                 / in viele unterſchiedliche Leckwer⸗ 
-                                <lb n="59"/>cke und Koͤten /
+                                <lb/>cke und Koͤten /
                                 gefuͤhret wird / deren im 
-                                <lb n="60"/>Soden Fleck gelegnen zugeſchweigen .
+                                <lb/>Soden Fleck gelegnen zugeſchweigen .
                                 Und 
-                                <lb n="61"/>iſt dieſes Saltz weit beſſer / und kraͤfftiger / 
-                                <lb n="62"/>als
+                                <lb/>iſt dieſes Saltz weit beſſer / und kraͤfftiger / 
+                                <lb/>als
                                 viel anders / ſo an umliegenden Orten / 
-                                <lb n="63"/>und Saltzwercken /
+                                <lb/>und Saltzwercken /
                                 gemacht wird. Der 
-                                <lb n="64"/>Brunne ligt gantz in der Ebne / ſehr tieff / 
-                                <lb n="65"/>und
+                                <lb/>Brunne ligt gantz in der Ebne / ſehr tieff / 
+                                <lb/>und
                                 faſt an einem ſumpfechten Ort / und 
-                                <lb n="66"/>wird durch ein Pompenwerck
+                                <lb/>wird durch ein Pompenwerck
                                 mit Pferden / 
-                                <lb n="67"/>an einem lauffenden Schwengel / in ein be⸗ 
-                                <lb n="68"/>ſonders
+                                <lb/>an einem lauffenden Schwengel / in ein be⸗ 
+                                <lb/>ſonders
                                 daruͤber gebautes Hauß / gezogen. 
-                                <lb n="69"/>Die Koͤten und Pfannen /
+                                <lb/>Die Koͤten und Pfannen /
                                 darinne das 
-                                <lb n="70"/>Saltz geſotten wird / ligen rings umb den 
-                                <lb n="71"/>Brunnen
+                                <lb/>Saltz geſotten wird / ligen rings umb den 
+                                <lb/>Brunnen
                                 her / und ſeyn deren ſehr viel; und 
-                                <lb n="72"/>werden zu dieſem
+                                <lb/>werden zu dieſem
                                 Saltzwerck nicht allein 
-                                <lb n="73"/>die Kohlen am Meißner / ſondern auch
+                                <lb/>die Kohlen am Meißner / ſondern auch
                                 viel 
-                                <lb n="74"/>hundert oder tauſend Schock reiſich ge⸗ 
-                                <lb n="75"/>braucht /
+                                <lb/>hundert oder tauſend Schock reiſich ge⸗ 
+                                <lb/>braucht /
                                 auch ein groſſe Menge Schied⸗ 
-                                <lb n="76"/>holtz verbrant. Doch iſt das
+                                <lb/>holtz verbrant. Doch iſt das
                                 Saltz / welches 
-                                <lb n="77"/>bey Holtz und Reiſig geſotten wird / weit 
-                                <lb n="78"/>kraͤfftiger
+                                <lb/>bey Holtz und Reiſig geſotten wird / weit 
+                                <lb/>kraͤfftiger
                                 / und beſtaͤndiger / als jenes / ſo 
-                                <lb n="79"/>mit Steinkohlen erhitzet
+                                <lb/>mit Steinkohlen erhitzet
                                 wird. Dann / ne⸗ 
-                                <lb n="80"/>ben dem Schwefel eine ſonderliche Feuch⸗ 
-                                <lb n="81"/>tigkeit
+                                <lb/>ben dem Schwefel eine ſonderliche Feuch⸗ 
+                                <lb/>tigkeit
                                 in den Steinkolen iſt / welche das ſie⸗ 
-                                <lb n="82"/>dende Saltz an ſich
+                                <lb/>dende Saltz an ſich
                                 zeucht. Es ligt die ge⸗ 
-                                <lb n="83"/>melte Stadt Allendorff / unnd
+                                <lb/>melte Stadt Allendorff / unnd
                                 zugehoͤrig 
-                                <lb n="84"/>Ampt (ſo gering iſt / und in wenig Dorff⸗ 
-                                <lb n="85"/>ſchafften
+                                <lb/>Ampt (ſo gering iſt / und in wenig Dorff⸗ 
+                                <lb/>ſchafften
                                 beſtehet;) wie auch die gemelte 
-                                <lb n="86"/>Soden oder Saltzwerck / gar in
+                                <lb/>Soden oder Saltzwerck / gar in
                                 einem ſehr 
-                                <lb n="87"/>geringen Bezirck / zwiſchen ſehr hohen 
-                                <lb n="88"/>Bergen
+                                <lb/>geringen Bezirck / zwiſchen ſehr hohen 
+                                <lb/>Bergen
                                 / ſo voller Steinklippen ſeyn; dar⸗ 
-                                <lb n="89"/>unter ſonderlich der
+                                <lb/>unter ſonderlich der
                                 Goburg / und Hoͤhe⸗ 
-                                <lb n="90"/>berg / den Vorzug haben. Jn den Waͤlden / 
-                                <lb n="91"/>ſo
+                                <lb/>berg / den Vorzug haben. Jn den Waͤlden / 
+                                <lb/>ſo
                                 viel deſſen der Stadt zugehoͤrig / wie auch 
-                                <lb n="92"/>an der hohen
+                                <lb/>an der hohen
                                 Fuͤrſte ( ſo ein Vorgebuͤrg / 
-                                <lb n="93"/>und Gehoͤltz / des Meißners iſt
+                                <lb/>und Gehoͤltz / des Meißners iſt
                                 / ) hat die 
                                 <fw type="catch">Statt</fw>
                 
@@ -741,88 +741,88 @@
                                 <fw type="header">Beſchreibung der
                                 vornehmſten Orth</fw>
                 
-                                <lb n="1"/> Statt die Freyheit / vor allen andern im 
-                                <lb n="2"/>Lande
+                                <lb/> Statt die Freyheit / vor allen andern im 
+                                <lb/>Lande
                                 / daß ſie von S. Veits / biß auf S. 
-                                <lb n="3"/>Bartholomaͤi Tag / roth
+                                <lb/>Bartholomaͤi Tag / roth
                                 Wildpreth; und 
-                                <lb n="4"/>dann von S. Michaels / bis auf S. An⸗ 
-                                <lb n="5"/>dreas
+                                <lb/>dann von S. Michaels / bis auf S. An⸗ 
+                                <lb/>dreas
                                 Tag / ſchwartz Wildpreth / jagen und 
-                                <lb n="6"/>fangen moͤge / aber nicht
+                                <lb/>fangen moͤge / aber nicht
                                 ſchieſſen: derhal⸗ 
-                                <lb n="7"/>ben auch ihrer Weidleut keiner einige
+                                <lb/>ben auch ihrer Weidleut keiner einige
                                 Buͤch⸗ 
-                                <lb n="8"/>ſe mit auffs Jagen bringen darff. Der 
-                                <lb n="9"/>Handel und
+                                <lb/>ſe mit auffs Jagen bringen darff. Der 
+                                <lb/>Handel und
                                 die 
                                 <choice>
                                     <sic>Nahrnng</sic>
                                     <corr>Nahrung</corr>
                                 </choice> /
                                 iſt ſonſten / we⸗ 
-                                <lb n="10"/>gen des Saltzwercks / zimlich ſtarck allda; 
-                                <lb n="11"/>und
+                                <lb/>gen des Saltzwercks / zimlich ſtarck allda; 
+                                <lb/>und
                                 weil wenig Frucht dieſes Orts wach⸗ 
-                                <lb n="12"/>ſet; ſo hat die Natur
+                                <lb/>ſet; ſo hat die Natur
                                 ſolches mit zimlichem 
-                                <lb n="13"/>gutem Weinwachs erſetzet. 
-                                <lb n="14"/>Die Arth
+                                <lb/>gutem Weinwachs erſetzet. 
+                                <lb/>Die Arth
                                 des Saltzbronnens iſt einer 
-                                <lb n="15"/>wunderbahren Beſchaffenheit /
+                                <lb/>wunderbahren Beſchaffenheit /
                                 nemlich je 
-                                <lb n="16"/>hoͤher das Waſſer in der Werra / je mehr 
-                                <lb n="17"/>auch
+                                <lb/>hoͤher das Waſſer in der Werra / je mehr 
+                                <lb/>auch
                                 der Sohle in dem Bronn; je mehr a 
-                                <lb n="18"/>ber derſelben / je
+                                <lb/>ber derſelben / je
                                 kraͤfftiger ſie befunden / 
-                                <lb n="19"/>nemlich 8. loͤtig / und hingegen je
+                                <lb/>nemlich 8. loͤtig / und hingegen je
                                 weniger / 
-                                <lb n="20"/>je unkraͤfftiger / und am Gewicht geringer. 
-                                <lb n="21"/>Es
+                                <lb/>je unkraͤfftiger / und am Gewicht geringer. 
+                                <lb/>Es
                                 iſt aber der Bronn ſehr ſtarck / alſo daß 
-                                <lb n="22"/>er bey 84. Kohten
+                                <lb/>er bey 84. Kohten
                                 und Pfannen / zu verſe⸗ 
-                                <lb n="23"/>hen genugſam / in welcher er durch ein
+                                <lb/>hen genugſam / in welcher er durch ein
                                 be⸗ 
-                                <lb n="24"/>ſonder Kunſtwerck geleitet wird. So hat 
-                                <lb n="25"/>man uͤber
+                                <lb/>ſonder Kunſtwerck geleitet wird. So hat 
+                                <lb/>man uͤber
                                 das erſtlich im Jahr 1579. mit 
-                                <lb n="26"/>Stein⸗Kohlen zu ſieden
+                                <lb/>Stein⸗Kohlen zu ſieden
                                 angefangen / auch 
-                                <lb n="27"/>ſolche Arth des Siedens nunmehr alſo an⸗ 
-                                <lb n="28"/>geordnet
+                                <lb/>ſolche Arth des Siedens nunmehr alſo an⸗ 
+                                <lb/>geordnet
                                 / daß / wo man dazumahlen 22. 
-                                <lb n="29"/>Maaß Kohlen verbrauchen muͤſſen
+                                <lb/>Maaß Kohlen verbrauchen muͤſſen
                                 / anje⸗ 
-                                <lb n="30"/>tzo 12. gnug ſeyn. Die Herren Landgrafſen 
-                                <lb n="31"/>in
+                                <lb/>tzo 12. gnug ſeyn. Die Herren Landgrafſen 
+                                <lb/>in
                                 Heſſen haben den Orth mit unterſchied⸗ 
-                                <lb n="32"/>lichen Freyheiten
+                                <lb/>lichen Freyheiten
                                 begabt. Es ſeyn auch vor 
-                                <lb n="33"/>Alters viel feſte Berghaͤuſer zur
+                                <lb/>Alters viel feſte Berghaͤuſer zur
                                 Defen⸗ 
-                                <lb n="34"/>ſion der Sohden anfaͤnglich erbauet wor⸗ 
-                                <lb n="35"/>den: Vor
+                                <lb/>ſion der Sohden anfaͤnglich erbauet wor⸗ 
+                                <lb/>den: Vor
                                 andern aber das jenige / ſo gleich 
-                                <lb n="36"/>obig den Sohden auf dem
+                                <lb/>obig den Sohden auf dem
                                 Berg geſtan⸗ 
-                                <lb n="37"/>den / und Weſterburg genand worden iſt. 
-                                <lb n="38"/>Bey
+                                <lb/>den / und Weſterburg genand worden iſt. 
+                                <lb/>Bey
                                 dieſem Teutſchen Krieg iſt allhier zu 
-                                <lb n="39"/>underſchieden mahlen
+                                <lb/>underſchieden mahlen
                                 groſſer Schade ge⸗ 
-                                <lb n="40"/>ſchehen / ſonderlich Anno 1632. da der von 
-                                <lb n="41"/>Pappenheim
+                                <lb/>ſchehen / ſonderlich Anno 1632. da der von 
+                                <lb/>Pappenheim
                                 Witzenhauſen / Eſchwegen / 
-                                <lb n="42"/>und Drendelburg erobert / deren
+                                <lb/>und Drendelburg erobert / deren
                                 Occupi⸗ 
-                                <lb n="43"/>rung gedacht wird im 2. Theil des Theatri 
-                                <lb n="44"/>Europæi.
+                                <lb/>rung gedacht wird im 2. Theil des Theatri 
+                                <lb/>Europæi.
                                 Jn dieſer Statt iſt geboren 
-                                <lb n="45"/>der wohlberuͤmte Theologus D.
+                                <lb/>der wohlberuͤmte Theologus D.
                                 Balthaſar 
-                                <lb n="46"/>
+                                <lb/>
                                 
                                 
                                 <table>
@@ -837,7 +837,7 @@
                                         <cell cols="3">Dieterich der Vierdt.</cell>
                                         
                                         <cell>Gotschalck. 
-                                            <lb n="47"/>Wilhelm / ἄπαις.</cell>
+                                            <lb/>Wilhelm / ἄπαις.</cell>
                                     </row>
                                     
                                     <row>
@@ -845,155 +845,155 @@
                                         <cell>Gotschalck.</cell>
                                         
                                         <cell cols="1">Joh. Dieterich der 
-                                            <lb n="48"/>fuͤnffte ſtarb. 
-                                            <lb n="49"/>
+                                            <lb/>fuͤnffte ſtarb. 
+                                            <lb/>
                                 1571.</cell>
                                         
                                         <cell>Frantz 
-                                            <lb n="50"/>ſtarb 
-                                            <lb n="51"/>ohne Kinder.</cell>
+                                            <lb/>ſtarb 
+                                            <lb/>ohne Kinder.</cell>
                                     </row>
                                     
                                     <row>
                                         
                                         <cell cols="1">Chriſtoff ſtarb vor 
-                                            <lb n="52"/>dem Vatter 1567.</cell>
+                                            <lb/>dem Vatter 1567.</cell>
                                     </row>
                                     
                                     <row>
                                         
                                         <cell>Walpurga dieſes Tochter / ward zur 
-                                            <lb n="53"/>Ehe genommen
+                                            <lb/>Ehe genommen
                                 von Graf Frantzen 
-                                            <lb n="54"/>zu Waldecken / Joannis Pii Sohne.</cell>
+                                            <lb/>zu Waldecken / Joannis Pii Sohne.</cell>
                                     </row>
                                 </table> 
 					
-                                <lb n="55"/>
+                                <lb/>
                                 Menzerus.</p>
                         </div>
-                        <lb n="56"/>
+                        <lb/>
                         <div type="article" xml:id="band_07_art_some_article1">
                             <head>Arolſen.</head>
-                            <lb n="57"/>
+                            <lb/>
                             <p>LJgt in der Graffſchaft Waldeck / und iſt 
-                                <lb n="58"/>Anfangs ein Cloſter
+                                <lb/>Anfangs ein Cloſter
                                 geweſen / darnach zu 
-                                <lb n="59"/>einem Graͤfflichen Sitz gemacht worden. 
-                                <lb n="60"/>Volquinus,
+                                <lb/>einem Graͤfflichen Sitz gemacht worden. 
+                                <lb/>Volquinus,
                                 Graf zu Waldeck / ward im 
-                                <lb n="61"/>Jahr 1131. zum Edelvogt von der
+                                <lb/>Jahr 1131. zum Edelvogt von der
                                 Stiffte⸗ 
-                                <lb n="62"/>rin Orpe erwoͤhlet uͤber dieſes Cloſter; wel⸗ 
-                                <lb n="63"/>ches
+                                <lb/>rin Orpe erwoͤhlet uͤber dieſes Cloſter; wel⸗ 
+                                <lb/>ches
                                 auch im Jahr 1234. begabete Adolff 
-                                <lb n="64"/>Graff zu Schwalenberg mit
+                                <lb/>Graff zu Schwalenberg mit
                                 dem Bocken⸗ 
-                                <lb n="65"/>ſtrot / einem Wald. Jm Jahr 1640. hielte 
-                                <lb n="66"/>allda
+                                <lb/>ſtrot / einem Wald. Jm Jahr 1640. hielte 
+                                <lb/>allda
                                 Beylaͤger der Schwediſche General 
-                                <lb n="67"/>Feld⸗Marſchalck Banner umb
+                                <lb/>Feld⸗Marſchalck Banner umb
                                 den 16. 26. 
-                                <lb n="68"/>Septembr. mit einem Fuͤrſtlichen Marg⸗ 
-                                <lb n="69"/>graͤffiſchen
+                                <lb/>Septembr. mit einem Fuͤrſtlichen Marg⸗ 
+                                <lb/>graͤffiſchen
                                 Fraͤulein von Baden⸗Dur⸗ 
-                                <lb n="70"/>lach / welche allhie / in der
+                                <lb/>lach / welche allhie / in der
                                 Reſidentz ihres 
-                                <lb n="71"/>Schwagern / Herrn Graffen Volradens 
-                                <lb n="72"/>von
+                                <lb/>Schwagern / Herrn Graffen Volradens 
+                                <lb/>von
                                 Waldeck / ſich damahln befunden: dem 
-                                <lb n="73"/>Bericht nach / hatte
+                                <lb/>Bericht nach / hatte
                                 dieſen Orth An. 1650. 
-                                <lb n="74"/>im Hornung / Herr Graf Georg Friede⸗ 
-                                <lb n="75"/>rich
+                                <lb/>im Hornung / Herr Graf Georg Friede⸗ 
+                                <lb/>rich
                                 zu Waldeck.</p>
                         </div>
-                        <lb n="76"/>
+                        <lb/>
                         <div type="article" xml:id="band_07_art_some_article2">
                             <head>Aſſenheim.</head>
-                            <lb n="77"/>
+                            <lb/>
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat 
-                                <lb n="78"/>ſeiner
+                                <lb/>ſeiner
                                 Antiquitet viel Zeugnnſſen / alſo dz 
-                                <lb n="79"/>dafuͤr gehalten wird / es
+                                <lb/>dafuͤr gehalten wird / es
                                 auch noch zuruͤck in 
-                                <lb n="80"/>paganiſmum reichet / wie das genandte 
-                                <lb n="81"/>Steinhauß
+                                <lb/>paganiſmum reichet / wie das genandte 
+                                <lb/>Steinhauß
                                 auf dem Marckt / oder Straſſen / 
-                                <lb n="82"/>und ſonderlich der groſſe
+                                <lb/>und ſonderlich der groſſe
                                 hohe dicke Anti⸗ 
-                                <lb n="83"/>quitaͤten Thurn ausweiſet / welcher Thurn 
-                                <lb n="84"/>wol
+                                <lb/>quitaͤten Thurn ausweiſet / welcher Thurn 
+                                <lb/>wol
                                 dem Lug ins Land / oder Solothurn / 
-                                <lb n="85"/>oder ſonſten faſt
+                                <lb/>oder ſonſten faſt
                                 nachoͤhmet / wie die Ge⸗ 
-                                <lb n="86"/>ſtalt und Ehnlichkeit ausweiſet. Bey
+                                <lb/>ſtalt und Ehnlichkeit ausweiſet. Bey
                                 den 
-                                <lb n="87"/>Zeiten der Tempel⸗Herren iſt es ein feiner 
-                                <lb n="88"/>veſter
+                                <lb/>Zeiten der Tempel⸗Herren iſt es ein feiner 
+                                <lb/>veſter
                                 Orth geweſen / und der Tempel bey 
-                                <lb n="89"/>dem Thurn / deſſen Stuͤck
+                                <lb/>dem Thurn / deſſen Stuͤck
                                 noch ſtehet / iſt 
-                                <lb n="90"/>wol zu ſehen / als ein recht Antiquitaͤt.
+                                <lb/>wol zu ſehen / als ein recht Antiquitaͤt.
                                 Das 
-                                <lb n="91"/>Waſſer Nidd gehet faſt umb das Caſtrum 
-                                <lb n="92"/>und
+                                <lb/>Waſſer Nidd gehet faſt umb das Caſtrum 
+                                <lb/>und
                                 Staͤttlein herumb. Bey der Ober⸗ 
-                                <lb n="93"/>Pforten ſihet man / daß es
+                                <lb/>Pforten ſihet man / daß es
                                 ein wolverwahr⸗ 
-                                <lb n="94"/>ter Orth geweſen / dann das Waſſer rings 
-                                <lb n="95"/>umbher
+                                <lb/>ter Orth geweſen / dann das Waſſer rings 
+                                <lb/>umbher
                                 gangen / mit auffziehenden Bruͤ⸗ 
-                                <lb n="96"/>cken verwahrt. Es hat ein
+                                <lb/>cken verwahrt. Es hat ein
                                 treflich Frucht⸗ 
-                                <lb n="97"/>land / und iſt quaſi meditullium Wettera- 
-                                <lb n="98"/>viæ:
+                                <lb/>land / und iſt quaſi meditullium Wettera- 
+                                <lb/>viæ:
                                 Hat einen trefflichen Weinwachs 
-                                <lb n="99"/>in unterſchiedenen Bergen: Gut
+                                <lb/>in unterſchiedenen Bergen: Gut
                                 Almey / 
-                                <lb n="100"/>Weyde / und zimlich Wieſen: Auch hat es 
-                                <lb n="101"/>gute
+                                <lb/>Weyde / und zimlich Wieſen: Auch hat es 
+                                <lb/>gute
                                 Beholtzung aus 
                                 <choice>
                                     <abbr>dreyẽ</abbr>
                                     <expan>dreyen</expan>
                                 </choice>
                                 Waͤlden. Lang⸗ 
-                                <lb n="102"/>hard / Auwen / und Hanau genandt. Und 
-                                <lb n="103"/>ob
+                                <lb/>hard / Auwen / und Hanau genandt. Und 
+                                <lb/>ob
                                 es woldreyer Herꝛn Bottmaͤßigkeit un⸗ 
-                                <lb n="104"/>terworffen / Jſenburg /
+                                <lb/>terworffen / Jſenburg /
                                 Solms / und Ha⸗ 
-                                <lb n="105"/>nau / ſo iſt es doch nicht ſchuldig Frondienſt 
-                                <lb n="106"/>zu
+                                <lb/>nau / ſo iſt es doch nicht ſchuldig Frondienſt 
+                                <lb/>zu
                                 thun. Es hat dieſes Staͤttlein und Bur⸗ 
-                                <lb n="107"/>gerſchafft ein gute
+                                <lb/>gerſchafft ein gute
                                 Fiſcherey von dem groſ⸗ 
-                                <lb n="108"/>ſen Steg und guͤldenen Badden (alſo
+                                <lb/>ſen Steg und guͤldenen Badden (alſo
                                 ge⸗ 
-                                <lb n="109"/>nant) an / biß an die Muͤhl / dabey ſich die 
-                                <lb n="110"/>Burgerey
+                                <lb/>nant) an / biß an die Muͤhl / dabey ſich die 
+                                <lb/>Burgerey
                                 wol befindet.</p>
                         </div>
                         <div type="additional">
                             <head>Arolſen.</head>
-                            <lb n="111"/>
+                            <lb/>
                             <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua. 
-                                <lb n="112"/>At vero eos et accusam et justo duo
+                                <lb/>At vero eos et accusam et justo duo
                                 dolores et ea rebum.
-                                <lb n="113"/> Stet clita kasd gubergren, no sea
+                                <lb/> Stet clita kasd gubergren, no sea
                                 takimata sanctus est Lorem ipsum dolor sit amet. 
-                                <lb n="114"/>Lorem ipsum
+                                <lb/>Lorem ipsum
                                 dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                                 voluptua. 
-                                <lb n="115"/>At vero eos et accusam et justo duo dolores et ea
+                                <lb/>At vero eos et accusam et justo duo dolores et ea
                                 rebum.
-                                <lb n="116"/> Stet clita kasd gubergren, no sea takimata sanctus est
+                                <lb/> Stet clita kasd gubergren, no sea takimata sanctus est
                                 Lorem ipsum dolor sit amet.
-                                <lb n="117"/>
+                                <lb/>
                             </p>
                         </div>
                         <fw type="catch">Namen⸗</fw>
@@ -1004,19 +1004,19 @@
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
-                                    <lb n="1"/>At vero eos et accusam et justo
+                                    <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
-                                    <lb n="2"/> Stet clita kasd gubergren, no sea
+                                    <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet. 
-                                    <lb n="3"/>Lorem
+                                    <lb/>Lorem
                                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
-                                    <lb n="4"/>At vero eos et accusam et justo
+                                    <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
-                                    <lb n="5"/> Stet clita kasd gubergren, no sea
+                                    <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet.
-                                    <lb n="6"/>
+                                    <lb/>
                                 </p>
                             </div>
                             <div type="article" xml:id="band_07_art_some_article4">
@@ -1024,19 +1024,19 @@
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
-                                    <lb n="7"/>At vero eos et accusam et justo
+                                    <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
-                                    <lb n="8"/> Stet clita kasd gubergren, no sea
+                                    <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet. 
-                                    <lb n="9"/>Lorem
+                                    <lb/>Lorem
                                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
-                                    <lb n="10"/>At vero eos et accusam et justo
+                                    <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
-                                    <lb n="11"/> Stet clita kasd gubergren, no sea
+                                    <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet.
-                                    <lb n="12"/>
+                                    <lb/>
                                 </p>
                             </div>
                         </div>
@@ -1050,98 +1050,98 @@
                         <fw type="pageNum">3</fw>
                         <figure/>
                         <div type="overview" xml:id="band_07_art_overview_2">
-                            <lb n="1"/>
+                            <lb/>
                             <head>Beſchreibung der vornehmſten Staͤdte und 
-                                <lb n="2"/>Plaͤtze in Heſſen /
+                                <lb/>Plaͤtze in Heſſen /
                                 und den benachbarten Landſchafften / 
-                                <lb n="3"/>als Buchen / Naſſau /
+                                <lb/>als Buchen / Naſſau /
                                 Wetterau / Weſterwald / Wittgen⸗ 
-                                <lb n="4"/>ſtein / Loͤhngau / und
+                                <lb/>ſtein / Loͤhngau / und
                                 andern.</head>
-                            <lb n="5"/>
+                            <lb/>
                             <p>ES gehoͤren in den Hochloͤblichen Ober⸗Rheiniſchen 
-                                <lb n="6"/>Creyß /
+                                <lb/>Creyß /
                                 (deſſen ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ 
-                                <lb n="7"/>ſchoff
+                                <lb/>ſchoff
                                 zu Wormbs und der Kaiser Karl und Otto Herr Pfaltzgraf Ludwig
                                 Philips 
-                                <lb n="8"/>zu Simmern ꝛc. ſeynd /) die Biſchoͤffe von Worms /
+                                <lb/>zu Simmern ꝛc. ſeynd /) die Biſchoͤffe von Worms /
                                 Speyer / 
-                                <lb n="9"/>Straßburg / Baſel / Biſantz / Sitten / Loſanna / Metz
+                                <lb/>Straßburg / Baſel / Biſantz / Sitten / Loſanna / Metz
                                 / Tull / 
-                                <lb n="10"/>Verdun / und Genff; der Hochmeiſter des Johanniter
+                                <lb/>Verdun / und Genff; der Hochmeiſter des Johanniter
                                 Ordens / 
-                                <lb n="11"/>die Pfaltzgrafen / wegen der Graffſchafft Spanheim /
+                                <lb/>die Pfaltzgrafen / wegen der Graffſchafft Spanheim /
                                 Zwey⸗ 
-                                <lb n="12"/>bruͤcken / und Veldentz; die Landgraffen in Heſſen; die
+                                <lb/>bruͤcken / und Veldentz; die Landgraffen in Heſſen; die
                                 Hertzoge in Lothringen; die 
-                                <lb n="13"/>Hertzoge in Savoja; die Aebte von
+                                <lb/>Hertzoge in Savoja; die Aebte von
                                 Fulda / oder Herßfeld / Murbach / Muͤn⸗ 
-                                <lb n="14"/>ſter in S.
+                                <lb/>ſter in S.
                                 Gregorienthal / und Pfriem im Bißthum Chur: die Abtißin von Kauffin⸗ 
-                                <lb n="15"/>gen;
+                                <lb/>gen;
                                 die Proͤbſte zu Weiſſenburg / und Odenheim; die Graffen und Herren
                                 von 
-                                <lb n="16"/>Naſſau⸗Sarbruͤcken; die Wetterauiſche Graffen; die
+                                <lb/>Naſſau⸗Sarbruͤcken; die Wetterauiſche Graffen; die
                                 Rheingraffen; die von Falcken⸗ 
-                                <lb n="17"/>ſtein; von Bitſch; Hanau; Salm;
+                                <lb/>ſtein; von Bitſch; Hanau; Salm;
                                 Leiningen / Eyſenburg / Witgenſtein / Moͤrsburg / 
-                                <lb n="18"/>Rapoltſtein
+                                <lb/>Rapoltſtein
                                 / Rapoltzkirch / ꝛc. Die Adeliche Collegia zu Gelnhauſen / und
                                 Friedberg: 
-                                <lb n="19"/>Die Staͤdte Baſel / Keyſerſperg / Tuͤrckheim
+                                <lb/>Die Staͤdte Baſel / Keyſerſperg / Tuͤrckheim
                                 Muͤnſter in S. Gregorienthal; Ober⸗ 
-                                <lb n="20"/>Ehenheim / Colmar /
+                                <lb/>Ehenheim / Colmar /
                                 Straßburg / Roßheim / Schlettſtatt / Hagenau / Cron⸗Weiſſen⸗ 
-                                <lb n="21"/>burg
+                                <lb/>burg
                                 / Landau / Muͤlhauſen im Sundgoͤw / Speyer / Wormbs / Franckfurt /
                                 Fried⸗ 
-                                <lb n="22"/>berg / Wetzlar / Metz / Tull / Verdun /
+                                <lb/>berg / Wetzlar / Metz / Tull / Verdun /
                                 Kauffmans⸗Sarbruͤck / Biſantz / und Genff. 
-                                <lb n="23"/>Darunter gleichwol
+                                <lb/>Darunter gleichwol
                                 nunmehr ſich viel befinden / die eximirt werden: als die Biſchoͤffe 
-                                <lb n="24"/>zu
+                                <lb/>zu
                                 Sitten / Loſann / Metz / Tull / Verdun / und Genff: der Abt zu
                                 Pfriem / im Biß⸗ 
-                                <lb n="25"/>thum Chur: die Graffſchafft Bitſch: die
+                                <lb/>thum Chur: die Graffſchafft Bitſch: die
                                 Staͤdte / Baſel / Muͤlhauſen im Sundgoͤw / 
-                                <lb n="26"/>Metz / Tull /
+                                <lb/>Metz / Tull /
                                 Verdun / Kauffmans⸗Sarbruͤck / Genff/ ꝛc. Von welchen zum Theil in 
-                                <lb n="27"/>Beſchreibung
+                                <lb/>Beſchreibung
                                 des Schweitzerlands / des Elſaß / der Untern⸗Pfaltz / (daſelbſten
                                 auch 
-                                <lb n="28"/>Savoja / Lothringen / Biſantz / Metz / Tull / Verdun /
+                                <lb/>Savoja / Lothringen / Biſantz / Metz / Tull / Verdun /
                                 Bitſch / und Kauffmans⸗Sar⸗ 
-                                <lb n="29"/>bruͤck / einkommen ſeyn) und des
+                                <lb/>bruͤck / einkommen ſeyn) und des
                                 Chur⸗und Unter⸗Rheiniſchen Creyſes / allbereit 
-                                <lb n="30"/>von uns
+                                <lb/>von uns
                                 moͤglicher / und gebuͤhrender Bericht / geſchehen. Die uͤbrige aber
                                 / und ihre 
-                                <lb n="31"/> beſch
+                                <lb/> beſch
                                 <supplied cert="high">e</supplied>hen
                                 vornehmſte und bekanteſte Staͤdte und Orthe ſollen in dieſem Tractat
                                 eingebracht 
-                                <lb n="32"/>werden; wie auch Gelnhauſen / und die Graffſchafft
+                                <lb/>werden; wie auch Gelnhauſen / und die Graffſchafft
                                 Naſſau⸗Beylſtein / ꝛc. ſo ſonſten 
-                                <lb n="33"/>zum Nieder⸗Rheiniſchen 
+                                <lb/>zum Nieder⸗Rheiniſchen 
                                 <name ref="mgndeve:event_Dreißigjähriger_Krieg">Dreißigjähriger Krieg</name>
                                 Creyß gehoͤrig ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten 
-                                <lb n="34"/>zum
+                                <lb/>zum
                                 Weſtphaͤliſchen Creyß gezogen wird. 
-                                <lb n="35"/>Und erſtlich zwar / was
+                                <lb/>Und erſtlich zwar / was
                                 das hochloͤbliche Fuͤrſtenthum und 
                                 <w lemma="Landgrafschaft">
                                 Landgraffſchafft</w>  
-                                <lb n="36"/>anbelangt / ſo hat Wilhelm Dilich eine
+                                <lb/>anbelangt / ſo hat Wilhelm Dilich eine
                                 Chronic davon ausgehen laſſen; damit aber 
-                                <lb n="37"/>nicht jederman
+                                <lb/>nicht jederman
                                 zufrieden geweſen / dieweil er im erſten Theil derſelben geſchrieben
                                 / das 
-                                <lb n="38"/>Ober⸗Heſſen / ſo viel das Lager anbetrifft / unter
+                                <lb/>Ober⸗Heſſen / ſo viel das Lager anbetrifft / unter
                                 andern / in ſich auch begreiffe / die Graff⸗ 
-                                <lb n="39"/>ſchafft Dietz /
+                                <lb/>ſchafft Dietz /
                                 das Rinckgau / die Wetterau / und derſelben etliche Reichs⸗item Ha⸗ 
-                                <lb n="40"/>nauiſch⸗Jſenbera⸗und
+                                <lb/>nauiſch⸗Jſenbera⸗und
                                 Maͤyntziſche Staͤdte und Schloͤſſer; die Graffſchafften Koͤ⸗ 
                                 <fw type="catch">nigſtein /</fw>
                     
@@ -1159,131 +1159,131 @@
                     
                                 <fw type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     
-                                <lb n="1"/>nigſtein
+                                <lb/>nigſtein
                                 / Solms / Naſſau / Witgenſtein / unter dem Vorwand / daß die
                                 Wetterau in Heſ⸗ 
-                                <lb n="2"/>ſen / weder dem Lager / noch der Herrſchafft
+                                <lb/>ſen / weder dem Lager / noch der Herrſchafft
                                 nach / gelegen / und die Wetterauiſche Grafen / 
-                                <lb n="3"/>oder Staͤdte /
+                                <lb/>oder Staͤdte /
                                 das Fuͤrſtenthum Heſſen anderſt nicht / als was etwan Lehenſchafft / 
-                                <lb n="4"/>Schutz
+                                <lb/>Schutz
                                 / Geleyt oder dergleichen ſonderbare Beding / particulariter
                                 mitbringen / re- 
-                                <lb n="5"/>cognoſciren; ſondern eine gar abgeſonderte
+                                <lb/>cognoſciren; ſondern eine gar abgeſonderte
                                 Landſchafft / ſowol als der Hundsruck / 
-                                <lb n="6"/>Weſterich / und andere
+                                <lb/>Weſterich / und andere
                                 / jederzeit geweſen / und noch. Was aber die Graffſchafft Naſſau⸗ 
-                                <lb n="7"/>Dillenberg
+                                <lb/>Dillenberg
                                 belange / iſt dieſelbe nicht allein nicht unter Heſſen gelegen /
                                 ſondern auch nicht 
-                                <lb n="8"/>in dem Creyſe / darein Heſſen gehoͤrig /
+                                <lb/>in dem Creyſe / darein Heſſen gehoͤrig /
                                 ſondern in dem Weſtphaͤliſchen Creyſe; wie auch 
-                                <lb n="9"/>Seyn /
+                                <lb/>Seyn /
                                 Virneburg / und andere anſehnliche Graff⸗und Herrſchafften mehr /
                                 begriffen. 
-                                <lb n="10"/>
+                                <lb/>
                                 
                     
                                 <milestone unit="section"/> ziehet beſagter Autor
                                 das Stifft Herßfeld / und andere Orthe / zu Nieder⸗Heſſen. 
-                                <lb n="11"/>Es
+                                <lb/>Es
                                 iſt aber darbey zu mercken / daß er einen Unterſchied zwiſchen
                                 Nieder⸗Heſſen / und 
-                                <lb n="12"/>dem niedern Fuͤrſtenthum Heſſen machet /
+                                <lb/>dem niedern Fuͤrſtenthum Heſſen machet /
                                 und zu dieſem letztern weder beſagte Stifſt / 
-                                <lb n="13"/>noch auch die
+                                <lb/>noch auch die
                                 Graffſchafft Ziegenhain / die ſonſten Heßiſch iſt / ziehen thut: Als
                                 wie er 
-                                <lb n="14"/>auch Ober⸗Heſſen / darzu er obbeſagte anderer Herren
+                                <lb/>auch Ober⸗Heſſen / darzu er obbeſagte anderer Herren
                                 Land und Staͤdte rechnet / viel 
-                                <lb n="15"/>groͤſſer / als das
+                                <lb/>groͤſſer / als das
                                 Ober⸗Fuͤrſtenthum Heſſen machet. Nieder⸗Heſſen liegt eigentlich zwi⸗ 
-                                <lb n="16"/>ſchen
+                                <lb/>ſchen
                                 dem Werra⸗und Diemelſtrom / zur Seiten / gegen Mitternachtwerts /
                                 hab es das 
-                                <lb n="17"/>Hertzogthum Braunſchweig: gegen Aufgang das Eißfeld
+                                <lb/>Hertzogthum Braunſchweig: gegen Aufgang das Eißfeld
                                 / und Thuͤringen; gegen 
-                                <lb n="18"/>Mittag das Franckenland / und einen
+                                <lb/>Mittag das Franckenland / und einen
                                 Theil der Wetterau; gegen Abend Ober⸗Heſ⸗ 
-                                <lb n="19"/>ſen; die
+                                <lb/>ſen; die
                                 Graffſchafft Waldeck / und das Stifft Paderborn. Petrus Bertius
                                 haͤlts auch 
-                                <lb n="20"/>mit dem Dilichio, was die obverſtandene frembde
+                                <lb/>mit dem Dilichio, was die obverſtandene frembde
                                 Herrſchafften belangt; und ſagt da⸗ 
-                                <lb n="21"/>her er Dilichius, daß des
+                                <lb/>her er Dilichius, daß des
                                 Heſſen⸗Landes Laͤnge ſich von Mittagwerts jenſeit des Mayns / 
-                                <lb n="22"/>gegen
+                                <lb/>gegen
                                 der Pfaltz / anhebe / und ende ſich an der Weſer / an den
                                 Braunſchweigiſch und 
-                                <lb n="23"/>Paderborniſchen Grentzen gegen
+                                <lb/>Paderborniſchen Grentzen gegen
                                 Mitternacht: Auf der rechten Seiten / nacher Auf⸗ 
-                                <lb n="24"/>gang der
+                                <lb/>gang der
                                 Sonnen / liegt das Thuͤringer Land / ſamt den angrentzenden
                                 Francken; 
-                                <lb n="25"/>und zur Lincken / oder gegen Abend / der Rhein / das
+                                <lb/>und zur Lincken / oder gegen Abend / der Rhein / das
                                 Trieriſche / Coͤllniſche / Bergiſche 
-                                <lb n="26"/>Gebiete / und endlich
+                                <lb/>Gebiete / und endlich
                                 auch ein Antheil von Weſtphalen. Maginus begreifft die Gren⸗ 
-                                <lb n="27"/>tzen
+                                <lb/>tzen
                                 in wenig Worten / und ſagt / Heſſen⸗Land habe von Morgen Thuͤringen
                                 / und 
-                                <lb n="28"/>von Mittag das Franckenland / von Abend Weſtphalen / und
+                                <lb/>von Mittag das Franckenland / von Abend Weſtphalen / und
                                 von Mitternacht das 
-                                <lb n="29"/>Hertzogthum Braunſchweig / das Bißthum
+                                <lb/>Hertzogthum Braunſchweig / das Bißthum
                                 Minden / und andere Orthe. Ober⸗Heſ⸗ 
-                                <lb n="30"/>ſen grentzet mit Francken
+                                <lb/>ſen grentzet mit Francken
                                 / der Pfaltz / Maͤyntz / Trier / und Coͤlln: Und das Nieder⸗ 
-                                <lb n="31"/>Heſſen
+                                <lb/>Heſſen
                                 mit Buchen / Thuͤringen / dem Eyßfelde / Braunſchweig / Paderborn /
                                 und 
-                                <lb n="32"/>Weſtphalen; welches untere Fuͤrſtenthum ſonſten zwiſchen
+                                <lb/>Weſtphalen; welches untere Fuͤrſtenthum ſonſten zwiſchen
                                 Thuͤringen / den Abteyen / 
-                                <lb n="33"/>Fulda und Herßfeld / dem Bißthum
+                                <lb/>Fulda und Herßfeld / dem Bißthum
                                 Paderborn / dem Hertzogthum Braunſchweig / 
-                                <lb n="34"/>und dem Eißfeld
+                                <lb/>und dem Eißfeld
                                 gelegen iſt. 
-                                <lb n="35"/>Es iſt Heſſen ein Berg⸗und Waldreich Land. Der
+                                <lb/>Es iſt Heſſen ein Berg⸗und Waldreich Land. Der
                                 Berge erſtlich zu gedencken / ſo ſe⸗ 
-                                <lb n="36"/>tzen wir fornan den
+                                <lb/>tzen wir fornan den
                                 beruͤhmten Griechiſchen Geographum Ptolomæum, der lib. 2. cap. 
-                                <lb n="37"/>11.
+                                <lb/>11.
                                 Geogr. zweyerley Heßiſcher Gebirge gedencket / als der Montium
                                 Melibocorum. 
-                                <lb n="38"/>Dahero kommt das Wort Catzenelenbogen / aus dem
+                                <lb/>Dahero kommt das Wort Catzenelenbogen / aus dem
                                 Cattimelibocenſes, nemlich die 
-                                <lb n="39"/>Catti vom Gebirge Meliboco, wie
+                                <lb/>Catti vom Gebirge Meliboco, wie
                                 Rhenanus 1. rerum German. pag. 56. gedencket / 
-                                <lb n="40"/>und ſich
+                                <lb/>und ſich
                                 ruͤhmet / daß er der erſte ſeye / ſo dieſen Urſprung erwieſen. Das
                                 andere 
-                                <lb n="41"/>Heßiſche Gebirg nennet gedachter Scribent Montes
+                                <lb/>Heßiſche Gebirg nennet gedachter Scribent Montes
                                 Abnobios. Von dieſen Gebir⸗ 
-                                <lb n="42"/>gen wo ſie gelegen / befinden ſich
+                                <lb/>gen wo ſie gelegen / befinden ſich
                                 unterſchiedliche Meynungen / darvon an ſeinem 
-                                <lb n="43"/>Orth ſoll
+                                <lb/>Orth ſoll
                                 gedacht werden. Unter den Gebirgen des Lands / deren Namen noch 
-                                <lb n="44"/>jetzo
+                                <lb/>jetzo
                                 im Brauch / iſt der Vogelsberg / wegen ſeiner Laͤnge und Groͤſſe der
                                 bekannteſt / 
-                                <lb n="45"/>und liegen auff demſelben viel feiner Orth / als
+                                <lb/>und liegen auff demſelben viel feiner Orth / als
                                 Ulrichſtein / Stormfels / Schotten. 
-                                <lb n="46"/>Was ſonſten vor Berge und
+                                <lb/>Was ſonſten vor Berge und
                                 Waͤlder in beyden Fuͤrſtenthumben / unter welchen das 
-                                <lb n="47"/>Nieder⸗Fuͤrſtenthum
+                                <lb/>Nieder⸗Fuͤrſtenthum
                                 ein recht Wald⸗Land iſt / ſeyen / kan man beſehen in der Coſmo- 
-                                <lb n="48"/>graphia
+                                <lb/>graphia
                                 Johann Rauen / cap. XIV. vom Heſſen⸗Land pag. 408. 409. 410. Jn
                                 dieſen 
-                                <lb n="49"/>Bergen giebt es allerley Metall / inſonderheit von
+                                <lb/>Bergen giebt es allerley Metall / inſonderheit von
                                 Silber / Kupffer / Bley und Eiſen: 
-                                <lb n="50"/>Es giebt auch gute
+                                <lb/>Es giebt auch gute
                                 Steinbruͤche / ſchoͤnen weiſſen Alabaſter / auch Schifferſtein / 
-                                <lb n="51"/>Tuffſtein
+                                <lb/>Tuffſtein
                                 / Gibs / Kalckſtein / und Stein⸗Kohlen: Und in den vielen Waͤldern
                                 ſtattliche 
-                                <lb n="52"/>Jagten und Maſt. Der Reinhards⸗Wald unter Caſſel /
+                                <lb/>Jagten und Maſt. Der Reinhards⸗Wald unter Caſſel /
                                 nacher dem Braunſchwei⸗ 
-                                <lb n="53"/>ger⸗Land gelegen / faͤhet bey
+                                <lb/>ger⸗Land gelegen / faͤhet bey
                                 Jmmenhauſen an / und hat in der Laͤnge und Breite 
                                 <fw type="catch">bey</fw>
                     
@@ -1296,157 +1296,157 @@
                                 <figure/>
                             </p>
                         </div>
-                        <lb n="1"/>
+                        <lb/>
                         <div type="article" corresp="mgndpla:place_Regensburg" xml:id="band_07_art_place_Regensburg">
                             <head>
                                 <name ref="mgndpla:place_Regensburg">Regensburg</name> / an der
                                 Werra.</head>
-                            <lb n="2"/>
+                            <lb/>
                             <p>JSt ein Stadt in Nieder⸗Heſſen / 
-                                <lb n="3"/>zugenandt in den Sohden. Soll 
-                                <lb n="4"/>wegen
+                                <lb/>zugenandt in den Sohden. Soll 
+                                <lb/>wegen
                                 der Saltz⸗Sohden ſo viel 
-                                <lb n="5"/>heiſſen / als Hallendorff / inmaſſen
+                                <lb/>heiſſen / als Hallendorff / inmaſſen
                                 auch 
-                                <lb n="6"/>andere Orth von ihren Sohden oder Suͤl⸗ 
-                                <lb n="7"/>tzen / alſo
+                                <lb/>andere Orth von ihren Sohden oder Suͤl⸗ 
+                                <lb/>tzen / alſo
                                 genent werden. Hingegen ſagt 
-                                <lb n="8"/>man auch / daß die Stadt von
+                                <lb/>man auch / daß die Stadt von
                                 etlichen 
-                                <lb n="9"/>Doͤrffern / ſo in dieſer Gegend gelegen / 
-                                <lb n="10"/>und
+                                <lb/>Doͤrffern / ſo in dieſer Gegend gelegen / 
+                                <lb/>und
                                 von welcher auch noch etwas Anzei⸗ 
-                                <lb n="11"/>gung und zerfallene
+                                <lb/>gung und zerfallene
                                 Gemaͤuer uͤbrig ſeyn / 
-                                <lb n="12"/>zuſammen gebauet / und derowegen Al⸗ 
-                                <lb n="13"/>lein
+                                <lb/>zuſammen gebauet / und derowegen Al⸗ 
+                                <lb/>lein
                                 Dorff genennet worden / aus wel⸗ 
-                                <lb n="14"/>chen hernach der Nahm
+                                <lb/>chen hernach der Nahm
                                 Allendorff er⸗ 
-                                <lb n="15"/>wachſen. Dieſe Stadt ligt in einer luſtigen 
-                                <lb n="16"/>Gegend
+                                <lb/>wachſen. Dieſe Stadt ligt in einer luſtigen 
+                                <lb/>Gegend
                                 / mit hohen Bergen umbſchloſ⸗ 
-                                <lb n="17"/>ſen. Und hat es da / wegen
+                                <lb/>ſen. Und hat es da / wegen
                                 Theilug des 
-                                <lb n="18"/>Strohms / drey ſteinerne Bruͤcken uͤber 
-                                <lb n="19"/>die
+                                <lb/>Strohms / drey ſteinerne Bruͤcken uͤber 
+                                <lb/>die
                                 Werra; uͤber welche zwo Bruͤcke gehen 
-                                <lb n="20"/>auß der Statt biß zum
+                                <lb/>auß der Statt biß zum
                                 Saltzbronnen und 
-                                <lb n="21"/>Sohden, deren etwa bey 60. Dahero die 
-                                <lb n="22"/>Stadt
+                                <lb/>Sohden, deren etwa bey 60. Dahero die 
+                                <lb/>Stadt
                                 und das gantze Land, in welches 
-                                <lb n="23"/>das Saltz haͤuffig verfuͤhret
+                                <lb/>das Saltz haͤuffig verfuͤhret
                                 wird / groſſen 
-                                <lb n="24"/>Nutzen haben / wie ſolches auch dieſe Vers 
-                                <lb n="25"/>
+                                <lb/>Nutzen haben / wie ſolches auch dieſe Vers 
+                                <lb/>
                                 andeuten: 
-                                <lb n="26"/>Urbi dant magnis pons, mons, fons, com- 
-                                <lb n="27"/>moda
+                                <lb/>Urbi dant magnis pons, mons, fons, com- 
+                                <lb/>moda
                                 rebus, 
-                                <lb n="28"/>Qualia vix alibi Teutona terra tenet. 
-                                <lb n="29"/>Dieſer Ort
+                                <lb/>Qualia vix alibi Teutona terra tenet. 
+                                <lb/>Dieſer Ort
                                 / ſo ziemblich weit umbfan⸗ 
-                                <lb n="30"/>gen iſt / hatte 2. Kirchen / und
+                                <lb/>gen iſt / hatte 2. Kirchen / und
                                 ein ſchoͤnes 
-                                <lb n="31"/>Rathhauß / war auch ſonſten ziemblich 
-                                <lb n="32"/>ſtarck
+                                <lb/>Rathhauß / war auch ſonſten ziemblich 
+                                <lb/>ſtarck
                                 und eng beyſammen gebauet / auſſer / 
-                                <lb n="33"/>daß kein Fuͤrſtliches
+                                <lb/>daß kein Fuͤrſtliches
                                 Schloß / ſondern nur 
-                                <lb n="34"/>ein Ampthauß da war; welches aber alles 
-                                <lb n="35"/>des
+                                <lb/>ein Ampthauß da war; welches aber alles 
+                                <lb/>des
                                 Jahrs 1637. eingeaͤſchert worden / daß 
-                                <lb n="36"/>ſchier nichts ſtehen
+                                <lb/>ſchier nichts ſtehen
                                 blieben. Wird aber / oh⸗ 
-                                <lb n="37"/>ne Zweiffel/ nunmehr fein wieder
+                                <lb/>ne Zweiffel/ nunmehr fein wieder
                                 gebauet 
-                                <lb n="38"/>ſeyn. Zwiſchen dieſer Statt / und den So⸗ 
-                                <lb n="39"/>den
+                                <lb/>ſeyn. Zwiſchen dieſer Statt / und den So⸗ 
+                                <lb/>den
                                 oder Saltzwerck (ſo wegen der vielen 
-                                <lb n="40"/>Gebaͤuen der Soͤder / und
+                                <lb/>Gebaͤuen der Soͤder / und
                                 auch anderer / 
-                                <lb n="41"/>eine eigene Gemeinde / und Staͤttlein / doch 
-                                <lb n="42"/>ohne
+                                <lb/>eine eigene Gemeinde / und Staͤttlein / doch 
+                                <lb/>ohne
                                 Mauren / machet /) iſt eine dreyfache 
-                                <lb n="43"/>ſchoͤne ſteinerne
+                                <lb/>ſchoͤne ſteinerne
                                 Brucken; dieweil ſich die 
-                                <lb n="44"/>Werra diß Orts auch in ſo viel
+                                <lb/>Werra diß Orts auch in ſo viel
                                 Fluͤſſe thei⸗ 
-                                <lb n="45"/>let. Beſagtes Saltzwerck belangend / iſt 
-                                <lb n="46"/>ſolches
+                                <lb/>let. Beſagtes Saltzwerck belangend / iſt 
+                                <lb/>ſolches
                                 ein ſonderlich wunderbahres Ge⸗ 
-                                <lb n="47"/>ſchoͤpff / und groſſe Gnad
+                                <lb/>ſchoͤpff / und groſſe Gnad
                                 Gottes / daß die 
-                                <lb n="48"/>Quelle ſo ſtarck iſt / daß ſie ſo bald
+                                <lb/>Quelle ſo ſtarck iſt / daß ſie ſo bald
                                 etliche 
-                                <lb n="49"/>Muͤhlen treiben koͤnte; geſtalt dann / burch 
-                                <lb n="50"/>die
+                                <lb/>Muͤhlen treiben koͤnte; geſtalt dann / burch 
+                                <lb/>die
                                 Waſſerkunſt / der Brunne in gewiſſe 
-                                <lb n="51"/>Sammelkaſten gezogen / und
+                                <lb/>Sammelkaſten gezogen / und
                                 von darauß / 
-                                <lb n="52"/>vor der Statt / wol ein Muſqueten Schuß 
-                                <lb n="53"/>hinauß
+                                <lb/>vor der Statt / wol ein Muſqueten Schuß 
+                                <lb/>hinauß
                                 / in viele unterſchiedliche Leckwer⸗ 
-                                <lb n="54"/>cke und Koͤten /
+                                <lb/>cke und Koͤten /
                                 gefuͤhret wird / deren im 
-                                <lb n="55"/>Soden Fleck gelegnen zugeſchweigen .
+                                <lb/>Soden Fleck gelegnen zugeſchweigen .
                                 Und 
-                                <lb n="56"/>iſt dieſes Saltz weit beſſer / und kraͤfftiger / 
-                                <lb n="57"/>als
+                                <lb/>iſt dieſes Saltz weit beſſer / und kraͤfftiger / 
+                                <lb/>als
                                 viel anders / ſo an umliegenden Orten / 
-                                <lb n="58"/>und Saltzwercken /
+                                <lb/>und Saltzwercken /
                                 gemacht wird. Der 
-                                <lb n="59"/>Brunne ligt gantz in der Ebne / ſehr tieff / 
-                                <lb n="60"/>und
+                                <lb/>Brunne ligt gantz in der Ebne / ſehr tieff / 
+                                <lb/>und
                                 faſt an einem ſumpfechten Ort / und 
-                                <lb n="61"/>wird durch ein Pompenwerck
+                                <lb/>wird durch ein Pompenwerck
                                 mit Pferden / 
-                                <lb n="62"/>an einem lauffenden Schwengel / in ein be⸗ 
-                                <lb n="63"/>ſonders
+                                <lb/>an einem lauffenden Schwengel / in ein be⸗ 
+                                <lb/>ſonders
                                 daruͤber gebautes Hauß / gezogen. 
-                                <lb n="64"/>Die Koͤten und Pfannen /
+                                <lb/>Die Koͤten und Pfannen /
                                 darinne das 
-                                <lb n="65"/>Saltz geſotten wird / ligen rings umb den 
-                                <lb n="66"/>Brunnen
+                                <lb/>Saltz geſotten wird / ligen rings umb den 
+                                <lb/>Brunnen
                                 her / und ſeyn deren ſehr viel; und 
-                                <lb n="67"/>werden zu dieſem
+                                <lb/>werden zu dieſem
                                 Saltzwerck nicht allein 
-                                <lb n="68"/>die Kohlen am Meißner / ſondern auch
+                                <lb/>die Kohlen am Meißner / ſondern auch
                                 viel 
-                                <lb n="69"/>hundert oder tauſend Schock reiſich ge⸗ 
-                                <lb n="70"/>braucht /
+                                <lb/>hundert oder tauſend Schock reiſich ge⸗ 
+                                <lb/>braucht /
                                 auch ein groſſe Menge Schied⸗ 
-                                <lb n="71"/>holtz verbrant. Doch iſt das
+                                <lb/>holtz verbrant. Doch iſt das
                                 Saltz / welches 
-                                <lb n="72"/>bey Holtz und Reiſig geſotten wird / weit 
-                                <lb n="73"/>kraͤfftiger
+                                <lb/>bey Holtz und Reiſig geſotten wird / weit 
+                                <lb/>kraͤfftiger
                                 / und beſtaͤndiger / als jenes / ſo 
-                                <lb n="74"/>mit Steinkohlen erhitzet
+                                <lb/>mit Steinkohlen erhitzet
                                 wird. Dann / ne⸗ 
-                                <lb n="75"/>ben dem Schwefel eine ſonderliche Feuch⸗ 
-                                <lb n="76"/>tigkeit
+                                <lb/>ben dem Schwefel eine ſonderliche Feuch⸗ 
+                                <lb/>tigkeit
                                 in den Steinkolen iſt / welche das ſie⸗ 
-                                <lb n="77"/>dende Saltz an ſich
+                                <lb/>dende Saltz an ſich
                                 zeucht. Es ligt die ge⸗ 
-                                <lb n="78"/>melte Stadt Allendorff / unnd
+                                <lb/>melte Stadt Allendorff / unnd
                                 zugehoͤrig 
-                                <lb n="79"/>Ampt (ſo gering iſt / und in wenig Dorff⸗ 
-                                <lb n="80"/>ſchafften
+                                <lb/>Ampt (ſo gering iſt / und in wenig Dorff⸗ 
+                                <lb/>ſchafften
                                 beſtehet;) wie auch die gemelte 
-                                <lb n="81"/>Soden oder Saltzwerck / gar in
+                                <lb/>Soden oder Saltzwerck / gar in
                                 einem ſehr 
-                                <lb n="82"/>geringen Bezirck / zwiſchen ſehr hohen 
-                                <lb n="83"/>Bergen
+                                <lb/>geringen Bezirck / zwiſchen ſehr hohen 
+                                <lb/>Bergen
                                 / ſo voller Steinklippen ſeyn; dar⸗ 
-                                <lb n="84"/>unter ſonderlich der
+                                <lb/>unter ſonderlich der
                                 Goburg / und Hoͤhe⸗ 
-                                <lb n="85"/>berg / den Vorzug haben. Jn den Waͤlden / 
-                                <lb n="86"/>ſo
+                                <lb/>berg / den Vorzug haben. Jn den Waͤlden / 
+                                <lb/>ſo
                                 viel deſſen der Stadt zugehoͤrig / wie auch 
-                                <lb n="87"/>an der hohen
+                                <lb/>an der hohen
                                 Fuͤrſte ( ſo ein Vorgebuͤrg / 
-                                <lb n="88"/>und Gehoͤltz / des Meißners iſt
+                                <lb/>und Gehoͤltz / des Meißners iſt
                                 / ) hat die 
                                 <fw type="catch">Statt</fw>
                 
@@ -1459,88 +1459,88 @@
                                 <fw type="header">Beſchreibung der
                                 vornehmſten Orth</fw>
                 
-                                <lb n="1"/> Statt die Freyheit / vor allen andern im 
-                                <lb n="2"/>Lande
+                                <lb/> Statt die Freyheit / vor allen andern im 
+                                <lb/>Lande
                                 / daß ſie von S. Veits / biß auf S. 
-                                <lb n="3"/>Bartholomaͤi Tag / roth
+                                <lb/>Bartholomaͤi Tag / roth
                                 Wildpreth; und 
-                                <lb n="4"/>dann von S. Michaels / bis auf S. An⸗ 
-                                <lb n="5"/>dreas
+                                <lb/>dann von S. Michaels / bis auf S. An⸗ 
+                                <lb/>dreas
                                 Tag / ſchwartz Wildpreth / jagen und 
-                                <lb n="6"/>fangen moͤge / aber nicht
+                                <lb/>fangen moͤge / aber nicht
                                 ſchieſſen: derhal⸗ 
-                                <lb n="7"/>ben auch ihrer Weidleut keiner einige
+                                <lb/>ben auch ihrer Weidleut keiner einige
                                 Buͤch⸗ 
-                                <lb n="8"/>ſe mit auffs Jagen bringen darff. Der 
-                                <lb n="9"/>Handel und
+                                <lb/>ſe mit auffs Jagen bringen darff. Der 
+                                <lb/>Handel und
                                 die 
                                 <choice>
                                     <sic>Nahrnng</sic>
                                     <corr>Nahrung</corr>
                                 </choice> /
                                 iſt ſonſten / we⸗ 
-                                <lb n="10"/>gen des Saltzwercks / zimlich ſtarck allda; 
-                                <lb n="11"/>und
+                                <lb/>gen des Saltzwercks / zimlich ſtarck allda; 
+                                <lb/>und
                                 weil wenig Frucht dieſes Orts wach⸗ 
-                                <lb n="12"/>ſet; ſo hat die Natur
+                                <lb/>ſet; ſo hat die Natur
                                 ſolches mit zimlichem 
-                                <lb n="13"/>gutem Weinwachs erſetzet. 
-                                <lb n="14"/>Die Arth
+                                <lb/>gutem Weinwachs erſetzet. 
+                                <lb/>Die Arth
                                 des Saltzbronnens iſt einer 
-                                <lb n="15"/>wunderbahren Beſchaffenheit /
+                                <lb/>wunderbahren Beſchaffenheit /
                                 nemlich je 
-                                <lb n="16"/>hoͤher das Waſſer in der Werra / je mehr 
-                                <lb n="17"/>auch
+                                <lb/>hoͤher das Waſſer in der Werra / je mehr 
+                                <lb/>auch
                                 der Sohle in dem Bronn; je mehr a 
-                                <lb n="18"/>ber derſelben / je
+                                <lb/>ber derſelben / je
                                 kraͤfftiger ſie befunden / 
-                                <lb n="19"/>nemlich 8. loͤtig / und hingegen je
+                                <lb/>nemlich 8. loͤtig / und hingegen je
                                 weniger / 
-                                <lb n="20"/>je unkraͤfftiger / und am Gewicht geringer. 
-                                <lb n="21"/>Es
+                                <lb/>je unkraͤfftiger / und am Gewicht geringer. 
+                                <lb/>Es
                                 iſt aber der Bronn ſehr ſtarck / alſo daß 
-                                <lb n="22"/>er bey 84. Kohten
+                                <lb/>er bey 84. Kohten
                                 und Pfannen / zu verſe⸗ 
-                                <lb n="23"/>hen genugſam / in welcher er durch ein
+                                <lb/>hen genugſam / in welcher er durch ein
                                 be⸗ 
-                                <lb n="24"/>ſonder Kunſtwerck geleitet wird. So hat 
-                                <lb n="25"/>man uͤber
+                                <lb/>ſonder Kunſtwerck geleitet wird. So hat 
+                                <lb/>man uͤber
                                 das erſtlich im Jahr 1579. mit 
-                                <lb n="26"/>Stein⸗Kohlen zu ſieden
+                                <lb/>Stein⸗Kohlen zu ſieden
                                 angefangen / auch 
-                                <lb n="27"/>ſolche Arth des Siedens nunmehr alſo an⸗ 
-                                <lb n="28"/>geordnet
+                                <lb/>ſolche Arth des Siedens nunmehr alſo an⸗ 
+                                <lb/>geordnet
                                 / daß / wo man dazumahlen 22. 
-                                <lb n="29"/>Maaß Kohlen verbrauchen muͤſſen
+                                <lb/>Maaß Kohlen verbrauchen muͤſſen
                                 / anje⸗ 
-                                <lb n="30"/>tzo 12. gnug ſeyn. Die Herren Landgrafſen 
-                                <lb n="31"/>in
+                                <lb/>tzo 12. gnug ſeyn. Die Herren Landgrafſen 
+                                <lb/>in
                                 Heſſen haben den Orth mit unterſchied⸗ 
-                                <lb n="32"/>lichen Freyheiten
+                                <lb/>lichen Freyheiten
                                 begabt. Es ſeyn auch vor 
-                                <lb n="33"/>Alters viel feſte Berghaͤuſer zur
+                                <lb/>Alters viel feſte Berghaͤuſer zur
                                 Defen⸗ 
-                                <lb n="34"/>ſion der Sohden anfaͤnglich erbauet wor⸗ 
-                                <lb n="35"/>den: Vor
+                                <lb/>ſion der Sohden anfaͤnglich erbauet wor⸗ 
+                                <lb/>den: Vor
                                 andern aber das jenige / ſo gleich 
-                                <lb n="36"/>obig den Sohden auf dem
+                                <lb/>obig den Sohden auf dem
                                 Berg geſtan⸗ 
-                                <lb n="37"/>den / und Weſterburg genand worden iſt. 
-                                <lb n="38"/>Bey
+                                <lb/>den / und Weſterburg genand worden iſt. 
+                                <lb/>Bey
                                 dieſem Teutſchen Krieg iſt allhier zu 
-                                <lb n="39"/>underſchieden mahlen
+                                <lb/>underſchieden mahlen
                                 groſſer Schade ge⸗ 
-                                <lb n="40"/>ſchehen / ſonderlich Anno 1632. da der von 
-                                <lb n="41"/>Pappenheim
+                                <lb/>ſchehen / ſonderlich Anno 1632. da der von 
+                                <lb/>Pappenheim
                                 Witzenhauſen / Eſchwegen / 
-                                <lb n="42"/>und Drendelburg erobert / deren
+                                <lb/>und Drendelburg erobert / deren
                                 Occupi⸗ 
-                                <lb n="43"/>rung gedacht wird im 2. Theil des Theatri 
-                                <lb n="44"/>Europæi.
+                                <lb/>rung gedacht wird im 2. Theil des Theatri 
+                                <lb/>Europæi.
                                 Jn dieſer Statt iſt geboren 
-                                <lb n="45"/>der wohlberuͤmte Theologus D.
+                                <lb/>der wohlberuͤmte Theologus D.
                                 Balthaſar 
-                                <lb n="46"/>
+                                <lb/>
 					
                                 <table>
                                     
@@ -1554,7 +1554,7 @@
                                         <cell cols="3">Dieterich der Vierdt.</cell>
                                         
                                         <cell>Gotschalck. 
-                                            <lb n="47"/>Wilhelm / ἄπαις.</cell>
+                                            <lb/>Wilhelm / ἄπαις.</cell>
                                     </row>
                                     
                                     <row>
@@ -1562,153 +1562,153 @@
                                         <cell>Gotschalck.</cell>
                                         
                                         <cell>Joh. Dieterich der 
-                                            <lb n="48"/>fuͤnffte ſtarb. 
-                                            <lb n="49"/>1571.</cell>
+                                            <lb/>fuͤnffte ſtarb. 
+                                            <lb/>1571.</cell>
                                         
                                         <cell>Frantz 
-                                            <lb n="50"/>ſtarb 
-                                            <lb n="51"/>ohne Kinder.</cell>
+                                            <lb/>ſtarb 
+                                            <lb/>ohne Kinder.</cell>
                                     </row>
                                     
                                     <row>
                                         
                                         <cell>Chriſtoff ſtarb vor 
-                                            <lb n="52"/>dem Vatter 1567.</cell>
+                                            <lb/>dem Vatter 1567.</cell>
                                     </row>
                                     
                                     <row>
                                         
                                         <cell>Walpurga dieſes Tochter / ward zur 
-                                            <lb n="53"/>Ehe genommen
+                                            <lb/>Ehe genommen
                                 von Graf Frantzen 
-                                            <lb n="54"/>zu Waldecken / Joannis Pii Sohne.</cell>
+                                            <lb/>zu Waldecken / Joannis Pii Sohne.</cell>
                                     </row>
                                 </table> 
 					
-                                <lb n="55"/>
+                                <lb/>
                                 Menzerus.</p>
                         </div>
-                        <lb n="56"/>
+                        <lb/>
                         <div type="article" xml:id="band_07_art_some_article5">
                             <head>Arolſen.</head>
-                            <lb n="57"/>
+                            <lb/>
                             <p>LJgt in der Graffſchaft Waldeck / und iſt 
-                                <lb n="58"/>Anfangs ein Cloſter
+                                <lb/>Anfangs ein Cloſter
                                 geweſen / darnach zu 
-                                <lb n="59"/>einem Graͤfflichen Sitz gemacht worden. 
-                                <lb n="60"/>Volquinus,
+                                <lb/>einem Graͤfflichen Sitz gemacht worden. 
+                                <lb/>Volquinus,
                                 Graf zu Waldeck / ward im 
-                                <lb n="61"/>Jahr 1131. zum Edelvogt von der
+                                <lb/>Jahr 1131. zum Edelvogt von der
                                 Stiffte⸗ 
-                                <lb n="62"/>rin Orpe wel⸗ 
-                                <lb n="63"/>ches auch im Jahr 1234. begabete
+                                <lb/>rin Orpe wel⸗ 
+                                <lb/>ches auch im Jahr 1234. begabete
                                 Adolff 
-                                <lb n="64"/>Graff zu Schwalenberg mit dem Bocken⸗ 
-                                <lb n="65"/>ſtrot /
+                                <lb/>Graff zu Schwalenberg mit dem Bocken⸗ 
+                                <lb/>ſtrot /
                                 einem Wald. Jm Jahr 1640. hielte 
-                                <lb n="66"/>allda Beylaͤger der
+                                <lb/>allda Beylaͤger der
                                 Schwediſche General 
-                                <lb n="67"/>Feld⸗Marſchalck Banner umb den 16. 26. 
-                                <lb n="68"/>Septembr.
+                                <lb/>Feld⸗Marſchalck Banner umb den 16. 26. 
+                                <lb/>Septembr.
                                 mit einem Fuͤrſtlichen Marg⸗ 
-                                <lb n="69"/>graͤffiſchen Fraͤulein von
+                                <lb/>graͤffiſchen Fraͤulein von
                                 Baden⸗Dur⸗ 
-                                <lb n="70"/>lach / welche allhie / in der Reſidentz ihres 
-                                <lb n="71"/>Schwagern
+                                <lb/>lach / welche allhie / in der Reſidentz ihres 
+                                <lb/>Schwagern
                                 / Herrn Graffen Volradens 
-                                <lb n="72"/>von Waldeck / ſich damahln befunden:
+                                <lb/>von Waldeck / ſich damahln befunden:
                                 dem 
-                                <lb n="73"/>Bericht nach / hatte dieſen Orth An. 1650. 
-                                <lb n="74"/>im
+                                <lb/>Bericht nach / hatte dieſen Orth An. 1650. 
+                                <lb/>im
                                 Hornung / Herr Graf Georg Friede⸗ 
-                                <lb n="75"/>rich zu Waldeck.</p>
+                                <lb/>rich zu Waldeck.</p>
                         </div>
-                        <lb n="76"/>
+                        <lb/>
                         <div type="article" xml:id="band_07_art_Schloss_Regensburg">
                             <head>Aſſenheim.</head>
-                            <lb n="77"/>
+                            <lb/>
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat 
-                                <lb n="78"/>ſeiner
+                                <lb/>ſeiner
                                 Antiquitet viel Zeugnnſſen / alſo dz 
-                                <lb n="79"/>dafuͤr gehalten wird / es
+                                <lb/>dafuͤr gehalten wird / es
                                 auch noch zuruͤck in 
-                                <lb n="80"/>paganiſmum reichet / wie das genandte 
-                                <lb n="81"/>Steinhauß
+                                <lb/>paganiſmum reichet / wie das genandte 
+                                <lb/>Steinhauß
                                 auf dem Marckt / oder Straſſen / 
-                                <lb n="82"/>und ſonderlich der groſſe
+                                <lb/>und ſonderlich der groſſe
                                 hohe dicke Anti⸗ 
-                                <lb n="83"/>quitaͤten Thurn ausweiſet / welcher Thurn 
-                                <lb n="84"/>wol
+                                <lb/>quitaͤten Thurn ausweiſet / welcher Thurn 
+                                <lb/>wol
                                 dem Lug ins Land / oder Solothurn / 
-                                <lb n="85"/>oder ſonſten faſt
+                                <lb/>oder ſonſten faſt
                                 nachoͤhmet / wie die Ge⸗ 
-                                <lb n="86"/>ſtalt und Ehnlichkeit ausweiſet. Bey
+                                <lb/>ſtalt und Ehnlichkeit ausweiſet. Bey
                                 den 
-                                <lb n="87"/>Zeiten der Tempel⸗Herren iſt es ein feiner 
-                                <lb n="88"/>veſter
+                                <lb/>Zeiten der Tempel⸗Herren iſt es ein feiner 
+                                <lb/>veſter
                                 Orth geweſen / und der Tempel bey 
-                                <lb n="89"/>dem Thurn / deſſen Stuͤck
+                                <lb/>dem Thurn / deſſen Stuͤck
                                 noch ſtehet / iſt 
-                                <lb n="90"/>wol zu ſehen / als ein recht Antiquitaͤt.
+                                <lb/>wol zu ſehen / als ein recht Antiquitaͤt.
                                 Das 
-                                <lb n="91"/>Waſſer Nidd gehet faſt umb das Caſtrum 
-                                <lb n="92"/>und
+                                <lb/>Waſſer Nidd gehet faſt umb das Caſtrum 
+                                <lb/>und
                                 Staͤttlein herumb. Bey der Ober⸗ 
-                                <lb n="93"/>Pforten ſihet man / daß es
+                                <lb/>Pforten ſihet man / daß es
                                 ein wolverwahr⸗ 
-                                <lb n="94"/>ter Orth geweſen / dann das Waſſer rings 
-                                <lb n="95"/>umbher
+                                <lb/>ter Orth geweſen / dann das Waſſer rings 
+                                <lb/>umbher
                                 gangen / mit auffziehenden Bruͤ⸗ 
-                                <lb n="96"/>cken verwahrt. Es hat ein
+                                <lb/>cken verwahrt. Es hat ein
                                 treflich Frucht⸗ 
-                                <lb n="97"/>land / und iſt quaſi meditullium Wettera- 
-                                <lb n="98"/>viæ:
+                                <lb/>land / und iſt quaſi meditullium Wettera- 
+                                <lb/>viæ:
                                 Hat einen trefflichen Weinwachs 
-                                <lb n="99"/>in unterſchiedenen Bergen: Gut
+                                <lb/>in unterſchiedenen Bergen: Gut
                                 Almey / 
-                                <lb n="100"/>Weyde / und zimlich Wieſen: Auch hat es 
-                                <lb n="101"/>gute
+                                <lb/>Weyde / und zimlich Wieſen: Auch hat es 
+                                <lb/>gute
                                 Beholtzung aus 
                                 <choice>
                                     <abbr>dreyẽ</abbr>
                                     <expan>dreyen</expan>
                                 </choice>
                                 Waͤlden. Lang⸗ 
-                                <lb n="102"/>hard / Auwen / und Hanau genandt. Und 
-                                <lb n="103"/>ob
+                                <lb/>hard / Auwen / und Hanau genandt. Und 
+                                <lb/>ob
                                 es woldreyer Herꝛn Bottmaͤßigkeit un⸗ 
-                                <lb n="104"/>terworffen / Jſenburg /
+                                <lb/>terworffen / Jſenburg /
                                 Solms / und Ha⸗ 
-                                <lb n="105"/>nau / ſo iſt es doch nicht ſchuldig Frondienſt 
-                                <lb n="106"/>zu
+                                <lb/>nau / ſo iſt es doch nicht ſchuldig Frondienſt 
+                                <lb/>zu
                                 thun. Es hat dieſes Staͤttlein und Bur⸗ 
-                                <lb n="107"/>gerſchafft ein gute
+                                <lb/>gerſchafft ein gute
                                 Fiſcherey von dem groſ⸗ 
-                                <lb n="108"/>ſen Steg und guͤldenen Badden (alſo
+                                <lb/>ſen Steg und guͤldenen Badden (alſo
                                 ge⸗ 
-                                <lb n="109"/>nant) an / biß an die Muͤhl / dabey ſich die 
-                                <lb n="110"/>Burgerey
+                                <lb/>nant) an / biß an die Muͤhl / dabey ſich die 
+                                <lb/>Burgerey
                                 wol befindet.</p>
                         </div>
                         <div type="additional">
                             <head>Arolſen.</head>
-                            <lb n="111"/>
+                            <lb/>
                             <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua. 
-                                <lb n="112"/>At vero eos et accusam et justo duo
+                                <lb/>At vero eos et accusam et justo duo
                                 dolores et ea rebum.
-                                <lb n="113"/> Stet clita kasd gubergren, no sea
+                                <lb/> Stet clita kasd gubergren, no sea
                                 takimata sanctus est Lorem ipsum dolor sit amet. 
-                                <lb n="114"/>Lorem ipsum
+                                <lb/>Lorem ipsum
                                 dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                                 voluptua. 
-                                <lb n="115"/>At vero eos et accusam et justo duo dolores et ea
+                                <lb/>At vero eos et accusam et justo duo dolores et ea
                                 rebum.
-                                <lb n="116"/> Stet clita kasd gubergren, no sea takimata sanctus est
+                                <lb/> Stet clita kasd gubergren, no sea takimata sanctus est
                                 Lorem ipsum dolor sit amet.
-                                <lb n="117"/>
+                                <lb/>
                             </p>
                         </div>
                         <div type="postface">
@@ -1743,7 +1743,7 @@
                                 Kaͤyſerlicher Hoff⸗ Cammerrath / unnd Muͤntzmeiſter; ſo ſelbigen
                                 Tags / daran dieſe Erbhuldigung geſchehen / zuvor / morgens fruͤhe /
                                 vor einen Land⸗ mann auffgenommen wor⸗ den iſt. 
-                                <lb n="118"/>
+                                <lb/>
                             </p>
                         </div>
                         <pb n="13" facs="testdoi3.jpg"/>
@@ -1770,19 +1770,19 @@
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
-                                    <lb n="1"/>At vero eos et accusam et justo
+                                    <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
-                                    <lb n="2"/> Stet clita kasd gubergren, no sea
+                                    <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet. 
-                                    <lb n="3"/>Lorem
+                                    <lb/>Lorem
                                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
-                                    <lb n="4"/>At vero eos et accusam et justo
+                                    <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
-                                    <lb n="5"/> Stet clita kasd gubergren, no sea
+                                    <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet.
-                                    <lb n="6"/>
+                                    <lb/>
                                 </p>
                             </div>
                             <div type="article">
@@ -1790,19 +1790,19 @@
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
-                                    <lb n="7"/>At vero eos et accusam et justo
+                                    <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
-                                    <lb n="8"/> Stet clita kasd gubergren, no sea
+                                    <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet. 
-                                    <lb n="9"/>Lorem
+                                    <lb/>Lorem
                                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
-                                    <lb n="10"/>At vero eos et accusam et justo
+                                    <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
-                                    <lb n="11"/> Stet clita kasd gubergren, no sea
+                                    <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet.
-                                    <lb n="12"/>
+                                    <lb/>
                                 </p>
                             </div>
                         </div>
@@ -1813,128 +1813,128 @@
         <back>
             <pb n="15" facs="testdoi15.jpg"/>
             <figure/>
-            <lb n="1"/>
+            <lb/>
             <div type="index" n="1">
                 <head>Namen ⸗Regiſter</head>
-                <lb n="2"/>
+                <lb/>
                 <p>Der Landſchafften / Gaͤw / Thaͤler / Staͤdt / Staͤdtlein / 
-                    <lb n="3"/>Flecken /
+                    <lb/>Flecken /
                     Doͤrffer / Cloͤſter / Schloͤſſer / Waſſer / Berge / Waͤlder / 
-                    <lb n="4"/>Hoſpitalen /
+                    <lb/>Hoſpitalen /
                     ꝛc. ſo in dieſem Tractat von Heſſen / und theils an⸗ 
-                    <lb n="5"/>grentzenden Landen /
+                    <lb/>grentzenden Landen /
                     ꝛc. zu finden. 
-                    <lb n="6"/>
+                    <lb/>
                 </p>
                 <div n="2">
                     <head>A.</head>
                     <list>
                         
-                        <lb n="7"/>
+                        <lb/>
                         
                         <item>AAr / 
                             <ref>fl. 18.</ref>
                         </item>
                         
-                        <lb n="8"/>
+                        <lb/>
                         
                         <item>Abbtswald / 
                             <ref>5.</ref>
                         </item>
                         
-                        <lb n="9"/>
+                        <lb/>
                         
                         <item>Abnobii montes, 
                             <ref>4.</ref>
                             <ref> 8.</ref>
                         </item>
                         
-                        <lb n="10"/>
+                        <lb/>
                         
                         <item>Adolffs⸗Eck / 
                             <ref>95.</ref>
                         </item>
                         
-                        <lb n="11"/>
+                        <lb/>
                         
                         <item>Aldenborg / 
                             <ref>110.</ref>
                         </item>
                         
-                        <lb n="12"/>
+                        <lb/>
                         
                         <item>Alheimer / 
                             <ref>15.</ref>
                         </item>
                         
-                        <lb n="13"/>
+                        <lb/>
                         
                         <item>Allendorff / 
                             <ref>19.</ref> 
                             <ref>20.</ref>
                         </item>
                         
-                        <lb n="14"/>
+                        <lb/>
                         
                         <item>Alsfeld / 
                             <ref>21.</ref>
                         </item>
                         
-                        <lb n="15"/>
+                        <lb/>
                         
                         <item>Altenberg / 
                             <ref>15.</ref>
                         </item>
                         
-                        <lb n="16"/>
+                        <lb/>
                         
                         <item>Altenwied / 
                             <ref>118.</ref>
                         </item>
                         
-                        <lb n="17"/>
+                        <lb/>
                         
                         <item>Amerbach / 
                             <ref>66.</ref>
                         </item>
                         
-                        <lb n="18"/>
+                        <lb/>
                         
                         <item>Ana / 
                             <ref>fl. 31.</ref>
                         </item>
                         
-                        <lb n="19"/>
+                        <lb/>
                         
                         <item>Andreasberg / 
                             <ref>70.</ref>
                         </item>
                         
-                        <lb n="20"/>
+                        <lb/>
                         
                         <item>Arde / 
                             <ref>fl. 122.</ref>
                         </item>
                         
-                        <lb n="21"/>
+                        <lb/>
                         
                         <item>Arenburg / 
                             <ref>16.</ref>
                         </item>
                         
-                        <lb n="22"/>
+                        <lb/>
                         
                         <item>Arenſtein / 
                             <ref>16.</ref>
                         </item>
                         
-                        <lb n="23"/>
+                        <lb/>
                         
                         <item>Arnſpurg / 
                             <ref>99.</ref>
                         </item>
                         
-                        <lb n="24"/>
+                        <lb/>
                         
                         <item>Arolſen / 
                             <ref>18.</ref> 
@@ -1942,70 +1942,70 @@
                             <ref>107.</ref>
                         </item>
                         
-                        <lb n="25"/>
+                        <lb/>
                         
                         <item>Aſſenheim / 
                             <ref>22.</ref>
                         </item>
                         
-                        <lb n="26"/>
+                        <lb/>
                         
                         <item>Auerberg / 
                             <ref>150.</ref>
                         </item>
                         
-                        <lb n="27"/>
+                        <lb/>
                         
                         <item>Auw / 
                             <ref>23.</ref>
                         </item>
                         
-                        <lb n="28"/>
+                        <lb/>
                     </list>
                 </div>
                 <div n="2">
                     <head>Z.</head>
                     <list>
                         
-                        <lb n="29"/>
+                        <lb/>
                         
                         <item>ZAppenburg / 
                             <ref>147.</ref>
                         </item>
                         
-                        <lb n="30"/>
+                        <lb/>
                         
                         <item>Zell / 
                             <ref>70.</ref> 
                             <ref>136.</ref>
                         </item>
                         
-                        <lb n="31"/>
+                        <lb/>
                         
                         <item>Zeutzheim / 
                             <ref>15.</ref>
                         </item>
                         
-                        <lb n="32"/>
+                        <lb/>
                         
                         <item>Ziegenberg / 
                             <ref>148.</ref>
                         </item>
                         
-                        <lb n="33"/>
+                        <lb/>
                         
                         <item>Ziegenhain / 
                             <ref>10.</ref> 
                             <ref>148.</ref>
                         </item>
                         
-                        <lb n="34"/>
+                        <lb/>
                         
                         <item>Zierenberg / 
                             <ref>150.</ref>
                         </item>
                         
-                        <lb n="35"/>
+                        <lb/>
                         
                         <item>Zwingenberg / 
                             <ref>150.</ref>
@@ -2016,11 +2016,11 @@
             <fw type="catch">Ver⸗</fw>
             <pb n="16" facs="testdoi16.jpg"/>
             <figure/>
-            <lb n="1"/>
+            <lb/>
             <div type="index">
                 <head>Verzeichniß der Kupffer / darnach ſich der Buchbinder 
-                    <lb n="2"/>zu richten hat.</head>
-                <lb n="3"/>
+                    <lb/>zu richten hat.</head>
+                <lb/>
                 <list>
                     
                     <item>1. Land⸗Charte Ober⸗Heſſen. 
@@ -2588,7 +2588,7 @@
                     </choice>
                 </p>
             </div>
-            <lb n="4"/>
+            <lb/>
             <figure/>
         </back>
     </text>

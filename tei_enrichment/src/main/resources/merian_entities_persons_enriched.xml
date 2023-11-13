@@ -40,7 +40,6 @@
                         <link target="merian_hessen.xml#band_07"/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1205814876</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q3138</idno>
-                        <persName>persname2</persName>
                     </person>
                     <person role="könig" xml:id="person_O_Kelly">
                         <persName> O'Kelly </persName>
