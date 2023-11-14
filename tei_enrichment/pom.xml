@@ -34,6 +34,14 @@
             <version>4.0.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.json</groupId>
+            <!-- Lizenz: Public: fällt unter GNU General Public License, Version 3: mit GNU GPL
+            vereinbar -->
+            <artifactId>json</artifactId>
+            <version>20230618</version>
+        </dependency>
+
         <!-- <dependency>
             Lizenz: Apache 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL
             vereinbar

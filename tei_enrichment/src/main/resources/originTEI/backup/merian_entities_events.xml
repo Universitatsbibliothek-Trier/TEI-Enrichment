@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/ListSchemes/events_scheme.xsd">
+    <!-- xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/ListSchemes/events_scheme.xsd"> -->
+    <!-- <TEI> -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Merian online: Index vorhandener Entitäten. </title>
+                <author>Team Merian online</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Beta draft.</edition>
+            </editionStmt>
+            <extent>
+                <!-- description of the size of the resource; we could add the amount of entitities
+                automatically when the file is updated -->
+            </extent>
+            <publicationStmt>
+                <publisher>Universitätsbibliothek Trier</publisher>
+                <pubPlace>Trier</pubPlace>
+                <date>2023</date>
+                <idno>1</idno>
+                <availability>
+                    <p>CC-0-Lizenz</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="merian_events">
+                <!-- information about the source from which
+                    the resource was derived, for example the entries and IDs of entitities we want to index -->
+                <listEvent xml:id="entities_event">
+                    <event xml:id="event_Erster_Weltkrieg">
+                        <label>Erster Weltkrieg</label>
+                        <label>1. Weltkrieg</label>
+                        <desc>
+                            <date from="1914"/>
+                            <date to="1918"/>
+                        </desc>
+                        <note>Hier steht eine kurze Beschreibung des Events.</note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079163-4</idno>
+                        <link target="merian_hessen.xml#band_07"></link>
+                    </event>
+                    <event xml:id="event_Dreißigjähriger_Krieg">
+                        <label>Dreißigjähriger Krieg</label>
+                        <desc>
+                            <date from="1618"/>
+                            <date to="1648"/>
+                        </desc>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4012985-8</idno>
+                        <link target="merian_hessen.xml#band_07"></link>
+                    </event>
+                    <event xml:id="event_Wormser_Religionsgespräche">
+                        <label>Wormser Religionsgespräche</label>
+                        <desc>
+                            <date when="1914"/>
+                        </desc>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1092546847</idno>
+                        <link target="merian_hessen.xml#band_07"></link>
+                    </event>
+                    <!-- hier auch veranstaltung oder konferenz-->
+                </listEvent>
+            </div>
+        </body>
+    </text>
+</TEI>

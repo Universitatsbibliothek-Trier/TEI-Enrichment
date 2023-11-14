@@ -20,6 +20,7 @@ package de.uni_trier.bibliothek;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.net.HttpURLConnection;
@@ -27,6 +28,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import de.uni_trier.bibliothek.xml.events.model.generated.Event;
 import de.uni_trier.bibliothek.xml.events.model.generated.ListEvent;
@@ -531,51 +535,150 @@ public class EntityListEnricher {
 
 	public static String makeHTTPRequest(String refURL) throws IOException {
 		String entityPrefix = "";
-		URL url = new URL(refURL);
+		String cutURL = refURL.substring(18,refURL.length());
+		//rest: gnd/xyz
+		//need: https://d-nb.info/gnd/1258747235
+		String completeURL = "https://lobid.org/" + cutURL + ".json";
+		URL url = new URL(completeURL);
 		
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 		con.setRequestMethod("GET");
 		
+		InputStream inputStream = (InputStream) con.getContent();
+		BufferedReader streamReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+		StringBuilder responseStrBuilder = new StringBuilder();
+	
+		String inputStr;
+		while ((inputStr = streamReader.readLine()) != null)
+			responseStrBuilder.append(inputStr);
+	
+		// System.out.println("jsonobject: " + responseStrBuilder.toString());
 
-		BufferedReader in = new BufferedReader(
-				new InputStreamReader(con.getInputStream()));
-		String inputLine;
-		StringBuffer content = new StringBuffer();
-		while ((inputLine = in.readLine()) != null) {
-			content.append(inputLine);
+		JSONObject jsonObject = new JSONObject(responseStrBuilder.toString());
+
+		if(jsonObject.has("type"))
+		{
+			JSONArray typeTerms = jsonObject.getJSONArray("type");
+			for(int i = 0; i < typeTerms.length(); i++ )
+			{
+				String typeTerm = typeTerms.getString(i);
+				System.out.println(typeTerms.getString(i));
+				if(typeTerm.equals("AdministrativeUnit") || typeTerm.equals("PlaceOrGeographicName"))
+				{
+					writePlacesEntity(jsonObject);
+					break;
+				}
+				else if(typeTerm.equals("DifferentiatedPerson") || typeTerm.equals("Person"))
+				{
+					writePersonEntity(jsonObject);
+					break;
+				}
+				else if(typeTerm.equals("HistoricSingleEventOrEra"))
+				{
+					writeEventsEntity(jsonObject);
+					break;
+				}
+				else if(typeTerm.equals("AdministrativeUnit"))
+				{
+					writeListBiblEntity(jsonObject);
+					break;
+				}
+				else if(typeTerm.equals("AdministrativeUnit"))
+				{
+					writeOrgsEntity(jsonObject);
+					break;
+				}
+				else if(typeTerm.equals("AdministrativeUnit"))
+				{
+					writeObjectsEntity(jsonObject);
+					break;
+				}
+			}
+			
+			// System.out.println("2.Type: " + typeTerms.getString(1));
+			// System.out.println("3.Type: " + typeTerms.getString(2));
+			// JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+			// String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
+			// System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
 		}
-		in.close();
-		System.out.println("responselines: " + content);
+
+
+
 		return entityPrefix;
 	}
 
-	public static void writePersonEntity(SourceGND sourceGNDGND) {
+	public static void writePersonEntity(JSONObject jsonObject) {
+		if(jsonObject.has("broaderTermInstantial"))
+		{
+			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
+			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
+			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+		}
 
 	}
 
-	public static void writeEventsEntity(SourceGND sourceGNDGND) {
+	public static void writeEventsEntity(JSONObject jsonObject) {
+		if(jsonObject.has("broaderTermInstantial"))
+		{
+			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
+			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
+			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+		}
 
 	}
 
-	public static void writeListBiblEntity(SourceGND sourceGNDGND) {
+	public static void writeListBiblEntity(JSONObject jsonObject) {
+		if(jsonObject.has("broaderTermInstantial"))
+		{
+			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
+			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
+			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+		}
 
 	}
 
-	public static void writeObjectsEntity(SourceGND sourceGNDGND) {
+	public static void writeObjectsEntity(JSONObject jsonObject) {
+		if(jsonObject.has("broaderTermInstantial"))
+		{
+			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
+			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
+			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+		}
 
 	}
 
-	public static void writeOrgsEntity(SourceGND sourceGNDGND) {
+	public static void writeOrgsEntity(JSONObject jsonObject) {
+		if(jsonObject.has("broaderTermInstantial"))
+		{
+			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
+			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
+			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+		}
 
 	}
 
-	public static void writePlacesEntity(SourceGND sourceGNDGND) {
+	public static void writePlacesEntity(JSONObject jsonObject) {
+		if(jsonObject.has("broaderTermInstantial"))
+		{
+			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
+			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
+			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+		}
 
 	}
 
-	public static void addPersonEntity() {
-
-	}
 
 	public static void checkPFront(PFront pfront) throws IOException {
 		List<Serializable> pList = pfront.getContent();

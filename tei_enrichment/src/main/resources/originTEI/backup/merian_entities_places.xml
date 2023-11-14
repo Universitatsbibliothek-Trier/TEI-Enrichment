@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/ListSchemes/places_scheme.xsd">
+    <!-- <TEI> -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Merian online: Index vorhandener Entitäten. </title>
+                <author>Team Merian online</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Beta draft.</edition>
+            </editionStmt>
+            <extent>
+                <!-- description of the size of the resource; we could add the amount of entitities
+                automatically when the file is updated 
+        -->
+            </extent>
+            <publicationStmt>
+                <publisher>Universitätsbibliothek Trier</publisher>
+                <pubPlace>Trier</pubPlace>
+                <date>2023</date>
+                <idno>1</idno>
+                <availability>
+                    <p>CC-0-Lizenz</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="merian_places">
+                <!-- information about the source from which
+                    the resource was derived, for example the entries and IDs of entitities we want to index -->
+                <listPlace xml:id="entities_place">
+                    <place xml:id="place_Nassau" type="memberstate">
+                        <placeName>Nassau</placeName>
+                        <placeName>Staat Nassau </placeName>
+                        <placeName>Herzogtum Nassau </placeName>
+                        <label>Staat</label>
+                        <location>
+                            <region>Rheinland-Pfalz</region>
+                            <region>Hessen</region>
+                            <geo>50.3167 7.8</geo>
+                        </location>
+                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4041265-9</idno>
+                    </place>
+                    <place xml:id="place_Schloss_Regensburg" type="memorial">
+                        <placeName>Schloss Regensburg-Weichs</placeName>
+                        <placeName>Schloss Weichs (Regensburg)</placeName>
+                        <location>
+                            <region>Bayern</region>
+                            <geo>12.095560 49.015000</geo>
+                        </location>
+                        <link target="merian_hessen.xml#band_07_art_Schloss_Regensburg" />
+                        <link target="merian_hessen.xml#band_07_figure_001_01" />
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7695021-9</idno>
+                    </place>
+                    <place xml:id="place_Regensburg" type="place">
+                        <!-- AdministrativeUnit type="place"
+                            TerritorialCorporateBodyOrAdministrativeUnit: type="place"
+                        BuildingOrMemorial: type="memorial" 
+                        WayBorderOrLine: type="line?"
+                        religiousterritory: type="place?"
+                        NaturalGeographicUnit: type="natural?"
+                        NameOfSmallGeographicUnitLyingWithinAnotherGeographicUnit: type="smallPlace"
+
+                        Country: type="country"
+                        Memberstate: type="memberState"
+                    
+                    -->
+                        <placeName>Regensburg </placeName>
+                        <location>
+                            <region>Bayern</region>
+                            <geo>48.92194 11.6819</geo>
+                        </location>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4048989-9</idno>
+                    </place>
+                    <place xml:id="place_Schloss_Grüningen" type="memorial">
+                        <placeName>Schloss Grüningen </placeName>
+                        <location>
+                            <region>Kanton Zürich</region>
+                        </location>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4583907-4</idno>
+                    </place>
+                    <place xml:id="place_Schloss_Hexenagger" type="memorial">
+                        <placeName>Schloss Hexenagger</placeName>
+                        <location>
+                            <region>Bayern</region>
+                            <geo>011.686170 48.920580</geo>
+                        </location>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4260868-5</idno>
+                    </place>
+                    <place xml:id="place_Deutschland" type="country">
+                        <placeName>Deutschland</placeName>
+                        <location>
+                            <geo>010.500000 051.500000</geo>
+                        </location>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4260868-5</idno>
+                    </place>
+                </listPlace>
+            </div>
+        </body>
+    </text>
+</TEI>
