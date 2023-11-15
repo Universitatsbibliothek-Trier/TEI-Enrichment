@@ -449,7 +449,9 @@ public class EntityListEnricher {
 	public static void checkNameGnd(NameGND nameGND, Head head, DivFront divFrontElement) throws IOException {
 		List<Serializable> nameGNDList = nameGND.getContent();
 		// block für artikel
-		if (head != null && divFrontElement != null) {
+		if(nameGND.getRef() != null)
+		{
+			if (head != null && divFrontElement != null) {
 			String[] refURLList = nameGND.getRef().split(" ");
 			for (int i = 0; i < refURLList.length; i++) {
 				String refURL = refURLList[i];
@@ -487,13 +489,17 @@ public class EntityListEnricher {
 			}
 
 		}
+		}
+		
 
 	}
 
 	public static void checkSourceGND(SourceGND sourceGNDGND, Head head, DivFront divFrontElement) throws IOException {
 		List<Serializable> sourceGNDList = sourceGNDGND.getContent();
 		// block für artikel
-		if (head != null && divFrontElement != null) {
+		if(sourceGNDGND.getRef() != null)
+		{
+			if (head != null && divFrontElement != null) {
 			String[] refURLList = sourceGNDGND.getSource().split(" ");
 			for (int i = 0; i < refURLList.length; i++) {
 				String refURL = refURLList[i];
@@ -530,6 +536,7 @@ public class EntityListEnricher {
 			}
 
 		}
+	}
 
 	}
 
@@ -554,41 +561,67 @@ public class EntityListEnricher {
 	
 		// System.out.println("jsonobject: " + responseStrBuilder.toString());
 
+
+		//super classes:
+		
+		// authority resource =>  person => undifferentiated, differentiated => Royal or member of a royal house, literary or legendary character, Collective pseudonym, gods, spirits
+
+		// authority resource => work => collection, collective manuscripts, expression, manuscript, musical work, provenance characteristics, version of a musical work
+
+		//  authority resource => family
+
+		// authority resource => corporate body => company, fictive corporate body, musical corporate body, organ of corporate body, project or program, religious administrative unit, religious corporate body
+
+		//  authority resource => conferenceOrEvent => Seriesofconferenceorevent
+
+		// authority resource => placeorgeographicname => administrative unit, buildingormemorial, country, extratersstialterritory, fictiveplace, memberstate, nameofsmallgeographicunitlyingwithinanothergeographicunit, naturalgeographicunit, religiousterritory, territorialcorporatebodyoradministrativeunit, wayborderorline
+
+		// authority resource =>  subjectheading => charactersormorphemes, ethnographicname, fictive term, groupofpersons, historicsingleeventorera, language, meansoftransportwithindividualname, nomenclatureinbiologyorchemistry, productnameorbrandname, softwareproduct, subjectheadingsensostricto
+
 		JSONObject jsonObject = new JSONObject(responseStrBuilder.toString());
 
 		if(jsonObject.has("type"))
 		{
 			JSONArray typeTerms = jsonObject.getJSONArray("type");
+			if(typeTerms.length() > 1)
+			{}
+			
 			for(int i = 0; i < typeTerms.length(); i++ )
 			{
 				String typeTerm = typeTerms.getString(i);
 				System.out.println(typeTerms.getString(i));
-				if(typeTerm.equals("AdministrativeUnit") || typeTerm.equals("PlaceOrGeographicName"))
+				if(typeTerm.equals("AdministrativeUnit") || typeTerm.equals("PlaceOrGeographicName") || 
+				typeTerm.equals("TerritorialCorporateBodyOrAdministrativeUnit") || typeTerm.equals("BuildingOrMemorial") || typeTerm.equals("NaturalGeographicUnit") || 
+				typeTerm.equals(""))
 				{
 					writePlacesEntity(jsonObject);
 					break;
 				}
-				else if(typeTerm.equals("DifferentiatedPerson") || typeTerm.equals("Person"))
+				else if(typeTerm.equals("DifferentiatedPerson") || typeTerm.equals("Person") || typeTerm.equals("Family"))
 				{
 					writePersonEntity(jsonObject);
 					break;
 				}
-				else if(typeTerm.equals("HistoricSingleEventOrEra"))
+				else if(typeTerm.equals("HistoricSingleEventOrEra") || typeTerm.equals("ConferenceOrEvent")
+				|| typeTerm.equals("SeriesOfConferenceOrEvent"))
 				{
 					writeEventsEntity(jsonObject);
 					break;
 				}
-				else if(typeTerm.equals("AdministrativeUnit"))
+				else if(typeTerm.equals("Work") || typeTerm.equals("NomenclatureInBiologyOrChemistry")
+				|| typeTerm.equals("ProvenanceCharacteristic"))
 				{
 					writeListBiblEntity(jsonObject);
 					break;
 				}
-				else if(typeTerm.equals("AdministrativeUnit"))
+				else if(typeTerm.equals("Company") || typeTerm.equals("CorporateBody")|| typeTerm.equals("OrganOfCorporateBody") || typeTerm.equals("MusicalCorporateBody") || 
+				typeTerm.equals("ReligiousCorporateBody"))
 				{
 					writeOrgsEntity(jsonObject);
 					break;
 				}
-				else if(typeTerm.equals("AdministrativeUnit"))
+				else if(  typeTerm.equals("MusicalWork") ||	typeTerm.equals("SubjectHeading") || 
+				typeTerm.equals("SubjectHeadingSensoStricto") || typeTerm.equals("SoftwareProduct"))
 				{
 					writeObjectsEntity(jsonObject);
 					break;
