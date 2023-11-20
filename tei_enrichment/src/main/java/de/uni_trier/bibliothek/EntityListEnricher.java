@@ -564,7 +564,7 @@ public class EntityListEnricher {
 
 		//super classes:
 		
-		// authority resource =>  person => undifferentiated, differentiated => Royal or member of a royal house, literary or legendary character, Collective pseudonym, gods, spirits
+		// authority resource =>  person =>  differentiated => Royal or member of a royal house, literary or legendary character, Collective pseudonym, gods, spirits
 
 		// authority resource => work => collection, collective manuscripts, expression, manuscript, musical work, provenance characteristics, version of a musical work
 
@@ -597,7 +597,8 @@ public class EntityListEnricher {
 					writePlacesEntity(jsonObject);
 					break;
 				}
-				else if(typeTerm.equals("DifferentiatedPerson") || typeTerm.equals("Person") || typeTerm.equals("Family"))
+				else if(typeTerm.equals("DifferentiatedPerson") || typeTerm.equals("Person") || typeTerm.equals("Family") ||
+				typeTerm.equals("UndifferentiatedPerson") || typeTerm.equals("RoyalOrMemberOfARoyalHouse") || typeTerm.equals("LiteraryOrLegendaryCharacter") || typeTerm.equals("CollectivePseudonym") || typeTerm.equals("Gods") || typeTerm.equals("Spirits"))
 				{
 					writePersonEntity(jsonObject);
 					break;
