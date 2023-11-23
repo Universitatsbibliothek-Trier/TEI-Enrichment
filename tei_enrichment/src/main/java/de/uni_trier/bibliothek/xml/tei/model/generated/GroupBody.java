@@ -36,6 +36,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="table" type="{http://www.tei-c.org/ns/1.0}Table" maxOccurs="unbounded"/>
+ *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -59,7 +60,8 @@ public class GroupBody {
         @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "table", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "table", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> divOrPbOrLb;
 
@@ -89,6 +91,7 @@ public class GroupBody {
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
      * {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * {@link JAXBElement }{@code <}{@link Table }{@code >}
      * 
      * 

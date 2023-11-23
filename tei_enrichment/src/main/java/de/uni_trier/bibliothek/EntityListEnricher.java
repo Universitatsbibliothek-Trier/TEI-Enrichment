@@ -27,6 +27,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import org.json.JSONArray;
@@ -44,9 +46,11 @@ import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
 import de.uni_trier.bibliothek.xml.places.model.generated.ListPlace;
 import de.uni_trier.bibliothek.xml.places.model.generated.Place;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Add;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Body;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Choice;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Del;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DivFront;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DocImprint;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DocTitle;
@@ -66,6 +70,7 @@ import de.uni_trier.bibliothek.xml.tei.model.generated.Pb;
 import de.uni_trier.bibliothek.xml.tei.model.generated.PbFront;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Row;
 import de.uni_trier.bibliothek.xml.tei.model.generated.SourceGND;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Subst;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TEI;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Table;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Text;
@@ -160,6 +165,10 @@ public class EntityListEnricher {
 				Table tableElement = (Table) divOrPbOrLbListElement.getValue();
 				checkTable(tableElement);
 			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) divOrPbOrLbListElement.getValue();
+				checkSubst(substElement);
+			}
 
 		}
 	}
@@ -213,6 +222,11 @@ public class EntityListEnricher {
 				Table tableElement = (Table) divOrPbOrLbListElement.getValue();
 				checkTable(tableElement);
 			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) divOrPbOrLbListElement.getValue();
+				checkSubst(substElement);
+			}
+			
 
 		}
 	}
@@ -234,6 +248,10 @@ public class EntityListEnricher {
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbElement.getValue();
 				checkLbEtc(lbEtcElement);
 			}
+			else if (divOrPbOrLbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) divOrPbOrLbElement.getValue();
+				checkSubst(substElement);
+			}
 
 		}
 	}
@@ -248,6 +266,10 @@ public class EntityListEnricher {
 					Item itemElement = (Item) jaxbElement.getValue();
 					checkItem(itemElement);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 
 		}
@@ -267,6 +289,10 @@ public class EntityListEnricher {
 							.getValue();
 					checkList(listElement);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 
 			}
 
@@ -282,6 +308,10 @@ public class EntityListEnricher {
 					Row rowElement = (Row) jaxbElement.getValue();
 					checkRow(rowElement);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 		}
 	}
@@ -295,6 +325,10 @@ public class EntityListEnricher {
 					LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
 					checkLbEtc(lbEtcElement);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 		}
 	}
@@ -323,6 +357,10 @@ public class EntityListEnricher {
 						.getValue();
 				checkList(ListElement);
 			}
+			else if (divFrontListElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) divFrontListElement.getValue();
+				checkSubst(substElement);
+			}
 
 		}
 	}
@@ -343,6 +381,10 @@ public class EntityListEnricher {
 					LbEtc lbEtcElement = (LbEtc) jaxbHeadListElement.getValue();
 					checkLbEtc(lbEtcElement);
 				}
+				else if (jaxbHeadListElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbHeadListElement.getValue();
+				checkSubst(substElement);
+			}
 
 			}
 		}
@@ -369,6 +411,10 @@ public class EntityListEnricher {
 					LbEtc lbEtc = (LbEtc) titlePageListElementObject.getValue();
 					checkLbEtc(lbEtc);
 				}
+				else if (titlePageListElementObject.getValue() instanceof Subst) {
+				Subst substElement = (Subst) titlePageListElementObject.getValue();
+				checkSubst(substElement);
+			}
 
 			}
 
@@ -390,6 +436,10 @@ public class EntityListEnricher {
 			} else if (jaxbElement.getValue() instanceof SourceGND) {
 				SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
 				checkSourceGND(sourceGND, null, null);
+			}
+			else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
 			}
 		}
 
@@ -416,6 +466,10 @@ public class EntityListEnricher {
 					SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
 					checkSourceGND(sourceGND, null, null);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 
 		}
@@ -440,6 +494,10 @@ public class EntityListEnricher {
 					LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
 					checkLbEtc(lbEtc);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 
 		}
@@ -455,9 +513,9 @@ public class EntityListEnricher {
 			String[] refURLList = nameGND.getRef().split(" ");
 			for (int i = 0; i < refURLList.length; i++) {
 				String refURL = refURLList[i];
-				System.out.println("artikel namegnd-url nummer " + i + " von wort: " + refURL);
-				System.out.println("artikel head: " + head.getContent());
-				System.out.println("artikel div: " + divFrontElement.getFwOrPOrFigure());
+				// System.out.println("artikel namegnd-url nummer " + i + " von wort: " + refURL);
+				// System.out.println("artikel head: " + head.getContent());
+				// System.out.println("artikel div: " + divFrontElement.getFwOrPOrFigure());
 				String prefix = makeHTTPRequest(refURL);
 			}
 		} else {
@@ -465,7 +523,7 @@ public class EntityListEnricher {
 			String[] refURLList = nameGND.getRef().split(" ");
 			for (int i = 0; i < refURLList.length; i++) {
 				String refURL = refURLList[i];
-				System.out.println("loser namegnd-url nummer " + i + " von wort: " + refURL);
+				// System.out.println("loser namegnd-url nummer " + i + " von wort: " + refURL);
 				String prefix = makeHTTPRequest(refURL);
 			}
 		}
@@ -486,6 +544,10 @@ public class EntityListEnricher {
 					SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
 					checkSourceGND(sourceGND, head, divFrontElement);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 
 		}
@@ -503,9 +565,9 @@ public class EntityListEnricher {
 			String[] refURLList = sourceGNDGND.getSource().split(" ");
 			for (int i = 0; i < refURLList.length; i++) {
 				String refURL = refURLList[i];
-				System.out.println("source artikel namegnd-url nummer " + i + " von wort: " + refURL);
-				System.out.println("source artikel head: " + head.getContent());
-				System.out.println("source artikel div: " + divFrontElement.getFwOrPOrFigure());
+				// System.out.println("source artikel namegnd-url nummer " + i + " von wort: " + refURL);
+				// System.out.println("source artikel head: " + head.getContent());
+				// System.out.println("source artikel div: " + divFrontElement.getFwOrPOrFigure());
 				String prefix = makeHTTPRequest(refURL);
 			}
 		} else {
@@ -513,7 +575,7 @@ public class EntityListEnricher {
 			String[] refURLList = sourceGNDGND.getSource().split(" ");
 			for (int i = 0; i < refURLList.length; i++) {
 				String refURL = refURLList[i];
-				System.out.println("source loser namegnd-url nummer " + i + " von wort: " + refURL);
+				// System.out.println("source loser namegnd-url nummer " + i + " von wort: " + refURL);
 				String prefix = makeHTTPRequest(refURL);
 			}
 		}
@@ -533,6 +595,10 @@ public class EntityListEnricher {
 					SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
 					checkSourceGND(sourceGND, head, divFrontElement);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 
 		}
@@ -558,15 +624,16 @@ public class EntityListEnricher {
 		String inputStr;
 		while ((inputStr = streamReader.readLine()) != null)
 			responseStrBuilder.append(inputStr);
-	
-		// System.out.println("jsonobject: " + responseStrBuilder.toString());
-
+		JSONObject jsonObject = new JSONObject(responseStrBuilder.toString());
+		// System.out.println("jsonobject: " + responseStrBuilder.toString());	
+		
+		
 
 		//super classes:
 		
 		// authority resource =>  person =>  differentiated => Royal or member of a royal house, literary or legendary character, Collective pseudonym, gods, spirits
 
-		// authority resource => work => collection, collective manuscripts, expression, manuscript, musical work, provenance characteristics, version of a musical work
+		// authority resource => work => collection, collective manuscripts, expression, manuscript, provenance characteristics
 
 		//  authority resource => family
 
@@ -576,64 +643,141 @@ public class EntityListEnricher {
 
 		// authority resource => placeorgeographicname => administrative unit, buildingormemorial, country, extratersstialterritory, fictiveplace, memberstate, nameofsmallgeographicunitlyingwithinanothergeographicunit, naturalgeographicunit, religiousterritory, territorialcorporatebodyoradministrativeunit, wayborderorline
 
-		// authority resource =>  subjectheading => charactersormorphemes, ethnographicname, fictive term, groupofpersons, historicsingleeventorera, language, meansoftransportwithindividualname, nomenclatureinbiologyorchemistry, productnameorbrandname, softwareproduct, subjectheadingsensostricto
+		// authority resource =>  subjectheading => charactersormorphemes,  fictive term, groupofpersons, historicsingleeventorera, language, meansoftransportwithindividualname, nomenclatureinbiologyorchemistry, productnameorbrandname, softwareproduct, subjectheadingsensostricto
 
-		JSONObject jsonObject = new JSONObject(responseStrBuilder.toString());
+
+
+
+
+		//super classes:
+		
+		// authority resource => 
+
+		// authority resource =>
+
+		//  authority resource => 
+
+		// authority resource => 
+
+		//  authority resource => 
+
+		// authority resource => 
+
+		// authority resource =>  
+
+		boolean objectHasType = false;
 
 		if(jsonObject.has("type"))
 		{
 			JSONArray typeTerms = jsonObject.getJSONArray("type");
-			if(typeTerms.length() > 1)
-			{}
+			List<String> typeTermslist = new ArrayList<String>();
+			String[] typeTermArray = typeTermslist.toArray(new String[0]);
+			for(int i = 0; i < typeTerms.length(); i++){
+
+				String jsonObjectString = typeTerms.getString(i);
+   			 	typeTermslist.add(jsonObjectString);
+			}
+
 			
-			for(int i = 0; i < typeTerms.length(); i++ )
+			// collection, collective manuscripts, expression, manuscript, provenance characteristics
+			ArrayList<String> listBiblTerms = new ArrayList<>(Arrays.asList("Collection", "CollectiveManuscript", "Expression", "Manuscript", "ProvenanceCharacteristic"));
+			Boolean isBiblList = !Collections.disjoint(typeTermslist, listBiblTerms);
+			// System.out.println("listbiblterms: " + listBiblTerms);
+			// System.out.println("typetermarraylist: " + typeTermArray);
+			// System.out.println("isBiblList ist " + isBiblList);
+			
+			if(isBiblList)
 			{
-				String typeTerm = typeTerms.getString(i);
-				System.out.println(typeTerms.getString(i));
-				if(typeTerm.equals("AdministrativeUnit") || typeTerm.equals("PlaceOrGeographicName") || 
-				typeTerm.equals("TerritorialCorporateBodyOrAdministrativeUnit") || typeTerm.equals("BuildingOrMemorial") || typeTerm.equals("NaturalGeographicUnit") || 
-				typeTerm.equals(""))
-				{
-					writePlacesEntity(jsonObject);
-					break;
-				}
-				else if(typeTerm.equals("DifferentiatedPerson") || typeTerm.equals("Person") || typeTerm.equals("Family") ||
-				typeTerm.equals("UndifferentiatedPerson") || typeTerm.equals("RoyalOrMemberOfARoyalHouse") || typeTerm.equals("LiteraryOrLegendaryCharacter") || typeTerm.equals("CollectivePseudonym") || typeTerm.equals("Gods") || typeTerm.equals("Spirits"))
-				{
-					writePersonEntity(jsonObject);
-					break;
-				}
-				else if(typeTerm.equals("HistoricSingleEventOrEra") || typeTerm.equals("ConferenceOrEvent")
-				|| typeTerm.equals("SeriesOfConferenceOrEvent"))
-				{
-					writeEventsEntity(jsonObject);
-					break;
-				}
-				else if(typeTerm.equals("Work") || typeTerm.equals("NomenclatureInBiologyOrChemistry")
-				|| typeTerm.equals("ProvenanceCharacteristic"))
-				{
-					writeListBiblEntity(jsonObject);
-					break;
-				}
-				else if(typeTerm.equals("Company") || typeTerm.equals("CorporateBody")|| typeTerm.equals("OrganOfCorporateBody") || typeTerm.equals("MusicalCorporateBody") || 
-				typeTerm.equals("ReligiousCorporateBody"))
-				{
-					writeOrgsEntity(jsonObject);
-					break;
-				}
-				else if(  typeTerm.equals("MusicalWork") ||	typeTerm.equals("SubjectHeading") || 
-				typeTerm.equals("SubjectHeadingSensoStricto") || typeTerm.equals("SoftwareProduct"))
-				{
-					writeObjectsEntity(jsonObject);
-					break;
+				System.out.println("isBiblList eintrag");
+				objectHasType = true;
+				writeListBiblEntity(jsonObject);
+				
+
+			}
+		
+
+			// authority resource =>  person =>  differentiated => Royal or member of a royal house, literary or legendary character, Collective pseudonym, gods, spirits, family
+			//ethnographicname, groupofpersons
+			ArrayList<String> personTerms = new ArrayList<>(Arrays.asList("DifferentiatedPerson", "UndifferentiatedPerson", "RoyalOrMemberOfARoyalHouse", "LiteraryOrLegendaryCharacter", "Gods", "Spirits", "CollectivePseudonym", "ethnographicname", "GroupOfPersons"));
+			// boolean isPersonTerm = Arrays.stream(typeTermArray).anyMatch(personTerms::equals);
+			Boolean isPersonTerm = !Collections.disjoint(typeTermslist, personTerms);
+			if(isPersonTerm)
+			{
+				System.out.println("person eintrag");
+				objectHasType = true;
+				writePersonEntity(jsonObject);
+				
+			}
+
+			
+			//placeorgeographicname => administrative unit, buildingormemorial, country, extratersstialterritory, fictiveplace, memberstate, nameofsmallgeographicunitlyingwithinanothergeographicunit, naturalgeographicunit, religiousterritory, territorialcorporatebodyoradministrativeunit, wayborderorline
+			ArrayList<String> placesTerms = new ArrayList<>(Arrays.asList("PlaceOrGeographicName", "AdministrativeUnit", "BuildingOrMemorial", "Country", "ExtraterrestialTerritory", "FictivePlace", "MemberState", "NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit", "NaturalGeographicUnit", "ReligiousTerritory", "TerritorialCorporateBodyOrAdministrativeUnit", "WayBorderOrLine"));
+			Boolean isPlace = !Collections.disjoint(typeTermslist, placesTerms);
+			// boolean isPlace = Arrays.stream(typeTermArray).anyMatch(placesTerms::equals);
+			if(isPlace)
+			{
+				System.out.println("place eintrag");
+				objectHasType = true;
+				writePlacesEntity(jsonObject);
+				
+			}
+			// historicsingleeventorera,conferenceOrEvent => Seriesofconferenceorevent
+			ArrayList<String> eventTerms = new ArrayList<>(Arrays.asList("HistoricSingleEventOrEra", "ConferenceOrEvent", "SeriesOfConferenceOrEvent"));
+			Boolean isEvent = !Collections.disjoint(typeTermslist, eventTerms);
+			if(isEvent)
+			{
+				System.out.println("event eintrag");
+				objectHasType = true;
+				writeEventsEntity(jsonObject);
+			}
+
+			// authority resource =>   version of a musical work, musical work, fictive term, language
+			//subjectheading => charactersormorphemes,  meansoftransportwithindividualname, nomenclatureinbiologyorchemistry, productnameorbrandname, softwareproduct, subjectheadingsensostricto
+			ArrayList<String> objectTerms = new ArrayList<>(Arrays.asList("VersionOfAMusicalWork", "MusicalWork", "FictiveTerm", "Language", "CharactersOrMorphemes", "MeansOfTransportWithIndividualName", "NomenClatureInBiologyOrChemistry", "ProductNameOrBrandName", "SoftwareProduct", "SubjectHeadingSensoStricto"));
+			boolean isObject = !Collections.disjoint(typeTermslist,objectTerms);
+			if(isObject)
+			{
+				System.out.println("object eintrag");
+				objectHasType = true;
+				writeObjectsEntity(jsonObject);
+			}
+		
+			//corporate body => company, fictive corporate body, musical corporate body, organ of corporate body, project or program, religious administrative unit, religious corporate body
+			ArrayList<String> orgsTerms = new ArrayList<>(Arrays.asList("CorporateBody", "Company", "FictiveCorporateBody", "MusicalCorporateBody", "OrganOfCorporateBody", "ProjectOrProgram", "ReligiousAdminstrativeUnit", "ReligiousCorporateBody"));
+			boolean isOrgs = !Collections.disjoint(typeTermslist,orgsTerms);
+			if(isOrgs)
+			{
+				System.out.println("orgs eintrag");
+				objectHasType = true;
+				writeOrgsEntity(jsonObject);
+			}
+
+			if(!objectHasType)
+			{
+				for(int i = 0; i < typeTerms.length(); i++ )
+			 	{
+					//work
+					String typeTerm = typeTerms.getString(i);
+					if(typeTerm.equals("Work"))
+					{
+						System.out.println("work eintrag");
+						writeListBiblEntity(jsonObject);
+			 			break;
+					}
+					else if(typeTerm.equals("SubjectHeading"))
+					{
+						System.out.println("object eintrag");
+						writeObjectsEntity(jsonObject);
+			 			break;
+					}
+					else if(typeTerm.equals("Person"))
+					{
+						System.out.println("person eintrag");
+						writeObjectsEntity(jsonObject);
+			 			break;
+					}
 				}
 			}
-			
-			// System.out.println("2.Type: " + typeTerms.getString(1));
-			// System.out.println("3.Type: " + typeTerms.getString(2));
-			// JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-			// String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			// System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
 		}
 
 
@@ -648,7 +792,7 @@ public class EntityListEnricher {
 			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
 			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+			// System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
 		}
 
 	}
@@ -660,7 +804,7 @@ public class EntityListEnricher {
 			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
 			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+			// System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
 		}
 
 	}
@@ -672,7 +816,7 @@ public class EntityListEnricher {
 			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
 			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+			System.out.println("jsonObjectBroaderTermString listbibl: " + jsonObjectBroaderTermString);
 		}
 
 	}
@@ -684,7 +828,7 @@ public class EntityListEnricher {
 			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
 			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+			System.out.println("jsonObjectBroaderTermString objects: " + jsonObjectBroaderTermString);
 		}
 
 	}
@@ -696,7 +840,7 @@ public class EntityListEnricher {
 			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
 			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+			// System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
 		}
 
 	}
@@ -708,7 +852,7 @@ public class EntityListEnricher {
 			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
 			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
+			// System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
 		}
 
 	}
@@ -735,9 +879,88 @@ public class EntityListEnricher {
 					Table tableElement = (Table) jaxbElement.getValue();
 					checkTable(tableElement);
 				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 		}
 	}
+
+	public static void checkSubst(Subst subst) throws IOException {
+		List<Object> substElementsList = subst.getDelOrAdd();
+
+		for (Object substElemenObject : substElementsList) {
+			if (substElemenObject instanceof LbEtc) {
+				LbEtc lbEtc = (LbEtc) substElemenObject;
+				checkLbEtc(lbEtc);
+			} else if (substElemenObject instanceof NameGND) {
+				NameGND nameGND = (NameGND) substElemenObject;
+				checkNameGnd(nameGND, null, null);
+			} else if (substElemenObject instanceof SourceGND) {
+				SourceGND sourceGND = (SourceGND) substElemenObject;
+				checkSourceGND(sourceGND, null, null);
+			}
+			else if (substElemenObject instanceof Del) {
+				Del delElement = (Del) substElemenObject;
+				checkDel(delElement);
+			}
+			else if (substElemenObject instanceof Add) {
+				Add addElement = (Add) substElemenObject;
+				checkAdd(addElement);
+			}
+
+		}
+
+	}
+
+	public static void checkAdd(Add add) throws IOException {
+		List<Serializable> addElementsList = add.getContent();
+
+		for (Object addElement : addElementsList) {
+			if (addElement instanceof LbEtc) {
+				LbEtc lbEtc = (LbEtc) addElement;
+				checkLbEtc(lbEtc);
+			} else if (addElement instanceof NameGND) {
+				NameGND nameGND = (NameGND) addElement;
+				checkNameGnd(nameGND, null, null);
+			} else if (addElement instanceof SourceGND) {
+				SourceGND sourceGND = (SourceGND) addElement;
+				checkSourceGND(sourceGND, null, null);
+			}
+			else if (addElement instanceof Subst) {
+				Subst substElement = (Subst) addElement;
+				checkSubst(substElement);
+			}
+
+		}
+
+	}
+
+	public static void checkDel(Del del) throws IOException {
+		List<Serializable> delElementsList = del.getContent();
+
+		for (Object delElement : delElementsList) {
+			if (delElement instanceof LbEtc) {
+				LbEtc lbEtc = (LbEtc) delElement;
+				checkLbEtc(lbEtc);
+			} else if (delElement instanceof NameGND) {
+				NameGND nameGND = (NameGND) delElement;
+				checkNameGnd(nameGND, null, null);
+			} else if (delElement instanceof SourceGND) {
+				SourceGND sourceGND = (SourceGND) delElement;
+				checkSourceGND(sourceGND, null, null);
+			}
+			else if (delElement instanceof Subst) {
+				Subst substElement = (Subst) delElement;
+				checkSubst(substElement);
+			}
+
+		}
+
+	}
+
+
 
 	public static void checkChoice(Choice choice) throws IOException {
 		List<JAXBElement<?>> choiceElementsList = choice.getAbbrOrExpanOrOrig();
@@ -752,6 +975,10 @@ public class EntityListEnricher {
 			} else if (jaxbElement.getValue() instanceof SourceGND) {
 				SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
 				checkSourceGND(sourceGND, null, null);
+			}
+			else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
 			}
 
 		}
@@ -778,6 +1005,10 @@ public class EntityListEnricher {
 					Table tableElement = (Table) jaxbLbEtcListElement.getValue();
 					checkTable(tableElement);
 				}
+				else if (jaxbLbEtcListElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbLbEtcListElement.getValue();
+				checkSubst(substElement);
+			}
 			}
 		}
 	}

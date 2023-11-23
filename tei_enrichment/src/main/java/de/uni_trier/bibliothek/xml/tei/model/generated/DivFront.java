@@ -45,6 +45,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="milestone" type="{http://www.tei-c.org/ns/1.0}Milestone" maxOccurs="unbounded"/>
  *         <element name="table" type="{http://www.tei-c.org/ns/1.0}Table" maxOccurs="unbounded"/>
  *         <element name="list" type="{http://www.tei-c.org/ns/1.0}List" maxOccurs="unbounded"/>
+ *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *       </choice>
  *       <attribute name="type">
  *         <simpleType>
@@ -91,7 +92,8 @@ public class DivFront {
         @XmlElementRef(name = "pb", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "milestone", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "table", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "list", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "list", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     protected java.util.List<JAXBElement<?>> fwOrPOrFigure;
     @XmlAttribute(name = "type")
@@ -133,6 +135,7 @@ public class DivFront {
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
      * {@link JAXBElement }{@code <}{@link PFront }{@code >}
      * {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * {@link JAXBElement }{@code <}{@link Table }{@code >}
      * 
      * 

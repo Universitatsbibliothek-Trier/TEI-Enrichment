@@ -32,6 +32,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="ref" type="{http://www.tei-c.org/ns/1.0}Ref" maxOccurs="unbounded"/>
  *         <element name="list" type="{http://www.tei-c.org/ns/1.0}List" maxOccurs="unbounded"/>
  *         <element name="choice" type="{http://www.tei-c.org/ns/1.0}Choice" maxOccurs="unbounded"/>
+ *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -50,7 +51,8 @@ public class Item {
         @XmlElementRef(name = "lb", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "ref", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "list", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "choice", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "choice", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     @XmlMixed
     protected java.util.List<Serializable> content;
@@ -76,6 +78,7 @@ public class Item {
      * {@link JAXBElement }{@code <}{@link Choice }{@code >}
      * {@link JAXBElement }{@code <}{@link Lb }{@code >}
      * {@link JAXBElement }{@code <}{@link de.uni_trier.bibliothek.xml.tei.model.generated.List }{@code >}
+     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link String }
      * 

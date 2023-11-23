@@ -38,6 +38,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="note" type="{http://www.tei-c.org/ns/1.0}Note" maxOccurs="unbounded"/>
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -63,7 +64,8 @@ public class DocImprint {
         @XmlElementRef(name = "docDate", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> pubPlaceOrPublisherOrLb;
 
@@ -96,6 +98,7 @@ public class DocImprint {
      * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
      * {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
+     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * 
      * 
      * @return

@@ -14,6 +14,7 @@ import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElementRef;
+import jakarta.xml.bind.annotation.XmlElementRefs;
 import jakarta.xml.bind.annotation.XmlMixed;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -29,6 +30,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <choice maxOccurs="unbounded">
  *         <element name="row" type="{http://www.tei-c.org/ns/1.0}Row" maxOccurs="unbounded"/>
+ *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -43,7 +45,10 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Table {
 
-    @XmlElementRef(name = "row", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+    @XmlElementRefs({
+        @XmlElementRef(name = "row", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+    })
     @XmlMixed
     protected List<Serializable> content;
 
@@ -66,6 +71,7 @@ public class Table {
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link Row }{@code >}
+     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * {@link String }
      * 
      * 

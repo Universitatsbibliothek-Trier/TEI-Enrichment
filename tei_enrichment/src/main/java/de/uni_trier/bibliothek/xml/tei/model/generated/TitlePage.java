@@ -40,6 +40,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="note" type="{http://www.tei-c.org/ns/1.0}Note" maxOccurs="unbounded"/>
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *       </choice>
  *       <attribute name="type">
  *         <simpleType>
@@ -70,7 +71,8 @@ public class TitlePage {
         @XmlElementRef(name = "docImprint", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     @XmlMixed
     protected List<Serializable> content;
@@ -105,6 +107,7 @@ public class TitlePage {
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
      * {@link JAXBElement }{@code <}{@link PFront }{@code >}
+     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * {@link String }
      * 
      * 

@@ -7,30 +7,27 @@
 
 package de.uni_trier.bibliothek.xml.tei.model.generated;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElementRef;
-import jakarta.xml.bind.annotation.XmlElementRefs;
-import jakarta.xml.bind.annotation.XmlMixed;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElements;
 import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für Row complex type.
+ * <p>Java-Klasse für Subst complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>{@code
- * <complexType name="Row">
+ * <complexType name="Subst">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <choice maxOccurs="unbounded">
- *         <element name="cell" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
- *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
+ *         <element name="del" type="{http://www.tei-c.org/ns/1.0}Del" maxOccurs="unbounded"/>
+ *         <element name="add" type="{http://www.tei-c.org/ns/1.0}Add" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -40,49 +37,47 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Row", propOrder = {
-    "content"
+@XmlType(name = "Subst", propOrder = {
+    "delOrAdd"
 })
-public class Row {
+public class Subst {
 
-    @XmlElementRefs({
-        @XmlElementRef(name = "cell", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+    @XmlElements({
+        @XmlElement(name = "del", type = Del.class),
+        @XmlElement(name = "add", type = Add.class)
     })
-    @XmlMixed
-    protected List<Serializable> content;
+    protected List<Object> delOrAdd;
 
     /**
-     * Gets the value of the content property.
+     * Gets the value of the delOrAdd property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a {@code set} method for the content property.
+     * This is why there is not a {@code set} method for the delOrAdd property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getContent().add(newItem);
+     *    getDelOrAdd().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
-     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
-     * {@link String }
+     * {@link Add }
+     * {@link Del }
      * 
      * 
      * @return
-     *     The value of the content property.
+     *     The value of the delOrAdd property.
      */
-    public List<Serializable> getContent() {
-        if (content == null) {
-            content = new ArrayList<>();
+    public List<Object> getDelOrAdd() {
+        if (delOrAdd == null) {
+            delOrAdd = new ArrayList<>();
         }
-        return this.content;
+        return this.delOrAdd;
     }
 
 }

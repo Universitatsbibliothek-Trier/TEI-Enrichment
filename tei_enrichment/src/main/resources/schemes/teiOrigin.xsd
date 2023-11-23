@@ -72,8 +72,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
       <xs:element name="list" type="self:List" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
+
+  
 
 
   <xs:complexType name="titlePage" mixed="true">
@@ -88,6 +91,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
     <xs:attribute name="type">
       <xs:simpleType>
@@ -106,7 +110,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
 
   <xs:complexType name="docTitle">
     <xs:choice maxOccurs="unbounded">
-      <!-- <xs:element name="p" type="self:PFront" /> -->
       <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
       <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
       <xs:element name="titlePart" type="self:titlePart" maxOccurs="unbounded" />
@@ -115,6 +118,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
       <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -131,6 +135,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -148,6 +153,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="milestone" type="self:Milestone" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
     <xs:attribute name="cert">
       <xs:simpleType>
@@ -169,12 +175,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="Table" mixed="true">
     <xs:choice maxOccurs="unbounded">
       <xs:element name="row" type="self:Row" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
   <xs:complexType name="Row" mixed="true">
     <xs:choice maxOccurs="unbounded">
       <xs:element name="cell" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -185,6 +193,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="fw" type="self:Fw" maxOccurs="unbounded" />
       <xs:element name="pb" type="self:Pb" maxOccurs="unbounded" />
       <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -194,6 +203,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="ref" type="self:Ref" maxOccurs="unbounded" />
       <xs:element name="list" type="self:List" maxOccurs="unbounded" />
       <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -214,6 +224,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
     <xs:attribute name="type">
       <xs:simpleType>
@@ -237,6 +248,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="milestone" type="self:Milestone" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
       <xs:element name="list" type="self:List" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
     <xs:attribute name="type">
       <xs:simpleType>
@@ -273,6 +285,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -306,6 +319,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="milestone" type="self:Milestone" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -328,16 +342,58 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   </xs:complexType>
 
   <xs:complexType name="Num" mixed="true">
-    <!-- <xs:simpleContent>
-      <xs:extension base="self:NumValue"> -->
         <xs:anyAttribute processContents="skip"/>
-      <!-- </xs:extension>
-    </xs:simpleContent> -->
   </xs:complexType>
 
-  <!-- <xs:simpleType name="NumValue">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType> -->
+  <xs:complexType name="Subst">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="del" type="self:Del" maxOccurs="unbounded" />
+      <xs:element name="add" type="self:Add" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="Del" mixed="true">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="abbr" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="expan" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="orig" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="reg" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="seg" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="rs" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="sic" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="corr" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="Add" mixed="true">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="abbr" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="expan" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="orig" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="reg" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="seg" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="lb" type="self:Lb" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="rs" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="sic" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="corr" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
+      <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+    </xs:choice>
+    <xs:attribute name="place">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+  </xs:complexType>
 
 
   <xs:complexType name="Choice">
@@ -409,6 +465,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
     <!-- <xs:restriction base="xs:string" /> -->
   </xs:complexType>
@@ -431,6 +488,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="milestone" type="self:Milestone" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -445,6 +503,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -460,6 +519,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -513,6 +573,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="w" type="self:LbEtc" maxOccurs="unbounded" />
       <xs:element name="table" type="self:Table" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -521,6 +582,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="item" type="self:FigureListItem" maxOccurs="unbounded" />
       <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
       <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -528,6 +590,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
         <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+        <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
       </xs:choice>
   </xs:complexType>
 
@@ -547,6 +610,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="note" type="self:Note" maxOccurs="unbounded" />
       <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
       <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
+      
     </xs:choice>
   </xs:complexType>
 
@@ -599,6 +663,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:choice minOccurs="0" maxOccurs="unbounded">
       <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
       <xs:element name="supplied" type="self:LbEtc" maxOccurs="unbounded" />
+      <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 

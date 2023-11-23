@@ -20,23 +20,29 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für Head complex type.
+ * <p>Java-Klasse für Del complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>{@code
- * <complexType name="Head">
+ * <complexType name="Del">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <choice maxOccurs="unbounded">
+ *       <choice maxOccurs="unbounded" minOccurs="0">
+ *         <element name="abbr" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="expan" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="orig" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="reg" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="seg" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="lb" type="{http://www.tei-c.org/ns/1.0}Lb" maxOccurs="unbounded"/>
- *         <element name="name" type="{http://www.tei-c.org/ns/1.0}NameGND" maxOccurs="unbounded" minOccurs="0"/>
+ *         <element name="name" type="{http://www.tei-c.org/ns/1.0}NameGND" maxOccurs="unbounded"/>
  *         <element name="quote" type="{http://www.tei-c.org/ns/1.0}SourceGND" maxOccurs="unbounded"/>
- *         <element name="rs" type="{http://www.tei-c.org/ns/1.0}NameGND" maxOccurs="unbounded" minOccurs="0"/>
+ *         <element name="rs" type="{http://www.tei-c.org/ns/1.0}NameGND" maxOccurs="unbounded"/>
+ *         <element name="sic" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="corr" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="note" type="{http://www.tei-c.org/ns/1.0}Note" maxOccurs="unbounded"/>
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
- *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -46,20 +52,26 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Head", propOrder = {
+@XmlType(name = "Del", propOrder = {
     "content"
 })
-public class Head {
+public class Del {
 
     @XmlElementRefs({
+        @XmlElementRef(name = "abbr", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "expan", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "orig", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "reg", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "seg", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "lb", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "name", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "quote", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "rs", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "sic", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "corr", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     @XmlMixed
     protected List<Serializable> content;
@@ -85,11 +97,17 @@ public class Head {
      * {@link JAXBElement }{@code <}{@link Lb }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
      * {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
-     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * {@link String }
      * 
      * 

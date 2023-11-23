@@ -32,6 +32,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *       <choice maxOccurs="unbounded" minOccurs="0">
  *         <element name="choice" type="{http://www.tei-c.org/ns/1.0}Choice" maxOccurs="unbounded"/>
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -51,7 +52,8 @@ public class FwValue {
 
     @XmlElementRefs({
         @XmlElementRef(name = "choice", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     @XmlMixed
     protected List<Serializable> content;
@@ -76,6 +78,7 @@ public class FwValue {
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link Choice }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
+     * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * {@link String }
      * 
      * 

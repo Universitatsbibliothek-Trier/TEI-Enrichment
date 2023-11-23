@@ -143,7 +143,10 @@
                         Abbildung der 
                         <lb/>vornehmſten Staͤdte und Plaͤtze in Heſſen / und denen
                         be⸗ 
-                        <lb/>nachbarten Landſchafften / als Buchen / Wetterau / Weſter⸗ 
+                        <lb/>nachbarten Landſchafften / als Buchen / Wetterau 
+                        <name ref="https://d-nb.info/gnd/2112601-X">Schloss
+                    Regensburg</name>
+                    / Weſter⸗ 
                         <lb/>wald
                         / Loͤhngau / Naſſau / Solms / Hanau / Witgenſtein / 
                         <lb/>und andern.</titlePart>
@@ -204,7 +207,11 @@
                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
                     <lb/>Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    invidunt ut labore et dolore 
+                    <subst>
+                        <del>labore</del>
+                        <add place="across">dolore</add>
+                    </subst> magna aliquyam erat, sed diam voluptua. 
                     <lb/>At
                     vero eos et accusam et justo duo dolores et ea rebum.
                     <lb/> Stet 
@@ -269,11 +276,14 @@
                                 die Wetterauiſche Graffen; die Rheingraffen; die von Falcken⸗ 
                                 <lb/>ſtein;
                                 von Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein /
+                                
+                                <name ref="https://d-nb.info/gnd/4114364-4"> Chronik 
+                                </name>
                                 Moͤrsburg / 
                                 <lb/>Rapoltſtein / Rapoltzkirch / ꝛc. Die Adeliche
                                 Collegia zu Gelnhauſen / und Friedberg: 
                                 <lb/>Die 
-                                <name ref="https://d-nb.info/gnd/4371007-4"> Chronik 
+                                <name ref="https://d-nb.info/gnd/4364710-8"> Chronik 
                                 </name>
                                 /
 
