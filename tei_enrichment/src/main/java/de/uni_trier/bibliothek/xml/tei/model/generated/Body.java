@@ -44,6 +44,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="milestone" type="{http://www.tei-c.org/ns/1.0}Milestone" maxOccurs="unbounded"/>
  *         <element name="table" type="{http://www.tei-c.org/ns/1.0}Table" maxOccurs="unbounded"/>
  *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
+ *         <element name="foreign" type="{http://www.tei-c.org/ns/1.0}Foreign" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -75,7 +76,8 @@ public class Body {
         @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "milestone", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "table", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "foreign", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> divOrPbOrLb;
 
@@ -100,6 +102,7 @@ public class Body {
      * {@link JAXBElement }{@code <}{@link Choice }{@code >}
      * {@link JAXBElement }{@code <}{@link DivFront }{@code >}
      * {@link JAXBElement }{@code <}{@link Figure }{@code >}
+     * {@link JAXBElement }{@code <}{@link Foreign }{@code >}
      * {@link JAXBElement }{@code <}{@link Fw }{@code >}
      * {@link JAXBElement }{@code <}{@link Gap }{@code >}
      * {@link JAXBElement }{@code <}{@link Lb }{@code >}

@@ -41,6 +41,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="note" type="{http://www.tei-c.org/ns/1.0}Note" maxOccurs="unbounded"/>
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="foreign" type="{http://www.tei-c.org/ns/1.0}Foreign" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -69,7 +70,8 @@ public class Choice {
         @XmlElementRef(name = "corr", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "foreign", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> abbrOrExpanOrOrig;
 
@@ -91,6 +93,7 @@ public class Choice {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
+     * {@link JAXBElement }{@code <}{@link Foreign }{@code >}
      * {@link JAXBElement }{@code <}{@link Lb }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}

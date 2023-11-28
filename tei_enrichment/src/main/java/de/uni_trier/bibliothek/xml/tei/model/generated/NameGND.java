@@ -34,6 +34,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *           </restriction>
  *         </simpleType>
  *       </attribute>
+ *       <attribute ref="{http://www.w3.org/XML/1998/namespace}lang"/>
  *     </extension>
  *   </complexContent>
  * </complexType>
@@ -51,6 +52,8 @@ public class NameGND
     protected String ref;
     @XmlAttribute(name = "cert")
     protected String cert;
+    @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
+    protected String lang;
 
     /**
      * Ruft den Wert der ref-Eigenschaft ab.
@@ -98,6 +101,30 @@ public class NameGND
      */
     public void setCert(String value) {
         this.cert = value;
+    }
+
+    /**
+     * Ruft den Wert der lang-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getLang() {
+        return lang;
+    }
+
+    /**
+     * Legt den Wert der lang-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setLang(String value) {
+        this.lang = value;
     }
 
 }

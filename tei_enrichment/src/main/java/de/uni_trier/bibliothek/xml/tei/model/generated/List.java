@@ -34,6 +34,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="pb" type="{http://www.tei-c.org/ns/1.0}Pb" maxOccurs="unbounded"/>
  *         <element name="figure" type="{http://www.tei-c.org/ns/1.0}Figure" maxOccurs="unbounded"/>
  *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
+ *         <element name="foreign" type="{http://www.tei-c.org/ns/1.0}Foreign" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -54,7 +55,8 @@ public class List {
         @XmlElementRef(name = "fw", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "pb", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "figure", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "foreign", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     @XmlMixed
     protected java.util.List<Serializable> content;
@@ -78,6 +80,7 @@ public class List {
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link Figure }{@code >}
+     * {@link JAXBElement }{@code <}{@link Foreign }{@code >}
      * {@link JAXBElement }{@code <}{@link Fw }{@code >}
      * {@link JAXBElement }{@code <}{@link Item }{@code >}
      * {@link JAXBElement }{@code <}{@link Lb }{@code >}

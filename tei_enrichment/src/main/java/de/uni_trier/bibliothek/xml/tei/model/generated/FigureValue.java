@@ -43,6 +43,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="table" type="{http://www.tei-c.org/ns/1.0}Table" maxOccurs="unbounded"/>
  *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
+ *         <element name="foreign" type="{http://www.tei-c.org/ns/1.0}Foreign" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -75,7 +76,8 @@ public class FigureValue {
         @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "table", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "foreign", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> graphicOrFigDescOrLb;
 
@@ -100,6 +102,7 @@ public class FigureValue {
      * {@link JAXBElement }{@code <}{@link FigDesc }{@code >}
      * {@link JAXBElement }{@code <}{@link Figure }{@code >}
      * {@link JAXBElement }{@code <}{@link FigureList }{@code >}
+     * {@link JAXBElement }{@code <}{@link Foreign }{@code >}
      * {@link JAXBElement }{@code <}{@link Fw }{@code >}
      * {@link JAXBElement }{@code <}{@link Graphic }{@code >}
      * {@link JAXBElement }{@code <}{@link Head }{@code >}

@@ -54,6 +54,7 @@ import de.uni_trier.bibliothek.xml.tei.model.generated.Del;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DivFront;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DocImprint;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DocTitle;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Foreign;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Front;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Fw;
 import de.uni_trier.bibliothek.xml.tei.model.generated.GroupBody;
@@ -169,6 +170,40 @@ public class EntityListEnricher {
 				Subst substElement = (Subst) divOrPbOrLbListElement.getValue();
 				checkSubst(substElement);
 			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Foreign) {
+				Foreign foreignElement = (Foreign) divOrPbOrLbListElement.getValue();
+				checkForeign(foreignElement);
+			}
+
+		}
+	}
+
+	public static void checkForeign(Foreign foreign) throws IOException {
+		List<Serializable> foreignList = foreign.getContent();
+		for (Object foreignListObject : foreignList) {
+			if (foreignListObject instanceof DivFront) {
+				DivFront divFrontElement = (DivFront) foreignListObject;
+				checkDivFront(divFrontElement);
+			} else if (foreignListObject instanceof Choice) {
+				Choice choiceElement = (Choice) foreignListObject;
+				checkChoice(choiceElement);
+			} else if (foreignListObject instanceof NameGND) {
+				NameGND nameElement = (NameGND) foreignListObject;
+				checkNameGnd(nameElement, null, null);
+			} else if (foreignListObject instanceof SourceGND) {
+				SourceGND sourceElement = (SourceGND) foreignListObject;
+				checkSourceGND(sourceElement, null, null);
+			} else if (foreignListObject instanceof LbEtc) {
+				LbEtc lbEtcElement = (LbEtc) foreignListObject;
+				checkLbEtc(lbEtcElement);
+			} else if (foreignListObject instanceof Table) {
+				Table tableElement = (Table) foreignListObject;
+				checkTable(tableElement);
+			}
+			else if (foreignListObject instanceof Subst) {
+				Subst substElement = (Subst) foreignListObject;
+				checkSubst(substElement);
+			}
 
 		}
 	}
@@ -241,8 +276,7 @@ public class EntityListEnricher {
 				Table table = (Table) divOrPbOrLbElement.getValue();
 				checkTable(table);
 			} else if (divOrPbOrLbElement.getValue() instanceof de.uni_trier.bibliothek.xml.tei.model.generated.List) {
-				de.uni_trier.bibliothek.xml.tei.model.generated.List list = (de.uni_trier.bibliothek.xml.tei.model.generated.List) divOrPbOrLbElement
-						.getValue();
+				de.uni_trier.bibliothek.xml.tei.model.generated.List list = (de.uni_trier.bibliothek.xml.tei.model.generated.List) divOrPbOrLbElement.getValue();
 				checkList(list);
 			} else if (divOrPbOrLbElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbElement.getValue();
@@ -504,6 +538,241 @@ public class EntityListEnricher {
 
 	}
 
+	
+
+
+	public static void checkPFront(PFront pfront) throws IOException {
+		List<Serializable> pList = pfront.getContent();
+		for (Object pListElement : pList) {
+			if (!(pListElement instanceof String)) {
+				JAXBElement<?> jaxbElement = (JAXBElement<?>) pListElement;
+				if (jaxbElement.getValue() instanceof Choice) {
+					Choice choiceElement = (Choice) jaxbElement.getValue();
+					checkChoice(choiceElement);
+				} else if (jaxbElement.getValue() instanceof NameGND) {
+					NameGND nameGNDElement = (NameGND) jaxbElement.getValue();
+					checkNameGnd(nameGNDElement, null, null);
+				} else if (jaxbElement.getValue() instanceof SourceGND) {
+					SourceGND sourceGNDElement = (SourceGND) jaxbElement.getValue();
+					checkSourceGND(sourceGNDElement, null, null);
+				} else if (jaxbElement.getValue() instanceof LbEtc) {
+					LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
+					checkLbEtc(lbEtcElement);
+				} else if (jaxbElement.getValue() instanceof Table) {
+					Table tableElement = (Table) jaxbElement.getValue();
+					checkTable(tableElement);
+				}
+				else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
+			}
+		}
+	}
+
+	public static void checkSubst(Subst subst) throws IOException {
+		List<Serializable> substElementsList = subst.getContent();
+
+		for (Object substElemenObject : substElementsList) {
+			if (substElemenObject instanceof LbEtc) {
+				LbEtc lbEtc = (LbEtc) substElemenObject;
+				checkLbEtc(lbEtc);
+			} else if (substElemenObject instanceof NameGND) {
+				NameGND nameGND = (NameGND) substElemenObject;
+				checkNameGnd(nameGND, null, null);
+			} else if (substElemenObject instanceof SourceGND) {
+				SourceGND sourceGND = (SourceGND) substElemenObject;
+				checkSourceGND(sourceGND, null, null);
+			}
+			else if (substElemenObject instanceof Del) {
+				Del delElement = (Del) substElemenObject;
+				checkDel(delElement);
+			}
+			else if (substElemenObject instanceof Add) {
+				Add addElement = (Add) substElemenObject;
+				checkAdd(addElement);
+			}
+
+		}
+
+	}
+
+	public static void checkAdd(Add add) throws IOException {
+		List<Serializable> addElementsList = add.getContent();
+
+		for (Object addElement : addElementsList) {
+			if (addElement instanceof LbEtc) {
+				LbEtc lbEtc = (LbEtc) addElement;
+				checkLbEtc(lbEtc);
+			} else if (addElement instanceof NameGND) {
+				NameGND nameGND = (NameGND) addElement;
+				checkNameGnd(nameGND, null, null);
+			} else if (addElement instanceof SourceGND) {
+				SourceGND sourceGND = (SourceGND) addElement;
+				checkSourceGND(sourceGND, null, null);
+			}
+			else if (addElement instanceof Subst) {
+				Subst substElement = (Subst) addElement;
+				checkSubst(substElement);
+			}
+			else if (addElement instanceof Del) {
+				Del delElement = (Del) addElement;
+				checkDel(delElement);
+			}
+			else if (addElement instanceof Add) {
+				Add addElementRec = (Add) addElement;
+				checkAdd(addElementRec);
+			}
+
+		}
+
+	}
+
+	public static void checkDel(Del del) throws IOException {
+		List<Serializable> delElementsList = del.getContent();
+
+		for (Object delElement : delElementsList) {
+			if (delElement instanceof LbEtc) {
+				LbEtc lbEtc = (LbEtc) delElement;
+				checkLbEtc(lbEtc);
+			} else if (delElement instanceof NameGND) {
+				NameGND nameGND = (NameGND) delElement;
+				checkNameGnd(nameGND, null, null);
+			} else if (delElement instanceof SourceGND) {
+				SourceGND sourceGND = (SourceGND) delElement;
+				checkSourceGND(sourceGND, null, null);
+			}
+			else if (delElement instanceof Subst) {
+				Subst substElement = (Subst) delElement;
+				checkSubst(substElement);
+			}
+			else if (delElement instanceof Add) {
+				Add addElement = (Add) delElement;
+				checkAdd(addElement);
+			}
+			else if (delElement instanceof Del) {
+				Del delElementRec = (Del) delElement;
+				checkDel(delElementRec);
+			}
+
+		}
+
+	}
+
+
+
+	public static void checkChoice(Choice choice) throws IOException {
+		List<JAXBElement<?>> choiceElementsList = choice.getAbbrOrExpanOrOrig();
+
+		for (JAXBElement<?> jaxbElement : choiceElementsList) {
+			if (jaxbElement.getValue() instanceof LbEtc) {
+				LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
+				checkLbEtc(lbEtc);
+			} else if (jaxbElement.getValue() instanceof NameGND) {
+				NameGND nameGND = (NameGND) jaxbElement.getValue();
+				checkNameGnd(nameGND, null, null);
+			} else if (jaxbElement.getValue() instanceof SourceGND) {
+				SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
+				checkSourceGND(sourceGND, null, null);
+			}
+			else if (jaxbElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbElement.getValue();
+				checkSubst(substElement);
+			}
+
+		}
+
+	}
+
+	public static void checkLbEtc(LbEtc lbEtc) throws IOException {
+
+		List<Serializable> lbEtcList = lbEtc.getContent();
+		for (Object lbEtcListElement : lbEtcList) {
+			if (!(lbEtcListElement instanceof String)) {
+				JAXBElement<?> jaxbLbEtcListElement = (JAXBElement<?>) lbEtcListElement;
+				if (jaxbLbEtcListElement.getValue() instanceof Choice) {
+					Choice choice = (Choice) jaxbLbEtcListElement.getValue();
+					checkChoice(choice);
+
+				} else if (jaxbLbEtcListElement.getValue() instanceof NameGND) {
+					NameGND nameGNDElement = (NameGND) jaxbLbEtcListElement.getValue();
+					checkNameGnd(nameGNDElement, null, null);
+				} else if (jaxbLbEtcListElement.getValue() instanceof SourceGND) {
+					SourceGND sourceGNDElement = (SourceGND) jaxbLbEtcListElement.getValue();
+					checkSourceGND(sourceGNDElement, null, null);
+				} else if (jaxbLbEtcListElement.getValue() instanceof Table) {
+					Table tableElement = (Table) jaxbLbEtcListElement.getValue();
+					checkTable(tableElement);
+				}
+				else if (jaxbLbEtcListElement.getValue() instanceof Subst) {
+				Subst substElement = (Subst) jaxbLbEtcListElement.getValue();
+				checkSubst(substElement);
+			}
+			}
+		}
+	}
+
+	// public static void checkFw(Fw fwElement) {
+
+	// List<Serializable> fwElementList = fwElement.getContent();
+	// for (Object fwElementListElement : fwElementList) {
+	// if (!(fwElementListElement instanceof String)) {
+	// JAXBElement<?> jaxbfwElementListElement = (JAXBElement<?>)
+	// fwElementListElement;
+
+	// }
+	// }
+	// }
+
+	public static void createLists() {
+
+		de.uni_trier.bibliothek.xml.persons.model.generated.Text personsText = teiPersons.getText();
+		de.uni_trier.bibliothek.xml.persons.model.generated.Body personsBody = personsText.getBody();
+		de.uni_trier.bibliothek.xml.persons.model.generated.Div personsDiv = personsBody.getDiv();
+		ListPerson listPerson = personsDiv.getListPerson();
+		listPersonList = listPerson.getPerson();
+
+		de.uni_trier.bibliothek.xml.listBibl.model.generated.Text listBiblText = teiListBibl.getText();
+		de.uni_trier.bibliothek.xml.listBibl.model.generated.Body listBiblBody = listBiblText.getBody();
+		de.uni_trier.bibliothek.xml.listBibl.model.generated.Div listBiblDiv = listBiblBody.getDiv();
+		ListBibl listBibl = listBiblDiv.getListBibl();
+		listBiblList = listBibl.getBibl();
+
+		de.uni_trier.bibliothek.xml.events.model.generated.Text eventsBiblText = teiEvents.getText();
+		de.uni_trier.bibliothek.xml.events.model.generated.Body eventsBody = eventsBiblText.getBody();
+		de.uni_trier.bibliothek.xml.events.model.generated.Div eventsDiv = eventsBody.getDiv();
+		ListEvent listEvent = eventsDiv.getListEvent();
+		eventList = listEvent.getEvent();
+
+		de.uni_trier.bibliothek.xml.objects.model.generated.Text objectsText = teiObjects.getText();
+		de.uni_trier.bibliothek.xml.objects.model.generated.Body objecBody = objectsText.getBody();
+		de.uni_trier.bibliothek.xml.objects.model.generated.Div objectsDiv = objecBody.getDiv();
+		ListObject listObject = objectsDiv.getListObject();
+		objectList = listObject.getObject();
+
+		de.uni_trier.bibliothek.xml.orgs.model.generated.Text orgsText = teiOrgs.getText();
+		de.uni_trier.bibliothek.xml.orgs.model.generated.Body orgsBody = orgsText.getBody();
+		de.uni_trier.bibliothek.xml.orgs.model.generated.Div orgsDiv = orgsBody.getDiv();
+		ListOrg listOrgs = orgsDiv.getListOrg();
+		orgsList = listOrgs.getOrg();
+
+		de.uni_trier.bibliothek.xml.places.model.generated.Text placesText = teiPlaces.getText();
+		de.uni_trier.bibliothek.xml.places.model.generated.Body placesBody = placesText.getBody();
+		de.uni_trier.bibliothek.xml.places.model.generated.Div placesDiv = placesBody.getDiv();
+		ListPlace listPlaces = placesDiv.getListPlace();
+		placesList = listPlaces.getPlace();
+	}
+
+	public static void createJavaObjects() {
+		originalTEI = (TEI) objectTEIList.get(0);
+		teiEvents = (de.uni_trier.bibliothek.xml.events.model.generated.TEI) objectTEIList.get(1);
+		teiListBibl = (de.uni_trier.bibliothek.xml.listBibl.model.generated.TEI) objectTEIList.get(2);
+		teiObjects = (de.uni_trier.bibliothek.xml.objects.model.generated.TEI) objectTEIList.get(3);
+		teiOrgs = (de.uni_trier.bibliothek.xml.orgs.model.generated.TEI) objectTEIList.get(4);
+		teiPersons = (de.uni_trier.bibliothek.xml.persons.model.generated.TEI) objectTEIList.get(5);
+		teiPlaces = (de.uni_trier.bibliothek.xml.places.model.generated.TEI) objectTEIList.get(6);
+	}
+
 	public static void checkNameGnd(NameGND nameGND, Head head, DivFront divFrontElement) throws IOException {
 		List<Serializable> nameGNDList = nameGND.getContent();
 		// block für artikel
@@ -516,6 +785,7 @@ public class EntityListEnricher {
 				// System.out.println("artikel namegnd-url nummer " + i + " von wort: " + refURL);
 				// System.out.println("artikel head: " + head.getContent());
 				// System.out.println("artikel div: " + divFrontElement.getFwOrPOrFigure());
+				System.out.println("requestURL: " + refURL);
 				String prefix = makeHTTPRequest(refURL);
 			}
 		} else {
@@ -524,6 +794,7 @@ public class EntityListEnricher {
 			for (int i = 0; i < refURLList.length; i++) {
 				String refURL = refURLList[i];
 				// System.out.println("loser namegnd-url nummer " + i + " von wort: " + refURL);
+				System.out.println("requestURL: " + refURL);
 				String prefix = makeHTTPRequest(refURL);
 			}
 		}
@@ -680,7 +951,7 @@ public class EntityListEnricher {
 
 			
 			// collection, collective manuscripts, expression, manuscript, provenance characteristics
-			ArrayList<String> listBiblTerms = new ArrayList<>(Arrays.asList("Collection", "CollectiveManuscript", "Expression", "Manuscript", "ProvenanceCharacteristic"));
+			ArrayList<String> listBiblTerms = new ArrayList<>(Arrays.asList("Work", "Collection", "CollectiveManuscript", "Expression", "Manuscript", "ProvenanceCharacteristic"));
 			Boolean isBiblList = !Collections.disjoint(typeTermslist, listBiblTerms);
 			// System.out.println("listbiblterms: " + listBiblTerms);
 			// System.out.println("typetermarraylist: " + typeTermArray);
@@ -855,223 +1126,6 @@ public class EntityListEnricher {
 			// System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
 		}
 
-	}
-
-
-	public static void checkPFront(PFront pfront) throws IOException {
-		List<Serializable> pList = pfront.getContent();
-		for (Object pListElement : pList) {
-			if (!(pListElement instanceof String)) {
-				JAXBElement<?> jaxbElement = (JAXBElement<?>) pListElement;
-				if (jaxbElement.getValue() instanceof Choice) {
-					Choice choiceElement = (Choice) jaxbElement.getValue();
-					checkChoice(choiceElement);
-				} else if (jaxbElement.getValue() instanceof NameGND) {
-					NameGND nameGNDElement = (NameGND) jaxbElement.getValue();
-					checkNameGnd(nameGNDElement, null, null);
-				} else if (jaxbElement.getValue() instanceof SourceGND) {
-					SourceGND sourceGNDElement = (SourceGND) jaxbElement.getValue();
-					checkSourceGND(sourceGNDElement, null, null);
-				} else if (jaxbElement.getValue() instanceof LbEtc) {
-					LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
-					checkLbEtc(lbEtcElement);
-				} else if (jaxbElement.getValue() instanceof Table) {
-					Table tableElement = (Table) jaxbElement.getValue();
-					checkTable(tableElement);
-				}
-				else if (jaxbElement.getValue() instanceof Subst) {
-				Subst substElement = (Subst) jaxbElement.getValue();
-				checkSubst(substElement);
-			}
-			}
-		}
-	}
-
-	public static void checkSubst(Subst subst) throws IOException {
-		List<Object> substElementsList = subst.getDelOrAdd();
-
-		for (Object substElemenObject : substElementsList) {
-			if (substElemenObject instanceof LbEtc) {
-				LbEtc lbEtc = (LbEtc) substElemenObject;
-				checkLbEtc(lbEtc);
-			} else if (substElemenObject instanceof NameGND) {
-				NameGND nameGND = (NameGND) substElemenObject;
-				checkNameGnd(nameGND, null, null);
-			} else if (substElemenObject instanceof SourceGND) {
-				SourceGND sourceGND = (SourceGND) substElemenObject;
-				checkSourceGND(sourceGND, null, null);
-			}
-			else if (substElemenObject instanceof Del) {
-				Del delElement = (Del) substElemenObject;
-				checkDel(delElement);
-			}
-			else if (substElemenObject instanceof Add) {
-				Add addElement = (Add) substElemenObject;
-				checkAdd(addElement);
-			}
-
-		}
-
-	}
-
-	public static void checkAdd(Add add) throws IOException {
-		List<Serializable> addElementsList = add.getContent();
-
-		for (Object addElement : addElementsList) {
-			if (addElement instanceof LbEtc) {
-				LbEtc lbEtc = (LbEtc) addElement;
-				checkLbEtc(lbEtc);
-			} else if (addElement instanceof NameGND) {
-				NameGND nameGND = (NameGND) addElement;
-				checkNameGnd(nameGND, null, null);
-			} else if (addElement instanceof SourceGND) {
-				SourceGND sourceGND = (SourceGND) addElement;
-				checkSourceGND(sourceGND, null, null);
-			}
-			else if (addElement instanceof Subst) {
-				Subst substElement = (Subst) addElement;
-				checkSubst(substElement);
-			}
-
-		}
-
-	}
-
-	public static void checkDel(Del del) throws IOException {
-		List<Serializable> delElementsList = del.getContent();
-
-		for (Object delElement : delElementsList) {
-			if (delElement instanceof LbEtc) {
-				LbEtc lbEtc = (LbEtc) delElement;
-				checkLbEtc(lbEtc);
-			} else if (delElement instanceof NameGND) {
-				NameGND nameGND = (NameGND) delElement;
-				checkNameGnd(nameGND, null, null);
-			} else if (delElement instanceof SourceGND) {
-				SourceGND sourceGND = (SourceGND) delElement;
-				checkSourceGND(sourceGND, null, null);
-			}
-			else if (delElement instanceof Subst) {
-				Subst substElement = (Subst) delElement;
-				checkSubst(substElement);
-			}
-
-		}
-
-	}
-
-
-
-	public static void checkChoice(Choice choice) throws IOException {
-		List<JAXBElement<?>> choiceElementsList = choice.getAbbrOrExpanOrOrig();
-
-		for (JAXBElement<?> jaxbElement : choiceElementsList) {
-			if (jaxbElement.getValue() instanceof LbEtc) {
-				LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-				checkLbEtc(lbEtc);
-			} else if (jaxbElement.getValue() instanceof NameGND) {
-				NameGND nameGND = (NameGND) jaxbElement.getValue();
-				checkNameGnd(nameGND, null, null);
-			} else if (jaxbElement.getValue() instanceof SourceGND) {
-				SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
-				checkSourceGND(sourceGND, null, null);
-			}
-			else if (jaxbElement.getValue() instanceof Subst) {
-				Subst substElement = (Subst) jaxbElement.getValue();
-				checkSubst(substElement);
-			}
-
-		}
-
-	}
-
-	public static void checkLbEtc(LbEtc lbEtc) throws IOException {
-
-		List<Serializable> lbEtcList = lbEtc.getContent();
-		for (Object lbEtcListElement : lbEtcList) {
-			if (!(lbEtcListElement instanceof String)) {
-				JAXBElement<?> jaxbLbEtcListElement = (JAXBElement<?>) lbEtcListElement;
-				if (jaxbLbEtcListElement.getValue() instanceof Choice) {
-					Choice choice = (Choice) jaxbLbEtcListElement.getValue();
-					checkChoice(choice);
-
-				} else if (jaxbLbEtcListElement.getValue() instanceof NameGND) {
-					NameGND nameGNDElement = (NameGND) jaxbLbEtcListElement.getValue();
-					checkNameGnd(nameGNDElement, null, null);
-				} else if (jaxbLbEtcListElement.getValue() instanceof SourceGND) {
-					SourceGND sourceGNDElement = (SourceGND) jaxbLbEtcListElement.getValue();
-					checkSourceGND(sourceGNDElement, null, null);
-				} else if (jaxbLbEtcListElement.getValue() instanceof Table) {
-					Table tableElement = (Table) jaxbLbEtcListElement.getValue();
-					checkTable(tableElement);
-				}
-				else if (jaxbLbEtcListElement.getValue() instanceof Subst) {
-				Subst substElement = (Subst) jaxbLbEtcListElement.getValue();
-				checkSubst(substElement);
-			}
-			}
-		}
-	}
-
-	// public static void checkFw(Fw fwElement) {
-
-	// List<Serializable> fwElementList = fwElement.getContent();
-	// for (Object fwElementListElement : fwElementList) {
-	// if (!(fwElementListElement instanceof String)) {
-	// JAXBElement<?> jaxbfwElementListElement = (JAXBElement<?>)
-	// fwElementListElement;
-
-	// }
-	// }
-	// }
-
-	public static void createLists() {
-
-		de.uni_trier.bibliothek.xml.persons.model.generated.Text personsText = teiPersons.getText();
-		de.uni_trier.bibliothek.xml.persons.model.generated.Body personsBody = personsText.getBody();
-		de.uni_trier.bibliothek.xml.persons.model.generated.Div personsDiv = personsBody.getDiv();
-		ListPerson listPerson = personsDiv.getListPerson();
-		listPersonList = listPerson.getPerson();
-
-		de.uni_trier.bibliothek.xml.listBibl.model.generated.Text listBiblText = teiListBibl.getText();
-		de.uni_trier.bibliothek.xml.listBibl.model.generated.Body listBiblBody = listBiblText.getBody();
-		de.uni_trier.bibliothek.xml.listBibl.model.generated.Div listBiblDiv = listBiblBody.getDiv();
-		ListBibl listBibl = listBiblDiv.getListBibl();
-		listBiblList = listBibl.getBibl();
-
-		de.uni_trier.bibliothek.xml.events.model.generated.Text eventsBiblText = teiEvents.getText();
-		de.uni_trier.bibliothek.xml.events.model.generated.Body eventsBody = eventsBiblText.getBody();
-		de.uni_trier.bibliothek.xml.events.model.generated.Div eventsDiv = eventsBody.getDiv();
-		ListEvent listEvent = eventsDiv.getListEvent();
-		eventList = listEvent.getEvent();
-
-		de.uni_trier.bibliothek.xml.objects.model.generated.Text objectsText = teiObjects.getText();
-		de.uni_trier.bibliothek.xml.objects.model.generated.Body objecBody = objectsText.getBody();
-		de.uni_trier.bibliothek.xml.objects.model.generated.Div objectsDiv = objecBody.getDiv();
-		ListObject listObject = objectsDiv.getListObject();
-		objectList = listObject.getObject();
-
-		de.uni_trier.bibliothek.xml.orgs.model.generated.Text orgsText = teiOrgs.getText();
-		de.uni_trier.bibliothek.xml.orgs.model.generated.Body orgsBody = orgsText.getBody();
-		de.uni_trier.bibliothek.xml.orgs.model.generated.Div orgsDiv = orgsBody.getDiv();
-		ListOrg listOrgs = orgsDiv.getListOrg();
-		orgsList = listOrgs.getOrg();
-
-		de.uni_trier.bibliothek.xml.places.model.generated.Text placesText = teiPlaces.getText();
-		de.uni_trier.bibliothek.xml.places.model.generated.Body placesBody = placesText.getBody();
-		de.uni_trier.bibliothek.xml.places.model.generated.Div placesDiv = placesBody.getDiv();
-		ListPlace listPlaces = placesDiv.getListPlace();
-		placesList = listPlaces.getPlace();
-	}
-
-	public static void createJavaObjects() {
-		originalTEI = (TEI) objectTEIList.get(0);
-		teiEvents = (de.uni_trier.bibliothek.xml.events.model.generated.TEI) objectTEIList.get(1);
-		teiListBibl = (de.uni_trier.bibliothek.xml.listBibl.model.generated.TEI) objectTEIList.get(2);
-		teiObjects = (de.uni_trier.bibliothek.xml.objects.model.generated.TEI) objectTEIList.get(3);
-		teiOrgs = (de.uni_trier.bibliothek.xml.orgs.model.generated.TEI) objectTEIList.get(4);
-		teiPersons = (de.uni_trier.bibliothek.xml.persons.model.generated.TEI) objectTEIList.get(5);
-		teiPlaces = (de.uni_trier.bibliothek.xml.places.model.generated.TEI) objectTEIList.get(6);
 	}
 
 }

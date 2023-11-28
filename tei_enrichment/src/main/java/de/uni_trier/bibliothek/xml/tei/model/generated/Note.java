@@ -29,6 +29,12 @@ import jakarta.xml.bind.annotation.XmlValue;
  *           </restriction>
  *         </simpleType>
  *       </attribute>
+ *       <attribute name="type">
+ *         <simpleType>
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *           </restriction>
+ *         </simpleType>
+ *       </attribute>
  *     </restriction>
  *   </complexContent>
  * </complexType>
@@ -46,6 +52,8 @@ public class Note {
     protected String content;
     @XmlAttribute(name = "cert")
     protected String cert;
+    @XmlAttribute(name = "type")
+    protected String type;
 
     /**
      * Ruft den Wert der content-Eigenschaft ab.
@@ -93,6 +101,30 @@ public class Note {
      */
     public void setCert(String value) {
         this.cert = value;
+    }
+
+    /**
+     * Ruft den Wert der type-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * Legt den Wert der type-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setType(String value) {
+        this.type = value;
     }
 
 }

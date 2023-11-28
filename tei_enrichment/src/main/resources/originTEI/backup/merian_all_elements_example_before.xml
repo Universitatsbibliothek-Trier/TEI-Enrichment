@@ -118,7 +118,20 @@
         <front>
             <pb n="1" facs="testdoi1.jpg" />
             <div type="frontispiece">
-                <figure />
+                <figure type="singlePage" subtype="frontispieces" place="middle"
+                            corresp="mgndpla:place_Schloss_Regensburg"
+                            xml:id="band_07_figure_001_00">
+                            <figDesc><height
+                                    unit="cm" quantity="14" />
+                                <width unit="cm" quantity="10" />
+                            </figDesc>
+                            <graphic url="testdoi3_1.jpg"></graphic>
+                            <head>Lorem ipsum</head>
+                            <p>Lorem ipsum</p>
+                            <list>
+                                <item>lorem ipsum</item>
+                            </list>
+                        </figure>
                 <p><lb n="1" />TOPOGRAPHIA <lb n="2" />Hassiæ et Regionum Vici⸗ <lb n="3" />narum. <lb
                         n="4" />Das iſt <lb n="5" />Beſchreibung der <choice>
                         <abbr>vornẽb⸗ſten</abbr>
@@ -179,8 +192,8 @@
                     ea rebum.<lb /> Stet clita kasd gubergren, no sea takimata sanctus est <name
                         ref="https://d-nb.info/gnd/4203270-2">Schloss
                         Hexenagger</name> Lorem ipsum dolor sit amet. <lb />Lorem ipsum dolor sit
-                    amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. <lb />At vero eos et
+                    amet, consetetur <name ref="https://d-nb.info/gnd/1309985006" xml:lang="la">gubergren</name>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna<name>Piparu</name> aliquyam erat, sed diam voluptua. <lb />At vero eos et
                     accusam et justo duo dolores et ea rebum.<lb /> Stet clita kasd gubergren, no
                     sea takimata sanctus est Lorem ipsum dolor sit amet.<lb /></p>
             </div>
@@ -367,7 +380,7 @@
                                 beruͤhmten Griechiſchen Geographum Ptolomæum, der lib. 2. cap. <lb />11.
                                 Geogr. zweyerley Heßiſcher Gebirge gedencket / als der Montium
                                 Melibocorum. <lb />Dahero kommt das Wort Catzenelenbogen / aus dem
-                                Cattimelibocenſes, nemlich die <lb />Catti vom Gebirge Meliboco, wie
+                                Cattimelibocenſes, nemlich die <lb />Catti vom Gebirge Meliboco, wie <foreign xml:lang="la">eximirt<note type="translation"></note></foreign>
                                 Rhenanus 1. rerum German. pag. 56. gedencket / <lb />und ſich
                                 ruͤhmet / daß er der erſte ſeye / ſo dieſen Urſprung erwieſen. Das
                                 andere <lb />Heßiſche Gebirg nennet gedachter Scribent Montes
@@ -1057,7 +1070,7 @@
                         <lb />
                         <item>Abbtswald / <ref>5.</ref></item>
                         <lb />
-                        <item>Abnobii montes, <ref>4.</ref><ref> 8.</ref></item>
+                        <item>Abnobii montes, <ref>4.</ref><ref> <subst><del>6</del><del><add place="across">7</add></del><add place="across">8</add></subst></ref></item>
                         <lb />
                         <item>Adolffs⸗Eck / <ref>95.</ref></item>
                         <lb />
@@ -1126,7 +1139,22 @@
 
             <fw type="catch">Ver⸗</fw>
             <pb n="15" />
-            <figure />
+            <figure type="doublePage" subtype="site_plans" place="top">
+                <figDesc>companion pieces<height unit="cm" quantity="1.5" />
+                                    <width unit="cm" quantity="10" />
+                                </figDesc><graphic url="testdoi15_1.jpg"></graphic></figure>
+                <figure type="doublePage" subtype="architectural_views" place="middle">
+                <figDesc>companion pieces<height unit="cm" quantity="1.5" />
+                                    <width unit="cm" quantity="10" />
+                                </figDesc><graphic url="testdoi15_2.jpg"></graphic></figure>
+                <figure type="doublePage" subtype="cross_sections" place="bottom-left">
+                <figDesc>companion pieces<height unit="cm" quantity="1.5" />
+                                    <width unit="cm" quantity="10" />
+                                </figDesc><graphic url="testdoi15_3.jpg"></graphic></figure>
+                <figure type="doublePage" subtype="architectural_models" place="bottom-right">
+                <figDesc>companion pieces<height unit="cm" quantity="1.5" />
+                                    <width unit="cm" quantity="10" />
+                                </figDesc><graphic url="testdoi15_4.jpg"></graphic></figure>
             <lb />
             <div type="index">
                 <head>Verzeichniß der Kupffer / darnach ſich der Buchbinder <lb />zu richten hat.</head>
@@ -1360,6 +1388,7 @@
                     </choice>
                 </p>
             </div>
+            <trailer>ENDE.</trailer>
             <lb />
             <figure />
         </back>
