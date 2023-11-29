@@ -3535,6 +3535,32 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link NameGND }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link NameGND }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "name", scope = Ref.class)
+    public JAXBElement<NameGND> createRefName(NameGND value) {
+        return new JAXBElement<>(_FigDescName_QNAME, NameGND.class, Ref.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "quote", scope = Ref.class)
+    public JAXBElement<SourceGND> createRefQuote(SourceGND value) {
+        return new JAXBElement<>(_FigDescQuote_QNAME, SourceGND.class, Ref.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Lb }{@code >}
      * 
      * @param value
@@ -3610,6 +3636,32 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "foreign", scope = Item.class)
     public JAXBElement<Foreign> createItemForeign(Foreign value) {
         return new JAXBElement<>(_FigureListItemForeign_QNAME, Foreign.class, Item.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link NameGND }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link NameGND }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "name", scope = Item.class)
+    public JAXBElement<NameGND> createItemName(NameGND value) {
+        return new JAXBElement<>(_FigDescName_QNAME, NameGND.class, Item.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "quote", scope = Item.class)
+    public JAXBElement<SourceGND> createItemQuote(SourceGND value) {
+        return new JAXBElement<>(_FigDescQuote_QNAME, SourceGND.class, Item.class, value);
     }
 
     /**

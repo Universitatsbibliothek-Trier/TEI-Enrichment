@@ -989,9 +989,11 @@
                                 wol befindet.</p>
                         </div>
                         <div type="additional">
-                            <head>Arolſen.</head>
+                            <head>Arolſen.<name ref="https://d-nb.info/gnd/4240073-9"
+                                >Regensburg</name></head>
                             <lb />
-                            <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            <p>DLorem ipsum dolor sit <name ref="https://d-nb.info/gnd/4240073-9"
+                                >Regensburg</name>amet, consetetur sadipscing elitr, sed diam
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua. <lb />At vero eos et accusam et justo duo
                                 dolores et ea rebum.<lb /> Stet clita kasd gubergren, no sea
@@ -1004,7 +1006,8 @@
                         </div>
                         <div type="postface">
                             <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                nonumy eirmod tempor <name ref="https://d-nb.info/gnd/4240073-9"
+                                >Regensburg</name>invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua. <lb />At vero eos et accusam et justo duo
                                 dolores et ea rebum.<lb /> Stet clita kasd gubergren, no sea
                                 takimata sanctus est Lorem ipsum dolor sit amet. <lb />Lorem ipsum
@@ -1019,11 +1022,13 @@
                         <pb n="13" />
                         <div type="appendix">
                             <div type="article">
-                                <head>Lorem ipsum</head>
+                                <head>Lorem ipsum<name ref="https://d-nb.info/gnd/4240073-9"
+                                    >Regensburg</name></head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. <lb />At vero eos et accusam et justo
-                                    duo dolores et ea rebum.<lb /> Stet clita kasd gubergren, no sea
+                                    duo dolores <name ref="https://d-nb.info/gnd/4240073-9"
+                                    >Regensburg</name>et ea rebum.<lb /> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet. <lb />Lorem
                                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -1032,9 +1037,11 @@
                                     takimata sanctus est Lorem ipsum dolor sit amet.<lb /></p>
                             </div>
                             <div type="article">
-                                <head>Lorem ipsum</head>
+                                <head>Lorem ipsum<name ref="https://d-nb.info/gnd/4240073-9"
+                                    >Regensburg</name></head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                    nonumy eirmod <name ref="https://d-nb.info/gnd/4240073-9"
+                                    >Regensburg</name>tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. <lb />At vero eos et accusam et justo
                                     duo dolores et ea rebum.<lb /> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet. <lb />Lorem
@@ -1056,14 +1063,17 @@
             <figure />
             <lb />
             <div type="index" n="1">
-                <head>Namen ⸗Regiſter</head>
+                <head>Namen ⸗Regiſter<name ref="https://d-nb.info/gnd/4240073-9"
+                    >Regensburg</name></head>
                 <lb />
                 <p>Der Landſchafften / Gaͤw / Thaͤler / Staͤdt / Staͤdtlein / <lb />Flecken /
-                    Doͤrffer / Cloͤſter / Schloͤſſer / Waſſer / Berge / Waͤlder / <lb />Hoſpitalen /
+                    Doͤrffer / Cloͤſter / <name ref="https://d-nb.info/gnd/4240073-9"
+                    >Regensburg</name>Schloͤſſer / Waſſer / Berge / Waͤlder / <lb />Hoſpitalen /
                     ꝛc. ſo in dieſem Tractat von Heſſen / und theils an⸗ <lb />grentzenden Landen /
                     ꝛc. zu finden. <lb /></p>
                 <div n="2">
-                    <head>A.</head>
+                    <head>A.<name ref="https://d-nb.info/gnd/4240073-9"
+                        >Regensburg</name></head>
                     <list>
                         <lb />
                         <item>AAr / <ref>fl. 18.</ref></item>
@@ -1363,7 +1373,8 @@
                     <item>57. Wetzlar. <ref>141</ref></item>
                     <item>58. Wißbaden. <ref>142</ref></item>
                     <item>59. <list>
-                            <item>Witzenhauſen.</item>
+                            <item><name ref="https://d-nb.info/gnd/4240073-9"
+                                >Regensburg</name></item>
                             <item>Wolffshagen.</item>
                         </list> <ref>144</ref></item>
                     <item> 60. <list>

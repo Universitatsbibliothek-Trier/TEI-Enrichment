@@ -34,6 +34,13 @@
                         <link target="merian_hessen.xml#band_07"/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4198693-3</idno>
                     </bibl>
+                    <bibl>
+                        <note>Sammlung_Monika_und_Günther_Czichon</note>
+                        <title>Sammlung_Monika_und_Günther_Czichon</title>
+                    </bibl>
+                    <bibl>
+                        <title>Chronika</title>
+                    </bibl>
                 </listBibl>
             </div>
         </body>

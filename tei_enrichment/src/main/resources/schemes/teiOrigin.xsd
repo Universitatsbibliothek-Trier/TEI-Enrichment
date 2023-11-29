@@ -238,6 +238,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="choice" type="self:Choice" maxOccurs="unbounded" />
       <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
       <xs:element name="foreign" type="self:Foreign" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 
@@ -251,6 +253,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
       <xs:element name="figure" type="self:Figure" maxOccurs="unbounded" />
       <xs:element name="subst" type="self:Subst" maxOccurs="unbounded" />
       <xs:element name="foreign" type="self:Foreign" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameGND" maxOccurs="unbounded" />
+      <xs:element name="quote" type="self:SourceGND" maxOccurs="unbounded" />
     </xs:choice>
   </xs:complexType>
 

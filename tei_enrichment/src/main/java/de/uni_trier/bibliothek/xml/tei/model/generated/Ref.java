@@ -37,6 +37,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="figure" type="{http://www.tei-c.org/ns/1.0}Figure" maxOccurs="unbounded"/>
  *         <element name="subst" type="{http://www.tei-c.org/ns/1.0}Subst" maxOccurs="unbounded"/>
  *         <element name="foreign" type="{http://www.tei-c.org/ns/1.0}Foreign" maxOccurs="unbounded"/>
+ *         <element name="name" type="{http://www.tei-c.org/ns/1.0}NameGND" maxOccurs="unbounded"/>
+ *         <element name="quote" type="{http://www.tei-c.org/ns/1.0}SourceGND" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -59,7 +61,9 @@ public class Ref {
         @XmlElementRef(name = "choice", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "figure", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "foreign", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "foreign", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "name", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "quote", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     @XmlMixed
     protected List<Serializable> content;
@@ -88,7 +92,9 @@ public class Ref {
      * {@link JAXBElement }{@code <}{@link Fw }{@code >}
      * {@link JAXBElement }{@code <}{@link Item }{@code >}
      * {@link JAXBElement }{@code <}{@link Lb }{@code >}
+     * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link Pb }{@code >}
+     * {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
      * {@link JAXBElement }{@code <}{@link Subst }{@code >}
      * {@link String }
      * 
