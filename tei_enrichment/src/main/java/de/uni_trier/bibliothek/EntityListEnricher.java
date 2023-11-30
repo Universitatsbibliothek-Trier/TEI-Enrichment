@@ -956,12 +956,25 @@ public class EntityListEnricher {
 			}
 
 			
-			// collection, collective manuscripts, expression, manuscript, provenance characteristics
-			ArrayList<String> listBiblTerms = new ArrayList<>(Arrays.asList("Work", "Collection", "CollectiveManuscript", "Expression", "Manuscript", "ProvenanceCharacteristic"));
-			Boolean isBiblList = !Collections.disjoint(typeTermslist, listBiblTerms);
-			// System.out.println("listbiblterms: " + listBiblTerms);
-			// System.out.println("typetermarraylist: " + typeTermArray);
-			// System.out.println("isBiblList ist " + isBiblList);
+			// test auf Oberkategorie
+			ArrayList<String> listBiblCategories = new ArrayList<>(Arrays.asList("Collection", "CollectiveManuscript", "Expression", "Manuscript", "MusicalWork", "ProvenanceCharacteristic","VersionOfAMusicalWork"));
+			Boolean isBiblList = !Collections.disjoint(typeTermslist, listBiblCategories);
+
+			ArrayList<String> listPersonCategories = new ArrayList<>(Arrays.asList("DifferentiatedPerson", "UndifferentiatedPerson", "Pseudonym", "RoyalOrMemberOfARoyalHouse", "LiteraryOrLegendaryCharacter", "Gods", "Spirits", "CollectivePseudonym"));
+			Boolean isPersonList = !Collections.disjoint(typeTermslist, listPersonCategories);
+
+			ArrayList<String> listPlacesCategories = new ArrayList<>(Arrays.asList( "AdministrativeUnit", "BuildingOrMemorial", "Country", "ExtraterrestialTerritory", "FictivePlace", "MemberState", "NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit", "NaturalGeographicUnit", "ReligiousTerritory", "TerritorialCorporateBodyOrAdministrativeUnit", "WayBorderOrLine"));
+			Boolean isPlacesList = !Collections.disjoint(typeTermslist, listPlacesCategories);
+
+			ArrayList<String> listCorporateBody = new ArrayList<>(Arrays.asList("Company", "FictiveCorporateBody", "MusicalCorporateBody", "OrganOfCorporateBody", "ProjectOrProgram", "ReligiousAdminstrativeUnit", "ReligiousCorporateBody"));
+			Boolean isCorporateList = !Collections.disjoint(typeTermslist, listPlacesCategories);
+
+			ArrayList<String> listObjects = new ArrayList<>(Arrays.asList("EthnographicName", "FictiveTerm", "Language", "CharactersOrMorphemes", "GroupOfPersons", "MeansOfTransportWithIndividualName", "NomenClatureInBiologyOrChemistry", "ProductNameOrBrandName", "SoftwareProduct", "SubjectHeadingSensoStricto", "HistoricSingleEventOrEra"));
+			Boolean isSubjectHeading = !Collections.disjoint(typeTermslist, listPlacesCategories);
+
+			ArrayList<String> listEvents = new ArrayList<>(Arrays.asList("SeriesOfConferenceOrEvent"));
+			Boolean isEventList = !Collections.disjoint(typeTermslist, listEvents);
+
 			
 			if(isBiblList)
 			{
