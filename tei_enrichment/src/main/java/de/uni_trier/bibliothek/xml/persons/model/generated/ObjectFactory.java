@@ -30,12 +30,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _PersonPersName_QNAME = new QName("http://www.tei-c.org/ns/1.0", "persName");
-    private final static QName _PersonNote_QNAME = new QName("http://www.tei-c.org/ns/1.0", "note");
-    private final static QName _PersonBirth_QNAME = new QName("http://www.tei-c.org/ns/1.0", "birth");
-    private final static QName _PersonDeath_QNAME = new QName("http://www.tei-c.org/ns/1.0", "death");
-    private final static QName _PersonLink_QNAME = new QName("http://www.tei-c.org/ns/1.0", "link");
-    private final static QName _PersonIdno_QNAME = new QName("http://www.tei-c.org/ns/1.0", "idno");
+    private final static QName _NoteList_QNAME = new QName("http://www.tei-c.org/ns/1.0", "list");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: de.uni_trier.bibliothek.xml.persons.model.generated
@@ -235,81 +230,36 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create an instance of {@link Note }
      * 
-     * @param value
-     *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     the new instance of {@link Note }
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "persName", scope = Person.class)
-    public JAXBElement<String> createPersonPersName(String value) {
-        return new JAXBElement<>(_PersonPersName_QNAME, String.class, Person.class, value);
+    public Note createNote() {
+        return new Note();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create an instance of {@link List }
      * 
-     * @param value
-     *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     the new instance of {@link List }
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "note", scope = Person.class)
-    public JAXBElement<String> createPersonNote(String value) {
-        return new JAXBElement<>(_PersonNote_QNAME, String.class, Person.class, value);
+    public List createList() {
+        return new List();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Birth }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link List }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link Birth }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link List }{@code >}
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "birth", scope = Person.class)
-    public JAXBElement<Birth> createPersonBirth(Birth value) {
-        return new JAXBElement<>(_PersonBirth_QNAME, Birth.class, Person.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Death }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link Death }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "death", scope = Person.class)
-    public JAXBElement<Death> createPersonDeath(Death value) {
-        return new JAXBElement<>(_PersonDeath_QNAME, Death.class, Person.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Link }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link Link }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "link", scope = Person.class)
-    public JAXBElement<Link> createPersonLink(Link value) {
-        return new JAXBElement<>(_PersonLink_QNAME, Link.class, Person.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PersonIdno }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link PersonIdno }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "idno", scope = Person.class)
-    public JAXBElement<PersonIdno> createPersonIdno(PersonIdno value) {
-        return new JAXBElement<>(_PersonIdno_QNAME, PersonIdno.class, Person.class, value);
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "list", scope = Note.class)
+    public JAXBElement<List> createNoteList(List value) {
+        return new JAXBElement<>(_NoteList_QNAME, List.class, Note.class, value);
     }
 
 }

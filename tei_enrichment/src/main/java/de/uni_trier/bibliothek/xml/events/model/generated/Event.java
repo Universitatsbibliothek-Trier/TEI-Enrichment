@@ -12,12 +12,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.xml.namespace.QName;
-import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAnyAttribute;
-import jakarta.xml.bind.annotation.XmlElementRef;
-import jakarta.xml.bind.annotation.XmlElementRefs;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElements;
 import jakarta.xml.bind.annotation.XmlType;
 
 
@@ -51,14 +50,14 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Event {
 
-    @XmlElementRefs({
-        @XmlElementRef(name = "label", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "desc", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "idno", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "link", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+    @XmlElements({
+        @XmlElement(name = "label", type = String.class),
+        @XmlElement(name = "desc", type = Desc.class),
+        @XmlElement(name = "note", type = Note.class),
+        @XmlElement(name = "idno", type = EventIdno.class),
+        @XmlElement(name = "link", type = Link.class)
     })
-    protected List<JAXBElement<?>> labelOrDescOrNote;
+    protected List<Object> labelOrDescOrNote;
     @XmlAnyAttribute
     private Map<QName, String> otherAttributes = new HashMap<>();
 
@@ -80,17 +79,17 @@ public class Event {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link Desc }{@code >}
-     * {@link JAXBElement }{@code <}{@link EventIdno }{@code >}
-     * {@link JAXBElement }{@code <}{@link Link }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link Desc }
+     * {@link EventIdno }
+     * {@link Link }
+     * {@link Note }
+     * {@link String }
      * 
      * 
      * @return
      *     The value of the labelOrDescOrNote property.
      */
-    public List<JAXBElement<?>> getLabelOrDescOrNote() {
+    public List<Object> getLabelOrDescOrNote() {
         if (labelOrDescOrNote == null) {
             labelOrDescOrNote = new ArrayList<>();
         }

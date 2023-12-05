@@ -38,7 +38,15 @@
                 <listBibl xml:id="entities_listBibl">
                     <bibl xml:id="listBibl_der_Sandmann">
                         <title>Der Sandmann</title>
-                        <note>Inhalt: Der Sandmann erzählt in selbstreferenzieller Brechung (Anrede des Erzählers an den Leser, Reflexion über mögliche Erzähltechniken, Briefmontage) das Abgleiten des Studenten Nathanael in den Wahnsinn, wobei die Polyperspektivität des Erzählens die Unterscheidung zwischen gesunder und kranker Wahrnehmung relativiert. </note>
+                        <note type="desc">Inhalt: Der Sandmann erzählt in selbstreferenzieller Brechung (Anrede des Erzählers an den Leser, Reflexion über mögliche Erzähltechniken, Briefmontage) das Abgleiten des Studenten Nathanael in den Wahnsinn, wobei die Polyperspektivität des Erzählens die Unterscheidung zwischen gesunder und kranker Wahrnehmung relativiert. </note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Work</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>MusicalWork</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4198693-3</idno>
                     </bibl>   
@@ -46,4 +54,5 @@
             </div>
         </body>
     </text>
+
 </TEI>

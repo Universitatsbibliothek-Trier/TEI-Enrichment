@@ -30,10 +30,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _OrgOrgName_QNAME = new QName("http://www.tei-c.org/ns/1.0", "orgName");
-    private final static QName _OrgIdno_QNAME = new QName("http://www.tei-c.org/ns/1.0", "idno");
-    private final static QName _OrgLink_QNAME = new QName("http://www.tei-c.org/ns/1.0", "link");
-    private final static QName _OrgNote_QNAME = new QName("http://www.tei-c.org/ns/1.0", "note");
+    private final static QName _NoteList_QNAME = new QName("http://www.tei-c.org/ns/1.0", "list");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: de.uni_trier.bibliothek.xml.orgs.model.generated
@@ -213,55 +210,36 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create an instance of {@link Note }
      * 
-     * @param value
-     *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     the new instance of {@link Note }
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "orgName", scope = Org.class)
-    public JAXBElement<String> createOrgOrgName(String value) {
-        return new JAXBElement<>(_OrgOrgName_QNAME, String.class, Org.class, value);
+    public Note createNote() {
+        return new Note();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link OrgsIdno }{@code >}
+     * Create an instance of {@link List }
      * 
-     * @param value
-     *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link OrgsIdno }{@code >}
+     *     the new instance of {@link List }
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "idno", scope = Org.class)
-    public JAXBElement<OrgsIdno> createOrgIdno(OrgsIdno value) {
-        return new JAXBElement<>(_OrgIdno_QNAME, OrgsIdno.class, Org.class, value);
+    public List createList() {
+        return new List();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Link }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link List }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link Link }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link List }{@code >}
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "link", scope = Org.class)
-    public JAXBElement<Link> createOrgLink(Link value) {
-        return new JAXBElement<>(_OrgLink_QNAME, Link.class, Org.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "note", scope = Org.class)
-    public JAXBElement<String> createOrgNote(String value) {
-        return new JAXBElement<>(_OrgNote_QNAME, String.class, Org.class, value);
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "list", scope = Note.class)
+    public JAXBElement<List> createNoteList(List value) {
+        return new JAXBElement<>(_NoteList_QNAME, List.class, Note.class, value);
     }
 
 }

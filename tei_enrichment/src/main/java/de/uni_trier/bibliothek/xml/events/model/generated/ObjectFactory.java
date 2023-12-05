@@ -30,11 +30,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _EventLabel_QNAME = new QName("http://www.tei-c.org/ns/1.0", "label");
-    private final static QName _EventDesc_QNAME = new QName("http://www.tei-c.org/ns/1.0", "desc");
-    private final static QName _EventNote_QNAME = new QName("http://www.tei-c.org/ns/1.0", "note");
-    private final static QName _EventIdno_QNAME = new QName("http://www.tei-c.org/ns/1.0", "idno");
-    private final static QName _EventLink_QNAME = new QName("http://www.tei-c.org/ns/1.0", "link");
+    private final static QName _NoteList_QNAME = new QName("http://www.tei-c.org/ns/1.0", "list");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: de.uni_trier.bibliothek.xml.events.model.generated
@@ -234,68 +230,36 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create an instance of {@link Note }
      * 
-     * @param value
-     *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     the new instance of {@link Note }
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "label", scope = Event.class)
-    public JAXBElement<String> createEventLabel(String value) {
-        return new JAXBElement<>(_EventLabel_QNAME, String.class, Event.class, value);
+    public Note createNote() {
+        return new Note();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Desc }{@code >}
+     * Create an instance of {@link List }
      * 
-     * @param value
-     *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link Desc }{@code >}
+     *     the new instance of {@link List }
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "desc", scope = Event.class)
-    public JAXBElement<Desc> createEventDesc(Desc value) {
-        return new JAXBElement<>(_EventDesc_QNAME, Desc.class, Event.class, value);
+    public List createList() {
+        return new List();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link List }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link List }{@code >}
      */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "note", scope = Event.class)
-    public JAXBElement<String> createEventNote(String value) {
-        return new JAXBElement<>(_EventNote_QNAME, String.class, Event.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EventIdno }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link EventIdno }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "idno", scope = Event.class)
-    public JAXBElement<EventIdno> createEventIdno(EventIdno value) {
-        return new JAXBElement<>(_EventIdno_QNAME, EventIdno.class, Event.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Link }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link Link }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "link", scope = Event.class)
-    public JAXBElement<Link> createEventLink(Link value) {
-        return new JAXBElement<>(_EventLink_QNAME, Link.class, Event.class, value);
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "list", scope = Note.class)
+    public JAXBElement<List> createNoteList(List value) {
+        return new JAXBElement<>(_NoteList_QNAME, List.class, Note.class, value);
     }
 
 }

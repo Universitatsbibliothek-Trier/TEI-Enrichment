@@ -36,11 +36,19 @@
                 <!-- information about the source from which
                     the resource was derived, for example the entries and IDs of entitities we want to index -->
                 <listPerson xml:id="entities_person">
-                    <person xml:id="person_Paul_Goldmann" role="wirtschaftswissenschaftler">
+                    <person xml:id="person_Paul_Goldmann" >
                         <persName> Paul Goldmann </persName>
                         <persName> Saul Goldmann </persName>
                         <persName> Saul Goodman </persName>
-                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list> 
+                        </note>
                         <birth when="1755"/>
                         <death when="1824"/>
                         <link target="merian_hessen.xml#band_07_art_paul_goldmann" />
@@ -52,7 +60,15 @@
 
                     <person xml:id="person_O_Kelly" role="könig">
                         <persName> O'Kelly </persName>
-                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1062805615 </idno>
                     </person>
@@ -61,4 +77,5 @@
             </div>
         </body>
     </text>
+
 </TEI>

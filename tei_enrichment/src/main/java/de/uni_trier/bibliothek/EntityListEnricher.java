@@ -29,7 +29,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -45,6 +47,7 @@ import de.uni_trier.bibliothek.xml.persons.model.generated.Death;
 import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
 import de.uni_trier.bibliothek.xml.places.model.generated.ListPlace;
+import de.uni_trier.bibliothek.xml.places.model.generated.Note;
 import de.uni_trier.bibliothek.xml.places.model.generated.Place;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Add;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
@@ -955,40 +958,46 @@ public class EntityListEnricher {
    			 	typeTermslist.add(jsonObjectString);
 			}
 
+
+
+
 			
+
+			String oberkategorie = getOberkategorie(typeTermslist, jsonObject);
 			// test auf Oberkategorie
-			ArrayList<String> listBiblCategories = new ArrayList<>(Arrays.asList("Collection", "CollectiveManuscript", "Expression", "Manuscript", "MusicalWork", "ProvenanceCharacteristic","VersionOfAMusicalWork"));
-			Boolean isBiblList = !Collections.disjoint(typeTermslist, listBiblCategories);
+			// typeTermslist.contains("Person");
+			// ArrayList<String> listBiblCategories = new ArrayList<>(Arrays.asList("Collection", "CollectiveManuscript", "Expression", "Manuscript", "MusicalWork", "ProvenanceCharacteristic","VersionOfAMusicalWork"));
+			// Boolean isBiblList = !Collections.disjoint(typeTermslist, listBiblCategories);
 
-			ArrayList<String> listPersonCategories = new ArrayList<>(Arrays.asList("DifferentiatedPerson", "UndifferentiatedPerson", "Pseudonym", "RoyalOrMemberOfARoyalHouse", "LiteraryOrLegendaryCharacter", "Gods", "Spirits", "CollectivePseudonym"));
-			Boolean isPersonList = !Collections.disjoint(typeTermslist, listPersonCategories);
+			// ArrayList<String> listPersonCategories = new ArrayList<>(Arrays.asList("DifferentiatedPerson", "UndifferentiatedPerson", "Pseudonym", "RoyalOrMemberOfARoyalHouse", "LiteraryOrLegendaryCharacter", "Gods", "Spirits", "CollectivePseudonym"));
+			// Boolean isPersonList = !Collections.disjoint(typeTermslist, listPersonCategories);
 
-			ArrayList<String> listPlacesCategories = new ArrayList<>(Arrays.asList( "AdministrativeUnit", "BuildingOrMemorial", "Country", "ExtraterrestialTerritory", "FictivePlace", "MemberState", "NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit", "NaturalGeographicUnit", "ReligiousTerritory", "TerritorialCorporateBodyOrAdministrativeUnit", "WayBorderOrLine"));
-			Boolean isPlacesList = !Collections.disjoint(typeTermslist, listPlacesCategories);
+			// ArrayList<String> listPlacesCategories = new ArrayList<>(Arrays.asList( "AdministrativeUnit", "BuildingOrMemorial", "Country", "ExtraterrestialTerritory", "FictivePlace", "MemberState", "NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit", "NaturalGeographicUnit", "ReligiousTerritory", "TerritorialCorporateBodyOrAdministrativeUnit", "WayBorderOrLine"));
+			// Boolean isPlacesList = !Collections.disjoint(typeTermslist, listPlacesCategories);
 
-			ArrayList<String> listCorporateBody = new ArrayList<>(Arrays.asList("Company", "FictiveCorporateBody", "MusicalCorporateBody", "OrganOfCorporateBody", "ProjectOrProgram", "ReligiousAdminstrativeUnit", "ReligiousCorporateBody"));
-			Boolean isCorporateList = !Collections.disjoint(typeTermslist, listPlacesCategories);
+			// ArrayList<String> listCorporateBody = new ArrayList<>(Arrays.asList("Company", "FictiveCorporateBody", "MusicalCorporateBody", "OrganOfCorporateBody", "ProjectOrProgram", "ReligiousAdminstrativeUnit", "ReligiousCorporateBody"));
+			// Boolean isCorporateList = !Collections.disjoint(typeTermslist, listPlacesCategories);
 
-			ArrayList<String> listObjects = new ArrayList<>(Arrays.asList("EthnographicName", "FictiveTerm", "Language", "CharactersOrMorphemes", "GroupOfPersons", "MeansOfTransportWithIndividualName", "NomenClatureInBiologyOrChemistry", "ProductNameOrBrandName", "SoftwareProduct", "SubjectHeadingSensoStricto", "HistoricSingleEventOrEra"));
-			Boolean isSubjectHeading = !Collections.disjoint(typeTermslist, listPlacesCategories);
+			// ArrayList<String> listObjects = new ArrayList<>(Arrays.asList("EthnographicName", "FictiveTerm", "Language", "CharactersOrMorphemes", "GroupOfPersons", "MeansOfTransportWithIndividualName", "NomenClatureInBiologyOrChemistry", "ProductNameOrBrandName", "SoftwareProduct", "SubjectHeadingSensoStricto", "HistoricSingleEventOrEra"));
+			// Boolean isSubjectHeading = !Collections.disjoint(typeTermslist, listPlacesCategories);
 
-			ArrayList<String> listEvents = new ArrayList<>(Arrays.asList("SeriesOfConferenceOrEvent"));
-			Boolean isEventList = !Collections.disjoint(typeTermslist, listEvents);
+			// ArrayList<String> listEvents = new ArrayList<>(Arrays.asList("SeriesOfConferenceOrEvent"));
+			// Boolean isEventList = !Collections.disjoint(typeTermslist, listEvents);
 
 			
-			if(isBiblList)
+			if(oberkategorie.equals("listBibl"))
 			{
 				
 				System.out.println("isBiblList eintrag");
-				objectHasType = true;
+				// objectHasType = true;
 				sourceGND.setSource("mgndbibl:listBibl_" + preferredNameString);
 				nameGND.setRef("mgndbibl:listBibl_" + preferredNameString);
 				if(isOrtsartikel)
 				{
 					divFrontElement.setCorresp("mgndbibl:listBibl_" + preferredNameString);
 				}
-				
-				writeListBiblEntity(jsonObject, preferredNameString);
+				typeTermslist.remove("Work");
+				writeListBiblEntity(jsonObject, preferredNameString, typeTermslist);
 				
 
 			}
@@ -999,7 +1008,7 @@ public class EntityListEnricher {
 			ArrayList<String> personTerms = new ArrayList<>(Arrays.asList("DifferentiatedPerson", "UndifferentiatedPerson", "RoyalOrMemberOfARoyalHouse", "LiteraryOrLegendaryCharacter", "Gods", "Spirits", "CollectivePseudonym", "ethnographicname", "GroupOfPersons"));
 			// boolean isPersonTerm = Arrays.stream(typeTermArray).anyMatch(personTerms::equals);
 			Boolean isPersonTerm = !Collections.disjoint(typeTermslist, personTerms);
-			if(isPersonTerm)
+			if(oberkategorie.equals("person"))
 			{
 				System.out.println("person eintrag");
 				objectHasType = true;
@@ -1009,7 +1018,7 @@ public class EntityListEnricher {
 				{
 					divFrontElement.setCorresp("mgndper:person_" + preferredNameString);
 				}
-				writePersonEntity(jsonObject);
+				writePersonEntity(jsonObject, preferredNameString, typeTermslist);
 				
 			}
 
@@ -1018,7 +1027,7 @@ public class EntityListEnricher {
 			ArrayList<String> placesTerms = new ArrayList<>(Arrays.asList("PlaceOrGeographicName", "AdministrativeUnit", "BuildingOrMemorial", "Country", "ExtraterrestialTerritory", "FictivePlace", "MemberState", "NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit", "NaturalGeographicUnit", "ReligiousTerritory", "TerritorialCorporateBodyOrAdministrativeUnit", "WayBorderOrLine"));
 			Boolean isPlace = !Collections.disjoint(typeTermslist, placesTerms);
 			// boolean isPlace = Arrays.stream(typeTermArray).anyMatch(placesTerms::equals);
-			if(isPlace)
+			if(oberkategorie.equals("place"))
 			{
 				System.out.println("place eintrag");
 				objectHasType = true;
@@ -1028,13 +1037,13 @@ public class EntityListEnricher {
 				{
 					divFrontElement.setCorresp("mgndpla:place_" + preferredNameString);
 				}
-				writePlacesEntity(jsonObject);
+				writePlacesEntity(jsonObject, preferredNameString, typeTermslist);
 				
 			}
 			// historicsingleeventorera,conferenceOrEvent => Seriesofconferenceorevent
 			ArrayList<String> eventTerms = new ArrayList<>(Arrays.asList("HistoricSingleEventOrEra", "ConferenceOrEvent", "SeriesOfConferenceOrEvent"));
 			Boolean isEvent = !Collections.disjoint(typeTermslist, eventTerms);
-			if(isEvent)
+			if(oberkategorie.equals("event"))
 			{
 				System.out.println("event eintrag");
 				objectHasType = true;
@@ -1044,14 +1053,14 @@ public class EntityListEnricher {
 				{
 					divFrontElement.setCorresp("mgndeve:event_" + preferredNameString);
 				}
-				writeEventsEntity(jsonObject);
+				writeEventsEntity(jsonObject, preferredNameString, typeTermslist);
 			}
 
 			// authority resource =>   version of a musical work, musical work, fictive term, language
 			//subjectheading => charactersormorphemes,  meansoftransportwithindividualname, nomenclatureinbiologyorchemistry, productnameorbrandname, softwareproduct, subjectheadingsensostricto
 			ArrayList<String> objectTerms = new ArrayList<>(Arrays.asList("VersionOfAMusicalWork", "MusicalWork", "FictiveTerm", "Language", "CharactersOrMorphemes", "MeansOfTransportWithIndividualName", "NomenClatureInBiologyOrChemistry", "ProductNameOrBrandName", "SoftwareProduct", "SubjectHeadingSensoStricto"));
 			boolean isObject = !Collections.disjoint(typeTermslist,objectTerms);
-			if(isObject)
+			if(oberkategorie.equals("object"))
 			{
 				System.out.println("object eintrag");
 				nameGND.setRef("mgndobj:object_" + preferredNameString);
@@ -1061,13 +1070,13 @@ public class EntityListEnricher {
 					divFrontElement.setCorresp("mgndeve:object_" + preferredNameString);
 				}
 				objectHasType = true;
-				writeObjectsEntity(jsonObject);
+				writeObjectsEntity(jsonObject, preferredNameString, typeTermslist);
 			}
 		
 			//corporate body => company, fictive corporate body, musical corporate body, organ of corporate body, project or program, religious administrative unit, religious corporate body
 			ArrayList<String> orgsTerms = new ArrayList<>(Arrays.asList("CorporateBody", "Company", "FictiveCorporateBody", "MusicalCorporateBody", "OrganOfCorporateBody", "ProjectOrProgram", "ReligiousAdminstrativeUnit", "ReligiousCorporateBody"));
 			boolean isOrgs = !Collections.disjoint(typeTermslist,orgsTerms);
-			if(isOrgs)
+			if(oberkategorie.equals("org"))
 			{
 				System.out.println("orgs eintrag");
 				nameGND.setRef("mgndorgs:org_" + preferredNameString);
@@ -1077,53 +1086,53 @@ public class EntityListEnricher {
 					divFrontElement.setCorresp("mgndorgs:org_" + preferredNameString);
 				}
 				objectHasType = true;
-				writeOrgsEntity(jsonObject);
+				writeOrgsEntity(jsonObject, preferredNameString, typeTermslist);
 			}
 
-			if(!objectHasType)
-			{
-				for(int i = 0; i < typeTerms.length(); i++ )
-			 	{
-					//work
-					String typeTerm = typeTerms.getString(i);
-					if(typeTerm.equals("Work"))
-					{
-						System.out.println("work eintrag");
-						writeListBiblEntity(jsonObject, preferredNameString);
-						nameGND.setRef("mgndobj:object_" + preferredNameString);
-						sourceGND.setSource("mgndobj:object_" + preferredNameString);
-						if(isOrtsartikel)
-						{
-							divFrontElement.setCorresp("mgndobj:object_" + preferredNameString);
-						}
-			 			break;
-					}
-					else if(typeTerm.equals("SubjectHeading"))
-					{
-						System.out.println("object eintrag");
-						writeObjectsEntity(jsonObject);
-						nameGND.setRef("mgndobj:object_" + preferredNameString);
-						sourceGND.setSource("mgndobj:object_" + preferredNameString);
-						if(isOrtsartikel)
-						{
-							divFrontElement.setCorresp("mgndobj:object_" + preferredNameString);
-						}
-			 			break;
-					}
-					else if(typeTerm.equals("Person"))
-					{
-						System.out.println("person eintrag");
-						writeObjectsEntity(jsonObject);
-						nameGND.setRef("mgndper:person_" + preferredNameString);
-						sourceGND.setSource("mgndper:person_" + preferredNameString);
-						if(isOrtsartikel)
-						{
-							divFrontElement.setCorresp("mgndper:person_" + preferredNameString);
-						}
-			 			break;
-					}
-				}
-			}
+			// if(!objectHasType)
+			// {
+			// 	for(int i = 0; i < typeTerms.length(); i++ )
+			//  	{
+			// 		//work
+			// 		String typeTerm = typeTerms.getString(i);
+			// 		if(typeTerm.equals("Work"))
+			// 		{
+			// 			System.out.println("work eintrag");
+			// 			writeListBiblEntity(jsonObject, preferredNameString);
+			// 			nameGND.setRef("mgndobj:object_" + preferredNameString);
+			// 			sourceGND.setSource("mgndobj:object_" + preferredNameString);
+			// 			if(isOrtsartikel)
+			// 			{
+			// 				divFrontElement.setCorresp("mgndobj:object_" + preferredNameString);
+			// 			}
+			//  			break;
+			// 		}
+			// 		else if(typeTerm.equals("SubjectHeading"))
+			// 		{
+			// 			System.out.println("object eintrag");
+			// 			writeObjectsEntity(jsonObject);
+			// 			nameGND.setRef("mgndobj:object_" + preferredNameString);
+			// 			sourceGND.setSource("mgndobj:object_" + preferredNameString);
+			// 			if(isOrtsartikel)
+			// 			{
+			// 				divFrontElement.setCorresp("mgndobj:object_" + preferredNameString);
+			// 			}
+			//  			break;
+			// 		}
+			// 		else if(typeTerm.equals("Person"))
+			// 		{
+			// 			System.out.println("person eintrag");
+			// 			writeObjectsEntity(jsonObject);
+			// 			nameGND.setRef("mgndper:person_" + preferredNameString);
+			// 			sourceGND.setSource("mgndper:person_" + preferredNameString);
+			// 			if(isOrtsartikel)
+			// 			{
+			// 				divFrontElement.setCorresp("mgndper:person_" + preferredNameString);
+			// 			}
+			//  			break;
+			// 		}
+			// 	}
+			// }
 		}
 
 
@@ -1131,7 +1140,7 @@ public class EntityListEnricher {
 		return entityPrefix;
 	}
 
-	public static void writePersonEntity(JSONObject jsonObject) {
+	public static void writePersonEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if(jsonObject.has("broaderTermInstantial"))
 		{
 			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
@@ -1143,7 +1152,7 @@ public class EntityListEnricher {
 
 	}
 
-	public static void writeEventsEntity(JSONObject jsonObject) {
+	public static void writeEventsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if(jsonObject.has("broaderTermInstantial"))
 		{
 			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
@@ -1155,45 +1164,82 @@ public class EntityListEnricher {
 
 	}
 
-	public static void writeListBiblEntity(JSONObject jsonObject, String preferredName) {
+	public static void writeListBiblEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		
 			Bibl bibl = new Bibl();
-			//todo: add xml:id as attribute; note and link and idno
-
-			if(jsonObject.has("broaderTermInstantial"))
-			{
-				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-			// System.out.println("broaderTermInstantialArray: " + jsonObject.getJSONArray("broaderTermInstantial"));
-				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-
-				JAXBElement<String> jaxbNoteString = listBiblTEIObjectFactory.createBiblNote(preferredName);
-				bibl.getTitleOrNoteOrLink().add(jaxbNoteString);
-				
-			}
-			// System.out.println("jsonObjectBroaderTermString listbibl: " + jsonObjectBroaderTermString);
-
-			
-
 			String preferredNameString = jsonObject.getString("preferredName");
 			preferredNameString = preferredNameString.replaceAll(", ", "_");
 			preferredNameString = preferredNameString.replaceAll(" ", "_");
 			preferredNameString = preferredNameString.replaceAll(",", "_");
 			System.out.println("PreferredNameString ist: " + preferredNameString);
-			JAXBElement<String> jaxbPreferredNameString = listBiblTEIObjectFactory.createBiblTitle(preferredNameString);
-			bibl.getTitleOrNoteOrLink().add(jaxbPreferredNameString);
-			
+			bibl.getTitleOrNoteOrLink().add(preferredNameString);	
 			System.out.println("bibl: " + bibl.toString());
+			//todo: add xml:id as attribute; note and link and idno
+
+			if(jsonObject.has("broaderTermInstantial"))
+			{
+				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
+				de.uni_trier.bibliothek.xml.listBibl.model.generated.Note note = listBiblTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(jsonObjectBroaderTermString);
+				bibl.getTitleOrNoteOrLink().add(note);	
+			}
+
+			de.uni_trier.bibliothek.xml.listBibl.model.generated.Note note = listBiblTEIObjectFactory.createNote();
+			note.setType("categories"); 
+			de.uni_trier.bibliothek.xml.listBibl.model.generated.List biblListList = new de.uni_trier.bibliothek.xml.listBibl.model.generated.List();
 			
+			
+			
+			biblListList.setType("supercategory");
 
+			bibl.getTitleOrNoteOrLink().add(biblListList);
 
+			for(String termString: typeTermslist){
+				switch(termString)
+				{
+					case "Person":
+						typeTermslist.remove("Person");
+						biblListList.getItem().add("Person");
+						break;
+					case "Work":
+						typeTermslist.remove("Work");
+						biblListList.getItem().add("Work");
+						break;
+					case "Family":
+						typeTermslist.remove("Family");
+						biblListList.getItem().add("Family");
+						break;
+					case "ConferenceOrEvent":
+						typeTermslist.remove("ConferenceOrEvent");
+						biblListList.getItem().add("ConferenceOrEvent");
+						break;
+					case "PlaceOrGeographicName":
+						typeTermslist.remove("PlaceOrGeographicName");
+						biblListList.getItem().add("PlaceOrGeographicName");
+						break;
+					case "CorporateBody":
+						typeTermslist.remove("CorporateBody");
+						biblListList.getItem().add("CorporateBody");
+						break;
+					case "SubjectHeading":
+						typeTermslist.remove("SubjectHeading");
+						biblListList.getItem().add("SubjectHeading");
+						break;
+						
+				}
+			}
+			JAXBElement<de.uni_trier.bibliothek.xml.listBibl.model.generated.List> biblNoteList = listBiblTEIObjectFactory.createNoteList(biblListList);
+			note.getContent().add(biblNoteList);
 
 			listBibl.getBibl().add(bibl);
 		
 
 	}
 
-	public static void writeObjectsEntity(JSONObject jsonObject) {
+	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if(jsonObject.has("broaderTermInstantial"))
 		{
 			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
@@ -1205,7 +1251,7 @@ public class EntityListEnricher {
 
 	}
 
-	public static void writeOrgsEntity(JSONObject jsonObject) {
+	public static void writeOrgsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if(jsonObject.has("broaderTermInstantial"))
 		{
 			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
@@ -1217,7 +1263,7 @@ public class EntityListEnricher {
 
 	}
 
-	public static void writePlacesEntity(JSONObject jsonObject) {
+	public static void writePlacesEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if(jsonObject.has("broaderTermInstantial"))
 		{
 			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
@@ -1226,6 +1272,109 @@ public class EntityListEnricher {
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
 			// System.out.println("jsonObjectBroaderTermString: " + jsonObjectBroaderTermString);
 		}
+
+	}
+
+
+	public static String getOberkategorie(List<String> typeTermslist, JSONObject jsonObject) {
+		String Oberkategorie = "";
+		if(jsonObject.has("broaderTermInstantial"))
+		{
+			HashMap<String, Integer> categoriesPoints = new HashMap();
+			categoriesPoints.put("person", 0);
+			categoriesPoints.put("listBibl", 0);
+			categoriesPoints.put("org", 0);
+			categoriesPoints.put("event", 0);
+			categoriesPoints.put("object", 0);
+			categoriesPoints.put("place", 0);
+			
+			for(String termString: typeTermslist){
+				switch(termString)
+				{
+					case "Person":
+					case "DifferentiatedPerson":
+					case "UndifferentiatedPerson":
+					case "Pseudonym":
+					case "RoyalOrMemberOfARoyalHouse":
+					case "LiteraryOrLegendaryCharacter":
+					case "Gods":
+					case "Spirits":
+					case "CollectivePseudonym":
+						categoriesPoints.put("person", categoriesPoints.get("person") + 1);
+						break;
+					case "Work":
+					case "Collection":
+					case "CollectiveManuscript":
+					case "Expression":
+					case "Manuscript":
+					case "MusicalWork":
+					case "ProvenanceCharacteristic":
+					case "VersionOfAMusicalWork":
+						categoriesPoints.put("listBibl", categoriesPoints.get("listBibl") + 1);
+						break;
+					case "Family":
+						categoriesPoints.put("person", categoriesPoints.get("person") + 1);
+						break;
+					case "ConferenceOrEvent":
+					case "SeriesOfConferenceOrEvent":
+						categoriesPoints.put("event", categoriesPoints.get("event") + 1);
+						break;
+					case "PlaceOrGeographicName":
+					case "AdministrativeUnit":
+					case "BuildingOrMemorial":
+					case "Country":
+					case "ExtraterrestialTerritory":
+					case "FictivePlace":
+					case "MemberState":
+					case "NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit":
+					case "NaturalGeographicUnit":
+					case "ReligiousTerritory":
+					case "TerritorialCorporateBodyOrAdministrativeUnit":
+					case "WayBorderOrLine":
+						categoriesPoints.put("place", categoriesPoints.get("place") + 1);
+						break;
+					case "SubjectHeading":
+					case "EthnographicName":
+					case "FictiveTerm":
+					case "Language":
+					case "CharactersOrMorphemes":
+					case "GroupOfPersons":
+					case "MeansOfTransportWithIndividualName":
+					case "NomenClatureInBiologyOrChemistry":
+					case "ProductNameOrBrandName":
+					case "SoftwareProduct":
+					case "SubjectHeadingSensoStricto":
+					case "HistoricSingleEventOrEra":
+						categoriesPoints.put("object", categoriesPoints.get("object") + 1);
+						break;
+					case "CorporateBody":
+					case "Company":
+					case "FictiveCorporateBody":
+					case "MusicalCorporateBody":
+					case "OrganOfCorporateBody":
+					case "ProjectOrProgram":
+					case "ReligiousAdminstrativeUnit":
+					case "ReligiousCorporateBody":
+						categoriesPoints.put("org", categoriesPoints.get("org") + 1);
+				}
+				
+			}
+
+
+			
+			//hashmap: größter int-wert ist oberkategorie
+			int highestPoints = 0;
+ 			for (Map.Entry<String, Integer> entry : categoriesPoints.entrySet()) {
+				// System.out.println("Oberkategorie ist: " + Oberkategorie);
+            	if(highestPoints < entry.getValue())
+				{
+					highestPoints = entry.getValue();
+					Oberkategorie = entry.getKey();
+				}
+      		}
+			
+		}
+		return Oberkategorie;
 
 	}
 

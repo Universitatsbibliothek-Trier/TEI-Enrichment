@@ -122,12 +122,12 @@
                     <lb n="8"/>Landtſchaften
                     / als Buchen / Naſſau 
                     <lb n="9"/>Wetteraw / 
-                    <name ref="mgndpla:place_Buchonia">Schloss
+                    <name ref="mgndpla:place_Landgrafschaft_Hessen">Schloss
                     Regensburg</name> / Wittgen 
                     <lb n="10"/>ſtein / Lohngaw / vnd andern. 
                     <lb n="11"/>Franckfurt durch 
                     <lb n="12"/> 
-                    <name ref="mgndper:person_Merian_Matthaeus_der_Ältere">
+                    <name ref="https://d-nb.info/gnd/118581090">
                         <choice>
                             <abbr>Matt</abbr>
                             <expan>Matthaeus</expan>
@@ -201,7 +201,7 @@
                         Hexenagger</name> Lorem ipsum dolor sit amet. 
                     <lb/>Lorem ipsum dolor sit
                     amet, consetetur 
-                    <name ref="mgndper:person_Einstein" xml:lang="la">gubergren</name>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    <name ref="https://d-nb.info/gnd/1309985006" xml:lang="la">gubergren</name>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna
                     <name>Piparu</name> aliquyam erat, sed diam voluptua. 
                     <lb/>At vero eos et
@@ -219,7 +219,8 @@
                     <lb/>At
                     vero eos et accusam et justo duo dolores et ea rebum.
                     <lb/> Stet clita kasd
-                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                    gubergren, no sea takimata sanctus est 
+                    <name ref="mgndpla:place_Klostergut_Volkenroda">ipsum</name> dolor sit amet. 
                     <lb/>Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore 
@@ -261,17 +262,17 @@
                                 / (deſſen ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ 
                                 <lb/>ſchoff
                                 zu Wormbs und der 
-                                <name ref="mgndpla:place_Frankfurt_am_Main">Kaiser
+                                <name ref="https://d-nb.info/gnd/4018118-2">Kaiser
                                 Trier 
                                 </name> und 
-                                <name ref="mgndper:person_Merian_Matthaeus_der_Ältere">Paul Goldmann</name> Herr
+                                <name ref="https://d-nb.info/gnd/118581090">Paul Goldmann</name> Herr
                                 Pfaltzgraf Ludwig Philips 
                                 <lb/>zu Simmern ꝛc. ſeynd /) die
                                 Biſchoͤffe von Worms / Speyer / 
                                 <lb/>Straßburg / Baſel / Biſantz /
                                 Sitten / Loſanna / Metz / Tull / 
                                 <lb/>Verdun / und 
-                                <name ref="mgndper:person_Zeiller_Martin"> Schloss Grüningen</name>;
+                                <name ref="https://d-nb.info/gnd/118772392"> Schloss Grüningen</name>;
                                 der Hochmeiſter des Johanniter Ordens / 
                                 <lb/>die Pfaltzgrafen /
                                 wegen der Graffſchafft Spanheim / Zwey⸗ 
@@ -292,13 +293,13 @@
                                 <lb/>ſtein;
                                 von Bitſch; Hanau; Salm; Leiningen / Eyſenburg / Witgenſtein /
                                 
-                                <name ref="mgndobj:object_Latein"> Chronik 
+                                <name ref="https://d-nb.info/gnd/4114364-4"> Chronik 
                                 </name>
                                 Moͤrsburg / 
                                 <lb/>Rapoltſtein / Rapoltzkirch / ꝛc. Die Adeliche
                                 Collegia zu Gelnhauſen / und Friedberg: 
                                 <lb/>Die 
-                                <name ref="mgndbibl:listBibl_Chronika"> Chronik 
+                                <name ref="https://d-nb.info/gnd/4364710-8"> Chronik 
                                 </name>
                                 /
 
@@ -314,7 +315,7 @@
                                 Gregorienthal </name>
                                 </name> Ober⸗ 
                                 <lb/>
-                                <name ref="mgndpla:place_Wetterau">Elektrizitätswerk Trier</name>
+                                <name ref="https://d-nb.info/gnd/4065855-7">Elektrizitätswerk Trier</name>
                                 / Colmar / Straßburg / Roßheim / Schlettſtatt / Hagenau /
                                 Cron⸗Weiſſen⸗ 
                                 <lb/>burg / Landau / Muͤlhauſen im Sundgoͤw / Speyer
@@ -537,9 +538,9 @@
                             </p>
                         </div>
                         <lb/>
-                        <div type="article" corresp="mgndpla:place_Frankfurt_am_Main">
+                        <div type="article">
                             <head>
-                                <name ref="mgndpla:place_Frankfurt_am_Main">Paul Goldmann</name> /
+                                <name ref="https://d-nb.info/gnd/4018118-2">Paul Goldmann</name> /
                                 an der Werra.</head>
                             <lb/>
                             <p>JSt ein Stadt in Nieder⸗Heſſen / 
@@ -1082,7 +1083,7 @@
                                 <lb/>werden; wie auch Gelnhauſen / und die Graffſchafft
                                 Naſſau⸗Beylſtein / ꝛc. ſo ſonſten 
                                 <lb/>zum Nieder⸗Rheiniſchen 
-                                <name ref="mgndorgs:org_Meriansche_Erben_(Frankfurt_Main)">Dreißigjähriger Krieg</name>
+                                <name ref="https://d-nb.info/gnd/6009670-6">Dreißigjähriger Krieg</name>
                                 Creyß gehoͤrig ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten 
                                 <lb/>zum
                                 Weſtphaͤliſchen Creyß gezogen wird. 

@@ -93,8 +93,8 @@ public class Place {
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link Link }{@code >}
      * {@link JAXBElement }{@code <}{@link Location }{@code >}
+     * {@link JAXBElement }{@code <}{@link Note }{@code >}
      * {@link JAXBElement }{@code <}{@link PlaceIdno }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
      * 

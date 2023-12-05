@@ -204,7 +204,7 @@
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <lb />At
                     vero eos et accusam et justo duo dolores et ea rebum.<lb /> Stet clita kasd
-                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <lb />Lorem
+                    gubergren, no sea takimata sanctus est <name ref="https://d-nb.info/gnd/4784990-3">ipsum</name> dolor sit amet. <lb />Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore <subst><del>labore</del><add place="across">dolore</add></subst> magna aliquyam erat, sed diam voluptua. <lb />At
                     vero eos et accusam et justo duo dolores et ea rebum.<lb /> Stet <gap

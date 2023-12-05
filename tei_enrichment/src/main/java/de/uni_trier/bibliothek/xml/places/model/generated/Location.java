@@ -29,6 +29,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *       <choice maxOccurs="unbounded">
  *         <element name="region" type="{http://www.tei-c.org/ns/1.0}Region" maxOccurs="unbounded"/>
  *         <element name="geo" type="{http://www.tei-c.org/ns/1.0}Geo" maxOccurs="unbounded"/>
+ *         <element name="country" type="{http://www.tei-c.org/ns/1.0}Geo" maxOccurs="unbounded"/>
  *       </choice>
  *     </restriction>
  *   </complexContent>
@@ -39,29 +40,30 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Location", propOrder = {
-    "regionOrGeo"
+    "regionOrGeoOrCountry"
 })
 public class Location {
 
     @XmlElementRefs({
         @XmlElementRef(name = "region", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "geo", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "geo", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "country", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
-    protected List<JAXBElement<String>> regionOrGeo;
+    protected List<JAXBElement<String>> regionOrGeoOrCountry;
 
     /**
-     * Gets the value of the regionOrGeo property.
+     * Gets the value of the regionOrGeoOrCountry property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a {@code set} method for the regionOrGeo property.
+     * This is why there is not a {@code set} method for the regionOrGeoOrCountry property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getRegionOrGeo().add(newItem);
+     *    getRegionOrGeoOrCountry().add(newItem);
      * </pre>
      * 
      * 
@@ -69,16 +71,17 @@ public class Location {
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
      * 
      * @return
-     *     The value of the regionOrGeo property.
+     *     The value of the regionOrGeoOrCountry property.
      */
-    public List<JAXBElement<String>> getRegionOrGeo() {
-        if (regionOrGeo == null) {
-            regionOrGeo = new ArrayList<>();
+    public List<JAXBElement<String>> getRegionOrGeoOrCountry() {
+        if (regionOrGeoOrCountry == null) {
+            regionOrGeoOrCountry = new ArrayList<>();
         }
-        return this.regionOrGeo;
+        return this.regionOrGeoOrCountry;
     }
 
 }

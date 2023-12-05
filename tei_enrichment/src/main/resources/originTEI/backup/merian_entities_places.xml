@@ -37,39 +37,59 @@
                 <!-- information about the source from which
                     the resource was derived, for example the entries and IDs of entitities we want to index -->
                 <listPlace xml:id="entities_place">
-                    <place xml:id="place_Nassau" type="memberstate">
+                    <place xml:id="place_Nassau" >
                         <placeName>Nassau</placeName>
                         <placeName>Staat Nassau </placeName>
                         <placeName>Herzogtum Nassau </placeName>
                         <label>Staat</label>
                         <location>
+                            <country>Deutschland</country>
                             <region>Rheinland-Pfalz</region>
                             <region>Hessen</region>
                             <geo>50.3167 7.8</geo>
                         </location>
-                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4041265-9</idno>
                     </place>
-                    <place xml:id="place_Schloss_Regensburg" type="memorial">
+                    <place xml:id="place_Schloss_Regensburg" >
                         <placeName>Schloss Regensburg-Weichs</placeName>
                         <placeName>Schloss Weichs (Regensburg)</placeName>
                         <location>
+                            <country>Deutschland</country>
                             <region>Bayern</region>
                             <geo>12.095560 49.015000</geo>
                         </location>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                                <item>CorporateBody</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>BuildingOrMemorial</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07_art_Schloss_Regensburg" />
                         <link target="merian_hessen.xml#band_07_figure_001_01" />
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/7695021-9</idno>
                     </place>
-                    <place xml:id="place_Regensburg" type="place">
+                    <place xml:id="place_Regensburg" >
                         <!-- AdministrativeUnit type="place"
-                            TerritorialCorporateBodyOrAdministrativeUnit: type="place"
+                            TerritorialCorporateBodyOrAdministrativeUnit/PlaceOrGeographicName: type="place"
                         BuildingOrMemorial: type="memorial" 
-                        WayBorderOrLine: type="line?"
-                        religiousterritory: type="place?"
-                        NaturalGeographicUnit: type="natural?"
+                        WayBorderOrLine: type="line"
+                        religiousterritory: type="religiousPlace"
+                        NaturalGeographicUnit: type="naturalPlace"
                         NameOfSmallGeographicUnitLyingWithinAnotherGeographicUnit: type="smallPlace"
 
                         Country: type="country"
@@ -78,39 +98,117 @@
                     -->
                         <placeName>Regensburg </placeName>
                         <location>
+                            <country>Deutschland</country>
                             <region>Bayern</region>
                             <geo>48.92194 11.6819</geo>
                         </location>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4048989-9</idno>
                     </place>
-                    <place xml:id="place_Schloss_Grüningen" type="memorial">
+                    <place xml:id="place_Schloss_Grüningen" >
                         <placeName>Schloss Grüningen </placeName>
                         <location>
+                            <country>Schweiz</country>
                             <region>Kanton Zürich</region>
                         </location>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4583907-4</idno>
                     </place>
-                    <place xml:id="place_Schloss_Hexenagger" type="memorial">
+                    <place xml:id="place_Schloss_Hexenagger" >
                         <placeName>Schloss Hexenagger</placeName>
                         <location>
+                            <country>Deutschland</country>
                             <region>Bayern</region>
                             <geo>011.686170 48.920580</geo>
                         </location>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4260868-5</idno>
                     </place>
-                    <place xml:id="place_Deutschland" type="country">
+                    <place xml:id="place_Deutschland" >
                         <placeName>Deutschland</placeName>
                         <location>
                             <geo>010.500000 051.500000</geo>
                         </location>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4260868-5</idno>
+                    </place>
+                    <place xml:id="place_Oberdrauburg" >
+                        <placeName>Oberdrauburg</placeName>
+                        <location>
+                            <country>Österreich</country>
+                            <region>Kärnten</region>
+                            <geo>012.970280 046.743059</geo>
+                        </location>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list> 
+                        </note>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4295358-3</idno>
+                    </place>
+                    <place xml:id="place_Dravograd" >
+                        <placeName>Dravograd</placeName>
+                        <placeName>Unterdrauburg</placeName>
+                        <location>
+                            <country>Slowenien</country>
+                            <geo>015.019170 046.588059</geo>
+                        </location>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list> 
+                        </note>
+                        <link target="merian_hessen.xml#band_07"></link>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4328452-8</idno>
                     </place>
                 </listPlace>
             </div>
         </body>
     </text>
+
 </TEI>

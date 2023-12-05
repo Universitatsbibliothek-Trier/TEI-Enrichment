@@ -44,7 +44,15 @@
                             <date from="1914"/>
                             <date to="1918"/>
                         </desc>
-                        <note>Hier steht eine kurze Beschreibung des Events.</note>
+                        <note type="desc">Hier steht eine kurze Beschreibung des Events.</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>ConferenceOrEvent</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SeriesOfConferenceOrEvent</item>
+                            </list> 
+                        </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079163-4</idno>
                         <link target="merian_hessen.xml#band_07"></link>
                     </event>
@@ -54,6 +62,14 @@
                             <date from="1618"/>
                             <date to="1648"/>
                         </desc>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>ConferenceOrEvent</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SeriesOfConferenceOrEvent</item>
+                            </list> 
+                        </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4012985-8</idno>
                         <link target="merian_hessen.xml#band_07"></link>
                     </event>
@@ -62,7 +78,47 @@
                         <desc>
                             <date when="1914"/>
                         </desc>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>ConferenceOrEvent</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SeriesOfConferenceOrEvent</item>
+                            </list> 
+                        </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1092546847</idno>
+                        <link target="merian_hessen.xml#band_07"></link>
+                    </event>
+                    <event xml:id="event_Kappeler_Krieg_1529">
+                        <label>Kappeler Krieg 1529</label>
+                        <desc>
+                            <date when="1529"/>
+                        </desc>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>ConferenceOrEvent</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SeriesOfConferenceOrEvent</item>
+                            </list> 
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4196610-7</idno>
+                        <link target="merian_hessen.xml#band_07"></link>
+                    </event>
+                    <event xml:id="event_Kappeler_Krieg_1531">
+                        <label>Kappeler Krieg 1531</label>
+                        <desc>
+                            <date when="1531"/>
+                        </desc>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>ConferenceOrEvent</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SeriesOfConferenceOrEvent</item>
+                            </list> 
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4196611-9</idno>
                         <link target="merian_hessen.xml#band_07"></link>
                     </event>
                     <!-- hier auch veranstaltung oder konferenz-->
@@ -70,4 +126,5 @@
             </div>
         </body>
     </text>
+
 </TEI>

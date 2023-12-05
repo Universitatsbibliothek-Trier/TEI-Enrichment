@@ -12,12 +12,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.xml.namespace.QName;
-import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAnyAttribute;
-import jakarta.xml.bind.annotation.XmlElementRef;
-import jakarta.xml.bind.annotation.XmlElementRefs;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElements;
 import jakarta.xml.bind.annotation.XmlType;
 
 
@@ -50,13 +49,13 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Bibl {
 
-    @XmlElementRefs({
-        @XmlElementRef(name = "title", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "link", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "idno", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+    @XmlElements({
+        @XmlElement(name = "title", type = String.class),
+        @XmlElement(name = "note", type = Note.class),
+        @XmlElement(name = "link", type = Link.class),
+        @XmlElement(name = "idno", type = BiblIdno.class)
     })
-    protected List<JAXBElement<?>> titleOrNoteOrLink;
+    protected List<Object> titleOrNoteOrLink;
     @XmlAnyAttribute
     private Map<QName, String> otherAttributes = new HashMap<>();
 
@@ -78,16 +77,16 @@ public class Bibl {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link BiblIdno }{@code >}
-     * {@link JAXBElement }{@code <}{@link Link }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link BiblIdno }
+     * {@link Link }
+     * {@link Note }
+     * {@link String }
      * 
      * 
      * @return
      *     The value of the titleOrNoteOrLink property.
      */
-    public List<JAXBElement<?>> getTitleOrNoteOrLink() {
+    public List<Object> getTitleOrNoteOrLink() {
         if (titleOrNoteOrLink == null) {
             titleOrNoteOrLink = new ArrayList<>();
         }

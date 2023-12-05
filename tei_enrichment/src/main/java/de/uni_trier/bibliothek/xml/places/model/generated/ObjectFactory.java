@@ -30,8 +30,10 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _NoteList_QNAME = new QName("http://www.tei-c.org/ns/1.0", "list");
     private final static QName _LocationRegion_QNAME = new QName("http://www.tei-c.org/ns/1.0", "region");
     private final static QName _LocationGeo_QNAME = new QName("http://www.tei-c.org/ns/1.0", "geo");
+    private final static QName _LocationCountry_QNAME = new QName("http://www.tei-c.org/ns/1.0", "country");
     private final static QName _PlacePlaceName_QNAME = new QName("http://www.tei-c.org/ns/1.0", "placeName");
     private final static QName _PlaceLabel_QNAME = new QName("http://www.tei-c.org/ns/1.0", "label");
     private final static QName _PlaceLocation_QNAME = new QName("http://www.tei-c.org/ns/1.0", "location");
@@ -227,6 +229,39 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Note }
+     * 
+     * @return
+     *     the new instance of {@link Note }
+     */
+    public Note createNote() {
+        return new Note();
+    }
+
+    /**
+     * Create an instance of {@link List }
+     * 
+     * @return
+     *     the new instance of {@link List }
+     */
+    public List createList() {
+        return new List();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link List }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link List }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "list", scope = Note.class)
+    public JAXBElement<List> createNoteList(List value) {
+        return new JAXBElement<>(_NoteList_QNAME, List.class, Note.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
      * @param value
@@ -250,6 +285,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "geo", scope = Location.class)
     public JAXBElement<String> createLocationGeo(String value) {
         return new JAXBElement<>(_LocationGeo_QNAME, String.class, Location.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "country", scope = Location.class)
+    public JAXBElement<String> createLocationCountry(String value) {
+        return new JAXBElement<>(_LocationCountry_QNAME, String.class, Location.class, value);
     }
 
     /**
@@ -292,16 +340,16 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Note }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link Note }{@code >}
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "note", scope = Place.class)
-    public JAXBElement<String> createPlaceNote(String value) {
-        return new JAXBElement<>(_PlaceNote_QNAME, String.class, Place.class, value);
+    public JAXBElement<Note> createPlaceNote(Note value) {
+        return new JAXBElement<>(_PlaceNote_QNAME, Note.class, Place.class, value);
     }
 
     /**

@@ -240,7 +240,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     </xs:attribute>
   </xs:complexType>
 
-  <xs:simpleType name="Note">
+  <xs:complexType name="Note" mixed = "true">
+    <xs:sequence>
+      <xs:element name="list" type="self:List" maxOccurs="2" minOccurs="0"/>
+    </xs:sequence>  
+    <xs:attribute name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="List">
+    <xs:sequence>
+      <xs:element name="item" type="self:Item" maxOccurs="unbounded" />
+    </xs:sequence>  
+    <xs:attribute name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:simpleType name="Item">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 </xs:schema>

@@ -33,7 +33,17 @@
                         <orgName> Städtisches Elektrizitätswerk Trier </orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/213942-X </idno>
                         <link target="merian_hessen.xml#band_07"/>
-                        <note>Hier könnte eine Kurzbeschreibung stehen.</note>
+                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen.</note>
+                        <note type="categories">
+                            
+                            <list type="supercategory">
+                                <item>CorporateBody</item>
+                            </list>
+                            
+                            <list type="subcategory">
+                                <item>Company</item>
+                            </list>
+                        </note>
                     </org>
                 </listOrg>
             </div>

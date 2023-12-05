@@ -43,17 +43,36 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/1237790557</idno>
                         </objectIdentifier>
                         <link target="merian_hessen.xml#band_07"></link>
-                        <note>Hier steht eine Kurzbeschreibung</note>
+                        <note type="desc">Hier steht eine Kurzbeschreibung</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list> 
+                        </note>
                     </object>
+                    
                     <object xml:id="object_Hessische_Chronica">
                         <objectIdentifier>
                             <objectName>Hessische Chronica</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4579228-8 </idno>
                         </objectIdentifier>
                         <link target="merian_hessen.xml#band_07"></link>
+                        <note type="desc">Hier steht eine Kurzbeschreibung</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list> 
+                        </note>
                     </object>
                 </listObject>
             </div>
         </body>
     </text>
+
 </TEI>

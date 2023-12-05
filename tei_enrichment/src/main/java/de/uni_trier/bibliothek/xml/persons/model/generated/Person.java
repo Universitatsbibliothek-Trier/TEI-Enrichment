@@ -12,13 +12,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.xml.namespace.QName;
-import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAnyAttribute;
 import jakarta.xml.bind.annotation.XmlAttribute;
-import jakarta.xml.bind.annotation.XmlElementRef;
-import jakarta.xml.bind.annotation.XmlElementRefs;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElements;
 import jakarta.xml.bind.annotation.XmlType;
 
 
@@ -59,15 +58,15 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Person {
 
-    @XmlElementRefs({
-        @XmlElementRef(name = "persName", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "birth", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "death", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "link", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "idno", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+    @XmlElements({
+        @XmlElement(name = "persName", type = String.class),
+        @XmlElement(name = "note", type = Note.class),
+        @XmlElement(name = "birth", type = Birth.class),
+        @XmlElement(name = "death", type = Death.class),
+        @XmlElement(name = "link", type = Link.class),
+        @XmlElement(name = "idno", type = PersonIdno.class)
     })
-    protected List<JAXBElement<?>> persNameOrNoteOrBirth;
+    protected List<Object> persNameOrNoteOrBirth;
     @XmlAttribute(name = "role")
     protected String role;
     @XmlAnyAttribute
@@ -91,18 +90,18 @@ public class Person {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link Birth }{@code >}
-     * {@link JAXBElement }{@code <}{@link Death }{@code >}
-     * {@link JAXBElement }{@code <}{@link Link }{@code >}
-     * {@link JAXBElement }{@code <}{@link PersonIdno }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link Birth }
+     * {@link Death }
+     * {@link Link }
+     * {@link Note }
+     * {@link PersonIdno }
+     * {@link String }
      * 
      * 
      * @return
      *     The value of the persNameOrNoteOrBirth property.
      */
-    public List<JAXBElement<?>> getPersNameOrNoteOrBirth() {
+    public List<Object> getPersNameOrNoteOrBirth() {
         if (persNameOrNoteOrBirth == null) {
             persNameOrNoteOrBirth = new ArrayList<>();
         }

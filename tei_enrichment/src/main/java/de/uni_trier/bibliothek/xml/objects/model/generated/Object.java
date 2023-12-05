@@ -50,7 +50,7 @@ public class Object {
 
     @XmlElements({
         @XmlElement(name = "objectIdentifier", type = ObjectIdentifier.class),
-        @XmlElement(name = "note", type = String.class),
+        @XmlElement(name = "note", type = Note.class),
         @XmlElement(name = "link", type = Link.class)
     })
     protected List<java.lang.Object> objectIdentifierOrNoteOrLink;
@@ -76,8 +76,8 @@ public class Object {
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Link }
+     * {@link Note }
      * {@link ObjectIdentifier }
-     * {@link String }
      * 
      * 
      * @return

@@ -7,6 +7,9 @@
 
 package de.uni_trier.bibliothek.xml.objects.model.generated;
 
+import javax.xml.namespace.QName;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
 import jakarta.xml.bind.annotation.XmlRegistry;
 
 
@@ -27,6 +30,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _NoteList_QNAME = new QName("http://www.tei-c.org/ns/1.0", "list");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: de.uni_trier.bibliothek.xml.objects.model.generated
@@ -213,6 +217,39 @@ public class ObjectFactory {
      */
     public Link createLink() {
         return new Link();
+    }
+
+    /**
+     * Create an instance of {@link Note }
+     * 
+     * @return
+     *     the new instance of {@link Note }
+     */
+    public Note createNote() {
+        return new Note();
+    }
+
+    /**
+     * Create an instance of {@link List }
+     * 
+     * @return
+     *     the new instance of {@link List }
+     */
+    public List createList() {
+        return new List();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link List }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link List }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "list", scope = Note.class)
+    public JAXBElement<List> createNoteList(List value) {
+        return new JAXBElement<>(_NoteList_QNAME, List.class, Note.class, value);
     }
 
 }

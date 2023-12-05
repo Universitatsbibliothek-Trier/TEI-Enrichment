@@ -28,11 +28,21 @@
         <body>
             <div xml:id="merian_persons">
                 <listPerson xml:id="entities_person">
-                    <person role="wirtschaftswissenschaftler" xml:id="person_Paul_Goldmann">
+                    <person xml:id="person_Paul_Goldmann">
                         <persName> Paul Goldmann </persName>
                         <persName> Saul Goldmann </persName>
                         <persName> Saul Goodman </persName>
-                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="categories">
+                            
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list> 
+                        </note>
                         <birth when="1755"/>
                         <death when="1824"/>
                         <link target="merian_hessen.xml#band_07_art_paul_goldmann"/>
@@ -43,7 +53,17 @@
                     </person>
                     <person role="könig" xml:id="person_O_Kelly">
                         <persName> O'Kelly </persName>
-                        <note>Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
+                        <note type="categories">
+                            
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list> 
+                        </note>
                         <link target="merian_hessen.xml#band_07"/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1062805615 </idno>
                     </person>
