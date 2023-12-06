@@ -253,7 +253,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
 
   <xs:complexType name="List">
     <xs:sequence>
-      <xs:element name="item" type="self:Item" maxOccurs="unbounded" />
+      <xs:element name="item" type="self:Item" maxOccurs="unbounded" minOccurs="0" />
     </xs:sequence>  
     <xs:attribute name="type">
       <xs:simpleType>

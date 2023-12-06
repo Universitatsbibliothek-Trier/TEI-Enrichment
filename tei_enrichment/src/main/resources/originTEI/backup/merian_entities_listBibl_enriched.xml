@@ -47,7 +47,16 @@
                     <bibl>
                         <title>Sammlung_Monika_und_Günther_Czichon</title>
                         <note type="desc">Sammlung</note>
-                        <title xsi:type="List" type="supercategory" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <note type="categories">
+                            <list type="subcategory">
+                                <item>Collection</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/2112601-X</idno>
+                    </bibl>
+                    <bibl>
+                        <title>Chronika</title>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4364710-8</idno>
                     </bibl>
                 </listBibl>
             </div>
