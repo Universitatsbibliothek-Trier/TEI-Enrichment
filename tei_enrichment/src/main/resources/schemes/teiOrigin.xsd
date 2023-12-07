@@ -321,6 +321,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
         <xs:restriction base="xs:integer" />
       </xs:simpleType>
     </xs:attribute>
+    <xs:attribute ref="xml:id"/>
     <xs:anyAttribute />
   </xs:complexType>
 

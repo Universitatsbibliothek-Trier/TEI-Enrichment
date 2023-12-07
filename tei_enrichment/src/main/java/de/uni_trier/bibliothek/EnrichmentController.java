@@ -28,6 +28,7 @@ import javafx.stage.FileChooser;
 public class EnrichmentController {
 
     public static File selectedFile;
+    public static String fileName;
 
     @FXML
     private TextArea PathOutput;
@@ -75,14 +76,26 @@ public class EnrichmentController {
 
                 String TEIOriginalFilePath = (EnrichmentController.getSelectedFile()).toString();
                 try (InputStream inputStream = new FileInputStream(EnrichmentController.getSelectedFile())) {
+
+                    //delete after testing
+                    InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml");
+                    Reader xmlReader = new InputStreamReader(inputStreamTest);
+                    TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml";
+                    //till here
+
+
                     Boolean anyCheckBoxSelected = false;
-                    Reader xmlReader = new InputStreamReader(inputStream);
+                    // dekommentieren für production
+                    // Reader xmlReader = new InputStreamReader(inputStream);
                     TEI teiFile = TEIUnmarshaller.unmarshal(xmlReader);
 
                     int lastSlash = TEIOriginalFilePath.lastIndexOf('/');
                     String originalTEIFileName = TEIOriginalFilePath.substring(lastSlash + 1,
                             TEIOriginalFilePath.length());
+                    fileName = originalTEIFileName;
                     originalTEIFileName = originalTEIFileName.substring(0, originalTEIFileName.length() - 4);
+                    
+
                     originalTEIFileName = originalTEIFileName + "_enriched.xml";
                     String teiPathName = TEIOriginalFilePath.substring(0, lastSlash + 1);
                     String outputPathStringFile = teiPathName + originalTEIFileName;
@@ -98,7 +111,8 @@ public class EnrichmentController {
 
                     if (checkBoxEntities.isSelected()) {
                         System.out.println("checkbox Entitätenlisten erstellen selected!");
-                        TEIJavaObjectsList = EntityListEnricher.enrichList(TEIJavaObjectsList);
+                        System.out.println("fileName ist: " + fileName);
+                        TEIJavaObjectsList = EntityListEnricher.enrichList(TEIJavaObjectsList, fileName);
                         teiFile = (TEI) TEIJavaObjectsList.get(0);
                         EntityListCreator.createEnrichedEntityLists(teiPathName, TEIJavaObjectsList);
                         anyCheckBoxSelected = true;

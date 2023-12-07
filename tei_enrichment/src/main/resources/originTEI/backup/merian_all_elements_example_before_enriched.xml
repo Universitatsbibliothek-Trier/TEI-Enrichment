@@ -868,8 +868,9 @@
                                 zu Waldeck.</p>
                         </div>
                         <lb/>
-                        <div type="article">
-                            <head>Aſſenheim.</head>
+                        <div type="article" corresp="mgndbibl:listBibl_Sammlung_Monika_und_Günther_Czichon" xml:id="band_07_art_Sammlung_Monika_und_Günther_Czichon">
+                            <head>
+                                <name ref="mgndbibl:listBibl_Sammlung_Monika_und_Günther_Czichon">Aſſenheim</name> </head>
                             <lb/>
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat 
                                 <lb/>ſeiner

@@ -19,7 +19,11 @@ import jakarta.xml.bind.annotation.XmlAnyAttribute;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElementRef;
 import jakarta.xml.bind.annotation.XmlElementRefs;
+import jakarta.xml.bind.annotation.XmlID;
+import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
@@ -66,6 +70,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *           </restriction>
  *         </simpleType>
  *       </attribute>
+ *       <attribute ref="{http://www.w3.org/XML/1998/namespace}id"/>
  *       <anyAttribute/>
  *     </restriction>
  *   </complexContent>
@@ -104,6 +109,11 @@ public class DivFront {
     protected String corresp;
     @XmlAttribute(name = "n")
     protected BigInteger n;
+    @XmlAttribute(name = "id", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String id;
     @XmlAnyAttribute
     private Map<QName, String> otherAttributes = new HashMap<>();
 
@@ -222,6 +232,30 @@ public class DivFront {
      */
     public void setN(BigInteger value) {
         this.n = value;
+    }
+
+    /**
+     * Ruft den Wert der id-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * Legt den Wert der id-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setId(String value) {
+        this.id = value;
     }
 
     /**
