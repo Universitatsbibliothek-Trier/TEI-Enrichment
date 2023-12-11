@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Serializable;
+import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -43,6 +44,7 @@ import de.uni_trier.bibliothek.xml.listBibl.model.generated.ListBibl;
 import de.uni_trier.bibliothek.xml.objects.model.generated.ListObject;
 import de.uni_trier.bibliothek.xml.orgs.model.generated.ListOrg;
 import de.uni_trier.bibliothek.xml.orgs.model.generated.Org;
+import de.uni_trier.bibliothek.xml.persons.model.generated.Birth;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Death;
 import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
@@ -201,7 +203,7 @@ public class EntityListWriter {
 			List<Object> titleOrNoteOrLink = listBiblElement.getTitleOrNoteOrLink();
 			for (Object titleOrNoteOrLinkObject : titleOrNoteOrLink) {
 				if (titleOrNoteOrLinkObject instanceof String) {
-					if (titleOrNoteOrLinkObject.equals(preferredNameString)) {
+					if (titleOrNoteOrLinkObject.equals(preferredNameStringOriginal)) {
 						bibl = listBiblElement;
 						alreadyHasTitle = true;
 						List<Object> titleOrNoteOrLinkList = listBiblElement.getTitleOrNoteOrLink();
@@ -338,13 +340,16 @@ public class EntityListWriter {
 					String collectionName = jsonObjectCollection.getString("name");
 					System.out.println("collectionName: " + collectionName);
 
-					if (collectionName.equals("Wikidata")) {
-						de.uni_trier.bibliothek.xml.listBibl.model.generated.BiblIdno biblIdnoWiki = listBiblTEIObjectFactory
+					if(jsonObjectCollection.has("name"))
+					{
+						if (collectionName.equals("Wikidata")) {
+							de.uni_trier.bibliothek.xml.listBibl.model.generated.BiblIdno biblIdnoWiki = listBiblTEIObjectFactory
 								.createBiblIdno();
-						biblIdnoWiki.setContent(jsonObjectCollection.getString("id"));
-						biblIdnoWiki.setType("URI");
-						biblIdnoWiki.setSubtype("WIKIDATA");
-						bibl.getTitleOrNoteOrLink().add(biblIdnoWiki);
+							biblIdnoWiki.setContent(jsonObjectCollection.getString("id"));
+							biblIdnoWiki.setType("URI");
+							biblIdnoWiki.setSubtype("WIKIDATA");
+							bibl.getTitleOrNoteOrLink().add(biblIdnoWiki);
+						}
 					}
 
 				}
@@ -371,37 +376,39 @@ public class EntityListWriter {
 	public static void writePersonEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
 			DivFront divFrontElement) {
 		//todo person
-		Bibl bibl = new Bibl();
-		String preferredNameString = jsonObject.getString("preferredName");
-		preferredNameString = preferredNameString.replaceAll(", ", "_");
+		Person person = new Person();
+		String preferredNameStringOriginal = jsonObject.getString("preferredName");
+		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
 		preferredNameString = preferredNameString.replaceAll(",", "_");
 		System.out.println("PreferredNameString ist: " + preferredNameString);
-		bibl.getTitleOrNoteOrLink().add(preferredNameString);
+		person.getPersNameOrNoteOrBirth().add(preferredNameStringOriginal);
 		if(jsonObject.has("variantName"))
 		{
 			JSONArray variantNameArray = jsonObject.getJSONArray("variantName");
 			for(int i = 0; i < variantNameArray.length(); i++)
 			{
-				bibl.getTitleOrNoteOrLink().add(variantNameArray.get(i));
+				person.getPersNameOrNoteOrBirth().add(variantNameArray.get(i));
 			}
 			
 		}
 		
-		ArrayList<Bibl> arrayListBibl = new ArrayList<Bibl>(listBibl.getBibl());
+		ArrayList<Person> arrayListPerson = new ArrayList<Person>(listPersonList);
 		boolean alreadyHasLink = false;
 		boolean alreadyHasTitle = false;
-		for (Bibl listBiblElement : arrayListBibl) {
-			List<Object> titleOrNoteOrLink = listBiblElement.getTitleOrNoteOrLink();
-			for (Object titleOrNoteOrLinkObject : titleOrNoteOrLink) {
-				if (titleOrNoteOrLinkObject instanceof String) {
-					if (titleOrNoteOrLinkObject.equals(preferredNameString)) {
-						bibl = listBiblElement;
+		for (Person listPersonElement : arrayListPerson) {
+			listPersonElement.getOtherAttributes
+			//über otherattributes xml id ablesen und mit preferrednamestring vergleichen
+			List<Object> persNameOrNoteOrBirth = listPersonElement.getPersNameOrNoteOrBirth();
+			for (Object persNameOrNoteOrBirthObject : persNameOrNoteOrBirth) {
+				if (persNameOrNoteOrBirthObject instanceof PersName) {
+					if (persNameOrNoteOrBirthObject.equals(preferredNameStringOriginal)) {
+						person = listPersonElement;
 						alreadyHasTitle = true;
-						List<Object> titleOrNoteOrLinkList = listBiblElement.getTitleOrNoteOrLink();
-						for (Object titleOrNoteOrLinkElement : titleOrNoteOrLinkList) {
-							if (titleOrNoteOrLinkElement instanceof de.uni_trier.bibliothek.xml.listBibl.model.generated.Link) {
-								de.uni_trier.bibliothek.xml.listBibl.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.listBibl.model.generated.Link)titleOrNoteOrLinkElement;
+						List<Object> persNameOrNoteOrBirthList = listPersonElement.getPersNameOrNoteOrBirth();
+						for (Object persNameOrNoteOrBirthElement : persNameOrNoteOrBirthList) {
+							if (persNameOrNoteOrBirthElement instanceof de.uni_trier.bibliothek.xml.persons.model.generated.Link) {
+								de.uni_trier.bibliothek.xml.persons.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.persons.model.generated.Link)persNameOrNoteOrBirthElement;
 								if ((linkElement.getTarget()).equals(fileName + reference)) {
 									System.out.println("alreadyhaslink: " + alreadyHasLink);
 									alreadyHasLink = true;
@@ -413,27 +420,78 @@ public class EntityListWriter {
 			}
 		}
 		if (!alreadyHasTitle) {
+			if(jsonObject.has("dateOfDeath"))
+			{
+				JSONArray deathDateArray = jsonObject.getJSONArray("dateOfDeath");
+				String deathDateArrayString = deathDateArray.getString(0);
+				String deathDateArrayStringYear = "";
+				for (int i = 0; i < deathDateArrayString.length(); i++) {
+					char c = deathDateArrayString.charAt(i); 
+					
+					if(c=='-')
+					{
+						break;
+					}
+					else{
+						deathDateArrayStringYear = deathDateArrayStringYear + c;
+					}
+					
+					System.out.print(c);
+				}
+				System.out.println("deathDateArrayString: " + deathDateArrayStringYear);
+				Death death = new Death();
+				BigInteger deathDateBigInteger = new BigInteger(deathDateArrayStringYear);
+				death.setWhen(deathDateBigInteger);
+				person.getPersNameOrNoteOrBirth().add(death);
+			}
+
+			if(jsonObject.has("dateOfBirth"))
+			{
+				JSONArray birthDateArray = jsonObject.getJSONArray("dateOfBirth");
+				String birthArrayString = birthDateArray.getString(0);
+				String birthArrayStringYear = "";
+				for (int i = 0; i < birthArrayString.length(); i++) {
+					char c = birthArrayString.charAt(i); 
+					
+					if(c=='-')
+					{
+						break;
+					}
+					else{
+						birthArrayStringYear = birthArrayStringYear + c;
+					}
+					
+					System.out.print(c);
+				}
+				System.out.println("birthDateArrayString: " + birthArrayString);
+				Birth birth = new Birth();
+				BigInteger deathDateBigInteger = new BigInteger(birthArrayStringYear);
+				birth.setWhen(deathDateBigInteger);
+				person.getPersNameOrNoteOrBirth().add(birth);
+			}
+
+
 			if (jsonObject.has("broaderTermInstantial")) {
 				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
 				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-				de.uni_trier.bibliothek.xml.listBibl.model.generated.Note note = listBiblTEIObjectFactory.createNote();
+				de.uni_trier.bibliothek.xml.persons.model.generated.Note note = personsTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(jsonObjectBroaderTermString);
-				bibl.getTitleOrNoteOrLink().add(note);
+				person.getPersNameOrNoteOrBirth().add(note);
 			}
-			de.uni_trier.bibliothek.xml.listBibl.model.generated.Note categoriesNote = listBiblTEIObjectFactory
+			de.uni_trier.bibliothek.xml.persons.model.generated.Note categoriesNote = personsTEIObjectFactory
 					.createNote();
 			categoriesNote.setType("categories");
-			de.uni_trier.bibliothek.xml.listBibl.model.generated.List biblListSuperList = new de.uni_trier.bibliothek.xml.listBibl.model.generated.List();
+			de.uni_trier.bibliothek.xml.persons.model.generated.List personListSuperList = new de.uni_trier.bibliothek.xml.persons.model.generated.List();
 
-			de.uni_trier.bibliothek.xml.listBibl.model.generated.List biblListSubList = new de.uni_trier.bibliothek.xml.listBibl.model.generated.List();
+			de.uni_trier.bibliothek.xml.persons.model.generated.List personListSubList = new de.uni_trier.bibliothek.xml.persons.model.generated.List();
 
 			boolean hasSupercategory = false;
 			boolean hasSubcategory = false;
 
-			biblListSuperList.setType("supercategory");
-			biblListSubList.setType("subcategory");
+			personListSuperList.setType("supercategory");
+			personListSubList.setType("subcategory");
 
 			if (typeTermslist.contains("AuthorityResource")) {
 				typeTermslist.remove("AuthorityResource");
@@ -447,43 +505,43 @@ public class EntityListWriter {
 
 						case "Person":
 							typeTermslist.remove("Person");
-							biblListSuperList.getItem().add("Person");
+							personListSuperList.getItem().add("Person");
 							hasSupercategory = true;
 							System.out.println("Item to add: " + "Person");
 							break;
 						case "Work":
 							typeTermslist.remove("Work");
-							biblListSuperList.getItem().add("Work");
+							personListSuperList.getItem().add("Work");
 							hasSupercategory = true;
 							System.out.println("Item to add: " + "Work");
 							break;
 						case "Family":
 							typeTermslist.remove("Family");
-							biblListSuperList.getItem().add("Family");
+							personListSuperList.getItem().add("Family");
 							hasSupercategory = true;
 							System.out.println("Item to add: " + "Family");
 							break;
 						case "ConferenceOrEvent":
 							typeTermslist.remove("ConferenceOrEvent");
-							biblListSuperList.getItem().add("ConferenceOrEvent");
+							personListSuperList.getItem().add("ConferenceOrEvent");
 							hasSupercategory = true;
 							System.out.println("Item to add: " + "ConferenceOrEvent");
 							break;
 						case "PlaceOrGeographicName":
 							typeTermslist.remove("PlaceOrGeographicName");
-							biblListSuperList.getItem().add("PlaceOrGeographicName");
+							personListSuperList.getItem().add("PlaceOrGeographicName");
 							hasSupercategory = true;
 							System.out.println("Item to add: " + "PlaceOrGeographicName");
 							break;
 						case "CorporateBody":
 							typeTermslist.remove("CorporateBody");
-							biblListSuperList.getItem().add("CorporateBody");
+							personListSuperList.getItem().add("CorporateBody");
 							hasSupercategory = true;
 							System.out.println("Item to add: " + "CorporateBody");
 							break;
 						case "SubjectHeading":
 							typeTermslist.remove("SubjectHeading");
-							biblListSuperList.getItem().add("SubjectHeading");
+							personListSuperList.getItem().add("SubjectHeading");
 							hasSupercategory = true;
 							System.out.println("Item to add: " + "SubjectHeading");
 							break;
@@ -493,32 +551,29 @@ public class EntityListWriter {
 				for (String subcategory : typeTermslist) {
 					System.out.println("subcategory: " + subcategory);
 					hasSubcategory = true;
-					biblListSubList.getItem().add(subcategory);
+					personListSubList.getItem().add(subcategory);
 				}
 
 				if (hasSupercategory) {
-					JAXBElement<de.uni_trier.bibliothek.xml.listBibl.model.generated.List> biblNoteList = listBiblTEIObjectFactory
-							.createNoteList(biblListSuperList);
-					categoriesNote.getContent().add(biblNoteList);
+					JAXBElement<de.uni_trier.bibliothek.xml.persons.model.generated.List> personNoteList = personsTEIObjectFactory.createNoteList(personListSuperList);
+					categoriesNote.getContent().add(personNoteList);
 				}
 
 				if (hasSubcategory) {
-					JAXBElement<de.uni_trier.bibliothek.xml.listBibl.model.generated.List> biblNoteList = listBiblTEIObjectFactory
-							.createNoteList(biblListSubList);
-					categoriesNote.getContent().add(biblNoteList);
+					JAXBElement<de.uni_trier.bibliothek.xml.persons.model.generated.List> personNoteList = personsTEIObjectFactory.createNoteList(personListSubList);
+					categoriesNote.getContent().add(personNoteList);
 				}
-				bibl.getTitleOrNoteOrLink().add(categoriesNote);
+				person.getPersNameOrNoteOrBirth().add(categoriesNote);
 			}
 
-			de.uni_trier.bibliothek.xml.listBibl.model.generated.BiblIdno biblIdno = listBiblTEIObjectFactory
-					.createBiblIdno();
+			de.uni_trier.bibliothek.xml.persons.model.generated.PersonIdno personIdno = personsTEIObjectFactory.createPersonIdno();
 
 			if (jsonObject.has("id")) {
 				String dnbURL = jsonObject.getString("id");
-				biblIdno.setContent(dnbURL);
-				biblIdno.setType("URI");
-				biblIdno.setSubtype("GND");
-				bibl.getTitleOrNoteOrLink().add(biblIdno);
+				personIdno.setContent(dnbURL);
+				personIdno.setType("URI");
+				personIdno.setSubtype("GND");
+				person.getPersNameOrNoteOrBirth().add(personIdno);
 			}
 
 			if (jsonObject.has("sameAs")) {
@@ -529,34 +584,38 @@ public class EntityListWriter {
 					System.out.println("idCollectionObject: " + idCollectionObject);
 					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
 					System.out.println("jsonObjectCollection: " + jsonObjectCollection);
-					String collectionName = jsonObjectCollection.getString("name");
-					System.out.println("collectionName: " + collectionName);
 
-					if (collectionName.equals("Wikidata")) {
-						de.uni_trier.bibliothek.xml.listBibl.model.generated.BiblIdno biblIdnoWiki = listBiblTEIObjectFactory
-								.createBiblIdno();
-						biblIdnoWiki.setContent(jsonObjectCollection.getString("id"));
-						biblIdnoWiki.setType("URI");
-						biblIdnoWiki.setSubtype("WIKIDATA");
-						bibl.getTitleOrNoteOrLink().add(biblIdnoWiki);
+					if(jsonObjectCollection.has("name"))
+					{
+						String collectionName = jsonObjectCollection.getString("name");
+						System.out.println("collectionName: " + collectionName);
+
+						if (collectionName.equals("Wikidata")) {
+							de.uni_trier.bibliothek.xml.persons.model.generated.PersonIdno personIdnoWiki = personsTEIObjectFactory.createPersonIdno();
+							personIdnoWiki.setContent(jsonObjectCollection.getString("id"));
+							personIdnoWiki.setType("URI");
+							personIdnoWiki.setSubtype("WIKIDATA");
+							person.getPersNameOrNoteOrBirth().add(personIdnoWiki);
+						}
 					}
+					
 
 				}
 
 			}
-			listBibl.getBibl().add(bibl);
+			listPersonList.add(person);
 		} 
 		if (divFrontElement.getType() != null) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
 			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredNameString);
-			de.uni_trier.bibliothek.xml.listBibl.model.generated.Link linkArtikel = listBiblTEIObjectFactory.createLink();
+			de.uni_trier.bibliothek.xml.persons.model.generated.Link linkArtikel = personsTEIObjectFactory.createLink();
 			linkArtikel.setTarget(fileName + reference + "_art_" + preferredNameString);
-			bibl.getTitleOrNoteOrLink().add(linkArtikel);
+			person.getPersNameOrNoteOrBirth().add(linkArtikel);
 		}
 		if (!alreadyHasLink) {
-			de.uni_trier.bibliothek.xml.listBibl.model.generated.Link link = listBiblTEIObjectFactory.createLink();
+			de.uni_trier.bibliothek.xml.persons.model.generated.Link link = personsTEIObjectFactory.createLink();
 			link.setTarget(fileName + reference);
-			bibl.getTitleOrNoteOrLink().add(link);
+			person.getPersNameOrNoteOrBirth().add(link);
 		}
 	}
 }

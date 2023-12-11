@@ -181,7 +181,7 @@ public class EntityListEnricher {
 				checkSourceGND(sourceElement, null, null);
 			} else if (divOrPbOrLbListElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbListElement.getValue();
-				checkLbEtc(lbEtcElement);
+				checkLbEtc(lbEtcElement, null);
 			} else if (divOrPbOrLbListElement.getValue() instanceof Table) {
 				Table tableElement = (Table) divOrPbOrLbListElement.getValue();
 				checkTable(tableElement);
@@ -213,7 +213,7 @@ public class EntityListEnricher {
 				checkSourceGND(sourceElement, null, null);
 			} else if (foreignListObject instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) foreignListObject;
-				checkLbEtc(lbEtcElement);
+				checkLbEtc(lbEtcElement, null);
 			} else if (foreignListObject instanceof Table) {
 				Table tableElement = (Table) foreignListObject;
 				checkTable(tableElement);
@@ -254,9 +254,10 @@ public class EntityListEnricher {
 
 	private static void checkGroupBody(GroupBody groupBody) throws IOException {
 		List<JAXBElement<?>> getDivOrPbOrLbList = groupBody.getDivOrPbOrLb();
+		DivFront divFrontElement = new DivFront();
 		for (JAXBElement<?> divOrPbOrLbListElement : getDivOrPbOrLbList) {
 			if (divOrPbOrLbListElement.getValue() instanceof DivFront) {
-				DivFront divFrontElement = (DivFront) divOrPbOrLbListElement.getValue();
+				divFrontElement = (DivFront) divOrPbOrLbListElement.getValue();
 				checkDivFront(divFrontElement);
 			} else if (divOrPbOrLbListElement.getValue() instanceof Choice) {
 				Choice choiceElement = (Choice) divOrPbOrLbListElement.getValue();
@@ -269,7 +270,7 @@ public class EntityListEnricher {
 				checkSourceGND(sourceElement, null, null);
 			} else if (divOrPbOrLbListElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbListElement.getValue();
-				checkLbEtc(lbEtcElement);
+				checkLbEtc(lbEtcElement, divFrontElement);
 			} else if (divOrPbOrLbListElement.getValue() instanceof Table) {
 				Table tableElement = (Table) divOrPbOrLbListElement.getValue();
 				checkTable(tableElement);
@@ -296,7 +297,7 @@ public class EntityListEnricher {
 				checkList(list);
 			} else if (divOrPbOrLbElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbElement.getValue();
-				checkLbEtc(lbEtcElement);
+				checkLbEtc(lbEtcElement, null);
 			} else if (divOrPbOrLbElement.getValue() instanceof Subst) {
 				Subst substElement = (Subst) divOrPbOrLbElement.getValue();
 				checkSubst(substElement);
@@ -375,7 +376,7 @@ public class EntityListEnricher {
 				JAXBElement<?> jaxbElement = (JAXBElement<?>) rowElement;
 				if (jaxbElement.getValue() instanceof LbEtc) {
 					LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
-					checkLbEtc(lbEtcElement);
+					checkLbEtc(lbEtcElement, null);
 				} else if (jaxbElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbElement.getValue();
 					checkSubst(substElement);
@@ -396,10 +397,10 @@ public class EntityListEnricher {
 				checkHead(headElement, divFrontElement);
 			} else if (divFrontListElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) divFrontListElement.getValue();
-				checkLbEtc(lbEtcElement);
+				checkLbEtc(lbEtcElement, divFrontElement);
 			} else if (divFrontListElement.getValue() instanceof DivFront) {
-				DivFront recurisveDivFrontElement = (DivFront) divFrontListElement.getValue();
-				checkDivFront(recurisveDivFrontElement);
+				DivFront recursiveDivFrontElement = (DivFront) divFrontListElement.getValue();
+				checkDivFront(recursiveDivFrontElement);
 			} else if (divFrontListElement.getValue() instanceof Table) {
 				Table tableElement = (Table) divFrontListElement.getValue();
 				checkTable(tableElement);
@@ -429,7 +430,7 @@ public class EntityListEnricher {
 					checkSourceGND(sourceGNDElement, head, divFrontElement);
 				} else if (jaxbHeadListElement.getValue() instanceof LbEtc) {
 					LbEtc lbEtcElement = (LbEtc) jaxbHeadListElement.getValue();
-					checkLbEtc(lbEtcElement);
+					checkLbEtc(lbEtcElement, divFrontElement);
 				} else if (jaxbHeadListElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbHeadListElement.getValue();
 					checkSubst(substElement);
@@ -458,7 +459,7 @@ public class EntityListEnricher {
 					checkDocImprint(docImprint);
 				} else if (titlePageListElementObject.getValue() instanceof LbEtc) {
 					LbEtc lbEtc = (LbEtc) titlePageListElementObject.getValue();
-					checkLbEtc(lbEtc);
+					checkLbEtc(lbEtc, null);
 				} else if (titlePageListElementObject.getValue() instanceof Subst) {
 					Subst substElement = (Subst) titlePageListElementObject.getValue();
 					checkSubst(substElement);
@@ -477,7 +478,7 @@ public class EntityListEnricher {
 		for (JAXBElement<?> jaxbElement : docImprintList) {
 			if (jaxbElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-				checkLbEtc(lbEtc);
+				checkLbEtc(lbEtc, null);
 			} else if (jaxbElement.getValue() instanceof Choice) {
 				Choice choiceElement = (Choice) jaxbElement.getValue();
 				checkChoice(choiceElement);
@@ -508,7 +509,7 @@ public class EntityListEnricher {
 					checkTitlePart(titlePart);
 				} else if (jaxbElement.getValue() instanceof LbEtc) {
 					LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-					checkLbEtc(lbEtc);
+					checkLbEtc(lbEtc, null);
 				} else if (jaxbElement.getValue() instanceof NameGND) {
 					NameGND nameGND = (NameGND) jaxbElement.getValue();
 					checkNameGnd(nameGND, null, null);
@@ -541,7 +542,7 @@ public class EntityListEnricher {
 					checkSourceGND(sourceGND, null, null);
 				} else if (jaxbElement.getValue() instanceof LbEtc) {
 					LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-					checkLbEtc(lbEtc);
+					checkLbEtc(lbEtc, null);
 				} else if (jaxbElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbElement.getValue();
 					checkSubst(substElement);
@@ -568,7 +569,7 @@ public class EntityListEnricher {
 					checkSourceGND(sourceGNDElement, null, null);
 				} else if (jaxbElement.getValue() instanceof LbEtc) {
 					LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
-					checkLbEtc(lbEtcElement);
+					checkLbEtc(lbEtcElement, null);
 				} else if (jaxbElement.getValue() instanceof Table) {
 					Table tableElement = (Table) jaxbElement.getValue();
 					checkTable(tableElement);
@@ -586,7 +587,7 @@ public class EntityListEnricher {
 		for (Object substElemenObject : substElementsList) {
 			if (substElemenObject instanceof LbEtc) {
 				LbEtc lbEtc = (LbEtc) substElemenObject;
-				checkLbEtc(lbEtc);
+				checkLbEtc(lbEtc, null);
 			} else if (substElemenObject instanceof NameGND) {
 				NameGND nameGND = (NameGND) substElemenObject;
 				checkNameGnd(nameGND, null, null);
@@ -611,7 +612,7 @@ public class EntityListEnricher {
 		for (Object addElement : addElementsList) {
 			if (addElement instanceof LbEtc) {
 				LbEtc lbEtc = (LbEtc) addElement;
-				checkLbEtc(lbEtc);
+				checkLbEtc(lbEtc, null);
 			} else if (addElement instanceof NameGND) {
 				NameGND nameGND = (NameGND) addElement;
 				checkNameGnd(nameGND, null, null);
@@ -639,7 +640,7 @@ public class EntityListEnricher {
 		for (Object delElement : delElementsList) {
 			if (delElement instanceof LbEtc) {
 				LbEtc lbEtc = (LbEtc) delElement;
-				checkLbEtc(lbEtc);
+				checkLbEtc(lbEtc, null);
 			} else if (delElement instanceof NameGND) {
 				NameGND nameGND = (NameGND) delElement;
 				checkNameGnd(nameGND, null, null);
@@ -667,7 +668,7 @@ public class EntityListEnricher {
 		for (JAXBElement<?> jaxbElement : choiceElementsList) {
 			if (jaxbElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-				checkLbEtc(lbEtc);
+				checkLbEtc(lbEtc, null);
 			} else if (jaxbElement.getValue() instanceof NameGND) {
 				NameGND nameGND = (NameGND) jaxbElement.getValue();
 				checkNameGnd(nameGND, null, null);
@@ -683,7 +684,7 @@ public class EntityListEnricher {
 
 	}
 
-	public static void checkLbEtc(LbEtc lbEtc) throws IOException {
+	public static void checkLbEtc(LbEtc lbEtc, DivFront divFrontElement) throws IOException {
 
 		List<Serializable> lbEtcList = lbEtc.getContent();
 		for (Object lbEtcListElement : lbEtcList) {
@@ -692,7 +693,6 @@ public class EntityListEnricher {
 				if (jaxbLbEtcListElement.getValue() instanceof Choice) {
 					Choice choice = (Choice) jaxbLbEtcListElement.getValue();
 					checkChoice(choice);
-
 				} else if (jaxbLbEtcListElement.getValue() instanceof NameGND) {
 					NameGND nameGNDElement = (NameGND) jaxbLbEtcListElement.getValue();
 					checkNameGnd(nameGNDElement, null, null);
@@ -792,7 +792,7 @@ public class EntityListEnricher {
 						checkNameGnd(nameInNameGND, head, divFrontElement);
 					} else if (jaxbElement.getValue() instanceof LbEtc) {
 						LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-						checkLbEtc(lbEtc);
+						checkLbEtc(lbEtc, null);
 					} else if (jaxbElement.getValue() instanceof SourceGND) {
 						SourceGND sourceGNDrec = (SourceGND) jaxbElement.getValue();
 						checkSourceGND(sourceGNDrec, head, divFrontElement);
@@ -838,7 +838,7 @@ public class EntityListEnricher {
 						checkNameGnd(nameInNameGND, head, divFrontElement);
 					} else if (jaxbElement.getValue() instanceof LbEtc) {
 						LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-						checkLbEtc(lbEtc);
+						checkLbEtc(lbEtc, null);
 					} else if (jaxbElement.getValue() instanceof SourceGND) {
 						SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
 						checkSourceGND(sourceGND, head, divFrontElement);

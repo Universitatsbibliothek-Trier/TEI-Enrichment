@@ -57,6 +57,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/2112601-X</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Sammlung_Monika_und_Günther_Czichon"/>
                     </bibl>
                     <bibl>
                         <title>Chronika</title>
@@ -67,21 +68,6 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4364710-8</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                    </bibl>
-                    <bibl>
-                        <title>Sammlung Monika und Günther Czichon</title>
-                        <note type="desc">Sammlung</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>Work</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>Collection</item>
-                            </list>
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/2112601-X</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Sammlung_Monika_und_Günther_Czichon"/>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                     </bibl>
                 </listBibl>

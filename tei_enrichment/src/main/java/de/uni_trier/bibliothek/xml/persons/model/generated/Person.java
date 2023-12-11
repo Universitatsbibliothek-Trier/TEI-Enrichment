@@ -59,7 +59,7 @@ import jakarta.xml.bind.annotation.XmlType;
 public class Person {
 
     @XmlElements({
-        @XmlElement(name = "persName", type = String.class),
+        @XmlElement(name = "persName", type = PersName.class),
         @XmlElement(name = "note", type = Note.class),
         @XmlElement(name = "birth", type = Birth.class),
         @XmlElement(name = "death", type = Death.class),
@@ -94,8 +94,8 @@ public class Person {
      * {@link Death }
      * {@link Link }
      * {@link Note }
+     * {@link PersName }
      * {@link PersonIdno }
-     * {@link String }
      * 
      * 
      * @return

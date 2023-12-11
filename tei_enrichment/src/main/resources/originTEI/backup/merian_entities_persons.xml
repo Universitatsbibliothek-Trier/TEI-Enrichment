@@ -37,9 +37,18 @@
                     the resource was derived, for example the entries and IDs of entitities we want to index -->
                 <listPerson xml:id="entities_person">
                     <person xml:id="person_Paul_Goldmann" >
-                        <persName> Paul Goldmann </persName>
-                        <persName> Saul Goldmann </persName>
-                        <persName> Saul Goodman </persName>
+                        <persName>
+                            <forename>Paul</forename>
+                            <surname>Goldmann</surname>
+                        </persName>
+                        <persName>
+                            <forename>Saul</forename>
+                            <surname>Goldmann</surname>
+                        </persName>
+                        <persName>
+                            <forename>Saul</forename>
+                            <surname>Goodman</surname>
+                        </persName>
                         <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -59,7 +68,10 @@
                     </person>
 
                     <person xml:id="person_O_Kelly" role="könig">
-                        <persName> O'Kelly </persName>
+                        <persName> 
+                            <forename>Saul</forename>
+                            <surname>Goodman</surname>
+                        </persName>
                         <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
                         <note type="categories">
                             <list type="supercategory">

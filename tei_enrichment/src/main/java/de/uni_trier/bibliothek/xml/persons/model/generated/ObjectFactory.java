@@ -250,6 +250,16 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link PersName }
+     * 
+     * @return
+     *     the new instance of {@link PersName }
+     */
+    public PersName createPersName() {
+        return new PersName();
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link List }{@code >}
      * 
      * @param value

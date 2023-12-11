@@ -29,9 +29,18 @@
             <div xml:id="merian_persons">
                 <listPerson xml:id="entities_person">
                     <person xml:id="person_Paul_Goldmann">
-                        <persName> Paul Goldmann </persName>
-                        <persName> Saul Goldmann </persName>
-                        <persName> Saul Goodman </persName>
+                        <persName>
+                            <forename>Paul</forename>
+                            <surname>Goldmann</surname>
+                        </persName>
+                        <persName>
+                            <forename>Saul</forename>
+                            <surname>Goldmann</surname>
+                        </persName>
+                        <persName>
+                            <forename>Saul</forename>
+                            <surname>Goodman</surname>
+                        </persName>
                         <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
                         <note type="categories">
                             
@@ -52,7 +61,10 @@
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q3138</idno>
                     </person>
                     <person role="könig" xml:id="person_O_Kelly">
-                        <persName> O'Kelly </persName>
+                        <persName>
+                            <forename>Saul</forename>
+                            <surname>Goodman</surname>
+                        </persName>
                         <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
                         <note type="categories">
                             
@@ -66,6 +78,77 @@
                         </note>
                         <link target="merian_hessen.xml#band_07"/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1062805615 </idno>
+                    </person>
+                    <person>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthaeus, der Ältere</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mattheus, der Ältere</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mathieu, l'Ancien</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mattheus</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthaeus</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthae</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, M.</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthäus</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, der Ältere</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mathias, der Ältere</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthäus, der Ältere</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthias, der Ältere</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthew, the Elder</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthaeus, sen.</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mathaeus, der Ältere</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merianus, Matthaeus, der Ältere</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merianus, Mattheus</death>
+                        <death when="1650"/>
+                        <birth when="1593"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/118581090</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </person>
+                    <person>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Einstein</death>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1309985006</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </person>
+                    <person>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeiller, Martin</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeiler, Martinus</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Z., M.</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeiler, Martin</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeillerum, Martinum</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeillerus, Martinus</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">M.Z.</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">M. Z.</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeiller, Martinus</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeilerus, Martinus</death>
+                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeilerus, Martin</death>
+                        <death when="1661"/>
+                        <birth when="1589"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/118772392</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
                     </person>
                 </listPerson>
             </div>
