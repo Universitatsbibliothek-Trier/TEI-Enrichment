@@ -34,6 +34,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.xml.namespace.QName;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -47,6 +49,7 @@ import de.uni_trier.bibliothek.xml.orgs.model.generated.Org;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Birth;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Death;
 import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
+import de.uni_trier.bibliothek.xml.persons.model.generated.PersName;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
 import de.uni_trier.bibliothek.xml.places.model.generated.ListPlace;
 import de.uni_trier.bibliothek.xml.places.model.generated.Note;
@@ -140,7 +143,7 @@ public class EntityListWriter {
 		de.uni_trier.bibliothek.xml.listBibl.model.generated.Body listBiblBody = listBiblText.getBody();
 		de.uni_trier.bibliothek.xml.listBibl.model.generated.Div listBiblDiv = listBiblBody.getDiv();
 		listBibl = listBiblDiv.getListBibl();
-		System.out.println("listBibl: " + listBibl.toString());
+		// System.out.println("listBibl: " + listBibl.toString());
 
 		de.uni_trier.bibliothek.xml.events.model.generated.Text eventsBiblText = teiEvents.getText();
 		de.uni_trier.bibliothek.xml.events.model.generated.Body eventsBody = eventsBiblText.getBody();
@@ -186,6 +189,11 @@ public class EntityListWriter {
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
 		preferredNameString = preferredNameString.replaceAll(",", "_");
 		System.out.println("PreferredNameString ist: " + preferredNameString);
+
+		Map<QName, String> attributesMap = bibl.getOtherAttributes();
+		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
+		attributesMap.put(qname, "listBibl_" + preferredNameString);
+
 		bibl.getTitleOrNoteOrLink().add(preferredNameStringOriginal);
 		if(jsonObject.has("variantName"))
 		{
@@ -250,56 +258,56 @@ public class EntityListWriter {
 			if (!typeTermsListCopy.isEmpty()) {
 
 				for (String termString : typeTermsListCopy) {
-					System.out.println("termString: " + termString);
+					// System.out.println("termString: " + termString);
 					switch (termString) {
 
 						case "Person":
 							typeTermslist.remove("Person");
 							biblListSuperList.getItem().add("Person");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "Person");
+							// System.out.println("Item to add: " + "Person");
 							break;
 						case "Work":
 							typeTermslist.remove("Work");
 							biblListSuperList.getItem().add("Work");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "Work");
+							// System.out.println("Item to add: " + "Work");
 							break;
 						case "Family":
 							typeTermslist.remove("Family");
 							biblListSuperList.getItem().add("Family");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "Family");
+							// System.out.println("Item to add: " + "Family");
 							break;
 						case "ConferenceOrEvent":
 							typeTermslist.remove("ConferenceOrEvent");
 							biblListSuperList.getItem().add("ConferenceOrEvent");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "ConferenceOrEvent");
+							// System.out.println("Item to add: " + "ConferenceOrEvent");
 							break;
 						case "PlaceOrGeographicName":
 							typeTermslist.remove("PlaceOrGeographicName");
 							biblListSuperList.getItem().add("PlaceOrGeographicName");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "PlaceOrGeographicName");
+							// System.out.println("Item to add: " + "PlaceOrGeographicName");
 							break;
 						case "CorporateBody":
 							typeTermslist.remove("CorporateBody");
 							biblListSuperList.getItem().add("CorporateBody");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "CorporateBody");
+							// System.out.println("Item to add: " + "CorporateBody");
 							break;
 						case "SubjectHeading":
 							typeTermslist.remove("SubjectHeading");
 							biblListSuperList.getItem().add("SubjectHeading");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "SubjectHeading");
+							// System.out.println("Item to add: " + "SubjectHeading");
 							break;
 					}
 				}
 
 				for (String subcategory : typeTermslist) {
-					System.out.println("subcategory: " + subcategory);
+					// System.out.println("subcategory: " + subcategory);
 					hasSubcategory = true;
 					biblListSubList.getItem().add(subcategory);
 				}
@@ -331,15 +339,11 @@ public class EntityListWriter {
 
 			if (jsonObject.has("sameAs")) {
 				JSONArray sameAsArray = jsonObject.getJSONArray("sameAs");
-				System.out.println("sameAsArray: " + sameAsArray);
+				// System.out.println("sameAsArray: " + sameAsArray);
 				for (int i = 0; i < sameAsArray.length(); i++) {
 					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
-					System.out.println("idCollectionObject: " + idCollectionObject);
 					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
-					System.out.println("jsonObjectCollection: " + jsonObjectCollection);
 					String collectionName = jsonObjectCollection.getString("name");
-					System.out.println("collectionName: " + collectionName);
-
 					if(jsonObjectCollection.has("name"))
 					{
 						if (collectionName.equals("Wikidata")) {
@@ -376,33 +380,93 @@ public class EntityListWriter {
 	public static void writePersonEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
 			DivFront divFrontElement) {
 		//todo person
+		
 		Person person = new Person();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
 		preferredNameString = preferredNameString.replaceAll(",", "_");
 		System.out.println("PreferredNameString ist: " + preferredNameString);
-		person.getPersNameOrNoteOrBirth().add(preferredNameStringOriginal);
-		if(jsonObject.has("variantName"))
+
+		//family: get preferred name, get nachname, wenn family im string enthalten ist
+		if(jsonObject.has("titleOfNobility"))
 		{
-			JSONArray variantNameArray = jsonObject.getJSONArray("variantName");
-			for(int i = 0; i < variantNameArray.length(); i++)
+			JSONArray titleOfNobilityArray = jsonObject.getJSONArray("titleOfNobility");
+			JSONObject titleOfNobilityObject = titleOfNobilityArray.getJSONObject(0);
+			if(titleOfNobilityObject.has("label"))
 			{
-				person.getPersNameOrNoteOrBirth().add(variantNameArray.get(i));
+				person.setRole(titleOfNobilityObject.getString("label"));
 			}
-			
+			// JSONArray titleOfNobilityArray = titleOfNobility.getJSONArray("titleOfNobility");
 		}
+
+		if(jsonObject.has("preferredNameEntityForThePerson"))
+		{
+			PersName personName = new PersName();
+			JSONObject preferredNameEntityForThePerson = jsonObject.getJSONObject("preferredNameEntityForThePerson");
+			// System.out.println("preferredNameEntityForThePerson ist: " + preferredNameEntityForThePerson);
+
+			if(preferredNameEntityForThePerson.has("forename")){
+				JSONArray forename = preferredNameEntityForThePerson.getJSONArray("forename");
+				personName.setForename((String) forename.get(0));
+			}
+			if(preferredNameEntityForThePerson.has("surname")){
+				JSONArray surname = preferredNameEntityForThePerson.getJSONArray("surname");
+				personName.setSurname((String) surname.get(0));
+			}
+			if(preferredNameEntityForThePerson.has("nameAddition")){
+				JSONArray nameAddition = preferredNameEntityForThePerson.getJSONArray("nameAddition");
+				personName.getAddName().add((String) nameAddition.get(0));
+			}
+			if(preferredNameEntityForThePerson.has("personalName")){
+				JSONArray personalName = preferredNameEntityForThePerson.getJSONArray("personalName");
+				personName.getAddName().add((String) personalName.get(0));
+				
+			}
+			person.getPersNameOrNoteOrBirth().add(personName);
+		}
+		
+		if(jsonObject.has("variantNameEntityForThePerson"))
+		{
+			
+			JSONArray variantNameEntityForThePerson = jsonObject.getJSONArray("variantNameEntityForThePerson");
+			for (int i = 0; i < variantNameEntityForThePerson.length(); i++) {
+				PersName personName = new PersName();
+				JSONObject variantName = variantNameEntityForThePerson.getJSONObject(i);
+
+				if(variantName.has("forename")){
+					JSONArray forename = variantName.getJSONArray("forename");
+					personName.setForename((String) forename.get(0));
+				}
+				if(variantName.has("surname")){
+					JSONArray surname = variantName.getJSONArray("surname");
+					personName.setSurname((String) surname.get(0));
+				}
+				if(variantName.has("nameAddition")){
+					JSONArray nameAddition = variantName.getJSONArray("nameAddition");
+					personName.getAddName().add((String) nameAddition.get(0));
+				}
+				if(variantName.has("personalName")){
+					JSONArray personalName = variantName.getJSONArray("personalName");
+					personName.getAddName().add((String) personalName.get(0));
+				
+			}
+				person.getPersNameOrNoteOrBirth().add(personName);
+			}
+		
+		}
+		
 		
 		ArrayList<Person> arrayListPerson = new ArrayList<Person>(listPersonList);
 		boolean alreadyHasLink = false;
 		boolean alreadyHasTitle = false;
 		for (Person listPersonElement : arrayListPerson) {
-			listPersonElement.getOtherAttributes
-			//über otherattributes xml id ablesen und mit preferrednamestring vergleichen
-			List<Object> persNameOrNoteOrBirth = listPersonElement.getPersNameOrNoteOrBirth();
-			for (Object persNameOrNoteOrBirthObject : persNameOrNoteOrBirth) {
-				if (persNameOrNoteOrBirthObject instanceof PersName) {
-					if (persNameOrNoteOrBirthObject.equals(preferredNameStringOriginal)) {
+			Map<QName, String> attributeName = listPersonElement.getOtherAttributes();
+			QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
+
+			String xmlID = attributeName.get(qname);
+				if (xmlID!=null) {
+					if (xmlID.equals("person_" + preferredNameString)) {
 						person = listPersonElement;
 						alreadyHasTitle = true;
 						List<Object> persNameOrNoteOrBirthList = listPersonElement.getPersNameOrNoteOrBirth();
@@ -417,9 +481,14 @@ public class EntityListWriter {
 						}
 					}
 				}
-			}
+			// }
 		}
 		if (!alreadyHasTitle) {
+
+			Map<QName, String> attributesMap = person.getOtherAttributes();
+			QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
+			attributesMap.put(qname, "person_" + preferredNameString);
+
 			if(jsonObject.has("dateOfDeath"))
 			{
 				JSONArray deathDateArray = jsonObject.getJSONArray("dateOfDeath");
@@ -436,9 +505,9 @@ public class EntityListWriter {
 						deathDateArrayStringYear = deathDateArrayStringYear + c;
 					}
 					
-					System.out.print(c);
+					// System.out.print(c);
 				}
-				System.out.println("deathDateArrayString: " + deathDateArrayStringYear);
+				// System.out.println("deathDateArrayString: " + deathDateArrayStringYear);
 				Death death = new Death();
 				BigInteger deathDateBigInteger = new BigInteger(deathDateArrayStringYear);
 				death.setWhen(deathDateBigInteger);
@@ -461,9 +530,9 @@ public class EntityListWriter {
 						birthArrayStringYear = birthArrayStringYear + c;
 					}
 					
-					System.out.print(c);
+					// System.out.print(c);
 				}
-				System.out.println("birthDateArrayString: " + birthArrayString);
+				// System.out.println("birthDateArrayString: " + birthArrayString);
 				Birth birth = new Birth();
 				BigInteger deathDateBigInteger = new BigInteger(birthArrayStringYear);
 				birth.setWhen(deathDateBigInteger);
@@ -500,56 +569,56 @@ public class EntityListWriter {
 			if (!typeTermsListCopy.isEmpty()) {
 
 				for (String termString : typeTermsListCopy) {
-					System.out.println("termString: " + termString);
+					// System.out.println("termString: " + termString);
 					switch (termString) {
 
 						case "Person":
 							typeTermslist.remove("Person");
 							personListSuperList.getItem().add("Person");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "Person");
+							// System.out.println("Item to add: " + "Person");
 							break;
 						case "Work":
 							typeTermslist.remove("Work");
 							personListSuperList.getItem().add("Work");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "Work");
+							// System.out.println("Item to add: " + "Work");
 							break;
 						case "Family":
 							typeTermslist.remove("Family");
 							personListSuperList.getItem().add("Family");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "Family");
+							// System.out.println("Item to add: " + "Family");
 							break;
 						case "ConferenceOrEvent":
 							typeTermslist.remove("ConferenceOrEvent");
 							personListSuperList.getItem().add("ConferenceOrEvent");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "ConferenceOrEvent");
+							// System.out.println("Item to add: " + "ConferenceOrEvent");
 							break;
 						case "PlaceOrGeographicName":
 							typeTermslist.remove("PlaceOrGeographicName");
 							personListSuperList.getItem().add("PlaceOrGeographicName");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "PlaceOrGeographicName");
+							// System.out.println("Item to add: " + "PlaceOrGeographicName");
 							break;
 						case "CorporateBody":
 							typeTermslist.remove("CorporateBody");
 							personListSuperList.getItem().add("CorporateBody");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "CorporateBody");
+							// System.out.println("Item to add: " + "CorporateBody");
 							break;
 						case "SubjectHeading":
 							typeTermslist.remove("SubjectHeading");
 							personListSuperList.getItem().add("SubjectHeading");
 							hasSupercategory = true;
-							System.out.println("Item to add: " + "SubjectHeading");
+							// System.out.println("Item to add: " + "SubjectHeading");
 							break;
 					}
 				}
 
 				for (String subcategory : typeTermslist) {
-					System.out.println("subcategory: " + subcategory);
+					// System.out.println("subcategory: " + subcategory);
 					hasSubcategory = true;
 					personListSubList.getItem().add(subcategory);
 				}
@@ -578,17 +647,17 @@ public class EntityListWriter {
 
 			if (jsonObject.has("sameAs")) {
 				JSONArray sameAsArray = jsonObject.getJSONArray("sameAs");
-				System.out.println("sameAsArray: " + sameAsArray);
+				// System.out.println("sameAsArray: " + sameAsArray);
 				for (int i = 0; i < sameAsArray.length(); i++) {
 					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
-					System.out.println("idCollectionObject: " + idCollectionObject);
+					// System.out.println("idCollectionObject: " + idCollectionObject);
 					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
-					System.out.println("jsonObjectCollection: " + jsonObjectCollection);
+					// System.out.println("jsonObjectCollection: " + jsonObjectCollection);
 
 					if(jsonObjectCollection.has("name"))
 					{
 						String collectionName = jsonObjectCollection.getString("name");
-						System.out.println("collectionName: " + collectionName);
+						// System.out.println("collectionName: " + collectionName);
 
 						if (collectionName.equals("Wikidata")) {
 							de.uni_trier.bibliothek.xml.persons.model.generated.PersonIdno personIdnoWiki = personsTEIObjectFactory.createPersonIdno();
@@ -605,16 +674,29 @@ public class EntityListWriter {
 			}
 			listPersonList.add(person);
 		} 
+		
 		if (divFrontElement.getType() != null) {
+			System.out.println("divFrontElement: " + divFrontElement.getType());
+			//bis hierhin funktionierts
 			String referenceWithoutHash = reference.substring(1, reference.length());
 			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredNameString);
 			de.uni_trier.bibliothek.xml.persons.model.generated.Link linkArtikel = personsTEIObjectFactory.createLink();
 			linkArtikel.setTarget(fileName + reference + "_art_" + preferredNameString);
+			System.out.println("linkTarget: " + linkArtikel.getTarget());
+
+
+			// Map<QName, String> attributesMap = divFrontElement.getOtherAttributes();
+			// QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
+			// attributesMap.put(qname, "person" + preferredNameString);
+
+
 			person.getPersNameOrNoteOrBirth().add(linkArtikel);
+			System.out.println("linkTarget added: " + linkArtikel.getTarget());
 		}
 		if (!alreadyHasLink) {
 			de.uni_trier.bibliothek.xml.persons.model.generated.Link link = personsTEIObjectFactory.createLink();
 			link.setTarget(fileName + reference);
+			System.out.println("bandlik added: " + link.getTarget());
 			person.getPersNameOrNoteOrBirth().add(link);
 		}
 	}

@@ -547,7 +547,8 @@
                                 <lb/>zugenandt in den Sohden. Soll 
                                 <lb/>wegen
                                 der Saltz⸗Sohden ſo viel 
-                                <lb/>heiſſen / als Hallendorff / inmaſſen
+                                <lb/>heiſſen / als 
+                                <name ref="mgndper:person_Ludwig_II._Bayern_König">Hallendoraſſen</name> / 
                                 auch 
                                 <lb/>andere Orth von ihren Sohden oder Suͤl⸗ 
                                 <lb/>tzen / alſo
@@ -832,8 +833,10 @@
                                 Menzerus.</p>
                         </div>
                         <lb/>
-                        <div type="article">
-                            <head>Arolſen.</head>
+                        <div type="article" corresp="mgndper:person_Ludwig_II._Bayern_König" xml:id="band_07_art_Ludwig_II._Bayern_König">
+                            <head>
+                                <name ref="mgndper:person_Ludwig_II._Bayern_König">Hallendoraſſen</name>
+                            </head>
                             <lb/>
                             <p>LJgt in der Graffſchaft Waldeck / und iſt 
                                 <lb/>Anfangs ein Cloſter

@@ -286,7 +286,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:sequence>
       <xs:element name="forename" type="self:Item" maxOccurs="1" minOccurs="0"/>
       <xs:element name="surname" type="self:Item" maxOccurs="1" minOccurs="0"/>
-      <xs:element name="addName" type="self:Item" maxOccurs="1" minOccurs="0"/>
+      <xs:element name="addName" type="self:Item" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence> 
   </xs:complexType>
 

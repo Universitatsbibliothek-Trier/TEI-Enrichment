@@ -44,7 +44,7 @@
                         <link target="merian_hessen.xml#band_07"/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4198693-3</idno>
                     </bibl>
-                    <bibl>
+                    <bibl xml:id="listBibl_Sammlung_Monika_und_Günther_Czichon">
                         <title>Sammlung Monika und Günther Czichon</title>
                         <note type="desc">Sammlung</note>
                         <note type="categories">
@@ -59,7 +59,7 @@
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Sammlung_Monika_und_Günther_Czichon"/>
                     </bibl>
-                    <bibl>
+                    <bibl xml:id="listBibl_Chronika">
                         <title>Chronika</title>
                         <title>Chronik</title>
                         <note type="categories">

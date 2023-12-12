@@ -722,7 +722,7 @@ public class EntityListEnricher {
 		de.uni_trier.bibliothek.xml.listBibl.model.generated.Body listBiblBody = listBiblText.getBody();
 		de.uni_trier.bibliothek.xml.listBibl.model.generated.Div listBiblDiv = listBiblBody.getDiv();
 		listBibl = listBiblDiv.getListBibl();
-		System.out.println("listBibl: " + listBibl.toString());
+		// System.out.println("listBibl: " + listBibl.toString());
 
 		de.uni_trier.bibliothek.xml.events.model.generated.Text eventsBiblText = teiEvents.getText();
 		de.uni_trier.bibliothek.xml.events.model.generated.Body eventsBody = eventsBiblText.getBody();
@@ -884,7 +884,7 @@ public class EntityListEnricher {
 		preferredNameString = preferredNameString.replaceAll(", ", "_");
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
 		preferredNameString = preferredNameString.replaceAll(",", "_");
-		System.out.println("PreferredNameString ist: " + preferredNameString);
+		// System.out.println("PreferredNameString ist: " + preferredNameString);
 
 		boolean objectHasType = false;
 
@@ -1014,7 +1014,7 @@ public class EntityListEnricher {
 			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
 			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			System.out.println("jsonObjectBroaderTermString objects: " + jsonObjectBroaderTermString);
+			// System.out.println("jsonObjectBroaderTermString objects: " + jsonObjectBroaderTermString);
 		}
 
 	}
@@ -1136,7 +1136,7 @@ public class EntityListEnricher {
 	public static ArrayList<String> getUnterkategorie(List<String> typeTermslist, JSONObject jsonObject) {
 		ArrayList<String> subcategories = new ArrayList<String>();
 		for (String termString : typeTermslist) {
-			System.out.println("subcategory: " + termString);
+			// System.out.println("subcategory: " + termString);
 			subcategories.add(termString);
 		}
 		return subcategories;

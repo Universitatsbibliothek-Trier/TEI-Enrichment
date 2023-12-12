@@ -7,6 +7,8 @@
 
 package de.uni_trier.bibliothek.xml.persons.model.generated;
 
+import java.util.ArrayList;
+import java.util.List;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlType;
@@ -24,7 +26,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *       <sequence>
  *         <element name="forename" type="{http://www.tei-c.org/ns/1.0}Item" minOccurs="0"/>
  *         <element name="surname" type="{http://www.tei-c.org/ns/1.0}Item" minOccurs="0"/>
- *         <element name="addName" type="{http://www.tei-c.org/ns/1.0}Item" minOccurs="0"/>
+ *         <element name="addName" type="{http://www.tei-c.org/ns/1.0}Item" maxOccurs="unbounded" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -43,7 +45,7 @@ public class PersName {
 
     protected String forename;
     protected String surname;
-    protected String addName;
+    protected List<String> addName;
 
     /**
      * Ruft den Wert der forename-Eigenschaft ab.
@@ -94,27 +96,34 @@ public class PersName {
     }
 
     /**
-     * Ruft den Wert der addName-Eigenschaft ab.
+     * Gets the value of the addName property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the addName property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getAddName().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
+     * 
      * 
      * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *     The value of the addName property.
      */
-    public String getAddName() {
-        return addName;
-    }
-
-    /**
-     * Legt den Wert der addName-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAddName(String value) {
-        this.addName = value;
+    public List<String> getAddName() {
+        if (addName == null) {
+            addName = new ArrayList<>();
+        }
+        return this.addName;
     }
 
 }

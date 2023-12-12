@@ -79,24 +79,85 @@
                         <link target="merian_hessen.xml#band_07"/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1062805615 </idno>
                     </person>
-                    <person>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthaeus, der Ältere</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mattheus, der Ältere</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mathieu, l'Ancien</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mattheus</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthaeus</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthae</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, M.</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthäus</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, der Ältere</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mathias, der Ältere</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthäus, der Ältere</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthias, der Ältere</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthew, the Elder</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Matthaeus, sen.</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merian, Mathaeus, der Ältere</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merianus, Matthaeus, der Ältere</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Merianus, Mattheus</death>
+                    <person xml:id="person_Merian_Matthaeus_der_Ältere">
+                        <persName>
+                            <forename>Matthaeus</forename>
+                            <surname>Merian</surname>
+                            <addName>der Ältere</addName>
+                        </persName>
+                        <persName>
+                            <forename>Matthäus</forename>
+                            <surname>Merian</surname>
+                            <addName>der Ältere</addName>
+                        </persName>
+                        <persName>
+                            <forename>Mathaeus</forename>
+                            <surname>Merian</surname>
+                            <addName>der Ältere</addName>
+                        </persName>
+                        <persName>
+                            <addName>der Ältere</addName>
+                            <addName>Merian</addName>
+                        </persName>
+                        <persName>
+                            <forename>Mathias</forename>
+                            <surname>Merian</surname>
+                            <addName>der Ältere</addName>
+                        </persName>
+                        <persName>
+                            <forename>Mathieu</forename>
+                            <surname>Merian</surname>
+                            <addName>l'Ancien</addName>
+                        </persName>
+                        <persName>
+                            <forename>Matthaeus</forename>
+                            <surname>Merian</surname>
+                        </persName>
+                        <persName>
+                            <forename>Matthae</forename>
+                            <surname>Merian</surname>
+                        </persName>
+                        <persName>
+                            <forename>Matthaeus</forename>
+                            <surname>Merianus</surname>
+                            <addName>der Ältere</addName>
+                        </persName>
+                        <persName>
+                            <forename>Mattheus</forename>
+                            <surname>Merian</surname>
+                            <addName>der Ältere</addName>
+                        </persName>
+                        <persName>
+                            <forename>M.</forename>
+                            <surname>Merian</surname>
+                        </persName>
+                        <persName>
+                            <forename>Matthew</forename>
+                            <surname>Merian</surname>
+                            <addName>the Elder</addName>
+                        </persName>
+                        <persName>
+                            <forename>Mattheus</forename>
+                            <surname>Merianus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Matthias</forename>
+                            <surname>Merian</surname>
+                            <addName>der Ältere</addName>
+                        </persName>
+                        <persName>
+                            <forename>Matthaeus</forename>
+                            <surname>Merian</surname>
+                            <addName>sen.</addName>
+                        </persName>
+                        <persName>
+                            <forename>Matthäus</forename>
+                            <surname>Merian</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mattheus</forename>
+                            <surname>Merian</surname>
+                        </persName>
                         <death when="1650"/>
                         <birth when="1593"/>
                         <note type="categories">
@@ -111,8 +172,10 @@
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                     </person>
-                    <person>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Einstein</death>
+                    <person xml:id="person_Einstein">
+                        <persName>
+                            <addName>Einstein</addName>
+                        </persName>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Person</item>
@@ -124,18 +187,49 @@
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1309985006</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                     </person>
-                    <person>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeiller, Martin</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeiler, Martinus</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Z., M.</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeiler, Martin</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeillerum, Martinum</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeillerus, Martinus</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">M.Z.</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">M. Z.</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeiller, Martinus</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeilerus, Martinus</death>
-                        <death xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zeilerus, Martin</death>
+                    <person xml:id="person_Zeiller_Martin">
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Zeiller</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Zeiler</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Zeiller</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Zeilerus</surname>
+                        </persName>
+                        <persName>
+                            <addName>M.Z.</addName>
+                        </persName>
+                        <persName>
+                            <addName>M. Z.</addName>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Zeillerus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinum</forename>
+                            <surname>Zeillerum</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Zeilerus</surname>
+                        </persName>
+                        <persName>
+                            <forename>M.</forename>
+                            <surname>Z.</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Zeiler</surname>
+                        </persName>
                         <death when="1661"/>
                         <birth when="1589"/>
                         <note type="categories">
@@ -149,6 +243,70 @@
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118772392</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </person>
+                    <person role="König" xml:id="person_Ludwig_II._Bayern_König">
+                        <persName>
+                            <addName>Bayern, König</addName>
+                            <addName>Ludwig</addName>
+                        </persName>
+                        <persName>
+                            <addName>King of Bavaria</addName>
+                            <addName>Louis</addName>
+                        </persName>
+                        <persName>
+                            <addName>II, King of Bavaria</addName>
+                            <addName>Louis</addName>
+                        </persName>
+                        <persName>
+                            <addName>König von Bayern</addName>
+                            <addName>Ludwig II. Otto Friedrich Wilhelm von Wittelsbach</addName>
+                        </persName>
+                        <persName>
+                            <addName>King of Bavaria</addName>
+                            <addName>Ludwig</addName>
+                        </persName>
+                        <persName>
+                            <addName>Roi de Bavière</addName>
+                            <addName>Ludwig</addName>
+                        </persName>
+                        <persName>
+                            <addName>Roi de Bavière</addName>
+                            <addName>Louis</addName>
+                        </persName>
+                        <persName>
+                            <addName>König von Bayern</addName>
+                            <addName>Liudovik</addName>
+                        </persName>
+                        <persName>
+                            <addName>II, Roi de Bavière</addName>
+                            <addName>Louis</addName>
+                        </persName>
+                        <persName>
+                            <addName>König von Bayern</addName>
+                            <addName>Ludwig</addName>
+                        </persName>
+                        <persName>
+                            <addName>II, King of Bavaria</addName>
+                            <addName>Liudovik</addName>
+                        </persName>
+                        <persName>
+                            <addName>König von Bayern</addName>
+                            <addName>Louis</addName>
+                        </persName>
+                        <death when="1886"/>
+                        <birth when="1845"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/118574892</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Ludwig_II._Bayern_König"/>
                     </person>
                 </listPerson>
             </div>
