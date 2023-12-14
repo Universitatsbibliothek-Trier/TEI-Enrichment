@@ -122,6 +122,21 @@
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4196611-9</idno>
                         <link target="merian_hessen.xml#band_07"/>
                     </event>
+                    <event xml:id="event_Freiburger_Literaturgespräch">
+                        <label>Freiburger Literaturgespräch</label>
+                        <label>Literaturgespräch (Freiburg im Breisgau)</label>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>ConferenceOrEvent</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SeriesOfConferenceOrEvent</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/5003531-9</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Freiburger_Literaturgespräch"/>
+                    </event>
                 </listEvent>
             </div>
         </body>

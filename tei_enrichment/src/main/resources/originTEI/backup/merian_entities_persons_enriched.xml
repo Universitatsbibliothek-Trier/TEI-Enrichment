@@ -308,6 +308,42 @@
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Ludwig_II._Bayern_König"/>
                     </person>
+                    <person xml:id="person_Familie_Maltzan">
+                        <persName>
+                            <surname>Maltzan</surname>
+                        </persName>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Family</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1221987763</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </person>
+                    <person xml:id="person_Daum_Familie_1660_Irmtraut">
+                        <persName>
+                            <surname>Daum</surname>
+                        </persName>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Family</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1211524086</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </person>
+                    <person xml:id="person_Verdross_Familie">
+                        <persName>
+                            <surname>Verdross</surname>
+                        </persName>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Family</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1186913347</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </person>
                 </listPerson>
             </div>
         </body>

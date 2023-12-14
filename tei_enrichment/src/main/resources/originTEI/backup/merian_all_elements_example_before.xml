@@ -193,7 +193,7 @@
                         ref="https://d-nb.info/gnd/4203270-2">Schloss
                         Hexenagger</name> Lorem ipsum dolor sit amet. <lb />Lorem ipsum dolor sit
                     amet, consetetur <name ref="https://d-nb.info/gnd/1309985006" xml:lang="la">gubergren</name>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna<name>Piparu</name> aliquyam erat, sed diam voluptua. <lb />At vero eos et
+                    labore et dolore magna<name type="person">Piparu</name> aliquyam erat, sed diam voluptua. <lb />At vero eos et
                     accusam et justo duo dolores et ea rebum.<lb /> Stet clita kasd gubergren, no
                     sea takimata sanctus est Lorem ipsum dolor sit amet.<lb /></p>
             </div>
@@ -203,7 +203,7 @@
                 <head>Lorem ipsum</head>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <lb />At
-                    vero eos et accusam et justo duo dolores et ea rebum.<lb /> Stet clita kasd
+                    vero eos et accusam<name ref="https://d-nb.info/gnd/5003531-9">Stet</name> et justo duo dolores et ea rebum.<lb />  clita kasd
                     gubergren, no sea takimata sanctus est <name ref="https://d-nb.info/gnd/4784990-3">ipsum</name> dolor sit amet. <lb />Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore <subst><del>labore</del><add place="across">dolore</add></subst> magna aliquyam erat, sed diam voluptua. <lb />At
@@ -630,7 +630,7 @@
                                     takimata sanctus est Lorem ipsum dolor sit amet.<lb /></p>
                             </div>
                             <div type="article">
-                                <head>Lorem ipsum</head>
+                                <head><name ref="https://d-nb.info/gnd/4784990-3">ipsum</name></head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. <lb />At vero eos et accusam et justo
@@ -723,13 +723,13 @@
                     <lb />nigſtein
                                 / Solms / Naſſau / Witgenſtein / unter dem Vorwand / daß die
                                 Wetterau in Heſ⸗ <lb />ſen / weder dem Lager / noch der Herrſchafft
-                                nach / gelegen / und die Wetterauiſche Grafen / <lb />oder Staͤdte /
+                                nach / gelegen / und die <name ref="https://d-nb.info/gnd/1221987763">Grafen</name>  / <lb />oder Staͤdte /
                                 das Fuͤrſtenthum Heſſen anderſt nicht / als was etwan Lehenſchafft / <lb />Schutz
                                 / Geleyt oder dergleichen ſonderbare Beding / particulariter
                                 mitbringen / re- <lb />cognoſciren; ſondern eine gar abgeſonderte
                                 Landſchafft / ſowol als der Hundsruck / <lb />Weſterich / und andere
                                 / jederzeit geweſen / und noch. Was aber die Graffſchafft Naſſau⸗ <lb />Dillenberg
-                                belange / iſt dieſelbe nicht allein nicht unter Heſſen gelegen /
+                                belange / iſt <name ref="https://d-nb.info/gnd/1211524086 ">Heſſen </name> nicht allein nicht unter gelegen /
                                 ſondern auch nicht <lb />in dem Creyſe / darein Heſſen gehoͤrig /
                                 ſondern in dem Weſtphaͤliſchen Creyſe; wie auch <lb />Seyn /
                                 Virneburg / und andere anſehnliche Graff⸗und Herrſchafften mehr /
@@ -940,7 +940,7 @@
                         </div>
                         <lb />
                         <div type="article">
-                            <head>Arolſen.</head>
+                            <head><name ref="https://d-nb.info/gnd/213942-X">Solothurn</name></head>
                             <lb />
                             <p>LJgt in der Graffſchaft Waldeck / und iſt <lb />Anfangs ein Cloſter
                                 geweſen / darnach zu <lb />einem Graͤfflichen Sitz gemacht worden. <lb />Volquinus,
@@ -957,14 +957,14 @@
                         </div>
                         <lb />
                         <div type="article">
-                            <head>Aſſenheim.</head>
+                            <head><name ref="https://d-nb.info/gnd/5003531-9">Stet</name></head>
                             <lb />
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat <lb />ſeiner
                                 Antiquitet viel Zeugnnſſen / alſo dz <lb />dafuͤr gehalten wird / es
                                 auch noch zuruͤck in <lb />paganiſmum reichet / wie das genandte <lb />Steinhauß
                                 auf dem Marckt / oder Straſſen / <lb />und ſonderlich der groſſe
                                 hohe dicke Anti⸗ <lb />quitaͤten Thurn ausweiſet / welcher Thurn <lb />wol
-                                dem Lug ins Land / oder Solothurn / <lb />oder ſonſten faſt
+                                dem Lug ins Land / oder <name ref="https://d-nb.info/gnd/213942-X">Solothurn</name> / <lb />oder ſonſten faſt
                                 nachoͤhmet / wie die Ge⸗ <lb />ſtalt und Ehnlichkeit ausweiſet. Bey
                                 den <lb />Zeiten der Tempel⸗Herren iſt es ein feiner <lb />veſter
                                 Orth geweſen / und der Tempel bey <lb />dem Thurn / deſſen Stuͤck

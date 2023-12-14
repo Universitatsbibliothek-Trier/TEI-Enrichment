@@ -510,6 +510,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
             <xs:restriction base="xs:string" />
           </xs:simpleType>
         </xs:attribute>
+        <xs:attribute name="type">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
         <xs:attribute name="cert">
           <xs:simpleType>
             <xs:restriction base="xs:string" />

@@ -881,9 +881,14 @@ public class EntityListEnricher {
 			responseStrBuilder.append(inputStr);
 		JSONObject jsonObject = new JSONObject(responseStrBuilder.toString());
 		String preferredNameString = jsonObject.getString("preferredName");
-		preferredNameString = preferredNameString.replaceAll(", ", "_");
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
+		preferredNameString = preferredNameString.replaceAll("-", "_");
 		preferredNameString = preferredNameString.replaceAll(",", "_");
+		preferredNameString = preferredNameString.replaceAll(":", "");
+		preferredNameString = preferredNameString.replaceAll("___", "_");
+		preferredNameString = preferredNameString.replaceAll("__", "_");
+		preferredNameString = preferredNameString.replaceAll("[()]", "");
+		// preferredNameString = preferredNameString.replaceAll("[()]", "");
 		// System.out.println("PreferredNameString ist: " + preferredNameString);
 
 		boolean objectHasType = false;
@@ -922,6 +927,28 @@ public class EntityListEnricher {
 				EntityListWriter.writePersonEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
 
 			}
+			else if (oberkategorie.equals("event"))  {
+				System.out.println("event eintrag");
+				nameGND.setRef("mgndeve:event_" + preferredNameString);
+				sourceGND.setSource("mgndeve:event_" + preferredNameString);
+				if (isOrtsartikel) {
+					divFrontElement.setCorresp("mgndeve:event_" + preferredNameString);
+				}
+				EntityListWriter.writeEventsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+			}
+			else if (oberkategorie.equals("org")) {
+				System.out.println("orgs eintrag");
+				nameGND.setRef("mgndorgs:org_" + preferredNameString);
+				sourceGND.setSource("mgndorgs:org_" + preferredNameString);
+				if (isOrtsartikel) {
+					divFrontElement.setCorresp("mgndorgs:org_" + preferredNameString);
+				}
+				EntityListWriter.writeOrgsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+			}
+		
+
+
+
 
 			ArrayList<String> placesTerms = new ArrayList<>(Arrays.asList("PlaceOrGeographicName", "AdministrativeUnit",
 					"BuildingOrMemorial", "Country", "ExtraterrestialTerritory", "FictivePlace", "MemberState",
@@ -940,20 +967,7 @@ public class EntityListEnricher {
 				writePlacesEntity(jsonObject, preferredNameString, typeTermslist);
 
 			}
-			// historicsingleeventorera,conferenceOrEvent => Seriesofconferenceorevent
-			ArrayList<String> eventTerms = new ArrayList<>(
-					Arrays.asList("HistoricSingleEventOrEra", "ConferenceOrEvent", "SeriesOfConferenceOrEvent"));
-			Boolean isEvent = !Collections.disjoint(typeTermslist, eventTerms);
-			if (oberkategorie.equals("event")) {
-				System.out.println("event eintrag");
-				objectHasType = true;
-				nameGND.setRef("mgndeve:event_" + preferredNameString);
-				sourceGND.setSource("mgndeve:event_" + preferredNameString);
-				if (isOrtsartikel) {
-					divFrontElement.setCorresp("mgndeve:event_" + preferredNameString);
-				}
-				writeEventsEntity(jsonObject, preferredNameString, typeTermslist);
-			}
+			
 
 			ArrayList<String> objectTerms = new ArrayList<>(Arrays.asList("VersionOfAMusicalWork", "MusicalWork",
 					"FictiveTerm", "Language", "CharactersOrMorphemes", "MeansOfTransportWithIndividualName",
@@ -971,63 +985,25 @@ public class EntityListEnricher {
 				writeObjectsEntity(jsonObject, preferredNameString, typeTermslist);
 			}
 
-			ArrayList<String> orgsTerms = new ArrayList<>(Arrays.asList("CorporateBody", "Company",
-					"FictiveCorporateBody", "MusicalCorporateBody", "OrganOfCorporateBody", "ProjectOrProgram",
-					"ReligiousAdminstrativeUnit", "ReligiousCorporateBody"));
-			boolean isOrgs = !Collections.disjoint(typeTermslist, orgsTerms);
-			if (oberkategorie.equals("org")) {
-				System.out.println("orgs eintrag");
-				nameGND.setRef("mgndorgs:org_" + preferredNameString);
-				sourceGND.setSource("mgndorgs:org_" + preferredNameString);
-				if (isOrtsartikel) {
-					divFrontElement.setCorresp("mgndorgs:org_" + preferredNameString);
-				}
-				objectHasType = true;
-				writeOrgsEntity(jsonObject, preferredNameString, typeTermslist);
-			}
+
+			
 
 		}
 
 		return entityPrefix;
 	}
 
-	public static void writePersonEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
-		if (jsonObject.has("broaderTermInstantial")) {
-			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-		}
 
-	}
-
-	public static void writeEventsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
-		if (jsonObject.has("broaderTermInstantial")) {
-			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-		}
-
-	}
 
 	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if (jsonObject.has("broaderTermInstantial")) {
 			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
 			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			// System.out.println("jsonObjectBroaderTermString objects: " + jsonObjectBroaderTermString);
 		}
 
 	}
 
-	public static void writeOrgsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
-		if (jsonObject.has("broaderTermInstantial")) {
-			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-			;
-		}
-
-	}
 
 	public static void writePlacesEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if (jsonObject.has("broaderTermInstantial")) {

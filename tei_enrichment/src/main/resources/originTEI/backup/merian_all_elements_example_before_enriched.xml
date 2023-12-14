@@ -203,7 +203,7 @@
                     amet, consetetur 
                     <name ref="mgndper:person_Einstein" xml:lang="la">gubergren</name>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna
-                    <name>Piparu</name> aliquyam erat, sed diam voluptua. 
+                    <name type="person">Piparu</name> aliquyam erat, sed diam voluptua. 
                     <lb/>At vero eos et
                     accusam et justo duo dolores et ea rebum.
                     <lb/> Stet clita kasd gubergren, no
@@ -217,8 +217,9 @@
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                     <lb/>At
-                    vero eos et accusam et justo duo dolores et ea rebum.
-                    <lb/> Stet clita kasd
+                    vero eos et accusam
+                    <name ref="mgndeve:event_Freiburger_Literaturgespräch">Stet</name> et justo duo dolores et ea rebum.
+                    <lb/>  clita kasd
                     gubergren, no sea takimata sanctus est 
                     <name ref="mgndpla:place_Klostergut_Volkenroda">ipsum</name> dolor sit amet. 
                     <lb/>Lorem
@@ -304,9 +305,9 @@
                                 /
 
                                 
-                                <name ref="mgndorgs:org_Kloster_Münster_(Münster_Oberelsass)">Muͤn⸗ 
+                                <name ref="mgndorgs:org_Kloster_Münster_Münster_Oberelsass">Muͤn⸗ 
                                     <lb/>ſter in 
-                                    <name ref="mgndorgs:org_Kloster_Münster_(Münster_Oberelsass)">
+                                    <name ref="mgndorgs:org_Kloster_Münster_Münster_Oberelsass">
                                         
                                         <choice>
                                             <abbr>S.</abbr>
@@ -982,8 +983,10 @@
                                     <lb/>
                                 </p>
                             </div>
-                            <div type="article">
-                                <head>Lorem ipsum</head>
+                            <div type="article" corresp="mgndpla:place_Klostergut_Volkenroda">
+                                <head>
+                                    <name ref="mgndpla:place_Klostergut_Volkenroda">ipsum</name>
+                                </head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
@@ -1087,7 +1090,7 @@
                                 <lb/>werden; wie auch Gelnhauſen / und die Graffſchafft
                                 Naſſau⸗Beylſtein / ꝛc. ſo ſonſten 
                                 <lb/>zum Nieder⸗Rheiniſchen 
-                                <name ref="mgndorgs:org_Meriansche_Erben_(Frankfurt_Main)">Dreißigjähriger Krieg</name>
+                                <name ref="mgndorgs:org_Meriansche_Erben_Frankfurt_Main">Dreißigjähriger Krieg</name>
                                 Creyß gehoͤrig ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten 
                                 <lb/>zum
                                 Weſtphaͤliſchen Creyß gezogen wird. 
@@ -1126,7 +1129,8 @@
                                 / Solms / Naſſau / Witgenſtein / unter dem Vorwand / daß die
                                 Wetterau in Heſ⸗ 
                                 <lb/>ſen / weder dem Lager / noch der Herrſchafft
-                                nach / gelegen / und die Wetterauiſche Grafen / 
+                                nach / gelegen / und die 
+                                <name ref="mgndper:person_Familie_Maltzan">Grafen</name>  / 
                                 <lb/>oder Staͤdte /
                                 das Fuͤrſtenthum Heſſen anderſt nicht / als was etwan Lehenſchafft / 
                                 <lb/>Schutz
@@ -1137,7 +1141,8 @@
                                 <lb/>Weſterich / und andere
                                 / jederzeit geweſen / und noch. Was aber die Graffſchafft Naſſau⸗ 
                                 <lb/>Dillenberg
-                                belange / iſt dieſelbe nicht allein nicht unter Heſſen gelegen /
+                                belange / iſt 
+                                <name ref="mgndper:person_Daum_Familie_1660_Irmtraut">Heſſen </name> nicht allein nicht unter gelegen /
                                 ſondern auch nicht 
                                 <lb/>in dem Creyſe / darein Heſſen gehoͤrig /
                                 ſondern in dem Weſtphaͤliſchen Creyſe; wie auch 
@@ -1275,7 +1280,8 @@
                                 genent werden. Hingegen ſagt 
                                 <lb/>man auch / daß die Stadt von
                                 etlichen 
-                                <lb/>Doͤrffern / ſo in dieſer Gegend gelegen / 
+                                <lb/>
+                                <name ref="mgndper:person_Verdross_Familie">Doͤrffern</name> / ſo in dieſer Gegend gelegen / 
                                 <lb/>und
                                 von welcher auch noch etwas Anzei⸗ 
                                 <lb/>gung und zerfallene
@@ -1553,8 +1559,10 @@
                                 Menzerus.</p>
                         </div>
                         <lb/>
-                        <div type="article">
-                            <head>Arolſen.</head>
+                        <div type="article" corresp="mgndorgs:org_Elektrizitätswerk_Trier" xml:id="band_07_art_Elektrizitätswerk_Trier">
+                            <head>
+                                <name ref="mgndorgs:org_Elektrizitätswerk_Trier">Solothurn</name>
+                            </head>
                             <lb/>
                             <p>LJgt in der Graffſchaft Waldeck / und iſt 
                                 <lb/>Anfangs ein Cloſter
@@ -1588,8 +1596,10 @@
                                 <lb/>rich zu Waldeck.</p>
                         </div>
                         <lb/>
-                        <div type="article">
-                            <head>Aſſenheim.</head>
+                        <div type="article" corresp="mgndeve:event_Freiburger_Literaturgespräch" xml:id="band_07_art_Freiburger_Literaturgespräch">
+                            <head>
+                                <name ref="mgndeve:event_Freiburger_Literaturgespräch">Stet</name>
+                            </head>
                             <lb/>
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat 
                                 <lb/>ſeiner
@@ -1603,7 +1613,8 @@
                                 hohe dicke Anti⸗ 
                                 <lb/>quitaͤten Thurn ausweiſet / welcher Thurn 
                                 <lb/>wol
-                                dem Lug ins Land / oder Solothurn / 
+                                dem Lug ins Land / oder 
+                                <name ref="mgndorgs:org_Elektrizitätswerk_Trier">Solothurn</name> / 
                                 <lb/>oder ſonſten faſt
                                 nachoͤhmet / wie die Ge⸗ 
                                 <lb/>ſtalt und Ehnlichkeit ausweiſet. Bey

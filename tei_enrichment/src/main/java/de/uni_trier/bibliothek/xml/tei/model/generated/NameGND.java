@@ -28,6 +28,12 @@ import jakarta.xml.bind.annotation.XmlType;
  *           </restriction>
  *         </simpleType>
  *       </attribute>
+ *       <attribute name="type">
+ *         <simpleType>
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *           </restriction>
+ *         </simpleType>
+ *       </attribute>
  *       <attribute name="cert">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -50,6 +56,8 @@ public class NameGND
 
     @XmlAttribute(name = "ref")
     protected String ref;
+    @XmlAttribute(name = "type")
+    protected String type;
     @XmlAttribute(name = "cert")
     protected String cert;
     @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
@@ -77,6 +85,30 @@ public class NameGND
      */
     public void setRef(String value) {
         this.ref = value;
+    }
+
+    /**
+     * Ruft den Wert der type-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * Legt den Wert der type-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setType(String value) {
+        this.type = value;
     }
 
     /**
