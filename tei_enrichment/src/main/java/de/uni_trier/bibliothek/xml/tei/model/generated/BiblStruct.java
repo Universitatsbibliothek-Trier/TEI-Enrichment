@@ -26,6 +26,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *       <all>
  *         <element name="monogr" type="{http://www.tei-c.org/ns/1.0}Monogr"/>
  *         <element name="series" type="{http://www.tei-c.org/ns/1.0}Series"/>
+ *         <element name="note" type="{http://www.tei-c.org/ns/1.0}NoteHeader"/>
  *       </all>
  *       <attribute ref="{http://www.w3.org/XML/1998/namespace}lang"/>
  *     </restriction>
@@ -45,6 +46,8 @@ public class BiblStruct {
     protected Monogr monogr;
     @XmlElement(required = true)
     protected Series series;
+    @XmlElement(required = true)
+    protected String note;
     @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
     protected String lang;
 
@@ -94,6 +97,30 @@ public class BiblStruct {
      */
     public void setSeries(Series value) {
         this.series = value;
+    }
+
+    /**
+     * Ruft den Wert der note-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNote() {
+        return note;
+    }
+
+    /**
+     * Legt den Wert der note-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNote(String value) {
+        this.note = value;
     }
 
     /**

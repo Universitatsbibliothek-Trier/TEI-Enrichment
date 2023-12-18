@@ -44,11 +44,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:sequence>
       <xs:element name="fileDesc" type="self:FileDesc" minOccurs="1" maxOccurs="1" />
       <xs:element name="encodingDesc" type="self:EncodingDesc" minOccurs="1" maxOccurs="1" />
+      <xs:element name="revisionDesc" type="self:RevisionDesc" minOccurs="1" maxOccurs="1" />
     </xs:sequence>
     <xs:attribute name="version">
       <xs:simpleType>
         <xs:restriction base="xs:string">
-          <xs:pattern value="\d+.\d" />
+          <xs:enumeration value="3.5" />
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -61,21 +62,57 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     </xs:attribute>
   </xs:complexType>
 
+  <xs:complexType name="FileDesc">
+    <xs:sequence>
+      <xs:element name="titleStmt" type="self:TitleStmt" />
+      <xs:element name="publicationStmt" type="self:PublicationStmt" />
+      <xs:element name="sourceDesc" type="self:SourceDesc" minOccurs="1" maxOccurs="1" />
+      
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RevisionDesc">
+    <xs:sequence>
+      <xs:element name="change" type="self:Change" />
+    </xs:sequence>
+    
+  </xs:complexType>
+
+  <xs:complexType name="Change">
+    <xs:simpleContent>
+      <xs:extension base="self:ChangeValue">
+    <xs:attribute name="when">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="who">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="ChangeValue">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
   <xs:complexType name="EncodingDesc">
     <xs:sequence>
+      <xs:element name="editorialDecl" type="self:EditorialDecl" />
       <xs:element name="listPrefixDef" type="self:ListPrefixDef" />
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="ListPrefixDef">
     <xs:sequence>
-      <xs:element name="prefixDef" type="self:PrefixDef" minOccurs="1" maxOccurs="unbounded" />
+      <xs:element name="prefixDef" type="self:PrefixDef" maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="PrefixDef">
-    <xs:simpleContent>
-      <xs:extension base="self:TitleExtension">
         <xs:attribute name="ident">
           <xs:simpleType>
             <xs:restriction base="xs:string" />
@@ -91,26 +128,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
             <xs:restriction base="xs:string" />
           </xs:simpleType>
         </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
   </xs:complexType>
 
-  <xs:simpleType name="TitleExtension">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="\s*" />
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:complexType name="FileDesc">
+  <xs:complexType name="EditorialDecl">
     <xs:sequence>
-      <xs:element name="titleStmt" type="self:TitleStmt" />
-      <xs:element name="editionStmt" type="self:EditionStmt" />
-      <xs:element name="extent" type="self:Extent" />
-      <xs:element name="publicationStmt" type="self:PublicationStmt" />
-      <xs:element name="seriesStmt" type="self:SeriesStmt" />
-      <xs:element name="sourceDesc" type="self:SourceDesc" minOccurs="1" maxOccurs="1" />
+      <xs:element name="p" type="self:Pb" />
     </xs:sequence>
   </xs:complexType>
+
 
 
   <xs:complexType name="SeriesStmt">
@@ -146,11 +171,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="Measure">
     <xs:simpleContent>
       <xs:extension base="self:MeasureValue">
-        <xs:attribute name="unit">
+        <xs:attribute name="type">
           <xs:simpleType>
             <xs:restriction base="xs:string">
-              <xs:enumeration value="words" />
-              <xs:enumeration value="vols" />
+              <xs:enumeration value="pages" />
             </xs:restriction>
           </xs:simpleType>
         </xs:attribute>
@@ -159,7 +183,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   </xs:complexType>
 
   <xs:simpleType name="MeasureValue">
-    <xs:restriction base="xs:integer" />
+    <xs:restriction base="xs:string" />
   </xs:simpleType>
 
   <xs:complexType name="EditionStmt">
@@ -186,10 +210,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
 
   <xs:complexType name="PublicationStmt">
     <xs:sequence>
-      <xs:element name="publisher" type="self:Publisher" maxOccurs="1" />
+      <xs:element name="publisher" type="self:Publisher" maxOccurs="2" />
       <xs:element name="distributor" type="self:Distributor" maxOccurs="1" />
       <xs:element name="pubPlace" type="self:pubPlace" maxOccurs="1" />
-      <xs:element name="date" type="self:Date" maxOccurs="1" />
+      <xs:element name="date" type="self:DateHeader" maxOccurs="1" />
       <xs:element name="availability" type="self:Availability" maxOccurs="1" />
     </xs:sequence>
   </xs:complexType>
@@ -208,11 +232,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
 
 
   <xs:complexType name="Licence">
-    <xs:attribute name="target">
-      <xs:simpleType>
-        <xs:restriction base="xs:string" />
-      </xs:simpleType>
-    </xs:attribute>
+        <xs:attribute name="target">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
   </xs:complexType>
 
 
@@ -221,12 +245,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   </xs:simpleType>
 
 
-  <xs:complexType name="Date">
+  <xs:complexType name="DateHeader">
     <xs:simpleContent>
       <xs:extension base="self:DateValue">
         <xs:attribute name="when">
           <xs:simpleType>
-            <xs:restriction base="xs:integer" />
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="DateImprint">
+    <xs:simpleContent>
+      <xs:extension base="self:DateValue">
+        <xs:attribute name="when-custom">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
           </xs:simpleType>
         </xs:attribute>
       </xs:extension>
@@ -234,7 +270,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   </xs:complexType>
 
   <xs:simpleType name="DateValue">
-    <xs:restriction base="xs:integer" />
+    <xs:restriction base="xs:string" />
   </xs:simpleType>
 
 
@@ -247,17 +283,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
-  <xs:complexType name="Publisher">
-    <xs:simpleContent>
-      <xs:extension base="self:PublisherValue">
+
+  <xs:complexType name="Publisher" mixed="true">
+    <xs:sequence>
+      <xs:element name="orgName" type="self:OrgName" minOccurs="0" />
+    </xs:sequence>   
         <xs:attribute name="ref">
           <xs:simpleType>
             <xs:restriction base="xs:string" />
           </xs:simpleType>
         </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
   </xs:complexType>
+
+  <xs:simpleType name="OrgName">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
 
   <xs:simpleType name="PublisherValue">
     <xs:restriction base="xs:string" />
@@ -274,30 +314,32 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="RespStmt">
     <xs:sequence>
       <xs:element name="resp" type="self:Resp" maxOccurs="1" />
-      <xs:element name="name" type="self:Name" maxOccurs="unbounded" />
+      <xs:element name="name" type="self:NameHeader" maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>
+
 
   <xs:simpleType name="Resp">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
-  <xs:simpleType name="Name">
+  <xs:simpleType name="NameHeader">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
   <xs:complexType name="TitleStmtValue">
     <xs:simpleContent>
-      <xs:extension base="self:TitleStmtValueRestriction">
-        <xs:attribute name="ref">
-        </xs:attribute>
-      </xs:extension>
-    </xs:simpleContent>
+  <xs:extension base="self:TitleMonogrValue">
+    <xs:attribute name="ref">
+      <xs:simpleType>
+        <xs:restriction base="xs:string" />
+      </xs:simpleType>
+    </xs:attribute> 
+  </xs:extension>
+</xs:simpleContent>
+  
+  
   </xs:complexType>
-
-  <xs:simpleType name="TitleStmtValueRestriction">
-    <xs:restriction base="xs:string" />
-  </xs:simpleType>
 
   <xs:complexType name="SourceDesc">
     <xs:sequence>
@@ -309,17 +351,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:all>
       <xs:element name="monogr" type="self:Monogr" minOccurs="1" maxOccurs="1" />
       <xs:element name="series" type="self:Series" minOccurs="1" maxOccurs="1" />
+      <xs:element name="note" type="self:NoteHeader" minOccurs="1" maxOccurs="1" />
     </xs:all>
     <xs:attribute ref="xml:lang">
     </xs:attribute>
   </xs:complexType>
 
+  <xs:simpleType name="NoteHeader">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
   <xs:complexType name="Monogr">
     <xs:sequence>
       <xs:element name="author" type="self:Author" minOccurs="1" maxOccurs="unbounded" />
-      <xs:element name="title" type="self:TitleMonogr" minOccurs="1" maxOccurs="1" />
-      <xs:element name="edition" type="self:EditionMonogr" minOccurs="1" maxOccurs="1" />
+      <xs:element name="title" type="self:TitleMonogr" minOccurs="1" maxOccurs="2" />
+      <xs:element name="edition" type="self:Edition" maxOccurs="1" />
       <xs:element name="imprint" type="self:Imprint" minOccurs="1" maxOccurs="1" />
+      <xs:element name="extent" type="self:Extent" minOccurs="1" maxOccurs="1" />
     </xs:sequence>
   </xs:complexType>
 
@@ -331,19 +379,33 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
-  <xs:simpleType name="TitleMonogr">
+  <xs:complexType name="TitleMonogr">
+    <xs:simpleContent>
+      <xs:extension base="self:TitleMonogrValue">
+       <xs:attribute name="type">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+  <xs:simpleType name="TitleMonogrValue">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
-
   <xs:complexType name="Imprint">
     <xs:sequence>
-      <xs:element name="pubPlace" type="self:pubPlace" minOccurs="1" maxOccurs="1" />
+      <xs:element name="pubPlace" type="self:PubPlace" minOccurs="1" maxOccurs="1" />
       <xs:element name="publisher" type="self:Publisher" minOccurs="1" maxOccurs="1" />
-      <xs:element name="date" type="self:Date" minOccurs="1" maxOccurs="1" />
+      <xs:element name="date" type="self:DateImprint" minOccurs="1" maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>
 
+  <xs:simpleType name="PubPlace">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
 
   <xs:simpleType name="PublisherImprint">
     <xs:restriction base="xs:string" />
@@ -357,11 +419,35 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     </xs:all>
   </xs:complexType>
 
-  <xs:simpleType name="TitleSeries">
+  <xs:complexType name="TitleSeries">
+    <xs:simpleContent>
+      <xs:extension base="self:TitleSeriesValue">
+        <xs:attribute name="level">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+  </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="TitleSeriesValue">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
-  <xs:simpleType name="BiblScope">
+  <xs:complexType name="BiblScope">
+    <xs:simpleContent>
+      <xs:extension base="self:BiblScopeValue">
+       <xs:attribute name="unit">
+          <xs:simpleType>
+            <xs:restriction base="xs:string" />
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+  </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="BiblScopeValue">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 </xs:schema>

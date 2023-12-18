@@ -15,15 +15,15 @@ import jakarta.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java-Klasse für TitleStmtValue complex type.
+ * <p>Java-Klasse für DateHeader complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>{@code
- * <complexType name="TitleStmtValue">
+ * <complexType name="DateHeader">
  *   <simpleContent>
- *     <extension base="<http://www.tei-c.org/ns/1.0>TitleMonogrValue">
- *       <attribute name="ref">
+ *     <extension base="<http://www.tei-c.org/ns/1.0>DateValue">
+ *       <attribute name="when">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
@@ -37,15 +37,15 @@ import jakarta.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TitleStmtValue", propOrder = {
+@XmlType(name = "DateHeader", propOrder = {
     "value"
 })
-public class TitleStmtValue {
+public class DateHeader {
 
     @XmlValue
     protected String value;
-    @XmlAttribute(name = "ref")
-    protected String ref;
+    @XmlAttribute(name = "when")
+    protected String when;
 
     /**
      * Ruft den Wert der value-Eigenschaft ab.
@@ -72,27 +72,27 @@ public class TitleStmtValue {
     }
 
     /**
-     * Ruft den Wert der ref-Eigenschaft ab.
+     * Ruft den Wert der when-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getRef() {
-        return ref;
+    public String getWhen() {
+        return when;
     }
 
     /**
-     * Legt den Wert der ref-Eigenschaft fest.
+     * Legt den Wert der when-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setRef(String value) {
-        this.ref = value;
+    public void setWhen(String value) {
+        this.when = value;
     }
 
 }

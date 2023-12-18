@@ -11,29 +11,18 @@ import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java-Klasse für SourceGND complex type.
+ * <p>Java-Klasse für TitleMonogr complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>{@code
- * <complexType name="SourceGND">
- *   <complexContent>
- *     <extension base="{http://www.tei-c.org/ns/1.0}NameValue">
- *       <attribute name="ref">
- *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *           </restriction>
- *         </simpleType>
- *       </attribute>
- *       <attribute name="source">
- *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *           </restriction>
- *         </simpleType>
- *       </attribute>
+ * <complexType name="TitleMonogr">
+ *   <simpleContent>
+ *     <extension base="<http://www.tei-c.org/ns/1.0>TitleMonogrValue">
  *       <attribute name="type">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -41,71 +30,45 @@ import jakarta.xml.bind.annotation.XmlType;
  *         </simpleType>
  *       </attribute>
  *     </extension>
- *   </complexContent>
+ *   </simpleContent>
  * </complexType>
  * }</pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SourceGND")
-public class SourceGND
-    extends NameValue
-{
+@XmlType(name = "TitleMonogr", propOrder = {
+    "value"
+})
+public class TitleMonogr {
 
-    @XmlAttribute(name = "ref")
-    protected String ref;
-    @XmlAttribute(name = "source")
-    protected String source;
+    @XmlValue
+    protected String value;
     @XmlAttribute(name = "type")
     protected String type;
 
     /**
-     * Ruft den Wert der ref-Eigenschaft ab.
+     * Ruft den Wert der value-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getRef() {
-        return ref;
+    public String getValue() {
+        return value;
     }
 
     /**
-     * Legt den Wert der ref-Eigenschaft fest.
+     * Legt den Wert der value-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setRef(String value) {
-        this.ref = value;
-    }
-
-    /**
-     * Ruft den Wert der source-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSource() {
-        return source;
-    }
-
-    /**
-     * Legt den Wert der source-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSource(String value) {
-        this.source = value;
+    public void setValue(String value) {
+        this.value = value;
     }
 
     /**

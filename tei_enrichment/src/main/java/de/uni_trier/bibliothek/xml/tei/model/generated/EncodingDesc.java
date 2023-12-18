@@ -23,6 +23,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
+ *         <element name="editorialDecl" type="{http://www.tei-c.org/ns/1.0}EditorialDecl"/>
  *         <element name="listPrefixDef" type="{http://www.tei-c.org/ns/1.0}ListPrefixDef"/>
  *       </sequence>
  *     </restriction>
@@ -34,12 +35,39 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EncodingDesc", propOrder = {
+    "editorialDecl",
     "listPrefixDef"
 })
 public class EncodingDesc {
 
     @XmlElement(required = true)
+    protected EditorialDecl editorialDecl;
+    @XmlElement(required = true)
     protected ListPrefixDef listPrefixDef;
+
+    /**
+     * Ruft den Wert der editorialDecl-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link EditorialDecl }
+     *     
+     */
+    public EditorialDecl getEditorialDecl() {
+        return editorialDecl;
+    }
+
+    /**
+     * Legt den Wert der editorialDecl-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link EditorialDecl }
+     *     
+     */
+    public void setEditorialDecl(EditorialDecl value) {
+        this.editorialDecl = value;
+    }
 
     /**
      * Ruft den Wert der listPrefixDef-Eigenschaft ab.

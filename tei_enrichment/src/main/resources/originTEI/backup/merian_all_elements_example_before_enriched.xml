@@ -3,90 +3,70 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title ref="#band_07">M.Z. Topographia Hassiæ, Et Regionum Vicinarum. Das ist
-                    Grundstrukturierte
-                    TEI-Daten.</title>
+                <title ref="#band_07">M.Z. Topographia Hassiæ, Et Regionum Vicinarum. Grundstrukturierte TEI-Daten.</title>
                 <respStmt>
-                    <resp>created at</resp>
-                    <name>Universitätsbibliothek Trier</name>
-                </respStmt>
-                <respStmt>
-                    <resp> encoding </resp>
-                    <name> René Ackels </name>
-                    <name> Eva Bleser </name>
-                </respStmt>
-                <respStmt>
-                    <resp> editor </resp>
-                    <name> René Ackels </name>
-                    <name> Eva Bleser </name>
-                    <name> Katharina Mayer </name>
-                </respStmt>
-                <respStmt>
-                    <resp>OCR scanning</resp>
-                    <name> XY </name>
+                    <resp>Unter Mitarbeit von:</resp>
+                    <name>Ackels, René</name>
+                    <name>Bleser, Eva</name>
+                    <name>Mayer, Katharina</name>
                 </respStmt>
             </titleStmt>
-            <editionStmt>
-                <edition n="P2">Fünfte Edition, Auflage XY über Frankfurt am Main.</edition>
-            </editionStmt>
-            <extent>
-                <measure unit="words">123456789</measure>
-                <measure unit="vols">1</measure>
-            </extent>
             <publicationStmt>
                 <publisher ref="https://merian.uni-trier.de">Merian online</publisher>
+                <publisher>
+                        
+                    <orgName>Universitätsbibliothek Trier</orgName>
+                    </publisher>
                 <distributor>Universitätsbibliothek Trier</distributor>
                 <pubPlace>Trier</pubPlace>
-                <date when="2023">2023</date>
+                <date when="2024">2024</date>
                 <availability status="free">
-                    <licence target="https://creativecommons.org/publicdomain/zero/1.0/deed.en"/>
-                    <p>CC0 1.0 Universal (CC0 1.0) Public Domain Dedication </p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+                    <p>Creative Commons Attribution 4.0 International (CC-BY-4.0)</p>
                 </availability>
             </publicationStmt>
-            <seriesStmt>
-                <title level="s">Topographia Germaniae</title>
-            </seriesStmt>
             <sourceDesc>
                 <biblStruct xml:lang="de">
                     <monogr>
                         <author>Merian, Matthaeus, der Ältere</author>
                         <author>Zeiller, Martin</author>
-                        <author>Frankfurt am Main</author>
-                        <title>M.Z. Topographia Hassiæ, Et Regionum Vicinarum. Das ist: Beschreibung
-                            und eigentliche Abbildung der vornehmsten Städte und Plätze in Hessen/
-                            und denen benachbarten Landschafften, als Buchen, Wetterau, Westerwald,
-                            Löhngau,Nassau, Solms, Hanau, Witgenstein, und andern.</title>
-                        <edition>In dieser andern Edition mit sonderm Fleiß durchgangen/ von vorigen
-                            Fehlern corrigirt, gebessert und vermehret.</edition>
+                        <title type="main">M.Z. Topographia Hassiæ, Et Regionum Vicinarum.</title>
+                        <title type="desc">Das ist: Beschreibung und eigentliche Abbildung der vornehmsten Städte und Plätze in Hessen / und denen benachbarten Landschafften, als Buchen, Wetterau, Westerwald, Löhngau, Nassau, Solms, Hanau, Witgenstein, und andern.</title>
+                        <edition n="3">In dieser andern Edition mit sonderm Fleiß durchgangen / von vorigen Fehlern corrigirt, gebessert und vermehret.</edition>
                         <imprint>
                             <pubPlace>Franckfurt am Mayn</pubPlace>
-                            <publisher>Zum Truck verlegt von denen Merianischen Erben</publisher>
-                            <date when="1685">1685</date>
+                            <publisher>Zum Truck verlegt von denen Merianischen Erben.</publisher>
+                            <date>Jm Jahr M DC LV.</date>
+                            <date when-custom="um 1685"></date>
                         </imprint>
+                        <extent>
+                            <measure type="pages">160</measure>
+                        </extent>
                     </monogr>
                     <series>
-                        <title>Topographia Germaniae</title>
-                        <biblScope>Band 07</biblScope>
+                        <title level="s">Topographia Germaniae</title>
+                        <biblScope unit="volume">Band 07</biblScope>
                     </series>
+                    <note>Reihenfolge der zusammen gebundenen Bände: Franken, Hessen, Westfalen</note>
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
+            <editorialDecl>
+                <p>[Editionsrichtlinien oder Verweis auf diese]</p>
+            </editorialDecl>
             <listPrefixDef>
-                <prefixDef ident="mgndper" matchPattern="([a-z]+)" replacementPattern="merian_entities_persons.xml#$1">
-                </prefixDef>
-                <prefixDef ident="mgndeve" matchPattern="([a-z]+)" replacementPattern="merian_entities_events.xml#$1">
-                </prefixDef>
-                <prefixDef ident="mgndorgs" matchPattern="([a-z]+)" replacementPattern="merian_entities_orgs.xml#$1">
-                </prefixDef>
-                <prefixDef ident="mgndpla" matchPattern="([a-z]+)" replacementPattern="merian_entities_places.xml#$1">
-                </prefixDef>
-                <prefixDef ident="mgndobj" matchPattern="([a-z]+)" replacementPattern="merian_entities_objects.xml#$1">
-                </prefixDef>
-                <prefixDef ident="mgndbibl" matchPattern="([a-z]+)" replacementPattern="merian_entities_listBibl.xml#$1">
-                </prefixDef>
+                <prefixDef ident="mgndper" matchPattern="([a-z]+)" replacementPattern="merian_entities_persons.xml#$1"/>
+                <prefixDef ident="mgndeve" matchPattern="([a-z]+)" replacementPattern="merian_entities_events.xml#$1"/>
+                <prefixDef ident="mgndorgs" matchPattern="([a-z]+)" replacementPattern="merian_entities_orgs.xml#$1"/>
+                <prefixDef ident="mgndpla" matchPattern="([a-z]+)" replacementPattern="merian_entities_places.xml#$1"/>
+                <prefixDef ident="mgndobj" matchPattern="([a-z]+)" replacementPattern="merian_entities_objects.xml#$1"/>
+                <prefixDef ident="mgndbibl" matchPattern="([a-z]+)" replacementPattern="merian_entities_listBibl.xml#$1"/>
             </listPrefixDef>
         </encodingDesc>
+        <revisionDesc>
+            <change when="2023-03-12" who="Verweis zu resp">[Änderung]</change>
+        </revisionDesc>
     </teiHeader>
     <text>
         <front>
@@ -242,9 +222,9 @@
             <group>
                 <text>
                     <body>
-                        <pb n="3" facs="testdoi3.jpg"/>
+                        <pb n="3" facs="testdoi3.jpg"></pb>
                         <fw type="pageNum">3</fw>
-                        <pb n="4" facs="testdoi4.jpg"/>
+                        <pb n="4" facs="testdoi4.jpg"></pb>
                         <div type="overview">
                             <lb/>
                             <head>Beſchreibung der vornehmſten Staͤdte und 
@@ -379,7 +359,7 @@
                     
                                 <fw type="sig">A 2</fw>
                     
-                                <pb n="5"/>
+                                <pb n="5"></pb>
                     
                                 <fw type="pageNum">
                                     
@@ -475,7 +455,32 @@
                                 und 
                                 <lb/>Weſtphalen; welches untere Fuͤrſtenthum ſonſten zwiſchen
                                 Thuͤringen / den Abteyen / 
-                                <lb/>Fulda und Herßfeld / dem Bißthum
+                                <lb/>Fulda und 
+                                
+                                <quote type="saying">
+                                    
+                                    
+                                    <name ref="https://d-nb.info/gnd/4024731-4">Heſſen</name>
+
+                                </quote>Herßfeld / dem Bißthum
+
+
+                                
+                                <quote type="saying">
+                                    Wo
+                                    
+                                    
+                                    <name ref="https://d-nb.info/gnd/4024731-4">Heſſen</name>
+                                    und
+                                    
+                                    
+                                    <name ref="https://d-nb.info/gnd/4131365-3">Hollaͤnder</name>
+                                    verderben:
+                                    
+                                    
+                                    <lb/>
+                                    Wer wolte da Nahrung erwerben.
+                                </quote>
                                 Paderborn / dem Hertzogthum Braunſchweig / 
                                 <lb/>und dem Eißfeld
                                 gelegen iſt. 
@@ -490,6 +495,9 @@
                                 Cattimelibocenſes, nemlich die 
                                 <lb/>Catti vom Gebirge Meliboco, wie 
                                 <foreign xml:lang="la">eximirt
+                                    <lb/>
+                                    <name ref="mgndper:person_Einstein" xml:lang="la">gubergren</name>
+                                    <lb/>
                                     <note type="translation"></note>
                                 </foreign>
                                 Rhenanus 1. rerum German. pag. 56. gedencket / 
@@ -527,7 +535,7 @@
                                 Jmmenhauſen an / und hat in der Laͤnge und Breite 
                                 <fw type="catch">bey</fw>
                     
-                                <pb n="6"/>
+                                <pb n="6"></pb>
                     
                                 <fw type="pageNum">5</fw>
             
@@ -695,7 +703,7 @@
                 
                                 <fw type="sig">C 2</fw>
                 
-                                <pb n="7" facs="testdoi7.jpg"/>
+                                <pb n="7" facs="testdoi7.jpg"></pb>
                 
                                 <fw type="pageNum">6</fw>
                 
@@ -961,7 +969,7 @@
                             </p>
                         </div>
                         <fw type="catch">Namen⸗</fw>
-                        <pb n="8"/>
+                        <pb n="8"></pb>
                         <div type="appendix">
                             <div type="article">
                                 <head>Lorem ipsum</head>
@@ -1012,7 +1020,7 @@
             <group>
                 <text>
                     <body>
-                        <pb n="9" facs="testdoi9.jpg"/>
+                        <pb n="9" facs="testdoi9.jpg"></pb>
                         <fw type="pageNum">3</fw>
                         <figure/>
                         <div type="overview">
@@ -1113,7 +1121,7 @@
                     
                                 <fw type="sig">A 2</fw>
                     
-                                <pb n="10"/>
+                                <pb n="10"></pb>
                     
                                 <fw type="pageNum">
                                     
@@ -1254,7 +1262,7 @@
                                 Jmmenhauſen an / und hat in der Laͤnge und Breite 
                                 <fw type="catch">bey</fw>
                     
-                                <pb n="11"/>
+                                <pb n="11"></pb>
                     
                                 <fw type="pageNum">5</fw>
             
@@ -1420,7 +1428,7 @@
                 
                                 <fw type="sig">C 2</fw>
                 
-                                <pb n="12"/>
+                                <pb n="12"></pb>
                 
                                 <fw type="pageNum">6</fw>
                 
@@ -1621,14 +1629,16 @@
                                 den 
                                 <lb/>Zeiten der Tempel⸗Herren iſt es ein feiner 
                                 <lb/>veſter
-                                Orth geweſen / und der Tempel bey 
+                                Orth geweſen / und der 
+                                <name ref="mgndper:person_St._John._Adelsgeschlecht">Tempel</name> bey 
                                 <lb/>dem Thurn / deſſen Stuͤck
                                 noch ſtehet / iſt 
                                 <lb/>wol zu ſehen / als ein recht Antiquitaͤt.
                                 Das 
                                 <lb/>Waſſer Nidd gehet faſt umb das Caſtrum 
                                 <lb/>und
-                                Staͤttlein herumb. Bey der Ober⸗ 
+                                Staͤttlein herumb. 
+                                <name ref="mgndper:person_Egg_Familie_18._Jh._">Bey</name> der Ober⸗ 
                                 <lb/>Pforten ſihet man / daß es
                                 ein wolverwahr⸗ 
                                 <lb/>ter Orth geweſen / dann das Waſſer rings 
@@ -1710,7 +1720,7 @@
                             </p>
                         </div>
                         <fw type="catch">Namen⸗</fw>
-                        <pb n="13"/>
+                        <pb n="13"></pb>
                         <div type="appendix">
                             <div type="article" corresp="mgndpla:place_Landgrafschaft_Hessen">
                                 <head>Lorem ipsum
@@ -2437,7 +2447,7 @@
                     
                     <fw type="catch">48. Schmal⸗</fw>
                     
-                    <pb n="16"/>
+                    <pb n="16"></pb>
                     
                     <figure/>
                     

@@ -415,6 +415,11 @@ public class EntityListWriter {
 			person.getPersNameOrNoteOrBirth().add(personName);
 
 		}
+		else if(preferredNameStringOriginal.contains("Adelsgeschlecht")){
+			PersName personName = new PersName();
+			personName.setSurname(preferredNameStringOriginal);
+			person.getPersNameOrNoteOrBirth().add(personName);
+		}
 
 		// System.out.println(preferredNameStringOriginal + "");
 		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
@@ -528,13 +533,19 @@ public class EntityListWriter {
 			Map<QName, String> attributesMap = person.getOtherAttributes();
 			QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
 			attributesMap.put(qname, "person_" + preferredNameString);
-
+			Death death = new Death();
 			if(jsonObject.has("dateOfDeath"))
 			{
 				JSONArray deathDateArray = jsonObject.getJSONArray("dateOfDeath");
 				String deathDateArrayString = deathDateArray.getString(0);
+				char minus = '-';
 				String deathDateArrayStringYear = "";
-				for (int i = 0; i < deathDateArrayString.length(); i++) {
+				if(deathDateArrayString.charAt(0)==(minus))
+				{
+					deathDateArrayStringYear = deathDateArrayString;
+				}
+				else{
+					for (int i = 0; i < deathDateArrayString.length(); i++) {
 					char c = deathDateArrayString.charAt(i); 
 					
 					if(c=='-')
@@ -547,8 +558,11 @@ public class EntityListWriter {
 					
 					// System.out.print(c);
 				}
+
+				}
+				
 				// System.out.println("deathDateArrayString: " + deathDateArrayStringYear);
-				Death death = new Death();
+				
 				BigInteger deathDateBigInteger = new BigInteger(deathDateArrayStringYear);
 				death.setWhen(deathDateBigInteger);
 				person.getPersNameOrNoteOrBirth().add(death);
@@ -559,6 +573,12 @@ public class EntityListWriter {
 				JSONArray birthDateArray = jsonObject.getJSONArray("dateOfBirth");
 				String birthArrayString = birthDateArray.getString(0);
 				String birthArrayStringYear = "";
+				char minus = '-';
+				// String birthDateArrayStringYear = "";
+				if(birthArrayString.charAt(0)==(minus))
+				{
+					birthArrayStringYear = birthArrayString;
+				}
 				for (int i = 0; i < birthArrayString.length(); i++) {
 					char c = birthArrayString.charAt(i); 
 					
@@ -955,6 +975,10 @@ public class EntityListWriter {
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
+		preferredNameString = preferredNameString.replaceAll("v.", "v");
+		preferredNameString = preferredNameString.replaceAll("Chr.", "Chr");
+		preferredNameString = preferredNameString.replaceAll("<", "_");
+		preferredNameString = preferredNameString.replaceAll(">", "");
 		preferredNameString = preferredNameString.replaceAll(",", "_");
 		preferredNameString = preferredNameString.replaceAll("[()]", "");
 		System.out.println("PreferredNameString ist: " + preferredNameString);
@@ -993,9 +1017,7 @@ public class EntityListWriter {
 			List<Object> orgNameOrIdnoOrLink = orgListElement.getOrgNameOrIdnoOrLink();
 			for (Object orgNameOrIdnoOrLinkObject : orgNameOrIdnoOrLink) {
 				if (orgNameOrIdnoOrLinkObject instanceof String) {
-					System.out.println("orgNameOrIdnoOrLinkObject ist: " + orgNameOrIdnoOrLinkObject);
-						System.out.println("PreferredNameString ist: " + orgNameOrIdnoOrLinkObject);
-					if (orgNameOrIdnoOrLinkObject.equals(preferredNameString)) {
+					if (orgNameOrIdnoOrLinkObject.equals(preferredNameStringOriginal)) {
 						
 						org = orgListElement;
 						alreadyHasTitle = true;
@@ -1126,9 +1148,10 @@ public class EntityListWriter {
 				for (int i = 0; i < sameAsArray.length(); i++) {
 					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
 					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
-					String collectionName = jsonObjectCollection.getString("name");
+					
 					if(jsonObjectCollection.has("name"))
 					{
+						String collectionName = jsonObjectCollection.getString("name");
 						if (collectionName.equals("Wikidata")) {
 							de.uni_trier.bibliothek.xml.orgs.model.generated.OrgsIdno orgsIdnoWiki = orgsTEIObjectFactory
 								.createOrgsIdno();

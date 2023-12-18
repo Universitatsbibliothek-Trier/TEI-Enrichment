@@ -77,12 +77,15 @@ public class EnrichmentController {
                 String TEIOriginalFilePath = (EnrichmentController.getSelectedFile()).toString();
                 try (InputStream inputStream = new FileInputStream(EnrichmentController.getSelectedFile())) {
 
-                    //delete after testing
+                    //commentate after testing
                     InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml");
                     Reader xmlReader = new InputStreamReader(inputStreamTest);
                     TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml";
-                    //till here
 
+                    // InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_hessen.xml");
+                    // Reader xmlReader = new InputStreamReader(inputStreamTest);
+                    // TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_hessen.xml";
+                    //till here
 
                     Boolean anyCheckBoxSelected = false;
                     // dekommentieren für production

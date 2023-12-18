@@ -11,123 +11,120 @@ import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java-Klasse für PrefixDef complex type.
+ * <p>Java-Klasse für Change complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>{@code
- * <complexType name="PrefixDef">
- *   <complexContent>
- *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <attribute name="ident">
+ * <complexType name="Change">
+ *   <simpleContent>
+ *     <extension base="<http://www.tei-c.org/ns/1.0>ChangeValue">
+ *       <attribute name="when">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
  *         </simpleType>
  *       </attribute>
- *       <attribute name="matchPattern">
+ *       <attribute name="who">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
  *         </simpleType>
  *       </attribute>
- *       <attribute name="replacementPattern">
- *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *           </restriction>
- *         </simpleType>
- *       </attribute>
- *     </restriction>
- *   </complexContent>
+ *     </extension>
+ *   </simpleContent>
  * </complexType>
  * }</pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PrefixDef")
-public class PrefixDef {
+@XmlType(name = "Change", propOrder = {
+    "value"
+})
+public class Change {
 
-    @XmlAttribute(name = "ident")
-    protected String ident;
-    @XmlAttribute(name = "matchPattern")
-    protected String matchPattern;
-    @XmlAttribute(name = "replacementPattern")
-    protected String replacementPattern;
+    @XmlValue
+    protected String value;
+    @XmlAttribute(name = "when")
+    protected String when;
+    @XmlAttribute(name = "who")
+    protected String who;
 
     /**
-     * Ruft den Wert der ident-Eigenschaft ab.
+     * Ruft den Wert der value-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getIdent() {
-        return ident;
+    public String getValue() {
+        return value;
     }
 
     /**
-     * Legt den Wert der ident-Eigenschaft fest.
+     * Legt den Wert der value-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setIdent(String value) {
-        this.ident = value;
+    public void setValue(String value) {
+        this.value = value;
     }
 
     /**
-     * Ruft den Wert der matchPattern-Eigenschaft ab.
+     * Ruft den Wert der when-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getMatchPattern() {
-        return matchPattern;
+    public String getWhen() {
+        return when;
     }
 
     /**
-     * Legt den Wert der matchPattern-Eigenschaft fest.
+     * Legt den Wert der when-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setMatchPattern(String value) {
-        this.matchPattern = value;
+    public void setWhen(String value) {
+        this.when = value;
     }
 
     /**
-     * Ruft den Wert der replacementPattern-Eigenschaft ab.
+     * Ruft den Wert der who-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getReplacementPattern() {
-        return replacementPattern;
+    public String getWho() {
+        return who;
     }
 
     /**
-     * Legt den Wert der replacementPattern-Eigenschaft fest.
+     * Legt den Wert der who-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setReplacementPattern(String value) {
-        this.replacementPattern = value;
+    public void setWho(String value) {
+        this.who = value;
     }
 
 }

@@ -12,6 +12,7 @@ import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlValue;
 
 
 /**
@@ -43,13 +44,41 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Pb")
+@XmlType(name = "Pb", propOrder = {
+    "content"
+})
 public class Pb {
 
+    @XmlValue
+    protected String content;
     @XmlAttribute(name = "n")
     protected BigInteger n;
     @XmlAttribute(name = "facs")
     protected String facs;
+
+    /**
+     * Ruft den Wert der content-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getContent() {
+        return content;
+    }
+
+    /**
+     * Legt den Wert der content-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setContent(String value) {
+        this.content = value;
+    }
 
     /**
      * Ruft den Wert der n-Eigenschaft ab.

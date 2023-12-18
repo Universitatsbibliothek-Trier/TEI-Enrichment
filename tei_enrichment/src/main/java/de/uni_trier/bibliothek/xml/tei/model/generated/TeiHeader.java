@@ -26,11 +26,12 @@ import jakarta.xml.bind.annotation.XmlType;
  *       <sequence>
  *         <element name="fileDesc" type="{http://www.tei-c.org/ns/1.0}FileDesc"/>
  *         <element name="encodingDesc" type="{http://www.tei-c.org/ns/1.0}EncodingDesc"/>
+ *         <element name="revisionDesc" type="{http://www.tei-c.org/ns/1.0}RevisionDesc"/>
  *       </sequence>
  *       <attribute name="version">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             <pattern value="\d+.\d"/>
+ *             <enumeration value="3.5"/>
  *           </restriction>
  *         </simpleType>
  *       </attribute>
@@ -51,7 +52,8 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TeiHeader", propOrder = {
     "fileDesc",
-    "encodingDesc"
+    "encodingDesc",
+    "revisionDesc"
 })
 public class TeiHeader {
 
@@ -59,6 +61,8 @@ public class TeiHeader {
     protected FileDesc fileDesc;
     @XmlElement(required = true)
     protected EncodingDesc encodingDesc;
+    @XmlElement(required = true)
+    protected RevisionDesc revisionDesc;
     @XmlAttribute(name = "version")
     protected String version;
     @XmlAttribute(name = "ID")
@@ -110,6 +114,30 @@ public class TeiHeader {
      */
     public void setEncodingDesc(EncodingDesc value) {
         this.encodingDesc = value;
+    }
+
+    /**
+     * Ruft den Wert der revisionDesc-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link RevisionDesc }
+     *     
+     */
+    public RevisionDesc getRevisionDesc() {
+        return revisionDesc;
+    }
+
+    /**
+     * Legt den Wert der revisionDesc-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link RevisionDesc }
+     *     
+     */
+    public void setRevisionDesc(RevisionDesc value) {
+        this.revisionDesc = value;
     }
 
     /**

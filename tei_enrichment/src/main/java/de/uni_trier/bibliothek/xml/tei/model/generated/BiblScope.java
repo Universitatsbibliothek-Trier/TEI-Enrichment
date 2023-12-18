@@ -15,15 +15,15 @@ import jakarta.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java-Klasse für TitleStmtValue complex type.
+ * <p>Java-Klasse für BiblScope complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>{@code
- * <complexType name="TitleStmtValue">
+ * <complexType name="BiblScope">
  *   <simpleContent>
- *     <extension base="<http://www.tei-c.org/ns/1.0>TitleMonogrValue">
- *       <attribute name="ref">
+ *     <extension base="<http://www.tei-c.org/ns/1.0>BiblScopeValue">
+ *       <attribute name="unit">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
@@ -37,15 +37,15 @@ import jakarta.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TitleStmtValue", propOrder = {
+@XmlType(name = "BiblScope", propOrder = {
     "value"
 })
-public class TitleStmtValue {
+public class BiblScope {
 
     @XmlValue
     protected String value;
-    @XmlAttribute(name = "ref")
-    protected String ref;
+    @XmlAttribute(name = "unit")
+    protected String unit;
 
     /**
      * Ruft den Wert der value-Eigenschaft ab.
@@ -72,27 +72,27 @@ public class TitleStmtValue {
     }
 
     /**
-     * Ruft den Wert der ref-Eigenschaft ab.
+     * Ruft den Wert der unit-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getRef() {
-        return ref;
+    public String getUnit() {
+        return unit;
     }
 
     /**
-     * Legt den Wert der ref-Eigenschaft fest.
+     * Legt den Wert der unit-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setRef(String value) {
-        this.ref = value;
+    public void setUnit(String value) {
+        this.unit = value;
     }
 
 }

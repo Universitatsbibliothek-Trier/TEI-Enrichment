@@ -7,6 +7,8 @@
 
 package de.uni_trier.bibliothek.xml.tei.model.generated;
 
+import java.util.ArrayList;
+import java.util.List;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
@@ -23,9 +25,9 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="pubPlace" type="{http://www.tei-c.org/ns/1.0}pubPlace"/>
+ *         <element name="pubPlace" type="{http://www.tei-c.org/ns/1.0}PubPlace"/>
  *         <element name="publisher" type="{http://www.tei-c.org/ns/1.0}Publisher"/>
- *         <element name="date" type="{http://www.tei-c.org/ns/1.0}Date"/>
+ *         <element name="date" type="{http://www.tei-c.org/ns/1.0}DateImprint" maxOccurs="unbounded"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -47,7 +49,7 @@ public class Imprint {
     @XmlElement(required = true)
     protected Publisher publisher;
     @XmlElement(required = true)
-    protected Date date;
+    protected List<DateImprint> date;
 
     /**
      * Ruft den Wert der pubPlace-Eigenschaft ab.
@@ -98,27 +100,34 @@ public class Imprint {
     }
 
     /**
-     * Ruft den Wert der date-Eigenschaft ab.
+     * Gets the value of the date property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the date property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDate().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link DateImprint }
+     * 
      * 
      * @return
-     *     possible object is
-     *     {@link Date }
-     *     
+     *     The value of the date property.
      */
-    public Date getDate() {
-        return date;
-    }
-
-    /**
-     * Legt den Wert der date-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Date }
-     *     
-     */
-    public void setDate(Date value) {
-        this.date = value;
+    public List<DateImprint> getDate() {
+        if (date == null) {
+            date = new ArrayList<>();
+        }
+        return this.date;
     }
 
 }

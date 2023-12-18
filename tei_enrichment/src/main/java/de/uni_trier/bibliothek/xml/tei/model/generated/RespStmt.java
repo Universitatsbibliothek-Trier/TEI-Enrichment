@@ -26,7 +26,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <element name="resp" type="{http://www.tei-c.org/ns/1.0}Resp"/>
- *         <element name="name" type="{http://www.tei-c.org/ns/1.0}Name" maxOccurs="unbounded"/>
+ *         <element name="name" type="{http://www.tei-c.org/ns/1.0}NameHeader" maxOccurs="unbounded"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>

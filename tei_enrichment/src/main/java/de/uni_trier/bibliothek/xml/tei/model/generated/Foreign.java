@@ -29,7 +29,7 @@ import jakarta.xml.bind.annotation.XmlType;
  * <complexType name="Foreign">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <choice maxOccurs="unbounded">
+ *       <choice maxOccurs="unbounded" minOccurs="0">
  *         <element name="abbr" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="expan" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="orig" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
@@ -44,6 +44,9 @@ import jakarta.xml.bind.annotation.XmlType;
  *         <element name="note" type="{http://www.tei-c.org/ns/1.0}Note" maxOccurs="unbounded"/>
  *         <element name="supplied" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
  *         <element name="w" type="{http://www.tei-c.org/ns/1.0}LbEtc" maxOccurs="unbounded"/>
+ *         <element name="num" type="{http://www.tei-c.org/ns/1.0}Num" maxOccurs="unbounded"/>
+ *         <element name="fw" type="{http://www.tei-c.org/ns/1.0}Fw" maxOccurs="unbounded"/>
+ *         <element name="pb" type="{http://www.tei-c.org/ns/1.0}PbFront" maxOccurs="unbounded"/>
  *       </choice>
  *       <attribute ref="{http://www.w3.org/XML/1998/namespace}lang"/>
  *     </restriction>
@@ -73,7 +76,10 @@ public class Foreign {
         @XmlElementRef(name = "corr", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "note", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "w", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "num", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "fw", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "pb", namespace = "http://www.tei-c.org/ns/1.0", type = JAXBElement.class, required = false)
     })
     @XmlMixed
     protected List<Serializable> content;
@@ -98,6 +104,7 @@ public class Foreign {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
+     * {@link JAXBElement }{@code <}{@link Fw }{@code >}
      * {@link JAXBElement }{@code <}{@link Lb }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
      * {@link JAXBElement }{@code <}{@link LbEtc }{@code >}
@@ -111,6 +118,8 @@ public class Foreign {
      * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link NameGND }{@code >}
      * {@link JAXBElement }{@code <}{@link Note }{@code >}
+     * {@link JAXBElement }{@code <}{@link Num }{@code >}
+     * {@link JAXBElement }{@code <}{@link PbFront }{@code >}
      * {@link JAXBElement }{@code <}{@link SourceGND }{@code >}
      * {@link String }
      * 

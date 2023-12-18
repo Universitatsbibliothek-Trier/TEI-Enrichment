@@ -15,15 +15,15 @@ import jakarta.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java-Klasse für TitleStmtValue complex type.
+ * <p>Java-Klasse für DateImprint complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>{@code
- * <complexType name="TitleStmtValue">
+ * <complexType name="DateImprint">
  *   <simpleContent>
- *     <extension base="<http://www.tei-c.org/ns/1.0>TitleMonogrValue">
- *       <attribute name="ref">
+ *     <extension base="<http://www.tei-c.org/ns/1.0>DateValue">
+ *       <attribute name="when-custom">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
@@ -37,15 +37,15 @@ import jakarta.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TitleStmtValue", propOrder = {
+@XmlType(name = "DateImprint", propOrder = {
     "value"
 })
-public class TitleStmtValue {
+public class DateImprint {
 
     @XmlValue
     protected String value;
-    @XmlAttribute(name = "ref")
-    protected String ref;
+    @XmlAttribute(name = "when-custom")
+    protected String whenCustom;
 
     /**
      * Ruft den Wert der value-Eigenschaft ab.
@@ -72,27 +72,27 @@ public class TitleStmtValue {
     }
 
     /**
-     * Ruft den Wert der ref-Eigenschaft ab.
+     * Ruft den Wert der whenCustom-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getRef() {
-        return ref;
+    public String getWhenCustom() {
+        return whenCustom;
     }
 
     /**
-     * Legt den Wert der ref-Eigenschaft fest.
+     * Legt den Wert der whenCustom-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setRef(String value) {
-        this.ref = value;
+    public void setWhenCustom(String value) {
+        this.whenCustom = value;
     }
 
 }

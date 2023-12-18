@@ -40,19 +40,19 @@ import jakarta.xml.bind.annotation.XmlType;
 public class Series {
 
     @XmlElement(required = true)
-    protected String title;
+    protected TitleSeries title;
     @XmlElement(required = true)
-    protected String biblScope;
+    protected BiblScope biblScope;
 
     /**
      * Ruft den Wert der title-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link TitleSeries }
      *     
      */
-    public String getTitle() {
+    public TitleSeries getTitle() {
         return title;
     }
 
@@ -61,10 +61,10 @@ public class Series {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link TitleSeries }
      *     
      */
-    public void setTitle(String value) {
+    public void setTitle(TitleSeries value) {
         this.title = value;
     }
 
@@ -73,10 +73,10 @@ public class Series {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BiblScope }
      *     
      */
-    public String getBiblScope() {
+    public BiblScope getBiblScope() {
         return biblScope;
     }
 
@@ -85,10 +85,10 @@ public class Series {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BiblScope }
      *     
      */
-    public void setBiblScope(String value) {
+    public void setBiblScope(BiblScope value) {
         this.biblScope = value;
     }
 

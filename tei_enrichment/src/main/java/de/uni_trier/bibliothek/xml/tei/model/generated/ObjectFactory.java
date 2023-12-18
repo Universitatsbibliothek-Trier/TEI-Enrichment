@@ -56,6 +56,7 @@ public class ObjectFactory {
     private final static QName _BodyNum_QNAME = new QName("http://www.tei-c.org/ns/1.0", "num");
     private final static QName _BodyGap_QNAME = new QName("http://www.tei-c.org/ns/1.0", "gap");
     private final static QName _BodyMilestone_QNAME = new QName("http://www.tei-c.org/ns/1.0", "milestone");
+    private final static QName _BodyTrailer_QNAME = new QName("http://www.tei-c.org/ns/1.0", "trailer");
     private final static QName _NameValueAbbr_QNAME = new QName("http://www.tei-c.org/ns/1.0", "abbr");
     private final static QName _NameValueExpan_QNAME = new QName("http://www.tei-c.org/ns/1.0", "expan");
     private final static QName _NameValueSic_QNAME = new QName("http://www.tei-c.org/ns/1.0", "sic");
@@ -75,7 +76,7 @@ public class ObjectFactory {
     private final static QName _TitlePageDocTitle_QNAME = new QName("http://www.tei-c.org/ns/1.0", "docTitle");
     private final static QName _TitlePageDocEdition_QNAME = new QName("http://www.tei-c.org/ns/1.0", "docEdition");
     private final static QName _TitlePageDocImprint_QNAME = new QName("http://www.tei-c.org/ns/1.0", "docImprint");
-    private final static QName _BackTrailer_QNAME = new QName("http://www.tei-c.org/ns/1.0", "trailer");
+    private final static QName _PublisherOrgName_QNAME = new QName("http://www.tei-c.org/ns/1.0", "orgName");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: de.uni_trier.bibliothek.xml.tei.model.generated
@@ -115,6 +116,36 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link FileDesc }
+     * 
+     * @return
+     *     the new instance of {@link FileDesc }
+     */
+    public FileDesc createFileDesc() {
+        return new FileDesc();
+    }
+
+    /**
+     * Create an instance of {@link RevisionDesc }
+     * 
+     * @return
+     *     the new instance of {@link RevisionDesc }
+     */
+    public RevisionDesc createRevisionDesc() {
+        return new RevisionDesc();
+    }
+
+    /**
+     * Create an instance of {@link Change }
+     * 
+     * @return
+     *     the new instance of {@link Change }
+     */
+    public Change createChange() {
+        return new Change();
+    }
+
+    /**
      * Create an instance of {@link EncodingDesc }
      * 
      * @return
@@ -145,13 +176,13 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FileDesc }
+     * Create an instance of {@link EditorialDecl }
      * 
      * @return
-     *     the new instance of {@link FileDesc }
+     *     the new instance of {@link EditorialDecl }
      */
-    public FileDesc createFileDesc() {
-        return new FileDesc();
+    public EditorialDecl createEditorialDecl() {
+        return new EditorialDecl();
     }
 
     /**
@@ -245,13 +276,23 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Date }
+     * Create an instance of {@link DateHeader }
      * 
      * @return
-     *     the new instance of {@link Date }
+     *     the new instance of {@link DateHeader }
      */
-    public Date createDate() {
-        return new Date();
+    public DateHeader createDateHeader() {
+        return new DateHeader();
+    }
+
+    /**
+     * Create an instance of {@link DateImprint }
+     * 
+     * @return
+     *     the new instance of {@link DateImprint }
+     */
+    public DateImprint createDateImprint() {
+        return new DateImprint();
     }
 
     /**
@@ -325,6 +366,16 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link TitleMonogr }
+     * 
+     * @return
+     *     the new instance of {@link TitleMonogr }
+     */
+    public TitleMonogr createTitleMonogr() {
+        return new TitleMonogr();
+    }
+
+    /**
      * Create an instance of {@link Imprint }
      * 
      * @return
@@ -342,6 +393,26 @@ public class ObjectFactory {
      */
     public Series createSeries() {
         return new Series();
+    }
+
+    /**
+     * Create an instance of {@link TitleSeries }
+     * 
+     * @return
+     *     the new instance of {@link TitleSeries }
+     */
+    public TitleSeries createTitleSeries() {
+        return new TitleSeries();
+    }
+
+    /**
+     * Create an instance of {@link BiblScope }
+     * 
+     * @return
+     *     the new instance of {@link BiblScope }
+     */
+    public BiblScope createBiblScope() {
+        return new BiblScope();
     }
 
     /**
@@ -1754,6 +1825,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "trailer", scope = Body.class)
+    public JAXBElement<String> createBodyTrailer(String value) {
+        return new JAXBElement<>(_BodyTrailer_QNAME, String.class, Body.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Pb }{@code >}
      * 
      * @param value
@@ -1959,6 +2043,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "foreign", scope = NameValue.class)
     public JAXBElement<Foreign> createNameValueForeign(Foreign value) {
         return new JAXBElement<>(_FigureListItemForeign_QNAME, Foreign.class, NameValue.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Figure }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Figure }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "figure", scope = NameValue.class)
+    public JAXBElement<Figure> createNameValueFigure(Figure value) {
+        return new JAXBElement<>(_FigureValueFigure_QNAME, Figure.class, NameValue.class, value);
     }
 
     /**
@@ -2336,6 +2433,45 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "w", scope = Foreign.class)
     public JAXBElement<LbEtc> createForeignW(LbEtc value) {
         return new JAXBElement<>(_FigureValueW_QNAME, LbEtc.class, Foreign.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Num }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Num }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "num", scope = Foreign.class)
+    public JAXBElement<Num> createForeignNum(Num value) {
+        return new JAXBElement<>(_BodyNum_QNAME, Num.class, Foreign.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Fw }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Fw }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "fw", scope = Foreign.class)
+    public JAXBElement<Fw> createForeignFw(Fw value) {
+        return new JAXBElement<>(_FigureValueFw_QNAME, Fw.class, Foreign.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link PbFront }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link PbFront }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "pb", scope = Foreign.class)
+    public JAXBElement<PbFront> createForeignPb(PbFront value) {
+        return new JAXBElement<>(_PbodyPb_QNAME, PbFront.class, Foreign.class, value);
     }
 
     /**
@@ -3314,6 +3450,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "trailer", scope = DivFront.class)
+    public JAXBElement<String> createDivFrontTrailer(String value) {
+        return new JAXBElement<>(_BodyTrailer_QNAME, String.class, DivFront.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Lb }{@code >}
      * 
      * @param value
@@ -4013,6 +4162,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "foreign", scope = LbEtc.class)
     public JAXBElement<Foreign> createLbEtcForeign(Foreign value) {
         return new JAXBElement<>(_FigureListItemForeign_QNAME, Foreign.class, LbEtc.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "trailer", scope = LbEtc.class)
+    public JAXBElement<String> createLbEtcTrailer(String value) {
+        return new JAXBElement<>(_BodyTrailer_QNAME, String.class, LbEtc.class, value);
     }
 
     /**
@@ -4792,7 +4954,20 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "trailer", scope = Back.class)
     public JAXBElement<String> createBackTrailer(String value) {
-        return new JAXBElement<>(_BackTrailer_QNAME, String.class, Back.class, value);
+        return new JAXBElement<>(_BodyTrailer_QNAME, String.class, Back.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "orgName", scope = Publisher.class)
+    public JAXBElement<String> createPublisherOrgName(String value) {
+        return new JAXBElement<>(_PublisherOrgName_QNAME, String.class, Publisher.class, value);
     }
 
 }

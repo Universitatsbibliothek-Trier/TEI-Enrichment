@@ -64,26 +64,6 @@
                             </list>
                         </note>
                     </org>
-                    <org xml:id="org_Kloster_Münster_Münster_Oberelsass">
-                        <orgName>Kloster Münster (Münster, Oberelsass)</orgName>
-                        <orgName>Monasteriolum Confluentis Münster</orgName>
-                        <orgName>Benediktinerabtei Münster (Münster, Oberelsass)</orgName>
-                        <orgName>Monasteriolo Confluentis Münster</orgName>
-                        <orgName>Abbaye Saint-Grégoire Munster</orgName>
-                        <orgName>Abbaye Saint Grégoire Munster</orgName>
-                        <orgName>Benediktinerkloster Münster (Münster, Oberelsass)</orgName>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4497639-2</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="desc">Benediktinerkloster</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>CorporateBody</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>ReligiousCorporateBody</item>
-                            </list>
-                        </note>
-                    </org>
                     <org xml:id="org_Meriansche_Erben_Frankfurt_Main">
                         <orgName>Meriansche Erben (Frankfurt, Main)</orgName>
                         <orgName>Mattheus Merian Erben (Frankfurt, Main)</orgName>
@@ -113,18 +93,6 @@
                         <orgName>Städtisches Elektrizitätswerk Trier</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/213942-X</idno>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Elektrizitätswerk_Trier"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="desc">Elektrizitätsversorgungsunternehmen</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>CorporateBody</item>
-                            </list>
-                        </note>
-                    </org>
-                    <org xml:id="org_Elektrizitätswerk_Trier">
-                        <orgName>Elektrizitätswerk Trier</orgName>
-                        <orgName>Städtisches Elektrizitätswerk Trier</orgName>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/213942-X</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">Elektrizitätsversorgungsunternehmen</note>
                         <note type="categories">

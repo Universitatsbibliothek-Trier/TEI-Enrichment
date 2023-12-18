@@ -7,6 +7,8 @@
 
 package de.uni_trier.bibliothek.xml.tei.model.generated;
 
+import java.util.ArrayList;
+import java.util.List;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
@@ -23,10 +25,10 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="publisher" type="{http://www.tei-c.org/ns/1.0}Publisher"/>
+ *         <element name="publisher" type="{http://www.tei-c.org/ns/1.0}Publisher" maxOccurs="2"/>
  *         <element name="distributor" type="{http://www.tei-c.org/ns/1.0}Distributor"/>
  *         <element name="pubPlace" type="{http://www.tei-c.org/ns/1.0}pubPlace"/>
- *         <element name="date" type="{http://www.tei-c.org/ns/1.0}Date"/>
+ *         <element name="date" type="{http://www.tei-c.org/ns/1.0}DateHeader"/>
  *         <element name="availability" type="{http://www.tei-c.org/ns/1.0}Availability"/>
  *       </sequence>
  *     </restriction>
@@ -47,38 +49,45 @@ import jakarta.xml.bind.annotation.XmlType;
 public class PublicationStmt {
 
     @XmlElement(required = true)
-    protected Publisher publisher;
+    protected List<Publisher> publisher;
     @XmlElement(required = true)
     protected String distributor;
     @XmlElement(required = true)
     protected String pubPlace;
     @XmlElement(required = true)
-    protected Date date;
+    protected DateHeader date;
     @XmlElement(required = true)
     protected Availability availability;
 
     /**
-     * Ruft den Wert der publisher-Eigenschaft ab.
+     * Gets the value of the publisher property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the publisher property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getPublisher().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Publisher }
+     * 
      * 
      * @return
-     *     possible object is
-     *     {@link Publisher }
-     *     
+     *     The value of the publisher property.
      */
-    public Publisher getPublisher() {
-        return publisher;
-    }
-
-    /**
-     * Legt den Wert der publisher-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Publisher }
-     *     
-     */
-    public void setPublisher(Publisher value) {
-        this.publisher = value;
+    public List<Publisher> getPublisher() {
+        if (publisher == null) {
+            publisher = new ArrayList<>();
+        }
+        return this.publisher;
     }
 
     /**
@@ -134,10 +143,10 @@ public class PublicationStmt {
      * 
      * @return
      *     possible object is
-     *     {@link Date }
+     *     {@link DateHeader }
      *     
      */
-    public Date getDate() {
+    public DateHeader getDate() {
         return date;
     }
 
@@ -146,10 +155,10 @@ public class PublicationStmt {
      * 
      * @param value
      *     allowed object is
-     *     {@link Date }
+     *     {@link DateHeader }
      *     
      */
-    public void setDate(Date value) {
+    public void setDate(DateHeader value) {
         this.date = value;
     }
 

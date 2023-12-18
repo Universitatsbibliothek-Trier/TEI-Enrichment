@@ -7,7 +7,6 @@
 
 package de.uni_trier.bibliothek.xml.tei.model.generated;
 
-import java.math.BigInteger;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
@@ -24,11 +23,10 @@ import jakarta.xml.bind.annotation.XmlValue;
  * <complexType name="Measure">
  *   <simpleContent>
  *     <extension base="<http://www.tei-c.org/ns/1.0>MeasureValue">
- *       <attribute name="unit">
+ *       <attribute name="type">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             <enumeration value="words"/>
- *             <enumeration value="vols"/>
+ *             <enumeration value="pages"/>
  *           </restriction>
  *         </simpleType>
  *       </attribute>
@@ -46,19 +44,19 @@ import jakarta.xml.bind.annotation.XmlValue;
 public class Measure {
 
     @XmlValue
-    protected BigInteger value;
-    @XmlAttribute(name = "unit")
-    protected String unit;
+    protected String value;
+    @XmlAttribute(name = "type")
+    protected String type;
 
     /**
      * Ruft den Wert der value-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getValue() {
+    public String getValue() {
         return value;
     }
 
@@ -67,35 +65,35 @@ public class Measure {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setValue(BigInteger value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Ruft den Wert der unit-Eigenschaft ab.
+     * Ruft den Wert der type-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getUnit() {
-        return unit;
+    public String getType() {
+        return type;
     }
 
     /**
-     * Legt den Wert der unit-Eigenschaft fest.
+     * Legt den Wert der type-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setUnit(String value) {
-        this.unit = value;
+    public void setType(String value) {
+        this.type = value;
     }
 
 }

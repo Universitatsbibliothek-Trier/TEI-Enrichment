@@ -26,9 +26,10 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <element name="author" type="{http://www.tei-c.org/ns/1.0}Author" maxOccurs="unbounded"/>
- *         <element name="title" type="{http://www.tei-c.org/ns/1.0}TitleMonogr"/>
- *         <element name="edition" type="{http://www.tei-c.org/ns/1.0}EditionMonogr"/>
+ *         <element name="title" type="{http://www.tei-c.org/ns/1.0}TitleMonogr" maxOccurs="2"/>
+ *         <element name="edition" type="{http://www.tei-c.org/ns/1.0}Edition"/>
  *         <element name="imprint" type="{http://www.tei-c.org/ns/1.0}Imprint"/>
+ *         <element name="extent" type="{http://www.tei-c.org/ns/1.0}Extent"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -42,18 +43,21 @@ import jakarta.xml.bind.annotation.XmlType;
     "author",
     "title",
     "edition",
-    "imprint"
+    "imprint",
+    "extent"
 })
 public class Monogr {
 
     @XmlElement(required = true)
     protected List<String> author;
     @XmlElement(required = true)
-    protected String title;
+    protected List<TitleMonogr> title;
     @XmlElement(required = true)
-    protected String edition;
+    protected Edition edition;
     @XmlElement(required = true)
     protected Imprint imprint;
+    @XmlElement(required = true)
+    protected Extent extent;
 
     /**
      * Gets the value of the author property.
@@ -87,27 +91,34 @@ public class Monogr {
     }
 
     /**
-     * Ruft den Wert der title-Eigenschaft ab.
+     * Gets the value of the title property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the title property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTitle().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TitleMonogr }
+     * 
      * 
      * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *     The value of the title property.
      */
-    public String getTitle() {
-        return title;
-    }
-
-    /**
-     * Legt den Wert der title-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTitle(String value) {
-        this.title = value;
+    public List<TitleMonogr> getTitle() {
+        if (title == null) {
+            title = new ArrayList<>();
+        }
+        return this.title;
     }
 
     /**
@@ -115,10 +126,10 @@ public class Monogr {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Edition }
      *     
      */
-    public String getEdition() {
+    public Edition getEdition() {
         return edition;
     }
 
@@ -127,10 +138,10 @@ public class Monogr {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Edition }
      *     
      */
-    public void setEdition(String value) {
+    public void setEdition(Edition value) {
         this.edition = value;
     }
 
@@ -156,6 +167,30 @@ public class Monogr {
      */
     public void setImprint(Imprint value) {
         this.imprint = value;
+    }
+
+    /**
+     * Ruft den Wert der extent-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Extent }
+     *     
+     */
+    public Extent getExtent() {
+        return extent;
+    }
+
+    /**
+     * Legt den Wert der extent-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Extent }
+     *     
+     */
+    public void setExtent(Extent value) {
+        this.extent = value;
     }
 
 }

@@ -344,6 +344,30 @@
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1186913347</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                     </person>
+                    <person xml:id="person_St._John._Adelsgeschlecht">
+                        <persName>
+                            <surname>St. John. Adelsgeschlecht</surname>
+                        </persName>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Family</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1175503320</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </person>
+                    <person xml:id="person_Egg_Familie_18._Jh._">
+                        <persName>
+                            <surname>Egg</surname>
+                        </persName>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Family</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/113110496X</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </person>
                 </listPerson>
             </div>
         </body>
