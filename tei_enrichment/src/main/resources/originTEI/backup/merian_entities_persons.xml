@@ -7,29 +7,34 @@
         <fileDesc>
             <titleStmt>
                 <title> Merian online: Index vorhandener Entitäten. </title>
-                <author>Team Merian online</author>
             </titleStmt>
-            <editionStmt>
-                <edition>Beta draft.</edition>
-            </editionStmt>
             <extent>
                 <!-- description of the size of the resource; we could add the amount of entitities
                 automatically when the file is updated -->
             </extent>
             <publicationStmt>
-                <publisher>Universitätsbibliothek Trier</publisher>
+                <publisher ref="https://merian.uni-trier.de">Merian online</publisher>
+                <publisher><orgName>Universitätsbibliothek Trier</orgName></publisher>
+
+                <!-- Bereitstellung der Daten -->
+                <distributor>Universitätsbibliothek Trier</distributor>
+
                 <pubPlace>Trier</pubPlace>
-                <date>2023</date>
-                <idno>1</idno>
-                <availability>
-                    <p>CC-0-Lizenz</p>
+                <date when="2024">2024</date>
+
+                <!-- Lizenzen -->
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by/4.0/" />
+                    <p>Creative Commons Attribution 4.0 International (CC-BY-4.0)</p>
                 </availability>
             </publicationStmt>
+
             <sourceDesc>
                 <p>Born digital</p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
+
     <text>
         <body>
             <div xml:id="merian_persons">
@@ -58,8 +63,8 @@
                                 <item>DifferentiatedPerson</item>
                             </list> 
                         </note>
-                        <birth when="1755"/>
-                        <death when="1824"/>
+                        <birth when-custom="1755"/>
+                        <death when-custom="1824"/>
                         <link target="merian_hessen.xml#band_07_art_paul_goldmann" />
                         <link target="merian_hessen.xml#band_07_art_some_5" />
                         <link target="merian_hessen.xml#band_07"></link>

@@ -24,7 +24,6 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <element name="titleStmt" type="{http://www.tei-c.org/ns/1.0}TitleStmt"/>
- *         <element name="editionStmt" type="{http://www.tei-c.org/ns/1.0}EditionStmt"/>
  *         <element name="extent" type="{http://www.tei-c.org/ns/1.0}Extent"/>
  *         <element name="publicationStmt" type="{http://www.tei-c.org/ns/1.0}PublicationStmt"/>
  *         <element name="sourceDesc" type="{http://www.tei-c.org/ns/1.0}SourceDesc"/>
@@ -39,7 +38,6 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FileDesc", propOrder = {
     "titleStmt",
-    "editionStmt",
     "extent",
     "publicationStmt",
     "sourceDesc"
@@ -48,8 +46,6 @@ public class FileDesc {
 
     @XmlElement(required = true)
     protected TitleStmt titleStmt;
-    @XmlElement(required = true)
-    protected EditionStmt editionStmt;
     @XmlElement(required = true)
     protected Extent extent;
     @XmlElement(required = true)
@@ -79,30 +75,6 @@ public class FileDesc {
      */
     public void setTitleStmt(TitleStmt value) {
         this.titleStmt = value;
-    }
-
-    /**
-     * Ruft den Wert der editionStmt-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EditionStmt }
-     *     
-     */
-    public EditionStmt getEditionStmt() {
-        return editionStmt;
-    }
-
-    /**
-     * Legt den Wert der editionStmt-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EditionStmt }
-     *     
-     */
-    public void setEditionStmt(EditionStmt value) {
-        this.editionStmt = value;
     }
 
     /**

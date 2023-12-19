@@ -4,19 +4,19 @@
         <fileDesc>
             <titleStmt>
                 <title> Merian online: Index vorhandener Entitäten. </title>
-                <author>Team Merian online</author>
             </titleStmt>
-            <editionStmt>
-                <edition>Beta draft.</edition>
-            </editionStmt>
             <extent/>
             <publicationStmt>
-                <publisher>Universitätsbibliothek Trier</publisher>
+                <publisher ref="https://merian.uni-trier.de">Merian online</publisher>
+                <publisher>
+                    <orgName>Universitätsbibliothek Trier</orgName>
+                </publisher>
+                <distributor>Universitätsbibliothek Trier</distributor>
                 <pubPlace>Trier</pubPlace>
-                <date>2023</date>
-                <idno>1</idno>
-                <availability>
-                    <p>CC-0-Lizenz</p>
+                <date when="2024">2024</date>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by/4.0/"></licence>
+                    <p>Creative Commons Attribution 4.0 International (CC-BY-4.0)</p>
                 </availability>
             </publicationStmt>
             <sourceDesc>

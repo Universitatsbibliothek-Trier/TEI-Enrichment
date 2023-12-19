@@ -5,24 +5,25 @@
 //
 
 
-package de.uni_trier.bibliothek.xml.persons.model.generated;
+package de.uni_trier.bibliothek.xml.events.model.generated;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java-Klasse für Birth complex type.
+ * <p>Java-Klasse für Licence complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>{@code
- * <complexType name="Birth">
+ * <complexType name="Licence">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <attribute name="when-custom">
+ *       <attribute name="target">
  *         <simpleType>
  *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
@@ -36,34 +37,62 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Birth")
-public class Birth {
+@XmlType(name = "Licence", propOrder = {
+    "content"
+})
+public class Licence {
 
-    @XmlAttribute(name = "when-custom")
-    protected String whenCustom;
+    @XmlValue
+    protected String content;
+    @XmlAttribute(name = "target")
+    protected String target;
 
     /**
-     * Ruft den Wert der whenCustom-Eigenschaft ab.
+     * Ruft den Wert der content-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getWhenCustom() {
-        return whenCustom;
+    public String getContent() {
+        return content;
     }
 
     /**
-     * Legt den Wert der whenCustom-Eigenschaft fest.
+     * Legt den Wert der content-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setWhenCustom(String value) {
-        this.whenCustom = value;
+    public void setContent(String value) {
+        this.content = value;
+    }
+
+    /**
+     * Ruft den Wert der target-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getTarget() {
+        return target;
+    }
+
+    /**
+     * Legt den Wert der target-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setTarget(String value) {
+        this.target = value;
     }
 
 }

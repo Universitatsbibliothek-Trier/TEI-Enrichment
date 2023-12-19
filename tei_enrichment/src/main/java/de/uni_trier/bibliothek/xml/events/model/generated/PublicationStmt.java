@@ -7,7 +7,8 @@
 
 package de.uni_trier.bibliothek.xml.events.model.generated;
 
-import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
@@ -24,11 +25,12 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="publisher" type="{http://www.tei-c.org/ns/1.0}Publisher"/>
- *         <element name="pubPlace" type="{http://www.tei-c.org/ns/1.0}pubPlace"/>
- *         <element name="date" type="{http://www.tei-c.org/ns/1.0}Date"/>
- *         <element name="idno" type="{http://www.tei-c.org/ns/1.0}Idno"/>
- *         <element name="availability" type="{http://www.tei-c.org/ns/1.0}Availability"/>
+ *         <element name="publisher" type="{http://www.tei-c.org/ns/1.0}Publisher" maxOccurs="unbounded"/>
+ *         <element name="idno" type="{http://www.tei-c.org/ns/1.0}Idno" minOccurs="0"/>
+ *         <element name="distributor" type="{http://www.tei-c.org/ns/1.0}Distributor" minOccurs="0"/>
+ *         <element name="pubPlace" type="{http://www.tei-c.org/ns/1.0}pubPlace" minOccurs="0"/>
+ *         <element name="date" type="{http://www.tei-c.org/ns/1.0}Date" minOccurs="0"/>
+ *         <element name="availability" type="{http://www.tei-c.org/ns/1.0}Availability" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -40,46 +42,99 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PublicationStmt", propOrder = {
     "publisher",
+    "idno",
+    "distributor",
     "pubPlace",
     "date",
-    "idno",
     "availability"
 })
 public class PublicationStmt {
 
     @XmlElement(required = true)
-    protected String publisher;
-    @XmlElement(required = true)
-    protected String pubPlace;
-    @XmlElement(required = true)
-    protected BigInteger date;
-    @XmlElement(required = true)
+    protected List<Publisher> publisher;
     protected String idno;
-    @XmlElement(required = true)
+    protected String distributor;
+    protected String pubPlace;
+    protected Date date;
     protected Availability availability;
 
     /**
-     * Ruft den Wert der publisher-Eigenschaft ab.
+     * Gets the value of the publisher property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the publisher property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getPublisher().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Publisher }
+     * 
+     * 
+     * @return
+     *     The value of the publisher property.
+     */
+    public List<Publisher> getPublisher() {
+        if (publisher == null) {
+            publisher = new ArrayList<>();
+        }
+        return this.publisher;
+    }
+
+    /**
+     * Ruft den Wert der idno-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getPublisher() {
-        return publisher;
+    public String getIdno() {
+        return idno;
     }
 
     /**
-     * Legt den Wert der publisher-Eigenschaft fest.
+     * Legt den Wert der idno-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setPublisher(String value) {
-        this.publisher = value;
+    public void setIdno(String value) {
+        this.idno = value;
+    }
+
+    /**
+     * Ruft den Wert der distributor-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDistributor() {
+        return distributor;
+    }
+
+    /**
+     * Legt den Wert der distributor-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDistributor(String value) {
+        this.distributor = value;
     }
 
     /**
@@ -111,10 +166,10 @@ public class PublicationStmt {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link Date }
      *     
      */
-    public BigInteger getDate() {
+    public Date getDate() {
         return date;
     }
 
@@ -123,35 +178,11 @@ public class PublicationStmt {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link Date }
      *     
      */
-    public void setDate(BigInteger value) {
+    public void setDate(Date value) {
         this.date = value;
-    }
-
-    /**
-     * Ruft den Wert der idno-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIdno() {
-        return idno;
-    }
-
-    /**
-     * Legt den Wert der idno-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIdno(String value) {
-        this.idno = value;
     }
 
     /**

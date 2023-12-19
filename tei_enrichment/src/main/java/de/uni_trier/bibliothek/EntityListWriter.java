@@ -39,7 +39,9 @@ import javax.xml.namespace.QName;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import de.uni_trier.bibliothek.xml.events.model.generated.Desc;
 import de.uni_trier.bibliothek.xml.events.model.generated.Event;
+import de.uni_trier.bibliothek.xml.events.model.generated.EventDate;
 import de.uni_trier.bibliothek.xml.events.model.generated.ListEvent;
 import de.uni_trier.bibliothek.xml.listBibl.model.generated.Bibl;
 import de.uni_trier.bibliothek.xml.listBibl.model.generated.ListBibl;
@@ -400,18 +402,19 @@ public class EntityListWriter {
 		if(preferredNameStringOriginal.contains("Familie")){
 			System.out.println("preferred name contains family");
 			PersName personName = new PersName();
+			personName.setSurname(preferredNameStringOriginal);
 			// System.out.println("0-6 substring in preferredname" + preferredNameStringOriginal.substring(0, 6));
-			if(preferredNameStringOriginal.substring(0, 7).equals("Familie"))
-			{
-				System.out.println("first substring is familie");
-				String surname = preferredNameStringOriginal.substring(8, preferredNameStringOriginal.length());
-				personName.setSurname(surname);
-			}
-			else{
-				System.out.println("familie nach komma");
-				String surname = preferredNameStringOriginal.substring(0, preferredNameStringOriginal.indexOf(","));
-				personName.setSurname(surname);
-			}
+			// if(preferredNameStringOriginal.substring(0, 7).equals("Familie"))
+			// {
+			// 	System.out.println("first substring is familie");
+			// 	String surname = preferredNameStringOriginal.substring(8, preferredNameStringOriginal.length());
+			// 	personName.setSurname(surname);
+			// }
+			// else{
+			// 	System.out.println("familie nach komma");
+			// 	String surname = preferredNameStringOriginal.substring(0, preferredNameStringOriginal.indexOf(","));
+			// 	personName.setSurname(surname);
+			// }
 			person.getPersNameOrNoteOrBirth().add(personName);
 
 		}
@@ -538,33 +541,33 @@ public class EntityListWriter {
 			{
 				JSONArray deathDateArray = jsonObject.getJSONArray("dateOfDeath");
 				String deathDateArrayString = deathDateArray.getString(0);
-				char minus = '-';
-				String deathDateArrayStringYear = "";
-				if(deathDateArrayString.charAt(0)==(minus))
-				{
-					deathDateArrayStringYear = deathDateArrayString;
-				}
-				else{
-					for (int i = 0; i < deathDateArrayString.length(); i++) {
-					char c = deathDateArrayString.charAt(i); 
+				// char minus = '-';
+				// String deathDateArrayStringYear = "";
+				// if(deathDateArrayString.charAt(0)==(minus))
+				// {
+				// 	deathDateArrayStringYear = deathDateArrayString;
+				// }
+				// else{
+				// 	for (int i = 0; i < deathDateArrayString.length(); i++) {
+				// 	char c = deathDateArrayString.charAt(i); 
 					
-					if(c=='-')
-					{
-						break;
-					}
-					else{
-						deathDateArrayStringYear = deathDateArrayStringYear + c;
-					}
+				// 	if(c=='-')
+				// 	{
+				// 		break;
+				// 	}
+				// 	else{
+				// 		deathDateArrayStringYear = deathDateArrayStringYear + c;
+				// 	}
 					
-					// System.out.print(c);
-				}
+				// 	// System.out.print(c);
+				// }
 
-				}
+				// }
 				
 				// System.out.println("deathDateArrayString: " + deathDateArrayStringYear);
 				
-				BigInteger deathDateBigInteger = new BigInteger(deathDateArrayStringYear);
-				death.setWhen(deathDateBigInteger);
+				// BigInteger deathDateBigInteger = new BigInteger(deathDateArrayStringYear);
+				death.setWhenCustom(deathDateArrayString);
 				person.getPersNameOrNoteOrBirth().add(death);
 			}
 
@@ -572,30 +575,30 @@ public class EntityListWriter {
 			{
 				JSONArray birthDateArray = jsonObject.getJSONArray("dateOfBirth");
 				String birthArrayString = birthDateArray.getString(0);
-				String birthArrayStringYear = "";
-				char minus = '-';
-				// String birthDateArrayStringYear = "";
-				if(birthArrayString.charAt(0)==(minus))
-				{
-					birthArrayStringYear = birthArrayString;
-				}
-				for (int i = 0; i < birthArrayString.length(); i++) {
-					char c = birthArrayString.charAt(i); 
+				// String birthArrayStringYear = "";
+				// char minus = '-';
+				// // String birthDateArrayStringYear = "";
+				// if(birthArrayString.charAt(0)==(minus))
+				// {
+				// 	birthArrayStringYear = birthArrayString;
+				// }
+				// for (int i = 0; i < birthArrayString.length(); i++) {
+				// 	char c = birthArrayString.charAt(i); 
 					
-					if(c=='-')
-					{
-						break;
-					}
-					else{
-						birthArrayStringYear = birthArrayStringYear + c;
-					}
+				// 	if(c=='-')
+				// 	{
+				// 		break;
+				// 	}
+				// 	else{
+				// 		birthArrayStringYear = birthArrayStringYear + c;
+				// 	}
 					
-					// System.out.print(c);
-				}
-				// System.out.println("birthDateArrayString: " + birthArrayString);
+				// 	// System.out.print(c);
+				// }
+				// // System.out.println("birthDateArrayString: " + birthArrayString);
 				Birth birth = new Birth();
-				BigInteger deathDateBigInteger = new BigInteger(birthArrayStringYear);
-				birth.setWhen(deathDateBigInteger);
+				// BigInteger deathDateBigInteger = new BigInteger(birthArrayStringYear);
+				birth.setWhenCustom(birthArrayString);
 				person.getPersNameOrNoteOrBirth().add(birth);
 			}
 
@@ -629,56 +632,47 @@ public class EntityListWriter {
 			if (!typeTermsListCopy.isEmpty()) {
 
 				for (String termString : typeTermsListCopy) {
-					// System.out.println("termString: " + termString);
 					switch (termString) {
 
 						case "Person":
 							typeTermslist.remove("Person");
 							personListSuperList.getItem().add("Person");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Person");
 							break;
 						case "Work":
 							typeTermslist.remove("Work");
 							personListSuperList.getItem().add("Work");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Work");
 							break;
 						case "Family":
 							typeTermslist.remove("Family");
 							personListSuperList.getItem().add("Family");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Family");
 							break;
 						case "ConferenceOrEvent":
 							typeTermslist.remove("ConferenceOrEvent");
 							personListSuperList.getItem().add("ConferenceOrEvent");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "ConferenceOrEvent");
 							break;
 						case "PlaceOrGeographicName":
 							typeTermslist.remove("PlaceOrGeographicName");
 							personListSuperList.getItem().add("PlaceOrGeographicName");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "PlaceOrGeographicName");
 							break;
 						case "CorporateBody":
 							typeTermslist.remove("CorporateBody");
 							personListSuperList.getItem().add("CorporateBody");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "CorporateBody");
 							break;
 						case "SubjectHeading":
 							typeTermslist.remove("SubjectHeading");
 							personListSuperList.getItem().add("SubjectHeading");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "SubjectHeading");
 							break;
 					}
 				}
 
 				for (String subcategory : typeTermslist) {
-					// System.out.println("subcategory: " + subcategory);
 					hasSubcategory = true;
 					personListSubList.getItem().add(subcategory);
 				}
@@ -707,17 +701,13 @@ public class EntityListWriter {
 
 			if (jsonObject.has("sameAs")) {
 				JSONArray sameAsArray = jsonObject.getJSONArray("sameAs");
-				// System.out.println("sameAsArray: " + sameAsArray);
 				for (int i = 0; i < sameAsArray.length(); i++) {
 					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
-					// System.out.println("idCollectionObject: " + idCollectionObject);
 					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
-					// System.out.println("jsonObjectCollection: " + jsonObjectCollection);
 
 					if(jsonObjectCollection.has("name"))
 					{
 						String collectionName = jsonObjectCollection.getString("name");
-						// System.out.println("collectionName: " + collectionName);
 
 						if (collectionName.equals("Wikidata")) {
 							de.uni_trier.bibliothek.xml.persons.model.generated.PersonIdno personIdnoWiki = personsTEIObjectFactory.createPersonIdno();
@@ -770,10 +760,19 @@ public class EntityListWriter {
 	public static void writeEventsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
 			DivFront divFrontElement) {
 		Event event = new Event();
+		
+		
+
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
+		preferredNameString = preferredNameString.replaceAll(">", "");
+		preferredNameString = preferredNameString.replaceAll("<", "_");
+		// preferredNameString = preferredNameString.replaceAll("<", "_");
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
 		preferredNameString = preferredNameString.replaceAll(",", "_");
+		preferredNameString = preferredNameString.replaceAll("___", "_");
+		preferredNameString = preferredNameString.replaceAll("__", "_");
+		
 		System.out.println("PreferredNameString ist: " + preferredNameString);
 
 		Map<QName, String> attributesMap = event.getOtherAttributes();
@@ -786,6 +785,7 @@ public class EntityListWriter {
 			JSONArray variantNameArray = jsonObject.getJSONArray("variantName");
 			for(int i = 0; i < variantNameArray.length(); i++)
 			{
+				System.out.println("variantName von event ist: " + variantNameArray.get(i));
 				event.getLabelOrDescOrNote().add(variantNameArray.get(i));
 			}
 			
@@ -815,6 +815,77 @@ public class EntityListWriter {
 			}
 		}
 		if (!alreadyHasTitle) {
+			// System.out.println("");
+			Desc descEvent = new Desc();
+			if(jsonObject.has("dateOfProduction"))
+			{
+				EventDate eventsDate = new EventDate();
+				JSONArray jsonArray = jsonObject.getJSONArray("dateOfProduction");
+				String dateOfProduction = jsonArray.getString(0);
+				if (jsonArray.length() > 1 )
+				{
+					dateOfProduction = jsonArray.getString(1);
+				}
+				eventsDate.setWhenCustom(dateOfProduction);
+				descEvent.getDate().add(eventsDate);
+			}
+			if(jsonObject.has("dateOfEstablishment"))
+			{
+				EventDate eventsDate = new EventDate();
+				JSONArray jsonArray = jsonObject.getJSONArray("dateOfEstablishment");
+				String dateOfEstablishment = jsonArray.getString(0);
+				if (jsonArray.length() > 1 )
+				{
+					dateOfEstablishment = jsonArray.getString(1);
+				}
+				eventsDate.setFromCustom(dateOfEstablishment);
+				descEvent.getDate().add(eventsDate);
+			}
+			if(jsonObject.has("dateOfTermination"))
+			{
+				EventDate eventsDate = new EventDate();
+				JSONArray jsonArray = jsonObject.getJSONArray("dateOfTermination");
+				String dateOfTermination = jsonArray.getString(0);
+				if (jsonArray.length() > 1 )
+				{
+					dateOfTermination = jsonArray.getString(1);
+				}
+				eventsDate.setToCustom(dateOfTermination);
+				descEvent.getDate().add(eventsDate);
+			}
+			if(jsonObject.has("dateOfEstablishmentAndTermination"))
+			{
+				EventDate eventsDate = new EventDate();
+				JSONArray jsonArray = jsonObject.getJSONArray("dateOfEstablishmentAndTermination");
+				String dateOfProduction = jsonArray.getString(0);
+				if (jsonArray.length() > 1 )
+				{
+					dateOfProduction = jsonArray.getString(1);
+				}
+				eventsDate.setWhenCustom(dateOfProduction);
+				descEvent.getDate().add(eventsDate);
+			}
+			if(jsonObject.has("associatedDate"))
+			{
+				EventDate eventsDate = new EventDate();
+				JSONArray jsonArray = jsonObject.getJSONArray("associatedDate");
+				String dateOfProduction = jsonArray.getString(0);
+				if (jsonArray.length() > 1 )
+				{
+					dateOfProduction = jsonArray.getString(1);
+				}
+				eventsDate.setWhenCustom(dateOfProduction);
+				descEvent.getDate().add(eventsDate);
+			}
+			
+
+			
+
+
+			if(!descEvent.getDate().isEmpty())
+			{
+				event.getLabelOrDescOrNote().add(descEvent);
+			}
 			if (jsonObject.has("broaderTermInstantial")) {
 				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
 				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);

@@ -63,7 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="FileDesc">
     <xs:sequence>
       <xs:element name="titleStmt" type="self:TitleStmt" />
-      <xs:element name="editionStmt" type="self:EditionStmt" />
+      <!-- <xs:element name="editionStmt" type="self:EditionStmt" /> -->
       <xs:element name="extent" type="self:Extent" />
       <xs:element name="publicationStmt" type="self:PublicationStmt" />
       <xs:element name="sourceDesc" type="self:SourceDesc" minOccurs="1" maxOccurs="1" />
@@ -112,21 +112,40 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
 
   <xs:complexType name="PublicationStmt">
     <xs:sequence>
-      <xs:element name="publisher" type="self:Publisher" maxOccurs="1" />
-      <xs:element name="pubPlace" type="self:pubPlace" maxOccurs="1" />
-      <xs:element name="date" type="self:Date" maxOccurs="1" />
-      <xs:element name="idno" type="self:Idno" maxOccurs="1" />
-      <xs:element name="availability" type="self:Availability" maxOccurs="1" />
+      <xs:element name="publisher" type="self:Publisher" maxOccurs="unbounded" />
+      <xs:element name="idno" type="self:Idno" maxOccurs="1"  minOccurs="0"/>
+      <xs:element name="distributor" type="self:Distributor" maxOccurs="1"  minOccurs="0"/>
+      <xs:element name="pubPlace" type="self:pubPlace" maxOccurs="1" minOccurs="0"/>
+      <xs:element name="date" type="self:Date" maxOccurs="1"  minOccurs="0"/>
+      <xs:element name="availability" type="self:Availability" maxOccurs="1"  minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="Availability">
     <xs:sequence>
+      <xs:element name="licence" type="self:Licence" maxOccurs="1" />
       <xs:element name="p" type="self:PAvail" maxOccurs="1" />
     </xs:sequence>
+    <xs:attribute name="status">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Licence" mixed="true">
+    <xs:attribute name="target">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
   </xs:complexType>
 
   <xs:simpleType name="PAvail">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:simpleType name="Distributor">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
@@ -134,16 +153,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
-  <xs:simpleType name="Date">
-    <xs:restriction base="xs:integer" />
-  </xs:simpleType>
+  <xs:complexType name="Date" mixed="true">
+    <xs:attribute name="when">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
 
 
   <xs:simpleType name="pubPlace">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
-  <xs:simpleType name="Publisher">
+  <xs:complexType name="Publisher" mixed="true">
+    <xs:sequence>
+      <xs:element name="orgName" type="self:OrgNameHeader" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="ref">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:simpleType name="OrgNameHeader">
     <xs:restriction base="xs:string" />
   </xs:simpleType>
 
@@ -151,7 +185,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="TitleStmt">
     <xs:sequence>
       <xs:element name="title" type="self:TitleStmtValue" maxOccurs="1" />
-      <xs:element name="author" type="self:Author" maxOccurs="unbounded" />
+      <!-- <xs:element name="author" type="self:Author" maxOccurs="unbounded" /> -->
     </xs:sequence>
   </xs:complexType>
 

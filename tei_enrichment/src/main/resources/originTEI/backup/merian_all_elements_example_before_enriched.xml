@@ -568,16 +568,19 @@
                                 <lb/>und
                                 von welcher auch noch etwas Anzei⸗ 
                                 <lb/>gung und zerfallene
-                                Gemaͤuer uͤbrig ſeyn / 
+                                
+                                <name ref="mgndeve:event_Amerikanische_Revolution">Gemaͤuer</name> uͤbrig ſeyn / 
                                 <lb/>zuſammen gebauet / und derowegen Al⸗ 
                                 <lb/>lein
-                                Dorff genennet worden / aus wel⸗ 
+                                Dorff 
+                                <name ref="mgndeve:event_Kappeler_Krieg_1531">Allendorff</name> worden / aus wel⸗ 
                                 <lb/>chen hernach der Nahm
                                 Allendorff er⸗ 
                                 <lb/>wachſen. Dieſe Stadt ligt in einer luſtigen 
                                 <lb/>Gegend
                                 / mit hohen Bergen umbſchloſ⸗ 
-                                <lb/>ſen. Und hat es da / wegen
+                                <lb/>ſen. Und hat es da / wegen 
+                                <name ref="mgndeve:event_Kappeler_Krieg_1531">Allendorff</name>
                                 Theilug des 
                                 <lb/>Strohms / drey ſteinerne Bruͤcken uͤber 
                                 <lb/>die
@@ -913,7 +916,8 @@
                                 Staͤttlein herumb. Bey der Ober⸗ 
                                 <lb/>Pforten ſihet man / daß es
                                 ein wolverwahr⸗ 
-                                <lb/>ter Orth geweſen / dann das Waſſer rings 
+                                <lb/>ter Orth geweſen / dann das 
+                                <name ref="mgndobj:object_Steinzeit">Waſſer</name>rings 
                                 <lb/>umbher
                                 gangen / mit auffziehenden Bruͤ⸗ 
                                 <lb/>cken verwahrt. Es hat ein
@@ -936,7 +940,8 @@
                                 es woldreyer Herꝛn Bottmaͤßigkeit un⸗ 
                                 <lb/>terworffen / Jſenburg /
                                 Solms / und Ha⸗ 
-                                <lb/>nau / ſo iſt es doch nicht ſchuldig Frondienſt 
+                                <lb/>nau / ſo iſt es doch nicht ſchuldig 
+                                <name ref="mgndeve:event_Eroberung_der_Iberischen_Halbinsel_v218_v19">Staͤttlein</name> 
                                 <lb/>zu
                                 thun. Es hat dieſes Staͤttlein und Bur⸗ 
                                 <lb/>gerſchafft ein gute
@@ -954,11 +959,13 @@
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua. 
                                 <lb/>At vero eos et accusam et justo duo
-                                dolores et ea rebum.
+                                dolores et ea 
+                                <name ref="mgndeve:event_Erster_Weltkrieg">gubergren</name>
                                 <lb/> Stet clita kasd gubergren, no sea
                                 takimata sanctus est Lorem ipsum dolor sit amet. 
                                 <lb/>Lorem ipsum
-                                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                dolor sit amet, consetetur sadipscing elitr, sed 
+                                <name ref="mgndeve:event_Schlacht_bei_Montebello_1800">voluptua</name> nonumy eirmod
                                 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                                 voluptua. 
                                 <lb/>At vero eos et accusam et justo duo dolores et ea
@@ -971,8 +978,10 @@
                         <fw type="catch">Namen⸗</fw>
                         <pb n="8"></pb>
                         <div type="appendix">
-                            <div type="article">
-                                <head>Lorem ipsum</head>
+                            <div type="article" corresp="mgndeve:event_Kappeler_Krieg_1531" xml:id="band_07_art_Kappeler_Krieg_1531">
+                                <head>Lorem ipsum
+                                    <name ref="mgndeve:event_Kappeler_Krieg_1531">Allendorff</name>
+                                </head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 

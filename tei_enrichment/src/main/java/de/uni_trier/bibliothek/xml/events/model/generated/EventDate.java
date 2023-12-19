@@ -7,7 +7,6 @@
 
 package de.uni_trier.bibliothek.xml.events.model.generated;
 
-import java.math.BigInteger;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
@@ -23,21 +22,21 @@ import jakarta.xml.bind.annotation.XmlType;
  * <complexType name="EventDate">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <attribute name="from">
+ *       <attribute name="from-custom">
  *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
  *         </simpleType>
  *       </attribute>
- *       <attribute name="to">
+ *       <attribute name="to-custom">
  *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
  *         </simpleType>
  *       </attribute>
- *       <attribute name="when">
+ *       <attribute name="when-custom">
  *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
  *         </simpleType>
  *       </attribute>
@@ -52,83 +51,83 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(name = "EventDate")
 public class EventDate {
 
-    @XmlAttribute(name = "from")
-    protected BigInteger from;
-    @XmlAttribute(name = "to")
-    protected BigInteger to;
-    @XmlAttribute(name = "when")
-    protected BigInteger when;
+    @XmlAttribute(name = "from-custom")
+    protected String fromCustom;
+    @XmlAttribute(name = "to-custom")
+    protected String toCustom;
+    @XmlAttribute(name = "when-custom")
+    protected String whenCustom;
 
     /**
-     * Ruft den Wert der from-Eigenschaft ab.
+     * Ruft den Wert der fromCustom-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getFrom() {
-        return from;
+    public String getFromCustom() {
+        return fromCustom;
     }
 
     /**
-     * Legt den Wert der from-Eigenschaft fest.
+     * Legt den Wert der fromCustom-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setFrom(BigInteger value) {
-        this.from = value;
+    public void setFromCustom(String value) {
+        this.fromCustom = value;
     }
 
     /**
-     * Ruft den Wert der to-Eigenschaft ab.
+     * Ruft den Wert der toCustom-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getTo() {
-        return to;
+    public String getToCustom() {
+        return toCustom;
     }
 
     /**
-     * Legt den Wert der to-Eigenschaft fest.
+     * Legt den Wert der toCustom-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setTo(BigInteger value) {
-        this.to = value;
+    public void setToCustom(String value) {
+        this.toCustom = value;
     }
 
     /**
-     * Ruft den Wert der when-Eigenschaft ab.
+     * Ruft den Wert der whenCustom-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getWhen() {
-        return when;
+    public String getWhenCustom() {
+        return whenCustom;
     }
 
     /**
-     * Legt den Wert der when-Eigenschaft fest.
+     * Legt den Wert der whenCustom-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setWhen(BigInteger value) {
-        this.when = value;
+    public void setWhenCustom(String value) {
+        this.whenCustom = value;
     }
 
 }

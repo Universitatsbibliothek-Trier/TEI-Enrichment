@@ -1135,7 +1135,10 @@ public class EntityListEnricher {
 					break;
 				case "ConferenceOrEvent":
 				case "SeriesOfConferenceOrEvent":
-					categoriesPoints.put("event", categoriesPoints.get("event") + 1);
+				categoriesPoints.put("event", categoriesPoints.get("event") + 1);
+					break;
+				case "HistoricSingleEventOrEra":
+					categoriesPoints.put("event", categoriesPoints.get("event") + 10);
 					break;
 				case "PlaceOrGeographicName":
 				case "AdministrativeUnit":
@@ -1162,7 +1165,6 @@ public class EntityListEnricher {
 				case "ProductNameOrBrandName":
 				case "SoftwareProduct":
 				case "SubjectHeadingSensoStricto":
-				case "HistoricSingleEventOrEra":
 					categoriesPoints.put("object", categoriesPoints.get("object") + 1);
 					break;
 				case "CorporateBody":

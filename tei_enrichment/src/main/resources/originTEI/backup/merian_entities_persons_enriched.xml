@@ -4,19 +4,14 @@
         <fileDesc>
             <titleStmt>
                 <title> Merian online: Index vorhandener Entitäten. </title>
-                <author>Team Merian online</author>
             </titleStmt>
-            <editionStmt>
-                <edition>Beta draft.</edition>
-            </editionStmt>
             <extent/>
             <publicationStmt>
-                <publisher>Universitätsbibliothek Trier</publisher>
+                <publisher></publisher>
                 <pubPlace>Trier</pubPlace>
-                <date>2023</date>
-                <idno>1</idno>
+                <date>2024</date>
                 <availability>
-                    <p>CC-0-Lizenz</p>
+                    <p>Creative Commons Attribution 4.0 International (CC-BY-4.0)</p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
@@ -52,8 +47,8 @@
                                 <item>DifferentiatedPerson</item>
                             </list> 
                         </note>
-                        <birth when="1755"/>
-                        <death when="1824"/>
+                        <birth when-custom="1755"/>
+                        <death when-custom="1824"/>
                         <link target="merian_hessen.xml#band_07_art_paul_goldmann"/>
                         <link target="merian_hessen.xml#band_07_art_some_5"/>
                         <link target="merian_hessen.xml#band_07"/>
@@ -158,8 +153,8 @@
                             <forename>Mattheus</forename>
                             <surname>Merian</surname>
                         </persName>
-                        <death when="1650"/>
-                        <birth when="1593"/>
+                        <death when-custom="1650-06-19"/>
+                        <birth when-custom="1593-09-22"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Person</item>
@@ -230,8 +225,8 @@
                             <forename>Martinus</forename>
                             <surname>Zeiler</surname>
                         </persName>
-                        <death when="1661"/>
-                        <birth when="1589"/>
+                        <death when-custom="1661"/>
+                        <birth when-custom="1589"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Person</item>
@@ -293,8 +288,8 @@
                             <addName>König von Bayern</addName>
                             <addName>Louis</addName>
                         </persName>
-                        <death when="1886"/>
-                        <birth when="1845"/>
+                        <death when-custom="1886-06-13"/>
+                        <birth when-custom="1845-08-25"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Person</item>
@@ -310,7 +305,7 @@
                     </person>
                     <person xml:id="person_Familie_Maltzan">
                         <persName>
-                            <surname>Maltzan</surname>
+                            <surname>Familie Maltzan</surname>
                         </persName>
                         <note type="categories">
                             <list type="supercategory">
@@ -322,7 +317,7 @@
                     </person>
                     <person xml:id="person_Daum_Familie_1660_Irmtraut">
                         <persName>
-                            <surname>Daum</surname>
+                            <surname>Daum, Familie : 1660- : Irmtraut</surname>
                         </persName>
                         <note type="categories">
                             <list type="supercategory">
@@ -334,7 +329,7 @@
                     </person>
                     <person xml:id="person_Verdross_Familie">
                         <persName>
-                            <surname>Verdross</surname>
+                            <surname>Verdross, Familie</surname>
                         </persName>
                         <note type="categories">
                             <list type="supercategory">
@@ -358,7 +353,7 @@
                     </person>
                     <person xml:id="person_Egg_Familie_18._Jh._">
                         <persName>
-                            <surname>Egg</surname>
+                            <surname>Egg, Familie : 18. Jh.-</surname>
                         </persName>
                         <note type="categories">
                             <list type="supercategory">

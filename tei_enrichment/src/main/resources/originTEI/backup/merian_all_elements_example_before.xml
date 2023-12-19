@@ -440,10 +440,11 @@
                                 genent werden. Hingegen ſagt <lb />man auch / daß die Stadt von
                                 etlichen <lb />Doͤrffern / ſo in dieſer Gegend gelegen / <lb />und
                                 von welcher auch noch etwas Anzei⸗ <lb />gung und zerfallene
-                                Gemaͤuer uͤbrig ſeyn / <lb />zuſammen gebauet / und derowegen Al⸗ <lb />lein
-                                Dorff genennet worden / aus wel⸗ <lb />chen hernach der Nahm
+                                <name ref="https://lobid.org/gnd/4187276-9
+                                ">Gemaͤuer</name> uͤbrig ſeyn / <lb />zuſammen gebauet / und derowegen Al⸗ <lb />lein
+                                Dorff <name ref="https://d-nb.info/gnd/4196611-9">Allendorff</name> worden / aus wel⸗ <lb />chen hernach der Nahm
                                 Allendorff er⸗ <lb />wachſen. Dieſe Stadt ligt in einer luſtigen <lb />Gegend
-                                / mit hohen Bergen umbſchloſ⸗ <lb />ſen. Und hat es da / wegen
+                                / mit hohen Bergen umbſchloſ⸗ <lb />ſen. Und hat es da / wegen <name ref="https://d-nb.info/gnd/4196611-9">Allendorff</name>
                                 Theilug des <lb />Strohms / drey ſteinerne Bruͤcken uͤber <lb />die
                                 Werra; uͤber welche zwo Bruͤcke gehen <lb />auß der Statt biß zum
                                 Saltzbronnen und <lb />Sohden, deren etwa bey 60. Dahero die <lb />Stadt
@@ -598,7 +599,7 @@
                                 noch ſtehet / iſt <lb />wol zu ſehen / als ein recht Antiquitaͤt.
                                 Das <lb />Waſſer Nidd gehet faſt umb das Caſtrum <lb />und
                                 Staͤttlein herumb. Bey der Ober⸗ <lb />Pforten ſihet man / daß es
-                                ein wolverwahr⸗ <lb />ter Orth geweſen / dann das Waſſer rings <lb />umbher
+                                ein wolverwahr⸗ <lb />ter Orth geweſen / dann das <name ref="https://d-nb.info/gnd/4057226-2">Waſſer</name>rings <lb />umbher
                                 gangen / mit auffziehenden Bruͤ⸗ <lb />cken verwahrt. Es hat ein
                                 treflich Frucht⸗ <lb />land / und iſt quaſi meditullium Wettera- <lb />viæ:
                                 Hat einen trefflichen Weinwachs <lb />in unterſchiedenen Bergen: Gut
@@ -609,7 +610,7 @@
                                 </choice>
                                 Waͤlden. Lang⸗ <lb />hard / Auwen / und Hanau genandt. Und <lb />ob
                                 es woldreyer Herꝛn Bottmaͤßigkeit un⸗ <lb />terworffen / Jſenburg /
-                                Solms / und Ha⸗ <lb />nau / ſo iſt es doch nicht ſchuldig Frondienſt <lb />zu
+                                Solms / und Ha⸗ <lb />nau / ſo iſt es doch nicht ſchuldig <name ref="https://d-nb.info/gnd/1105667375">Staͤttlein</name> <lb />zu
                                 thun. Es hat dieſes Staͤttlein und Bur⸗ <lb />gerſchafft ein gute
                                 Fiſcherey von dem groſ⸗ <lb />ſen Steg und guͤldenen Badden (alſo
                                 ge⸗ <lb />nant) an / biß an die Muͤhl / dabey ſich die <lb />Burgerey
@@ -621,9 +622,9 @@
                             <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua. <lb />At vero eos et accusam et justo duo
-                                dolores et ea rebum.<lb /> Stet clita kasd gubergren, no sea
+                                dolores et ea <name ref="https://lobid.org/gnd/4079163-4">gubergren</name><lb /> Stet clita kasd gubergren, no sea
                                 takimata sanctus est Lorem ipsum dolor sit amet. <lb />Lorem ipsum
-                                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                dolor sit amet, consetetur sadipscing elitr, sed <name ref="https://d-nb.info/gnd/4620893-8">voluptua</name> nonumy eirmod
                                 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                                 voluptua. <lb />At vero eos et accusam et justo duo dolores et ea
                                 rebum.<lb /> Stet clita kasd gubergren, no sea takimata sanctus est
@@ -634,7 +635,7 @@
                         <pb n="8" />
                         <div type="appendix">
                             <div type="article">
-                                <head>Lorem ipsum</head>
+                                <head>Lorem ipsum<name ref="https://d-nb.info/gnd/4196611-9">Allendorff</name></head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. <lb />At vero eos et accusam et justo

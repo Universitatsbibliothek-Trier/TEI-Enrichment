@@ -7,7 +7,6 @@
 
 package de.uni_trier.bibliothek.xml.persons.model.generated;
 
-import java.math.BigInteger;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
@@ -23,9 +22,9 @@ import jakarta.xml.bind.annotation.XmlType;
  * <complexType name="Death">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       <attribute name="when">
+ *       <attribute name="when-custom">
  *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
  *         </simpleType>
  *       </attribute>
@@ -40,31 +39,31 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(name = "Death")
 public class Death {
 
-    @XmlAttribute(name = "when")
-    protected BigInteger when;
+    @XmlAttribute(name = "when-custom")
+    protected String whenCustom;
 
     /**
-     * Ruft den Wert der when-Eigenschaft ab.
+     * Ruft den Wert der whenCustom-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getWhen() {
-        return when;
+    public String getWhenCustom() {
+        return whenCustom;
     }
 
     /**
-     * Legt den Wert der when-Eigenschaft fest.
+     * Legt den Wert der whenCustom-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setWhen(BigInteger value) {
-        this.when = value;
+    public void setWhenCustom(String value) {
+        this.whenCustom = value;
     }
 
 }

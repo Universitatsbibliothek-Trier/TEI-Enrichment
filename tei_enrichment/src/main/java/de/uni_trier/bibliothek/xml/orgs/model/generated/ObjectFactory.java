@@ -31,6 +31,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 public class ObjectFactory {
 
     private final static QName _NoteList_QNAME = new QName("http://www.tei-c.org/ns/1.0", "list");
+    private final static QName _PublisherOrgName_QNAME = new QName("http://www.tei-c.org/ns/1.0", "orgName");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: de.uni_trier.bibliothek.xml.orgs.model.generated
@@ -127,6 +128,36 @@ public class ObjectFactory {
      */
     public Availability createAvailability() {
         return new Availability();
+    }
+
+    /**
+     * Create an instance of {@link Licence }
+     * 
+     * @return
+     *     the new instance of {@link Licence }
+     */
+    public Licence createLicence() {
+        return new Licence();
+    }
+
+    /**
+     * Create an instance of {@link Date }
+     * 
+     * @return
+     *     the new instance of {@link Date }
+     */
+    public Date createDate() {
+        return new Date();
+    }
+
+    /**
+     * Create an instance of {@link Publisher }
+     * 
+     * @return
+     *     the new instance of {@link Publisher }
+     */
+    public Publisher createPublisher() {
+        return new Publisher();
     }
 
     /**
@@ -240,6 +271,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "list", scope = Note.class)
     public JAXBElement<List> createNoteList(List value) {
         return new JAXBElement<>(_NoteList_QNAME, List.class, Note.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://www.tei-c.org/ns/1.0", name = "orgName", scope = Publisher.class)
+    public JAXBElement<String> createPublisherOrgName(String value) {
+        return new JAXBElement<>(_PublisherOrgName_QNAME, String.class, Publisher.class, value);
     }
 
 }
