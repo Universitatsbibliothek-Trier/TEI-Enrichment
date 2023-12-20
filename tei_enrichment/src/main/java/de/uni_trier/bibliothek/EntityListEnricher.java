@@ -962,6 +962,7 @@ public class EntityListEnricher {
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
 		// preferredNameString = preferredNameString.replaceAll("v.", "v");
 		// preferredNameString = preferredNameString.replaceAll("Chr.", "Chr");
+		preferredNameString = preferredNameString.replaceAll("/", "_");
 		preferredNameString = preferredNameString.replaceAll("<", "_");
 		preferredNameString = preferredNameString.replaceAll(">", "");
 		preferredNameString = preferredNameString.replaceAll("-", "_");
@@ -1027,6 +1028,16 @@ public class EntityListEnricher {
 				}
 				EntityListWriter.writeOrgsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
 			}
+			else if (oberkategorie.equals("object")) {
+				System.out.println("object eintrag");
+				nameGND.setRef("mgndobj:object_" + preferredNameString);
+				sourceGND.setSource("mgndobj:object_" + preferredNameString);
+				if (isOrtsartikel) {
+					divFrontElement.setCorresp("mgndeve:object_" + preferredNameString);
+				}
+				objectHasType = true;
+				EntityListWriter.writeObjectsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+			}
 		
 
 
@@ -1051,21 +1062,7 @@ public class EntityListEnricher {
 			}
 			
 
-			ArrayList<String> objectTerms = new ArrayList<>(Arrays.asList("VersionOfAMusicalWork", "MusicalWork",
-					"FictiveTerm", "Language", "CharactersOrMorphemes", "MeansOfTransportWithIndividualName",
-					"NomenClatureInBiologyOrChemistry", "ProductNameOrBrandName", "SoftwareProduct",
-					"SubjectHeadingSensoStricto"));
-			boolean isObject = !Collections.disjoint(typeTermslist, objectTerms);
-			if (oberkategorie.equals("object")) {
-				System.out.println("object eintrag");
-				nameGND.setRef("mgndobj:object_" + preferredNameString);
-				sourceGND.setSource("mgndobj:object_" + preferredNameString);
-				if (isOrtsartikel) {
-					divFrontElement.setCorresp("mgndeve:object_" + preferredNameString);
-				}
-				objectHasType = true;
-				writeObjectsEntity(jsonObject, preferredNameString, typeTermslist);
-			}
+			
 
 
 			

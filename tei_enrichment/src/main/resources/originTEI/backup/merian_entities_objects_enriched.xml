@@ -60,6 +60,40 @@
                             </list> 
                         </note>
                     </object>
+                    <object xml:id="object_Latein">
+                        <objectIdentifier>
+                            <objectName>Latein</objectName>
+                            <objectName>Lateinische Sprache</objectName>
+                            <objectName>Lateinisch</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4114364-4</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>Language</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Steinzeit">
+                        <objectIdentifier>
+                            <objectName>Steinzeit</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4057226-2</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                    </object>
                 </listObject>
             </div>
         </body>

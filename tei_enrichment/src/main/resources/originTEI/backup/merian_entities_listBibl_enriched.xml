@@ -41,7 +41,7 @@
                     </bibl>
                     <bibl xml:id="listBibl_Sammlung_Monika_und_Günther_Czichon">
                         <title>Sammlung Monika und Günther Czichon</title>
-                        <note type="desc">Sammlung</note>
+                        <note type="desc">Privatsammlung</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Work</item>
@@ -57,6 +57,7 @@
                     <bibl xml:id="listBibl_Chronika">
                         <title>Chronika</title>
                         <title>Chronik</title>
+                        <note type="desc">In Fragmenten erh. chronologische Geschichtsdarstellung von der Zerstörung Troias bis ca. 120 v. Chr. Das Werk endet mit einem hinsichtlich der Echtheit früher umstrittenen Nachtrag</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Work</item>

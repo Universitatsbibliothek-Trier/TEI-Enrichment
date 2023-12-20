@@ -227,6 +227,7 @@
                         </persName>
                         <death when-custom="1661"/>
                         <birth when-custom="1589"/>
+                        <note type="desc">Dt. Geograph, Reiseschriftsteller; Aufseher des Gymnasiums in Ulm, Inspektor der deutschen Schulen</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Person</item>
@@ -290,6 +291,7 @@
                         </persName>
                         <death when-custom="1886-06-13"/>
                         <birth when-custom="1845-08-25"/>
+                        <note type="desc">1864-1886 König, 1886 entmündigt, ungeklärter Tod im Starnberger See; leidenschaftlicher Schlossbauherr, vor allem der Schlösser Neuschwanstein, Herrenchiemsee und Linderhof; Förderer Richard Wagners</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Person</item>
@@ -331,6 +333,7 @@
                         <persName>
                             <surname>Verdross, Familie</surname>
                         </persName>
+                        <note type="desc">1911 nobilitert</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Family</item>
@@ -343,6 +346,7 @@
                         <persName>
                             <surname>St. John. Adelsgeschlecht</surname>
                         </persName>
+                        <note type="desc">Buchbesitz UB Freiburg</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Family</item>
@@ -355,6 +359,7 @@
                         <persName>
                             <surname>Egg, Familie : 18. Jh.-</surname>
                         </persName>
+                        <note type="desc">Büchsenmacherfamilie, seit 1746 Bürger von Oberbuchsiten. Die Nachkommen von Leonz Egg (1720-1792) erlangten im Ausland hohes Ansehen.</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>Family</item>

@@ -159,7 +159,21 @@
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Kappeler_Krieg_1531"/>
                     </event>
-                    <event xml:id="event_Eroberung_der_Iberischen_Halbinsel_v218-v19">
+                    <event xml:id="event_Leuna_Werke_Übernahme_Elf_Aquitaine">
+                        <label>Leuna-Werke / Übernahme / Elf-Aquitaine</label>
+                        <note type="desc">Übernahme der Leuna-Raffinerien durch Elf-Aquitaine 1992; Gegenstand von Prozessen und Parlamentarischen Untersuchungsausschüssen</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>HistoricSingleEventOrEra</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7511453-7</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </event>
+                    <event xml:id="event_Eroberung_der_Iberischen_Halbinsel_v218_v19">
                         <label>Eroberung der Iberischen Halbinsel &lt;v218-v19&gt;</label>
                         <desc>
                             <date from-custom="v218"/>
@@ -181,6 +195,7 @@
                         <label>Schlacht bei Montebello &lt;1800&gt;</label>
                         <label>Schlacht bei Montebello della Battaglia &lt;1800&gt;</label>
                         <desc>
+                            <date when-custom="1800"/>
                             <date when-custom="09.06.1800"/>
                         </desc>
                         <note type="desc">Schlacht</note>

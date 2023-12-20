@@ -46,6 +46,7 @@ import de.uni_trier.bibliothek.xml.events.model.generated.ListEvent;
 import de.uni_trier.bibliothek.xml.listBibl.model.generated.Bibl;
 import de.uni_trier.bibliothek.xml.listBibl.model.generated.ListBibl;
 import de.uni_trier.bibliothek.xml.objects.model.generated.ListObject;
+import de.uni_trier.bibliothek.xml.objects.model.generated.ObjectIdentifier;
 import de.uni_trier.bibliothek.xml.orgs.model.generated.ListOrg;
 import de.uni_trier.bibliothek.xml.orgs.model.generated.Org;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Birth;
@@ -146,7 +147,6 @@ public class EntityListWriter {
 		de.uni_trier.bibliothek.xml.listBibl.model.generated.Body listBiblBody = listBiblText.getBody();
 		de.uni_trier.bibliothek.xml.listBibl.model.generated.Div listBiblDiv = listBiblBody.getDiv();
 		listBibl = listBiblDiv.getListBibl();
-		// System.out.println("listBibl: " + listBibl.toString());
 
 		de.uni_trier.bibliothek.xml.events.model.generated.Text eventsBiblText = teiEvents.getText();
 		de.uni_trier.bibliothek.xml.events.model.generated.Body eventsBody = eventsBiblText.getBody();
@@ -194,15 +194,7 @@ public class EntityListWriter {
 			DivFront divFrontElement) {
 		Bibl bibl = new Bibl();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
-		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
-		preferredNameString = preferredNameString.replaceAll(" ", "_");
-		preferredNameString = preferredNameString.replaceAll(",", "_");
-		System.out.println("PreferredNameString ist: " + preferredNameString);
-
-		Map<QName, String> attributesMap = bibl.getOtherAttributes();
 		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
-		attributesMap.put(qname, "listBibl_" + preferredNameString);
-
 		bibl.getTitleOrNoteOrLink().add(preferredNameStringOriginal);
 		if(jsonObject.has("variantName"))
 		{
@@ -217,10 +209,10 @@ public class EntityListWriter {
 		boolean alreadyHasLink = false;
 		boolean alreadyHasTitle = false;
 		for (Bibl listBiblElement : arrayListBibl) {
-			List<Object> titleOrNoteOrLink = listBiblElement.getTitleOrNoteOrLink();
-			for (Object titleOrNoteOrLinkObject : titleOrNoteOrLink) {
-				if (titleOrNoteOrLinkObject instanceof String) {
-					if (titleOrNoteOrLinkObject.equals(preferredNameStringOriginal)) {
+			Map<QName, String> attributeName = listBiblElement.getOtherAttributes();
+			String xmlID = attributeName.get(qname);
+				if (xmlID!=null) {
+					if (xmlID.equals("listBibl_" + preferredName)) {
 						bibl = listBiblElement;
 						alreadyHasTitle = true;
 						List<Object> titleOrNoteOrLinkList = listBiblElement.getTitleOrNoteOrLink();
@@ -235,16 +227,38 @@ public class EntityListWriter {
 						}
 					}
 				}
-			}
+			
 		}
 		if (!alreadyHasTitle) {
-			if (jsonObject.has("broaderTermInstantial")) {
+
+			Map<QName, String> attributesMap = bibl.getOtherAttributes();
+			attributesMap.put(qname, "listBibl_" + preferredName);
+
+			if (jsonObject.has("biographicalOrHistoricalInformation")) {
+				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
+				String detailedInformationString = detailedInformationArray.getString(0);
+				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
+				de.uni_trier.bibliothek.xml.listBibl.model.generated.Note note = listBiblTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(detailedInformationString);
+				bibl.getTitleOrNoteOrLink().add(note);
+			}
+			else if (jsonObject.has("broaderTermInstantial")) {
 				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
 				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
 				de.uni_trier.bibliothek.xml.listBibl.model.generated.Note note = listBiblTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(jsonObjectBroaderTermString);
+				bibl.getTitleOrNoteOrLink().add(note);
+			}
+			else if (jsonObject.has("definition")) {
+				JSONArray definitionArray = jsonObject.getJSONArray("definition");
+				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
+				String definitionString = definitionArray.getString(0);
+				de.uni_trier.bibliothek.xml.listBibl.model.generated.Note note = listBiblTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(definitionString);
 				bibl.getTitleOrNoteOrLink().add(note);
 			}
 			de.uni_trier.bibliothek.xml.listBibl.model.generated.Note categoriesNote = listBiblTEIObjectFactory
@@ -267,56 +281,46 @@ public class EntityListWriter {
 			if (!typeTermsListCopy.isEmpty()) {
 
 				for (String termString : typeTermsListCopy) {
-					// System.out.println("termString: " + termString);
 					switch (termString) {
-
 						case "Person":
 							typeTermslist.remove("Person");
 							biblListSuperList.getItem().add("Person");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Person");
 							break;
 						case "Work":
 							typeTermslist.remove("Work");
 							biblListSuperList.getItem().add("Work");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Work");
 							break;
 						case "Family":
 							typeTermslist.remove("Family");
 							biblListSuperList.getItem().add("Family");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Family");
 							break;
 						case "ConferenceOrEvent":
 							typeTermslist.remove("ConferenceOrEvent");
 							biblListSuperList.getItem().add("ConferenceOrEvent");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "ConferenceOrEvent");
 							break;
 						case "PlaceOrGeographicName":
 							typeTermslist.remove("PlaceOrGeographicName");
 							biblListSuperList.getItem().add("PlaceOrGeographicName");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "PlaceOrGeographicName");
 							break;
 						case "CorporateBody":
 							typeTermslist.remove("CorporateBody");
 							biblListSuperList.getItem().add("CorporateBody");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "CorporateBody");
 							break;
 						case "SubjectHeading":
 							typeTermslist.remove("SubjectHeading");
 							biblListSuperList.getItem().add("SubjectHeading");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "SubjectHeading");
 							break;
 					}
 				}
 
 				for (String subcategory : typeTermslist) {
-					// System.out.println("subcategory: " + subcategory);
 					hasSubcategory = true;
 					biblListSubList.getItem().add(subcategory);
 				}
@@ -337,7 +341,6 @@ public class EntityListWriter {
 
 			de.uni_trier.bibliothek.xml.listBibl.model.generated.BiblIdno biblIdno = listBiblTEIObjectFactory
 					.createBiblIdno();
-
 			if (jsonObject.has("id")) {
 				String dnbURL = jsonObject.getString("id");
 				biblIdno.setContent(dnbURL);
@@ -348,7 +351,6 @@ public class EntityListWriter {
 
 			if (jsonObject.has("sameAs")) {
 				JSONArray sameAsArray = jsonObject.getJSONArray("sameAs");
-				// System.out.println("sameAsArray: " + sameAsArray);
 				for (int i = 0; i < sameAsArray.length(); i++) {
 					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
 					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
@@ -372,9 +374,9 @@ public class EntityListWriter {
 		} 
 		if (divFrontElement.getType() != null) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredNameString);
+			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.listBibl.model.generated.Link linkArtikel = listBiblTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredNameString);
+			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
 			bibl.getTitleOrNoteOrLink().add(linkArtikel);
 		}
 		if (!alreadyHasLink) {
@@ -394,49 +396,15 @@ public class EntityListWriter {
 	//PERSON ENTITY
 	public static void writePersonEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
 			DivFront divFrontElement) {
-		//todo person
-		
 		Person person = new Person();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 
-		if(preferredNameStringOriginal.contains("Familie")){
-			System.out.println("preferred name contains family");
-			PersName personName = new PersName();
-			personName.setSurname(preferredNameStringOriginal);
-			// System.out.println("0-6 substring in preferredname" + preferredNameStringOriginal.substring(0, 6));
-			// if(preferredNameStringOriginal.substring(0, 7).equals("Familie"))
-			// {
-			// 	System.out.println("first substring is familie");
-			// 	String surname = preferredNameStringOriginal.substring(8, preferredNameStringOriginal.length());
-			// 	personName.setSurname(surname);
-			// }
-			// else{
-			// 	System.out.println("familie nach komma");
-			// 	String surname = preferredNameStringOriginal.substring(0, preferredNameStringOriginal.indexOf(","));
-			// 	personName.setSurname(surname);
-			// }
-			person.getPersNameOrNoteOrBirth().add(personName);
-
-		}
-		else if(preferredNameStringOriginal.contains("Adelsgeschlecht")){
+		if(preferredNameStringOriginal.contains("Familie") || preferredNameStringOriginal.contains("Adelsgeschlecht")){
 			PersName personName = new PersName();
 			personName.setSurname(preferredNameStringOriginal);
 			person.getPersNameOrNoteOrBirth().add(personName);
 		}
 
-		// System.out.println(preferredNameStringOriginal + "");
-		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
-		preferredNameString = preferredNameString.replaceAll(" ", "_");
-		preferredNameString = preferredNameString.replaceAll("-", "_");
-		preferredNameString = preferredNameString.replaceAll(",", "_");
-		preferredNameString = preferredNameString.replaceAll(":", "");
-		preferredNameString = preferredNameString.replaceAll("___", "_");
-		preferredNameString = preferredNameString.replaceAll("__", "_");
-		// System.out.println("PreferredNameString ist: " + preferredNameString);
-
-		
-
-		//family: get preferred name, get nachname, wenn family im string enthalten ist
 		if(jsonObject.has("titleOfNobility"))
 		{
 			JSONArray titleOfNobilityArray = jsonObject.getJSONArray("titleOfNobility");
@@ -445,15 +413,12 @@ public class EntityListWriter {
 			{
 				person.setRole(titleOfNobilityObject.getString("label"));
 			}
-			// JSONArray titleOfNobilityArray = titleOfNobility.getJSONArray("titleOfNobility");
 		}
 
 		if(jsonObject.has("preferredNameEntityForThePerson"))
 		{
 			PersName personName = new PersName();
 			JSONObject preferredNameEntityForThePerson = jsonObject.getJSONObject("preferredNameEntityForThePerson");
-			// System.out.println("preferredNameEntityForThePerson ist: " + preferredNameEntityForThePerson);
-
 			if(preferredNameEntityForThePerson.has("forename")){
 				JSONArray forename = preferredNameEntityForThePerson.getJSONArray("forename");
 				personName.setForename((String) forename.get(0));
@@ -476,7 +441,6 @@ public class EntityListWriter {
 		
 		if(jsonObject.has("variantNameEntityForThePerson"))
 		{
-			
 			JSONArray variantNameEntityForThePerson = jsonObject.getJSONArray("variantNameEntityForThePerson");
 			for (int i = 0; i < variantNameEntityForThePerson.length(); i++) {
 				PersName personName = new PersName();
@@ -511,10 +475,9 @@ public class EntityListWriter {
 		for (Person listPersonElement : arrayListPerson) {
 			Map<QName, String> attributeName = listPersonElement.getOtherAttributes();
 			QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
-
 			String xmlID = attributeName.get(qname);
 				if (xmlID!=null) {
-					if (xmlID.equals("person_" + preferredNameString)) {
+					if (xmlID.equals("person_" + preferredName)) {
 						person = listPersonElement;
 						alreadyHasTitle = true;
 						List<Object> persNameOrNoteOrBirthList = listPersonElement.getPersNameOrNoteOrBirth();
@@ -529,44 +492,17 @@ public class EntityListWriter {
 						}
 					}
 				}
-			// }
 		}
 		if (!alreadyHasTitle) {
 
 			Map<QName, String> attributesMap = person.getOtherAttributes();
 			QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
-			attributesMap.put(qname, "person_" + preferredNameString);
+			attributesMap.put(qname, "person_" + preferredName);
 			Death death = new Death();
 			if(jsonObject.has("dateOfDeath"))
 			{
 				JSONArray deathDateArray = jsonObject.getJSONArray("dateOfDeath");
 				String deathDateArrayString = deathDateArray.getString(0);
-				// char minus = '-';
-				// String deathDateArrayStringYear = "";
-				// if(deathDateArrayString.charAt(0)==(minus))
-				// {
-				// 	deathDateArrayStringYear = deathDateArrayString;
-				// }
-				// else{
-				// 	for (int i = 0; i < deathDateArrayString.length(); i++) {
-				// 	char c = deathDateArrayString.charAt(i); 
-					
-				// 	if(c=='-')
-				// 	{
-				// 		break;
-				// 	}
-				// 	else{
-				// 		deathDateArrayStringYear = deathDateArrayStringYear + c;
-				// 	}
-					
-				// 	// System.out.print(c);
-				// }
-
-				// }
-				
-				// System.out.println("deathDateArrayString: " + deathDateArrayStringYear);
-				
-				// BigInteger deathDateBigInteger = new BigInteger(deathDateArrayStringYear);
 				death.setWhenCustom(deathDateArrayString);
 				person.getPersNameOrNoteOrBirth().add(death);
 			}
@@ -575,41 +511,36 @@ public class EntityListWriter {
 			{
 				JSONArray birthDateArray = jsonObject.getJSONArray("dateOfBirth");
 				String birthArrayString = birthDateArray.getString(0);
-				// String birthArrayStringYear = "";
-				// char minus = '-';
-				// // String birthDateArrayStringYear = "";
-				// if(birthArrayString.charAt(0)==(minus))
-				// {
-				// 	birthArrayStringYear = birthArrayString;
-				// }
-				// for (int i = 0; i < birthArrayString.length(); i++) {
-				// 	char c = birthArrayString.charAt(i); 
-					
-				// 	if(c=='-')
-				// 	{
-				// 		break;
-				// 	}
-				// 	else{
-				// 		birthArrayStringYear = birthArrayStringYear + c;
-				// 	}
-					
-				// 	// System.out.print(c);
-				// }
-				// // System.out.println("birthDateArrayString: " + birthArrayString);
 				Birth birth = new Birth();
-				// BigInteger deathDateBigInteger = new BigInteger(birthArrayStringYear);
 				birth.setWhenCustom(birthArrayString);
 				person.getPersNameOrNoteOrBirth().add(birth);
 			}
 
-
-			if (jsonObject.has("broaderTermInstantial")) {
+			if (jsonObject.has("biographicalOrHistoricalInformation")) {
+				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
+				String detailedInformationString = detailedInformationArray.getString(0);
+				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
+				de.uni_trier.bibliothek.xml.persons.model.generated.Note note = personsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(detailedInformationString);
+				person.getPersNameOrNoteOrBirth().add(note);
+			}
+			else if (jsonObject.has("broaderTermInstantial")) {
 				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
 				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
 				de.uni_trier.bibliothek.xml.persons.model.generated.Note note = personsTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(jsonObjectBroaderTermString);
+				person.getPersNameOrNoteOrBirth().add(note);
+			}
+			else if (jsonObject.has("definition")) {
+				JSONArray definitionArray = jsonObject.getJSONArray("definition");
+				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
+				String definitionString = definitionArray.getString(0);
+				de.uni_trier.bibliothek.xml.persons.model.generated.Note note = personsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(definitionString);
 				person.getPersNameOrNoteOrBirth().add(note);
 			}
 			de.uni_trier.bibliothek.xml.persons.model.generated.Note categoriesNote = personsTEIObjectFactory
@@ -717,36 +648,21 @@ public class EntityListWriter {
 							person.getPersNameOrNoteOrBirth().add(personIdnoWiki);
 						}
 					}
-					
-
 				}
-
 			}
 			listPersonList.add(person);
 		} 
 		
 		if (divFrontElement.getType() != null) {
-			System.out.println("divFrontElement: " + divFrontElement.getType());
-			//bis hierhin funktionierts
 			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredNameString);
+			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.persons.model.generated.Link linkArtikel = personsTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredNameString);
-			System.out.println("linkTarget: " + linkArtikel.getTarget());
-
-
-			// Map<QName, String> attributesMap = divFrontElement.getOtherAttributes();
-			// QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
-			// attributesMap.put(qname, "person" + preferredNameString);
-
-
+			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
 			person.getPersNameOrNoteOrBirth().add(linkArtikel);
-			System.out.println("linkTarget added: " + linkArtikel.getTarget());
 		}
 		if (!alreadyHasLink) {
 			de.uni_trier.bibliothek.xml.persons.model.generated.Link link = personsTEIObjectFactory.createLink();
 			link.setTarget(fileName + reference);
-			System.out.println("bandlik added: " + link.getTarget());
 			person.getPersNameOrNoteOrBirth().add(link);
 		}
 	}
@@ -760,24 +676,8 @@ public class EntityListWriter {
 	public static void writeEventsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
 			DivFront divFrontElement) {
 		Event event = new Event();
-		
-		
-
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
-		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
-		preferredNameString = preferredNameString.replaceAll(">", "");
-		preferredNameString = preferredNameString.replaceAll("<", "_");
-		// preferredNameString = preferredNameString.replaceAll("<", "_");
-		preferredNameString = preferredNameString.replaceAll(" ", "_");
-		preferredNameString = preferredNameString.replaceAll(",", "_");
-		preferredNameString = preferredNameString.replaceAll("___", "_");
-		preferredNameString = preferredNameString.replaceAll("__", "_");
-		
-		System.out.println("PreferredNameString ist: " + preferredNameString);
-
-		Map<QName, String> attributesMap = event.getOtherAttributes();
 		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
-		attributesMap.put(qname, "event_" + preferredNameString);
 
 		event.getLabelOrDescOrNote().add(preferredNameStringOriginal);
 		if(jsonObject.has("variantName"))
@@ -794,10 +694,11 @@ public class EntityListWriter {
 		boolean alreadyHasLink = false;
 		boolean alreadyHasTitle = false;
 		for (Event eventListElement : arrayListEvent) {
-			List<Object> labelOrDescOrNote = eventListElement.getLabelOrDescOrNote();
-			for (Object labelOrDescOrNoteObject : labelOrDescOrNote) {
-				if (labelOrDescOrNoteObject instanceof String) {
-					if (labelOrDescOrNoteObject.equals(preferredNameStringOriginal)) {
+
+			Map<QName, String> attributeName = eventListElement.getOtherAttributes();
+			String xmlID = attributeName.get(qname);
+				if (xmlID!=null) {
+					if (xmlID.equals("event_" + preferredName)) {
 						event = eventListElement;
 						alreadyHasTitle = true;
 						List<Object> labelOrDescOrNoteObjectList = eventListElement.getLabelOrDescOrNote();
@@ -812,81 +713,72 @@ public class EntityListWriter {
 						}
 					}
 				}
-			}
+			
 		}
 		if (!alreadyHasTitle) {
-			// System.out.println("");
+			Map<QName, String> attributesMap = event.getOtherAttributes();
+			attributesMap.put(qname, "event_" + preferredName);
 			Desc descEvent = new Desc();
 			if(jsonObject.has("dateOfProduction"))
 			{
-				EventDate eventsDate = new EventDate();
 				JSONArray jsonArray = jsonObject.getJSONArray("dateOfProduction");
-				String dateOfProduction = jsonArray.getString(0);
-				if (jsonArray.length() > 1 )
-				{
-					dateOfProduction = jsonArray.getString(1);
-				}
-				eventsDate.setWhenCustom(dateOfProduction);
-				descEvent.getDate().add(eventsDate);
+				for (int i = 0; i < jsonArray.length(); i++) {
+					EventDate eventsDate = new EventDate();
+					eventsDate.setWhenCustom(jsonArray.getString(i));
+					descEvent.getDate().add(eventsDate);
+				  }	
 			}
 			if(jsonObject.has("dateOfEstablishment"))
 			{
-				EventDate eventsDate = new EventDate();
 				JSONArray jsonArray = jsonObject.getJSONArray("dateOfEstablishment");
-				String dateOfEstablishment = jsonArray.getString(0);
-				if (jsonArray.length() > 1 )
-				{
-					dateOfEstablishment = jsonArray.getString(1);
-				}
-				eventsDate.setFromCustom(dateOfEstablishment);
-				descEvent.getDate().add(eventsDate);
+				for (int i = 0; i < jsonArray.length(); i++) {
+					EventDate eventsDate = new EventDate();
+					eventsDate.setFromCustom(jsonArray.getString(i));
+					descEvent.getDate().add(eventsDate);
+				  }	
 			}
 			if(jsonObject.has("dateOfTermination"))
 			{
-				EventDate eventsDate = new EventDate();
 				JSONArray jsonArray = jsonObject.getJSONArray("dateOfTermination");
-				String dateOfTermination = jsonArray.getString(0);
-				if (jsonArray.length() > 1 )
-				{
-					dateOfTermination = jsonArray.getString(1);
-				}
-				eventsDate.setToCustom(dateOfTermination);
-				descEvent.getDate().add(eventsDate);
+				for (int i = 0; i < jsonArray.length(); i++) {
+					EventDate eventsDate = new EventDate();
+					eventsDate.setToCustom(jsonArray.getString(i));
+					descEvent.getDate().add(eventsDate);
+				  }	
 			}
 			if(jsonObject.has("dateOfEstablishmentAndTermination"))
 			{
-				EventDate eventsDate = new EventDate();
 				JSONArray jsonArray = jsonObject.getJSONArray("dateOfEstablishmentAndTermination");
-				String dateOfProduction = jsonArray.getString(0);
-				if (jsonArray.length() > 1 )
-				{
-					dateOfProduction = jsonArray.getString(1);
-				}
-				eventsDate.setWhenCustom(dateOfProduction);
-				descEvent.getDate().add(eventsDate);
+				for (int i = 0; i < jsonArray.length(); i++) {
+					EventDate eventsDate = new EventDate();
+					eventsDate.setWhenCustom(jsonArray.getString(i));
+					descEvent.getDate().add(eventsDate);
+				  }	
 			}
 			if(jsonObject.has("associatedDate"))
 			{
-				EventDate eventsDate = new EventDate();
 				JSONArray jsonArray = jsonObject.getJSONArray("associatedDate");
-				String dateOfProduction = jsonArray.getString(0);
-				if (jsonArray.length() > 1 )
-				{
-					dateOfProduction = jsonArray.getString(1);
-				}
-				eventsDate.setWhenCustom(dateOfProduction);
-				descEvent.getDate().add(eventsDate);
+				for (int i = 0; i < jsonArray.length(); i++) {
+					EventDate eventsDate = new EventDate();
+					eventsDate.setWhenCustom(jsonArray.getString(i));
+					descEvent.getDate().add(eventsDate);
+				  }	
 			}
-			
-
-			
-
-
 			if(!descEvent.getDate().isEmpty())
 			{
 				event.getLabelOrDescOrNote().add(descEvent);
 			}
-			if (jsonObject.has("broaderTermInstantial")) {
+
+			if (jsonObject.has("biographicalOrHistoricalInformation")) {
+				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
+				String detailedInformationString = detailedInformationArray.getString(0);
+				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
+				de.uni_trier.bibliothek.xml.events.model.generated.Note note = eventsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(detailedInformationString);
+				event.getLabelOrDescOrNote().add(note);
+			}
+			else if (jsonObject.has("broaderTermInstantial")) {
 				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
 				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
 				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
@@ -895,6 +787,16 @@ public class EntityListWriter {
 				note.getContent().add(jsonObjectBroaderTermString);
 				event.getLabelOrDescOrNote().add(note);
 			}
+			else if (jsonObject.has("definition")) {
+				JSONArray definitionArray = jsonObject.getJSONArray("definition");
+				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
+				String definitionString = definitionArray.getString(0);
+				de.uni_trier.bibliothek.xml.events.model.generated.Note note = eventsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(definitionString);
+				event.getLabelOrDescOrNote().add(note);
+			}
+			
 			de.uni_trier.bibliothek.xml.events.model.generated.Note categoriesNote = eventsTEIObjectFactory
 					.createNote();
 			categoriesNote.setType("categories");
@@ -913,58 +815,47 @@ public class EntityListWriter {
 			}
 			List<String> typeTermsListCopy = new ArrayList<String>(typeTermslist); 
 			if (!typeTermsListCopy.isEmpty()) {
-
 				for (String termString : typeTermsListCopy) {
-					// System.out.println("termString: " + termString);
 					switch (termString) {
-
 						case "Person":
 							typeTermslist.remove("Person");
 							eventsListSuperList.getItem().add("Person");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Person");
 							break;
 						case "Work":
 							typeTermslist.remove("Work");
 							eventsListSuperList.getItem().add("Work");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Work");
 							break;
 						case "Family":
 							typeTermslist.remove("Family");
 							eventsListSuperList.getItem().add("Family");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Family");
 							break;
 						case "ConferenceOrEvent":
 							typeTermslist.remove("ConferenceOrEvent");
 							eventsListSuperList.getItem().add("ConferenceOrEvent");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "ConferenceOrEvent");
 							break;
 						case "PlaceOrGeographicName":
 							typeTermslist.remove("PlaceOrGeographicName");
 							eventsListSuperList.getItem().add("PlaceOrGeographicName");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "PlaceOrGeographicName");
 							break;
 						case "CorporateBody":
 							typeTermslist.remove("CorporateBody");
 							eventsListSuperList.getItem().add("CorporateBody");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "CorporateBody");
 							break;
 						case "SubjectHeading":
 							typeTermslist.remove("SubjectHeading");
 							eventsListSuperList.getItem().add("SubjectHeading");
 							hasSupercategory = true;
-							// System.out.println("Item to add: " + "SubjectHeading");
 							break;
 					}
 				}
 
 				for (String subcategory : typeTermslist) {
-					// System.out.println("subcategory: " + subcategory);
 					hasSubcategory = true;
 					eventsListSubList.getItem().add(subcategory);
 				}
@@ -996,7 +887,6 @@ public class EntityListWriter {
 
 			if (jsonObject.has("sameAs")) {
 				JSONArray sameAsArray = jsonObject.getJSONArray("sameAs");
-				// System.out.println("sameAsArray: " + sameAsArray);
 				for (int i = 0; i < sameAsArray.length(); i++) {
 					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
 					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
@@ -1020,9 +910,9 @@ public class EntityListWriter {
 		} 
 		if (divFrontElement.getType() != null) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredNameString);
+			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.events.model.generated.Link linkArtikel = eventsTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredNameString);
+			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
 			event.getLabelOrDescOrNote().add(linkArtikel);
 		}
 		if (!alreadyHasLink) {
@@ -1038,36 +928,16 @@ public class EntityListWriter {
 	//ORGS ENTITY
 	//ORGS ENTITY
 	//ORGS ENTITY
-	public static void writeOrgsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
-			DivFront divFrontElement) {
-
-				//warum immer wieder neuer eintrag???
+	public static void writeOrgsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement) {
 		Org org = new Org();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
-		String preferredNameString = preferredNameStringOriginal.replaceAll(", ", "_");
-		preferredNameString = preferredNameString.replaceAll(" ", "_");
-		preferredNameString = preferredNameString.replaceAll("v.", "v");
-		preferredNameString = preferredNameString.replaceAll("Chr.", "Chr");
-		preferredNameString = preferredNameString.replaceAll("<", "_");
-		preferredNameString = preferredNameString.replaceAll(">", "");
-		preferredNameString = preferredNameString.replaceAll(",", "_");
-		preferredNameString = preferredNameString.replaceAll("[()]", "");
-		System.out.println("PreferredNameString ist: " + preferredNameString);
+		// de.uni_trier.bibliothek.xml.orgs.model.generated.Note descNote = orgsTEIObjectFactory.createNote();
+		// descNote.setType("desc");
 
-		de.uni_trier.bibliothek.xml.orgs.model.generated.Note descNote = orgsTEIObjectFactory.createNote();
-		descNote.setType("desc");
+		
 		de.uni_trier.bibliothek.xml.orgs.model.generated.Note categoriesNote = orgsTEIObjectFactory.createNote();
 		categoriesNote.setType("categories");
-
-		Map<QName, String> attributesMap = org.getOtherAttributes();
 		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
-		attributesMap.put(qname, "org_" + preferredNameString);
-
-
-
-
-		// System.out.println("PreferredNameString ist: " + preferredNameString);
-
 		org.getOrgNameOrIdnoOrLink().add(preferredNameStringOriginal);
 		if(jsonObject.has("variantName"))
 		{
@@ -1076,133 +946,9 @@ public class EntityListWriter {
 			{
 				org.getOrgNameOrIdnoOrLink().add(variantNameArray.get(i));
 			}
-			
 		}
 
-		
-
-		ArrayList<Org> arrayListOrgs = new ArrayList<Org>(orgsList);
-		boolean alreadyHasLink = false;
-		boolean alreadyHasTitle = false;
-		for (Org orgListElement : arrayListOrgs) {
-			List<Object> orgNameOrIdnoOrLink = orgListElement.getOrgNameOrIdnoOrLink();
-			for (Object orgNameOrIdnoOrLinkObject : orgNameOrIdnoOrLink) {
-				if (orgNameOrIdnoOrLinkObject instanceof String) {
-					if (orgNameOrIdnoOrLinkObject.equals(preferredNameStringOriginal)) {
-						
-						org = orgListElement;
-						alreadyHasTitle = true;
-						List<Object> orgNameOrIdnoOrLinkObjectList = orgListElement.getOrgNameOrIdnoOrLink();
-						for (Object orgNameOrIdnoOrLinkObjectElement : orgNameOrIdnoOrLinkObjectList) {
-							if (orgNameOrIdnoOrLinkObjectElement instanceof de.uni_trier.bibliothek.xml.orgs.model.generated.Link) {
-								de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.orgs.model.generated.Link)orgNameOrIdnoOrLinkObjectElement;
-								if ((linkElement.getTarget()).equals(fileName + reference)) {
-									System.out.println("alreadyhaslink: " + alreadyHasLink);
-									alreadyHasLink = true;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		if (!alreadyHasTitle) {
-			if (jsonObject.has("broaderTermInstantial")) {
-				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-				
-				descNote.setType("desc");
-				descNote.getContent().add(jsonObjectBroaderTermString);
-				
-			}
-			
-			de.uni_trier.bibliothek.xml.orgs.model.generated.List orgsListSuperList = new de.uni_trier.bibliothek.xml.orgs.model.generated.List();
-
-			de.uni_trier.bibliothek.xml.orgs.model.generated.List orgsListSubList = new de.uni_trier.bibliothek.xml.orgs.model.generated.List();
-
-			boolean hasSupercategory = false;
-			boolean hasSubcategory = false;
-
-			orgsListSuperList.setType("supercategory");
-			orgsListSubList.setType("subcategory");
-
-			if (typeTermslist.contains("AuthorityResource")) {
-				typeTermslist.remove("AuthorityResource");
-			}
-			List<String> typeTermsListCopy = new ArrayList<String>(typeTermslist); 
-			if (!typeTermsListCopy.isEmpty()) {
-
-				for (String termString : typeTermsListCopy) {
-					// System.out.println("termString: " + termString);
-					switch (termString) {
-
-						case "Person":
-							typeTermslist.remove("Person");
-							orgsListSuperList.getItem().add("Person");
-							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Person");
-							break;
-						case "Work":
-							typeTermslist.remove("Work");
-							orgsListSuperList.getItem().add("Work");
-							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Work");
-							break;
-						case "Family":
-							typeTermslist.remove("Family");
-							orgsListSuperList.getItem().add("Family");
-							hasSupercategory = true;
-							// System.out.println("Item to add: " + "Family");
-							break;
-						case "ConferenceOrEvent":
-							typeTermslist.remove("ConferenceOrEvent");
-							orgsListSuperList.getItem().add("ConferenceOrEvent");
-							hasSupercategory = true;
-							// System.out.println("Item to add: " + "ConferenceOrEvent");
-							break;
-						case "PlaceOrGeographicName":
-							typeTermslist.remove("PlaceOrGeographicName");
-							orgsListSuperList.getItem().add("PlaceOrGeographicName");
-							hasSupercategory = true;
-							// System.out.println("Item to add: " + "PlaceOrGeographicName");
-							break;
-						case "CorporateBody":
-							typeTermslist.remove("CorporateBody");
-							orgsListSuperList.getItem().add("CorporateBody");
-							hasSupercategory = true;
-							// System.out.println("Item to add: " + "CorporateBody");
-							break;
-						case "SubjectHeading":
-							typeTermslist.remove("SubjectHeading");
-							orgsListSuperList.getItem().add("SubjectHeading");
-							hasSupercategory = true;
-							// System.out.println("Item to add: " + "SubjectHeading");
-							break;
-					}
-				}
-
-				for (String subcategory : typeTermslist) {
-					// System.out.println("subcategory: " + subcategory);
-					hasSubcategory = true;
-					orgsListSubList.getItem().add(subcategory);
-				}
-
-				if (hasSupercategory) {
-					JAXBElement<de.uni_trier.bibliothek.xml.orgs.model.generated.List> orgNoteList = orgsTEIObjectFactory
-							.createNoteList(orgsListSuperList);
-					categoriesNote.getContent().add(orgNoteList);
-				}
-
-				if (hasSubcategory) {
-					JAXBElement<de.uni_trier.bibliothek.xml.orgs.model.generated.List> orgsNoteList = orgsTEIObjectFactory
-							.createNoteList(orgsListSubList);
-					categoriesNote.getContent().add(orgsNoteList);
-				}
-				
-			}
-
-			de.uni_trier.bibliothek.xml.orgs.model.generated.OrgsIdno orgsIdno = orgsTEIObjectFactory
+		de.uni_trier.bibliothek.xml.orgs.model.generated.OrgsIdno orgsIdno = orgsTEIObjectFactory
 					.createOrgsIdno();
 
 			if (jsonObject.has("id")) {
@@ -1215,11 +961,9 @@ public class EntityListWriter {
 
 			if (jsonObject.has("sameAs")) {
 				JSONArray sameAsArray = jsonObject.getJSONArray("sameAs");
-				// System.out.println("sameAsArray: " + sameAsArray);
 				for (int i = 0; i < sameAsArray.length(); i++) {
 					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
 					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
-					
 					if(jsonObjectCollection.has("name"))
 					{
 						String collectionName = jsonObjectCollection.getString("name");
@@ -1236,14 +980,152 @@ public class EntityListWriter {
 				}
 
 			}
+
+			
+			
+
+
+		ArrayList<Org> arrayListOrgs = new ArrayList<Org>(orgsList);
+		boolean alreadyHasLink = false;
+		boolean alreadyHasTitle = false;
+		for (Org orgListElement : arrayListOrgs) {
+			Map<QName, String> attributeName = orgListElement.getOtherAttributes();
+			String xmlID = attributeName.get(qname);
+				if (xmlID!=null) {
+					if (xmlID.equals("org_" + preferredName)) {
+						org = orgListElement;
+						alreadyHasTitle = true;
+						List<Object> orgNameOrIdnoOrLinkObjectList = orgListElement.getOrgNameOrIdnoOrLink();
+						for (Object orgNameOrIdnoOrLinkObjectElement : orgNameOrIdnoOrLinkObjectList) {
+							if (orgNameOrIdnoOrLinkObjectElement instanceof de.uni_trier.bibliothek.xml.orgs.model.generated.Link) {
+								de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.orgs.model.generated.Link)orgNameOrIdnoOrLinkObjectElement;
+								if ((linkElement.getTarget()).equals(fileName + reference)) {
+									System.out.println("alreadyhaslink: " + alreadyHasLink);
+									alreadyHasLink = true;
+								}
+							}
+						}
+					}
+				}
+			
+		}
+		
+		if (!alreadyHasTitle) {
+			Map<QName, String> attributesMap = org.getOtherAttributes();
+			attributesMap.put(qname, "org_" + preferredName);
+
+			if (jsonObject.has("biographicalOrHistoricalInformation")) {
+				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
+				String detailedInformationString = detailedInformationArray.getString(0);
+				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
+				de.uni_trier.bibliothek.xml.orgs.model.generated.Note note = orgsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(detailedInformationString);
+				org.getOrgNameOrIdnoOrLink().add(note);
+			} else if (jsonObject.has("broaderTermInstantial")) {
+				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");				
+				de.uni_trier.bibliothek.xml.orgs.model.generated.Note descNote = orgsTEIObjectFactory.createNote();
+				descNote.setType("desc");
+				descNote.getContent().add(jsonObjectBroaderTermString);	
+				org.getOrgNameOrIdnoOrLink().add(descNote);			
+			}
+			else if (jsonObject.has("definition")) {
+				JSONArray definitionArray = jsonObject.getJSONArray("definition");
+				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
+				String definitionString = definitionArray.getString(0);
+				de.uni_trier.bibliothek.xml.orgs.model.generated.Note note = orgsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(definitionString);
+				org.getOrgNameOrIdnoOrLink().add(note);
+			}
+
+			
+			
+			de.uni_trier.bibliothek.xml.orgs.model.generated.List orgsListSuperList = new de.uni_trier.bibliothek.xml.orgs.model.generated.List();
+
+			de.uni_trier.bibliothek.xml.orgs.model.generated.List orgsListSubList = new de.uni_trier.bibliothek.xml.orgs.model.generated.List();
+
+			boolean hasSupercategory = false;
+			boolean hasSubcategory = false;
+
+			orgsListSuperList.setType("supercategory");
+			orgsListSubList.setType("subcategory");
+
+			if (typeTermslist.contains("AuthorityResource")) {
+				typeTermslist.remove("AuthorityResource");
+			}
+			List<String> typeTermsListCopy = new ArrayList<String>(typeTermslist); 
+			if (!typeTermsListCopy.isEmpty()) {
+				for (String termString : typeTermsListCopy) {
+					switch (termString) {
+						case "Person":
+							typeTermslist.remove("Person");
+							orgsListSuperList.getItem().add("Person");
+							hasSupercategory = true;
+							break;
+						case "Work":
+							typeTermslist.remove("Work");
+							orgsListSuperList.getItem().add("Work");
+							hasSupercategory = true;
+							break;
+						case "Family":
+							typeTermslist.remove("Family");
+							orgsListSuperList.getItem().add("Family");
+							hasSupercategory = true;
+							break;
+						case "ConferenceOrEvent":
+							typeTermslist.remove("ConferenceOrEvent");
+							orgsListSuperList.getItem().add("ConferenceOrEvent");
+							hasSupercategory = true;
+							break;
+						case "PlaceOrGeographicName":
+							typeTermslist.remove("PlaceOrGeographicName");
+							orgsListSuperList.getItem().add("PlaceOrGeographicName");
+							hasSupercategory = true;
+							break;
+						case "CorporateBody":
+							typeTermslist.remove("CorporateBody");
+							orgsListSuperList.getItem().add("CorporateBody");
+							hasSupercategory = true;
+							break;
+						case "SubjectHeading":
+							typeTermslist.remove("SubjectHeading");
+							orgsListSuperList.getItem().add("SubjectHeading");
+							hasSupercategory = true;
+							break;
+					}
+				}
+
+				for (String subcategory : typeTermslist) {
+					hasSubcategory = true;
+					orgsListSubList.getItem().add(subcategory);
+				}
+
+				if (hasSupercategory) {
+					JAXBElement<de.uni_trier.bibliothek.xml.orgs.model.generated.List> orgNoteList = orgsTEIObjectFactory
+							.createNoteList(orgsListSuperList);
+					categoriesNote.getContent().add(orgNoteList);
+				}
+
+				if (hasSubcategory) {
+					JAXBElement<de.uni_trier.bibliothek.xml.orgs.model.generated.List> orgsNoteList = orgsTEIObjectFactory
+							.createNoteList(orgsListSubList);
+					categoriesNote.getContent().add(orgsNoteList);
+				}
+			}
+
+			
 			System.out.println("org eingetragen");
 			orgsList.add(org);
 		} 
+		
 		if (divFrontElement.getType() != null) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredNameString);
+			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkArtikel = orgsTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredNameString);
+			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
 			org.getOrgNameOrIdnoOrLink().add(linkArtikel);
 		}
 		if (!alreadyHasLink) {
@@ -1251,10 +1133,215 @@ public class EntityListWriter {
 			link.setTarget(fileName + reference);
 			org.getOrgNameOrIdnoOrLink().add(link);
 		}
+		if (!alreadyHasTitle) {		
+			org.getOrgNameOrIdnoOrLink().add(categoriesNote);
+		}
+	}
+
+
+
+
+
+	//OBJECTS
+	//OBJECTS
+	//OBJECTS
+	//OBJECTS
+	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement) {
+		de.uni_trier.bibliothek.xml.objects.model.generated.Object object = new de.uni_trier.bibliothek.xml.objects.model.generated.Object();
+		String preferredNameStringOriginal = jsonObject.getString("preferredName");
+		// de.uni_trier.bibliothek.xml.objects.model.generated.Note descNote = objectsTEIObjectFactory.createNote();
+		// descNote.setType("desc");
+		de.uni_trier.bibliothek.xml.objects.model.generated.Note categoriesNote = objectsTEIObjectFactory.createNote();
+		categoriesNote.setType("categories");
+		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
+
+		
+		ArrayList<de.uni_trier.bibliothek.xml.objects.model.generated.Object> arrayListObjects = new ArrayList<de.uni_trier.bibliothek.xml.objects.model.generated.Object>(objectList);
+		boolean alreadyHasLink = false;
+		boolean alreadyHasTitle = false;
+		for (de.uni_trier.bibliothek.xml.objects.model.generated.Object objectListElement : arrayListObjects) {
+			Map<QName, String> attributeName = objectListElement.getOtherAttributes();
+			String xmlID = attributeName.get(qname);
+				if (xmlID!=null) {
+					if (xmlID.equals("object_" + preferredName)) {
+						object = objectListElement;
+						alreadyHasTitle = true;
+						List<Object> orgNameOrIdnoOrLinkObjectList = objectListElement.getObjectIdentifierOrNoteOrLink();
+						for (Object orgNameOrIdnoOrLinkObjectElement : orgNameOrIdnoOrLinkObjectList) {
+							if (orgNameOrIdnoOrLinkObjectElement instanceof de.uni_trier.bibliothek.xml.objects.model.generated.Link) {
+								de.uni_trier.bibliothek.xml.objects.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.objects.model.generated.Link)orgNameOrIdnoOrLinkObjectElement;
+								if ((linkElement.getTarget()).equals(fileName + reference)) {
+									// System.out.println("alreadyhaslink: " + alreadyHasLink);
+									alreadyHasLink = true;
+								}
+							}
+						}
+					}
+				}
+			
+		}
+		if (!alreadyHasTitle) {
+			Map<QName, String> attributesMap = object.getOtherAttributes();
+			attributesMap.put(qname, "object_" + preferredName);
+			ObjectIdentifier objectIdentifier = new ObjectIdentifier();
+
+			objectIdentifier.getObjectNameOrIdno().add(preferredNameStringOriginal);
+			if(jsonObject.has("variantName"))
+			{
+				JSONArray variantNameArray = jsonObject.getJSONArray("variantName");
+				for(int i = 0; i < variantNameArray.length(); i++)
+				{
+					objectIdentifier.getObjectNameOrIdno().add(variantNameArray.get(i));
+				}
+			}
+			if (jsonObject.has("biographicalOrHistoricalInformation")) {
+				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
+				String detailedInformationString = detailedInformationArray.getString(0);
+				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
+				de.uni_trier.bibliothek.xml.objects.model.generated.Note note = objectsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(detailedInformationString);
+				object.getObjectIdentifierOrNoteOrLink().add(note);
+			} else if (jsonObject.has("broaderTermInstantial")) {
+				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");				
+				de.uni_trier.bibliothek.xml.objects.model.generated.Note descNote = objectsTEIObjectFactory.createNote();
+				descNote.setType("desc");
+				descNote.getContent().add(jsonObjectBroaderTermString);	
+				object.getObjectIdentifierOrNoteOrLink().add(descNote);			
+			}
+			else if (jsonObject.has("definition")) {
+				JSONArray definitionArray = jsonObject.getJSONArray("definition");
+				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
+				String definitionString = definitionArray.getString(0);
+				de.uni_trier.bibliothek.xml.objects.model.generated.Note note = objectsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(definitionString);
+				object.getObjectIdentifierOrNoteOrLink().add(note);
+			}
+			//usinginstruction??
+			
+			de.uni_trier.bibliothek.xml.objects.model.generated.List objectsListSuperList = new de.uni_trier.bibliothek.xml.objects.model.generated.List();
+
+			de.uni_trier.bibliothek.xml.objects.model.generated.List objectsListSubList = new de.uni_trier.bibliothek.xml.objects.model.generated.List();
+
+			boolean hasSupercategory = false;
+			boolean hasSubcategory = false;
+
+			objectsListSuperList.setType("supercategory");
+			objectsListSubList.setType("subcategory");
+
+			if (typeTermslist.contains("AuthorityResource")) {
+				typeTermslist.remove("AuthorityResource");
+			}
+			List<String> typeTermsListCopy = new ArrayList<String>(typeTermslist); 
+			if (!typeTermsListCopy.isEmpty()) {
+				for (String termString : typeTermsListCopy) {
+					switch (termString) {
+						case "Person":
+							typeTermslist.remove("Person");
+							objectsListSuperList.getItem().add("Person");
+							hasSupercategory = true;
+							break;
+						case "Work":
+							typeTermslist.remove("Work");
+							objectsListSuperList.getItem().add("Work");
+							hasSupercategory = true;
+							break;
+						case "Family":
+							typeTermslist.remove("Family");
+							objectsListSuperList.getItem().add("Family");
+							hasSupercategory = true;
+							break;
+						case "ConferenceOrEvent":
+							typeTermslist.remove("ConferenceOrEvent");
+							objectsListSuperList.getItem().add("ConferenceOrEvent");
+							hasSupercategory = true;
+							break;
+						case "PlaceOrGeographicName":
+							typeTermslist.remove("PlaceOrGeographicName");
+							objectsListSuperList.getItem().add("PlaceOrGeographicName");
+							hasSupercategory = true;
+							break;
+						case "CorporateBody":
+							typeTermslist.remove("CorporateBody");
+							objectsListSuperList.getItem().add("CorporateBody");
+							hasSupercategory = true;
+							break;
+						case "SubjectHeading":
+							typeTermslist.remove("SubjectHeading");
+							objectsListSuperList.getItem().add("SubjectHeading");
+							hasSupercategory = true;
+							break;
+					}
+				}
+
+				for (String subcategory : typeTermslist) {
+					hasSubcategory = true;
+					objectsListSubList.getItem().add(subcategory);
+				}
+
+				if (hasSupercategory) {
+					JAXBElement<de.uni_trier.bibliothek.xml.objects.model.generated.List> objectNoteList = objectsTEIObjectFactory
+							.createNoteList(objectsListSuperList);
+					categoriesNote.getContent().add(objectNoteList);
+				}
+
+				if (hasSubcategory) {
+					JAXBElement<de.uni_trier.bibliothek.xml.objects.model.generated.List> objectNoteList = objectsTEIObjectFactory
+							.createNoteList(objectsListSubList);
+					categoriesNote.getContent().add(objectNoteList);
+				}
+			}
+
+			de.uni_trier.bibliothek.xml.objects.model.generated.ObjectIdno objectIdno = objectsTEIObjectFactory.createObjectIdno();
+
+			if (jsonObject.has("id")) {
+				String dnbURL = jsonObject.getString("id");
+				objectIdno.setContent(dnbURL);
+				objectIdno.setType("URI");
+				objectIdno.setSubtype("GND");
+				objectIdentifier.getObjectNameOrIdno().add(objectIdno);
+			}
+
+			if (jsonObject.has("sameAs")) {
+				JSONArray sameAsArray = jsonObject.getJSONArray("sameAs");
+				for (int i = 0; i < sameAsArray.length(); i++) {
+					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
+					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
+					if(jsonObjectCollection.has("name"))
+					{
+						String collectionName = jsonObjectCollection.getString("name");
+						if (collectionName.equals("Wikidata")) {
+							de.uni_trier.bibliothek.xml.objects.model.generated.ObjectIdno objectIdnoWiki = objectsTEIObjectFactory.createObjectIdno();
+							objectIdnoWiki.setContent(jsonObjectCollection.getString("id"));
+							objectIdnoWiki.setType("URI");
+							objectIdnoWiki.setSubtype("WIKIDATA");
+							objectIdentifier.getObjectNameOrIdno().add(objectIdnoWiki);
+						}
+					}
+				}
+			}
+			System.out.println("object eingetragen");
+			object.getObjectIdentifierOrNoteOrLink().add(objectIdentifier);
+			objectList.add(object);
+		} 
+		if (divFrontElement.getType() != null) {
+			String referenceWithoutHash = reference.substring(1, reference.length());
+			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			de.uni_trier.bibliothek.xml.objects.model.generated.Link linkArtikel = objectsTEIObjectFactory.createLink();
+			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
+			object.getObjectIdentifierOrNoteOrLink().add(linkArtikel);
+		}
+		if (!alreadyHasLink) {
+			de.uni_trier.bibliothek.xml.objects.model.generated.Link link = objectsTEIObjectFactory.createLink();
+			link.setTarget(fileName + reference);
+			object.getObjectIdentifierOrNoteOrLink().add(link);
+		}
 
 		if (!alreadyHasTitle) {
-			org.getOrgNameOrIdnoOrLink().add(descNote);
-			org.getOrgNameOrIdnoOrLink().add(categoriesNote);
+			object.getObjectIdentifierOrNoteOrLink().add(categoriesNote);
 		}
 	}
 }

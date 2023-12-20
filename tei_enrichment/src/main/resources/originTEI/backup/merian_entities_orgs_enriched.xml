@@ -53,8 +53,8 @@
                         <orgName>Abbaye Saint Grégoire Munster</orgName>
                         <orgName>Benediktinerkloster Münster (Münster, Oberelsass)</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4497639-2</idno>
+                        <note type="desc">Benediktinerkloster um 660 gegründet, 675 urkundl. erwähnt, 1235-1648 Reichsabtei, August 1791 aufgehoben, Gebäude 1802 abgebrochen</note>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="desc">Benediktinerkloster</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>CorporateBody</item>
@@ -80,8 +80,8 @@
                         <orgName>Matthaei Meriani Seel. Erben (Frankfurt, Main)</orgName>
                         <orgName>Matthæus Merianus Erben (Frankfurt, Main)</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/6009670-6</idno>
+                        <note type="desc">Der Verlag wurde seit dem Tod von Matthäus Merian d.Ä., 1650, unter der Bezeichnung "Matthäus Merians Seel. Erben" (oder ähnlich) geführt, bis zur Auflösung 1727</note>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="desc"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>CorporateBody</item>
@@ -92,9 +92,9 @@
                         <orgName>Elektrizitätswerk Trier</orgName>
                         <orgName>Städtisches Elektrizitätswerk Trier</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/213942-X</idno>
+                        <note type="desc">Elektrizitätsversorgungsunternehmen</note>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Elektrizitätswerk_Trier"/>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="desc">Elektrizitätsversorgungsunternehmen</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>CorporateBody</item>
