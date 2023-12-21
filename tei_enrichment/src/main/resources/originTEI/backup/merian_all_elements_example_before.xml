@@ -201,7 +201,7 @@
                 <head>Lorem ipsum</head>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <lb />At
-                    vero eos et accusam<name ref="https://d-nb.info/gnd/5003531-9">Stet</name> et justo duo dolores et ea rebum.<lb />  clita kasd
+                    vero eos et accusam<name ref="https://d-nb.info/gnd/5003531-9 https://d-nb.info/gnd/10307833-2 ">Stet</name> et justo duo dolores et ea rebum.<lb />  clita kasd
                     gubergren, no sea takimata sanctus est <name ref="https://d-nb.info/gnd/4784990-3">ipsum</name> dolor sit amet. <lb />Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore <subst><del>labore</del><add place="across">dolore</add></subst> magna aliquyam erat, sed diam voluptua. <lb />At
@@ -328,12 +328,17 @@
                                 das Fuͤrſtenthum Heſſen anderſt nicht / als was etwan Lehenſchafft / <lb />Schutz
                                 / Geleyt oder dergleichen ſonderbare Beding / particulariter
                                 mitbringen / re- <lb />cognoſciren; ſondern eine gar abgeſonderte
-                                Landſchafft / <quote source="https://d-nb.info/gnd/4350182-5">"Der
+                                Landſchafft / <quote source="https://d-nb.info/gnd/4350182-5 https://d-nb.info/gnd/4350182-5">"Der
                                 Sandmann, der fürchterliche Sandmann ist der alte
                                     Advokat Coppelius, der manchmal bei uns zu Mittage isst! – Aber
                                 die grässlichste Gestalt hätte mir nicht tieferes
                                     Entsetzen erregen können als eben dieser Coppelius.</quote>
                                 ſowol als der Hundsruck / <lb />Weſterich / und andere / jederzeit
+                                <quote source="https://d-nb.info/gnd/10309365-5 https://d-nb.info/gnd/10309365-5">"Der
+                                    Sandmann, der fürchterliche Sandmann ist der alte
+                                        Advokat Coppelius, der manchmal bei uns zu Mittage isst! – Aber
+                                    die grässlichste Gestalt hätte mir nicht tieferes
+                                        Entsetzen erregen können als eben dieser Coppelius.</quote>
                                 geweſen / und noch. Was aber die Graffſchafft Naſſau⸗ <lb />Dillenberg
                                 belange / iſt dieſelbe nicht allein nicht unter Heſſen gelegen /
                                 ſondern auch nicht <lb />in dem Creyſe / darein Heſſen gehoͤrig /
@@ -410,7 +415,7 @@
                                 Waͤlder in beyden Fuͤrſtenthumben / unter welchen das <lb />Nieder⸗Fuͤrſtenthum
                                 ein recht Wald⸗Land iſt / ſeyen / kan man beſehen in der Coſmo- <lb />graphia
                                 Johann Rauen / cap. XIV. vom Heſſen⸗Land pag. 408. 409. 410. Jn
-                                dieſen <lb />Bergen giebt es allerley Metall / inſonderheit von
+                                dieſen <lb /><name ref="https://d-nb.info/gnd/4816780-0">Metall</name> giebt es allerley Metall / inſonderheit von
                                 Silber / Kupffer / Bley und Eiſen: <lb />Es giebt auch gute
                                 Steinbruͤche / ſchoͤnen weiſſen Alabaſter / auch Schifferſtein / <lb />Tuffſtein
                                 / Gibs / Kalckſtein / und Stein⸗Kohlen: Und in den vielen Waͤldern
@@ -430,6 +435,11 @@
                             </p>
                         </div>
                         <lb />
+                        <div type="article"><head><name ref="https://d-nb.info/gnd/16173035-8 https://d-nb.info/gnd/16064613-3">Neumarckt</name></head><lb/><p>Text von Neumarckt allgemein</p>
+                            <div type="article"><head><name ref="https://d-nb.info/gnd/10353183-X">1.Neumarckt</name></head><lb/><p>Text von Neumarckt_1</p></div>
+                            <div type="article"><head><name ref="https://d-nb.info/gnd/7506471-6">2.Neumarckt</name></head><lb/><p>Text von Neumarckt_2</p></div>
+                        </div>
+
                         <div type="article">
                             <head><name ref="https://d-nb.info/gnd/4018118-2">Paul Goldmann</name> /
                                 an der Werra.</head>
@@ -975,7 +985,7 @@
                         </div>
                         <lb />
                         <div type="article">
-                            <head><name ref="https://d-nb.info/gnd/5003531-9">Stet</name></head>
+                            <head><name ref="https://d-nb.info/gnd/5003531-9 https://d-nb.info/gnd/10362585-9">Stet</name></head>
                             <lb />
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat <lb />ſeiner
                                 Antiquitet viel Zeugnnſſen / alſo dz <lb />dafuͤr gehalten wird / es
@@ -1040,8 +1050,7 @@
                         <pb n="13" />
                         <div type="appendix">
                             <div type="article">
-                                <head>Lorem ipsum<name ref="https://d-nb.info/gnd/4240073-9"
-                                    >Regensburg</name></head>
+                                <head>Lorem ipsum<name ref="https://d-nb.info/gnd/16044471-8">Solothurn</name></head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. <lb />At vero eos et accusam et justo

@@ -196,6 +196,253 @@
                         <link target="merian_hessen.xml#band_07"/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4328452-8</idno>
                     </place>
+                    <place xml:id="place_Landgrafschaft_Hessen">
+                        <placeName>Landgrafschaft Hessen</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4240073-9</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Landgrafschaft</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>AdministrativeUnit</item>
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                            </list>
+                        </note>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Landgrafschaft_Hessen"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Landgrafschaft_Hessen"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Landgrafschaft_Hessen"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Landgrafschaft_Hessen"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </place>
+                    <place xml:id="place_Buchonia">
+                        <placeName>Buchonia</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4371007-4</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Hess.-thüring. Waldgebiet</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>NaturalGeographicUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Nassauer_Land">
+                        <placeName>Nassauer Land</placeName>
+                        <placeName>Nassau (Landschaft)</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4203270-2</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Landschaft</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>NaturalGeographicUnit</item>
+                            </list>
+                        </note>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </place>
+                    <place xml:id="place_Klostergut_Volkenroda">
+                        <placeName>Klostergut Volkenroda</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4784990-3</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Landwirtschaftlicher Betrieb</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                                <item>CorporateBody</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>BuildingOrMemorial</item>
+                            </list>
+                        </note>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Klostergut_Volkenroda"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </place>
+                    <place xml:id="place_Westerwald">
+                        <placeName>Westerwald</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4065773-5</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Westerwald"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Mittelgebirge</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>NaturalGeographicUnit</item>
+                            </list>
+                        </note>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </place>
+                    <place xml:id="place_Grafschaft_Wittgenstein">
+                        <placeName>Grafschaft Wittgenstein</placeName>
+                        <placeName>Wittgenstein (Grafschaft)</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4350182-5</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Nach dem Erlöschen der Hauptlinie im Mannesstamm 1357/8 fiel der größte Teil der Grafschaft mit der Burg Wittgenstein an Grafen von Sayn, die sich seitdem Grafen von Sayn und Wittgenstein nannten</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list>
+                        </note>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </place>
+                    <place xml:id="place_Frankfurt_am_Main">
+                        <placeName>Frankfurt am Main</placeName>
+                        <placeName>Francofurti ad Moenum</placeName>
+                        <placeName>Frankfurtas prie Maino</placeName>
+                        <placeName>فرنکفورٹ</placeName>
+                        <placeName>Franconovada</placeName>
+                        <placeName>Francfort-sur-le-Main</placeName>
+                        <placeName>Francofort (Main)</placeName>
+                        <placeName>Frankfort on the Main</placeName>
+                        <placeName>Stadt Frankfurt am Main</placeName>
+                        <placeName>Francofurti (Moenum)</placeName>
+                        <placeName>Francoforte (Meno)</placeName>
+                        <placeName>Freie Stadt Frankfurt</placeName>
+                        <placeName>Franckfurt (Mayn)</placeName>
+                        <placeName>Francfort (Main)</placeName>
+                        <placeName>Franconovurd</placeName>
+                        <placeName>Franckfurt am Mayn</placeName>
+                        <placeName>Groß-Frankfurt (Main)</placeName>
+                        <placeName>Frankfurt a.M.</placeName>
+                        <placeName>Frankfurt-na-Maǐne</placeName>
+                        <placeName>Frankfurt am Mayn</placeName>
+                        <placeName>Frankfort (Main)</placeName>
+                        <placeName>Moenofrancofurtano</placeName>
+                        <placeName>Franckfurt am Meyn</placeName>
+                        <placeName>Francofurtum ad Moenum</placeName>
+                        <placeName>Traiectum ad Moenum</placeName>
+                        <placeName>Trajectum ad Moenum</placeName>
+                        <placeName>Francofordia ad Moenum</placeName>
+                        <placeName>Frankfurt nad Menem</placeName>
+                        <placeName>Frankfurt nad Mohanom</placeName>
+                        <placeName>Francfurt am Mayn</placeName>
+                        <placeName>فرانکفرٹ</placeName>
+                        <placeName>Frankfurt (Main)</placeName>
+                        <placeName>Francofurtum ad Mogum</placeName>
+                        <placeName>Franckfurth (Mayn)</placeName>
+                        <placeName>Frankfurt a. M.</placeName>
+                        <placeName>Mæno Franckofurtensis</placeName>
+                        <placeName>Frankfurt nad Mohanem</placeName>
+                        <placeName>Maeno Franckofurtensis</placeName>
+                        <placeName>PRNQPWRṬ D-MYYN</placeName>
+                        <placeName>Francofurtum (Moenum)</placeName>
+                        <placeName>Frankfūrṭ</placeName>
+                        <placeName>Frankfurt-na-Majne</placeName>
+                        <placeName>Frānkfurṭ</placeName>
+                        <placeName>Phrankphurtē (Main)</placeName>
+                        <placeName>Franqfûrt (Main)</placeName>
+                        <placeName>Francoforte sul Meno</placeName>
+                        <placeName>Frankfurt-na-Maǐni</placeName>
+                        <placeName>Franckfort am Meyn</placeName>
+                        <placeName>Helenopolis</placeName>
+                        <placeName>Franckenfurt am Meyn</placeName>
+                        <placeName>Frainkfurṭ</placeName>
+                        <placeName>فرینکفرٹ</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4018118-2</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Stadt (vor 1200) im Regierungsbezirk Darmstadt, röm. Kastelle u. Zivilsiedlung, merowing. Siedlung u. Pfalz 794 urkundl. erwähnt</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                            </list>
+                        </note>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Frankfurt_am_Main"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </place>
+                    <place xml:id="place_Wetterau">
+                        <placeName>Wetterau</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4065855-7</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Landschaft zwischen dem Vogelsberg und dem Taunus, überwiegend vom Wetteraukreis eingenommen</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>NaturalGeographicUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Grafschaft_Solms">
+                        <placeName>Grafschaft Solms</placeName>
+                        <placeName>Solms (Grafschaft)</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4528964-5</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Grafschaft</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Grafschaft_Hanau">
+                        <placeName>Grafschaft Hanau</placeName>
+                        <placeName>Hanau (Grafschaft)</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4023202-5</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Grafschaft</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>AdministrativeUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Gut_Schwitten">
+                        <placeName>Gut Schwitten</placeName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4816780-0</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">ca. 1543 entstanden, befand sich bis 1920 im Besitz d. von Fürst Anatol Lieven, danach Staatsbesitz</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                                <item>CorporateBody</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>BuildingOrMemorial</item>
+                            </list>
+                        </note>
+                    </place>
                 </listPlace>
             </div>
         </body>

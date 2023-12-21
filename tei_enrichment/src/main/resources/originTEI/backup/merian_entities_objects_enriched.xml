@@ -60,13 +60,29 @@
                             </list> 
                         </note>
                     </object>
+                    <object xml:id="object_Gene">
+                        <objectIdentifier>
+                            <objectName>Gene</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/10307833-2</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                        <note type="desc">Brit. Rockquartett (Martin Rossiter, Steve Mason, Kevin Miles, Mat James)</note>
+                    </object>
                     <object xml:id="object_Latein">
                         <objectIdentifier>
                             <objectName>Latein</objectName>
-                            <objectName>Lateinische Sprache</objectName>
-                            <objectName>Lateinisch</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4114364-4</idno>
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Lateinische Sprache</objectName>
+                            <objectName>Lateinisch</objectName>
                         </objectIdentifier>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="categories">
@@ -77,6 +93,106 @@
                                 <item>Language</item>
                             </list>
                         </note>
+                        <note type="desc">Benutzt für die Sprachstufe des Altertums; für die im Mittelalter benutzte Sprache verwende SW Mittellatein, für die Neuzeit SW Neulatein.</note>
+                    </object>
+                    <object xml:id="object_Immersion">
+                        <objectIdentifier>
+                            <objectName>Immersion</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/10309365-5</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Hessen_Volk">
+                        <objectIdentifier>
+                            <objectName>Hessen &lt;Volk&gt;</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4024731-4</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Niederländer">
+                        <objectIdentifier>
+                            <objectName>Niederländer</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4131365-3</idno>
+                            <objectName>Holländer</objectName>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Benutzt, soweit außerhalb der Niederlande lebend, für die Niederländer in den Niederlanden verwende Niederlande</note>
+                    </object>
+                    <object xml:id="object_Bingo_Players">
+                        <objectIdentifier>
+                            <objectName>Bingo Players</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/16173035-8</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Bingo_Players"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                        <note type="desc">DJ Duo (Maarten Hoogstraten, Paul Christian)</note>
+                    </object>
+                    <object xml:id="object_FM_Audio">
+                        <objectIdentifier>
+                            <objectName>FM Audio</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/16064613-3</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_FM_Audio"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                        <note type="desc">Dt. Electronic-Duo (Florian Arndt, Mike De Ville = Michael Schuessleder)</note>
+                    </object>
+                    <object xml:id="object_Taxidriver">
+                        <objectIdentifier>
+                            <objectName>Taxidriver</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/10353183-X</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Taxidriver"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                        <note type="desc">Electronica-Duo (Laszlo Milasovsky und Michael Rieck)</note>
                     </object>
                     <object xml:id="object_Steinzeit">
                         <objectIdentifier>
@@ -84,6 +200,38 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4057226-2</idno>
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Brainclaw">
+                        <objectIdentifier>
+                            <objectName>Brainclaw</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/10362585-9</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Brainclaw"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_First_State">
+                        <objectIdentifier>
+                            <objectName>First State</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/16044471-8</idno>
+                        </objectIdentifier>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_First_State"/>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="categories">
                             <list type="supercategory">

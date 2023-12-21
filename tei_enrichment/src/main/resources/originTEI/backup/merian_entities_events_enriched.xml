@@ -120,6 +120,20 @@
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Freiburger_Literaturgespräch"/>
                     </event>
+                    <event xml:id="event_Deutschland_Zusammenbruch_1945">
+                        <label>Deutschland / Zusammenbruch (1945)</label>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>HistoricSingleEventOrEra</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7506471-6</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Deutschland_Zusammenbruch_1945"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </event>
                     <event xml:id="event_Amerikanische_Revolution">
                         <label>Amerikanische Revolution</label>
                         <desc>

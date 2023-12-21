@@ -51,12 +51,14 @@ import de.uni_trier.bibliothek.xml.orgs.model.generated.ListOrg;
 import de.uni_trier.bibliothek.xml.orgs.model.generated.Org;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Birth;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Death;
+import de.uni_trier.bibliothek.xml.persons.model.generated.Link;
 import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
 import de.uni_trier.bibliothek.xml.persons.model.generated.PersName;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
 import de.uni_trier.bibliothek.xml.places.model.generated.ListPlace;
 import de.uni_trier.bibliothek.xml.places.model.generated.Note;
 import de.uni_trier.bibliothek.xml.places.model.generated.Place;
+import de.uni_trier.bibliothek.xml.places.model.generated.PlaceIdno;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Add;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Body;
@@ -931,10 +933,6 @@ public class EntityListWriter {
 	public static void writeOrgsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement) {
 		Org org = new Org();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
-		// de.uni_trier.bibliothek.xml.orgs.model.generated.Note descNote = orgsTEIObjectFactory.createNote();
-		// descNote.setType("desc");
-
-		
 		de.uni_trier.bibliothek.xml.orgs.model.generated.Note categoriesNote = orgsTEIObjectFactory.createNote();
 		categoriesNote.setType("categories");
 		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
@@ -1149,13 +1147,9 @@ public class EntityListWriter {
 	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement) {
 		de.uni_trier.bibliothek.xml.objects.model.generated.Object object = new de.uni_trier.bibliothek.xml.objects.model.generated.Object();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
-		// de.uni_trier.bibliothek.xml.objects.model.generated.Note descNote = objectsTEIObjectFactory.createNote();
-		// descNote.setType("desc");
 		de.uni_trier.bibliothek.xml.objects.model.generated.Note categoriesNote = objectsTEIObjectFactory.createNote();
 		categoriesNote.setType("categories");
 		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
-
-		
 		ArrayList<de.uni_trier.bibliothek.xml.objects.model.generated.Object> arrayListObjects = new ArrayList<de.uni_trier.bibliothek.xml.objects.model.generated.Object>(objectList);
 		boolean alreadyHasLink = false;
 		boolean alreadyHasTitle = false;
@@ -1180,48 +1174,11 @@ public class EntityListWriter {
 				}
 			
 		}
+		ObjectIdentifier objectIdentifier = new ObjectIdentifier();
 		if (!alreadyHasTitle) {
 			Map<QName, String> attributesMap = object.getOtherAttributes();
 			attributesMap.put(qname, "object_" + preferredName);
-			ObjectIdentifier objectIdentifier = new ObjectIdentifier();
-
 			objectIdentifier.getObjectNameOrIdno().add(preferredNameStringOriginal);
-			if(jsonObject.has("variantName"))
-			{
-				JSONArray variantNameArray = jsonObject.getJSONArray("variantName");
-				for(int i = 0; i < variantNameArray.length(); i++)
-				{
-					objectIdentifier.getObjectNameOrIdno().add(variantNameArray.get(i));
-				}
-			}
-			if (jsonObject.has("biographicalOrHistoricalInformation")) {
-				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
-				String detailedInformationString = detailedInformationArray.getString(0);
-				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
-				de.uni_trier.bibliothek.xml.objects.model.generated.Note note = objectsTEIObjectFactory.createNote();
-				note.setType("desc");
-				note.getContent().add(detailedInformationString);
-				object.getObjectIdentifierOrNoteOrLink().add(note);
-			} else if (jsonObject.has("broaderTermInstantial")) {
-				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");				
-				de.uni_trier.bibliothek.xml.objects.model.generated.Note descNote = objectsTEIObjectFactory.createNote();
-				descNote.setType("desc");
-				descNote.getContent().add(jsonObjectBroaderTermString);	
-				object.getObjectIdentifierOrNoteOrLink().add(descNote);			
-			}
-			else if (jsonObject.has("definition")) {
-				JSONArray definitionArray = jsonObject.getJSONArray("definition");
-				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
-				String definitionString = definitionArray.getString(0);
-				de.uni_trier.bibliothek.xml.objects.model.generated.Note note = objectsTEIObjectFactory.createNote();
-				note.setType("desc");
-				note.getContent().add(definitionString);
-				object.getObjectIdentifierOrNoteOrLink().add(note);
-			}
-			//usinginstruction??
-			
 			de.uni_trier.bibliothek.xml.objects.model.generated.List objectsListSuperList = new de.uni_trier.bibliothek.xml.objects.model.generated.List();
 
 			de.uni_trier.bibliothek.xml.objects.model.generated.List objectsListSubList = new de.uni_trier.bibliothek.xml.objects.model.generated.List();
@@ -1342,6 +1299,262 @@ public class EntityListWriter {
 
 		if (!alreadyHasTitle) {
 			object.getObjectIdentifierOrNoteOrLink().add(categoriesNote);
+			if(jsonObject.has("variantName"))
+			{
+				JSONArray variantNameArray = jsonObject.getJSONArray("variantName");
+				for(int i = 0; i < variantNameArray.length(); i++)
+				{
+					objectIdentifier.getObjectNameOrIdno().add(variantNameArray.get(i));
+				}
+			}
+			if (jsonObject.has("biographicalOrHistoricalInformation")) {
+				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
+				String detailedInformationString = detailedInformationArray.getString(0);
+				de.uni_trier.bibliothek.xml.objects.model.generated.Note note = objectsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(detailedInformationString);
+				object.getObjectIdentifierOrNoteOrLink().add(note);
+			} 
+			else if (jsonObject.has("usingInstructions")) {
+				JSONArray usingInstructionsArray = jsonObject.getJSONArray("usingInstructions");
+				String usingInstructionsString = usingInstructionsArray.getString(0);
+				de.uni_trier.bibliothek.xml.objects.model.generated.Note note = objectsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(usingInstructionsString);
+				object.getObjectIdentifierOrNoteOrLink().add(note);
+			}
+			else if (jsonObject.has("broaderTermInstantial")) {
+				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");				
+				de.uni_trier.bibliothek.xml.objects.model.generated.Note descNote = objectsTEIObjectFactory.createNote();
+				descNote.setType("desc");
+				descNote.getContent().add(jsonObjectBroaderTermString);	
+				object.getObjectIdentifierOrNoteOrLink().add(descNote);			
+			}
+			else if (jsonObject.has("definition")) {
+				JSONArray definitionArray = jsonObject.getJSONArray("definition");
+				String definitionString = definitionArray.getString(0);
+				de.uni_trier.bibliothek.xml.objects.model.generated.Note note = objectsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(definitionString);
+				object.getObjectIdentifierOrNoteOrLink().add(note);
+			}
 		}
+	}
+
+
+
+
+	//PLACES
+	//PLACES
+	//PLACES
+	//PLACES
+	public static void writePlacesEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement) {
+		Place place = new Place();
+		String preferredNameStringOriginal = jsonObject.getString("preferredName");
+		de.uni_trier.bibliothek.xml.places.model.generated.Note categoriesNote = placesTEIObjectFactory.createNote();
+		categoriesNote.setType("categories");
+		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
+
+		place.getPlaceNameOrLabelOrLocation().add(placesTEIObjectFactory.createPlacePlaceName(preferredNameStringOriginal));
+		if(jsonObject.has("variantName"))
+		{
+			JSONArray variantNameArray = jsonObject.getJSONArray("variantName");
+			for(int i = 0; i < variantNameArray.length(); i++)
+			{
+				place.getPlaceNameOrLabelOrLocation().add(placesTEIObjectFactory.createPlacePlaceName(variantNameArray.getString(i)));
+			}
+		}
+		ArrayList<Place> arrayListPlaces = new ArrayList<Place>(placesList);
+		boolean alreadyHasLink = false;
+		boolean alreadyHasTitle = false;
+		for (Place placesListElement : arrayListPlaces) {
+			Map<QName, String> attributeName = placesListElement.getOtherAttributes();
+			String xmlID = attributeName.get(qname);
+				if (xmlID!=null) {
+					if (xmlID.equals("place_" + preferredName)) {
+						place = placesListElement;
+						alreadyHasTitle = true;
+						List<JAXBElement<?>> placeNameOrLabelOrLocation = placesListElement.getPlaceNameOrLabelOrLocation();
+						for (Object placeNameOrLabelOrLocationElement : placeNameOrLabelOrLocation) {
+							if (placeNameOrLabelOrLocationElement instanceof de.uni_trier.bibliothek.xml.places.model.generated.Link) {
+								de.uni_trier.bibliothek.xml.places.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.places.model.generated.Link)placeNameOrLabelOrLocationElement;
+								if ((linkElement.getTarget()).equals(fileName + reference)) {
+									alreadyHasLink = true;
+								}
+							}
+						}
+					}
+				}
+			
+		}
+
+		if (!alreadyHasTitle) {
+			Map<QName, String> attributesMap = place.getOtherAttributes();
+			attributesMap.put(qname, "place_" + preferredName);
+			// objectIdentifier.getObjectNameOrIdno().add(preferredNameStringOriginal);
+			de.uni_trier.bibliothek.xml.places.model.generated.List placesListSuperList = new de.uni_trier.bibliothek.xml.places.model.generated.List();
+
+			de.uni_trier.bibliothek.xml.places.model.generated.List placesListSubList = new de.uni_trier.bibliothek.xml.places.model.generated.List();
+
+			boolean hasSupercategory = false;
+			boolean hasSubcategory = false;
+
+			placesListSuperList.setType("supercategory");
+			placesListSubList.setType("subcategory");
+
+			if (typeTermslist.contains("AuthorityResource")) {
+				typeTermslist.remove("AuthorityResource");
+			}
+			List<String> typeTermsListCopy = new ArrayList<String>(typeTermslist); 
+			if (!typeTermsListCopy.isEmpty()) {
+				for (String termString : typeTermsListCopy) {
+					switch (termString) {
+						case "Person":
+							typeTermslist.remove("Person");
+							placesListSuperList.getItem().add("Person");
+							hasSupercategory = true;
+							break;
+						case "Work":
+							typeTermslist.remove("Work");
+							placesListSuperList.getItem().add("Work");
+							hasSupercategory = true;
+							break;
+						case "Family":
+							typeTermslist.remove("Family");
+							placesListSuperList.getItem().add("Family");
+							hasSupercategory = true;
+							break;
+						case "ConferenceOrEvent":
+							typeTermslist.remove("ConferenceOrEvent");
+							placesListSuperList.getItem().add("ConferenceOrEvent");
+							hasSupercategory = true;
+							break;
+						case "PlaceOrGeographicName":
+							typeTermslist.remove("PlaceOrGeographicName");
+							placesListSuperList.getItem().add("PlaceOrGeographicName");
+							hasSupercategory = true;
+							break;
+						case "CorporateBody":
+							typeTermslist.remove("CorporateBody");
+							placesListSuperList.getItem().add("CorporateBody");
+							hasSupercategory = true;
+							break;
+						case "SubjectHeading":
+							typeTermslist.remove("SubjectHeading");
+							placesListSuperList.getItem().add("SubjectHeading");
+							hasSupercategory = true;
+							break;
+					}
+				}
+
+				for (String subcategory : typeTermslist) {
+					hasSubcategory = true;
+					placesListSubList.getItem().add(subcategory);
+				}
+
+				if (hasSupercategory) {
+					JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.List> placesNoteList = placesTEIObjectFactory
+							.createNoteList(placesListSuperList);
+					categoriesNote.getContent().add(placesNoteList);
+				}
+
+				if (hasSubcategory) {
+					JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.List> placesNoteList = placesTEIObjectFactory
+							.createNoteList(placesListSubList);
+					categoriesNote.getContent().add(placesNoteList);
+				}
+
+				
+			}
+
+			
+			if (jsonObject.has("id")) {
+				PlaceIdno placesIdno = new PlaceIdno();
+				String dnbURL = jsonObject.getString("id");
+				placesIdno.setContent(dnbURL);
+				placesIdno.setType("URI");
+				placesIdno.setSubtype("GND");
+				JAXBElement<PlaceIdno> placesIdnoJAXB = placesTEIObjectFactory.createPlaceIdno(placesIdno);
+				place.getPlaceNameOrLabelOrLocation().add(placesIdnoJAXB);
+			}
+
+			if (jsonObject.has("sameAs")) {
+				JSONArray sameAsArray = jsonObject.getJSONArray("sameAs");
+				for (int i = 0; i < sameAsArray.length(); i++) {
+					JSONObject idCollectionObject = sameAsArray.getJSONObject(i);
+					JSONObject jsonObjectCollection = idCollectionObject.getJSONObject("collection");
+					if(jsonObjectCollection.has("name"))
+					{
+						String collectionName = jsonObjectCollection.getString("name");
+						if (collectionName.equals("Wikidata")) {
+							PlaceIdno placesIdnoWiki = new PlaceIdno();							
+							placesIdnoWiki.setContent(jsonObjectCollection.getString("id"));
+							placesIdnoWiki.setType("URI");
+							placesIdnoWiki.setSubtype("WIKIDATA");
+							JAXBElement<PlaceIdno> placesIdnoWikiJAXB = placesTEIObjectFactory.createPlaceIdno(placesIdnoWiki);
+							place.getPlaceNameOrLabelOrLocation().add(placesIdnoWikiJAXB);
+						}
+					}
+				}
+			}
+			// System.out.println("place eingetragen");
+			// placesList.add(place);
+		} 
+		if (divFrontElement.getType() != null) {
+			String referenceWithoutHash = reference.substring(1, reference.length());
+			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			de.uni_trier.bibliothek.xml.places.model.generated.Link artikelLink = new de.uni_trier.bibliothek.xml.places.model.generated.Link();
+			artikelLink.setTarget(fileName + reference + "_art_" + preferredName);
+			JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Link> artikelLinkJAXB = placesTEIObjectFactory.createPlaceLink(artikelLink);
+			place.getPlaceNameOrLabelOrLocation().add(artikelLinkJAXB);
+		}
+		if (!alreadyHasLink) {
+			de.uni_trier.bibliothek.xml.places.model.generated.Link bandLink = new de.uni_trier.bibliothek.xml.places.model.generated.Link();
+			bandLink.setTarget(fileName + reference);
+			JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Link> bandLinkJAXB = placesTEIObjectFactory.createPlaceLink(bandLink);
+			place.getPlaceNameOrLabelOrLocation().add(bandLinkJAXB);
+		}
+
+		if (!alreadyHasTitle) {
+			System.out.println("place eingetragen");
+			placesList.add(place);
+			if (jsonObject.has("biographicalOrHistoricalInformation")) {
+				de.uni_trier.bibliothek.xml.places.model.generated.Note note = new de.uni_trier.bibliothek.xml.places.model.generated.Note();
+				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
+				String detailedInformationString = detailedInformationArray.getString(0);
+				// de.uni_trier.bibliothek.xml.places.model.generated.Note note = placesTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(detailedInformationString);
+				JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Note> categoriesNoteJAXB = placesTEIObjectFactory.createPlaceNote(note);
+				place.getPlaceNameOrLabelOrLocation().add(categoriesNoteJAXB);
+			} 
+			else if (jsonObject.has("broaderTermInstantial")) {
+				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");				
+				de.uni_trier.bibliothek.xml.places.model.generated.Note note = new de.uni_trier.bibliothek.xml.places.model.generated.Note();
+				note.setType("desc");
+				note.getContent().add(jsonObjectBroaderTermString);	
+				JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Note> categoriesNoteJAXB = placesTEIObjectFactory.createPlaceNote(note);
+				place.getPlaceNameOrLabelOrLocation().add(categoriesNoteJAXB);			
+			}
+			else if (jsonObject.has("definition")) {
+				JSONArray definitionArray = jsonObject.getJSONArray("definition");
+				String definitionString = definitionArray.getString(0);
+				de.uni_trier.bibliothek.xml.places.model.generated.Note note = placesTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(definitionString);
+				JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Note> categoriesNoteJAXB = placesTEIObjectFactory.createPlaceNote(note);
+				place.getPlaceNameOrLabelOrLocation().add(categoriesNoteJAXB);
+			}
+
+			JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Note> categoriesNoteJAXB = placesTEIObjectFactory.createPlaceNote(categoriesNote);
+				place.getPlaceNameOrLabelOrLocation().add(categoriesNoteJAXB);
+
+
+		}
+		
 	}
 }

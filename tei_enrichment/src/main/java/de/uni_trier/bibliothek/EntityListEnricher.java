@@ -837,6 +837,7 @@ public class EntityListEnricher {
 	public static void checkNameGnd(NameGND nameGND, Head head, DivFront divFrontElement) throws IOException {
 		List<Serializable> nameGNDList = nameGND.getContent();
 		// block für artikel
+		boolean multipleURLs = false;
 		SourceGND sourceGND = new SourceGND();
 		if (nameGND.getRef() != null) {
 			if (!(nameGND.getRef().contains("???")) && !(nameGND.getRef().contains("!!!"))&& !(nameGND.getRef().contains("***")) && !(nameGND.getRef().isEmpty()))  {
@@ -844,19 +845,14 @@ public class EntityListEnricher {
 				for (int i = 0; i < refURLList.length; i++) {
 					String refURL = refURLList[i];
 					System.out.println("requestURL: " + refURL);
-					String prefix = makeHTTPRequest(refURL, nameGND, sourceGND, divFrontElement);
+					if(i>0)
+					{
+						multipleURLs = true;
+					}
+					String prefix = makeHTTPRequest(refURL, nameGND, sourceGND, divFrontElement, multipleURLs);
 				}
-			} 
-			// else {
-			// 	// block for loose name-tags
-			// 	String[] refURLList = nameGND.getRef().split(" ");
-			// 	for (int i = 0; i < refURLList.length; i++) {
-			// 		String refURL = refURLList[i];
-			// 		System.out.println("requestURL: " + refURL);
-			// 		String prefix = makeHTTPRequest(refURL, nameGND, sourceGND, divFrontElement);
-			// 	}
-			// }
-
+			} }
+			
 			for (Object nameGNDObject : nameGNDList) {
 				if (!(nameGNDObject instanceof String)) {
 					JAXBElement<?> jaxbElement = (JAXBElement<?>) nameGNDObject;
@@ -880,7 +876,8 @@ public class EntityListEnricher {
 						Foreign foreignElement = (Foreign) jaxbElement.getValue();
 						checkForeign(foreignElement);
 					}
-				}
+				
+			
 
 			}
 		}
@@ -890,15 +887,21 @@ public class EntityListEnricher {
 	public static void checkSourceGND(SourceGND sourceGNDGND, Head head, DivFront divFrontElement) throws IOException {
 		List<Serializable> sourceGNDList = sourceGNDGND.getContent();
 		NameGND nameGND = new NameGND();
+		boolean multipleURLs = false;
 		if (sourceGNDGND.getSource() != null) {
 			if (!(sourceGNDGND.getSource().contains("???")) && !(sourceGNDGND.getSource().contains("!!!"))&& !(sourceGNDGND.getSource().contains("***")) && !(sourceGNDGND.getSource().isEmpty()))  {
 				String[] refURLList = sourceGNDGND.getSource().split(" ");
 				for (int i = 0; i < refURLList.length; i++) {
 					String refURL = refURLList[i];
 					System.out.println("requestURL: " + refURL);
-					String prefix = makeHTTPRequest(refURL, nameGND, sourceGNDGND, divFrontElement);
+					if(i>0)
+					{
+						multipleURLs = true;
+					}
+					String prefix = makeHTTPRequest(refURL, nameGND, sourceGNDGND, divFrontElement, multipleURLs);
 				}
-			} 
+			} }
+			
 			for (Object sourceGNDObject : sourceGNDList) {
 				if (!(sourceGNDObject instanceof String)) {
 					JAXBElement<?> jaxbElement = (JAXBElement<?>) sourceGNDObject;
@@ -924,14 +927,15 @@ public class EntityListEnricher {
 						Foreign foreignElement = (Foreign) jaxbElement.getValue();
 						checkForeign(foreignElement);
 					}
-				}
+				
 
 			}
+		
 		}
 
 	}
 
-	public static String makeHTTPRequest(String refURL, NameGND nameGND, SourceGND sourceGND, DivFront divFrontElement)
+	public static String makeHTTPRequest(String refURL, NameGND nameGND, SourceGND sourceGND, DivFront divFrontElement, Boolean multipleURLs)
 			throws IOException {
 		String entityPrefix = "";
 		String cutURL = refURL.substring(18, refURL.length());
@@ -939,7 +943,7 @@ public class EntityListEnricher {
 		if (divFrontElement == null || divFrontElement.getType() == null) {
 			divFrontElement = new DivFront();
 		} else if (divFrontElement.getType().equals("overview") || divFrontElement.getType().equals("transition")
-				|| divFrontElement.getType().equals("index") || divFrontElement.getN() != null) {
+				|| divFrontElement.getType().equals("index") || divFrontElement.getN() != null || (divFrontElement.getType().equals("appendix"))){
 			isOrtsartikel = false;
 		}
 		// rest: gnd/xyz
@@ -990,9 +994,18 @@ public class EntityListEnricher {
 
 			if (oberkategorie.equals("listBibl")) {
 
+				String oldRef = "";
+				if(!(sourceGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = sourceGND.getRef() + " ";
+				}
+				else if(!(nameGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = nameGND.getRef() + " ";
+				}
 				System.out.println("isBiblList eintrag");
-				sourceGND.setSource("mgndbibl:listBibl_" + preferredNameString);
-				nameGND.setRef("mgndbibl:listBibl_" + preferredNameString);
+				sourceGND.setSource(oldRef + "mgndbibl:listBibl_" + preferredNameString);
+				nameGND.setRef(oldRef + "mgndbibl:listBibl_" + preferredNameString);
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndbibl:listBibl_" + preferredNameString);
 				}
@@ -1002,8 +1015,18 @@ public class EntityListEnricher {
 			}
 			else if (oberkategorie.equals("person")) {
 				System.out.println("person eintrag");
-				nameGND.setRef("mgndper:person_" + preferredNameString);
-				sourceGND.setSource("mgndper:person_" + preferredNameString);
+				String oldRef = "";
+				if(!(sourceGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = sourceGND.getRef() + " ";
+				}
+				else if(!(nameGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = nameGND.getRef() + " ";
+				}
+
+				nameGND.setRef(oldRef + "mgndper:person_" + preferredNameString);
+				sourceGND.setSource(oldRef + "mgndper:person_" + preferredNameString);
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndper:person_" + preferredNameString);
 				}
@@ -1012,8 +1035,17 @@ public class EntityListEnricher {
 			}
 			else if (oberkategorie.equals("event"))  {
 				System.out.println("event eintrag");
-				nameGND.setRef("mgndeve:event_" + preferredNameString);
-				sourceGND.setSource("mgndeve:event_" + preferredNameString);
+				String oldRef = "";
+				if(!(sourceGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = sourceGND.getRef() + " ";
+				}
+				else if(!(nameGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = nameGND.getRef() + " ";
+				}
+				nameGND.setRef(oldRef + "mgndeve:event_" + preferredNameString);
+				sourceGND.setSource(oldRef + "mgndeve:event_" + preferredNameString);
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndeve:event_" + preferredNameString);
 				}
@@ -1021,8 +1053,17 @@ public class EntityListEnricher {
 			}
 			else if (oberkategorie.equals("org")) {
 				System.out.println("orgs eintrag");
-				nameGND.setRef("mgndorgs:org_" + preferredNameString);
-				sourceGND.setSource("mgndorgs:org_" + preferredNameString);
+				String oldRef = "";
+				if(!(sourceGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = sourceGND.getRef() + " ";
+				}
+				else if(!(nameGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = nameGND.getRef() + " ";
+				}
+				nameGND.setRef(oldRef + "mgndorgs:org_" + preferredNameString);
+				sourceGND.setSource(oldRef + "mgndorgs:org_" + preferredNameString);
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndorgs:org_" + preferredNameString);
 				}
@@ -1030,43 +1071,42 @@ public class EntityListEnricher {
 			}
 			else if (oberkategorie.equals("object")) {
 				System.out.println("object eintrag");
-				nameGND.setRef("mgndobj:object_" + preferredNameString);
-				sourceGND.setSource("mgndobj:object_" + preferredNameString);
+				String oldRef = "";
+				if(!(sourceGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = sourceGND.getRef() + " ";
+				}
+				else if(!(nameGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = nameGND.getRef() + " ";
+				}
+				nameGND.setRef(oldRef + "mgndobj:object_" + preferredNameString);
+				sourceGND.setSource(oldRef + "mgndobj:object_" + preferredNameString);
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndeve:object_" + preferredNameString);
 				}
 				objectHasType = true;
 				EntityListWriter.writeObjectsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
 			}
-		
-
-
-
-
-			ArrayList<String> placesTerms = new ArrayList<>(Arrays.asList("PlaceOrGeographicName", "AdministrativeUnit",
-					"BuildingOrMemorial", "Country", "ExtraterrestialTerritory", "FictivePlace", "MemberState",
-					"NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit", "NaturalGeographicUnit",
-					"ReligiousTerritory", "TerritorialCorporateBodyOrAdministrativeUnit", "WayBorderOrLine"));
-			Boolean isPlace = !Collections.disjoint(typeTermslist, placesTerms);
-
-			if (oberkategorie.equals("place")) {
+			else if (oberkategorie.equals("place")) {
 				System.out.println("place eintrag");
-				objectHasType = true;
-				nameGND.setRef("mgndpla:place_" + preferredNameString);
-				sourceGND.setSource("mgndpla:place_" + preferredNameString);
-				if (isOrtsartikel) {
-					divFrontElement.setCorresp("mgndpla:place_" + preferredNameString);
+				String oldRef = "";
+				if(!(sourceGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = sourceGND.getRef() + " ";
 				}
-				writePlacesEntity(jsonObject, preferredNameString, typeTermslist);
-
+				else if(!(nameGND.getRef() == null) && multipleURLs)
+				{
+					oldRef = nameGND.getRef() + " ";
+				}
+				nameGND.setRef(oldRef + "mgndobj:place_" + preferredNameString);
+				sourceGND.setSource(oldRef + "mgndobj:place_" + preferredNameString);
+				if (isOrtsartikel) {
+					divFrontElement.setCorresp("mgndeve:place_" + preferredNameString);
+				}
+				objectHasType = true;
+				EntityListWriter.writePlacesEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
 			}
-			
-
-			
-
-
-			
-
 		}
 
 		return entityPrefix;

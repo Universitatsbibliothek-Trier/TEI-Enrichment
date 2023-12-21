@@ -102,7 +102,7 @@
                     <lb n="8"/>Landtſchaften
                     / als Buchen / Naſſau 
                     <lb n="9"/>Wetteraw / 
-                    <name ref="mgndpla:place_Buchonia">Schloss
+                    <name ref="mgndobj:place_Landgrafschaft_Hessen mgndobj:place_Buchonia">Schloss
                     Regensburg</name> / Wittgen 
                     <lb n="10"/>ſtein / Lohngaw / vnd andern. 
                     <lb n="11"/>Franckfurt durch 
@@ -177,7 +177,7 @@
                     </choice> accusam et justo duo dolores et
                     ea rebum.
                     <lb/> Stet clita kasd gubergren, no sea takimata sanctus est 
-                    <name ref="mgndpla:place_Nassauer_Land">Schloss
+                    <name ref="mgndobj:place_Nassauer_Land">Schloss
                         Hexenagger</name> Lorem ipsum dolor sit amet. 
                     <lb/>Lorem ipsum dolor sit
                     amet, consetetur 
@@ -198,10 +198,10 @@
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                     <lb/>At
                     vero eos et accusam
-                    <name ref="mgndeve:event_Freiburger_Literaturgespräch">Stet</name> et justo duo dolores et ea rebum.
+                    <name ref="mgndeve:event_Freiburger_Literaturgespräch mgndobj:object_Gene">Stet</name> et justo duo dolores et ea rebum.
                     <lb/>  clita kasd
                     gubergren, no sea takimata sanctus est 
-                    <name ref="mgndpla:place_Klostergut_Volkenroda">ipsum</name> dolor sit amet. 
+                    <name ref="mgndobj:place_Klostergut_Volkenroda">ipsum</name> dolor sit amet. 
                     <lb/>Lorem
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt ut labore et dolore 
@@ -225,11 +225,11 @@
                         <pb n="3" facs="testdoi3.jpg"></pb>
                         <fw type="pageNum">3</fw>
                         <pb n="4" facs="testdoi4.jpg"></pb>
-                        <div type="overview">
+                        <div type="overview" xml:id="band_07_art_Westerwald">
                             <lb/>
                             <head>Beſchreibung der vornehmſten Staͤdte und 
                                 <lb/>Plaͤtze in 
-                                <name ref="mgndpla:place_Westerwald">Deutschland</name> Heſſen
+                                <name ref="mgndobj:place_Westerwald">Deutschland</name> Heſſen
                                 / und den benachbarten Landſchafften / 
                                 <lb/>als Buchen / Naſſau /
                                 Wetterau / Weſterwald / Wittgen⸗ 
@@ -237,13 +237,13 @@
                                 andern.</head>
                             <lb/>
                             <p>ES gehoͤren in den Hochloͤblichen 
-                                <name ref="mgndpla:place_Grafschaft_Wittgenstein">
+                                <name ref="mgndobj:place_Grafschaft_Wittgenstein">
                                      Regensburg </name>
                                 <lb/>Creyß
                                 / (deſſen ausſchreibende Fuͤrſten dieſer Zeit der Herr Bi⸗ 
                                 <lb/>ſchoff
                                 zu Wormbs und der 
-                                <name ref="mgndpla:place_Frankfurt_am_Main">Kaiser
+                                <name ref="mgndobj:place_Frankfurt_am_Main">Kaiser
                                 Trier 
                                 </name> und 
                                 <name ref="mgndper:person_Merian_Matthaeus_der_Ältere">Paul Goldmann</name> Herr
@@ -259,10 +259,10 @@
                                 wegen der Graffſchafft Spanheim / Zwey⸗ 
                                 <lb/>bruͤcken / und
                                 Veldentz; die Landgraffen in Heſſen; der 
-                                <rs ref="mgndpla:place_Landgrafschaft_Hessen">Herr</rs> in Lothringen;
+                                <rs ref="mgndobj:place_Landgrafschaft_Hessen">Herr</rs> in Lothringen;
                                 die 
                                 <lb/>Hertzoge in Savoja; die Aebte von Fulda / oder 
-                                <name ref="mgndpla:place_Landgrafschaft_Hessen">Herßfeld
+                                <name ref="mgndobj:place_Landgrafschaft_Hessen">Herßfeld
                                 </name>
                                 / Murbach / Muͤn⸗ 
                                 <lb/>ſter in S. Gregorienthal / und Pfriem im
@@ -296,12 +296,12 @@
                                 Gregorienthal </name>
                                 </name> Ober⸗ 
                                 <lb/>
-                                <name ref="mgndpla:place_Wetterau">Elektrizitätswerk Trier</name>
+                                <name ref="mgndobj:place_Wetterau">Elektrizitätswerk Trier</name>
                                 / Colmar / Straßburg / Roßheim / Schlettſtatt / Hagenau /
                                 Cron⸗Weiſſen⸗ 
                                 <lb/>burg / Landau / Muͤlhauſen im Sundgoͤw / Speyer
                                 / 
-                                <name ref="mgndpla:place_Westerwald">Wormser Religionsgespräche</name>
+                                <name ref="mgndobj:place_Westerwald">Wormser Religionsgespräche</name>
                                 / Franckfurt / Fried⸗ 
                                 <lb/>berg / Wetzlar / Metz / Tull / Verdun /
                                 Kauffmans⸗Sarbruͤck / Biſantz / und Genff. 
@@ -314,7 +314,7 @@
                                 Staͤdte / Baſel / Muͤlhauſen im Sundgoͤw / 
                                 <lb/>Metz / Tull /
                                 Verdun / Kauffmans⸗Sarbruͤck / 
-                                <name ref="mgndpla:place_Nassauer_Land">O'Kelly</name>
+                                <name ref="mgndobj:place_Nassauer_Land">O'Kelly</name>
                                 <note>Die
                                 ist eine editorische Bemerkung</note> / ꝛc. Von welchen zum Theil in 
                                 <lb/>Beſchreibung
@@ -323,7 +323,7 @@
                                 <lb/>Savoja / Lothringen / Biſantz / Metz / Tull / Verdun /
                                 Bitſch / und Kauffmans⸗Sar⸗ 
                                 <lb/>bruͤck / einkommen ſeyn) und des 
-                                <name ref="mgndpla:place_Grafschaft_Solms">Dreißigjähriger Krieg</name>Chur⸗und
+                                <name ref="mgndobj:place_Grafschaft_Solms">Dreißigjähriger Krieg</name>Chur⸗und
                                 Unter⸗Rheiniſchen Creyſes / allbereit 
                                 <lb/>von uns moͤglicher / und
                                 gebuͤhrender Bericht / geſchehen. Die uͤbrige aber / und ihre 
@@ -343,7 +343,7 @@
                                 das hochloͤbliche Fuͤrſtenthum und 
                                 <lb/>anbelangt / ſo hat Wilhelm
                                 Dilich eine 
-                                <name ref="mgndpla:place_Grafschaft_Hanau"> Hessische Chronica</name>
+                                <name ref="mgndobj:place_Grafschaft_Hanau"> Hessische Chronica</name>
                                 davon ausgehen laſſen; damit aber 
                                 <lb/>nicht jederman zufrieden
                                 geweſen / dieweil er im erſten Theil derſelben geſchrieben / das 
@@ -383,13 +383,19 @@
                                 mitbringen / re- 
                                 <lb/>cognoſciren; ſondern eine gar abgeſonderte
                                 Landſchafft / 
-                                <quote source="mgndpla:place_Grafschaft_Wittgenstein">"Der
+                                <quote source="mgndobj:place_Grafschaft_Wittgenstein mgndobj:place_Grafschaft_Wittgenstein">"Der
                                 Sandmann, der fürchterliche Sandmann ist der alte
                                     Advokat Coppelius, der manchmal bei uns zu Mittage isst! – Aber
                                 die grässlichste Gestalt hätte mir nicht tieferes
                                     Entsetzen erregen können als eben dieser Coppelius.</quote>
                                 ſowol als der Hundsruck / 
                                 <lb/>Weſterich / und andere / jederzeit
+                                
+                                <quote source="mgndobj:object_Immersion mgndobj:object_Immersion">"Der
+                                    Sandmann, der fürchterliche Sandmann ist der alte
+                                        Advokat Coppelius, der manchmal bei uns zu Mittage isst! – Aber
+                                    die grässlichste Gestalt hätte mir nicht tieferes
+                                        Entsetzen erregen können als eben dieser Coppelius.</quote>
                                 geweſen / und noch. Was aber die Graffſchafft Naſſau⸗ 
                                 <lb/>Dillenberg
                                 belange / iſt dieſelbe nicht allein nicht unter Heſſen gelegen /
@@ -460,7 +466,7 @@
                                 <quote type="saying">
                                     
                                     
-                                    <name ref="https://d-nb.info/gnd/4024731-4">Heſſen</name>
+                                    <name ref="mgndobj:object_Hessen_Volk">Heſſen</name>
 
                                 </quote>Herßfeld / dem Bißthum
 
@@ -470,11 +476,11 @@
                                     Wo
                                     
                                     
-                                    <name ref="https://d-nb.info/gnd/4024731-4">Heſſen</name>
+                                    <name ref="mgndobj:object_Hessen_Volk">Heſſen</name>
                                     und
                                     
                                     
-                                    <name ref="https://d-nb.info/gnd/4131365-3">Hollaͤnder</name>
+                                    <name ref="mgndobj:object_Niederländer">Hollaͤnder</name>
                                     verderben:
                                     
                                     
@@ -522,7 +528,8 @@
                                 <lb/>graphia
                                 Johann Rauen / cap. XIV. vom Heſſen⸗Land pag. 408. 409. 410. Jn
                                 dieſen 
-                                <lb/>Bergen giebt es allerley Metall / inſonderheit von
+                                <lb/>
+                                <name ref="mgndobj:place_Gut_Schwitten">Metall</name> giebt es allerley Metall / inſonderheit von
                                 Silber / Kupffer / Bley und Eiſen: 
                                 <lb/>Es giebt auch gute
                                 Steinbruͤche / ſchoͤnen weiſſen Alabaſter / auch Schifferſtein / 
@@ -547,9 +554,30 @@
                             </p>
                         </div>
                         <lb/>
-                        <div type="article" corresp="mgndpla:place_Frankfurt_am_Main">
+                        <div type="article" corresp="mgndeve:object_FM_Audio" xml:id="band_07_art_FM_Audio">
                             <head>
-                                <name ref="mgndpla:place_Frankfurt_am_Main">Paul Goldmann</name> /
+                                <name ref="mgndobj:object_Bingo_Players mgndobj:object_FM_Audio">Neumarckt</name>
+                            </head>
+                            <lb/>
+                            <p>Text von Neumarckt allgemein</p>
+                            <div type="article" corresp="mgndeve:object_Taxidriver" xml:id="band_07_art_Taxidriver">
+                                <head>
+                                    <name ref="mgndobj:object_Taxidriver">1.Neumarckt</name>
+                                </head>
+                                <lb/>
+                                <p>Text von Neumarckt_1</p>
+                            </div>
+                            <div type="article" corresp="mgndeve:event_Deutschland_Zusammenbruch_1945" xml:id="band_07_art_Deutschland_Zusammenbruch_1945">
+                                <head>
+                                    <name ref="mgndeve:event_Deutschland_Zusammenbruch_1945">2.Neumarckt</name>
+                                </head>
+                                <lb/>
+                                <p>Text von Neumarckt_2</p>
+                            </div>
+                        </div>
+                        <div type="article" corresp="mgndeve:place_Frankfurt_am_Main" xml:id="band_07_art_Frankfurt_am_Main">
+                            <head>
+                                <name ref="mgndobj:place_Frankfurt_am_Main">Paul Goldmann</name> /
                                 an der Werra.</head>
                             <lb/>
                             <p>JSt ein Stadt in Nieder⸗Heſſen / 
@@ -1001,9 +1029,9 @@
                                     <lb/>
                                 </p>
                             </div>
-                            <div type="article" corresp="mgndpla:place_Klostergut_Volkenroda">
+                            <div type="article" corresp="mgndeve:place_Klostergut_Volkenroda" xml:id="band_07_art_Klostergut_Volkenroda">
                                 <head>
-                                    <name ref="mgndpla:place_Klostergut_Volkenroda">ipsum</name>
+                                    <name ref="mgndobj:place_Klostergut_Volkenroda">ipsum</name>
                                 </head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -1282,9 +1310,9 @@
                             </p>
                         </div>
                         <lb/>
-                        <div type="article" corresp="mgndpla:place_Landgrafschaft_Hessen">
+                        <div type="article" corresp="mgndeve:place_Landgrafschaft_Hessen" xml:id="band_07_art_Landgrafschaft_Hessen">
                             <head>
-                                <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name> / an
+                                <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name> / an
                                 der Werra.</head>
                             <lb/>
                             <p>JSt ein Stadt in Nieder⸗Heſſen / 
@@ -1614,9 +1642,9 @@
                                 <lb/>rich zu Waldeck.</p>
                         </div>
                         <lb/>
-                        <div type="article" corresp="mgndeve:event_Freiburger_Literaturgespräch" xml:id="band_07_art_Freiburger_Literaturgespräch">
+                        <div type="article" corresp="mgndeve:object_Brainclaw" xml:id="band_07_art_Brainclaw">
                             <head>
-                                <name ref="mgndeve:event_Freiburger_Literaturgespräch">Stet</name>
+                                <name ref="mgndeve:event_Freiburger_Literaturgespräch mgndobj:object_Brainclaw">Stet</name>
                             </head>
                             <lb/>
                             <p>Aſſenheim / iſt ein altes Staͤttlein / und hat 
@@ -1685,13 +1713,13 @@
                                 <lb/>Burgerey
                                 wol befindet.</p>
                         </div>
-                        <div type="additional" corresp="mgndpla:place_Landgrafschaft_Hessen">
+                        <div type="additional" corresp="mgndeve:place_Landgrafschaft_Hessen" xml:id="band_07_art_Landgrafschaft_Hessen">
                             <head>Arolſen.
-                                <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>
+                                <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>
                             </head>
                             <lb/>
                             <p>DLorem ipsum dolor sit 
-                                <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>amet, consetetur sadipscing elitr, sed diam
+                                <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>amet, consetetur sadipscing elitr, sed diam
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua. 
                                 <lb/>At vero eos et accusam et justo duo
@@ -1712,7 +1740,7 @@
                         <div type="postface">
                             <p>DLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                 nonumy eirmod tempor 
-                                <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>invidunt ut labore et dolore magna aliquyam
+                                <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua. 
                                 <lb/>At vero eos et accusam et justo duo
                                 dolores et ea rebum.
@@ -1732,16 +1760,16 @@
                         <fw type="catch">Namen⸗</fw>
                         <pb n="13"></pb>
                         <div type="appendix">
-                            <div type="article" corresp="mgndpla:place_Landgrafschaft_Hessen">
+                            <div type="article" corresp="mgndeve:object_First_State" xml:id="band_07_art_First_State">
                                 <head>Lorem ipsum
-                                    <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>
+                                    <name ref="mgndobj:object_First_State">Solothurn</name>
                                 </head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
                                     <lb/>At vero eos et accusam et justo
                                     duo dolores 
-                                    <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>et ea rebum.
+                                    <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>et ea rebum.
                                     <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet. 
                                     <lb/>Lorem
@@ -1755,13 +1783,13 @@
                                     <lb/>
                                 </p>
                             </div>
-                            <div type="article" corresp="mgndpla:place_Landgrafschaft_Hessen">
+                            <div type="article" corresp="mgndeve:place_Landgrafschaft_Hessen" xml:id="band_07_art_Landgrafschaft_Hessen">
                                 <head>Lorem ipsum
-                                    <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>
+                                    <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>
                                 </head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod 
-                                    <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>tempor invidunt ut labore et dolore magna aliquyam
+                                    <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
                                     <lb/>At vero eos et accusam et justo
                                     duo dolores et ea rebum.
@@ -1787,15 +1815,15 @@
             <pb n="14"/>
             <figure/>
             <lb/>
-            <div type="index" n="1">
+            <div type="index" n="1" xml:id="band_07_art_Landgrafschaft_Hessen">
                 <head>Namen ⸗Regiſter
-                    <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>
+                    <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>
                 </head>
                 <lb/>
                 <p>Der Landſchafften / Gaͤw / Thaͤler / Staͤdt / Staͤdtlein / 
                     <lb/>Flecken /
                     Doͤrffer / Cloͤſter / 
-                    <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>Schloͤſſer / Waſſer / Berge / Waͤlder / 
+                    <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>Schloͤſſer / Waſſer / Berge / Waͤlder / 
                     <lb/>Hoſpitalen /
                     ꝛc. ſo in dieſem Tractat von Heſſen / und theils an⸗ 
                     <lb/>grentzenden Landen /
@@ -1804,7 +1832,7 @@
                 </p>
                 <div n="2">
                     <head>A.
-                        <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>
+                        <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>
                     </head>
                     <list>
                         
@@ -2557,7 +2585,7 @@
                         <list>
                             
                             <item>
-                                <name ref="mgndpla:place_Landgrafschaft_Hessen">Regensburg</name>
+                                <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>
                             </item>
                             
                             <item>Wolffshagen.</item>
