@@ -195,9 +195,15 @@
                         </note>
                         <link target="merian_hessen.xml#band_07"/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4328452-8</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Dravograd"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
                     </place>
                     <place xml:id="place_Landgrafschaft_Hessen">
                         <placeName>Landgrafschaft Hessen</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4240073-9</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
@@ -211,26 +217,15 @@
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
                             </list>
                         </note>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Landgrafschaft_Hessen"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Landgrafschaft_Hessen"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Landgrafschaft_Hessen"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Landgrafschaft_Hessen"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
                     </place>
                     <place xml:id="place_Buchonia">
                         <placeName>Buchonia</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                            <region>Thüringen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4371007-4</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">Hess.-thüring. Waldgebiet</note>
@@ -242,10 +237,16 @@
                                 <item>NaturalGeographicUnit</item>
                             </list>
                         </note>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Buchonia"/>
                     </place>
                     <place xml:id="place_Nassauer_Land">
                         <placeName>Nassauer Land</placeName>
                         <placeName>Nassau (Landschaft)</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Rheinland-Pfalz</region>
+                            <region>Hessen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4203270-2</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">Landschaft</note>
@@ -258,10 +259,14 @@
                                 <item>NaturalGeographicUnit</item>
                             </list>
                         </note>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Nassauer_Land"/>
                     </place>
                     <place xml:id="place_Klostergut_Volkenroda">
                         <placeName>Klostergut Volkenroda</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Thüringen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4784990-3</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">Landwirtschaftlicher Betrieb</note>
@@ -275,10 +280,15 @@
                             </list>
                         </note>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Klostergut_Volkenroda"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
                     </place>
                     <place xml:id="place_Westerwald">
                         <placeName>Westerwald</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Nordrhein-Westfalen</region>
+                            <region>Hessen</region>
+                            <region>Rheinland-Pfalz</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4065773-5</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Westerwald"/>
@@ -292,11 +302,14 @@
                                 <item>NaturalGeographicUnit</item>
                             </list>
                         </note>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
                     </place>
                     <place xml:id="place_Grafschaft_Wittgenstein">
                         <placeName>Grafschaft Wittgenstein</placeName>
                         <placeName>Wittgenstein (Grafschaft)</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Nordrhein-Westfalen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4350182-5</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
@@ -310,8 +323,6 @@
                                 <item>AdministrativeUnit</item>
                             </list>
                         </note>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
                     </place>
                     <place xml:id="place_Frankfurt_am_Main">
                         <placeName>Frankfurt am Main</placeName>
@@ -366,6 +377,11 @@
                         <placeName>Franckenfurt am Meyn</placeName>
                         <placeName>Frainkfurṭ</placeName>
                         <placeName>فرینکفرٹ</placeName>
+                        <location>
+                            <geo>+008.684166 +050.115277</geo>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4018118-2</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
@@ -379,10 +395,13 @@
                             </list>
                         </note>
                         <link target="merian_all_elements_example_before.xml#band_07_art_Frankfurt_am_Main"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
                     </place>
                     <place xml:id="place_Wetterau">
                         <placeName>Wetterau</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4065855-7</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
@@ -399,6 +418,10 @@
                     <place xml:id="place_Grafschaft_Solms">
                         <placeName>Grafschaft Solms</placeName>
                         <placeName>Solms (Grafschaft)</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4528964-5</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">Grafschaft</note>
@@ -412,9 +435,57 @@
                             </list>
                         </note>
                     </place>
+                    <place xml:id="place_Berlin">
+                        <placeName>Berlin</placeName>
+                        <placeName>Berlin (1945-1948)</placeName>
+                        <placeName>Haupt- und Residenz-Stadt Berlin</placeName>
+                        <placeName>Berolinum</placeName>
+                        <placeName>Coloniae Brandenburgicae</placeName>
+                        <placeName>Großberlin</placeName>
+                        <placeName>"Besonderes Gebiet" Berlin</placeName>
+                        <placeName>Berolinon</placeName>
+                        <placeName>Land Berlin</placeName>
+                        <placeName>Verolino</placeName>
+                        <placeName>Birlīn</placeName>
+                        <placeName>Gross-Berlin</placeName>
+                        <placeName>Colonia Brandenburgica</placeName>
+                        <placeName>Reichshauptstadt Berlin</placeName>
+                        <placeName>Cöln an der Spree</placeName>
+                        <placeName>Berlinum</placeName>
+                        <placeName>Barlīn</placeName>
+                        <placeName>Colonia Marchica</placeName>
+                        <placeName>Cölln an der Spree</placeName>
+                        <placeName>Berolino</placeName>
+                        <placeName>Berlino</placeName>
+                        <placeName>Stadtgemeinde Berlin</placeName>
+                        <placeName>Groß-Berlin</placeName>
+                        <placeName>Hauptstadt Berlin</placeName>
+                        <location>
+                            <geo>+013.416669 +052.500000</geo>
+                            <country>Deutschland</country>
+                            <region>Berlin</region>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4005728-8</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="desc">Hauptstadt u. Bundesland; 1237 (Cölln) bzw. 1244 (Berlin) urkundl. erwähnt, 1230/40 bzw. nach 1250 Stadtrecht, 1307 Union, 1370 gemeinsamer Rat, 1432 Vereinigung der Doppelstadt</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                                <item>MemberState</item>
+                            </list>
+                        </note>
+                    </place>
                     <place xml:id="place_Grafschaft_Hanau">
                         <placeName>Grafschaft Hanau</placeName>
                         <placeName>Hanau (Grafschaft)</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4023202-5</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">Grafschaft</note>
@@ -430,6 +501,7 @@
                     </place>
                     <place xml:id="place_Gut_Schwitten">
                         <placeName>Gut Schwitten</placeName>
+                        <location/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4816780-0</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">ca. 1543 entstanden, befand sich bis 1920 im Besitz d. von Fürst Anatol Lieven, danach Staatsbesitz</note>

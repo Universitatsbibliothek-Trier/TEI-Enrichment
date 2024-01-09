@@ -56,6 +56,7 @@ import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
 import de.uni_trier.bibliothek.xml.persons.model.generated.PersName;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
 import de.uni_trier.bibliothek.xml.places.model.generated.ListPlace;
+import de.uni_trier.bibliothek.xml.places.model.generated.Location;
 import de.uni_trier.bibliothek.xml.places.model.generated.Note;
 import de.uni_trier.bibliothek.xml.places.model.generated.Place;
 import de.uni_trier.bibliothek.xml.places.model.generated.PlaceIdno;
@@ -687,7 +688,6 @@ public class EntityListWriter {
 			JSONArray variantNameArray = jsonObject.getJSONArray("variantName");
 			for(int i = 0; i < variantNameArray.length(); i++)
 			{
-				System.out.println("variantName von event ist: " + variantNameArray.get(i));
 				event.getLabelOrDescOrNote().add(variantNameArray.get(i));
 			}
 			
@@ -1007,37 +1007,26 @@ public class EntityListWriter {
 				}
 			
 		}
+
+		if (!alreadyHasLink) {
+			de.uni_trier.bibliothek.xml.orgs.model.generated.Link link = orgsTEIObjectFactory.createLink();
+			link.setTarget(fileName + reference);
+			org.getOrgNameOrIdnoOrLink().add(link);
+		}
+
+		if (divFrontElement.getType() != null) {
+			String referenceWithoutHash = reference.substring(1, reference.length());
+			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkArtikel = orgsTEIObjectFactory.createLink();
+			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
+			org.getOrgNameOrIdnoOrLink().add(linkArtikel);
+		}
 		
 		if (!alreadyHasTitle) {
 			Map<QName, String> attributesMap = org.getOtherAttributes();
 			attributesMap.put(qname, "org_" + preferredName);
 
-			if (jsonObject.has("biographicalOrHistoricalInformation")) {
-				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
-				String detailedInformationString = detailedInformationArray.getString(0);
-				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
-				de.uni_trier.bibliothek.xml.orgs.model.generated.Note note = orgsTEIObjectFactory.createNote();
-				note.setType("desc");
-				note.getContent().add(detailedInformationString);
-				org.getOrgNameOrIdnoOrLink().add(note);
-			} else if (jsonObject.has("broaderTermInstantial")) {
-				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");				
-				de.uni_trier.bibliothek.xml.orgs.model.generated.Note descNote = orgsTEIObjectFactory.createNote();
-				descNote.setType("desc");
-				descNote.getContent().add(jsonObjectBroaderTermString);	
-				org.getOrgNameOrIdnoOrLink().add(descNote);			
-			}
-			else if (jsonObject.has("definition")) {
-				JSONArray definitionArray = jsonObject.getJSONArray("definition");
-				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
-				String definitionString = definitionArray.getString(0);
-				de.uni_trier.bibliothek.xml.orgs.model.generated.Note note = orgsTEIObjectFactory.createNote();
-				note.setType("desc");
-				note.getContent().add(definitionString);
-				org.getOrgNameOrIdnoOrLink().add(note);
-			}
+			
 
 			
 			
@@ -1114,23 +1103,40 @@ public class EntityListWriter {
 				}
 			}
 
+			if (jsonObject.has("biographicalOrHistoricalInformation")) {
+				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
+				String detailedInformationString = detailedInformationArray.getString(0);
+				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
+				de.uni_trier.bibliothek.xml.orgs.model.generated.Note note = orgsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(detailedInformationString);
+				org.getOrgNameOrIdnoOrLink().add(note);
+			} else if (jsonObject.has("broaderTermInstantial")) {
+				JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
+				JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
+				String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");				
+				de.uni_trier.bibliothek.xml.orgs.model.generated.Note descNote = orgsTEIObjectFactory.createNote();
+				descNote.setType("desc");
+				descNote.getContent().add(jsonObjectBroaderTermString);	
+				org.getOrgNameOrIdnoOrLink().add(descNote);			
+			}
+			else if (jsonObject.has("definition")) {
+				JSONArray definitionArray = jsonObject.getJSONArray("definition");
+				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
+				String definitionString = definitionArray.getString(0);
+				de.uni_trier.bibliothek.xml.orgs.model.generated.Note note = orgsTEIObjectFactory.createNote();
+				note.setType("desc");
+				note.getContent().add(definitionString);
+				org.getOrgNameOrIdnoOrLink().add(note);
+			}
+
 			
 			System.out.println("org eingetragen");
 			orgsList.add(org);
 		} 
 		
-		if (divFrontElement.getType() != null) {
-			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
-			de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkArtikel = orgsTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
-			org.getOrgNameOrIdnoOrLink().add(linkArtikel);
-		}
-		if (!alreadyHasLink) {
-			de.uni_trier.bibliothek.xml.orgs.model.generated.Link link = orgsTEIObjectFactory.createLink();
-			link.setTarget(fileName + reference);
-			org.getOrgNameOrIdnoOrLink().add(link);
-		}
+		
+		
 		if (!alreadyHasTitle) {		
 			org.getOrgNameOrIdnoOrLink().add(categoriesNote);
 		}
@@ -1377,9 +1383,9 @@ public class EntityListWriter {
 						place = placesListElement;
 						alreadyHasTitle = true;
 						List<JAXBElement<?>> placeNameOrLabelOrLocation = placesListElement.getPlaceNameOrLabelOrLocation();
-						for (Object placeNameOrLabelOrLocationElement : placeNameOrLabelOrLocation) {
-							if (placeNameOrLabelOrLocationElement instanceof de.uni_trier.bibliothek.xml.places.model.generated.Link) {
-								de.uni_trier.bibliothek.xml.places.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.places.model.generated.Link)placeNameOrLabelOrLocationElement;
+						for (JAXBElement<?> placeNameOrLabelOrLocationElement : placeNameOrLabelOrLocation) {
+							if (placeNameOrLabelOrLocationElement.getValue() instanceof de.uni_trier.bibliothek.xml.places.model.generated.Link) {
+								de.uni_trier.bibliothek.xml.places.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.places.model.generated.Link)placeNameOrLabelOrLocationElement.getValue();
 								if ((linkElement.getTarget()).equals(fileName + reference)) {
 									alreadyHasLink = true;
 								}
@@ -1393,7 +1399,291 @@ public class EntityListWriter {
 		if (!alreadyHasTitle) {
 			Map<QName, String> attributesMap = place.getOtherAttributes();
 			attributesMap.put(qname, "place_" + preferredName);
-			// objectIdentifier.getObjectNameOrIdno().add(preferredNameStringOriginal);
+			de.uni_trier.bibliothek.xml.places.model.generated.Location location = new de.uni_trier.bibliothek.xml.places.model.generated.Location();
+
+			JAXBElement<?> locationJAXB = placesTEIObjectFactory.createPlaceLocation(location);
+			boolean hasLocation = false;
+
+			if(jsonObject.has("hasGeometry"))
+			{
+				String geoCoordinates ="";
+				JSONArray hasGeometry = jsonObject.getJSONArray("hasGeometry");
+				for(int i = 0; i < hasGeometry.length(); i++)
+				{
+					JSONObject asWKT = hasGeometry.getJSONObject(i);
+					if(asWKT.has("asWKT"))
+					{
+						hasLocation = true;
+						JSONArray asWKTarray = asWKT.getJSONArray("asWKT");
+						geoCoordinates = asWKTarray.getString(0);
+					}
+			
+					
+					geoCoordinates = geoCoordinates.substring(8, 31);
+					location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(geoCoordinates));
+				}
+				
+			}
+
+			if(jsonObject.has("geographicAreaCode"))
+			{
+				String country ="";
+				String region ="";
+				JSONArray geographicAreaCode = jsonObject.getJSONArray("geographicAreaCode");
+				boolean hasCountry = false;
+				for(int i = 0; i < geographicAreaCode.length(); i++)
+				{
+					JSONObject geogrObject = geographicAreaCode.getJSONObject(i);
+					if(geogrObject.has("id"))
+					{
+						hasLocation = true;
+						String geographicURL = geogrObject.getString("id");
+						geographicURL = geographicURL.substring(59,geographicURL.length());
+						System.out.println("geographic: " + geographicURL);
+
+						if(geographicURL.contains("DE") && !hasCountry)
+						{
+							location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationCountry("Deutschland"));
+							hasCountry = true;
+						}
+						else if(geographicURL.contains("AT") && !hasCountry)
+						{
+							location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationCountry("Österreich"));
+							hasCountry = true;
+						}
+						else if(geographicURL.contains("CH") && !hasCountry)
+						{
+							location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationCountry("Schweiz"));
+							hasCountry = true;
+						}
+
+						if(geographicURL.contains("AT"))
+						{						
+							if(geographicURL.contains("-1"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Burgenland"));
+							}
+							else if(geographicURL.contains("-2"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Kärnten"));
+							}
+							else if(geographicURL.contains("-3"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Niederösterreich"));
+							}
+							else if(geographicURL.contains("-4"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Oberösterreich"));
+							}
+							else if(geographicURL.contains("-5"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Salzburg"));
+							}
+							else if(geographicURL.contains("-6"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Steiermark"));
+							}
+							else if(geographicURL.contains("-7"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Tirol"));
+							}
+							else if(geographicURL.contains("-8"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Vorarlberg"));
+							}
+							else if(geographicURL.contains("-9"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Wien"));
+							}
+							
+						}
+
+						if(geographicURL.contains("CH"))
+						{						
+							if(geographicURL.contains("AG"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Aargau"));
+							}
+							else if(geographicURL.contains("AI"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Appenzell <Innerrhoden>"));
+							}
+							else if(geographicURL.contains("AR"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Appenzell <Ausserrhoden>"));
+							}
+							else if(geographicURL.contains("BE"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Bern <Kanton>"));
+							}
+							else if(geographicURL.contains("BL"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Basel-Landschaft"));
+							}
+							else if(geographicURL.contains("BS"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Basel"));
+							}
+							else if(geographicURL.contains("FR"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Freiburg <Üechtland, Kanton>"));
+							}
+							else if(geographicURL.contains("GE"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Genf <Kanton>"));
+							}
+							else if(geographicURL.contains("GL"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Glarus <Kanton>"));
+							}
+							else if(geographicURL.contains("GR"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Graubünden"));
+							}
+							else if(geographicURL.contains("JU"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Jura <Kanton>"));
+							}
+							else if(geographicURL.contains("LU"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Luzern <Kanton>"));
+							}
+							else if(geographicURL.contains("NE"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Neuenburg <Schweiz, Kanton>"));
+							}
+							else if(geographicURL.contains("NW"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Nidwalden"));
+							}
+							else if(geographicURL.contains("OW"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Obwalden"));
+							}
+							else if(geographicURL.contains("SG"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Sankt Gallen <Kanton>"));
+							}
+							else if(geographicURL.contains("SH"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Schaffhausen <Kanton>"));
+							}
+							else if(geographicURL.contains("SO"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Solothurn <Kanton>"));
+							}
+							else if(geographicURL.contains("SZ"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Schwyz"));
+							}
+							else if(geographicURL.contains("TG"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Thurgau"));
+							}
+							else if(geographicURL.contains("TI"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Tessin"));
+							}
+							else if(geographicURL.contains("UR"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Uri"));
+							}
+							else if(geographicURL.contains("VD"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Waadt"));
+							}
+							else if(geographicURL.contains("VS"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Wallis"));
+							}
+							else if(geographicURL.contains("ZG"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Zug <Kanton>"));
+							}
+							else if(geographicURL.contains("ZH"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Zürich <Kanton>"));
+							}
+						}
+
+						if(geographicURL.contains("DE"))
+						{						
+							if(geographicURL.contains("BB"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Brandenburg"));
+							}
+							else if(geographicURL.contains("BE"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Berlin"));
+							}
+							else if(geographicURL.contains("BW"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Baden-Württemberg"));
+							}
+							else if(geographicURL.contains("BY"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Bayern"));
+							}
+							else if(geographicURL.contains("HB"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Bremen"));
+							}
+							else if(geographicURL.contains("HE"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Hessen"));
+							}
+							else if(geographicURL.contains("HH"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Hamburg"));
+							}
+							else if(geographicURL.contains("MV"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Mecklenburg-Vorpommern"));
+							}
+							else if(geographicURL.contains("NI"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Niedersachsen"));
+							}
+							else if(geographicURL.contains("NW"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Nordrhein-Westfalen"));
+							}
+							else if(geographicURL.contains("RP"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Rheinland-Pfalz"));
+							}
+							else if(geographicURL.contains("SH"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Schleswig-Holstein"));
+							}
+							else if(geographicURL.contains("SL"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Saarland"));
+							}
+							else if(geographicURL.contains("SN"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Sachsen"));
+							}
+							else if(geographicURL.contains("ST"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Sachsen-Anhalt"));
+							}
+							else if(geographicURL.contains("TH"))
+							{
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationRegion("Thüringen"));
+							}	
+						}
+					}
+				}
+				
+			}
+
+			if(hasLocation)
+			{
+				place.getPlaceNameOrLabelOrLocation().add(locationJAXB);
+			}
+			
+
 			de.uni_trier.bibliothek.xml.places.model.generated.List placesListSuperList = new de.uni_trier.bibliothek.xml.places.model.generated.List();
 
 			de.uni_trier.bibliothek.xml.places.model.generated.List placesListSubList = new de.uni_trier.bibliothek.xml.places.model.generated.List();
@@ -1499,8 +1789,6 @@ public class EntityListWriter {
 					}
 				}
 			}
-			// System.out.println("place eingetragen");
-			// placesList.add(place);
 		} 
 		if (divFrontElement.getType() != null) {
 			String referenceWithoutHash = reference.substring(1, reference.length());

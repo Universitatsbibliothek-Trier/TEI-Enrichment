@@ -268,7 +268,9 @@
                                 <lb/>ſter in S. Gregorienthal / und Pfriem im
                                 Bißthum Chur: die Abtißin von Kauffin⸗ 
                                 <lb/>gen; die Proͤbſte zu
-                                Weiſſenburg / und Odenheim; die Graffen und Herren von 
+                                Weiſſenburg /
+                                <name ref="mgndbibl:listBibl_Chronika"> Chronik 
+                            </name> und Odenheim; die Graffen und Herren von 
                                 <lb/>Naſſau⸗Sarbruͤcken;
                                 die Wetterauiſche Graffen; die Rheingraffen; die von Falcken⸗ 
                                 <lb/>ſtein;
@@ -335,7 +337,8 @@
                                 eingebracht 
                                 <lb/>werden; wie auch Gelnhauſen / und die Graffſchafft
                                 Naſſau⸗Beylſtein / ꝛc. ſo ſonſten 
-                                <lb/>zum Nieder⸗Rheiniſchen Creyß
+                                <lb/>zum Nieder⸗Rheiniſchen 
+                                <name ref="mgndobj:place_Berlin">Dreißigjähriger Krieg</name>Creyß
                                 gehoͤrig ſeyn. Jtem Naſſau⸗Dillenberg / ſo ſonſten 
                                 <lb/>zum
                                 Weſtphaͤliſchen Creyß gezogen wird. 
@@ -997,7 +1000,8 @@
                                 <name ref="mgndeve:event_Schlacht_bei_Montebello_1800">voluptua</name> nonumy eirmod
                                 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                                 voluptua. 
-                                <lb/>At vero eos et accusam et justo duo dolores et ea
+                                <lb/>At 
+                                <name ref="mgndeve:event_Schlacht_bei_Montebello_1800">voluptua</name>vero eos et accusam et justo duo dolores et ea
                                 rebum.
                                 <lb/> Stet clita kasd gubergren, no sea takimata sanctus est
                                 Lorem ipsum dolor sit amet.
@@ -1623,7 +1627,8 @@
                                 Adolff 
                                 <lb/>Graff zu Schwalenberg mit dem Bocken⸗ 
                                 <lb/>ſtrot /
-                                einem Wald. Jm Jahr 1640. hielte 
+                                einem Wald. Jm Jahr 1640.
+                                <name ref="mgndorgs:org_Elektrizitätswerk_Trier">Solothurn</name> hielte 
                                 <lb/>allda Beylaͤger der
                                 Schwediſche General 
                                 <lb/>Feld⸗Marſchalck Banner umb den 16. 26. 
@@ -1679,7 +1684,8 @@
                                 <name ref="mgndper:person_Egg_Familie_18._Jh._">Bey</name> der Ober⸗ 
                                 <lb/>Pforten ſihet man / daß es
                                 ein wolverwahr⸗ 
-                                <lb/>ter Orth geweſen / dann das Waſſer rings 
+                                <lb/>ter 
+                                <name ref="mgndper:person_Egg_Familie_18._Jh._">Bey</name>Orth geweſen / dann das Waſſer rings 
                                 <lb/>umbher
                                 gangen / mit auffziehenden Bruͤ⸗ 
                                 <lb/>cken verwahrt. Es hat ein
@@ -1713,9 +1719,9 @@
                                 <lb/>Burgerey
                                 wol befindet.</p>
                         </div>
-                        <div type="additional" corresp="mgndeve:place_Landgrafschaft_Hessen" xml:id="band_07_art_Landgrafschaft_Hessen">
+                        <div type="additional" corresp="mgndeve:place_Buchonia" xml:id="band_07_art_Buchonia">
                             <head>Arolſen.
-                                <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>
+                                <name ref="mgndobj:place_Buchonia">Regensburg</name>
                             </head>
                             <lb/>
                             <p>DLorem ipsum dolor sit 
@@ -1773,7 +1779,8 @@
                                     <lb/> Stet clita kasd gubergren, no sea
                                     takimata sanctus est Lorem ipsum dolor sit amet. 
                                     <lb/>Lorem
-                                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    ipsum dolor sit amet,
+                                    <name ref="mgndobj:object_First_State">Solothurn</name> consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                     erat, sed diam voluptua. 
                                     <lb/>At vero eos et accusam et justo
@@ -1783,9 +1790,9 @@
                                     <lb/>
                                 </p>
                             </div>
-                            <div type="article" corresp="mgndeve:place_Landgrafschaft_Hessen" xml:id="band_07_art_Landgrafschaft_Hessen">
+                            <div type="article" corresp="mgndeve:place_Dravograd" xml:id="band_07_art_Dravograd">
                                 <head>Lorem ipsum
-                                    <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>
+                                    <name ref="mgndobj:place_Dravograd">Regensburg</name>
                                 </head>
                                 <p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod 
@@ -1815,9 +1822,9 @@
             <pb n="14"/>
             <figure/>
             <lb/>
-            <div type="index" n="1" xml:id="band_07_art_Landgrafschaft_Hessen">
+            <div type="index" n="1" xml:id="band_07_art_Nassauer_Land">
                 <head>Namen ⸗Regiſter
-                    <name ref="mgndobj:place_Landgrafschaft_Hessen">Regensburg</name>
+                    <name ref="mgndobj:place_Nassauer_Land">Regensburg</name>
                 </head>
                 <lb/>
                 <p>Der Landſchafften / Gaͤw / Thaͤler / Staͤdt / Staͤdtlein / 

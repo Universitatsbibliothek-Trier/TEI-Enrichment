@@ -116,6 +116,7 @@
                         </note>
                         <link target="merian_hessen.xml#band_07"></link>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4048989-9</idno>
+                        <!-- +012.095560 +049.015000 -->
                     </place>
                     <place xml:id="place_Schloss_Grüningen" >
                         <placeName>Schloss Grüningen </placeName>
