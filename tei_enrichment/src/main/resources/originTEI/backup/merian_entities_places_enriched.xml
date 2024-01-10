@@ -201,6 +201,7 @@
                     <place xml:id="place_Landgrafschaft_Hessen">
                         <placeName>Landgrafschaft Hessen</placeName>
                         <location>
+                            <country>Deutschland, Deutsches Reich</country>
                             <country>Deutschland</country>
                             <region>Hessen</region>
                         </location>
@@ -223,6 +224,7 @@
                         <placeName>Buchonia</placeName>
                         <location>
                             <country>Deutschland</country>
+                            <country>Deutschland</country>
                             <region>Hessen</region>
                             <region>Thüringen</region>
                         </location>
@@ -243,6 +245,7 @@
                         <placeName>Nassauer Land</placeName>
                         <placeName>Nassau (Landschaft)</placeName>
                         <location>
+                            <country>Deutschland</country>
                             <country>Deutschland</country>
                             <region>Rheinland-Pfalz</region>
                             <region>Hessen</region>
@@ -284,6 +287,8 @@
                     <place xml:id="place_Westerwald">
                         <placeName>Westerwald</placeName>
                         <location>
+                            <country>Deutschland</country>
+                            <country>Deutschland</country>
                             <country>Deutschland</country>
                             <region>Nordrhein-Westfalen</region>
                             <region>Hessen</region>
@@ -501,7 +506,9 @@
                     </place>
                     <place xml:id="place_Gut_Schwitten">
                         <placeName>Gut Schwitten</placeName>
-                        <location/>
+                        <location>
+                            <country>Lettland</country>
+                        </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4816780-0</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">ca. 1543 entstanden, befand sich bis 1920 im Besitz d. von Fürst Anatol Lieven, danach Staatsbesitz</note>
