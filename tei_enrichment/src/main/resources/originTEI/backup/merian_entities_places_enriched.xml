@@ -23,184 +23,22 @@
         <body>
             <div xml:id="merian_places">
                 <listPlace xml:id="entities_place">
-                    <place xml:id="place_Nassau">
-                        <placeName>Nassau</placeName>
-                        <placeName>Staat Nassau </placeName>
-                        <placeName>Herzogtum Nassau </placeName>
-                        <label>Staat</label>
+                    <place>
+                        <placeName>dummy</placeName>
+                        <label></label>
                         <location>
-                            <country>Deutschland</country>
-                            <region>Rheinland-Pfalz</region>
-                            <region>Hessen</region>
-                            <geo>50.3167 7.8</geo>
+                            <region></region>
+                            <geo></geo>
+                            <country></country>
                         </location>
-                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                                <item>AdministrativeUnit</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4041265-9</idno>
-                    </place>
-                    <place xml:id="place_Schloss_Regensburg">
-                        <placeName>Schloss Regensburg-Weichs</placeName>
-                        <placeName>Schloss Weichs (Regensburg)</placeName>
-                        <location>
-                            <country>Deutschland</country>
-                            <region>Bayern</region>
-                            <geo>12.095560 49.015000</geo>
-                        </location>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                                <item>CorporateBody</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>BuildingOrMemorial</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07_art_Schloss_Regensburg"/>
-                        <link target="merian_hessen.xml#band_07_figure_001_01"/>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7695021-9</idno>
-                    </place>
-                    <place xml:id="place_Regensburg">
-                        <placeName>Regensburg </placeName>
-                        <location>
-                            <country>Deutschland</country>
-                            <region>Bayern</region>
-                            <geo>48.92194 11.6819</geo>
-                        </location>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                                <item>AdministrativeUnit</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4048989-9</idno>
-                    </place>
-                    <place xml:id="place_Schloss_Grüningen">
-                        <placeName>Schloss Grüningen </placeName>
-                        <location>
-                            <country>Schweiz</country>
-                            <region>Kanton Zürich</region>
-                        </location>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                                <item>AdministrativeUnit</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4583907-4</idno>
-                    </place>
-                    <place xml:id="place_Schloss_Hexenagger">
-                        <placeName>Schloss Hexenagger</placeName>
-                        <location>
-                            <country>Deutschland</country>
-                            <region>Bayern</region>
-                            <geo>011.686170 48.920580</geo>
-                        </location>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                                <item>AdministrativeUnit</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4260868-5</idno>
-                    </place>
-                    <place xml:id="place_Deutschland">
-                        <placeName>Deutschland</placeName>
-                        <location>
-                            <geo>010.500000 051.500000</geo>
-                        </location>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                                <item>AdministrativeUnit</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4260868-5</idno>
-                    </place>
-                    <place xml:id="place_Oberdrauburg">
-                        <placeName>Oberdrauburg</placeName>
-                        <location>
-                            <country>Österreich</country>
-                            <region>Kärnten</region>
-                            <geo>012.970280 046.743059</geo>
-                        </location>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                                <item>AdministrativeUnit</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4295358-3</idno>
-                    </place>
-                    <place xml:id="place_Dravograd">
-                        <placeName>Dravograd</placeName>
-                        <placeName>Unterdrauburg</placeName>
-                        <location>
-                            <country>Slowenien</country>
-                            <geo>015.019170 046.588059</geo>
-                        </location>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                                <item>AdministrativeUnit</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4328452-8</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Dravograd"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note/>
+                        <link/>
+                        <idno></idno>
                     </place>
                     <place xml:id="place_Landgrafschaft_Hessen">
                         <placeName>Landgrafschaft Hessen</placeName>
                         <location>
+                            <geo>!!!</geo>
                             <country>Deutschland, Deutsches Reich</country>
                             <country>Deutschland</country>
                             <region>Hessen</region>
@@ -223,8 +61,6 @@
                     <place xml:id="place_Buchonia">
                         <placeName>Buchonia</placeName>
                         <location>
-                            <country>Deutschland</country>
-                            <country>Deutschland</country>
                             <region>Hessen</region>
                             <region>Thüringen</region>
                         </location>
@@ -245,7 +81,7 @@
                         <placeName>Nassauer Land</placeName>
                         <placeName>Nassau (Landschaft)</placeName>
                         <location>
-                            <country>Deutschland</country>
+                            <geo>!!!</geo>
                             <country>Deutschland</country>
                             <region>Rheinland-Pfalz</region>
                             <region>Hessen</region>
@@ -267,7 +103,6 @@
                     <place xml:id="place_Klostergut_Volkenroda">
                         <placeName>Klostergut Volkenroda</placeName>
                         <location>
-                            <country>Deutschland</country>
                             <region>Thüringen</region>
                         </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4784990-3</idno>
@@ -287,9 +122,6 @@
                     <place xml:id="place_Westerwald">
                         <placeName>Westerwald</placeName>
                         <location>
-                            <country>Deutschland</country>
-                            <country>Deutschland</country>
-                            <country>Deutschland</country>
                             <region>Nordrhein-Westfalen</region>
                             <region>Hessen</region>
                             <region>Rheinland-Pfalz</region>
@@ -312,6 +144,7 @@
                         <placeName>Grafschaft Wittgenstein</placeName>
                         <placeName>Wittgenstein (Grafschaft)</placeName>
                         <location>
+                            <geo>!!!</geo>
                             <country>Deutschland</country>
                             <region>Nordrhein-Westfalen</region>
                         </location>
@@ -404,7 +237,6 @@
                     <place xml:id="place_Wetterau">
                         <placeName>Wetterau</placeName>
                         <location>
-                            <country>Deutschland</country>
                             <region>Hessen</region>
                         </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4065855-7</idno>
@@ -424,6 +256,7 @@
                         <placeName>Grafschaft Solms</placeName>
                         <placeName>Solms (Grafschaft)</placeName>
                         <location>
+                            <geo>!!!</geo>
                             <country>Deutschland</country>
                             <region>Hessen</region>
                         </location>
@@ -488,6 +321,7 @@
                         <placeName>Grafschaft Hanau</placeName>
                         <placeName>Hanau (Grafschaft)</placeName>
                         <location>
+                            <geo>!!!</geo>
                             <country>Deutschland</country>
                             <region>Hessen</region>
                         </location>
@@ -506,9 +340,7 @@
                     </place>
                     <place xml:id="place_Gut_Schwitten">
                         <placeName>Gut Schwitten</placeName>
-                        <location>
-                            <country>Lettland</country>
-                        </location>
+                        <location/>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4816780-0</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                         <note type="desc">ca. 1543 entstanden, befand sich bis 1920 im Besitz d. von Fürst Anatol Lieven, danach Staatsbesitz</note>
@@ -519,6 +351,63 @@
                             </list>
                             <list type="subcategory">
                                 <item>BuildingOrMemorial</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Mettendorf_Neuerburg">
+                        <placeName>Mettendorf (Neuerburg)</placeName>
+                        <location>
+                            <geo>!!!</geo>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7794841-5</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Holsthum">
+                        <placeName>Holsthum</placeName>
+                        <location>
+                            <geo>+006.412749 +049.893529</geo>
+                            <country>Deutschland</country>
+                            <region>Rheinland-Pfalz</region>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4262155-0</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Dravograd">
+                        <placeName>Dravograd</placeName>
+                        <placeName>Občina Dravograd</placeName>
+                        <placeName>Unterdrauburg</placeName>
+                        <placeName>Gemeinde Dravograd</placeName>
+                        <location>
+                            <geo>+015.019170 +046.588059</geo>
+                            <country>Slowenien</country>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4328452-8</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07_art_Dravograd"/>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
                             </list>
                         </note>
                     </place>

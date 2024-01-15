@@ -229,7 +229,9 @@
                             <lb/>
                             <head>Beſchreibung der vornehmſten Staͤdte und 
                                 <lb/>Plaͤtze in 
-                                <name ref="mgndobj:place_Westerwald">Deutschland</name> Heſſen
+                                <name ref="mgndobj:place_Westerwald">Deutschland 
+                                    <name ref="mgndobj:place_Grafschaft_Wittgenstein">Regensburg</name>
+                                </name> Heſſen
                                 / und den benachbarten Landſchafften / 
                                 <lb/>als Buchen / Naſſau /
                                 Wetterau / Weſterwald / Wittgen⸗ 
@@ -595,7 +597,8 @@
                                 genent werden. Hingegen ſagt 
                                 <lb/>man auch / daß die Stadt von
                                 etlichen 
-                                <lb/>Doͤrffern / ſo in dieſer Gegend gelegen / 
+                                <lb/>Doͤrffern / ſo in dieſer 
+                                <name ref="mgndobj:place_Mettendorf_Neuerburg">M-City</name>Gegend gelegen / 
                                 <lb/>und
                                 von welcher auch noch etwas Anzei⸗ 
                                 <lb/>gung und zerfallene
@@ -623,7 +626,8 @@
                                 und das gantze Land, in welches 
                                 <lb/>das Saltz haͤuffig verfuͤhret
                                 wird / groſſen 
-                                <lb/>Nutzen haben / wie ſolches auch dieſe Vers 
+                                <lb/>
+                                <name ref="mgndobj:place_Holsthum">Hols</name> haben / wie ſolches auch dieſe Vers 
                                 <lb/>
                                 andeuten: 
                                 <lb/>Urbi dant magnis pons, mons, fons, com- 

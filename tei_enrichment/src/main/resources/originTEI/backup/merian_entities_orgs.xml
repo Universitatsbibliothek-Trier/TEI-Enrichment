@@ -40,19 +40,11 @@
                 <!-- information about the source from which
                     the resource was derived, for example the entries and IDs of entitities we want to index -->
                 <listOrg xml:id="entities_org">
-                    <org xml:id="org_dummy">
-                        <orgName> dummy</orgName>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/213942-X </idno>
-                        <link target="merian_hessen.xml#band_07"></link>
-                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen.</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>CorporateBody</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>Company</item>
-                            </list>
-                        </note>
+                    <org>
+                        <orgName>dummy</orgName>
+                        <idno></idno>
+                        <link />
+                        <note></note>
                     </org>
                 </listOrg>
             </div>

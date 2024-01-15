@@ -1404,6 +1404,15 @@ public class EntityListWriter {
 			JAXBElement<?> locationJAXB = placesTEIObjectFactory.createPlaceLocation(location);
 			boolean hasLocation = false;
 
+			// System.out.println("has geometry: "  + jsonObject.has("hasGeometry"));
+			// System.out.println("typeTermslist contains tcboau: " + typeTermslist.contains("TerritorialCorporateBodyOrAdministrativeUnit"));
+			if(typeTermslist.contains("TerritorialCorporateBodyOrAdministrativeUnit") && !jsonObject.has("hasGeometry"))
+			{
+				System.out.println("no geometry and territorial");
+				String noGeoCoordinates = "!!!";
+				location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(noGeoCoordinates));
+				hasLocation = true;
+			}
 			if(jsonObject.has("hasGeometry"))
 			{
 				String geoCoordinates ="";
@@ -1417,23 +1426,37 @@ public class EntityListWriter {
 						JSONArray asWKTarray = asWKT.getJSONArray("asWKT");
 						geoCoordinates = asWKTarray.getString(0);
 					}
-			
-					
+				
+						
 					geoCoordinates = geoCoordinates.substring(8, 31);
 					location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(geoCoordinates));
 				}
-				
+					
 			}
+			
 
 			if(jsonObject.has("geographicAreaCode"))
 			{
 				JSONArray geographicAreaCode = jsonObject.getJSONArray("geographicAreaCode");
 				List<String> countries = CountryRegionCodes.getCountries(geographicAreaCode);
+				List<String> countriesToAdd = new ArrayList<String>();
 				for (String country : countries)
+				{
+					List<JAXBElement<String>> regionOrGeoOrCountryList = location.getRegionOrGeoOrCountry();
+					for(JAXBElement<String> regionOrGeoOrCountry : regionOrGeoOrCountryList)
+					{
+						// System.out.println("regionorcblabla getname: " + regionOrGeoOrCountry.getName());
+						if (!regionOrGeoOrCountry.getValue().equals(country) && !countriesToAdd.contains(country))
+						{
+							countriesToAdd.add(country);
+						}
+					}
+				}
+
+				for (String country : countriesToAdd)
 				{
 					location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationCountry(country));
 				}
-
 				List<String> regions = CountryRegionCodes.getRegions(geographicAreaCode);
 				for (String region : regions)
 				{

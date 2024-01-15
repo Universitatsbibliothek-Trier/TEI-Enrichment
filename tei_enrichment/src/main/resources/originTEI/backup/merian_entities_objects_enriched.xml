@@ -23,42 +23,13 @@
         <body>
             <div xml:id="merian_objects">
                 <listObject xml:id="entities_object">
-                    <object xml:id="object_Chronik">
+                    <object>
                         <objectIdentifier>
-                            <objectName>Chronik</objectName>
-                            <objectName>Chronic</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/1237790557</idno>
+                            <objectName>dummy</objectName>
+                            <idno></idno>
                         </objectIdentifier>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <note type="desc">Hier steht eine Kurzbeschreibung</note>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
-                            </list> 
-                        </note>
-                    </object>
-                    <object xml:id="object_Hessische_Chronica">
-                        <objectIdentifier>
-                            <objectName>Hessische Chronica</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4579228-8 </idno>
-                        </objectIdentifier>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <note type="desc">Hier steht eine Kurzbeschreibung</note>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
-                            </list> 
-                        </note>
+                        <note/>
+                        <link/>
                     </object>
                     <object xml:id="object_Gene">
                         <objectIdentifier>

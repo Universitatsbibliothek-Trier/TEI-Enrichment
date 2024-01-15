@@ -23,21 +23,11 @@
         <body>
             <div xml:id="merian_listBibl">
                 <listBibl xml:id="entities_listBibl">
-                    <bibl xml:id="listBibl_der_Sandmann">
-                        <title>Der Sandmann</title>
-                        <note type="desc">Inhalt: Der Sandmann erzählt in selbstreferenzieller Brechung (Anrede des Erzählers an den Leser, Reflexion über mögliche Erzähltechniken, Briefmontage) das Abgleiten des Studenten Nathanael in den Wahnsinn, wobei die Polyperspektivität des Erzählens die Unterscheidung zwischen gesunder und kranker Wahrnehmung relativiert. </note>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>Work</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>MusicalWork</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4198693-3</idno>
+                    <bibl>
+                        <title>dummy</title>
+                        <note/>
+                        <link/>
+                        <idno></idno>
                     </bibl>
                     <bibl xml:id="listBibl_Sammlung_Monika_und_Günther_Czichon">
                         <title>Sammlung Monika und Günther Czichon</title>

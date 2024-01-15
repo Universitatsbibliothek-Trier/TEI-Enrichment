@@ -28,21 +28,11 @@
         <body>
             <div xml:id="merian_orgs">
                 <listOrg xml:id="entities_org">
-                    <org xml:id="org_dummy">
-                        <orgName> dummy</orgName>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/213942-X </idno>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen.</note>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>CorporateBody</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>Company</item>
-                            </list>
-                        </note>
+                    <org>
+                        <orgName>dummy</orgName>
+                        <idno></idno>
+                        <link/>
+                        <note/>
                     </org>
                     <org xml:id="org_Kloster_Münster_Münster_Oberelsass">
                         <orgName>Kloster Münster (Münster, Oberelsass)</orgName>

@@ -861,13 +861,13 @@ public class EntityListEnricher {
 						checkChoice(choiceElement);
 					} else if (jaxbElement.getValue() instanceof NameGND) {
 						NameGND nameInNameGND = (NameGND) jaxbElement.getValue();
-						checkNameGnd(nameInNameGND, head, divFrontElement);
+						checkNameGnd(nameInNameGND, head, null);
 					} else if (jaxbElement.getValue() instanceof LbEtc) {
 						LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
 						checkLbEtc(lbEtc, null);
 					} else if (jaxbElement.getValue() instanceof SourceGND) {
 						SourceGND sourceGNDrec = (SourceGND) jaxbElement.getValue();
-						checkSourceGND(sourceGNDrec, head, divFrontElement);
+						checkSourceGND(sourceGNDrec, head, null);
 					} else if (jaxbElement.getValue() instanceof Subst) {
 						Subst substElement = (Subst) jaxbElement.getValue();
 						checkSubst(substElement);

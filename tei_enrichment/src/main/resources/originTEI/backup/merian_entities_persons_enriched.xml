@@ -23,56 +23,15 @@
         <body>
             <div xml:id="merian_persons">
                 <listPerson xml:id="entities_person">
-                    <person xml:id="person_Paul_Goldmann">
+                    <person>
                         <persName>
-                            <forename>Paul</forename>
-                            <surname>Goldmann</surname>
+                            <forename>dummy</forename>
                         </persName>
-                        <persName>
-                            <forename>Saul</forename>
-                            <surname>Goldmann</surname>
-                        </persName>
-                        <persName>
-                            <forename>Saul</forename>
-                            <surname>Goodman</surname>
-                        </persName>
-                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>Person</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>DifferentiatedPerson</item>
-                            </list> 
-                        </note>
-                        <birth when-custom="1755"/>
-                        <death when-custom="1824"/>
-                        <link target="merian_hessen.xml#band_07_art_paul_goldmann"/>
-                        <link target="merian_hessen.xml#band_07_art_some_5"/>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1205814876</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q3138</idno>
-                    </person>
-                    <person role="könig" xml:id="person_O_Kelly">
-                        <persName>
-                            <forename>Saul</forename>
-                            <surname>Goodman</surname>
-                        </persName>
-                        <note type="desc">Hier könnte eine Kurzbeschreibung stehen</note>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>Person</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>DifferentiatedPerson</item>
-                            </list> 
-                        </note>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1062805615 </idno>
+                        <note/>
+                        <birth/>
+                        <death/>
+                        <link/>
+                        <idno></idno>
                     </person>
                     <person xml:id="person_Merian_Matthaeus_der_Ältere">
                         <persName>

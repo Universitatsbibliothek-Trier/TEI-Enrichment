@@ -28,82 +28,14 @@
         <body>
             <div xml:id="merian_events">
                 <listEvent xml:id="entities_event">
-                    <event xml:id="event_Erster_Weltkrieg">
-                        <label>Erster Weltkrieg</label>
-                        <label>1. Weltkrieg</label>
+                    <event>
+                        <label>dummy</label>
                         <desc>
-                            <date from-custom="1914"/>
-                            <date to-custom="1918"/>
+                            <date/>
                         </desc>
-                        <note type="desc">Hier steht eine kurze Beschreibung des Events.</note>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>ConferenceOrEvent</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>SeriesOfConferenceOrEvent</item>
-                            </list> 
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079163-4</idno>
-                        <link target="merian_hessen.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                    </event>
-                    <event xml:id="event_Dreißigjähriger_Krieg">
-                        <label>Dreißigjähriger Krieg</label>
-                        <desc>
-                            <date from-custom="1618"/>
-                            <date to-custom="1648"/>
-                        </desc>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>ConferenceOrEvent</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>SeriesOfConferenceOrEvent</item>
-                            </list> 
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4012985-8</idno>
-                        <link target="merian_hessen.xml#band_07"/>
-                    </event>
-                    <event xml:id="event_Wormser_Religionsgespräche">
-                        <label>Wormser Religionsgespräche</label>
-                        <desc>
-                            <date when-custom="1914"/>
-                        </desc>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>ConferenceOrEvent</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>SeriesOfConferenceOrEvent</item>
-                            </list> 
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1092546847</idno>
-                        <link target="merian_hessen.xml#band_07"/>
-                    </event>
-                    <event xml:id="event_Kappeler_Krieg_1529">
-                        <label>Kappeler Krieg 1529</label>
-                        <desc>
-                            <date when-custom="1529"/>
-                        </desc>
-                        <note type="categories">
-                            
-                            <list type="supercategory">
-                                <item>ConferenceOrEvent</item>
-                            </list>
-                            
-                            <list type="subcategory">
-                                <item>SeriesOfConferenceOrEvent</item>
-                            </list> 
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4196610-7</idno>
-                        <link target="merian_hessen.xml#band_07"/>
+                        <note/>
+                        <idno></idno>
+                        <link/>
                     </event>
                     <event xml:id="event_Freiburger_Literaturgespräch">
                         <label>Freiburger Literaturgespräch</label>
@@ -203,6 +135,30 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1105667375</idno>
+                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                    </event>
+                    <event xml:id="event_Erster_Weltkrieg">
+                        <label>Erster Weltkrieg</label>
+                        <label>Weltkrieg 1</label>
+                        <label>Weltkrieg I</label>
+                        <label>Weltkrieg &lt;1914-1918&gt;</label>
+                        <label>I. Weltkrieg</label>
+                        <label>1. Weltkrieg</label>
+                        <desc>
+                            <date from-custom="1914"/>
+                            <date to-custom="1918"/>
+                        </desc>
+                        <note type="desc">Weltkrieg</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>HistoricSingleEventOrEra</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079163-4</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_all_elements_example_before.xml#band_07"/>
                     </event>
                     <event xml:id="event_Schlacht_bei_Montebello_1800">

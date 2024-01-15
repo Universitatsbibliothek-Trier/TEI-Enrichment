@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-
-xml:id="band_07"
-xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
-<!-- xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd" xml:id="band_07"> -->
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd" xml:id="band_07">
 
     <teiHeader>
         <fileDesc>
@@ -373,7 +369,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     / und
                     <name ref="???">Genff</name>
                     ; der Hochmeiſter des
-                    <name ref="https://d-nb.info/gnd/7573324-9">Johanniter Ordens</name>
+                    <name ref="https://d-nb.info/gnd/43583-1">Johanniter Ordens</name>
                     /
                     <lb/>
                     die Pfaltzgrafen / wegen der
@@ -2613,7 +2609,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         berg
                     </name>
                     /
-                    <name ref="https://d-nb.info/gnd/4486835-2">Buchen</name>
+                    <name ref="https://d-nb.info/gnd/4371007-4">Buchen</name>
                     und
                     <name ref="https://d-nb.info/gnd/4018093-1">Francken</name>
                     / deuten:
@@ -2906,7 +2902,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <foreign xml:lang="la">
                         <name ref="https://d-nb.info/gnd/4229460-5">Catti</name>
                     </foreign>
-                    haben je und allwegen einen herrlichen Nahmen gehabt / und / Gott Lob / bis
+                    haben je und allwegen einen herrlichen Nahmen gehabt / und / <name ref="https://d-nb.info/gnd/118556703">Gott</name> Lob / bis
                     <lb/>
                     annoch erhalten; alſo daß
                     <foreign xml:lang="la">
@@ -3267,7 +3263,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     nannte es den <name ref="https://d-nb.info/gnd/1153164310">Mittelſtein</name> / daß es mitten / und zwiſchen fuͤnff Landen / als
                     <lb/>
-                    <name ref="***">Doͤringen</name> / <name ref="https://d-nb.info/gnd/4486835-2">Buchen</name> / <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> / <name ref="https://d-nb.info/gnd/4018093-1">Francken</name> / und <name ref="https://d-nb.info/gnd/4013723-5">Eißfeld</name> gelegen. Zu derſel⸗
+                    <name ref="***">Doͤringen</name> / <name ref="https://d-nb.info/gnd/4371007-4">Buchen</name> / <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> / <name ref="https://d-nb.info/gnd/4018093-1">Francken</name> / und <name ref="https://d-nb.info/gnd/4013723-5">Eißfeld</name> gelegen. Zu derſel⸗
                     <lb/>
                     ben Zeit war weder <name ref="https://d-nb.info/gnd/4014013-1">Eiſenach</name> / noch <name ref="https://d-nb.info/gnd/4122665-3">Warburg</name> / <name ref="https://d-nb.info/gnd/4051460-2">Saltzungen</name> aber war der
                     <lb/>
@@ -3468,196 +3464,196 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     Schweſter / Fr. <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/1020051663">Æmilia</name></foreign>, hat Anno 1647. zur Ehe bekommen Herrn <name ref="https://d-nb.info/gnd/1019980869">Carl Heinrichen
                     <lb/>
-                    von <foreign xml:lang="fr"><name ref="https://d-nb.info/gnd/4525781-4">Thouars</name></foreign>, Printzen von <foreign xml:lang="fr"><name ref="https://d-nb.info/gnd/1127617850">Tarente</name></foreign>, und <foreign xml:lang="fr"><name ref="https://d-nb.info/gnd/4339268-4">Talmont</name></foreign></name>: Ein andere aber / namlich Fr. <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/117722944">Char-
+                    von <foreign xml:lang="fr"><name ref="https://d-nb.info/gnd/4525781-4">Thouars</name></foreign>, Printzen von <foreign xml:lang="fr"><name ref="https://d-nb.info/gnd/1127617850">Tarente</name></foreign>, und <foreign xml:lang="fr"><name ref="https://d-nb.info/gnd/4339268-4">Talmont</name></foreign></name>: Ein andere aber / namlich Fr. <foreign xml:lang="fr"><name ref="https://d-nb.info/gnd/117722944">Char-
                     <lb/>
                     lotta</name></foreign>, ſo Anno 1627. den 20. Novembris / gebohren / iſt Anno 50. den 12. 22. Hornung /
                     <lb/>
-                    <name ref="https://d-nb.info/gnd/118560182">Jhr Durchl. Herrn Churfuͤrſt Carl Ludwigen / <name ref="https://d-nb.info/gnd/25943-3">Pfaltzgrafen</name> bey <name ref="">Rhein</name></name>
+                    <name ref="https://d-nb.info/gnd/118560182">Jhr Durchl. Herrn Churfuͤrſt Carl Ludwigen / <name ref="https://d-nb.info/gnd/25943-3">Pfaltzgrafen</name> bey <name ref="https://d-nb.info/gnd/4049739-2">Rhein</name></name>
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
                     <lb/>
-                    ehelich beygelegt worden. 3. Herrn Landgraf Hermann / ſo Anno 1607. den 14. Au⸗
+                    ehelich beygelegt worden. 3. Herrn <name ref="https://d-nb.info/gnd/100098355">Landgraf Hermann</name> / ſo Anno 1607. den 14. Au⸗
                     <lb/>
-                    guſti / gebohren / zu Rotenburg Hof haͤlt / in der erſten Ehe / Fr. Sophien Julianen /
+                    guſti / gebohren / zu <name ref="https://d-nb.info/gnd/7831420-3">Rotenburg</name> Hof haͤlt / in der erſten Ehe / Fr. <name ref="https://d-nb.info/gnd/14231773X">Sophien Julianen /
                     <fw type="catch">Graͤfin</fw>
                     <pb facs="DOI.jpg" n="21"/>
                     <fw type="pageNum">13</fw>
                     <fw type="header">in Heſſen und den benachbarten Landen.</fw>
                     <lb/>
-                    Graͤſin von Waldeck; folgends aber im Jahr 1642. Fr. Kuͤnigunden Julianen / Herrn
+                    Graͤſin von <name ref="???">Waldeck</name></name>; folgends aber im Jahr 1642. Fr. <name ref="https://d-nb.info/gnd/1114670995">Kuͤnigunden Julianen</name> / Herrn
                     <lb/>
-                    Johann Georgens / Fuͤrſtens zu Anhalt / Fr. Tochter / zur Ehe genommen hat / 4.
+                    <name ref="https://d-nb.info/gnd/104173327">Johann Georgens / Fuͤrſtens zu <name ref="https://d-nb.info/gnd/4112528-9">Anhalt</name></name> / Fr. Tochter / zur Ehe genommen hat / 4.
                     <lb/>
-                    Herrn Landgraff Friederichen / Anno 1617. den 19. Maij / gebohren / deſſen Gemahlin
+                    Herrn <name ref="https://d-nb.info/gnd/123961572">Landgraff Friederichen</name> / Anno 1617. den 19. Maij / gebohren / deſſen Gemahlin
                     <lb/>
-                    iſt / Fr. Eleonora Catharina / Herrn Pfaltzgraff Johann Caſimirs / der Zweybruͤggi⸗
+                    iſt / Fr. <name ref="https://d-nb.info/gnd/1034716794">Eleonora Catharina</name> / Herrn <name ref="https://d-nb.info/gnd/119314118">Pfaltzgraff Johann Caſimirs / der <name ref="https://d-nb.info/gnd/119462788">Zweybruͤggi⸗
                     <lb/>
-                    ſchen Linie / Fr. Tochter / und des jetzigen Koͤnigs in Schweden Fr. Schweſter. 5 Her⸗
+                    ſchen Linie</name></name> / Fr. Tochter / und des <name ref="https://d-nb.info/gnd/118720945">jetzigen Koͤnigs in <name ref="https://d-nb.info/gnd/4077258-5">Schweden</name></name> Fr. Schweſter. 5 Her⸗
                     <lb/>
-                    ren Landgraff Ernſten / Anno 1623. den 7. Septembris gebohren; ſo ſich Anno 1651.
+                    ren <name ref="https://d-nb.info/gnd/118963287">Landgraff Ernſten</name> / Anno 1623. den 7. Septembris gebohren; ſo ſich Anno 1651.
                     <lb/>
                     im Chriſtmonat zur Roͤmiſch⸗Catholiſchen Religion begeben; wie auch Jhr F
                     <supplied>uͤr</supplied>
                     ſtl.
                     <lb/>
-                    Gnad. Frau Gemahlin / Frau Maria Eleonora / eine gebohrne Graͤfin von Solms.
+                    Gnad. Frau <name ref="https://d-nb.info/gnd/102547394">Gemahlin / Frau Maria Eleonora</name> / eine gebohrne Graͤfin von <name ref="https://d-nb.info/gnd/4528964-5">Solms</name>.
                     <lb/>
-                    Ums Jahr 1652. hatten Jhre Fuͤrſtl. Gnad. allbereit 2. junge Herren / Nahmens
+                    Ums Jahr 1652. hatten <rs ref="https://d-nb.info/gnd/118963287">Jhre Fuͤrſtl. Gnad.</rs> allbereit 2. junge Herren / Nahmens
                     <lb/>
-                    Wilhelm / und Carl / im Leben: und beſitzen der Zeit die Nidere Graffſchafft Catzene⸗
+                    <name ref="???">Wilhelm</name> / und <name ref="???">Carl</name> / im Leben: und beſitzen der Zeit die <name ref="https://d-nb.info/gnd/4607290-1">Nidere Graffſchafft Catzene⸗
                     <lb/>
-                    lenbogen.
+                    lenbogen</name>.
                     <lb/>
-                    Der Andern / nemlich der Darmſtaͤdtiſchen / Haupt⸗Linie Erheber / iſt geweſen / Herr
+                    Der Andern / nemlich der <name ref="https://d-nb.info/gnd/118704214">Darmſtaͤdtiſchen / Haupt⸗Linie</name> Erheber / iſt geweſen / Herr
                     <lb/>
-                    Landgraff Georg / Herrn Landgrafen Philipſen vierdter Sohn / ſo Anno 1596. geſtor⸗
+                    <name ref="https://d-nb.info/gnd/118690493">Landgraff Georg</name> / Herrn <name ref="https://d-nb.info/gnd/11859382X">Landgrafen Philipſen</name> vierdter Sohn / ſo Anno 1596. geſtor⸗
                     <lb/>
-                    ben / und verlaſſen / 1. Herren Landgraff Ludwigen / zu Darmſtadt / Stiffter der hohen
+                    ben / und verlaſſen / 1. Herren <name ref="https://d-nb.info/gnd/102119538">Landgraff Ludwigen / zu <name ref="https://d-nb.info/gnd/4072471-2">Darmſtadt</name></name> / Stiffter der <name ref="https://d-nb.info/gnd/36154-9">hohen
                     <lb/>
-                    Schul zu Gieſſen / ſo Anno 1626. den 27. Julij / Alten Calend. geſtorben / und hinter⸗
+                    Schul zu Gieſſen</name> / ſo Anno 1626. den 27. Julij / Alten Calend. geſtorben / und hinter⸗
                     <lb/>
-                    laſſen / 1. Herrn L. Georgen / Anno 1605. den 17. Mertzen gebohren; deſſen Fuͤrſtlich.
+                    laſſen / 1. Herrn <name ref="https://d-nb.info/gnd/118884352">L. Georgen</name> / Anno 1605. den 17. Mertzen gebohren; <rs ref="https://d-nb.info/gnd/118884352">deſſen Fuͤrſtlich.
                     <lb/>
-                    Gnad. mit dero Frau Gemahlin / Frau Sophia Eleonora / Herrn Churfuͤrſten Jo⸗
+                    Gnad.</rs> mit dero Frau <name ref="https://d-nb.info/gnd/101421796">Gemahlin / Frau Sophia Eleonora</name> / Herrn <name ref="https://d-nb.info/gnd/100029752">Churfuͤrſten Jo⸗
                     <lb/>
-                    hann Georgen zu Sachſen Fr. Tochter / ehelichen erzeugt / Herrn L. Ludwigen Anno
+                    hann Georgen zu <name ref="https://d-nb.info/gnd/4051176-5">Sachſen</name></name> Fr. Tochter / ehelichen erzeugt / Herrn <name ref="https://d-nb.info/gnd/101248571">L. Ludwigen</name> Anno
                     <lb/>
-                    30. den 25. Jenner / (ſo Anno 1650. zu Gottorff / im Schleßwiggiſchen / mit Fr. Maria
+                    30. den 25. Jenner / (ſo Anno 1650. zu <name ref="https://d-nb.info/gnd/4106691-1">Gottorff</name> / im <name ref="https://d-nb.info/gnd/4514664-0">Schleßwiggiſchen</name> / mit Fr. <name ref="https://d-nb.info/gnd/104193379">Maria
                     <lb/>
-                    Eliſabeth / Herrn Friderichs zu Schleßwigg / und Holſtein / Hertzogens /
+                    Eliſabeth </name>/ Herrn <name ref="https://d-nb.info/gnd/11870320X">Friderichs zu <name ref="https://d-nb.info/gnd/4514664-0">Schleßwigg / und Holſtein</name> / Hertzogens</name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
                     Fr. Tochter /
                     <lb/>
-                    Ehelich Beylager gehalten / ) Fr. Magdal. Sibyllen / Anno 31. Herrn L. Georgen /
+                    Ehelich Beylager gehalten / ) Fr. <name ref="???">Magdal. Sibyllen</name> / Anno 31. Herrn <name ref="https://d-nb.info/gnd/115562869">L. Georgen</name> /
                     <lb/>
-                    Anno 32. den 29. Sept. wie Goldmeyer / oder Anno 33. wie ein anderer will / Fr. So⸗
+                    Anno 32. den 29. Sept. wie <name ref="https://d-nb.info/gnd/124374387" cert="high">Goldmeyer</name> / oder Anno 33. wie ein anderer will / Fr. <name ref="https://d-nb.info/gnd/1018974350">So⸗
                     <lb/>
-                    phien Eleonoren / Herrn Landgrafen Wilhelm Chriſtophen zu Homburg Gemahlin /
+                    phien Eleonoren</name> / Herrn <name ref="https://d-nb.info/gnd/13620306X">Landgrafen Wilhelm Chriſtophen zu <name ref="https://d-nb.info/gnd/4095174-1">Homburg</name></name> Gemahlin /
                     <lb/>
-                    An. 34. Fr. Eliſabethen Amalien / An. 35. und Frau Lodovicen Chriſtinen / Herrn Phi⸗
+                    An. 34. Fr. <name ref="https://d-nb.info/gnd/12890285X">Eliſabethen Amalien</name> / An. 35. und Frau <name ref="https://d-nb.info/gnd/120608073" cert="high">Lodovicen Chriſtinen<note>Hiermit muss die 1636 geborene Tochter von Georg II., Luise Christine gemeint sein. Diese war jedoch mit Christoph Ludwig I. zu Stolberg-Stolberg verheiratet, während die zuvor genannte Elisabeth Amalie mit Philipp Wilhelm zu Pfalz-Neuburg vermählt war.</note></name> / Herrn <name ref="https://d-nb.info/gnd/118742221">Phi⸗
                     <lb/>
-                    lip Wilhelms / Pfaltzgrafens bey Rhein / Neuburg /
+                    lip Wilhelms / Pfaltzgrafens bey <name ref="https://d-nb.info/gnd/4049739-2">Rhein</name> / <name ref="https://d-nb.info/gnd/4045461-7">Neuburg</name></name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
                     Frauen Gemahlin / Anno 36.
                     <lb/>
-                    ohne die / ſo geſtorben. 2. Herrn Landgrafen Johann / Anno 1609. den 17.
+                    ohne die / ſo geſtorben. 2. Herrn <name ref="https://d-nb.info/gnd/121930882">Landgrafen Johann</name> / Anno 1609. den 17.
                     <lb/>
                     Brachmonats / gebohren / und Anno 1651. im Aprilen / ohne Mannliche Leibs⸗Erben /
                     <lb/>
-                    geſtorben. Seine geweſte Gemahlin / Frau Johannete / gebohrne Graͤfin zu Sayn /
+                    geſtorben. Seine geweſte Gemahlin / Frau <name ref="https://d-nb.info/gnd/104158492">Johannete / gebohrne Graͤfin zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn /
                     <lb/>
-                    und Witgenſtein / Frau zu Homburg / hat noch neulich gelebt. Er / der Herr Landgraf
+                    und Witgenſtein</name> / Frau <name ref="https://d-nb.info/gnd/4095174-1">zu Homburg</name></name> / hat noch neulich gelebt. Er / der Herr <name ref="https://d-nb.info/gnd/121930882">Landgraf
                     <lb/>
-                    Johann / hat zu Braubach / in der Niedern Graffſchafft Catzenelenbogen / gewohnt.
+                    Johann</name> / hat zu <name ref="https://d-nb.info/gnd/7534640-0">Braubach</name> / in der <name ref="https://d-nb.info/gnd/4607290-1">Niedern Graffſchafft Catzenelenbogen</name> / gewohnt.
                     <lb/>
-                    Und iſt in dem obgedachten Vergleich / zwiſchen Caſſel / und Darmſtadt / bedingt wor⸗
+                    Und iſt in dem obgedachten Vergleich / zwiſchen <name ref="https://d-nb.info/gnd/4072472-4 https://d-nb.info/gnd/118938339">Caſſel</name> / und <name ref="https://d-nb.info/gnd/4072471-2 https://d-nb.info/gnd/118704214">Darmſtadt</name> / bedingt wor⸗
                     <lb/>
-                    den / daß Heſſen⸗Caſſel verbleiben ſolle / die Nider⸗Graffſchafft Catzenelenbogen; doch
+                    den / daß <name ref="https://d-nb.info/gnd/4072472-4">Heſſen⸗Caſſel</name> verbleiben ſolle / die <name ref="https://d-nb.info/gnd/4607290-1">Nider⸗Graffſchafft Catzenelenbogen</name>; doch
                     <lb/>
-                    das Amt Braubach / ſo viel daran Caſſeliſch / ſampt dem Kirſpel Catzenelenbogen; wel⸗
+                    das <name ref="https://d-nb.info/gnd/5156125-6">Amt Braubach</name> / ſo viel daran <name ref="https://d-nb.info/gnd/4072472-4">Caſſeliſch</name> / ſampt dem <name ref="***">Kirſpel Catzenelenbogen</name>; wel⸗
                     <lb/>
-                    che Herr Johann Landgraff zu Heſſen / gegen anderwertige gleichguͤltige Aus⸗
+                    che Herr <name ref="https://d-nb.info/gnd/121930882">Johann Landgraff zu <name ref="https://d-nb.info/gnd/4072471-2">Heſſen</name></name> / gegen anderwertige gleichguͤltige Aus⸗
                     <lb/>
-                    wechslung / mit Land / und Leuthen / ſo von Heſſen⸗Darmſtadt / der Fuͤrſtlichen Caſſe⸗
+                    wechslung / mit Land / und Leuthen / ſo von <name ref="https://d-nb.info/gnd/4072471-2">Heſſen⸗Darmſtadt</name> / der <name ref="https://d-nb.info/gnd/118938339">Fuͤrſtlichen Caſſe⸗
                     <lb/>
-                    liſchen Linien / zu thun / ſo lang Er / Landgraff Johann / und ſeine Mannliche Leibs⸗Er⸗
+                    liſchen Linien</name> / zu thun / ſo lang Er / <name ref="https://d-nb.info/gnd/121930882">Landgraff Johann</name> / und ſeine Mannliche Leibs⸗Er⸗
                     <lb/>
                     ben / leben / behalten ſoll / hievon ausgeſcheiden: Aber / nach deren Tod / ſollen ſolche
                     <lb/>
-                    Stuck wieder an Caſſel / gegen Zuruckgebung deſſen / ſo ſie jetzo dagegen bekommen /
+                    Stuck wieder an <name ref="https://d-nb.info/gnd/4072472-4">Caſſel</name> / gegen Zuruckgebung deſſen / ſo ſie jetzo dagegen bekommen /
                     <lb/>
-                    nach dero Willkuͤhr / fallen. 3. Herrn Landgraff Friederichen / der Roͤmiſchen Kirchen
+                    nach dero Willkuͤhr / fallen. 3. Herrn <name ref="https://d-nb.info/gnd/104366869">Landgraff Friederichen</name> / der Roͤmiſchen Kirchen
                     <lb/>
-                    Cardinaln / und des Maltheſer Ordens in Teutſchland Meiſtern / ſo An. 1616. den 28.
+                    Cardinaln / und des <name ref="https://d-nb.info/gnd/4168735-8">Maltheſer Ordens</name> in <name ref="https://d-nb.info/gnd/2035457-5">Teutſchland</name> Meiſtern / ſo An. 1616. den 28.
                     <lb/>
-                    Hornung / gebohren worden. 4. Fr. Eliſabeth Magdalenen / Hertzog Ludwig Friede⸗
+                    Hornung / gebohren worden. 4. Fr. <name ref="https://d-nb.info/gnd/120065290">Eliſabeth Magdalenen</name> / <name ref="https://d-nb.info/gnd/1243965061">Hertzog Ludwig Friede⸗
                     <lb/>
-                    richs zu Wuͤrtemberg / Muͤmpelgard; 5. Fr. Annen Leonoren / Hertzogs Georgen zu
+                    richs zu <name ref="https://d-nb.info/gnd/4067029-6">Wuͤrtemberg</name> / <name ref="https://d-nb.info/gnd/4040149-2">Muͤmpelgard</name></name>; 5. Fr. <name ref="https://d-nb.info/gnd/120440407">Annen Leonoren</name> / <name ref="https://d-nb.info/gnd/119137356">Hertzogs Georgen zu
                     <lb/>
-                    Braunſchweig / und Luͤneburg: 6. Fr. Sophien Agneſen / Pfaltzgrafen Johann Frie⸗
+                    <name ref="https://d-nb.info/gnd/17444-0">Braunſchweig / und Luͤneburg</name></name>: 6. Fr. <name ref="https://d-nb.info/gnd/118144596">Sophien Agneſen</name> / <name ref="https://d-nb.info/gnd/118144588">Pfaltzgrafen Johann Frie⸗
                     <lb/>
-                    derichen zu Hilpoldſtein; und 7. Julianen / Graff Ulrichs von Oſtfrießland / Gemah⸗
+                    derichen zu <name ref="https://d-nb.info/gnd/4024918-9">Hilpoldſtein</name></name>; und 7. <name ref="https://d-nb.info/gnd/104360097">Julianen</name> / <name ref="https://d-nb.info/gnd/104360062">Graff Ulrichs von <name ref="https://d-nb.info/gnd/4044067-9">Oſtfrießland</name></name> / Gemah⸗
                     <lb/>
-                    linnen. Der II. Sohn / hochgedachtes Herrn Landgrafen Georgens / war Herr Land⸗
+                    linnen. Der <num value="2.">II.</num> Sohn / hochgedachtes Herrn <name ref="https://d-nb.info/gnd/118690493">Landgrafen Georgens</name> / war Herr <name ref="https://d-nb.info/gnd/115864660">Land⸗
                     <lb/>
-                    graf Philips / ſo zu Butzbach / Anno 1643. ohne Leibs⸗Erben / mit Todt abgangen;
+                    graf Philips</name> / ſo zu <name ref="https://d-nb.info/gnd/4009241-0">Butzbach</name> / Anno 1643. ohne Leibs⸗Erben / mit Todt abgangen;
                     <lb/>
-                    und der III. Herr Landgraf Friederich zu Homburg vor der Hoͤhe; der Anno 1638. den
+                    und der <num value="3.">III.</num> Herr <name ref="https://d-nb.info/gnd/118693492">Landgraf Friederich zu <name ref="https://d-nb.info/gnd/4095174-1">Homburg</name></name> vor der Hoͤhe; der Anno 1638. den
                     <lb/>
-                    9. Maij / von ſeiner Gemahlin / Frauen Margareth Eliſabeth / gebohrnen Graͤfin zu Lei⸗
+                    9. Maij / von ſeiner Gemahlin / Frauen <name ref="https://d-nb.info/gnd/109617572X">Margareth Eliſabeth</name> / gebohrnen Graͤfin zu <name ref="https://d-nb.info/gnd/16118171-5">Lei⸗
                     <lb/>
-                    ningen / verlaſſen. 1. Herrn L. Wilhelm Chriſtophen / ſo / wie obgemelt / mit Herrn L.
+                    ningen</name> / verlaſſen. 1. Herrn <name ref="https://d-nb.info/gnd/13620306X">L. Wilhelm Chriſtophen</name> / ſo / wie obgemelt / mit Herrn <name ref="https://d-nb.info/gnd/118884352">L.
                     <lb/>
-                    Georgen zu Darmſtadt Fr. Tochter / Anno 50. Ehlich Beylager gehalten. 2. L. Georg
+                    Georgen zu <name ref="https://d-nb.info/gnd/4072471-2">Darmſtadt</name></name> Fr. <rs ref="https://d-nb.info/gnd/1018974350">Tochter</rs> / Anno 50. Ehlich Beylager gehalten. 2. <name ref="https://d-nb.info/gnd/11874657X">L. Georg
                     <lb/>
-                    Chriſtian. 3. L. Friederichen / und 4. Fraͤulein Annen Margarethen / ſo Anno
+                    Chriſtian</name>. 3. <name ref="https://d-nb.info/gnd/118535676">L. Friederichen</name> / und 4. Fraͤulein <name ref="???">Annen Margarethen</name> / ſo Anno
                     <lb/>
-                    1650. den 10. Aprilis / wie auch berichtet worden / Herrn Philips Ludwigen / Herrn
+                    1650. den 10. Aprilis / wie auch berichtet worden / Herrn <name ref="https://d-nb.info/gnd/138777497">Philips Ludwigen</name> / Herrn
                     <fw type="catch">Alexan⸗</fw>
                     <fw type="sig">B 3</fw>
                     <pb facs="DOI.jpg" n="22"/>
                     <fw type="pageNum">14</fw>
                     <fw type="header">Beſchreibung der vornehmſten Orth</fw>
                     <lb/>
-                    Alexanders / Hertzogen zu Schleßwig / und Holſtein / Herrn Sohn / Ehelich verſpro⸗
+                    <name ref="https://d-nb.info/gnd/136183921">Alexanders / Hertzogen zu <name ref="https://d-nb.info/gnd/4052692-6">Schleßwig / und Holſtein</name></name> / Herrn Sohn / Ehelich verſpro⸗
                     <lb/>
                     chen worden.
                     <lb/>
                     Was nun die angrentzende Landſchafften / und zwar die / deren Orthe Beſchreibung
                     <lb/>
-                    wir in dieſem Theil des Teutſchlandes einzubringen vorhabens ſeyn / anbelangt / ſo
+                    wir in dieſem Theil des <name ref="https://d-nb.info/gnd/2035457-5">Teutſchlandes</name> einzubringen vorhabens ſeyn / anbelangt / ſo
                     <lb/>
-                    grentzet erſtlich mit Heſſen das Laͤndlein
+                    grentzet erſtlich mit <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> das Laͤndlein
                     <lb/>
-                    I. Buchen / Buchonia, oder Fagonia, welches zwiſchen Thuͤringen / Francken / der
+                    <num value="1.">I.</num> <name ref="https://d-nb.info/gnd/4371007-4">Buchen</name> / <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4371007-4">Buchonia</name></foreign>, oder <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4371007-4!!!">Fagonia</name></foreign>, welches zwiſchen <name ref="https://d-nb.info/gnd/4436479-9">Thuͤringen</name> / <name ref="https://d-nb.info/gnd/4018093-1">Francken</name> / der
                     <lb/>
-                    Wetterau / und Heſſen gelegen. Jſt vor Zeiten ein lauter Buchenwald / und ein uner⸗
+                    <name ref="https://d-nb.info/gnd/4065855-7">Wetterau</name> / und <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> gelegen. Jſt vor Zeiten ein lauter Buchenwald / und ein uner⸗
                     <lb/>
                     bautes Land geweſen; jetzund aber iſt der Wald ziemlich geleutert / und das Land mit
                     <lb/>
-                    Staͤdten / (darunter Fulda das Haupt iſt) Doͤrffern und Schloͤſſern / wol erbauet.
+                    Staͤdten / (darunter <name ref="https://d-nb.info/gnd/4018859-0">Fulda</name> das Haupt iſt) Doͤrffern und Schloͤſſern / wol erbauet.
                     <lb/>
-                    Hat viel gute Fiſchreiche Waſſer / als fuͤrnehmlich die Fulda / die Huna / die Werra/
+                    Hat viel gute Fiſchreiche Waſſer / als fuͤrnehmlich die <name ref="https://d-nb.info/gnd/4018861-9">Fulda</name> / die <name ref="https://d-nb.info/gnd/1031909176">Huna</name> / die <name ref="https://d-nb.info/gnd/4065651-2">Werra</name>/
                     <lb/>
-                    und Olſter; viel kleine Baͤchlein / See / Bruͤnne / Aecker / Wieſen und Gaͤrten / und einen
+                    und <name ref="https://d-nb.info/gnd/4584452-5">Olſter</name>; viel kleine Baͤchlein / See / Bruͤnne / Aecker / Wieſen und Gaͤrten / und einen
                     <lb/>
-                    geſchlachten Boden / faſt zu allerley Fruͤchten / ſo in Teutſchland zu wachſen pflegen /
+                    geſchlachten Boden / faſt zu allerley Fruͤchten / ſo in<name ref="https://d-nb.info/gnd/2035457-5"> Teutſchland</name> zu wachſen pflegen /
                     <lb/>
                     ausgenommen / daß es keinen Weinwachs hat. Der Jnwohner Nahrung beſtehet meh⸗
                     <lb/>
                     rentheils in dem Ackerbau / der Viehzucht / Wollen⸗und Leinen⸗Tuch⸗Kauff. Jhre
                     <lb/>
-                    Sprach iſt langſam / faul / und mit Hoch⸗und Niederlaͤndiſchen teutſchen Woͤrtern ver⸗
+                    Sprach iſt langſam / faul / und mit <name ref="https://d-nb.info/gnd/4129491-9 https://d-nb.info/gnd/4042178-8">Hoch⸗und Niederlaͤndiſchen teutſchen</name> Woͤrtern ver⸗
                     <lb/>
-                    miſchet. Chriſtophorus Brouuerus, in ſeinen Antiquitatibus Fuldenſibus, ſagt / daß Bu⸗
+                    miſchet. <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/124651380">Chriſtophorus Brouuerus</name></foreign>, in ſeinen <foreign xml:lang="la"><name ref="???">Antiquitatibus Fuldenſibus</name></foreign>, ſagt / daß <name ref="https://d-nb.info/gnd/4371007-4">Bu⸗
                     <lb/>
-                    chen vor Alters Bocauna genannt worden ſeye / in deſſen Mitten das Grabfeld gele⸗
+                    chen</name> vor Alters <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4371007-4">Bocauna</name></foreign> genannt worden ſeye / in deſſen Mitten das <name ref="https://d-nb.info/gnd/4021727-9">Grabfeld</name> gele⸗
                     <lb/>
                     gen / deſſen Namens Urſprungs Muthmaſſung er am 6. Blat andeutet / und vermeynt /
                     <lb/>
-                    es habe Buchen vor Zeiten zu Thuͤringen gehoͤret; Folgends aber haben es die Fran⸗
+                    es habe <name ref="https://d-nb.info/gnd/4371007-4">Buchen</name> vor Zeiten zu <name ref="https://d-nb.info/gnd/4436479-9">Thuͤringen</name> gehoͤret; Folgends aber haben es die <name ref="https://d-nb.info/gnd/4071340-4">Fran⸗
                     <lb/>
-                    cken / als Obſiger / zu ſich gezogen / demſelben einen Namen / und Geſetze geben / die auch
+                    cken</name> / als Obſiger / zu ſich gezogen / demſelben einen Namen / und Geſetze geben / die auch
                     <lb/>
                     folgender Zeit in dieſem Laͤndlein gewohnet haben. Es iſt auch ein anders Laͤndlein /
                     <lb/>
-                    ſo Grapfeld genannt wird / und darin Eißfeld gelegen iſt; wiewol Theils es vermi⸗
+                    ſo <name ref="https://d-nb.info/gnd/4021727-9">Grapfeld</name> genannt wird / und darin <name ref="https://d-nb.info/gnd/4013723-5">Eißfeld</name> gelegen iſt; wiewol Theils es vermi⸗
                     <lb/>
-                    ſchen. Alſo nennet man Koͤnigshofen im Grapfeld: Northeim im Grapfeld / oder
+                    ſchen. Alſo nennet man <name ref="https://d-nb.info/gnd/4098660-3">Koͤnigshofen im <name ref="https://d-nb.info/gnd/4021727-9">Grapfeld</name></name>: <name ref="https://d-nb.info/gnd/4641408-3">Northeim im <name ref="https://d-nb.info/gnd/4021727-9">Grapfeld</name></name> / oder
                     <lb/>
-                    Grabfeld. Das Fuldiſch Gebiet iſt ſo voll Cellen / daß wohin man ſich wendet / dieſes
+                    <name ref="https://d-nb.info/gnd/4021727-9">Grabfeld</name>. Das <name ref="https://d-nb.info/gnd/4086566-6">Fuldiſch</name> Gebiet iſt ſo voll Cellen / daß wohin man ſich wendet / dieſes
                     <lb/>
-                    Wort bey der Doͤrffer und Flecken Namen / faſt zu finden iſt. Es haben aber der Ful⸗
+                    Wort bey der Doͤrffer und Flecken Namen / faſt zu finden iſt. Es haben aber der <name ref="https://d-nb.info/gnd/4086566-6">Ful⸗
                     <lb/>
-                    denſe Vor⸗Eltern eine Cell genannt / in welcher ſie Getreyd / und andere Lebens⸗Noth⸗
+                    denſe</name> Vor⸗Eltern eine Cell genannt / in welcher ſie Getreyd / und andere Lebens⸗Noth⸗
                     <lb/>
                     durfft / zum Gebrauch beydes der Bruͤder / und der Gaͤſte hinterlegt hatten. Und wur⸗
                     <lb/>
@@ -3667,54 +3663,54 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     chen gezieret / und der Heiligen Reliquien in dieſelbe gebracht worden. Es wird ein
                     <lb/>
-                    Theil des Laͤndleins Buchen auff dem Sande genannt / wo die Schloͤſſer Northeim /
+                    Theil des Laͤndleins <name ref="https://d-nb.info/gnd/4371007-4">Buchen</name> auff dem Sande genannt / wo die <name ref="???">Schloͤſſer Northeim</name> /
                     <lb/>
-                    und Toſtorff ſeyn. Es iſt die Abtey groß / maͤchtig / und reich / auch wol manchem Biß⸗
+                    und <name ref="***">Toſtorff</name> ſeyn. Es iſt die <rs ref="https://d-nb.info/gnd/4086566-6">Abtey</rs> groß / maͤchtig / und reich / auch wol manchem Biß⸗
                     <lb/>
                     thum zu vergleichen / und hat viel anſehnliche Lehen hin und wider zu verleyhen. Hat
                     <lb/>
-                    einen feinen Adel / darunter die von Boyneburg / vor dieſem Beumelberg genannt/
+                    einen feinen Adel / darunter die <name ref="https://d-nb.info/gnd/124587801">von Boyneburg</name> / vor dieſem <name ref="https://d-nb.info/gnd/124587801!!!">Beumelberg</name> genannt/
                     <lb/>
-                    und die Goͤrtzen / der Abtey Marſchalcken / ſeyn.
+                    und die <name ref="https://d-nb.info/gnd/11869586X">Goͤrtzen</name> / der <rs ref="https://d-nb.info/gnd/4086566-6">Abtey</rs> Marſchalcken / ſeyn.
                     <lb/>
-                    II. Naſſau / vor Zeiten Naßgau / Naſſgavia, und die Voͤlcker / ſo ſolches Land be⸗
+                    <num value="2.">II.</num> <name ref="https://d-nb.info/gnd/4203270-2">Naſſau</name> / vor Zeiten <name ref="https://d-nb.info/gnd/4203270-2!!!">Naßgau</name> / <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4203270-2!!!">Naſſgavia</name></foreign>, und die Voͤlcker / ſo ſolches Land be⸗
                     <lb/>
-                    wohnet haben / Naſſgowii, jetzt Naſſavii genannt / welches Wort ein naß und feuchtes
+                    wohnet haben / <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4203270-2!!!">Naſſgowii</name></foreign>, jetzt <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4203270-2!!!">Naſſavii</name></foreign> genannt / welches Wort ein naß und feuchtes
                     <lb/>
-                    Erdreich bedeutet. Dann Naſſau (von deme unten) ſo dem Lande den Namen geben /
+                    Erdreich bedeutet. Dann <name ref="https://d-nb.info/gnd/4750548-5">Naſſau</name> (von deme unten) ſo dem Lande den Namen geben /
                     <lb/>
                     liegt auff einem Huͤgel / welches allenthalben naſſe Felder umgeben: Das Woͤrtlein
                     <lb/>
-                    Au / oder Gau / aber heiſſet bey den Teutſchen eine Landſchafft; als Batau des Bato-
+                    Au / oder Gau / aber heiſſet bey den <name ref="https://d-nb.info/gnd/4070334-4">Teutſchen</name> eine Landſchafft; als <name ref="https://d-nb.info/gnd/4075410-8">Batau</name> des <name ref="???">Bato-
                     <lb/>
-                    nis Landt; Thur⸗gau ein duͤrres Landt; Rheyngau Rheinland; Briſ⸗gau / gelob⸗
+                    nis</name> Landt; <name ref="https://d-nb.info/gnd/4119605-3">Thur⸗gau</name> ein duͤrres Landt; <name ref="https://d-nb.info/gnd/4049757-4">Rheyngau</name> <name ref="https://d-nb.info/gnd/4049788-4">Rheinland</name>; <name ref="https://d-nb.info/gnd/4008110-2">Briſ⸗gau</name> / gelob⸗
                     <lb/>
-                    tes Land: Argau / geehrtes Land; Oſter⸗gau / und Weſter⸗gau ein / Oſt⸗und Weſt⸗
+                    tes Land: <name ref="https://d-nb.info/gnd/4000022-9">Argau</name> / geehrtes Land; <name ref="???">Oſter⸗gau</name> / und <name ref="???">Weſter⸗gau</name> ein / Oſt⸗und Weſt⸗
                     <lb/>
-                    land; Heugau / Heuland; und ſo fortan. Es hat aber dieſe Graffſchafft Naſſau / als
+                    land; <name ref="https://d-nb.info/gnd/4023974-3">Heugau</name> / Heuland; und ſo fortan. Es hat aber dieſe <name ref="https://d-nb.info/gnd/4203270-2">Graffſchafft Naſſau</name> / als
                     <lb/>
-                    ein groß und weitlaͤuffiges auff beyden Seiten der Loͤhn gelegenes Land / etliche andere
+                    ein groß und weitlaͤuffiges auff beyden Seiten der <name ref="https://d-nb.info/gnd/4034102-1">Loͤhn</name> gelegenes Land / etliche andere
                     <lb/>
-                    anhangende Graffſchafften / als Weilburg / Jdtſtein / Wißbaden / Dillenberg /
+                    anhangende Graffſchafften / als <name ref="https://d-nb.info/gnd/4351186-7">Weilburg</name> / <name ref="https://d-nb.info/gnd/4547116-2">Jdtſtein</name> / <name ref="https://d-nb.info/gnd/4547116-2">Wißbaden</name> / <name ref="https://d-nb.info/gnd/4115341-8">Dillenberg</name> /
                     <lb/>
-                    Beilſtein / Gleiberg / Sigen / Hadamar /
+                    <name ref="https://d-nb.info/gnd/1141629054">Beilſtein</name> / <name ref="???">Gleiberg</name> / <name ref="https://d-nb.info/gnd/4291595-8">Sigen</name> / <name ref="https://d-nb.info/gnd/4767554-8">Hadamar</name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
-                    Und ſeyn der Graffen von Naſſau Catzen⸗
+                    Und ſeyn der Graffen von <name ref="https://d-nb.info/gnd/4115341-8">Naſſau Catzen⸗
                     <lb/>
-                    elenbogen / oder Dillenberg / (darunder begriffen / Beilſtein / Dillenberg / Sigen / Ha⸗
+                    elenbogen</name> / oder <name ref="https://d-nb.info/gnd/4115341-8">Dillenberg</name> / (darunder begriffen / <name ref="https://d-nb.info/gnd/1141629054">Beilſtein</name> / <name ref="https://d-nb.info/gnd/4115341-8">Dillenberg</name> / <name ref="https://d-nb.info/gnd/4115341-8">Sigen</name> / <name ref="https://d-nb.info/gnd/4767554-8">Ha⸗
                     <lb/>
-                    damar / und Dietz) Grentzen gegen Mittag die Graffſchafft Wißbaden / und Jdtſtein;
+                    damar</name> / und <name ref="https://d-nb.info/gnd/4614063-3">Dietz</name>) Grentzen gegen Mittag die <name ref="https://d-nb.info/gnd/4547116-2">Graffſchafft Wißbaden</name> / und <name ref="https://d-nb.info/gnd/4547116-2">Jdtſtein</name>;
                     <lb/>
-                    vom Morgen Weilburg / und Solms / ſampt Heſſen; gegen Mitternacht Weſtpha⸗
+                    vom Morgen<name ref="https://d-nb.info/gnd/4351186-7"> Weilburg</name> / und <name ref="https://d-nb.info/gnd/4528964-5">Solms</name> / ſampt <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name>; gegen Mitternacht <name ref="https://d-nb.info/gnd/4065781-4">Weſtpha⸗
                     <lb/>
-                    len / und die Graffſchafft Witgenſtein; und vom Abend das Hertzogthum Bergen /
+                    len</name> / und die <name ref="https://d-nb.info/gnd/4350182-5">Graffſchafft Witgenſtein</name>; und vom Abend das <name ref="https://d-nb.info/gnd/4028839-0">Hertzogthum Bergen</name> /
                     <lb/>
-                    und die Graffſchafften Wied / Weſterburg / Trieriſche Orth / und Seyn. Haben
+                    und die<name ref="https://d-nb.info/gnd/4766893-3"> Graffſchafften Wied</name> / <name ref="https://d-nb.info/gnd/4771515-7">Weſterburg</name> / <name ref="https://d-nb.info/gnd/4060882-7">Trieriſche</name> Orth / und <name ref="https://d-nb.info/gnd/4116352-7">Seyn</name>. Haben
                     <lb/>
-                    viel Vogtheyen / die vom Petro Bertio lib. 2. Comment. Rerum Germanic.
+                    viel Vogtheyen / die vom <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/117751235">Petro Bertio</name> <name ref="***">lib. 2. Comment. Rerum Germanic.
                     <fw type="catch">cap. 24.</fw>
                     <pb facs="DOI.jpg" n="23"/>
                     <pb facs="DOI.jpg" n="24"/>
@@ -3730,193 +3726,193 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <fw type="pageNum">15</fw>
                     <fw type="header">in Heſſen und den benachbarten Landen.</fw>
                     <lb/>
-                    cap. 24. und von Johanne Textore, in der Naſſauiſchen Chronic am 17. und folgenden
+                    cap. 24</name>.</foreign> und von <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/119105764">Johanne Textore</name></foreign>, in der <name ref="???">Naſſauiſchen Chronic</name> am 17. und folgenden
                     <lb/>
-                    Blaͤttern / ſamt den Orten / ſo unter jedes Amt gehoͤrig / erzehlet werden; Als Haͤger /
+                    Blaͤttern / ſamt den Orten / ſo unter jedes Amt gehoͤrig / erzehlet werden; Als <name ref="https://d-nb.info/gnd/4022961-0">Haͤger</name> /
                     <lb/>
-                    Freudenberg / Sigen / Ebersbach / Dillenberg / Herborn / Beilſtein / Lonberg / Bur⸗
+                    <name ref="https://d-nb.info/gnd/4018466-3">Freudenberg</name> / <name ref="https://d-nb.info/gnd/4054883-1">Sigen</name> / <name ref="https://d-nb.info/gnd/10160733-7">Ebersbach</name> / <name ref="https://d-nb.info/gnd/4012326-1">Dillenberg</name> / <name ref="https://d-nb.info/gnd/4024455-6">Herborn</name> / <name ref="https://d-nb.info/gnd/4651995-6">Beilſtein</name> / <name ref="***">Lonberg</name> / <name ref="https://d-nb.info/gnd/4327878-4">Bur⸗
                     <lb/>
-                    bach / Maͤrenberg / Hohnſtett / Dietz / Zeutzheim / Hadamar / Kirpurg / Camberg /
+                    bach</name> / <name ref="https://d-nb.info/gnd/4368291-1">Maͤrenberg</name> / <name ref="https://d-nb.info/gnd/7594582-4" cert="high">Hohnſtett</name> / <name ref="https://d-nb.info/gnd/4012241-4">Dietz</name> / <name ref="https://d-nb.info/gnd/1077256280">Zeutzheim</name> / <name ref="https://d-nb.info/gnd/4022758-3">Hadamar</name> / <name ref="https://d-nb.info/gnd/2087062-0">Kirpurg</name> / <name ref="https://d-nb.info/gnd/4009347-5">Camberg</name> /
                     <lb/>
-                    Werheim / Altenberg / Kirdorff / Naſſau / Daußenau / Vier Herren Gericht / Walme⸗
+                    <name ref="https://d-nb.info/gnd/4064992-1">Werheim</name> / <name ref="https://d-nb.info/gnd/4374804-1">Altenberg</name> / <name ref="https://d-nb.info/gnd/4293692-5">Kirdorff</name> / <name ref="https://d-nb.info/gnd/4041266-0">Naſſau</name> / <name ref="https://d-nb.info/gnd/4011199-4">Daußenau</name> / <name ref="???">Vier Herren Gericht</name> / <name ref="https://d-nb.info/gnd/4678219-9">Walme⸗
                     <lb/>
-                    nach / Flacht / Honſtetten / Kirperg / Tringenſtein / Alten Weilnau / Loͤnberg / Driedorff /
+                    nach</name> / <name ref="https://d-nb.info/gnd/4680132-7">Flacht</name> / <name ref="https://d-nb.info/gnd/4222268-0***">Honſtetten</name> / <name ref="https://d-nb.info/gnd/2087062-0">Kirperg</name> / <name ref="???">Tringenſtein</name> / <name ref="https://d-nb.info/gnd/2035589-0">Alten Weilnau</name> / <name ref="https://d-nb.info/gnd/4036140-8">Loͤnberg</name> / <name ref="https://d-nb.info/gnd/4314960-1">Driedorff</name> /
                     <lb/>
-                    Ferndorff / Hilchenbach / Netphe / Rozenhayn / Heen / Emrichenhayn / Rennerod /
+                    <name ref="https://d-nb.info/gnd/1037095693">Ferndorff</name> / <name ref="https://d-nb.info/gnd/4024865-3">Hilchenbach</name> / <name ref="https://d-nb.info/gnd/4102461-8">Netphe</name> / <name ref="***">Rozenhayn</name> / <name ref="https://d-nb.info/gnd/4363425-4">Heen</name> / <name ref="https://d-nb.info/gnd/4657804-3">Emrichenhayn</name> / <name ref="https://d-nb.info/gnd/4314048-8">Rennerod</name> /
                     <lb/>
-                    Elſoff / Ellar / Frickhofen / Uſelbach / Eſten⸗Gericht / Dernerzent. Und dieſe Naſſauiſche
+                    <name ref="https://d-nb.info/gnd/4192884-2">Elſoff</name> / <name ref="https://d-nb.info/gnd/1069190322">Ellar</name> / <name ref="https://d-nb.info/gnd/4218710-2">Frickhofen</name> / <name ref="https://d-nb.info/gnd/4043005-4***">Uſelbach</name> / <name ref="***">Eſten⸗Gericht</name> / <name ref="***">Dernerzent</name>. Und dieſe <name ref="https://d-nb.info/gnd/4203270-2">Naſſauiſche</name>
                     <lb/>
                     Graffſchafften erkennen allein den Kaͤyſer fuͤrihren Ober⸗Herren / haben hohe Rega⸗
                     <lb/>
                     lien / und Freyheiten; moͤgen Guͤlden⸗und Silberne Muͤntzen ſchlagen. Die Land⸗
                     <lb/>
-                    ſchafft iſt theils Orten eben / an theils giebt es Huͤgel / Waͤlde; auch in der Graffſchafft
+                    ſchafft iſt theils Orten eben / an theils giebt es Huͤgel / Waͤlde; auch in der <name ref="https://d-nb.info/gnd/4090821-5">Graffſchafft
                     <lb/>
-                    Dietz / und am Lohngeſtade Weinwachs; theils Orthen hat ſie luſtige Felder und
+                    Dietz</name> / und am <name ref="https://d-nb.info/gnd/4034102-1">Lohn</name>geſtade Weinwachs; theils Orthen hat ſie luſtige Felder und
                     <lb/>
                     Wayden / iſt fruchtbar an Getreyd / Kraut und Huͤlſen⸗Fruͤchten. Gibt / ſonderlich
                     <lb/>
-                    auff dem Weſterwald / eine groſſe Viehezucht / und werden offtermals gute rechte We⸗
+                    auff dem <name ref="https://d-nb.info/gnd/4065773-5">Weſterwald</name> / eine groſſe Viehezucht / und werden offtermals gute rechte <name ref="https://d-nb.info/gnd/4065773-5">We⸗
                     <lb/>
-                    ſterwaͤlder Kaͤß / fuͤr einen Hollaͤndiſchen begehrt und erwoͤhlet. Es hat auch in dem
+                    ſterwaͤlder</name> Kaͤß / fuͤr einen <name ref="https://d-nb.info/gnd/4133959-9">Hollaͤndiſchen</name> begehrt und erwoͤhlet. Es hat auch in dem
                     <lb/>
-                    Sigeniſchen Gebiet Eiſenertz / und werden da eiſerne Oefen / und anders / bereitet. Zu
+                    <name ref="https://d-nb.info/gnd/4258207-6">Sigeniſchen</name> Gebiet Eiſenertz / und werden da eiſerne Oefen / und anders / bereitet. Zu
                     <lb/>
-                    Freudenberg machet man guten Stahel / den man durch gantz Teutſchland verkaufft.
+                    <name ref="https://d-nb.info/gnd/4018466-3">Freudenberg</name> machet man guten Stahel / den man durch gantz <name ref="https://d-nb.info/gnd/2035457-5">Teutſchland</name> verkaufft.
                     <lb/>
-                    Es giebt dergleichen Eiſengruben / und Werckſtatten auch im Dillenbergiſchen / Haͤge⸗
+                    Es giebt dergleichen Eiſengruben / und Werckſtatten auch im <name ref="https://d-nb.info/gnd/4012327-3">Dillenbergiſchen</name> / <name ref="https://d-nb.info/gnd/4022961-0">Haͤge⸗
                     <lb/>
-                    raniſchen / Burbachiſchen; daſelbſt man auch Bley und Kupffer graͤbt; wie inglei⸗
+                    raniſchen</name> / <name ref="https://d-nb.info/gnd/7728006-4">Burbachiſchen</name>; daſelbſt man auch Bley und Kupffer graͤbt; wie inglei⸗
                     <lb/>
-                    chem im Ebersbachiſchen Gebiet / daſelbſten auch ein Glaßhuͤtten iſt. Steinbruͤche
+                    chem im <name ref="https://d-nb.info/gnd/10160733-7">Ebersbachiſchen</name> Gebiet / daſelbſten auch ein Glaßhuͤtten iſt. Steinbruͤche
                     <lb/>
-                    ſeyn nechſt bey Dillenberg / und Herborn / und andern Orthen. Der fuͤrnehmſte Wald
+                    ſeyn nechſt bey <name ref="https://d-nb.info/gnd/4012326-1">Dillenberg</name> / und <name ref="https://d-nb.info/gnd/4024455-6">Herborn</name> / und andern Orthen. Der fuͤrnehmſte Wald
                     <lb/>
-                    iſt der Weſterwald; die kleinere / und die gleichſam von jenem herkommen ſeyn / Kaldt⸗
+                    iſt der<name ref="https://d-nb.info/gnd/4065773-5"> Weſterwald</name>; die kleinere / und die gleichſam von jenem herkommen ſeyn / <name ref="https://d-nb.info/gnd/7788736-0">Kaldt⸗
                     <lb/>
-                    Eych / Heyger⸗oder Haͤger⸗Struth / die Dietzhoͤltze / Hirſchberg / Schelder⸗Wald / die
+                    Eych</name> / <name ref="***">Heyger⸗oder Haͤger⸗Struth</name> / die <name ref="***">Dietzhoͤltze</name> / <name ref="***">Hirſchberg</name> / <name ref="???">Schelder⸗Wald</name> / die
                     <lb/>
-                    Hoͤrre / und der Calmberg; darinnen es ſtattliche Jagten giebt. Die fuͤrnehmſte Waſ⸗
+                    <name ref="???">Hoͤrre</name> / und der <name ref="***">Calmberg</name>; darinnen es ſtattliche Jagten giebt. Die fuͤrnehmſte Waſ⸗
                     <lb/>
-                    ſer ſeyn / die Lohn / Sige / und Dille / an welchen feine luſtige Staͤdtlein liegen / als an
+                    ſer ſeyn / die <name ref="https://d-nb.info/gnd/4034102-1">Lohn</name> / <name ref="https://d-nb.info/gnd/4054872-7">Sige</name> / und <name ref="https://d-nb.info/gnd/4012324-8">Dille</name> / an welchen feine luſtige Staͤdtlein liegen / als an
                     <lb/>
-                    der Sig / Sigen; an der Dill / Haͤger / Dillenberg / Herborn; und an der Lohn / Dietz /
+                    der <name ref="https://d-nb.info/gnd/4054872-7">Sig</name> / <name ref="https://d-nb.info/gnd/4054883-1">Sigen</name>; an der <name ref="https://d-nb.info/gnd/4012324-8">Dill</name> / <name ref="https://d-nb.info/gnd/4022961-0">Haͤger</name> / <name ref="https://d-nb.info/gnd/4012326-1">Dillenberg</name> / <name ref="https://d-nb.info/gnd/4024455-6">Herborn</name>; und an der <name ref="https://d-nb.info/gnd/4034102-1">Lohn</name> / <name ref="https://d-nb.info/gnd/4012241-4">Dietz</name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
                     <lb/>
-                    Das Embſerbad haben die Herren Graffen von Naſſau⸗Dillenberg mit den Herrn
+                    Das <name ref="https://d-nb.info/gnd/4014615-7">Embſerbad</name> haben die Herren Graffen von <name ref="https://d-nb.info/gnd/4115341-8">Naſſau⸗Dillenberg</name> mit den Herrn
                     <lb/>
-                    Landgraffen zu Heſſen insgemein. Es giebt auch Sauerbroͤnn in dieſer Lands⸗Art /
+                    Landgraffen zu <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> insgemein. Es giebt auch Sauerbroͤnn in dieſer Lands⸗Art /
                     <lb/>
-                    als zur Johannsburg / Camberg / Embs / und bey Dauſſenau / welche getruncken den
+                    als zur <name ref="***">Johannsburg</name> / <name ref="https://d-nb.info/gnd/4009347-5">Camberg</name> / <name ref="https://d-nb.info/gnd/4014614-5">Embs</name> / und bey <name ref="https://d-nb.info/gnd/4011199-4">Dauſſenau</name> / welche getruncken den
                     <lb/>
                     Stein aus dem Leib fuͤhren ſollen. Hat unterſchiedliche Staͤdte und Flecken / und vor
                     <lb/>
                     dem jetzigen Krieg uͤber die 450. Doͤrffer und Hoͤffe gehabt.
                     <lb/>
-                    III. Wetterau / iſt vor Zeiten ein beſonder pagus oder Gau / und Graffſchafft oder
+                    <num value="3.">III.</num> <name ref="https://d-nb.info/gnd/4065855-7">Wetterau</name> / iſt vor Zeiten ein beſonder <foreign xml:lang="la">pagus</foreign> oder Gau / und Graffſchafft oder
                     <lb/>
-                    Comitatus Wederoviæ geweſen / und nach den Wedrevis, oder Wedreviis, einem Volck /
+                    <foreign xml:lang="la">Comitatus <name ref="https://d-nb.info/gnd/4065855-7">Wederoviæ</name></foreign> geweſen / und nach den <foreign xml:lang="la"><name ref="***">Wedrevis</name></foreign>, oder <foreign xml:lang="la"><name ref="***">Wedreviis</name></foreign>, einem Volck /
                     <lb/>
-                    ſo darinnen gewohnet / oder aber von dem Fluß Wetter / Wedera, ſo allernechſt bey
+                    ſo darinnen gewohnet / oder aber von dem Fluß <name ref="https://d-nb.info/gnd/4065853-3">Wetter</name> / <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4065853-3">Wedera</name></foreign>, ſo allernechſt bey
                     <lb/>
-                    Laubach / unfern von dem Dorff Wetterfeld entſpringet / und bey Aſſenheim in die
+                    <name ref="https://d-nb.info/gnd/4034691-2">Laubach</name> / unfern von dem Dorff <name ref="https://d-nb.info/gnd/4119093-2">Wetterfeld</name> entſpringet / und bey <name ref="https://d-nb.info/gnd/2028020-8">Aſſenheim</name> in die
                     <lb/>
-                    Nidda fleuſt / Wederebia, Wederevia, Wedereibia, Wettereib / und Wetrey / genannt
+                    <name ref="https://d-nb.info/gnd/4101180-6">Nidda</name> fleuſt / <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4065855-7">Wederebia</name>, <name ref="https://d-nb.info/gnd/4065855-7">Wederevia</name>, <name ref="https://d-nb.info/gnd/4065855-7">Wedereibia</name></foreign>, <name ref="https://d-nb.info/gnd/4065855-7">Wettereib</name> / und <name ref="https://d-nb.info/gnd/4065855-7">Wetrey</name> / genannt
                     <lb/>
                     worden. Es ſeynd heutiges Tags unterſchiedliche uhralte und treffliche Graffſchafften
                     <lb/>
-                    in ſolchem Lande gelegen / ſo dem Heil. Roͤmiſchen Reich ohne Mittel zugethan ſeyn /
+                    in ſolchem Lande gelegen / ſo dem <name ref="https://d-nb.info/gnd/2035457-5">Heil. Roͤmiſchen Reich</name> ohne Mittel zugethan ſeyn /
                     <lb/>
-                    und in des Reichs Matricul zum Rheiniſchen Creyſe gerechnet / und die Wetteraui⸗
+                    und in des Reichs Matricul zum <name ref="https://d-nb.info/gnd/4116701-6">Rheiniſchen Creyſe</name> gerechnet / und die <name ref="https://d-nb.info/gnd/4065855-7">Wetteraui⸗
                     <lb/>
-                    ſche Graffen genannt werden; als da ſeyn die Graffen von Naſſau / Hanau / Solms /
+                    ſche</name> Graffen genannt werden; als da ſeyn die Graffen von <name ref="https://d-nb.info/gnd/4115341-8">Naſſau</name> / <name ref="https://d-nb.info/gnd/4023202-5">Hanau</name> / <name ref="https://d-nb.info/gnd/4528964-5">Solms</name> /
                     <lb/>
-                    Eiſenburg / Sayn / Witgenſtein / und Wiedt /
+                    <name ref="https://d-nb.info/gnd/10181398-3">Eiſenburg</name> / <name ref="https://d-nb.info/gnd/4116352-7">Sayn</name> / <name ref="https://d-nb.info/gnd/4350182-5">Witgenſtein</name> / und <name ref="https://d-nb.info/gnd/4766893-3">Wiedt</name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
                     Es liegt darin ein ziemlich weiter
                     <lb/>
-                    Strich / die Fuldiſche Marck genannt / ſo der 57. Abt zu Fulda / Hermann von Bu⸗
+                    Strich / die <name ref="???">Fuldiſche Marck</name> genannt / ſo der <name ref="https://d-nb.info/gnd/131768859">57. Abt zu <name ref="https://d-nb.info/gnd/4086566-6">Fulda</name> / Hermann von Bu⸗
                     <lb/>
-                    chenau / den Graffen von Naſſau erblich verkaufft / von welchen ſelbige fuͤrters an
+                    chenau</name> / den <name ref="https://d-nb.info/gnd/118738038">Graffen von Naſſau</name> erblich verkaufft / von welchen ſelbige fuͤrters an
                     <lb/>
-                    Herrn Landgraff Ludwigen den aͤltern zu Heſſen / und fuͤrters an das Fuͤrſtliche Hauß
+                    <name ref="https://d-nb.info/gnd/11803698X">Herrn Landgraff Ludwigen den aͤltern zu <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name></name> / und fuͤrters an das  <name ref="https://d-nb.info/gnd/118704214">Fuͤrſtliche Hauß
                     <lb/>
-                    Heſſen⸗Darmſtadt gelangt. Davon meldet etwas Valent. Muͤntzer in der Fuldiſchen
+                   Heſſen⸗Darmſtadt</name> gelangt. Davon meldet etwas <name ref="https://d-nb.info/gnd/119764776">Valent. Muͤntzer</name> in der <name ref="***">Fuldiſchen
                     <lb/>
-                    Chronic. fol. 162. a. und Brouuerus lib. 4. Antiq. Fuld. So ſeynd auch in ſolchem Lande
+                    Chronic</name>. <foreign xml:lang="la">fol. 162. a</foreign>. und <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/124651380">Brouuerus</name> lib. 4. <name ref="???">Antiq. Fuld.</name></foreign> So ſeynd auch in ſolchem Lande
                     <lb/>
-                    vier anſehnliche Reichs⸗Staͤdte / als Franckfurt / Friedberg / Wetzlar und Gelnhau⸗
+                    vier anſehnliche Reichs⸗Staͤdte / als <name ref="https://d-nb.info/gnd/4018118-2">Franckfurt</name> / <name ref="https://d-nb.info/gnd/4018510-2">Friedberg</name> / <name ref="https://d-nb.info/gnd/4065878-8">Wetzlar</name> und <name ref="https://d-nb.info/gnd/4019945-9">Gelnhau⸗
                     <lb/>
-                    ſen. Die Wetterau grentzet mit Francken / Catzenelenbogen / Naſſau / dem Ober⸗Fuͤr⸗
+                    ſen</name>. Die <name ref="https://d-nb.info/gnd/4065855-7">Wetterau</name> grentzet mit <name ref="https://d-nb.info/gnd/4018093-1">Francken</name> / <name ref="https://d-nb.info/gnd/4030052-3">Catzenelenbogen</name> / <name ref="https://d-nb.info/gnd/4203270-2">Naſſau</name> / dem<name ref="https://d-nb.info/gnd/4042929-5"> Ober⸗Fuͤr⸗
                     <lb/>
-                    ſtenthum Heſſen / und der Graffſchafft Nidda. Jſt ein fruchtbar Land an Korn und
+                    ſtenthum Heſſen</name> / und der <name ref="https://d-nb.info/gnd/4815076-9">Graffſchafft Nidda</name>. Jſt ein fruchtbar Land an Korn und
                     <lb/>
                     Wein / in welchem / neben den obgedachten Graffſchafften / und Reichs⸗Staͤdten
                     <lb/>
-                    auch die Graffſchafft Koͤnigſtein liegt. Die Wetterauiſche Grentz und Laͤn⸗
+                    auch die <name ref="https://d-nb.info/gnd/4265119-0">Graffſchafft Koͤnigſtein</name> liegt. Die <name ref="https://d-nb.info/gnd/4065855-7">Wetterauiſche</name> Grentz und Laͤn⸗
                     <lb/>
-                    der ſind ohne Meldung des Autoris, in 4. beſchrieben; deſſen Autor aber iſt der
+                    der ſind ohne Meldung des <foreign xml:lang="la">Autoris</foreign>, in 4. beſchrieben; deſſen Autor aber iſt der
                     <fw type="catch">vorneh⸗</fw>
                     <pb facs="DOI.jpg" n="27"/>
                     <fw type="pageNum">16</fw>
                     <fw type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb/>
-                    vornehme Juriſt Marquardus Freherus, wie Melchior Adami in vitis ICtorum Germa-
+                    vornehme Juriſt <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/118693077">Marquardus Freherus</name></foreign>, wie <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/12005860X">Melchior Adami</name> in <name ref="???">vitis ICtorum Germa-
                     <lb/>
-                    norum pag. 475. gedencket. Viel guter Sauerbruͤnn ſind hier zu finden / als bey
+                    norum</name> pag. 475.</foreign> gedencket. Viel guter Sauerbruͤnn ſind hier zu finden / als bey
                     <lb/>
-                    Friedberg / Roßbach / Carben / davon Jacob. Schoppers Chorographi lib. 1. c. 6.
+                    <name ref="https://d-nb.info/gnd/4018510-2">Friedberg</name> / <name ref="https://d-nb.info/gnd/4050527-3">Roßbach</name> / <name ref="https://d-nb.info/gnd/4029637-4">Carben</name> / davon <name ref="https://d-nb.info/gnd/118795376">Jacob. Schoppers</name> <foreign xml:lang="la"><name ref="???">Chorographi</name> lib. 1. c. 6.
                     <lb/>
-                    p. 103. zu ſehen.
+                    p. 103.</foreign> zu ſehen.
                     <lb/>
-                    IV. Rinckgau / liegt auff der rechten Seiten des Rheins gegen Maͤyntz / und Bin⸗
+                    <num value="4.">IV.</num> <name ref="https://d-nb.info/gnd/4404122-6">Rinckgau</name> / liegt auff der rechten Seiten des <name ref="https://d-nb.info/gnd/4049739-2">Rheins</name> gegen <name ref="https://d-nb.info/gnd/4037124-4">Maͤyntz</name> / und <name ref="https://d-nb.info/gnd/4088338-3">Bin⸗
                     <lb/>
-                    gen uͤber / ſo vor Alters auch ein beſonderer Pagus, der beſondere Graffen gehabt / ge⸗
+                    gen</name> uͤber / ſo vor Alters auch ein beſonderer <foreign xml:lang="la">Pagus</foreign>, der beſondere Graffen gehabt / ge⸗
                     <lb/>
-                    weſen. Es hat auch vor Zeiten das Land jenſeit des Maͤyns / zwiſchen dem Rhein /
+                    weſen. Es hat auch vor Zeiten das Land jenſeit des <name ref="https://d-nb.info/gnd/4037107-4">Maͤyns</name> / zwiſchen dem <name ref="https://d-nb.info/gnd/4049739-2">Rhein</name> /
                     <lb/>
-                    und Bergſtraſſen / oder Odenwald / darin Trebur / Langen / Sprendlingen oder
+                    und <name ref="https://d-nb.info/gnd/4005697-1">Bergſtraſſen</name> / oder <name ref="https://d-nb.info/gnd/4043107-1">Odenwald</name> / darin <name ref="https://d-nb.info/gnd/4330646-9">Trebur</name> / <name ref="https://d-nb.info/gnd/4034498-8">Langen</name> / <name ref="https://d-nb.info/gnd/4056536-1">Sprendlingen</name> oder
                     <lb/>
-                    Sprenglingen / Gerau / Lorß / Benßheim / gelegen / das Rinckgau / oder Pagus Rhe-
+                    <name ref="https://d-nb.info/gnd/4056536-1">Sprenglingen</name> / <name ref="https://d-nb.info/gnd/4022194-5">Gerau</name> / <name ref="https://d-nb.info/gnd/4036359-4">Lorß</name> / <name ref="https://d-nb.info/gnd/4005530-9">Benßheim</name> / gelegen / das <name ref="https://d-nb.info/gnd/4404122-6">Rinckgau</name> / oder <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4404122-6">Pagus Rhe-
                     <lb/>
-                    nenſis, geheiſſen; wie obangezogener Autor des Hiſtoriſchen Berichts von der Wet⸗
+                    nenſis</name></foreign>, geheiſſen; wie <rs ref="https://d-nb.info/gnd/118693077">obangezogener Autor</rs> des <name ref="???">Hiſtoriſchen Berichts von der <name ref="https://d-nb.info/gnd/4065855-7">Wet⸗
                     <lb/>
-                    terau / Rinckau / Weſterwald / Loͤhngau / Hayrich /
+                    terau</name> / <name ref="https://d-nb.info/gnd/4404122-6">Rinckau</name> / <name ref="https://d-nb.info/gnd/4065773-5">Weſterwald</name> / <name ref="???">Loͤhngau</name> / <name ref="https://d-nb.info/gnd/4059163-3">Hayrich</name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
-                    </choice>
+                    </choice></name>
                     meldet.
                     <lb/>
-                    V. Weſterwald / von deme ſchreibt jetztgemelter Autor alſo: Uber die Lohn liegt
+                    <num value="5.">V.</num> <name ref="https://d-nb.info/gnd/4065773-5">Weſterwald</name> / von deme ſchreibt <rs ref="https://d-nb.info/gnd/118693077">jetztgemelter Autor</rs> alſo: <quote source="Hist. Bericht ???">Uber die <name ref="https://d-nb.info/gnd/4034102-1">Lohn</name> liegt
                     <lb/>
-                    ein groß Land und Stuͤck des alten Nemoris Hercinii, ſo heutigs Tags der Weſter⸗
+                    ein groß Land und Stuͤck des alten <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4065773-5***">Nemoris Hercinii</name></foreign>, ſo heutigs Tags der <name ref="https://d-nb.info/gnd/4065773-5">Weſter⸗
                     <lb/>
-                    wald / oder Sylva Heſperia, genannt wird / und vor Zeiten von den Bructeris beſeſſen
+                    wald</name> / oder <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4065773-5">Sylva Heſperia</name></foreign>, genannt wird / und vor Zeiten von den <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4222644-2">Bructeris</name></foreign></quote> beſeſſen
                     <lb/>
-                    worden / der Papſt Gregorius II. in ſeiner Epiſtel an S. Bonifacium, Bortharos ſchreibet.
+                    worden / der Papſt <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/118718665">Gregorius II.</name></foreign> in ſeiner <name ref="Bonifazbriefe? ***">Epiſtel an <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/118513249">S. Bonifacium</name>, <name ref="https://d-nb.info/gnd/4222644-2">Bortharos</name></foreign></name> ſchreibet.
                     <lb/>
-                    Unter dieſe gehoͤren / unter anderen / ein groſſer Theil des Bergiſchen Landes / und die
+                    Unter dieſe gehoͤren / unter anderen / ein groſſer Theil des <name ref="https://d-nb.info/gnd/4005659-4">Bergiſchen Landes</name> / und die
                     <lb/>
-                    uhralte treffliche Graffſchafft Jſenberg / Wied / Seyn / Freuſperg / Vroneck / ein altes
+                    uhralte treffliche <name ref="https://d-nb.info/gnd/10181398-3">Graffſchafft Jſenberg</name> / <name ref="https://d-nb.info/gnd/4766893-3">Wied</name> / <name ref="https://d-nb.info/gnd/4116352-7">Seyn</name> / <name ref="***">Freuſperg</name> / <name ref="***">Vroneck</name> / ein altes
                     <lb/>
-                    Schloß / daraus hernach Marienſtadt / das Cloſter erbauet worden / an der Niſter ge⸗
+                    <name ref="Burgruine Vroneck ***">Schloß</name> / daraus hernach <name ref="https://d-nb.info/gnd/2045580-X">Marienſtadt / das Cloſter</name> erbauet worden / an der <name ref="???">Niſter</name> ge⸗
                     <lb/>
-                    legen; dahero dieſe Voͤlcker in des angezogenen Papſts Schreiben Niſtreſi genannt /
+                    legen; dahero dieſe Voͤlcker in des <rs ref="https://d-nb.info/gnd/118718665">angezogenen Papſts</rs> <name ref="Bonifazbriefe? ***">Schreiben</name> <foreign xml:lang="la"><name ref="***">Niſtreſi</name></foreign> genannt /
                     <lb/>
-                    und beneben den Wedrevis, Lognais, Grabfeldis, und andern / als unterſchiedliche Pro-
+                    und beneben den <foreign xml:lang="la"><name ref="***">Wedrevis</name>, <name ref="***">Lognais</name>, <name ref="***">Grabfeldis</name></foreign>, und andern / als unterſchiedliche <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4104343-1">Pro-
                     <lb/>
-                    vinciæ Germaniæ, und abgeſonderte Voͤlcker von den Heſſen / und Thuͤringern erzehlet
+                    vinciæ Germaniæ</name></foreign>, und abgeſonderte Voͤlcker von den <name ref="https://d-nb.info/gnd/4024731-4">Heſſen</name> / und <name ref="https://d-nb.info/gnd/7738144-0">Thuͤringern</name> erzehlet
                     <lb/>
-                    werden. Es ſchreibet Marquardus Freherus part. 2. Origin. Palatin. cap. 7. daß die ob⸗
+                    werden. Es ſchreibet <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/118693077">Marquardus Freherus</name> part. 2. <name ref="???">Origin. Palatin.<note type="intern">Werk fehlt vgl.https://de.wikipedia.org/wiki/Marquard_Freher</note> </name> cap. 7.</foreign> daß die ob⸗
                     <lb/>
-                    beſagte Bructeri, oder Burcturi, (wie ſie in einer alten tabula Itineraria genannt werden /
+                    beſagte <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4222644-2">Bructeri</name></foreign>, oder <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4222644-2">Burcturi</name></foreign>, (wie ſie in einer alten <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4173971-1">tabula Itineraria</name></foreign> genannt werden /
                     <lb/>
-                    und die gegen Coͤlln uͤber gewohnet / und ſich faſt bis gegen Maͤyntz herauff erſtrecket
+                    und die gegen <name ref="https://d-nb.info/gnd/4031485-6">Coͤlln</name> uͤber gewohnet / und ſich faſt bis gegen <name ref="https://d-nb.info/gnd/4100026-2">Maͤyntz</name> herauff erſtrecket
                     <lb/>
-                    haben / ) vermuthlich von ihren vielen / und ſtattlichen Buͤrgen / bey den Roͤmern den
+                    haben / ) vermuthlich von ihren vielen / und ſtattlichen Buͤrgen / bey den <name ref="https://d-nb.info/gnd/4122633-1">Roͤmern</name> den
                     <lb/>
-                    Namen bekommen haben. Dann gleich gegen Bonn uͤber ſeyn / neben dem Rhein /
+                    Namen bekommen haben. Dann gleich gegen <name ref="https://d-nb.info/gnd/4007666-0">Bonn</name> uͤber ſeyn / neben dem <name ref="https://d-nb.info/gnd/4049739-2">Rhein</name> /
                     <lb/>
-                    Siben buͤrgen zu ſehen / nemlich 7. Schloͤſſer auff ſo vielen nacheinander ſtehenden
+                    <name ref="https://d-nb.info/gnd/4054837-5">Siben buͤrgen</name> zu ſehen / nemlich 7. Schloͤſſer auff ſo vielen nacheinander ſtehenden
                     <lb/>
-                    hohen Bergen gebauet / als Lewenberg / Wolckenberg / (ſo der allerhoͤchſte / und
+                    hohen Bergen gebauet / als <name ref="https://d-nb.info/gnd/4261560-4">Lewenberg</name> / <name ref="???">Wolckenberg<note type="intern">Berg gemeint! https://de.wikipedia.org/wiki/Burg_Wolkenburg / https://de.wikipedia.org/wiki/Siebengebirge</note></name> / (ſo der allerhoͤchſte / und
                     <lb/>
-                    darum alſo genannt / als ob er an die Wolcken ſchluͤge / ) Drachenfelſ / Stromberg /
+                    darum alſo genannt / als ob er an die Wolcken ſchluͤge / ) <name ref="https://d-nb.info/gnd/4012869-6">Drachenfelſ</name> / <name ref="https://d-nb.info/gnd/4259208-2">Stromberg</name> /
                     <lb/>
-                    Malberg / und noch eines / deſſen Namen nicht ſtehet. Und finden ſich ſonſten in ſol⸗
+                    <name ref="???">Malberg<note type="intern">Großer Ölberg! vgl. https://de.wikipedia.org/wiki/Gro%C3%9Fer_%C3%96lberg</note></name> / und noch eines / deſſen Namen nicht ſtehet. Und finden ſich ſonſten in ſol⸗
                     <lb/>
-                    cher Gegend / oder der Bructerorum Landſchafft / Arenburg / Benßburg / Biggenborg /
+                    cher Gegend / oder der <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4222644-2">Bructerorum</name></foreign> Landſchafft / <name ref="https://d-nb.info/gnd/4085899-6" cert="high">Arenburg</name> / <name ref="https://d-nb.info/gnd/2005873-1" cert="high">Benßburg</name> / <name ref="???">Biggenborg<note type="intern">Gemint ist die Burg Bicken https://de.wikipedia.org/wiki/Burg_Bicken</note></name> /
                     <lb/>
-                    Berleburg / Cronburg / Dillenburg / Hachenburg / Homburg / Horneborg / Jſenburg /
+                    <name ref="https://d-nb.info/gnd/4005725-2">Berleburg</name> / <name ref="https://d-nb.info/gnd/4336240-0" cert="high">Cronburg</name> / <name ref="https://d-nb.info/gnd/4012326-1">Dillenburg</name> / <name ref="https://d-nb.info/gnd/4022735-2">Hachenburg</name> / <name ref="https://d-nb.info/gnd/7555304-1">Homburg</name> / <name ref="***">Horneborg<note type="intern">Unklar, welcher Ort gemeint!</note></name> / <name ref="https://d-nb.info/gnd/4490848-9">Jſenburg</name> /
                     <lb/>
-                    Limpurg / Lovenburg / Meraburg / Siburg / Sicamborg / Weilburg / Weſterbur / ſo
+                    <name ref="https://d-nb.info/gnd/4035750-8">Limpurg</name> / <name ref="https://d-nb.info/gnd/4261557-4" cert="high">Lovenburg</name> / <name ref="***">Meraburg<note type="intern">Unklar, was gemeint</note></name> / <name ref="https://d-nb.info/gnd/4054873-9">Siburg</name> / <name ref="***">Sicamborg<note type="intern">Unklar!</note></name> / <name ref="https://d-nb.info/gnd/4065091-1">Weilburg</name> / <name ref="https://d-nb.info/gnd/4065762-0">Weſterbur</name> / ſo
                     <lb/>
                     alles nicht allein gar veſte Schloͤſſer / und wolbevoͤlckerte Staͤdte / und Staͤdtlein; ſon⸗
                     <lb/>
@@ -3926,218 +3922,218 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     burg / und berg / fuͤr eins / genommen werden; ſo ſeyn doch auch theils der Orthen / ſo
                     <lb/>
-                    allein auff berg ſich enden; Und darunter das Hertzogthum Berg ſelbſten; hernach
+                    allein auff berg ſich enden; Und darunter das <name ref="https://d-nb.info/gnd/4028839-0">Hertzogthum Berg</name> ſelbſten; hernach
                     <lb/>
-                    Blanckenberg / Braunsberg / Bureberg / (nemlich obgemeltes Cloſter Marienſtadt
+                    <name ref="https://d-nb.info/gnd/1169456588">Blanckenberg</name> / <name ref="???">Braunsberg<note type="intern">Stadtteil von Bergisch Gladbach gemeint? https://de.wikipedia.org/wiki/Braunsberg_(Bergisch_Gladbach)</note></name> / <name ref="https://d-nb.info/gnd/4327878-4" cert="high">Bureberg</name> / (nemlich obgemeltes <name ref="https://d-nb.info/gnd/2045580-X">Cloſter Marienſtadt</name>
                     <lb/>
-                    an der Niſter / ſo vorhin ein Schloß / das man mit der Zeit auch Vroneck genannt hat /
+                    an der <name ref="???">Niſter<note type="intern">Nebenfluss der Sieg</note></name> / ſo vorhin ein Schloß / das man mit der Zeit auch<name ref="***"> Vroneck<note type="intern">Buranlage Vroneck-Nister</note></name> genannt hat /
                     <lb/>
-                    geweſen iſt / ) Camperg / Cronberg / Friedberg / Freußſperg / Gliberg / Jſenberg /
+                    geweſen iſt / ) <name ref="https://d-nb.info/gnd/4009347-5">Camperg</name> / <name ref="https://d-nb.info/gnd/4336240-0" cert="high">Cronberg</name> / <name ref="https://d-nb.info/gnd/4018510-2">Friedberg</name> / <name ref="https://d-nb.info/gnd/4541366-6">Freußſperg</name> / <name ref="https://d-nb.info/gnd/2045770-4">Gliberg</name> / <name ref="https://d-nb.info/gnd/4490848-9">Jſenberg</name> /
                     <lb/>
-                    Kirperg / Molſperg / Stauffenberg /
+                    <name ref="https://d-nb.info/gnd/2087062-0">Kirperg</name> / <name ref="https://d-nb.info/gnd/4322429-5">Molſperg</name> / <name ref="https://d-nb.info/gnd/4057034-4">Stauffenberg</name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
                     Theils haben auch von den Felſen / und Stei⸗
                     <lb/>
-                    nen ihre Nahmen / als Braunfels / Drachenfels / Arenſtein / Ehrenbreitſtein / Helffen⸗
+                    nen ihre Nahmen / als <name ref="https://d-nb.info/gnd/4008045-6">Braunfels</name> / <name ref="https://d-nb.info/gnd/4091212-7">Drachenfels</name> / <name ref="https://d-nb.info/gnd/4234180-2">Arenſtein</name> / <name ref="https://d-nb.info/gnd/213794-X">Ehrenbreitſtein</name> / <name ref="???">Helffen⸗
                     <lb/>
-                    ſtein / Koͤnigſtein / Greiffenſtein / Witgenſtein /
+                    ſtein<note type="intern">Burgruine Helfenstein https://de.wikipedia.org/wiki/Burg_Helfenstein_(Koblenz)</note></name> / <name ref="https://d-nb.info/gnd/4031559-9" cert="high">Koͤnigſtein</name> / <name ref="https://d-nb.info/gnd/4021960-4">Greiffenſtein</name> / <name ref="https://d-nb.info/gnd/7763540-1">Witgenſtein</name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
-                    darunter viel Pfaͤltziſche Lehen / ſo
+                    darunter viel <name ref="https://d-nb.info/gnd/25943-3">Pfaͤltziſche</name> Lehen / ſo
                     <lb/>
-                    die von Naſſau / Jſenburg / und andere / auch die Ritterſchafft traͤgt; item etliche gan⸗
+                    die von <name ref="https://d-nb.info/gnd/4203270-2">Naſſau</name> / <name ref="https://d-nb.info/gnd/10181398-3">Jſenburg</name> / und andere / auch die Ritterſchafft traͤgt; item etliche gan⸗
                     <lb/>
-                    tze Graffſchafften / als Seyn / Wied / Solms / und andere. Und hat Churfuͤrſt Ludwig /
+                    tze Graffſchafften / als <name ref="https://d-nb.info/gnd/4116352-7">Seyn</name> / <name ref="https://d-nb.info/gnd/4766893-3">Wied</name> / <name ref="https://d-nb.info/gnd/4528964-5">Solms</name> / und andere. Und hat <name ref="https://d-nb.info/gnd/119431386" cert="high">Churfuͤrſt Ludwig /
                     <lb/>
-                    Pfaltzgraff / die Graffſchafft Seyn / als das alte und erſte Geſchlecht der Graſſen
+                    Pfaltzgraff</name> / die <name ref="https://d-nb.info/gnd/4116352-7">Graffſchafft Seyn</name> / als das alte und erſte Geſchlecht der <name ref="https://d-nb.info/gnd/119460327">Graſſen
                     <lb/>
-                    von Seyn abgeſtorben / ums Jahr 1273. Graff Gottfrieden / vom Vatter her einem
+                    von Seyn</name> abgeſtorben / ums Jahr 1273. <name ref="???">Graff Gottfrieden<note type="intern"> Gottfried I. (1266-1284 Graf von Sayn)</note></name> / vom <rs ref="https://d-nb.info/gnd/1020800097">Vatter<note>Es handelt sich nicht um den Vater, sondern um den Großvater Gottfrieds III.</note></rs> her einem
                     <lb/>
-                    Graffen von Spanheim / aber von einer Graͤffin von Seyn geboren / von neuem zu
+                    Graffen von <name ref="https://d-nb.info/gnd/4105499-4">Spanheim</name> / aber von einer <rs ref="???">Graͤffin von <name ref="https://d-nb.info/gnd/4116352-7">Seyn</name><note type="intern">Adelheid, die Schwester von Graf Heinrich III vgl. https://de.wikipedia.org/wiki/Grafschaft_Sayn gemeint, also Großmutter nicht Mutter!</note></rs> geboren / von neuem zu
                     <lb/>
-                    Lehen angeſetzt / von welchem die heutige Beſitzer / die Graffen von Witgenſtein / in
+                    Lehen angeſetzt / von welchem die heutige Beſitzer / die <name ref="https://d-nb.info/gnd/1075931002">Graffen von Witgenſtein</name> / in
                     <lb/>
                     gerader Geburts⸗Linie herſtammen. Es grentzet aber
                     <lb/>
-                    VI. Die Graffſchafft Witgenſtein mit der Graffſchafft Naſſau⸗Dillenberg /
+                    <num value="6.">VI.</num> Die <name ref="https://d-nb.info/gnd/4350182-5">Graffſchafft Witgenſtein</name> mit der <name ref="https://d-nb.info/gnd/4115341-8">Graffſchafft Naſſau⸗Dillenberg</name> /
                     <fw type="catch">der</fw>
                     <pb facs="DOI.jpg" n="28"/>
                     <fw type="pageNum">17</fw>
                     <fw type="header">in Heſſen und den benachbarten Landen.</fw>
                     <lb/>
-                    der Grafſchafft Arnsberg / und dem Obern⸗Fuͤrſtenthum Heſſen. Liegt in einem hohen
+                    der <name ref="https://d-nb.info/gnd/4837951-7">Grafſchafft Arnsberg</name> / und dem <name ref="https://d-nb.info/gnd/4042929-5">Obern⸗Fuͤrſtenthum Heſſen</name>. Liegt in einem hohen
                     <lb/>
-                    Gebuͤrg / deſſen ein Theil das Rothhaar genannt wird / aus welchem vier vornehme
+                    Gebuͤrg / deſſen ein Theil das <name ref="https://d-nb.info/gnd/4050686-1">Rothhaar</name> genannt wird / aus welchem vier vornehme
                     <lb/>
-                    Waſſer entſpringen / darunter die Lohn gegen Morgen laufft / und hernach herum auf
+                    Waſſer entſpringen / darunter die <name ref="https://d-nb.info/gnd/4034102-1">Lohn</name> gegen Morgen laufft / und hernach herum auf
                     <lb/>
-                    Marpurg ſchweifft: Die Dill gegen Mittag / und auf Dillenberg zu: Die Sieg gegen
+                    <name ref="https://d-nb.info/gnd/4037446-4">Marpurg</name> ſchweifft: Die <name ref="https://d-nb.info/gnd/4012324-8">Dill</name> gegen Mittag / und auf <name ref="https://d-nb.info/gnd/4012326-1">Dillenberg</name> zu: Die <name ref="https://d-nb.info/gnd/4054872-7">Sieg</name> gegen
                     <lb/>
-                    Nidergang / und auf Siegen / und Coͤlln zu: Die Eder gegen Mitternacht / und ſich her⸗
+                    Nidergang / und auf <name ref="https://d-nb.info/gnd/4054883-1">Siegen</name> / und <name ref="https://d-nb.info/gnd/4031483-2">Coͤlln</name> zu: Die <name ref="https://d-nb.info/gnd/4013547-0">Eder</name> gegen Mitternacht / und ſich her⸗
                     <lb/>
-                    um auf Franckenberg / und Caſſel / ſchwencket. Das Schloß Witgenſtein / ſo im Jahr
+                    um auf <name ref="https://d-nb.info/gnd/4018098-0">Franckenberg</name> / und <name ref="https://d-nb.info/gnd/4029869-3">Caſſel</name> / ſchwencket. Das <name ref="https://d-nb.info/gnd/7763540-1">Schloß Witgenſtein</name> / ſo im Jahr
                     <lb/>
-                    Chriſti 800. allbereit geſtanden ſeyn ſolle / liegt an der Loͤhn / auf einem hohen Berg /
+                    Chriſti 800. allbereit geſtanden ſeyn ſolle / liegt an der <name ref="https://d-nb.info/gnd/4034102-1">Loͤhn</name> / auf einem hohen Berg /
                     <lb/>
-                    und Felſen: Und iſt in dieſer Grafſchafft das Schloß / und Stadt Berleburg. Es hat
+                    und Felſen: Und iſt in dieſer Grafſchafft das <name ref="https://d-nb.info/gnd/4488480-1 https://d-nb.info/gnd/4005725-2">Schloß / und Stadt Berleburg</name>. Es hat
                     <lb/>
-                    vorhin eigene Grafen gehabt / darvon der letzte Ann 1360. geſtorben iſt / und eine Toch⸗
+                    vorhin <rs ref="???">eigene Grafen<note type="intern">Wittgenstein, Familie! https://de.wikipedia.org/wiki/Liste_der_Regenten_von_Wittgenstein</note></rs> gehabt / darvon <rs ref="???">der letzte<note type="intern">Siegfried II Wittgestein vgl. https://de.wikipedia.org/wiki/Siegfried_II._(Wittgenstein) </note></rs> Ann 1360. geſtorben iſt / und eine <rs ref="https://d-nb.info/gnd/139835113">Toch⸗
                     <lb/>
-                    ter hinterlaſſen / die einen Grafen von Sayn geheyrathet hat.
+                    ter</rs> hinterlaſſen / die einen <rs ref="https://d-nb.info/gnd/139593608">Grafen von <name ref="https://d-nb.info/gnd/4116352-7">Sayn</name></rs> geheyrathet hat.
                     <lb/>
-                    Was dieſe Grafſchafft anbelangt / ſo auch zum Ober⸗Rheiniſchen Craiß gehoͤrig / ſo
+                    Was dieſe Grafſchafft anbelangt / ſo auch zum <name ref="https://d-nb.info/gnd/4116701-6">Ober⸗Rheiniſchen Craiß</name> gehoͤrig / ſo
                     <lb/>
                     finde ich / daß deren Monatlich einfacher Reichs⸗Anſchlag / zum Roͤmerzug / iſt. 1. zu
                     <lb/>
-                    Roß / und 4. zu Fuß / oder 28. fl. und zum Cammergericht Jaͤhrlich / nach dem erhoͤch⸗
+                    Roß / und 4. zu Fuß / oder 28. fl. und zum <name ref="https://d-nb.info/gnd/64409-2">Cammergericht</name> Jaͤhrlich / nach dem erhoͤch⸗
                     <lb/>
-                    ten Anſchlag / 11. fl. 42. Kr. 5. Heller. Jn dem Reichs⸗Abſchied / vom Jahr 1654. wird
+                    ten Anſchlag / 11. fl. 42. Kr. 5. Heller. Jn dem <name ref="https://d-nb.info/gnd/1256053171">Reichs⸗Abſchied / vom Jahr 1654.</name> wird
+                    <lb/>georg
+                    Herrn <name ref="https://d-nb.info/gnd/129047015">Johann Grafens zu <name ref="https://d-nb.info/gnd/4118464-6">Sayn / Witgenſtein / und Hohnſtein</name> / Herrens zu <name ref="https://d-nb.info/gnd/4332290-6">Hom⸗
                     <lb/>
-                    Herrn Johann Grafens zu Sayn / Witgenſtein / und Hohnſtein / Herrens zu Hom⸗
+                    burg</name> / <name ref="???">Valiendar<note type="intern">Grafschaft Vallendar!</note></name> / <name ref="https://d-nb.info/gnd/212500-6">Neumegen</name> / <name ref="https://d-nb.info/gnd/4769206-6">Lohr</name> / und <name ref="https://d-nb.info/gnd/4276854-8">Klettenberg</name></name> / unter den <name ref="https://d-nb.info/gnd/4065855-7">Wetterauiſchen</name> Grafen /
                     <lb/>
-                    burg / Valiendar / Neumegen / Lohr / und Klettenberg / unter den Wetterauiſchen Grafen /
+                    gedacht; daß er ſich beym naͤchſten <name ref="https://d-nb.info/gnd/4049170-5">Reichs⸗Tag zu <name ref="https://d-nb.info/gnd/4048989-9">Regenſpurg</name></name> perſoͤhnlich befunden;
                     <lb/>
-                    gedacht; daß er ſich beym naͤchſten Reichs⸗Tag zu Regenſpurg perſoͤhnlich befunden;
+                    als wegen des <name ref="https://d-nb.info/gnd/4231702-2">Graͤflich⸗<name ref="https://d-nb.info/gnd/4065855-7">Weſterauiſchen</name> <foreign xml:lang="la">Collegij</foreign></name> jetziger Zeit <foreign xml:lang="la">Director</foreign>. Sonſten ſeyn
                     <lb/>
-                    als wegen des Graͤflich⸗Weſterauiſchen Collegij jetziger Zeit Director. Sonſten ſeyn
+                    auch durch Geſandten / dabey erſchienen / Herr <name ref="***">Ludwig Albrecht<note type="intern">Bruder von Christian Sayn-Wittgenstein https://www.geni.com/people/Ludwig-Von-Sayn-Wittgenstein-Neumagen/6000000029710660198</note></name> / und Herr <name ref="https://d-nb.info/gnd/1297873947">Chriſtian</name> /
                     <lb/>
-                    auch durch Geſandten / dabey erſchienen / Herr Ludwig Albrecht / und Herr Chriſtian /
+                    Grafen zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Witgenſtein</name>; aber wegen der <name ref="https://d-nb.info/gnd/4116352-7">Grafſchafft Sayn</name> / ſo zum <name ref="https://d-nb.info/gnd/4746758-7">Weſt⸗
                     <lb/>
-                    Grafen zu Sayn / und Witgenſtein; aber wegen der Grafſchafft Sayn / ſo zum Weſt⸗
+                    phaͤliſchen Craiſſe</name> ſonſten gezogen wird: Desgleichen Herr <name ref="???">Georg<note type="intern">Georg Wilhelm zu Sayn-Wittgenstein-Berleburg bei Suche bei "http://worldhistory.de suchen</note></name> / <name ref="***">Ludwig Albrecht<note type="intern">Bruder von Christian Sayn-Wittgenstein https://www.geni.com/people/Ludwig-Von-Sayn-Wittgenstein-Neumagen/6000000029710660198</note></name> /
                     <lb/>
-                    phaͤliſchen Craiſſe ſonſten gezogen wird: Desgleichen Herr Georg / Ludwig Albrecht /
+                    <name ref="https://d-nb.info/gnd/1297873947">Chriſtian</name> / und <name ref="***">Bernhard<note type="intern">vgl.https://www.wikidata.org/wiki/Q31191818</note></name> / alle Grafen zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Witgenſtein</name>; Herrn zu <name ref="https://d-nb.info/gnd/4332290-6">Hom⸗
                     <lb/>
-                    Chriſtian / und Bernhard / alle Grafen zu Sayn / und Witgenſtein; Herrn zu Hom⸗
+                    burg</name>: Jtem <name ref="***">Georg Graf zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Witgenſtein</name><note type="intern">Georg Wilhelm zu Sayn-Wittgenstein-Berleburg bei Suche bei "http://worldhistory.de suchen</note></name> / in Vormundſchafft / <name ref="???">Ludwig Ca⸗
                     <lb/>
-                    burg: Jtem Georg Graf zu Sayn / und Witgenſtein / in Vormundſchafft / Ludwig Ca⸗
+                    ſimirs<note type="intern">https://de.wikipedia.org/wiki/Ludwig_Casimir_zu_Sayn-Wittgenstein-Berleburg</note></name> / auch Grafens zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Witgenſteins</name> ſel. unmuͤndiger Soͤhne: Jtem
                     <lb/>
-                    ſimirs / auch Grafens zu Sayn / und Witgenſteins ſel. unmuͤndiger Soͤhne: Jtem
+                    Frauen <name ref="***">Chriſtianaͤ / Graͤfin zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Witgenſtein</name> / geborner Graͤfin zu <name ref="???">Waldeck</name><note type="intern">https://www.geni.com/people/Christine-von-Waldeck-Wildungen-Gr%C3%A4fin-zu-Sayn-Wittgenstein-Homburg/6000000012014864133</note></name> /
                     <lb/>
-                    Frauen Chriſtianaͤ / Graͤfin zu Sayn / und Witgenſtein / geborner Graͤfin zu Waldeck /
+                    Wittibin / in Vormundſchafft weyland <name ref="https://d-nb.info/gnd/1020270675">Graf Ernſts zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Witgenſtein</name></name> / ſeel.
                     <lb/>
-                    Wittibin / in Vormundſchafft weyland Graf Ernſts zu Sayn / und Witgenſtein / ſeel.
+                    unmuͤndiger Soͤhne. Und dann Hochgedachte Frau <name ref="https://d-nb.info/gnd/104158492">Johannete</name> / weylanden <name ref="https://d-nb.info/gnd/121930882">Johann⸗
                     <lb/>
-                    unmuͤndiger Soͤhne. Und dann Hochgedachte Frau Johannete / weylanden Johann⸗
+                    ſen Landgrafen zu <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name></name> hinterlaſſene Wittib / geborne Graͤfin zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Wit⸗
                     <lb/>
-                    ſen Landgrafen zu Heſſen hinterlaſſene Wittib / geborne Graͤfin zu Sayn / und Wit⸗
+                    genſtein</name> / Frau zu <name ref="https://d-nb.info/gnd/4332290-6">Homburg</name> / als Mit⸗Jnhaberin der <name ref="https://d-nb.info/gnd/4116352-7">Grafſchafft Sayn</name> (in <name ref="https://d-nb.info/gnd/16293773-8">Weſt⸗
                     <lb/>
-                    genſtein / Frau zu Homburg / als Mit⸗Jnhaberin der Grafſchafft Sayn (in Weſt⸗
+                    phalen</name>) und dann Herr <name ref="???">Salentin Ernſt / Graf zu <name ref="https://d-nb.info/gnd/7762204-2">Manderſcheid / und Blanckenheim</name> /
                     <lb/>
-                    phalen) und dann Herr Salentin Ernſt / Graf zu Manderſcheid / und Blanckenheim /
-                    <lb/>
-                    Freyherr zu Jnnckerrath /
+                    Freyherr zu <name ref="***">Jnnckerrath<note type="intern">Herrrschaft Jünkerath</note></name><note type="intern">https://www.deutsche-biographie.de/sfz57628.html</note></name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
-                    in Ehevogts Namen Fr. Erneſtinen / Graͤfin zu Man⸗
+                    in Ehevogts Namen Fr. <name ref="https://d-nb.info/gnd/1018263039">Erneſtinen / Graͤfin zu <name ref="https://d-nb.info/gnd/7762204-2">Man⸗
                     <lb/>
-                    derſcheid / und Blanckenheim / gebohrner Graͤfin zu Sayn / und Witgenſtein / auch
+                    derſcheid / und Blanckenheim</name> / gebohrner Graͤfin zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Witgenſtein</name></name> / auch
                     <lb/>
-                    Mit⸗Jnhaberin der Grafſchafft Sayn. Beym Herrn Limnæo, in addit. ad lib. 4.
+                    Mit⸗Jnhaberin der <name ref="https://d-nb.info/gnd/4116352-7">Grafſchafft Sayn</name>. Beym Herrn <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/118728326">Limnæo</name>, in addit. ad lib. 4.
                     <lb/>
-                    de I. publ. p. 540. ſtehet / unter anderm / daß Herr Ernſt zu Sayn / und Wit⸗
+                    de <name ref="???">I. publ.<note type="intern"> Ius publicum imperii romano-germanici. - 1629 - 1634 </note></name> p. 540.</foreign> ſtehet / unter anderm / daß Herr <name ref="https://d-nb.info/gnd/1020270675">Ernſt zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Wit⸗
                     <lb/>
-                    genſtein / mit Chur⸗Trier / wegen der Schloͤſſer Sayn / Freußburg / Rheinbruck /
+                    genſtein</name></name> / mit <name ref="https://d-nb.info/gnd/4060882-7">Chur⸗Trier</name> / wegen der Schloͤſſer <name ref="https://d-nb.info/gnd/4733155-0">Sayn</name> / <name ref="https://d-nb.info/gnd/4775872-7">Freußburg</name> / <name ref="***">Rheinbruck<note type="intern">Unklar, welche Burg gemeint</note></name> /
                     <choice>
                         <orig>ꝛc.</orig>
                         <reg>etc.</reg>
                     </choice>
                     zu
                     <lb/>
-                    rechten gehabt: Jtem / iſt Anno 1642. eine Informatio Juris, &amp; facti, gedruckt worden /
+                    rechten gehabt: Jtem / iſt Anno 1642. eine <foreign xml:lang="la"><name ref="***">Informatio Juris, &amp; facti<note type="intern">Quelle?</note></name></foreign>, gedruckt worden /
                     <lb/>
-                    wie weyland Herrn Graf Ernſten zu Sayn / und Witgenſtein / des Aeltern / nachge⸗
+                    wie weyland Herrn <name ref="https://d-nb.info/gnd/1020270675">Graf Ernſten zu <name ref="https://d-nb.info/gnd/4350183-7">Sayn / und Witgenſtein </name>/ des Aeltern</name> / nachge⸗
                     <lb/>
-                    laſſene beyde Fraͤulein Toͤchter / Erneſtina / und Johannetten (hie oben / ) zu dem
+                    laſſene beyde Fraͤulein Toͤchter / <name ref="https://d-nb.info/gnd/1018263039">Erneſtina</name> / und <name ref="https://d-nb.info/gnd/104158492">Johannetten</name> (hie oben / ) zu dem
                     <lb/>
-                    Schloß / Stadt / und Ambt Hachenburg / mit allen Pertinentien / gegen Chur⸗Coͤlln /
+                    <name ref="https://d-nb.info/gnd/1211635767">Schloß</name> / <name ref="https://d-nb.info/gnd/4022735-2 https://d-nb.info/gnd/5318235-2">Stadt / und Ambt Hachenburg</name> / mit allen Pertinentien / gegen <name ref="https://d-nb.info/gnd/4031485-6">Chur⸗Coͤlln</name> /
                     <lb/>
                     ſo es Anno 1636. unterm Vorwand eines eroͤffneten / und heimgefallenen Mann⸗Le⸗
                     <lb/>
-                    hens / eingezogen / berechtiget ſeyen. Von der Grafſchafft Valandar ſagt Herr D.
+                    hens / eingezogen / berechtiget ſeyen. Von der <name ref="???">Grafſchafft Valandar<note type="intern"></note></name> ſagt <name ref="***">Herr D.
                     <lb/>
-                    Wurffdein / part. 4. Berichts (oder der Relation) p. 106. daß die Grafen von Sayn
+                    Wurffdein<note type="intern">Wer ist das???</note></name> / <foreign xml:lang="la">part. 4.</foreign> <rs ref="***">Berichts<note type="intern">Was ist gemeint? Quelle</note></rs> (oder der <foreign xml:lang="la">Relation</foreign>) <foreign xml:lang="la">p. 106.</foreign> daß die Grafen von <name ref="https://d-nb.info/gnd/4116352-7">Sayn</name>
                     <lb/>
-                    ſolche meiſtentheils / um die Regierung Keyſers Wenceslai, mit ſonderbarer Maß /
+                    ſolche meiſtentheils / um die Regierung Keyſers <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/118631349">Wenceslai</name></foreign>, mit ſonderbarer Maß /
                     <lb/>
-                    Chur⸗Trier uͤberlaſſen; unangeſehen aber Camera Spirenſis Anno 1606. derſelben
+                   <name ref="https://d-nb.info/gnd/4060882-7"> Chur⸗Trier</name> uͤberlaſſen; unangeſehen aber <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/64409-2">Camera <name ref="https://d-nb.info/gnd/4056179-3">Spirenſis</name></name></foreign> Anno 1606. derſelben
                     <lb/>
-                    Wiederloͤſung den Grafen von Sayn zuerkant / ſo ſeyſte doch die Zeit hero / wegen ein⸗
+                    Wiederloͤſung den Grafen von <name ref="https://d-nb.info/gnd/4116352-7">Sayn</name> zuerkant / ſo ſeyſte doch die Zeit hero / wegen ein⸗
                     <lb/>
-                    gewanter Reviſion, bey Trier verblieben. Es ſeyn aber beſagte Relationes Anno 1636.
+                    gewanter <foreign xml:lang="la">Reviſion</foreign>, bey <name ref="https://d-nb.info/gnd/4060882-7">Trier</name> verblieben. Es ſeyn aber beſagte <foreign xml:lang="la"><name ref="***">Relationes<note type="intern">Siehe oben, paar Zeilen drüber</note></name></foreign> Anno 1636.
                     <lb/>
-                    gedruckt worden. Sonſten hat ſich D. Goddæus, der Herrn Grafen von Witgen⸗
+                    gedruckt worden. Sonſten hat ſich <foreign xml:lang="la"><name ref="***">D. Goddæus</name><note type="intern">Welcher Goddaeus gemeint Johannes Goddaeus https://de.wikipedia.org/wiki/Johannes_Goddaeus_(Rechtswissenschaftler,_%E2%80%A0_1632)</note></foreign>, der Herrn <name ref="https://d-nb.info/gnd/1075931002">Grafen von Witgen⸗
                     <lb/>
-                    ſtein / wegen der obgedachten Graf oder Herrſchafft Vallendar / in einem beſondern
+                    ſtein</name> / wegen der obgedachten <name ref="???">Graf oder Herrſchafft Vallendar</name> / in einem beſondern
                     <lb/>
-                    Reſponſo, ſo des Jahrs 1620. gedruckt worden / angenommen. S. D. Beſoldum, de
+                    <foreign xml:lang="la"><name ref="***">Reſponſo</name><note type="intern">Unklar was gemeint, Quelle</note></foreign>, ſo des Jahrs 1620. gedruckt worden / angenommen. S. <foreign xml:lang="la"><name ref="***">D. Beſoldum<note type="intern">Unklar, wer gemeint</note></name>, <name ref="***">de
                     <lb/>
-                    Jurisdict. Imp. Rom. q. 8. p. 21. Jtem / unten / Hachenburg; und D. Joan. Theo-
+                    Jurisdict. Imp. Rom.<note type="intern">Unklar, welche Quelle evtl. nach Klärung Autor möglich</note></name> q. 8. p.</foreign> 21. Jtem / unten / <name ref="https://d-nb.info/gnd/4022735-2">Hachenburg</name>; und <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/123479851">D. Joan. Theo-
                     <lb/>
-                    dori Sprengeri bon. Principem, dabey auch dieſe Strittigkeit / inter prætenſiones illu-
+                    dori Sprengeri</name> <name ref="***">bon. Principem<note type="intern">Bonus princeps</note></name></foreign>, dabey auch dieſe Strittigkeit / <foreign xml:lang="la">inter prætenſiones illu-
                     <lb/>
-                    ſtres, zu finden.
+                    ſtres</foreign>, zu finden.
                     <lb/>
-                    VII. Loͤhngau / oder das Land an der Loͤhn herum / iſt vor Zeiten ein beſonde⸗
+                    <num value="7.">VII.</num> <name ref="???">Loͤhngau<note type="intern">Lahngau https://de.wikipedia.org/wiki/Lahngau</note></name> / oder das Land an der <name ref="https://d-nb.info/gnd/4034102-1">Loͤhn</name> herum / iſt vor Zeiten ein beſonde⸗
                     <lb/>
-                    rer Pagus geweſen / Pagus Loganenſis, das Logenehe / oder Logengau geheiſſen / wie
+                    rer <foreign xml:lang="la">Pagus</foreign> geweſen / <foreign xml:lang="la"><name ref="???">Pagus Loganenſis<note type="intern">Lahngau https://de.wikipedia.org/wiki/Lahngau</note></name></foreign>, das <name ref="???">Logenehe<note type="intern">Lahngau https://de.wikipedia.org/wiki/Lahngau</note></name> / oder <name ref="???">Logengau<note type="intern">Lahngau https://de.wikipedia.org/wiki/Lahngau</note></name> geheiſſen / wie
                     <fw type="catch">dann</fw>
                     <fw type="sig">C</fw>
                     <pb facs="DOI.jpg" n="29"/>
                     <fw type="pageNum">18</fw>
                     <fw type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb/>
-                    dann auch das Ober⸗Fuͤrſtenthum Heſſen / das Fuͤrſtenthum an der Loͤhn genennet
+                    dann auch das <name ref="https://d-nb.info/gnd/4042929-5">Ober⸗Fuͤrſtenthum Heſſen</name> / das Fuͤrſtenthum an der <name ref="https://d-nb.info/gnd/4034102-1">Loͤhn</name> genennet
                     <lb/>
-                    wird: Und iſt das Land an der Loͤhn unterſchiedlichen Herren gehoͤrig. Es iſt Loga-
+                    wird: Und iſt das Land an der <name ref="https://d-nb.info/gnd/4034102-1">Loͤhn</name> unterſchiedlichen Herren gehoͤrig. Es iſt <name ref="https://d-nb.info/gnd/4034102-1">Loga-
                     <lb/>
-                    nus, oder Logana, der Fluß Lanus, von welchem das Schloß Lan⸗eck / und die Stadt
+                    nus</name>, oder <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4034102-1">Logana</name></foreign>, der Fluß <name ref="https://d-nb.info/gnd/4034102-1">Lanus</name>, von welchem das <name ref="https://d-nb.info/gnd/4716711-7">Schloß Lan⸗eck</name> / und die Stadt
                     <lb/>
-                    an der Spitzen / da die Loͤhn in den Rhein fleuſt / Lanſtein insgemein / vor alters Lo⸗
+                    an der Spitzen / da die <name ref="https://d-nb.info/gnd/4034102-1">Loͤhn</name> in den <name ref="https://d-nb.info/gnd/4049739-2">Rhein</name> fleuſt / <name ref="https://d-nb.info/gnd/4034105-7">Lanſtein</name> insgemein / vor alters <name ref="https://d-nb.info/gnd/4034105-7">Lo⸗
                     <lb/>
-                    ginſtein genant / den Namen hat. Von obernandtem Pabſt Gregorio werden die an⸗
+                    ginſtein</name> genant / den Namen hat. Von obernandtem Pabſt <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/118541846">Gregorio</name></foreign> werden die an⸗
                     <lb/>
-                    wohnende Voͤlcker Lognai, bey dem Æthico Coſmographo Langiones, geheiſſen. Und
+                    wohnende Voͤlcker <foreign xml:lang="la"><name ref="???">Lognai<note type="intern">Volksstamm der Chatten im Lahntal</note></name></foreign>, bey dem <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/119601729">Æthico Coſmographo</name> <name ref="???">Langiones<note type="intern">Volksstamm der Chatten im Lahntal</note></name></foreign>, geheiſſen. Und
                     <lb/>
                     werden darunter begriffen die Graffſchafften und Herrſchafften / an ſolchem Strom
                     <lb/>
-                    gelegen / als Solms (davon unten bey Licha) Witgenſtein / Limburg / Dietz / Arn⸗
+                    gelegen / als <name ref="https://d-nb.info/gnd/4528964-5">Solms</name> (davon unten bey <name ref="https://d-nb.info/gnd/4035592-5">Licha</name>) <name ref="https://d-nb.info/gnd/4350182-5">Witgenſtein</name> / <name ref="https://d-nb.info/gnd/4035753-3">Limburg</name> / <name ref="https://d-nb.info/gnd/4090821-5">Dietz</name> / <name ref="https://d-nb.info/gnd/4234180-2">Arn⸗
                     <lb/>
-                    ſtein / Runckel / und Naſſau. Was dem Fuͤrſtlichen Hauß Heſſen von dieſem Lohngau
+                    ſtein</name> / <name ref="https://d-nb.info/gnd/4108134-1">Runckel</name> / und <name ref="https://d-nb.info/gnd/4115341-8">Naſſau</name>. Was dem Fuͤrſtlichen <name ref="https://d-nb.info/gnd/119018012">Hauß Heſſen</name> von dieſem <name ref="???">Lohngau</name>
                     <lb/>
-                    zuſtaͤndig iſt / und zwar gar viel / das wird / wie oben gemelt / und hievon Dilichius zu
+                    zuſtaͤndig iſt / und zwar gar viel / das wird / wie oben gemelt / und hievon <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/119100754">Dilichius</name></foreign> zu
                     <lb/>
-                    leſen iſt / das Fuͤrſtenthum / oder Land an der Loͤhn genandt.
+                    leſen iſt / das Fuͤrſtenthum / oder Land an der <name ref="https://d-nb.info/gnd/4034102-1">Loͤhn</name> genandt.
                     <lb/>
-                    Den Fluß Lohn oder Lahn an ſich ſelbſten belangend / ſo hat derſelbe ſeinen Ur⸗
+                    Den Fluß <name ref="https://d-nb.info/gnd/4034102-1">Lohn</name> oder <name ref="https://d-nb.info/gnd/4034102-1">Lahn</name> an ſich ſelbſten belangend / ſo hat derſelbe ſeinen Ur⸗
                     <lb/>
-                    ſprung im Weſterwald / in der Graffſchafft Witgenſtein / da ſeine Quelle entſpringet
+                    ſprung im <name ref="https://d-nb.info/gnd/4065773-5">Weſterwald</name> / in der <name ref="https://d-nb.info/gnd/4350182-5">Graffſchafft Witgenſtein</name> / da ſeine Quelle entſpringet
                     <lb/>
                     in einem Gebirge. Jſt anfangs gering / wird aber hin und wider durch andere zuflieſ⸗
                     <lb/>
-                    ſende Waͤſſerlein / ſonderlich der Ohm in Heſſen / der Dill unterhalb Herborn / der Elß /
+                    ſende Waͤſſerlein / ſonderlich der <name ref="https://d-nb.info/gnd/4043394-8">Ohm</name> in <name ref="https://d-nb.info/gnd/4072472-4">Heſſen</name> / der <name ref="https://d-nb.info/gnd/4012324-8">Dill</name> unterhalb <name ref="https://d-nb.info/gnd/4024455-6">Herborn</name> / der <name ref="???">Elß<note type="intern">vermutl. Emsbach bzw. Ems https://de.wikipedia.org/wiki/Emsbach_(Lahn,_Limburg)</note></name> /
                     <lb/>
-                    der Aar / und andere / geſtaͤrckt und groͤſſer. Er nimt ſeinen Lauff von Witgenſten
+                    der <name ref="https://d-nb.info/gnd/4490538-5">Aar</name> / und andere / geſtaͤrckt und groͤſſer. Er nimt ſeinen Lauff von <name ref="https://d-nb.info/gnd/4350182-5">Witgenſten</name>
                     <lb/>
-                    herumber durch ein Theil von Ober⸗Heſſen / bey Marpurg vorbey / gegen und neben
+                    herumber durch ein Theil von <name ref="https://d-nb.info/gnd/4042929-5">Ober⸗Heſſen</name> / bey <name ref="https://d-nb.info/gnd/4042929-5">Marpurg</name> vorbey / gegen und neben
                     <lb/>
-                    Gieſſen hin / auf Wetzlar / Leun / Weilburg / Lenberg / Villmar / Runckel / Diekirch / Lim⸗
+                    <name ref="https://d-nb.info/gnd/4020989-1">Gieſſen</name> hin / auf <name ref="https://d-nb.info/gnd/4065878-8">Wetzlar</name> / <name ref="https://d-nb.info/gnd/4138459-3">Leun</name> / <name ref="https://d-nb.info/gnd/4065091-1">Weilburg</name> / <name ref="https://d-nb.info/gnd/4036140-8">Lenberg</name> / <name ref="https://d-nb.info/gnd/4119444-5">Villmar</name> / <name ref="https://d-nb.info/gnd/4051003-7">Runckel</name> / <name ref="https://d-nb.info/gnd/2008840-1">Diekirch</name> / <name ref="https://d-nb.info/gnd/4035750-8">Lim⸗
                     <lb/>
-                    purg / Dietz / Naſſau / Tauſchenau / und Nieder⸗Lahnſtein / da er nicht fern oberhalb der
+                    purg</name> / <name ref="https://d-nb.info/gnd/4012241-4">Dietz</name> / <name ref="https://d-nb.info/gnd/4041266-0">Naſſau</name> / <name ref="https://d-nb.info/gnd/4011199-4">Tauſchenau</name> / und <name ref="https://d-nb.info/gnd/4101203-3">Nieder⸗Lahnſtein</name> / da er nicht fern oberhalb der
+                    <lb/>darzu
+                    <name ref="https://d-nb.info/gnd/1219972703">Veſtung Ehrenbreitſtein</name> oder <name ref="https://d-nb.info/gnd/1219972703">Hermanſtein<note>Die Festung Ehrenbreitstein wurde mitunter fälschlicherweise als Hermanstein bezeichnet.</note></name> / in den <name ref="https://d-nb.info/gnd/4049739-2">Rhein</name> faͤllet. Es ſtoſſen unter⸗
                     <lb/>
-                    Veſtung Ehrenbreitſtein oder Hermanſtein / in den Rhein faͤllet. Es ſtoſſen unter⸗
+                    ſchiedliche Herrſchafften beyderſeits an den <name ref="https://d-nb.info/gnd/4034102-1">Lahnſtrom</name> / als <name ref="https://d-nb.info/gnd/4116352-7">Sayn</name> / <name ref="https://d-nb.info/gnd/4072472-4">Heſſen</name> / <name ref="https://d-nb.info/gnd/4291595-8">Naſſau⸗
                     <lb/>
-                    ſchiedliche Herrſchafften beyderſeits an den Lahnſtrom / als Sayn / Heſſen / Naſſau⸗
+                    Siegen</name> / <name ref="https://d-nb.info/gnd/4115343-1">Naſſau⸗Sarbruͤcken</name> / <name ref="https://d-nb.info/gnd/4528964-5">Solms</name> / <name ref="https://d-nb.info/gnd/4060882-7">Chur⸗Trier</name> / <name ref="https://d-nb.info/gnd/4065878-8">Wetzflar</name> / bey deren ſich obge⸗
                     <lb/>
-                    Siegen / Naſſau⸗Sarbruͤcken / Solms / Chur⸗Trier / Wetzflar / bey deren ſich obge⸗
-                    <lb/>
-                    meldte Dill (davon das veſte Schloß Dillenberg den Namen hat / ) in die Lahn er⸗
+                    meldte <name ref="https://d-nb.info/gnd/4012324-8">Dill</name> (davon das veſte <name ref="???">Schloß Dillenberg<note type="intern">https://de.wikipedia.org/wiki/Dillenburger_Schloss</note></name> den Namen hat / ) in die <name ref="https://d-nb.info/gnd/4034102-1">Lahn</name> er⸗
                     <lb/>
                     geuſt. Dieſer Fluß iſt manchen Orths ſehr tieff / und an allerhand Fiſchen / als Hecht /
                     <lb/>
@@ -4145,51 +4141,51 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     hetem Waſſer / Salmen darinnen gefangen.
                     <lb/>
-                    VIII. Hayrich / da jetziger Zeit die Nieder⸗Graffſchafft Catzenelenbogen gelegen.
+                    <num value="8.">VIII.</num> <name ref="https://d-nb.info/gnd/4059163-3">Hayrich</name> / da jetziger Zeit die <name ref="https://d-nb.info/gnd/4607290-1">Nieder⸗Graffſchafft Catzenelenbogen</name> gelegen.
                     <lb/>
-                    Daſſelbe Land ſolle von Alters der Hohe Ruͤck geheiſſen haben / daraus Hayrich wer⸗
+                    Daſſelbe Land ſolle von Alters der Hohe Ruͤck geheiſſen haben / daraus <name ref="https://d-nb.info/gnd/4059163-3">Hayrich</name> wer⸗
                     <lb/>
-                    den; gleich wie gegen uͤber Hunsruck / Hunnorum jugum, oder Præſidium. Dann
+                    den; gleich wie gegen uͤber <name ref="https://d-nb.info/gnd/4026217-0">Hunsruck</name> / <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4026217-0">Hunnorum jugum</name></foreign>, oder <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/4026217-0 ***">Præſidium</name></foreign>. Dann
                     <lb/>
-                    Teutſchland dergleichen hohe bergiche Laͤnder viel hat.
+                    <name ref="https://d-nb.info/gnd/2035457-5">Teutſchland</name> dergleichen hohe bergiche Laͤnder viel hat.
                     <lb/>
-                    IX. Das Stifft Herßfeld / hat in der Laͤng und Breit ohngefehr 3. Meyl / darzu
+                    <num value="9.">IX.</num> Das <name ref="https://d-nb.info/gnd/5118765-6">Stifft Herßfeld</name> / hat in der Laͤng und Breit ohngefehr 3. Meyl / darzu
                     <lb/>
-                    gehoͤren Friling / Ober⸗und Unter⸗Geiſa / Utersdorff / Kerſpenhauß / Mongshauß / Ni⸗
+                    gehoͤren <name ref="https://d-nb.info/gnd/1065395736">Friling</name> / <name ref="https://d-nb.info/gnd/4092746-5">Ober⸗und Unter⸗Geiſa</name> / <name ref="***">Utersdorff<note type="intern">Unklar, welcher Ort gemeint</note></name> / <name ref="https://d-nb.info/gnd/1076548504">Kerſpenhauß</name> / <name ref="https://d-nb.info/gnd/7558629-0">Mongshauß</name> / <name ref="https://d-nb.info/gnd/4117867-1">Ni⸗
                     <lb/>
-                    der⸗Sula / Wegfahrt / Nidern Joſſe. Davon unten in ſelbiger Stadt Beſchreibung.
+                    der⸗Sula</name> / <name ref="***">Wegfahrt<note type="intern">Unklar, welcher Ort gemeint</note></name> / <name ref="https://d-nb.info/gnd/3037365-7">Nidern Joſſe</name>. Davon unten in ſelbiger Stadt Beſchreibung.
                     <lb/>
-                    Waldeck die Graffſchafft / iſt ein vornehm fruchtbar Land / an allerley Fruͤchten /
+                    <name ref="???">Waldeck</name> die Graffſchafft / iſt ein vornehm fruchtbar Land / an allerley Fruͤchten /
                     <lb/>
                     Waͤlden / Bronnen / und Metallen. Die vornehmſte Staͤdt und Schloͤſſer darin ſeyn /
                     <lb/>
-                    Wildungen / Waldeck / Corbach / Eyſenherg / Mengeringhauſen / Arolſen / Landau / Ka⸗
+                    <name ref="https://d-nb.info/gnd/4066130-1">Wildungen</name> / <name ref="https://d-nb.info/gnd/4064374-8">Waldeck</name> / <name ref="https://d-nb.info/gnd/4032450-3">Corbach</name> / <name ref="***"><choice><sic>Eyſenherg</sic><corr>Eyſenberg</corr></choice><note type="intern">https://de.wikipedia.org/wiki/Burg_Eisenberg_(Korbach)</note></name> / <name ref="https://d-nb.info/gnd/2084577-7">Mengeringhauſen</name> / <name ref="https://d-nb.info/gnd/4003019-2">Arolſen</name> / <name ref="https://d-nb.info/gnd/4598825-0">Landau</name> / <name ref="***">Ro⸗
                     <lb/>
-                    den / Sachſenhauſen / Freyenhagen / Fuͤrſtenberg / Eilhuſen und Wetterburg. Die vor⸗
+                    den<note type="intern">Es muss Rhoden heißen!</note></name> / <name ref="https://d-nb.info/gnd/4051186-8">Sachſenhauſen</name> / <name ref="https://d-nb.info/gnd/4607016-3">Freyenhagen</name> / <name ref="https://d-nb.info/gnd/4783594-1">Fuͤrſtenberg</name> / <name ref="???">Eilhuſen<note type="intern">https://de.wikipedia.org/wiki/Eilhausen_(Bad_Arolsen)</note></name> und <name ref="https://d-nb.info/gnd/7559286-1">Wetterburg</name>. Die vor⸗
                     <lb/>
-                    nehmſte Stadt iſt Corbach. Staͤdte mit Schloͤſſern: Waldeck Staͤdtlein und
+                    nehmſte Stadt iſt <name ref="https://d-nb.info/gnd/4032450-3">Corbach</name>. Staͤdte mit Schloͤſſern: <name ref="https://d-nb.info/gnd/4064374-8 ???">Waldeck<note type="intern">Eintrag zu schloss Waldeck fehlt https://de.wikipedia.org/wiki/Schloss_Waldeck</note></name> Staͤdtlein und
                     <lb/>
-                    Schloß. Landau mit ihrem Schloß. Mengershauſen gleichſam mit einem Schloß.
+                    Schloß. <name ref="https://d-nb.info/gnd/4598825-0">Landau</name> mit ihrem <name ref="???">Schloß<note type="intern">https://de.wikipedia.org/wiki/Schloss_Landau</note></name>. <name ref="https://d-nb.info/gnd/2084577-7">Mengershauſen</name> gleichſam mit einem <name ref="???">Schloß<note type="intern">https://de.wikipedia.org/wiki/Burg_Mengeringhausen</note></name>.
                     <lb/>
-                    Jtem die Stadt Roden mit ihrem Schloß / in deren Gebiet es die allerbeſte Jagwerck
+                    Jtem die Stadt <name ref="???">Roden<note type="intern">https://de.wikipedia.org/wiki/Rhadern</note></name> mit ihrem <name ref="***">Schloß<note type="intern">Schloss Rhadern oder Lichtenfels?</note></name> / in deren Gebiet es die allerbeſte Jagwerck
                     <lb/>
-                    gibt. Das Schloß Wetterburg liegt an einem luſtigen Orth zwiſchen den Waſſern
+                    gibt. Das <name ref="https://d-nb.info/gnd/7534572-9">Schloß Wetterburg</name> liegt an einem luſtigen Orth zwiſchen den Waſſern
                     <lb/>
-                    Twiſta und Ahra. Die Stadt Wildungen wird durch den neuen und alten Ort und
+                    <name ref="https://d-nb.info/gnd/4230495-7">Twiſta</name> und <name ref="???">Ahra<note type="intern">https://de.wikipedia.org/wiki/Aar_(Twiste)</note></name>. Die Stadt <name ref="https://d-nb.info/gnd/4066130-1">Wildungen</name> wird durch den <rs ref="https://d-nb.info/gnd/5103167-X https://d-nb.info/gnd/4716497-9">neuen und alten Ort</rs> und
                     <lb/>
-                    Namen unterſchieden. Eiſenberg iſt ein Schloß / deſſen Feldernechſt herum auch Ei⸗
+                    Namen unterſchieden. <name ref="???">Eiſenberg<note type="intern">https://de.wikipedia.org/wiki/Burg_Eisenberg_(Korbach)</note></name> iſt ein Schloß / deſſen Feldernechſt herum auch Ei⸗
                     <lb/>
                     ſen und Steinkohlen von ſich geben / dahero es den Namen hat / dann denen die es von
                     <lb/>
-                    der Goͤttin Jſide herfuͤhren / nicht zu glauben ſtehet. Eilhauſen iſt ein ſchoͤn Schloß /
+                    der <name ref="https://d-nb.info/gnd/118932640">Goͤttin Jſide</name> herfuͤhren / nicht zu glauben ſtehet. <name ref="???">Eilhauſen<note type="intern">https://de.wikipedia.org/wiki/Eilhausen_(Bad_Arolsen)</note></name> iſt ein ſchoͤn Schloß /
                     <lb/>
-                    welches das Waſſer Urba gleichſam theilet.
+                    welches das Waſſer <name ref="???">Urba<note type="intern">https://de.wikipedia.org/wiki/Orpe</note></name> gleichſam theilet.
                     <lb/>
                     DAs ſeyn nun alſo die Laͤnder und Gegend / deſſen vornehmſte und
                     <lb/>
                     bekannteſte Oerther und Plaͤtze wir uns in dieſem Theil des
                     <lb/>
-                    Teutſchlands zu beſchreiben vorgenommen haben / und erſtlich
+                    <name ref="https://d-nb.info/gnd/2035457-5">Teutſchlands</name> zu beſchreiben vorgenommen haben / und erſtlich
                     <lb/>
                     zwar / ſo iſt da die Stadt
                 </p>
@@ -4206,16 +4202,16 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
             </figure>
             <lb/>
             <div corresp="ArtDOI" type="article">
-                <head>Allendorff / an der Werra.</head>
+                <head><name ref="https://d-nb.info/gnd/4084972-7">Allendorff / an der <name ref="https://d-nb.info/gnd/4065651-2">Werra</name></name>.</head>
                 <lb/>
                 <p>
-                    JSt ein Stadt in Nieder⸗Heſſen /
+                    JSt ein Stadt in <name ref="https://d-nb.info/gnd/4576898-5">Nieder⸗Heſſen</name> /
                     <lb/>
                     zugenandt in den Sohden. Soll
                     <lb/>
                     wegen der Saltz⸗Sohden ſo viel
                     <lb/>
-                    heiſſen / als Hallendorff / inmaſſen auch
+                    heiſſen / als <name ref="https://d-nb.info/gnd/1041660707">Hallendorff</name> / inmaſſen auch
                     <lb/>
                     andere Orth von ihren Sohden oder Suͤl⸗
                     <lb/>
@@ -4233,7 +4229,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     lein Dorff genennet worden / aus wel⸗
                     <lb/>
-                    chen hernach der Nahm Allendorff er⸗
+                    chen hernach der Nahm <name ref="https://d-nb.info/gnd/4084972-7">Allendorff</name> er⸗
                     <lb/>
                     wachſen. Dieſe Stadt ligt in einer luſtigen
                     <lb/>
@@ -4243,7 +4239,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     Strohms / drey ſteinerne Bruͤcken uͤber
                     <lb/>
-                    die Werra; uͤber welche zwo Bruͤcke gehen
+                    die <name ref="https://d-nb.info/gnd/4065651-2">Werra</name>; uͤber welche zwo Bruͤcke gehen
                     <lb/>
                     auß der Statt biß zum Saltzbronnen und
                     <lb/>
@@ -4257,11 +4253,11 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     andeuten:
                     <lb/>
-                    Urbi dant magnis pons, mons, fons, com-
+                    <quote source="***">Urbi dant magnis pons, mons, fons, com-
                     <lb/>
                     moda rebus,
                     <lb/>
-                    Qualia vix alibi Teutona terra tenet.
+                    Qualia vix alibi Teutona terra tenet.<note type="intern">Unklar, ob ein Sprichwort oder eine Quelle zitiert wird.</note></quote>
                     <lb/>
                     Dieſer Ort / ſo ziemblich weit umbfan⸗
                     <lb/>
@@ -4283,23 +4279,23 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     ſeyn. Zwiſchen dieſer Statt / und den So⸗
                     <lb/>
-                    den oder Saltzwerck (ſo wegen der vielen
+                    den oder <name ref="https://d-nb.info/gnd/7593344-5">Saltzwerck</name> (ſo wegen der vielen
                     <lb/>
                     Gebaͤuen der Soͤder / und auch anderer /
                     <lb/>
-                    eine eigene Gemeinde / und Staͤttlein / doch
+                    eine <name ref="https://d-nb.info/gnd/4105394-1">eigene Gemeinde / und Staͤttlein</name> / doch
                     <lb/>
                     ohne Mauren / machet /) iſt eine dreyfache
                     <lb/>
                     ſchoͤne ſteinerne Brucken; dieweil ſich die
                     <lb/>
-                    Werra diß Orts auch in ſo viel Fluͤſſe thei⸗
+                    <name ref="https://d-nb.info/gnd/4065651-2">Werra</name> diß Orts auch in ſo viel Fluͤſſe thei⸗
                     <lb/>
-                    let. Beſagtes Saltzwerck belangend / iſt
+                    let. Beſagtes <name ref="https://d-nb.info/gnd/7593344-5">Saltzwerck</name> belangend / iſt
                     <lb/>
                     ſolches ein ſonderlich wunderbahres Ge⸗
                     <lb/>
-                    ſchoͤpff / und groſſe Gnad Gottes / daß die
+                    ſchoͤpff / und groſſe Gnad <name ref="https://d-nb.info/gnd/118556703">Gottes</name> / daß die
                     <lb/>
                     Quelle ſo ſtarck iſt / daß ſie ſo bald etliche
                     <lb/>
@@ -4339,9 +4335,9 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     Brunnen her / und ſeyn deren ſehr viel; und
                     <lb/>
-                    werden zu dieſem Saltzwerck nicht allein
+                    werden zu dieſem <name ref="https://d-nb.info/gnd/7593344-5">Saltzwerck</name> nicht allein
                     <lb/>
-                    die Kohlen am Meißner / ſondern auch viel
+                    die Kohlen am <name ref="https://d-nb.info/gnd/4038484-6">Meißner</name> / ſondern auch viel
                     <lb/>
                     hundert oder tauſend Schock reiſich ge⸗
                     <lb/>
@@ -4361,27 +4357,27 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     dende Saltz an ſich zeucht. Es ligt die ge⸗
                     <lb/>
-                    melte Stadt Allendorff / unnd zugehoͤrig
+                    melte Stadt <name ref="https://d-nb.info/gnd/4084972-7">Allendorff</name> / unnd zugehoͤrig
                     <lb/>
-                    Ampt (ſo gering iſt / und in wenig Dorff⸗
+                   <name ref="???"> Ampt</name> (ſo gering iſt / und in wenig Dorff⸗
                     <lb/>
                     ſchafften beſtehet;) wie auch die gemelte
                     <lb/>
-                    Soden oder Saltzwerck / gar in einem ſehr
+                    Soden oder <name ref="https://d-nb.info/gnd/7593344-5">Saltzwerck</name> / gar in einem ſehr
                     <lb/>
                     geringen Bezirck / zwiſchen ſehr hohen
                     <lb/>
                     Bergen / ſo voller Steinklippen ſeyn; dar⸗
                     <lb/>
-                    unter ſonderlich der Goburg / und Hoͤhe⸗
+                    unter ſonderlich der <name ref="https://d-nb.info/gnd/4086748-1">Goburg</name> / und <name ref="https://d-nb.info/gnd/1116375044">Hoͤhe⸗
                     <lb/>
-                    berg / den Vorzug haben. Jn den Waͤlden /
+                    berg</name> / den Vorzug haben. Jn den Waͤlden /
                     <lb/>
                     ſo viel deſſen der Stadt zugehoͤrig / wie auch
                     <lb/>
-                    an der hohen Fuͤrſte ( ſo ein Vorgebuͤrg /
+                    an der <name ref="***">hohen Fuͤrſte</name> ( ſo ein Vorgebuͤrg /
                     <lb/>
-                    und Gehoͤltz / des Meißners iſt / ) hat die
+                    und Gehoͤltz / des <name ref="https://d-nb.info/gnd/4038484-6">Meißners</name> iſt / ) hat die
                     <fw type="catch">Statt</fw>
                     <fw type="sig">C 2</fw>
                     <pb facs="DOI.jpg" n="31"/>
@@ -4390,13 +4386,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     Statt die Freyheit / vor allen andern im
                     <lb/>
-                    Lande / daß ſie von S. Veits / biß auf S.
+                    Lande / daß ſie von <name ref="https://d-nb.info/gnd/1186647310"><name ref="https://d-nb.info/gnd/118627279">S. Veits</name></name> / biß auf <name ref="???"><name ref="https://d-nb.info/gnd/118822195">S.
                     <lb/>
-                    Bartholomaͤi Tag / roth Wildpreth; und
+                    Bartholomaͤi</name> Tag <note type="intern">https://de.wikipedia.org/wiki/Bartholom%C3%A4ustag</note></name>/ roth Wildpreth; und
                     <lb/>
-                    dann von S. Michaels / bis auf S. An⸗
+                    dann von <name ref="https://d-nb.info/gnd/4744740-0"><name ref="https://d-nb.info/gnd/118733591">S. Michaels</name></name> / bis auf <name ref="???"><name ref="https://d-nb.info/gnd/118502891">S. An⸗
                     <lb/>
-                    dreas Tag / ſchwartz Wildpreth / jagen und
+                    dreas</name> Tag<note type="intern">30. November vgl. https://de.wikipedia.org/wiki/Andreas_(Apostel)</note></name> / ſchwartz Wildpreth / jagen und
                     <lb/>
                     fangen moͤge / aber nicht ſchieſſen: derhal⸗
                     <lb/>
@@ -4411,7 +4407,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     </choice>
                     / iſt ſonſten / we⸗
                     <lb/>
-                    gen des Saltzwercks / zimlich ſtarck allda;
+                    gen des <name ref="https://d-nb.info/gnd/7593344-5">Saltzwercks</name> / zimlich ſtarck allda;
                     <lb/>
                     und weil wenig Frucht dieſes Orts wach⸗
                     <lb/>
@@ -4423,7 +4419,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     wunderbahren Beſchaffenheit / nemlich je
                     <lb/>
-                    hoͤher das Waſſer in der Werra / je mehr
+                    hoͤher das Waſſer in der <name ref="https://d-nb.info/gnd/4065651-2">Werra</name> / je mehr
                     <lb/>
                     auch der Sohle in dem Bronn; je mehr a
                     <lb/>
@@ -4453,7 +4449,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     tzo 12. gnug ſeyn. Die Herren Landgrafſen
                     <lb/>
-                    in Heſſen haben den Orth mit unterſchied⸗
+                    in <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> haben den Orth mit unterſchied⸗
                     <lb/>
                     lichen Freyheiten begabt. Es ſeyn auch vor
                     <lb/>
@@ -4465,64 +4461,64 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     obig den Sohden auf dem Berg geſtan⸗
                     <lb/>
-                    den / und Weſterburg genand worden iſt.
+                    den / und <name ref="***">Weſterburg<note type="intern">unklar, welche Burg gemeint</note></name> genand worden iſt.
                     <lb/>
-                    Bey dieſem Teutſchen Krieg iſt allhier zu
+                    Bey dieſem <name ref="https://d-nb.info/gnd/4012985-8">Teutſchen Krieg</name> iſt allhier zu
                     <lb/>
                     underſchieden mahlen groſſer Schade ge⸗
                     <lb/>
                     ſchehen / ſonderlich Anno 1632. da der von
                     <lb/>
-                    Pappenheim Witzenhauſen / Eſchwegen /
+                    <name ref="https://d-nb.info/gnd/119020572">Pappenheim</name> <name ref="https://d-nb.info/gnd/4066682-7">Witzenhauſen</name> / <name ref="https://d-nb.info/gnd/4015525-0">Eſchwegen</name> /
                     <lb/>
-                    und Drendelburg erobert / deren Occupi⸗
+                    und <name ref="https://d-nb.info/gnd/4106939-0">Drendelburg</name> erobert / deren Occupi⸗
                     <lb/>
-                    rung gedacht wird im 2. Theil des Theatri
+                    rung gedacht wird im 2. Theil des <name ref="???">Theatri
                     <lb/>
-                    Europæi. Jn dieſer Statt iſt geboren
+                    Europæi</name>. Jn dieſer Statt iſt geboren
                     <lb/>
-                    der wohlberuͤmte Theologus D. Balthaſar
+                    der wohlberuͤmte Theologus <name ref="https://d-nb.info/gnd/116885955">D. Balthaſar
                     <lb/>
-                    Menzerus.
+                    Menzerus</name>.
                 </p>
                 <lb/>
             </div>
 
             <div type="article">
-                <head>Allendorff / an der Lomb.</head>
+                <head><name ref="https://d-nb.info/gnd/4086584-8">Allendorff / an der <name ref="https://d-nb.info/gnd/1035781441">Lomb</name></name>.</head>
                 <lb/>
                 <p>
-                    DJeſes Staͤttlein ligt in Heſſwn / zwi⸗
+                    DJeſes Staͤttlein ligt in <name ref="https://d-nb.info/gnd/4072472-4">Heſſwn</name> / zwi⸗
                     <lb/>
-                    ſchen Marpurg und Gieſſen / welches
+                    ſchen <name ref="https://d-nb.info/gnd/4037446-4">Marpurg</name> und <name ref="https://d-nb.info/gnd/4020989-1">Gieſſen</name> / welches
                     <lb/>
                     bloß in einem alten Brieff Villa genendt
                     <lb/>
                     wird. Auf deme zu nechſt gelegenen hohen
                     <lb/>
-                    Burghauß und Dorff Nordecken / haben
+                    <name ref="??? https://d-nb.info/gnd/1237065992">Burghauß und Dorff Nordecken<note type="intern">https://de.wikipedia.org/wiki/Burg_Nordeck</note></name> / haben
                     <lb/>
                     vor Alters zwey Gebruͤder Landgraffen zu
                     <lb/>
-                    Heſſen / mit Namen Henrich und Herman
+                    <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name> / mit Namen <name ref="https://d-nb.info/gnd/138743800">Henrich</name> und <name ref="https://d-nb.info/gnd/135868882">Herman</name>
                     <lb/>
                     gewohnet / welche ums Jahr 1365. beyde
                     <lb/>
-                    benachbarte Dorffſchafften Moͤlnbach und
+                    benachbarte Dorffſchafften <name ref="***">Moͤlnbach</name> und
                     <lb/>
-                    Todenhauſen von denen angrentzenden
+                    <name ref="***">Todenhauſen</name> <note type="intern">Dörfer aus denen Allendorf gegründet.</note>von denen angrentzenden
                     <lb/>
-                    beyden Adelichen Geſchlechtern Milchling
+                    beyden Adelichen Geſchlechtern <name ref="???">Milchling<note type="intern">https://de.wikipedia.org/wiki/Schutzbar_genannt_Milchling</note></name>
                     <lb/>
-                    und Rabenau erblichen an ſich ertauſchet /
+                    und <name ref="https://d-nb.info/gnd/119393107">Rabenau</name> erblichen an ſich ertauſchet /
                     <lb/>
                     und aus ſolchen Doͤrffern dieſes Staͤttlein
                     <lb/>
                     zuſam̃en zu bauen angefangen / auch durch
                     <lb/>
-                    Huͤlff des Ambts Burgkemunden und Ge⸗
+                    Huͤlff des Ambts <name ref="https://d-nb.info/gnd/1115862014">Burgkemunden</name> und Ge⸗
                     <lb/>
-                    richts Lohr einen Graben um ſelbiges he⸗
+                    richts <name ref="https://d-nb.info/gnd/4769206-6">Lohr</name> einen Graben um ſelbiges he⸗
                     <lb/>
                     ro von neuem auffwerffen laſſen / ſo aber
                     <lb/>
@@ -4530,13 +4526,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     ges Anhalten bey dem damahlig regieren⸗
                     <lb/>
-                    den Landts⸗Fuͤrſten zu Caſſel / Herrn L.
+                    den <name ref="https://d-nb.info/gnd/11859382X" cert="high">Landts⸗Fuͤrſten zu <name ref="https://d-nb.info/gnd/4072472-4">Caſſel</name> / Herrn L.
                     <lb/>
-                    Philipſen dem aͤltern / wiederum einge⸗
+                    Philipſen dem aͤltern</name> / wiederum einge⸗
                     <lb/>
                     ſchleiffet worden. Jm Jahr 1370. iſt dieſer
                     <lb/>
-                    Orth an den Landgraffen mit der Statt
+                    Orth an den <rs ref="https://d-nb.info/gnd/138743800">Landgraffen</rs> mit der Statt
                     <lb/>
                     Freyheit begnadigt / und um des willen
                     <lb/>
@@ -4544,29 +4540,29 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     oder Allen beyden Dorffen zuſammen
                     <lb/>
-                    gebauet / Allendorff / und forters zum un⸗
+                    gebauet / <name ref="https://d-nb.info/gnd/4086584-8">Allendorff</name> / und forters zum un⸗
                     <lb/>
                     terſcheyd anderer Staͤtte und Doͤrfſer;
                     <lb/>
                     welche eben dergleichen Namen tragen /
                     <lb/>
-                    an der Lomb genand worden / vornem⸗
+                    an der <name ref="https://d-nb.info/gnd/1035781441">Lomb</name> genand worden / vornem⸗
                     <lb/>
                     lich von deme zu nechſt daran herflieſſenden
                     <lb/>
                     Waſſer / welches gleichfals ſeinen Namen
                     <lb/>
-                    vom Dorff Lomb / Ampts Grunberg / uͤ⸗
+                    vom <name ref="https://d-nb.info/gnd/1057942928">Dorff Lomb</name> / Ampts <name ref="https://d-nb.info/gnd/4022283-4">Grunberg</name> / uͤ⸗
                     <lb/>
                     berkommen / alldar er ſich urſpruͤnglich ſam⸗
                     <lb/>
-                    let / und bey dem Adelichen Milchlingiſchen
+                    let / und bey dem Adelichen <name ref="???">Milchlingiſchen<note type="intern">https://de.wikipedia.org/wiki/Schutzbar_genannt_Milchling</note></name>
                     <lb/>
-                    Dorff Dreys hero bis naher Stauffen⸗
+                    Dorff <name ref="https://d-nb.info/gnd/16327580-4">Dreys</name> hero bis naher <name ref="https://d-nb.info/gnd/4057034-4">Stauffen⸗
                     <lb/>
-                    berg fleuſt / unter welchem Staͤttlein er in
+                    berg</name> fleuſt / unter welchem Staͤttlein er in
                     <lb/>
-                    die Loͤhn faͤllet. Hundert und vierzehen
+                    die <name ref="https://d-nb.info/gnd/4034102-1">Loͤhn</name> faͤllet. Hundert und vierzehen
                     <lb/>
                     Jahr nach deſſen Erbauung / benandtlich
                     <lb/>
@@ -4594,7 +4590,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     halbe Theil uͤbrig. Jm Jahr 1385. hat der
                     <lb/>
-                    Biſchoff Chilian zu Maͤyntz dieſes Staͤtt⸗
+                    <name ref="***">Biſchoff Chilian zu <name ref="https://d-nb.info/gnd/4100026-2">Maͤyntz</name><note type="intern">Unklar, wer gemeint. Es gibt keinen Erzbischof Kilian in Mainz</note></name> dieſes Staͤtt⸗
                     <lb/>
                     lein feindlich und mit Kriegsheer
                     <choice>
@@ -4603,13 +4599,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     </choice>
                     /
                     <lb/>
-                    woruͤber ein Freyherr Conrad von Weins⸗
+                    woruͤber ein <name ref="https://d-nb.info/gnd/143324667">Freyherr Conrad von Weins⸗
                     <lb/>
-                    berg damals commandirt / alſo daß auch
+                    berg</name> damals commandirt / alſo daß auch
                     <lb/>
                     noch theils die Feldmarck um dieſen Orth
                     <lb/>
-                    nach deſſen Namen der Weinsberg genand
+                    nach deſſen Namen der <name ref="https://d-nb.info/gnd/1075827698">Weinsberg</name> genand
                     <fw type="catch">wird.</fw>
                     <pb facs="DOI.jpg" n="32"/>
                     <pb facs="DOI.jpg" n="33"/>
@@ -4641,9 +4637,9 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     wird. Jnmaſſen auch bey unſern Zeiten die⸗
                     <lb/>
-                    ſer Ort von den Nider⸗Heſſen⸗Caſſeliſchen
+                    ſer Ort von den <name ref="https://d-nb.info/gnd/4072472-4">Nider⸗Heſſen⸗Caſſeliſchen</name>
                     <lb/>
-                    und Schwediſch⸗Leßlaiſchen damahls con⸗
+                    und <name ref="https://d-nb.info/gnd/4053821-7">Schwediſch⸗Leßlaiſchen</name> damahls con⸗
                     <lb/>
                     jungirten Kriegsvoͤlckern / nemlich im
                     <lb/>
@@ -4665,35 +4661,35 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     <lb/>
                     geweſen. Die Kirch allhier ſoll ein Filial
                     <lb/>
-                    der Kirchen zu Winden / ſo ein Dorff
+                    der Kirchen zu <name ref="https://d-nb.info/gnd/7559293-9">Winden </name>/ ſo ein Dorff
                     <lb/>
                     ohnfern von hinnen entlegen / geweſen ſeyn /
                     <lb/>
                     und haͤltet man darfuͤr / daß dieſe Kirch
                     <lb/>
-                    dem Maͤrtyrer Laurentio, uff welches
+                    dem <name ref="https://d-nb.info/gnd/119320827">Maͤrtyrer Laurentio</name>, uff welches
                     <lb/>
-                    Tag vor altem die Kirchweihe celebrirt / zu
+                    <rs ref="???">Tag</rs> vor altem die Kirchweihe celebrirt / zu
                     <lb/>
                     Ehren eingeweyhet worden ſeye. Auff dem
                     <lb/>
-                    ohnweit hiervon gelegenen alten Schloß
+                    ohnweit hiervon gelegenen alten <name ref="???">Schloß
                     <lb/>
-                    Nordecken / deſſen obgedacht / haben die
+                    Nordecken</name> / deſſen obgedacht / haben die
                     <lb/>
-                    Rabenauiſche von Adel dabevor ein Burg⸗
+                    <name ref="https://d-nb.info/gnd/119393107">Rabenauiſche von Adel</name> dabevor ein <name ref="???">Burg⸗
                     <lb/>
-                    hauß gehabt / daher ſie auch ihren Beyna⸗
+                    hauß</name> gehabt / daher ſie auch ihren Beyna⸗
                     <lb/>
-                    men fuͤhren / und ſich von Nordecken /
+                    men fuͤhren / und ſich<name ref="https://d-nb.info/gnd/119393107"> von Nordecken /
                     <lb/>
-                    zur Rabenau ſchreiben /welches Ge⸗
+                    zur Rabenau</name> ſchreiben /welches Ge⸗
                     <lb/>
-                    ſchlecht ſonſten beneben andern mit der S.
+                    ſchlecht ſonſten beneben andern mit der <name ref="https://d-nb.info/gnd/118529927">S.
                     <lb/>
-                    Eliſabethen / Landgraͤffin zu Heſſen / in
+                    Eliſabethen / Landgraͤffin zu <name ref="https://d-nb.info/gnd/4240073-9">Heſſen</name></name> / in
                     <lb/>
-                    Anno 1211. aus Hungarn zum erſten in
+                    Anno 1211. aus <name ref="https://d-nb.info/gnd/4078541-5">Hungarn</name> zum erſten in
                     <lb/>
                     dieſes Land kommen.
                 </p>
@@ -35357,13 +35353,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                     zu finden.
                     <lb/>
                 </p>
-                <div n="2">
+                <div type="index" n="2">
                     <head>A.</head>
                     <list>
                         <lb/>
                         <item>
-                            AAr /
-                            <ref>fl. 18.</ref>
+                            AAr / fl.
+                            <ref>18.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -35419,8 +35415,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Ana /
-                            <ref>fl. 31.</ref>
+                            Ana / fl.
+                            <ref>31.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -35429,8 +35425,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Arde /
-                            <ref>fl. 122.</ref>
+                            Arde / fl.
+                            <ref>122.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -35472,7 +35468,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>B.</head>
                     <list>
                         <lb/>
@@ -35525,8 +35521,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Berff /
-                            <ref>fl. 5.</ref>
+                            Berff / fl.
+                            <ref>5.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -35540,8 +35536,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Berleba /
-                            <ref>fl. 23.</ref>
+                            Berleba / fl.
+                            <ref>23.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -35771,7 +35767,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>C.</head>
                     <list>
                         <lb/>
@@ -35887,7 +35883,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>D.</head>
                     <list>
                         <lb/>
@@ -35928,8 +35924,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Dill /
-                            <ref>fl. 17.</ref>
+                            Dill / fl.
+                            <ref>17.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -35998,8 +35994,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Druſſel /
-                            <ref>fl. 31.</ref>
+                            Druſſel / fl.
+                            <ref>31.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -36013,8 +36009,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Dymmel /
-                            <ref>fl. 86.</ref>
+                            Dymmel / fl.
+                            <ref>86.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -36024,7 +36020,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>E.</head>
                     <list>
                         <lb/>
@@ -36034,8 +36030,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Eder /
-                            <ref>fl. 5.</ref>
+                            Eder / fl.
+                            <ref>5.</ref>
                             <ref>23.</ref>
                         </item>
                         <lb/>
@@ -36087,13 +36083,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Elß /
-                            <ref>fl. 18.</ref>
+                            Elß / fl.
+                            <ref>18.</ref>
                         </item>
                         <lb/>
                         <item>
-                            Elſter /
-                            <ref>fl. 144.</ref>
+                            Elſter / fl.
+                            <ref>144.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -36129,8 +36125,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Eyffa /
-                            <ref>fl. 5.</ref>
+                            Eyffa / fl.
+                            <ref>5.</ref>
                             <ref>22.</ref>
                         </item>
                         <lb/>
@@ -36152,7 +36148,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>F.</head>
                     <list>
                         <lb/>
@@ -36183,8 +36179,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Felda /
-                            <ref>fl. 26.</ref>
+                            Felda / fl.
+                            <ref>26.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -36314,8 +36310,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Fulda /
-                            <ref>fl. 31.</ref>
+                            Fulda / fl.
+                            <ref>31.</ref>
                             <ref>64.</ref>
                         </item>
                         <lb/>
@@ -36345,7 +36341,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>G.</head>
                     <list>
                         <lb/>
@@ -36487,8 +36483,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Grenff /
-                            <ref>fl. 111.</ref>
+                            Grenff / fl.
+                            <ref>111.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -36525,7 +36521,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>H.</head>
                     <list>
                         <lb/>
@@ -36885,7 +36881,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>J.</head>
                     <list>
                         <lb/>
@@ -36953,7 +36949,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>K.</head>
                     <list>
                         <lb/>
@@ -37005,8 +37001,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Kintz / Kintzig /
-                            <ref>fl. 72.</ref>
+                            Kintz / Kintzig / fl.
+                            <ref>72.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -37086,7 +37082,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>L.</head>
                     <list>
                         <lb/>
@@ -37144,8 +37140,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Lanus,
-                            <ref>fl. 18.</ref>
+                            Lanus, fl.
+                            <ref>18.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -37204,18 +37200,18 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Loganus,
-                            <ref>fl. 18.</ref>
+                            Loganus, fl.
+                            <ref>18.</ref>
                         </item>
                         <lb/>
                         <item>
-                            Lomb /
-                            <ref>fl. 20.</ref>
+                            Lomb / fl.
+                            <ref>20.</ref>
                         </item>
                         <lb/>
                         <item>
-                            Lon /
-                            <ref>fl. 5.</ref>
+                            Lon / fl.
+                            <ref>5.</ref>
                             <ref>18.</ref>
                             <ref>26.</ref>
                             <ref>41.</ref>
@@ -37244,8 +37240,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Loſſa /
-                            <ref>fl. 31.</ref>
+                            Loſſa / fl.
+                            <ref>31.</ref>
                             <ref>99.</ref>
                         </item>
                         <lb/>
@@ -37281,7 +37277,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>M.</head>
                     <list>
                         <lb/>
@@ -37341,8 +37337,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Mayn /
-                            <ref>fl. 50.</ref>
+                            Mayn / fl.
+                            <ref>50.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -37448,8 +37444,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Muͤntzebach /
-                            <ref>fl. 122.</ref>
+                            Muͤntzebach / fl.
+                            <ref>122.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -37463,7 +37459,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                 <fw type="sig">U 2</fw>
                 <pb facs="DOI.jpg" n="303"/>
                 <fw type="header">Namen⸗Regiſter.</fw>
-                <div n="2">
+                <div type="index" n="2">
                     <head>N.</head>
                     <list>
                         <lb/>
@@ -37484,8 +37480,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Neccar /
-                            <ref>fl. 134.</ref>
+                            Neccar / fl.
+                            <ref>134.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -37548,8 +37544,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Nidda /
-                            <ref>fl. 5.</ref>
+                            Nidda / fl.
+                            <ref>5.</ref>
                             <ref>133.</ref>
                         </item>
                         <lb/>
@@ -37580,8 +37576,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Niſter /
-                            <ref>fl. 16.</ref>
+                            Niſter / fl.
+                            <ref>16.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -37617,7 +37613,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>O.</head>
                     <list>
                         <lb/>
@@ -37650,8 +37646,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Ohm /
-                            <ref>fl. 5.</ref>
+                            Ohm / fl.
+                            <ref>5.</ref>
                             <ref>18.</ref>
                             <ref>28.</ref>
                         </item>
@@ -37678,7 +37674,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>P.</head>
                     <list>
                         <lb/>
@@ -37707,7 +37703,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>R.</head>
                     <list>
                         <lb/>
@@ -37858,7 +37854,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>S.</head>
                     <list>
                         <lb/>
@@ -37984,8 +37980,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Schwalm /
-                            <ref>fl. 5.</ref>
+                            Schwalm / fl.
+                            <ref>5.</ref>
                             <ref>111.</ref>
                         </item>
                         <lb/>
@@ -38019,8 +38015,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Senne /
-                            <ref>fl. 27.</ref>
+                            Senne / fl.
+                            <ref>27.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -38066,8 +38062,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Sinna /
-                            <ref>fl. 26.</ref>
+                            Sinna / fl.
+                            <ref>26.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -38189,7 +38185,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>T.</head>
                     <list>
                         <lb/>
@@ -38269,8 +38265,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Tuiſta
-                            <ref>fl. 18.</ref>
+                            Tuiſta fl.
+                            <ref>18.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -38280,7 +38276,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>V.</head>
                     <list>
                         <lb/>
@@ -38322,8 +38318,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Vnſtrud /
-                            <ref>fl. 135.</ref>
+                            Vnſtrud / fl.
+                            <ref>135.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -38359,13 +38355,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>W.</head>
                     <list>
                         <lb/>
                         <item>
-                            WAlbach /
-                            <ref>fl. 21.</ref>
+                            WAlbach / fl.
+                            <ref>21.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -38493,16 +38489,16 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Werra /
-                            <ref>fl. 5.</ref>
+                            Werra / fl.
+                            <ref>5.</ref>
                             <ref>19.</ref>
                             <ref>42.</ref>
                             <ref>135.</ref>
                         </item>
                         <lb/>
                         <item>
-                            Weſer /
-                            <ref>fl. 5.</ref>
+                            Weſer / fl.
+                            <ref>5.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -38524,8 +38520,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Wetter /
-                            <ref>fl. 15.</ref>
+                            Wetter / fl.
+                            <ref>15.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -38614,8 +38610,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         </item>
                         <lb/>
                         <item>
-                            Wohr /
-                            <ref>fl. 73.</ref>
+                            Wohr / fl.
+                            <ref>73.</ref>
                         </item>
                         <lb/>
                         <item>
@@ -38660,7 +38656,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" >
                         <lb/>
                     </list>
                 </div>
-                <div n="2">
+                <div type="index" n="2">
                     <head>Z.</head>
                     <list>
                         <lb/>
