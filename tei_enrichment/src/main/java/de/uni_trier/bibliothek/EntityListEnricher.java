@@ -1010,7 +1010,7 @@ public class EntityListEnricher {
 					divFrontElement.setCorresp("mgndbibl:listBibl_" + preferredNameString);
 				}
 				// typeTermslist.remove("Work");
-				EntityListWriter.writeListBiblEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+				EntityListWriter.writeListBiblEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
 
 			}
 			else if (oberkategorie.equals("person")) {
@@ -1030,7 +1030,7 @@ public class EntityListEnricher {
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndper:person_" + preferredNameString);
 				}
-				EntityListWriter.writePersonEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+				EntityListWriter.writePersonEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
 
 			}
 			else if (oberkategorie.equals("event"))  {
@@ -1049,7 +1049,7 @@ public class EntityListEnricher {
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndeve:event_" + preferredNameString);
 				}
-				EntityListWriter.writeEventsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+				EntityListWriter.writeEventsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
 			}
 			else if (oberkategorie.equals("org")) {
 				System.out.println("orgs eintrag");
@@ -1067,7 +1067,7 @@ public class EntityListEnricher {
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndorgs:org_" + preferredNameString);
 				}
-				EntityListWriter.writeOrgsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+				EntityListWriter.writeOrgsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
 			}
 			else if (oberkategorie.equals("object")) {
 				System.out.println("object eintrag");
@@ -1086,7 +1086,7 @@ public class EntityListEnricher {
 					divFrontElement.setCorresp("mgndeve:object_" + preferredNameString);
 				}
 				objectHasType = true;
-				EntityListWriter.writeObjectsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+				EntityListWriter.writeObjectsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
 			}
 			else if (oberkategorie.equals("place")) {
 				System.out.println("place eintrag");
@@ -1105,7 +1105,7 @@ public class EntityListEnricher {
 					divFrontElement.setCorresp("mgndeve:place_" + preferredNameString);
 				}
 				objectHasType = true;
-				EntityListWriter.writePlacesEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement);
+				EntityListWriter.writePlacesEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
 			}
 		}
 

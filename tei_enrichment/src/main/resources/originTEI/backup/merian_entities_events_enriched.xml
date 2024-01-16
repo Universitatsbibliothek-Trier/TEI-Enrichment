@@ -37,42 +37,13 @@
                         <idno></idno>
                         <link/>
                     </event>
-                    <event xml:id="event_Freiburger_Literaturgespräch">
-                        <label>Freiburger Literaturgespräch</label>
-                        <label>Literaturgespräch (Freiburg im Breisgau)</label>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>ConferenceOrEvent</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>SeriesOfConferenceOrEvent</item>
-                            </list>
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/5003531-9</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Freiburger_Literaturgespräch"/>
-                    </event>
-                    <event xml:id="event_Deutschland_Zusammenbruch_1945">
-                        <label>Deutschland / Zusammenbruch (1945)</label>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>HistoricSingleEventOrEra</item>
-                            </list>
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7506471-6</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Deutschland_Zusammenbruch_1945"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                    </event>
-                    <event xml:id="event_Amerikanische_Revolution">
-                        <label>Amerikanische Revolution</label>
+                    <event xml:id="event_Katzenelnbogener_Erbfolgestreit">
+                        <label>Katzenelnbogener Erbfolgestreit</label>
                         <desc>
-                            <date from-custom="1763"/>
-                            <date to-custom="1787"/>
+                            <date from-custom="1521"/>
+                            <date to-custom="1557"/>
                         </desc>
-                        <note type="desc">Revolution</note>
+                        <note type="desc">Erbauseinandersetzung</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -81,92 +52,16 @@
                                 <item>HistoricSingleEventOrEra</item>
                             </list>
                         </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4187276-9</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4709480-1</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
                     </event>
-                    <event xml:id="event_Kappeler_Krieg_1531">
-                        <label>Kappeler Krieg &lt;1531&gt;</label>
-                        <label>Zweiter Kappeler Krieg</label>
-                        <label>Kappelerkrieg &lt;1531&gt;</label>
+                    <event xml:id="event_Schlacht_von_Riade">
+                        <label>Schlacht von Riade</label>
+                        <label>Ungarnschlacht &lt;933&gt;</label>
+                        <label>Riade-Schlacht</label>
                         <desc>
-                            <date when-custom="1531"/>
-                        </desc>
-                        <note type="desc">Krieg</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>HistoricSingleEventOrEra</item>
-                            </list>
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4196611-9</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Kappeler_Krieg_1531"/>
-                    </event>
-                    <event xml:id="event_Leuna_Werke_Übernahme_Elf_Aquitaine">
-                        <label>Leuna-Werke / Übernahme / Elf-Aquitaine</label>
-                        <note type="desc">Übernahme der Leuna-Raffinerien durch Elf-Aquitaine 1992; Gegenstand von Prozessen und Parlamentarischen Untersuchungsausschüssen</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>HistoricSingleEventOrEra</item>
-                            </list>
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7511453-7</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                    </event>
-                    <event xml:id="event_Eroberung_der_Iberischen_Halbinsel_v218_v19">
-                        <label>Eroberung der Iberischen Halbinsel &lt;v218-v19&gt;</label>
-                        <desc>
-                            <date from-custom="v218"/>
-                            <date to-custom="v19"/>
-                        </desc>
-                        <note type="desc">Eroberung</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>HistoricSingleEventOrEra</item>
-                            </list>
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1105667375</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                    </event>
-                    <event xml:id="event_Erster_Weltkrieg">
-                        <label>Erster Weltkrieg</label>
-                        <label>Weltkrieg 1</label>
-                        <label>Weltkrieg I</label>
-                        <label>Weltkrieg &lt;1914-1918&gt;</label>
-                        <label>I. Weltkrieg</label>
-                        <label>1. Weltkrieg</label>
-                        <desc>
-                            <date from-custom="1914"/>
-                            <date to-custom="1918"/>
-                        </desc>
-                        <note type="desc">Weltkrieg</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>HistoricSingleEventOrEra</item>
-                            </list>
-                        </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079163-4</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                    </event>
-                    <event xml:id="event_Schlacht_bei_Montebello_1800">
-                        <label>Schlacht bei Montebello &lt;1800&gt;</label>
-                        <label>Schlacht bei Montebello della Battaglia &lt;1800&gt;</label>
-                        <desc>
-                            <date when-custom="1800"/>
-                            <date when-custom="09.06.1800"/>
+                            <date when-custom="933"/>
+                            <date when-custom="15.03.933"/>
                         </desc>
                         <note type="desc">Schlacht</note>
                         <note type="categories">
@@ -177,8 +72,74 @@
                                 <item>HistoricSingleEventOrEra</item>
                             </list>
                         </note>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4620893-8</idno>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/122388211X</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </event>
+                    <event xml:id="event_Nürnberger_Exekutionstag">
+                        <label>Nürnberger Exekutionstag</label>
+                        <label>Exekutionstag (1649-1650)</label>
+                        <label>Nürnberger Exekutionsreichstag</label>
+                        <desc>
+                            <date from-custom="1649"/>
+                            <date to-custom="1650"/>
+                        </desc>
+                        <note type="desc">angesetzt nach § 415.1 und § 607.8</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>HistoricSingleEventOrEra</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4283589-6</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </event>
+                    <event xml:id="event_Reichstag_1653_1654_Regensburg">
+                        <label>Reichstag (1653-1654 : Regensburg)</label>
+                        <label>Reichstag (1653-1654 : Deutschland)</label>
+                        <label>Reichstag (1654 : Regensburg)</label>
+                        <note type="desc">Reichstage vor 1663 sind als Kongress anzusetzen (entgegen RAK § 679, Anm.)</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>ConferenceOrEvent</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/3070085-1</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </event>
+                    <event xml:id="event_Dreißigjähriger_Krieg">
+                        <label>Dreißigjähriger Krieg</label>
+                        <desc>
+                            <date from-custom="1618"/>
+                            <date to-custom="1648"/>
+                        </desc>
+                        <note type="desc">Krieg</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>HistoricSingleEventOrEra</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4012985-8</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </event>
+                    <event xml:id="event_Reichstag">
+                        <label>Reichstag</label>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>HistoricSingleEventOrEra</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4049170-5</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
                     </event>
                 </listEvent>
             </div>

@@ -31,31 +31,444 @@
                         <note/>
                         <link/>
                     </object>
-                    <object xml:id="object_Gene">
+                    <object xml:id="object_Griechen">
                         <objectIdentifier>
-                            <objectName>Gene</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/10307833-2</idno>
+                            <objectName>Griechen</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4022046-1</idno>
                         </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_07"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
                             </list>
                             <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
+                                <item>EthnographicName</item>
                             </list>
                         </note>
-                        <note type="desc">Brit. Rockquartett (Martin Rossiter, Steve Mason, Kevin Miles, Mat James)</note>
+                        <note type="desc">Benutzt, soweit außerhalb Griechenlands leben, für die Griechen in Griechenland verwende Griechenland</note>
                     </object>
-                    <object xml:id="object_Latein">
+                    <object xml:id="object_Chatten">
                         <objectIdentifier>
-                            <objectName>Latein</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4114364-4</idno>
-                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                            <objectName>Lateinische Sprache</objectName>
-                            <objectName>Lateinisch</objectName>
+                            <objectName>Chatten</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4229460-5</idno>
+                            <objectName>Katten</objectName>
+                            <objectName>Chatti &lt;Volk&gt;</objectName>
                         </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Westgermanischer Volksstamm, der seit dem 1. Jahrhundert n. Chr. in den Flussgebieten um Eder, Fulda und Lahn ansässig blieb</note>
+                    </object>
+                    <object xml:id="object_Westfalen_Volk">
+                        <objectIdentifier>
+                            <objectName>Westfalen &lt;Volk&gt;</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4132760-3</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Für den germanischen Stamm bitte Westfalen &lt;Germanen&gt; verwenden</note>
+                    </object>
+                    <object xml:id="object_Römer">
+                        <objectIdentifier>
+                            <objectName>Römer</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4122633-1</idno>
+                            <objectName>Civis Romanus</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Benutzt für soweit weder Römisches Reich noch Römerzeit zutrifft, z.B. Römer / Herkunft</note>
+                    </object>
+                    <object xml:id="object_Brukterer">
+                        <objectIdentifier>
+                            <objectName>Brukterer</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4222644-2</idno>
+                            <objectName>Bructeri</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Germanischer Volksstamm, um Christi Geburt zwischen Ems und Lippe ansässig; Westgermanen</note>
+                    </object>
+                    <object xml:id="object_Friesen">
+                        <objectIdentifier>
+                            <objectName>Friesen</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4018610-6</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Chauken">
+                        <objectIdentifier>
+                            <objectName>Chauken</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4229462-9</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Germ. Volksstamm; Westgermanen</note>
+                    </object>
+                    <object xml:id="object_Cherusker">
+                        <objectIdentifier>
+                            <objectName>Cherusker</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4090358-8</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Germanischer Volksstamm, der zwischen Weser und Elbe nördlich des Harzes siedelte; Westgermanen</note>
+                    </object>
+                    <object xml:id="object_Vangionen">
+                        <objectIdentifier>
+                            <objectName>Vangionen</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4215897-7</idno>
+                            <objectName>Vangiones</objectName>
+                            <objectName>Wangionen</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Daker">
+                        <objectIdentifier>
+                            <objectName>Daker</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4070196-7</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Dazier</objectName>
+                            <objectName>Daci</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Siebenbürger_Sachsen">
+                        <objectIdentifier>
+                            <objectName>Siebenbürger Sachsen</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4054836-3</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Siebenbürgen / Deutsche</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Germanen">
+                        <objectIdentifier>
+                            <objectName>Germanen</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4020378-5</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Germanische Völker</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Als identifizierender Zusatz bei einzelnen Germanenstämmen zu verwenden (gem. Beschluss der ESG SE, Telko vom 5.6.2013)</note>
+                    </object>
+                    <object xml:id="object_Alemannen">
+                        <objectIdentifier>
+                            <objectName>Alemannen</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4001111-2</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Alamannen</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Westgermanischer Stammesverband</note>
+                    </object>
+                    <object xml:id="object_Franken_Germanen">
+                        <objectIdentifier>
+                            <objectName>Franken &lt;Germanen&gt;</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4071340-4</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Verwendet für den germanischen Stamm</note>
+                    </object>
+                    <object xml:id="object_Quaden">
+                        <objectIdentifier>
+                            <objectName>Quaden</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4047940-7</idno>
+                            <objectName>Donausueben</objectName>
+                            <objectName>Quadi</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Elbgermanischer Stamm</note>
+                    </object>
+                    <object xml:id="object_Hessen_Volk">
+                        <objectIdentifier>
+                            <objectName>Hessen &lt;Volk&gt;</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4024731-4</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Thüringer_Germanen">
+                        <objectIdentifier>
+                            <objectName>Thüringer &lt;Germanen&gt;</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4059980-2</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Germanischer Stamm im Raum zwischen Thüringer Wald und nördlichem Harzvorland; Elbgermanen</note>
+                    </object>
+                    <object xml:id="object_Goten">
+                        <objectIdentifier>
+                            <objectName>Goten</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4021650-0</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Gutones</objectName>
+                            <objectName>Gothones</objectName>
+                            <objectName>Gothi</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Sachsen_Volk">
+                        <objectIdentifier>
+                            <objectName>Sachsen &lt;Volk&gt;</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4118199-2</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Für den germanischen Stamm bitte Sachsen &lt;Germanen&gt; verwenden</note>
+                    </object>
+                    <object xml:id="object_Alanen">
+                        <objectIdentifier>
+                            <objectName>Alanen</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4079678-4</idno>
+                            <objectName>As &lt;Volk&gt;</objectName>
+                            <objectName>Jasy</objectName>
+                            <objectName>Assi &lt;Volk&gt;</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Iran. Nomadenvolk</note>
+                    </object>
+                    <object xml:id="object_Sweben">
+                        <objectIdentifier>
+                            <objectName>Sweben</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4058693-5</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Schwaben &lt;Volk&gt;</objectName>
+                            <objectName>Sueven</objectName>
+                            <objectName>Sueben</objectName>
+                            <objectName>Suawen</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Benutzt für germanischen Stamm</note>
+                    </object>
+                    <object xml:id="object_Niederdeutsche">
+                        <objectIdentifier>
+                            <objectName>Niederdeutsche</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4364982-8</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Hermunduren">
+                        <objectIdentifier>
+                            <objectName>Hermunduren</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4095099-2</idno>
+                            <objectName>Ermunduren</objectName>
+                            <objectName>Hermunduri</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Seit dem 1. Jahrhundert v. Chr. germanischer Stamm im Gebiet von Mittelelbe und Saale; Teil der Elbgermanen</note>
+                    </object>
+                    <object xml:id="object_Sachsen_Germanen">
+                        <objectIdentifier>
+                            <objectName>Sachsen &lt;Germanen&gt;</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4076935-5</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Verwendet für den germanischen Stamm</note>
+                    </object>
+                    <object xml:id="object_Mattiaker">
+                        <objectIdentifier>
+                            <objectName>Mattiaker</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/1124569146</idno>
+                            <objectName>Mattiaci</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>EthnographicName</item>
+                            </list>
+                        </note>
+                        <note type="desc">Von den Chatten abgespaltener germanischer Stamm, benannt nach dem chattischen Hauptort Mattium; Siedlungsgebiet am rechten Rheinufer zwischen Mainmündung und Taunus in der Umgebung von Wiesbaden (Aquae Mattiacae), ab 11 v. Chr. unter röm. Oberhoheit</note>
+                    </object>
+                    <object xml:id="object_Frühneuhochdeutsch">
+                        <objectIdentifier>
+                            <objectName>Frühneuhochdeutsch</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4129491-9</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Frühneuhochdeutsche Sprache</objectName>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -64,14 +477,33 @@
                                 <item>Language</item>
                             </list>
                         </note>
-                        <note type="desc">Benutzt für die Sprachstufe des Altertums; für die im Mittelalter benutzte Sprache verwende SW Mittellatein, für die Neuzeit SW Neulatein.</note>
+                        <note type="desc">ca.1350-1650</note>
                     </object>
-                    <object xml:id="object_Immersion">
+                    <object xml:id="object_Niederdeutsch">
                         <objectIdentifier>
-                            <objectName>Immersion</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/10309365-5</idno>
+                            <objectName>Niederdeutsch</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4042178-8</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                            <objectName>Missingsch</objectName>
+                            <objectName>Plattdeutsch</objectName>
+                            <objectName>Neuniederdeutsch</objectName>
                         </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>Language</item>
+                            </list>
+                        </note>
+                    </object>
+                    <object xml:id="object_Veitstag">
+                        <objectIdentifier>
+                            <objectName>Veitstag</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/1186647310</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -80,136 +512,42 @@
                                 <item>SubjectHeadingSensoStricto</item>
                             </list>
                         </note>
+                        <note type="desc">Kirchenfest</note>
                     </object>
-                    <object xml:id="object_Hessen_Volk">
+                    <object xml:id="object_Michaelstag">
                         <objectIdentifier>
-                            <objectName>Hessen &lt;Volk&gt;</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4024731-4</idno>
+                            <objectName>Michaelstag</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4744740-0</idno>
+                            <objectName>Michaelis</objectName>
+                            <objectName>Michaelisfest</objectName>
+                            <objectName>Michaelistag</objectName>
+                            <objectName>Dedicatio S. Michaelis Archangeli</objectName>
+                            <objectName>michaelmas</objectName>
+                            <objectName>Michaeli</objectName>
                         </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>SubjectHeadingSensoStricto</item>
+                            </list>
+                        </note>
+                        <note type="desc">Das Fest des hl. Erzengels Michael am 29. September.</note>
+                    </object>
+                    <object xml:id="object_Schweden_Volk">
+                        <objectIdentifier>
+                            <objectName>Schweden &lt;Volk&gt;</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4053821-7</idno>
+                        </objectIdentifier>
+                        <link target="merian_hessen_escience.xml#band_07"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
                             </list>
                             <list type="subcategory">
                                 <item>EthnographicName</item>
-                            </list>
-                        </note>
-                    </object>
-                    <object xml:id="object_Niederländer">
-                        <objectIdentifier>
-                            <objectName>Niederländer</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4131365-3</idno>
-                            <objectName>Holländer</objectName>
-                        </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>EthnographicName</item>
-                            </list>
-                        </note>
-                        <note type="desc">Benutzt, soweit außerhalb der Niederlande lebend, für die Niederländer in den Niederlanden verwende Niederlande</note>
-                    </object>
-                    <object xml:id="object_Bingo_Players">
-                        <objectIdentifier>
-                            <objectName>Bingo Players</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/16173035-8</idno>
-                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Bingo_Players"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
-                            </list>
-                        </note>
-                        <note type="desc">DJ Duo (Maarten Hoogstraten, Paul Christian)</note>
-                    </object>
-                    <object xml:id="object_FM_Audio">
-                        <objectIdentifier>
-                            <objectName>FM Audio</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/16064613-3</idno>
-                        </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_FM_Audio"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
-                            </list>
-                        </note>
-                        <note type="desc">Dt. Electronic-Duo (Florian Arndt, Mike De Ville = Michael Schuessleder)</note>
-                    </object>
-                    <object xml:id="object_Taxidriver">
-                        <objectIdentifier>
-                            <objectName>Taxidriver</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/10353183-X</idno>
-                        </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Taxidriver"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
-                            </list>
-                        </note>
-                        <note type="desc">Electronica-Duo (Laszlo Milasovsky und Michael Rieck)</note>
-                    </object>
-                    <object xml:id="object_Steinzeit">
-                        <objectIdentifier>
-                            <objectName>Steinzeit</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4057226-2</idno>
-                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
-                            </list>
-                        </note>
-                    </object>
-                    <object xml:id="object_Brainclaw">
-                        <objectIdentifier>
-                            <objectName>Brainclaw</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/10362585-9</idno>
-                        </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_Brainclaw"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
-                            </list>
-                        </note>
-                    </object>
-                    <object xml:id="object_First_State">
-                        <objectIdentifier>
-                            <objectName>First State</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/16044471-8</idno>
-                        </objectIdentifier>
-                        <link target="merian_all_elements_example_before.xml#band_07_art_First_State"/>
-                        <link target="merian_all_elements_example_before.xml#band_07"/>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>SubjectHeading</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>SubjectHeadingSensoStricto</item>
                             </list>
                         </note>
                     </object>

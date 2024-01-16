@@ -78,13 +78,13 @@ public class EnrichmentController {
                 try (InputStream inputStream = new FileInputStream(EnrichmentController.getSelectedFile())) {
 
                     //commentate after testing
-                    InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml");
-                    Reader xmlReader = new InputStreamReader(inputStreamTest);
-                    TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml";
-
-                    // InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_hessen.xml");
+                    // InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml");
                     // Reader xmlReader = new InputStreamReader(inputStreamTest);
-                    // TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_hessen.xml";
+                    // TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml";
+
+                    InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_hessen_escience.xml");
+                    Reader xmlReader = new InputStreamReader(inputStreamTest);
+                    TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_hessen_escience.xml";
                     //till here
 
                     Boolean anyCheckBoxSelected = false;

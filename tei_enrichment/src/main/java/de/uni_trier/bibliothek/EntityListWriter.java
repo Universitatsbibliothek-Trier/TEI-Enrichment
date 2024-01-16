@@ -194,7 +194,7 @@ public class EntityListWriter {
 	//LISTBIBL ENTITY
 	//LISTBIBL ENTITY
 	public static void writeListBiblEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
-			DivFront divFrontElement) {
+			DivFront divFrontElement, Boolean isOrtsartikel) {
 		Bibl bibl = new Bibl();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
@@ -375,7 +375,7 @@ public class EntityListWriter {
 			}
 			listBibl.getBibl().add(bibl);
 		} 
-		if (divFrontElement.getType() != null) {
+		if (divFrontElement.getType() != null && isOrtsartikel) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
 			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.listBibl.model.generated.Link linkArtikel = listBiblTEIObjectFactory.createLink();
@@ -398,7 +398,7 @@ public class EntityListWriter {
 	//PERSON ENTITY
 	//PERSON ENTITY
 	public static void writePersonEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
-			DivFront divFrontElement) {
+			DivFront divFrontElement, Boolean isOrtsartikel) {
 		Person person = new Person();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 
@@ -656,7 +656,7 @@ public class EntityListWriter {
 			listPersonList.add(person);
 		} 
 		
-		if (divFrontElement.getType() != null) {
+		if (divFrontElement.getType() != null && isOrtsartikel) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
 			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.persons.model.generated.Link linkArtikel = personsTEIObjectFactory.createLink();
@@ -677,7 +677,7 @@ public class EntityListWriter {
 	//EVENTS ENTITY
 	//EVENTS ENTITY
 	public static void writeEventsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
-			DivFront divFrontElement) {
+			DivFront divFrontElement, Boolean isOrtsartikel) {
 		Event event = new Event();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 		QName qname = new QName("http://www.w3.org/XML/1998/namespace", "id");
@@ -910,7 +910,7 @@ public class EntityListWriter {
 			}
 			eventList.add(event);
 		} 
-		if (divFrontElement.getType() != null) {
+		if (divFrontElement.getType() != null && isOrtsartikel) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
 			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.events.model.generated.Link linkArtikel = eventsTEIObjectFactory.createLink();
@@ -930,7 +930,7 @@ public class EntityListWriter {
 	//ORGS ENTITY
 	//ORGS ENTITY
 	//ORGS ENTITY
-	public static void writeOrgsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement) {
+	public static void writeOrgsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement, Boolean isOrtsartikel) {
 		Org org = new Org();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 		de.uni_trier.bibliothek.xml.orgs.model.generated.Note categoriesNote = orgsTEIObjectFactory.createNote();
@@ -1014,7 +1014,7 @@ public class EntityListWriter {
 			org.getOrgNameOrIdnoOrLink().add(link);
 		}
 
-		if (divFrontElement.getType() != null) {
+		if (divFrontElement.getType() != null && isOrtsartikel) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
 			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkArtikel = orgsTEIObjectFactory.createLink();
@@ -1150,7 +1150,7 @@ public class EntityListWriter {
 	//OBJECTS
 	//OBJECTS
 	//OBJECTS
-	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement) {
+	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement, Boolean isOrtsartikel) {
 		de.uni_trier.bibliothek.xml.objects.model.generated.Object object = new de.uni_trier.bibliothek.xml.objects.model.generated.Object();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 		de.uni_trier.bibliothek.xml.objects.model.generated.Note categoriesNote = objectsTEIObjectFactory.createNote();
@@ -1290,7 +1290,7 @@ public class EntityListWriter {
 			object.getObjectIdentifierOrNoteOrLink().add(objectIdentifier);
 			objectList.add(object);
 		} 
-		if (divFrontElement.getType() != null) {
+		if (divFrontElement.getType() != null  && isOrtsartikel) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
 			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.objects.model.generated.Link linkArtikel = objectsTEIObjectFactory.createLink();
@@ -1356,7 +1356,7 @@ public class EntityListWriter {
 	//PLACES
 	//PLACES
 	//PLACES
-	public static void writePlacesEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement) {
+	public static void writePlacesEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement, Boolean isOrtsartikel) {
 		Place place = new Place();
 		String preferredNameStringOriginal = jsonObject.getString("preferredName");
 		de.uni_trier.bibliothek.xml.places.model.generated.Note categoriesNote = placesTEIObjectFactory.createNote();
@@ -1404,13 +1404,12 @@ public class EntityListWriter {
 			JAXBElement<?> locationJAXB = placesTEIObjectFactory.createPlaceLocation(location);
 			boolean hasLocation = false;
 
-			// System.out.println("has geometry: "  + jsonObject.has("hasGeometry"));
-			// System.out.println("typeTermslist contains tcboau: " + typeTermslist.contains("TerritorialCorporateBodyOrAdministrativeUnit"));
-			if(typeTermslist.contains("TerritorialCorporateBodyOrAdministrativeUnit") && !jsonObject.has("hasGeometry"))
+			if(typeTermslist.contains("TerritorialCorporateBodyOrAdministrativeUnit") && !jsonObject.has("hasGeometry") && !typeTermslist.contains("AdministrativeUnit")&& !typeTermslist.contains("NaturalGeographicUnit")&& !typeTermslist.contains("BuildingOrMemorial")&& !typeTermslist.contains("Country")&& !typeTermslist.contains("ExtraterrestialTerritory")&& !typeTermslist.contains("FictivePlace")&& !typeTermslist.contains("MemberState")&& !typeTermslist.contains("NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit")&& !typeTermslist.contains("ReligiousTerritory")&& !typeTermslist.contains("WayBorderOrLine"))
 			{
 				System.out.println("no geometry and territorial");
 				String noGeoCoordinates = "!!!";
-				location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(noGeoCoordinates));
+				// dekommentieren, falls wir drin lassen wollen
+				// location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(noGeoCoordinates));
 				hasLocation = true;
 			}
 			if(jsonObject.has("hasGeometry"))
@@ -1437,25 +1436,28 @@ public class EntityListWriter {
 
 			if(jsonObject.has("geographicAreaCode"))
 			{
+				System.out.println("hat areacode");
 				JSONArray geographicAreaCode = jsonObject.getJSONArray("geographicAreaCode");
 				List<String> countries = CountryRegionCodes.getCountries(geographicAreaCode);
-				List<String> countriesToAdd = new ArrayList<String>();
+				boolean alreadyInList = false;
 				for (String country : countries)
 				{
+					System.out.println("untersuche country 1");
 					List<JAXBElement<String>> regionOrGeoOrCountryList = location.getRegionOrGeoOrCountry();
+					System.out.println("country ist: " + country);
 					for(JAXBElement<String> regionOrGeoOrCountry : regionOrGeoOrCountryList)
 					{
-						// System.out.println("regionorcblabla getname: " + regionOrGeoOrCountry.getName());
-						if (!regionOrGeoOrCountry.getValue().equals(country) && !countriesToAdd.contains(country))
+						System.out.println("ist bereits in liste?: " + regionOrGeoOrCountry.getValue() + country);
+						if (regionOrGeoOrCountry.getValue().equals(country))
 						{
-							countriesToAdd.add(country);
+							alreadyInList = true;
 						}
 					}
-				}
-
-				for (String country : countriesToAdd)
-				{
-					location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationCountry(country));
+					if(!alreadyInList)
+					{
+						location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationCountry(country));
+					}
+					alreadyInList = false;
 				}
 				List<String> regions = CountryRegionCodes.getRegions(geographicAreaCode);
 				for (String region : regions)
@@ -1464,7 +1466,6 @@ public class EntityListWriter {
 				}
 
 				hasLocation = CountryRegionCodes.hasLocation();
-				
 			}
 
 			if(hasLocation)
@@ -1579,7 +1580,7 @@ public class EntityListWriter {
 				}
 			}
 		} 
-		if (divFrontElement.getType() != null) {
+		if (divFrontElement.getType() != null  && isOrtsartikel) {
 			String referenceWithoutHash = reference.substring(1, reference.length());
 			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.places.model.generated.Link artikelLink = new de.uni_trier.bibliothek.xml.places.model.generated.Link();
