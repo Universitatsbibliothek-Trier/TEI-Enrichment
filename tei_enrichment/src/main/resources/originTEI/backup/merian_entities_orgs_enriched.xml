@@ -197,25 +197,6 @@
                             </list>
                         </note>
                     </org>
-                    <org xml:id="org_Stift_Kaufungen">
-                        <orgName>Stift (Kaufungen)</orgName>
-                        <orgName>Damenstift Kaufungen</orgName>
-                        <orgName>Stift Kaufungen</orgName>
-                        <orgName>Ritterschaftliches Stift Kaufungen</orgName>
-                        <orgName>Kanonissen-Stift Kaufungen</orgName>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/507241-4</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
-                        <note type="desc">ca. 1017-1527, bis 13. Jhd. Benediktinerinnenreichskloster, dann bis 1527 (lt. LThK) Kanonissen-Stift; ab 1565 protestant. Damenstift</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>CorporateBody</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>ReligiousCorporateBody</item>
-                            </list>
-                        </note>
-                    </org>
                     <org xml:id="org_Stift_Weißenburg">
                         <orgName>Stift Weißenburg</orgName>
                         <orgName>Kollegiatstift Weißenburg</orgName>
@@ -384,6 +365,31 @@
                         <note type="categories">
                             <list type="supercategory">
                                 <item>CorporateBody</item>
+                            </list>
+                        </note>
+                    </org>
+                    <org xml:id="org_Templerorden">
+                        <orgName>Templerorden</orgName>
+                        <orgName>Templer</orgName>
+                        <orgName>Christlicher Ritterorden vom Tempel zu Jerusalem</orgName>
+                        <orgName>Ritter vom Tempel</orgName>
+                        <orgName>Arme Ritter Christi vom Tempel Salomonis</orgName>
+                        <orgName>Tempelherren</orgName>
+                        <orgName>Tempelritter</orgName>
+                        <orgName>Fratres Militiae Templi</orgName>
+                        <orgName>Pauperes Commilitones Christi Templique Salomonis</orgName>
+                        <orgName>Arme Ritterschaft Christi vom Salomonischen Tempel</orgName>
+                        <orgName>Ordo Militae Christi Templi Hierosolymitani</orgName>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4134088-7</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="desc">Geistlicher Ritterorden 1119 von Hugo von Payens in Jerusalem gegründet, 1128/29 päpstl. bestätigt, März 1312 aufgehoben, die Besitzungen fielen großteils an den Johanniterorden; in Schottland, Portugal u. Nord-Italien als militär. christl. Laien-Ritterorden neu formiert (1705 Ordensstatuten), Wiederzulassung in Frankreich unter Napoleon I.; Wiederanerkennung durch kath. Kirche seit 1845 nicht erreicht</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>CorporateBody</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>ReligiousCorporateBody</item>
                             </list>
                         </note>
                     </org>

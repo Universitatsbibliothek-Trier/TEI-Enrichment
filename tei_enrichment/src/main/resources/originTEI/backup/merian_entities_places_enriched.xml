@@ -56,25 +56,6 @@
                             </list>
                         </note>
                     </place>
-                    <place xml:id="place_Buchonia">
-                        <placeName>Buchonia</placeName>
-                        <location>
-                            <country>Deutschland</country>
-                            <region>Hessen</region>
-                            <region>Thüringen</region>
-                        </location>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4371007-4</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
-                        <note type="desc">Hess.-thüring. Waldgebiet</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>NaturalGeographicUnit</item>
-                            </list>
-                        </note>
-                    </place>
                     <place xml:id="place_Nassauer_Land">
                         <placeName>Nassauer Land</placeName>
                         <placeName>Nassau (Landschaft)</placeName>
@@ -225,6 +206,25 @@
                             </list>
                             <list type="subcategory">
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Buchonia">
+                        <placeName>Buchonia</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                            <region>Thüringen</region>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4371007-4</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="desc">Hess.-thüring. Waldgebiet</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>NaturalGeographicUnit</item>
                             </list>
                         </note>
                     </place>
@@ -2523,25 +2523,6 @@
                             </list>
                         </note>
                     </place>
-                    <place xml:id="place_Kinzig_Hessen">
-                        <placeName>Kinzig (Hessen)</placeName>
-                        <location>
-                            <country>Deutschland</country>
-                            <region>Hessen</region>
-                        </location>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4030686-0</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
-                        <note type="desc">rechter Nebenfluß des Mains, entspringt bei Sinntal-Sterbfritz, Main-Kinzig-Kreis, mündet in Hanau</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>NaturalGeographicUnit</item>
-                            </list>
-                        </note>
-                    </place>
                     <place xml:id="place_Nidda_Fluss">
                         <placeName>Nidda (Fluss)</placeName>
                         <location>
@@ -3233,6 +3214,7 @@
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
                             </list>
                         </note>
+                        <link target="merian_hessen_escience.xml#band_07_art_Alsfeld"/>
                     </place>
                     <place xml:id="place_Ober_Ohmen">
                         <placeName>Ober-Ohmen</placeName>
@@ -4009,22 +3991,6 @@
                             </list>
                         </note>
                     </place>
-                    <place xml:id="place_Betuwe">
-                        <placeName>Betuwe</placeName>
-                        <location>
-                            <country>Niederlande</country>
-                        </location>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4088216-0</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                            </list>
-                        </note>
-                    </place>
                     <place xml:id="place_Katalonien">
                         <placeName>Katalonien</placeName>
                         <placeName>Catalogne</placeName>
@@ -4270,46 +4236,6 @@
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_hessen_escience.xml#band_07"/>
                         <note type="desc">Gem. im Lkr. Eichsfeld</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                            </list>
-                        </note>
-                    </place>
-                    <place xml:id="place_Hohengandern">
-                        <placeName>Hohengandern</placeName>
-                        <placeName>Hohngandern</placeName>
-                        <location>
-                            <geo>+009.947500 +051.373333</geo>
-                            <country>Deutschland</country>
-                            <region>Thüringen</region>
-                        </location>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1097622789</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
-                        <note type="desc">Gemeinde im Landkreis Eichsfeld, Sitz der Verwaltungsgemeinschaft Hanstein-Rusteberg; Ersterwähnung 1376</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                            </list>
-                        </note>
-                    </place>
-                    <place xml:id="place_Niedergandern">
-                        <placeName>Niedergandern</placeName>
-                        <location>
-                            <country>Deutschland</country>
-                            <region>Niedersachsen</region>
-                        </location>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1097625524</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
-                        <note type="desc">Dorf im Landkreis Göttingen, im 12. Jh. bzw. 1294 urkundl. erwähnt, 1.1.1973 nach Friedland eingemeindet</note>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>PlaceOrGeographicName</item>
@@ -7286,39 +7212,6 @@
                             </list>
                         </note>
                     </place>
-                    <place xml:id="place_Oberursel_Taunus">
-                        <placeName>Oberursel (Taunus)</placeName>
-                        <placeName>Stadt Oberursel</placeName>
-                        <placeName>Ursela</placeName>
-                        <placeName>Oberursel, Taunus</placeName>
-                        <placeName>Ursella (Taunus)</placeName>
-                        <placeName>Ursilla</placeName>
-                        <placeName>Ursel</placeName>
-                        <placeName>Oberursel am Taunus</placeName>
-                        <placeName>Oberursel a. T.</placeName>
-                        <placeName>Oberursel (Taunus)</placeName>
-                        <placeName>Ursella</placeName>
-                        <placeName>Ursellis</placeName>
-                        <placeName>Oberursel</placeName>
-                        <placeName>Ursela (Taunus)</placeName>
-                        <location>
-                            <geo>+008.577469 +050.207309</geo>
-                            <country>Deutschland</country>
-                            <region>Hessen</region>
-                        </location>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4043005-4</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
-                        <note type="desc">Stadt im Hochtaunuskreis, 791 als Ursel(l)a urkundl. erwähnt, 1444 Stadtrecht</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                            </list>
-                        </note>
-                    </place>
                     <place xml:id="place_Siegen_Region">
                         <placeName>Siegen (Region)</placeName>
                         <location>
@@ -7472,6 +7365,7 @@
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
                             </list>
                         </note>
+                        <link target="merian_hessen_escience.xml#band_07_art_Assenheim"/>
                     </place>
                     <place xml:id="place_Rosbach_v.d._Höhe">
                         <placeName>Rosbach v.d. Höhe</placeName>
@@ -9077,6 +8971,7 @@
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
                             </list>
                         </note>
+                        <link target="merian_hessen_escience.xml#band_07_art_Bad_Arolsen"/>
                     </place>
                     <place xml:id="place_Landau_Bad_Arolsen">
                         <placeName>Landau (Bad Arolsen)</placeName>
@@ -9413,26 +9308,6 @@
                             </list>
                         </note>
                     </place>
-                    <place xml:id="place_Nordeck_Gießen">
-                        <placeName>Nordeck (Gießen)</placeName>
-                        <location>
-                            <geo>+008.845370 +050.689279</geo>
-                            <country>Deutschland</country>
-                            <region>Hessen</region>
-                        </location>
-                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1237065992</idno>
-                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
-                        <note type="desc">Nordeck ist eine ehemals selbständige Gemeinde; zum 31.12.1970 nach Braunstein eingemeindet; seit 1.1.1977 Ortsteil von Allendorf (Lumda). Im Landkreis Gießen in Hessen</note>
-                        <note type="categories">
-                            <list type="supercategory">
-                                <item>PlaceOrGeographicName</item>
-                            </list>
-                            <list type="subcategory">
-                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
-                            </list>
-                        </note>
-                    </place>
                     <place xml:id="place_Burg_Gemünden">
                         <placeName>Burg-Gemünden</placeName>
                         <placeName>Gemünden an der Straße</placeName>
@@ -9532,6 +9407,92 @@
                             </list>
                             <list type="subcategory">
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Rathaus_Alsfeld">
+                        <placeName>Rathaus Alsfeld</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/7861104-0</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="desc">Erbaut 1512</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>BuildingOrMemorial</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Eifa_Alsfeld">
+                        <placeName>Eifa (Alsfeld)</placeName>
+                        <placeName>Alsfeld-Eifa</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4769601-1</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="desc">Stadtteil von Alsfeld</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Markgrafschaft_Baden_Durlach">
+                        <placeName>Markgrafschaft Baden-Durlach</placeName>
+                        <placeName>Baden-Durlach</placeName>
+                        <placeName>Obere Markgrafschaft Baden</placeName>
+                        <placeName>Baden-Durlach (Markgrafschaft)</placeName>
+                        <placeName>Baaden-Durlach</placeName>
+                        <placeName>Baden (Durlach, Markgrafschaft)</placeName>
+                        <placeName>Untere Markgrafschaft Baden</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <country>Deutschland, Deutsches Reich</country>
+                            <region>Baden-Württemberg</region>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4004171-2</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="desc">Markgrafschaft</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>AdministrativeUnit</item>
+                                <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
+                            </list>
+                        </note>
+                    </place>
+                    <place xml:id="place_Schloss_Arolsen_Bad_Arolsen">
+                        <placeName>Schloss Arolsen (Bad Arolsen)</placeName>
+                        <placeName>Residenzschloss Arolsen (Bad Arolsen)</placeName>
+                        <location>
+                            <country>Deutschland</country>
+                            <region>Hessen</region>
+                        </location>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4299289-8</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <note type="desc">Schloss</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>PlaceOrGeographicName</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>BuildingOrMemorial</item>
                             </list>
                         </note>
                     </place>

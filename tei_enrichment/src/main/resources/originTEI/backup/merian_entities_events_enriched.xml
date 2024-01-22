@@ -141,6 +141,27 @@
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_hessen_escience.xml#band_07"/>
                     </event>
+                    <event xml:id="event_Bauernkrieg_1525">
+                        <label>Bauernkrieg &lt;1525&gt;</label>
+                        <label>Bauernkrieg</label>
+                        <label>Deutscher Bauernkrieg</label>
+                        <desc>
+                            <date from-custom="1524"/>
+                            <date to-custom="1526"/>
+                        </desc>
+                        <note type="desc">Bauernaufstand</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>SubjectHeading</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>HistoricSingleEventOrEra</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/4069173-1</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </event>
                 </listEvent>
             </div>
         </body>

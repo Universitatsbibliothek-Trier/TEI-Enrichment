@@ -536,10 +536,11 @@
                         </note>
                         <note type="desc">Das Fest des hl. Erzengels Michael am 29. September.</note>
                     </object>
-                    <object xml:id="object_Schweden_Volk">
+                    <object xml:id="object_Reformation">
                         <objectIdentifier>
-                            <objectName>Schweden &lt;Volk&gt;</objectName>
-                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4053821-7</idno>
+                            <objectName>Reformation</objectName>
+                            <idno type="URI" subtype="GND">https://d-nb.info/gnd/4048946-2</idno>
+                            <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         </objectIdentifier>
                         <link target="merian_hessen_escience.xml#band_07"/>
                         <note type="categories">
@@ -547,9 +548,10 @@
                                 <item>SubjectHeading</item>
                             </list>
                             <list type="subcategory">
-                                <item>EthnographicName</item>
+                                <item>SubjectHeadingSensoStricto</item>
                             </list>
                         </note>
+                        <note type="desc">Als Sach-SW, nicht als Epochen-SW behandelt</note>
                     </object>
                 </listObject>
             </div>

@@ -946,8 +946,8 @@ public class EntityListEnricher {
 				|| divFrontElement.getType().equals("index") || divFrontElement.getN() != null || (divFrontElement.getType().equals("appendix"))){
 			isOrtsartikel = false;
 		}
-		// rest: gnd/xyz
-		// need: https://d-nb.info/gnd/1258747235
+
+		
 		String completeURL = "https://lobid.org/" + cutURL + ".json";
 		URL url = new URL(completeURL);
 
@@ -962,10 +962,12 @@ public class EntityListEnricher {
 		while ((inputStr = streamReader.readLine()) != null)
 			responseStrBuilder.append(inputStr);
 		JSONObject jsonObject = new JSONObject(responseStrBuilder.toString());
+
+
 		String preferredNameString = jsonObject.getString("preferredName");
+
+
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
-		// preferredNameString = preferredNameString.replaceAll("v.", "v");
-		// preferredNameString = preferredNameString.replaceAll("Chr.", "Chr");
 		preferredNameString = preferredNameString.replaceAll("/", "_");
 		preferredNameString = preferredNameString.replaceAll("<", "_");
 		preferredNameString = preferredNameString.replaceAll(">", "");
@@ -975,8 +977,6 @@ public class EntityListEnricher {
 		preferredNameString = preferredNameString.replaceAll("___", "_");
 		preferredNameString = preferredNameString.replaceAll("__", "_");
 		preferredNameString = preferredNameString.replaceAll("[()]", "");
-		// preferredNameString = preferredNameString.replaceAll("[()]", "");
-		// System.out.println("PreferredNameString ist: " + preferredNameString);
 
 		boolean objectHasType = false;
 

@@ -11070,6 +11070,1001 @@
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <link target="merian_hessen_escience.xml#band_07"/>
                     </person>
+                    <person xml:id="person_Frank_Sebastian">
+                        <persName>
+                            <forename>Sebastian</forename>
+                            <surname>Frank</surname>
+                        </persName>
+                        <persName>
+                            <forename>Sebastian</forename>
+                            <surname>Franke</surname>
+                        </persName>
+                        <death when-custom="1676"/>
+                        <birth when-custom="1596-03-24"/>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1075736668</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person role="Graf" xml:id="person_Adolf_Heiliges_Römisches_Reich_König">
+                        <persName>
+                            <addName>Heiliges Römisches Reich, König</addName>
+                            <addName>Adolf</addName>
+                        </persName>
+                        <persName>
+                            <addName>von Nassau</addName>
+                            <addName>Adolf</addName>
+                        </persName>
+                        <persName>
+                            <addName>Nassau, Graf</addName>
+                            <addName>Adolf</addName>
+                        </persName>
+                        <persName>
+                            <addName>Heiliges Römisches Reich, König</addName>
+                            <addName>Adolph</addName>
+                        </persName>
+                        <persName>
+                            <addName>von Nassau</addName>
+                            <addName>Adolf</addName>
+                        </persName>
+                        <persName>
+                            <addName>Nassovia, Comes</addName>
+                            <addName>Adolphus</addName>
+                        </persName>
+                        <persName>
+                            <addName>Imperium Romanum-Germanicum, Rex</addName>
+                            <addName>Adolphus</addName>
+                        </persName>
+                        <death when-custom="1298-07-02"/>
+                        <birth when-custom="1250"/>
+                        <note type="desc">Adel</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/118637606</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person role="Landgraf" xml:id="person_Heinrich_I._Hessen_Landgraf">
+                        <persName>
+                            <addName>Hessen, Landgraf</addName>
+                            <addName>Heinrich</addName>
+                        </persName>
+                        <persName>
+                            <addName>das Kind, Hessen, Landgraf</addName>
+                            <addName>Heinrich</addName>
+                        </persName>
+                        <persName>
+                            <addName>das Kind</addName>
+                            <addName>Heinrich</addName>
+                        </persName>
+                        <persName>
+                            <addName>Hessen, Landgraf</addName>
+                            <addName>Heinrich</addName>
+                        </persName>
+                        <death when-custom="1308-12-21"/>
+                        <birth when-custom="1244-06-24"/>
+                        <note type="desc">Adel</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/119138018</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person xml:id="person_Schnabel_Tilemann">
+                        <persName>
+                            <forename>Tilemann</forename>
+                            <surname>Schnabel</surname>
+                        </persName>
+                        <death when-custom="1559"/>
+                        <birth when-custom="1475"/>
+                        <note type="desc">Evang. Theologe; Schüler Martin Luthers</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/128935561</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person xml:id="person_Luther_Martin">
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martynas</forename>
+                            <surname>Liuteris</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marcin</forename>
+                            <surname>Luter</surname>
+                        </persName>
+                        <persName>
+                            <addName>D. M. L. A.</addName>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Lüther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mārtiņš</forename>
+                            <surname>Luters</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Liuter</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinos</forename>
+                            <surname>Luthēros</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mart.</forename>
+                            <surname>Luth.</surname>
+                        </persName>
+                        <persName>
+                            <addName>Eleutherius</addName>
+                        </persName>
+                        <persName>
+                            <forename>Martí</forename>
+                            <surname>Luter</surname>
+                        </persName>
+                        <persName>
+                            <addName>Rutā</addName>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Ljuter</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marŭt'in</forename>
+                            <surname>Rut'ŏ</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Lutherus</surname>
+                        </persName>
+                        <persName>
+                            <forename>MŚartiĆnŚs</forename>
+                            <surname>Luters</surname>
+                        </persName>
+                        <persName>
+                            <addName>マルティン・ルター</addName>
+                        </persName>
+                        <persName>
+                            <forename>Martín</forename>
+                            <surname>Lutero</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johannes Martin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>M.</forename>
+                            <surname>Lutero</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Luttherus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Lutr</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Lutero</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martini͏̈s</forename>
+                            <surname>Luters</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martí</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mārtiņa</forename>
+                            <surname>Lutera</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martn</forename>
+                            <surname>Luth.</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martṇ</forename>
+                            <surname>Luth.</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Luhter</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Luder</surname>
+                        </persName>
+                        <persName>
+                            <forename>Fridericus</forename>
+                            <surname>Fregosus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mertynas</forename>
+                            <surname>Liuterius</surname>
+                        </persName>
+                        <persName>
+                            <addName>马丁·路德</addName>
+                        </persName>
+                        <persName>
+                            <forename>Morten</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mār̮ṯin</forename>
+                            <surname>Lūdheảr̮</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marten</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mertino</forename>
+                            <surname>Luteraus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Matin</forename>
+                            <surname>Luta</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Lut.</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Lutherius</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mahrtina</forename>
+                            <surname>Lutera</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Luder</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marteinn</forename>
+                            <surname>Lúther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Lutther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marćin</forename>
+                            <surname>Lutr</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Lutterus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Lüther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Ludder</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Lutther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mar.</forename>
+                            <surname>Lutherus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martino</forename>
+                            <surname>Lutero</surname>
+                        </persName>
+                        <persName>
+                            <forename>Merten</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marttin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Eleutherius</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinn</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marcin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <addName>Martinus Eleutherius</addName>
+                        </persName>
+                        <persName>
+                            <forename>Mertinas</forename>
+                            <surname>Liutērius</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Lutter</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mading</forename>
+                            <surname>Lude</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mar.</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Luterus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martyno</forename>
+                            <surname>Liuterio</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mertinas</forename>
+                            <surname>Lutterus</surname>
+                        </persName>
+                        <persName>
+                            <addName>D. M. L.</addName>
+                        </persName>
+                        <persName>
+                            <forename>Marthin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mertinas</forename>
+                            <surname>Lutteris</surname>
+                        </persName>
+                        <persName>
+                            <addName>Lutherus</addName>
+                        </persName>
+                        <persName>
+                            <addName>Luther</addName>
+                            <addName>Martinus</addName>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Luderus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Luter</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Ludder</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Lutter</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marcźin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marutin</forename>
+                            <surname>Rutā</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martīņš</forename>
+                            <surname>Luters</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Luter</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martino</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Märtin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martinius</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mertyn</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <addName>Luttar cāstiri</addName>
+                        </persName>
+                        <persName>
+                            <forename>Martinus</forename>
+                            <surname>Luyther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martti</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>M.</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Mertinas</forename>
+                            <surname>Luterus</surname>
+                        </persName>
+                        <persName>
+                            <addName>Doctor</addName>
+                            <addName>M. L.</addName>
+                        </persName>
+                        <persName>
+                            <forename>D. Martin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <addName>L.D.M.</addName>
+                        </persName>
+                        <persName>
+                            <forename>Martthin</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martim</forename>
+                            <surname>Lutero</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martins</forename>
+                            <surname>Luters</surname>
+                        </persName>
+                        <persName>
+                            <forename>מרטין</forename>
+                            <surname>לותר</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Lutherus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Wartinus</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Márton</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marton</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Martin</forename>
+                            <surname>Luterius</surname>
+                        </persName>
+                        <persName>
+                            <forename>Maarten</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marutʹin</forename>
+                            <surname>Rutʹo</surname>
+                        </persName>
+                        <persName>
+                            <forename>D.</forename>
+                            <surname>Luther</surname>
+                        </persName>
+                        <persName>
+                            <forename>Marṭîn</forename>
+                            <surname>Lûter</surname>
+                        </persName>
+                        <death when-custom="1546-02-18"/>
+                        <birth when-custom="1483-11-10"/>
+                        <note type="desc">Dt. Reformator</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/118575449</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person xml:id="person_Christian_Braunschweig_Lüneburg_Herzog">
+                        <persName>
+                            <addName>Braunschweig-Lüneburg, Herzog</addName>
+                            <addName>Christian</addName>
+                        </persName>
+                        <persName>
+                            <addName>Halberstatt, Bischof</addName>
+                            <addName>Christian</addName>
+                        </persName>
+                        <persName>
+                            <addName>der Jüngere</addName>
+                            <addName>Christian</addName>
+                        </persName>
+                        <persName>
+                            <addName>Halberstadt, Bischof</addName>
+                            <addName>Christian</addName>
+                        </persName>
+                        <persName>
+                            <addName>Brunsviga-Lunaeburgum, Dux</addName>
+                            <addName>Christianus</addName>
+                        </persName>
+                        <persName>
+                            <addName>Der Tolle Halberstädter</addName>
+                        </persName>
+                        <persName>
+                            <addName>der Jüngere, Braunschweig-Lüneburg, Herzog</addName>
+                            <addName>Christian</addName>
+                        </persName>
+                        <persName>
+                            <addName>Episcopus Halberstadensis</addName>
+                            <addName>Christianus</addName>
+                        </persName>
+                        <persName>
+                            <addName>Braunschweig-Lüneburg, Hertzog</addName>
+                            <addName>Christian</addName>
+                        </persName>
+                        <persName>
+                            <addName>Braunschweig-Lüneburg, Herzog</addName>
+                            <addName>Christian</addName>
+                        </persName>
+                        <persName>
+                            <addName>Braunschweig-Wolfenbüttel, Herzog</addName>
+                            <addName>Christian</addName>
+                        </persName>
+                        <persName>
+                            <addName>Brunsvica-Lunaeburgum, Dux</addName>
+                            <addName>Christianus</addName>
+                        </persName>
+                        <persName>
+                            <addName>Brunsvicensis ac Lunaeburgensis Dux</addName>
+                            <addName>Christianus</addName>
+                        </persName>
+                        <death when-custom="1626-06-16"/>
+                        <birth when-custom="1599-09-20"/>
+                        <note type="desc">Führer eines Söldnerheeres im Dreißigjährigen Krieg; nominell Herzog von Braunschweig-Lüneburg und Administrator des Bistums Halberstadt</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/10212809X</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person role="Graf" xml:id="person_Königsmarck_Hans_Christoph_von">
+                        <persName>
+                            <forename>Hans Christoph von</forename>
+                            <surname>Königsmarck</surname>
+                        </persName>
+                        <persName>
+                            <forename>Ioan Christophorus</forename>
+                            <surname>Coningsmarck</surname>
+                        </persName>
+                        <persName>
+                            <forename>Hans Kristoffer</forename>
+                            <surname>Königsmarck</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johann Christoph von</forename>
+                            <surname>Königsmarck</surname>
+                        </persName>
+                        <persName>
+                            <addName>Der Streitende</addName>
+                        </persName>
+                        <persName>
+                            <forename>Johann Christoph von</forename>
+                            <surname>Königsmark</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johannes Christophorus</forename>
+                            <surname>Königsmarcus</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johannes Christopherus</forename>
+                            <surname>Königsmarckius</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johannes Christophorus</forename>
+                            <surname>Königsmarchius</surname>
+                        </persName>
+                        <persName>
+                            <forename>Der</forename>
+                            <surname>Streitende</surname>
+                        </persName>
+                        <persName>
+                            <forename>Hans Christopher von</forename>
+                            <surname>Königsmarck</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johann Christoff von</forename>
+                            <surname>Königsmarck</surname>
+                        </persName>
+                        <death when-custom="1663-03-08"/>
+                        <birth when-custom="1600-03-04"/>
+                        <note type="desc">Heerführer im 30jährigen Krieg in schwedischen Diensten, 1634 Oberstleutnant, 1640 Generalmajor, 1645 Genralleutnant</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1159073112</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person xml:id="person_Geyso_Johann_von">
+                        <persName>
+                            <forename>Johann</forename>
+                            <surname>Geyso</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johannes</forename>
+                            <surname>Geyso</surname>
+                        </persName>
+                        <death when-custom="1661"/>
+                        <birth when-custom="1593"/>
+                        <note type="desc">Hessischer General</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/13648073X</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person xml:id="person_Banér_Johan">
+                        <persName>
+                            <forename>Johan</forename>
+                            <surname>Banér</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johann</forename>
+                            <surname>Banner</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johann</forename>
+                            <surname>Baner</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johannes</forename>
+                            <surname>Bannerius</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johan Gustafsson</forename>
+                            <surname>Banér</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johann</forename>
+                            <surname>Banér</surname>
+                        </persName>
+                        <persName>
+                            <forename>Joannes</forename>
+                            <surname>Bannier</surname>
+                        </persName>
+                        <persName>
+                            <addName>Der Haltende</addName>
+                        </persName>
+                        <persName>
+                            <forename>Johan</forename>
+                            <surname>Baner</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johann</forename>
+                            <surname>Bannier</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johannes</forename>
+                            <surname>Baner</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johan</forename>
+                            <surname>Banier</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johan</forename>
+                            <surname>Banner</surname>
+                        </persName>
+                        <persName>
+                            <forename>Der</forename>
+                            <surname>Haltende</surname>
+                        </persName>
+                        <death when-custom="1641-05-20"/>
+                        <birth when-custom="1596-07-03"/>
+                        <note type="desc">Schwedischer Feldmarschall im Dreißigjährigen Krieg; Oberbefehlshaber der schwedischen Truppen; Mitglied der Fruchtbringenden Gesellschaft (Der Haltende)</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>DifferentiatedPerson</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/116048611</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person role="Markgräfin" xml:id="person_Johanna_Baden_Durlach_Markgräfin">
+                        <persName>
+                            <addName>Baden-Durlach, Markgräfin</addName>
+                            <addName>Johanna</addName>
+                        </persName>
+                        <persName>
+                            <addName>von Thurn</addName>
+                            <addName>Johanna</addName>
+                        </persName>
+                        <persName>
+                            <addName>von Baden</addName>
+                            <addName>Johanna Margaretha</addName>
+                        </persName>
+                        <persName>
+                            <addName>Baden-Durlach, Prinzessin</addName>
+                            <addName>Johanna</addName>
+                        </persName>
+                        <persName>
+                            <addName>Thurn, Gräfin</addName>
+                            <addName>Johanna</addName>
+                        </persName>
+                        <persName>
+                            <forename>Johanna Margaretha</forename>
+                            <surname>Banér</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johanna Margaretha</forename>
+                            <surname>Baden-Durlach</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johanna Margaretha</forename>
+                            <surname>Thurn</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johanna</forename>
+                            <surname>Thurn</surname>
+                        </persName>
+                        <persName>
+                            <addName>Baden-Durlach, Prinzessin</addName>
+                            <addName>Johanna Margaretha</addName>
+                        </persName>
+                        <persName>
+                            <forename>Johanna Margaretha</forename>
+                            <surname>Baden-Durlach</surname>
+                        </persName>
+                        <persName>
+                            <forename>Johanna</forename>
+                            <surname>Banér</surname>
+                        </persName>
+                        <persName>
+                            <addName>Baden-Durlach, Markgräfin</addName>
+                            <addName>Johanna Margaretha</addName>
+                        </persName>
+                        <persName>
+                            <forename>Johanna</forename>
+                            <surname>Baden-Durlach</surname>
+                        </persName>
+                        <death when-custom="1661-01-02"/>
+                        <birth when-custom="1623-12-05"/>
+                        <note type="desc">Tochter des Markgrafen Friedrich V. von Baden-Durlach; ab 26.09.1640 dritte Ehefrau des schwed. Feldmarschalls Johan Banér, ab 1648 des Grafen Heinrich von Thurn</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>RoyalOrMemberOfARoyalHouse</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/1017917787</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person role="Graf" xml:id="person_Wolrad_IV._Waldeck_Graf">
+                        <persName>
+                            <addName>Waldeck, Graf</addName>
+                            <addName>Wolrad</addName>
+                        </persName>
+                        <persName>
+                            <forename>Wolrad</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <addName>Der Frühespate</addName>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck-Pyrmont, Graf</addName>
+                            <addName>Wolrad</addName>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck-Eisenberg, Graf</addName>
+                            <addName>Wolrad</addName>
+                        </persName>
+                        <persName>
+                            <forename>Wolrad</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <forename>Der</forename>
+                            <surname>Frühespate</surname>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck, Graf</addName>
+                            <addName>Wolrat</addName>
+                        </persName>
+                        <death when-custom="1640-10-06"/>
+                        <birth when-custom="1588-07-07"/>
+                        <note type="desc">Adel</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>RoyalOrMemberOfARoyalHouse</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/104194650</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
+                    <person role="Reichsfürst" xml:id="person_Georg_Friedrich_Waldeck_Fürst">
+                        <persName>
+                            <addName>Waldeck, Fürst</addName>
+                            <addName>Georg Friedrich</addName>
+                        </persName>
+                        <persName>
+                            <forename>George Fridericus</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <addName>Waldeccia-Piermons-Culemburg, Comes</addName>
+                            <addName>Georgius Fridericus</addName>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck und Pyrmont, Fürst</addName>
+                            <addName>Georg Friedrich</addName>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck-Wildungen, Fürst</addName>
+                            <addName>Georg Friedrich</addName>
+                        </persName>
+                        <persName>
+                            <addName>Grand Prieur de Vandôme</addName>
+                            <addName>Georg Friedrich</addName>
+                        </persName>
+                        <persName>
+                            <forename>Georg Friedrich</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <forename>Georg Friedrich</forename>
+                            <surname>Waldeck und Pyrmont</surname>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck, Graf</addName>
+                            <addName>Georg Friedrich</addName>
+                        </persName>
+                        <persName>
+                            <addName>Waldeccia, Comes</addName>
+                            <addName>Georgius Fridericus</addName>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck, Comte</addName>
+                            <addName>George Frederick</addName>
+                        </persName>
+                        <persName>
+                            <forename>Georg Friedrich</forename>
+                            <surname>Waldeck-Eisenberg</surname>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck-Eisenberg, Graf</addName>
+                            <addName>Georg Friedrich</addName>
+                        </persName>
+                        <persName>
+                            <forename>Georg Friedrich</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <forename>G. F.</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck-Pyrmont-Culemborg, Fürst</addName>
+                            <addName>Georg Friedrich</addName>
+                        </persName>
+                        <persName>
+                            <addName>Georg Friedrich von Waldeck</addName>
+                        </persName>
+                        <persName>
+                            <addName>Pyrmont und Culemburg, Graf</addName>
+                            <addName>Georg Friedrich</addName>
+                        </persName>
+                        <persName>
+                            <forename>Georg Friderich</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <addName>Waldeck, Prince</addName>
+                            <addName>George Frederick</addName>
+                        </persName>
+                        <persName>
+                            <forename>Georg Friedrich</forename>
+                            <surname>Waldec</surname>
+                        </persName>
+                        <persName>
+                            <forename>Germanicus</forename>
+                            <surname>Hahnenfeind</surname>
+                        </persName>
+                        <persName>
+                            <forename>George Friedrich</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <forename>Georg Friedrich</forename>
+                            <surname>Waldeck</surname>
+                        </persName>
+                        <persName>
+                            <forename>Germanicus</forename>
+                            <surname>Hanenfeind</surname>
+                        </persName>
+                        <death when-custom="1692-11-19"/>
+                        <birth when-custom="1620-01-31"/>
+                        <note type="desc">Graf; Fürst; Preußischer Offizier und Reichsfürst; Pseud. nur lt. AK der Württemb. Landesbibliothek; Landesherr u. Reichsfeldmarschall</note>
+                        <note type="categories">
+                            <list type="supercategory">
+                                <item>Person</item>
+                            </list>
+                            <list type="subcategory">
+                                <item>RoyalOrMemberOfARoyalHouse</item>
+                            </list>
+                        </note>
+                        <idno type="URI" subtype="GND">https://d-nb.info/gnd/119177269</idno>
+                        <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
+                        <link target="merian_hessen_escience.xml#band_07"/>
+                    </person>
                 </listPerson>
             </div>
         </body>

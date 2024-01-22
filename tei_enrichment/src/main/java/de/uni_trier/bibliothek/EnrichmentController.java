@@ -110,6 +110,7 @@ public class EnrichmentController {
                         teiFile = LineCounter.countLines(teiFile);
                         anyCheckBoxSelected = true;
                         infoText.setText("Zeilen gezählt und gespeichert als \"merian_****_enriched.xml\"");
+                        TEIJavaObjectsList.set(0, teiFile);
                     }
 
                     if (checkBoxEntities.isSelected()) {
