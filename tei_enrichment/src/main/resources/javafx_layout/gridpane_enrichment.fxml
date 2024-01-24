@@ -143,7 +143,7 @@
                         <Insets left="50.0" top="140.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label text="DOIs eintragen:">
+                  <Label text="XML:ids, facs und url eintragen für Stiche und Seiten:" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="50.0" top="230.0" />
                      </GridPane.margin>
@@ -153,9 +153,9 @@
                         <Insets bottom="20.0" left="60.0" top="190.0" />
                      </GridPane.margin>
                   </Label>
-                  <CheckBox id="checkBoxFederals" fx:id="checkBoxDOIs" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="90.0" textAlignment="JUSTIFY" GridPane.halignment="RIGHT">
+                  <CheckBox id="checkBoxFederals" fx:id="checkBoxXML" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="90.0" textAlignment="JUSTIFY" GridPane.columnSpan="2" GridPane.halignment="RIGHT">
                      <GridPane.margin>
-                        <Insets right="20.0" top="230.0" />
+                        <Insets top="230.0" />
                      </GridPane.margin>
                   </CheckBox>
                   <Label text="Sonderzeichen auflösen:" GridPane.columnIndex="2" GridPane.columnSpan="2">

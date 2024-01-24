@@ -108,8 +108,10 @@ public class EntityListEnricher {
 	public static List<de.uni_trier.bibliothek.xml.objects.model.generated.Object> objectList;
 	public static List<Org> orgsList;
 	public static List<Place> placesList;
+	public static String doiSuffix;
 	public static String reference;
 	public static String fileName;
+	public static Integer divCount;
 
 	public static List<Object> enrichList(List<Object> originalObjectTEIList, String bandFileName) throws IOException {
 		EntityListWriter.initiate(originalObjectTEIList, bandFileName);
@@ -122,7 +124,16 @@ public class EntityListEnricher {
 		TitleStmt titleStmt = fileDesc.getTitleStmt();
 		TitleStmtValue title = titleStmt.getTitle();
 		reference = title.getRef();
+		String bandReference = reference.substring(1, reference.length());
+		String bandName = "";
+		if(bandReference.equals("band_07"))
+		{
+			bandName = "hass";
+		}
+		doiSuffix = "topo-" + bandName + "-divi-";
 
+
+		divCount = 1;
 		createLists();
 		Text originText = originalTEI.getText();
 		checkText(originText);
@@ -415,6 +426,21 @@ public class EntityListEnricher {
 
 	public static void checkDivFront(DivFront divFrontElement) throws IOException {
 		List<JAXBElement<?>> divFrontList = divFrontElement.getFwOrPOrFigure();
+
+		if(divCount > 9 && divCount < 100)
+		{
+			divFrontElement.setId(doiSuffix + "00" + divCount);
+		}
+		else if(divCount > 99)
+		{
+			divFrontElement.setId(doiSuffix + "0" + divCount);
+		}
+		else
+		{
+			divFrontElement.setId(doiSuffix + "000" + divCount);
+		}
+		divCount++;
+		
 
 		for (JAXBElement<?> divFrontListElement : divFrontList) {
 			if (divFrontListElement.getValue() instanceof PFront) {

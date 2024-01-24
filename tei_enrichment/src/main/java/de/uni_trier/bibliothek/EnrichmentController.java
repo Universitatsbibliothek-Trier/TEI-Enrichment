@@ -34,7 +34,7 @@ public class EnrichmentController {
     private TextArea PathOutput;
 
     @FXML
-    private CheckBox checkBoxDOIs;
+    private CheckBox checkBoxXML;
 
     @FXML
     private CheckBox checkBoxEntities;

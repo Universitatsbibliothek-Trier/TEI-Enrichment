@@ -3214,7 +3214,7 @@
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
                             </list>
                         </note>
-                        <link target="merian_hessen_escience.xml#band_07_art_Alsfeld"/>
+                        <link target="merian_hessen_escience.xml#topo-hass-divi-0005"/>
                     </place>
                     <place xml:id="place_Ober_Ohmen">
                         <placeName>Ober-Ohmen</placeName>
@@ -7365,7 +7365,7 @@
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
                             </list>
                         </note>
-                        <link target="merian_hessen_escience.xml#band_07_art_Assenheim"/>
+                        <link target="merian_hessen_escience.xml#topo-hass-divi-0007"/>
                     </place>
                     <place xml:id="place_Rosbach_v.d._Höhe">
                         <placeName>Rosbach v.d. Höhe</placeName>
@@ -7708,7 +7708,8 @@
                         <placeName>Drachenfels (Siebengebirge)</placeName>
                         <placeName>Drachenfels (Siebengebirge)</placeName>
                         <location>
-                            <geo>(( +007.210555 +050.353</geo>
+                            <country>+007.210555 +050.353333</country>
+                            <country>+007.210555 +050.665555</country>
                             <country>Deutschland</country>
                             <region>Nordrhein-Westfalen</region>
                         </location>
@@ -8971,7 +8972,7 @@
                                 <item>TerritorialCorporateBodyOrAdministrativeUnit</item>
                             </list>
                         </note>
-                        <link target="merian_hessen_escience.xml#band_07_art_Bad_Arolsen"/>
+                        <link target="merian_hessen_escience.xml#topo-hass-divi-0006"/>
                     </place>
                     <place xml:id="place_Landau_Bad_Arolsen">
                         <placeName>Landau (Bad Arolsen)</placeName>
@@ -9157,7 +9158,7 @@
                             <region>Hessen</region>
                         </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4084972-7</idno>
-                        <link target="merian_hessen_escience.xml#band_07_art_Allendorf_Werra"/>
+                        <link target="merian_hessen_escience.xml#topo-hass-divi-0003"/>
                         <link target="merian_hessen_escience.xml#band_07"/>
                         <note type="desc">Stadt (seit 1218) im Landkreis Witzenhausen, Provinz Hessen-Nassau, besteht seit mindestens 8. Jh., 776/79 urkundl. erwähnt, 1.7.1929 mit Sooden zusammengeschlossen</note>
                         <note type="categories">
@@ -9278,7 +9279,7 @@
                         </location>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4086584-8</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07_art_Allendorf_Lumda"/>
+                        <link target="merian_hessen_escience.xml#topo-hass-divi-0004"/>
                         <link target="merian_hessen_escience.xml#band_07"/>
                         <note type="desc">Stadt im Kreis Gießen, Mittelhessen</note>
                         <note type="categories">

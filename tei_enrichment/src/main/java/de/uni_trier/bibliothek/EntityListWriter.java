@@ -376,10 +376,10 @@ public class EntityListWriter {
 			listBibl.getBibl().add(bibl);
 		} 
 		if (divFrontElement.getType() != null && isOrtsartikel) {
-			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			// String referenceWithoutHash = reference.substring(1, reference.length());
+			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.listBibl.model.generated.Link linkArtikel = listBiblTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
+			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			bibl.getTitleOrNoteOrLink().add(linkArtikel);
 		}
 		if (!alreadyHasLink) {
@@ -657,10 +657,11 @@ public class EntityListWriter {
 		} 
 		
 		if (divFrontElement.getType() != null && isOrtsartikel) {
-			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			// String referenceWithoutHash = reference.substring(1, reference.length());
+			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			// linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.persons.model.generated.Link linkArtikel = personsTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
+			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			person.getPersNameOrNoteOrBirth().add(linkArtikel);
 		}
 		if (!alreadyHasLink) {
@@ -911,10 +912,10 @@ public class EntityListWriter {
 			eventList.add(event);
 		} 
 		if (divFrontElement.getType() != null && isOrtsartikel) {
-			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			// String referenceWithoutHash = reference.substring(1, reference.length());
+			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.events.model.generated.Link linkArtikel = eventsTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
+			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			event.getLabelOrDescOrNote().add(linkArtikel);
 		}
 		if (!alreadyHasLink) {
@@ -1015,10 +1016,10 @@ public class EntityListWriter {
 		}
 
 		if (divFrontElement.getType() != null && isOrtsartikel) {
-			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			// String referenceWithoutHash = reference.substring(1, reference.length());
+			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkArtikel = orgsTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
+			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			org.getOrgNameOrIdnoOrLink().add(linkArtikel);
 		}
 		
@@ -1291,10 +1292,10 @@ public class EntityListWriter {
 			objectList.add(object);
 		} 
 		if (divFrontElement.getType() != null  && isOrtsartikel) {
-			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			// String referenceWithoutHash = reference.substring(1, reference.length());
+			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.objects.model.generated.Link linkArtikel = objectsTEIObjectFactory.createLink();
-			linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
+			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			object.getObjectIdentifierOrNoteOrLink().add(linkArtikel);
 		}
 		if (!alreadyHasLink) {
@@ -1416,19 +1417,85 @@ public class EntityListWriter {
 			{
 				String geoCoordinates ="";
 				JSONArray hasGeometry = jsonObject.getJSONArray("hasGeometry");
+				Boolean multipleCoordinates = false;
 				for(int i = 0; i < hasGeometry.length(); i++)
 				{
-					JSONObject asWKT = hasGeometry.getJSONObject(i);
-					if(asWKT.has("asWKT"))
+					
+					JSONObject hasGeometryObject = hasGeometry.getJSONObject(i);
+					if(hasGeometryObject.has("type"))
+					{
+						String type = hasGeometryObject.getString("type");
+						if(type.equals("Polygon"))
+						{
+							multipleCoordinates = true;
+						}
+					}
+
+
+					
+					if(hasGeometryObject.has("asWKT"))
 					{
 						hasLocation = true;
-						JSONArray asWKTarray = asWKT.getJSONArray("asWKT");
+						JSONArray asWKTarray = hasGeometryObject.getJSONArray("asWKT");
 						geoCoordinates = asWKTarray.getString(0);
 					}
 				
-						
-					geoCoordinates = geoCoordinates.substring(8, 31);
-					location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(geoCoordinates));
+
+
+					// for (String country : countries)
+					// {
+					// 	List<JAXBElement<String>> regionOrGeoOrCountryList = location.getRegionOrGeoOrCountry();
+					// 	for(JAXBElement<String> regionOrGeoOrCountry : regionOrGeoOrCountryList)
+					// 	{
+					// 		if (regionOrGeoOrCountry.getValue().equals(country))
+					// 		{
+					// 			alreadyInList = true;
+					// 		}
+					// 	}
+					// 	if(!alreadyInList)
+					// 	{
+					// 		location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationCountry(country));
+					// 	}
+					// 	alreadyInList = false;
+					// }
+					
+					
+					if(multipleCoordinates)
+					{
+						int j = 25;
+						int x = 2;
+						int y = 11;
+						int z = 34;
+						boolean alreadyInList = false;
+						for(;j < geoCoordinates.length();)
+						{
+							j = x * 25;
+							List<JAXBElement<String>> coordinatesList = location.getRegionOrGeoOrCountry();
+							for(JAXBElement<String> coordinatesListString : coordinatesList)
+							{
+								if (coordinatesListString.getValue().equals(geoCoordinates.substring(y, z)))
+								{
+									alreadyInList = true;
+								}
+							}
+
+							if(!alreadyInList)
+							{
+								String geoCoordinatesSub = geoCoordinates.substring(y, z);
+								location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.	createLocationCountry(geoCoordinatesSub));
+							}
+							alreadyInList = false;
+							y = y + 25;
+							z = z + 25;
+							x = x + 1;
+						}
+					}
+					else{
+						geoCoordinates = geoCoordinates.substring(8, 31);
+						location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(geoCoordinates));
+					}
+					
+					
 				}
 					
 			}
@@ -1436,18 +1503,14 @@ public class EntityListWriter {
 
 			if(jsonObject.has("geographicAreaCode"))
 			{
-				System.out.println("hat areacode");
 				JSONArray geographicAreaCode = jsonObject.getJSONArray("geographicAreaCode");
 				List<String> countries = CountryRegionCodes.getCountries(geographicAreaCode);
 				boolean alreadyInList = false;
 				for (String country : countries)
 				{
-					System.out.println("untersuche country 1");
 					List<JAXBElement<String>> regionOrGeoOrCountryList = location.getRegionOrGeoOrCountry();
-					System.out.println("country ist: " + country);
 					for(JAXBElement<String> regionOrGeoOrCountry : regionOrGeoOrCountryList)
 					{
-						System.out.println("ist bereits in liste?: " + regionOrGeoOrCountry.getValue() + country);
 						if (regionOrGeoOrCountry.getValue().equals(country))
 						{
 							alreadyInList = true;
@@ -1581,10 +1644,10 @@ public class EntityListWriter {
 			}
 		} 
 		if (divFrontElement.getType() != null  && isOrtsartikel) {
-			String referenceWithoutHash = reference.substring(1, reference.length());
-			divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
+			// String referenceWithoutHash = reference.substring(1, reference.length());
+			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.places.model.generated.Link artikelLink = new de.uni_trier.bibliothek.xml.places.model.generated.Link();
-			artikelLink.setTarget(fileName + reference + "_art_" + preferredName);
+			artikelLink.setTarget(fileName + "#" + divFrontElement.getId());
 			JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Link> artikelLinkJAXB = placesTEIObjectFactory.createPlaceLink(artikelLink);
 			place.getPlaceNameOrLabelOrLocation().add(artikelLinkJAXB);
 		}
