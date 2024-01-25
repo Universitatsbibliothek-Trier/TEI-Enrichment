@@ -7,11 +7,14 @@
 
 package de.uni_trier.bibliothek.xml.tei.model.generated;
 
-import java.math.BigInteger;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlID;
+import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
@@ -25,7 +28,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <attribute name="n">
  *         <simpleType>
- *           <restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *           </restriction>
  *         </simpleType>
  *       </attribute>
@@ -35,6 +38,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *           </restriction>
  *         </simpleType>
  *       </attribute>
+ *       <attribute ref="{http://www.w3.org/XML/1998/namespace}id"/>
  *     </restriction>
  *   </complexContent>
  * </complexType>
@@ -47,19 +51,24 @@ import jakarta.xml.bind.annotation.XmlType;
 public class PbFront {
 
     @XmlAttribute(name = "n")
-    protected BigInteger n;
+    protected String n;
     @XmlAttribute(name = "facs")
     protected String facs;
+    @XmlAttribute(name = "id", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected String id;
 
     /**
      * Ruft den Wert der n-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getN() {
+    public String getN() {
         return n;
     }
 
@@ -68,10 +77,10 @@ public class PbFront {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setN(BigInteger value) {
+    public void setN(String value) {
         this.n = value;
     }
 
@@ -97,6 +106,30 @@ public class PbFront {
      */
     public void setFacs(String value) {
         this.facs = value;
+    }
+
+    /**
+     * Ruft den Wert der id-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * Legt den Wert der id-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setId(String value) {
+        this.id = value;
     }
 
 }

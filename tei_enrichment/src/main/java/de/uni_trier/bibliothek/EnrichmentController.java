@@ -105,6 +105,14 @@ public class EnrichmentController {
                     
                     List<Object> TEIJavaObjectsList = TEIObjectsListCreator.createTEIJavaObects(teiPathName, teiFile);
 
+                    if (checkBoxXML.isSelected()) {
+                        System.out.println("checkbox xml selected!");             
+                        teiFile = XMLidFacsUrlSetter.setIDs(teiFile);
+                        anyCheckBoxSelected = true;
+                        infoText.setText("IDs für pb- und figure-Elemente eingetragen als \"merian_****_enriched.xml\"");
+                        TEIJavaObjectsList.set(0, teiFile);
+                    }
+
                     if (checkBoxLines.isSelected()) {
                         System.out.println("checkbox lines selected!");             
                         teiFile = LineCounter.countLines(teiFile);

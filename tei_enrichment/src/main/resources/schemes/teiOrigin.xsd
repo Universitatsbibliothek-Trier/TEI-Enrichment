@@ -352,7 +352,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="PbFront">
     <xs:attribute name="n">
       <xs:simpleType>
-        <xs:restriction base="xs:integer" />
+        <xs:restriction base="xs:string" />
       </xs:simpleType>
     </xs:attribute>
     <xs:attribute name="facs">
@@ -360,6 +360,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
         <xs:restriction base="xs:string" />
       </xs:simpleType>
     </xs:attribute>
+    <xs:attribute ref="xml:id"/>
   </xs:complexType>
 
   <xs:complexType name="PFront" mixed="true">
@@ -660,6 +661,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
             <xs:restriction base="xs:string" />
           </xs:simpleType>
         </xs:attribute>
+        <xs:attribute ref="xml:id"/>
         <xs:anyAttribute />
       </xs:extension>
     </xs:complexContent>
@@ -785,7 +787,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="Pb" mixed="true">
     <xs:attribute name="n">
       <xs:simpleType>
-        <xs:restriction base="xs:integer" />
+        <xs:restriction base="xs:string" />
       </xs:simpleType>
     </xs:attribute>
     <xs:attribute name="facs">
@@ -793,6 +795,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
         <xs:restriction base="xs:string" />
       </xs:simpleType>
     </xs:attribute>
+    <xs:attribute ref="xml:id"/>
   </xs:complexType>
 
   <xs:complexType name="Lb">

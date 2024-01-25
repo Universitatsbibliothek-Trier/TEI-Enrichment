@@ -42,7 +42,6 @@
                 <listPlace xml:id="entities_place">
                     <place>
                         <placeName>dummy</placeName>
-                        <label></label>
                         <location>
                             <region></region>
                             <geo></geo>

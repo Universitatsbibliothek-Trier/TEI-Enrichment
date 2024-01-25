@@ -32,6 +32,8 @@ import de.uni_trier.bibliothek.xml.tei.model.generated.Del;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DivFront;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DocImprint;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DocTitle;
+import de.uni_trier.bibliothek.xml.tei.model.generated.Figure;
+import de.uni_trier.bibliothek.xml.tei.model.generated.FileDesc;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Foreign;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Front;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Fw;
@@ -55,30 +57,53 @@ import de.uni_trier.bibliothek.xml.tei.model.generated.SourceGND;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Subst;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TEI;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Table;
+import de.uni_trier.bibliothek.xml.tei.model.generated.TeiHeader;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Text;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TitlePage;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TitlePart;
+import de.uni_trier.bibliothek.xml.tei.model.generated.TitleStmt;
+import de.uni_trier.bibliothek.xml.tei.model.generated.TitleStmtValue;
 import jakarta.xml.bind.JAXBElement;
 
 public class XMLidFacsUrlSetter {
 
-	public static int lineNumber;
 	public static TEI originalTEI;
 	public static ObjectFactory personsTEIObjectFactory = new ObjectFactory();
+	public static String figuDoiSuffix;
+	public static String pbDoiSuffix;
+	public static String reference;
+	public static String fileName;
+	public static Integer pbCount;
+	public static Integer figuCount;
+	
 
-	public static TEI countLines(TEI originalTEIParameter) throws IOException {
+	public static TEI setIDs(TEI originalTEIParameter) throws IOException {
+		
 
 
 		// topo-hass-page-0001
 		// topo-hass-figu-0001
 		//url von graphics: https://doi.org/10.25353/topo-hass-figu-0001
 		//facs von pb: https://doi.org/10.25353/topo-hass-page-0001
-
-		lineNumber = 1;
 		originalTEI = originalTEIParameter;
-		// System.out.println("start counting Lines, TEI file: " + originalTEIParameter);
+		TeiHeader teiHeader = originalTEI.getTeiHeader();
+		FileDesc fileDesc = teiHeader.getFileDesc();
+		TitleStmt titleStmt = fileDesc.getTitleStmt();
+		TitleStmtValue title = titleStmt.getTitle();
+		reference = title.getRef();
+		String bandReference = reference.substring(1, reference.length());
+		String bandName = "";
+		if(bandReference.equals("band_07"))
+		{
+			bandName = "hass";
+		}
+		figuDoiSuffix = "topo-" + bandName + "-figu-";
+		pbDoiSuffix = "topo-" + bandName + "-page-";
+		
+
+		pbCount = 1;
+		figuCount = 1;
 		Text originText = originalTEI.getText();
-		// System.out.println("start counting Lines, body Text: " + originText.toString());
 		checkText(originText);
 		return originalTEI;
 	}
@@ -119,14 +144,62 @@ public class XMLidFacsUrlSetter {
 				checkTitlePage(titlePage);
 			}
 			else if (pbOrDivOrTitlePage instanceof PbFront) {
-				lineNumber = 1;
+				PbFront pbFrontElement = (PbFront) pbOrDivOrTitlePage;
+				pbFrontElement.setId(getID(true));
 			}
 			else if (pbOrDivOrTitlePage instanceof Pb) {
-				lineNumber = 1;
+				Pb pbElement = (Pb) pbOrDivOrTitlePage;
+				pbElement.setId(getID(true));	
+			}
+			else if (pbOrDivOrTitlePage instanceof Figure) {
+				Figure foreignElement = (Figure) pbOrDivOrTitlePage;
+				foreignElement.setId(getID(false));
 			}
 
 		}
 	}
+
+	public static String getID(Boolean isPage)
+	{
+		String xmlID = "";
+		if(isPage)
+		{
+			if(pbCount > 9 && pbCount < 100)
+			{
+				xmlID = pbDoiSuffix + "00" + pbCount;
+			}
+			else if(pbCount > 99)
+			{
+				xmlID = pbDoiSuffix + "0" + pbCount;
+			}
+			else
+			{
+				xmlID = pbDoiSuffix + "000" + pbCount;
+			}
+			pbCount++;
+		}
+		else
+		{
+			if(figuCount > 9 && figuCount < 100)
+			{
+				xmlID = figuDoiSuffix + "00" + figuCount;
+			}
+			else if(figuCount > 99)
+			{
+				xmlID = figuDoiSuffix + "0" + figuCount;
+			}
+			else
+			{
+				xmlID = figuDoiSuffix + "000" + figuCount;
+			}
+			figuCount++;
+		}
+
+		
+		return xmlID;
+	}
+
+	
 
 	public static void checkBody(Body body) throws IOException {
 		
@@ -140,7 +213,6 @@ public class XMLidFacsUrlSetter {
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) divOrPbOrLbListElement.getValue();
-				setNinLb(lbElement);
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Fw) {
 				Fw fwElement = (Fw) divOrPbOrLbListElement.getValue();
@@ -158,11 +230,6 @@ public class XMLidFacsUrlSetter {
 				SourceGND sourceElement = (SourceGND) divOrPbOrLbListElement.getValue();
 				checkSourceGND(sourceElement);
 			}
-			// else if (dS
-			// else if (divOrPbOrLbListElement.getValue() instanceof Num) {
-			// 	Num numElement = (Num) divOrPbOrLbListElement.getValue();
-			// 	checkNum(numElement);
-			// }
 			else if (divOrPbOrLbListElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbListElement.getValue();
 				checkLbEtc(lbEtcElement);
@@ -172,14 +239,20 @@ public class XMLidFacsUrlSetter {
 				checkTable(tableElement);
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof PbFront) {
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) divOrPbOrLbListElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Pb) {
-				lineNumber = 1;
+				Pb pbElement = (Pb) divOrPbOrLbListElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) divOrPbOrLbListElement.getValue();
 				checkForeign(foreignElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) divOrPbOrLbListElement.getValue();
+				foreignElement.setId(getID(false));
 			}
 
 		}
@@ -228,7 +301,6 @@ public class XMLidFacsUrlSetter {
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) divOrPbOrLbListElement.getValue();
-				setNinLb(lbElement);
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Fw) {
 				Fw fwElement = (Fw) divOrPbOrLbListElement.getValue();
@@ -255,14 +327,20 @@ public class XMLidFacsUrlSetter {
 				checkTable(tableElement);
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof PbFront) {
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) divOrPbOrLbListElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Pb) {
-				lineNumber = 1;
+				Pb pbElement = (Pb) divOrPbOrLbListElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) divOrPbOrLbListElement.getValue();
 				checkForeign(foreignElement);
+			}
+			else if (divOrPbOrLbListElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) divOrPbOrLbListElement.getValue();
+				foreignElement.setId(getID(false));
 			}
 
 		}
@@ -290,8 +368,8 @@ public class XMLidFacsUrlSetter {
 				checkList(list);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof PbFront) {
-				System.out.println("pbfront gefunden");
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) divOrPbOrLbElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof LbEtc) {
 				System.out.println("lbetc gefunden");
@@ -301,7 +379,6 @@ public class XMLidFacsUrlSetter {
 			else if (divOrPbOrLbElement.getValue() instanceof Lb) {
 				System.out.println("lb element gefunden");
 				Lb lbElement = (Lb) divOrPbOrLbElement.getValue();
-				setNinLb(lbElement);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Fw) {
 				System.out.println("fw gefunden");
@@ -309,12 +386,16 @@ public class XMLidFacsUrlSetter {
 				checkFw(fwElement);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Pb) {
-				System.out.println("pb gefunden");
-				lineNumber = 1;
+				Pb pbElement = (Pb) divOrPbOrLbElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) divOrPbOrLbElement.getValue();
 				checkForeign(foreignElement);
+			}
+			else if (divOrPbOrLbElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) divOrPbOrLbElement.getValue();
+				foreignElement.setId(getID(false));
 			}
 
 
@@ -330,7 +411,6 @@ public class XMLidFacsUrlSetter {
 			JAXBElement<?> jaxbElement = (JAXBElement<?>) listElementObject;
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
-				setNinLb(lbElement);
 			}
 			else if (jaxbElement.getValue() instanceof Item) {
 				Item itemElement = (Item) jaxbElement.getValue();
@@ -341,15 +421,24 @@ public class XMLidFacsUrlSetter {
 				checkFw(fwElement);
 			}	
 			else if (jaxbElement.getValue() instanceof Pb) {
-				lineNumber = 1;
+				Pb pbElement = (Pb) jaxbElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if (jaxbElement.getValue() instanceof PbFront) {
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) jaxbElement.getValue();
+				pbElement.setId(getID(true));
 			}	
 			else if (jaxbElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) jaxbElement.getValue();
 				checkForeign(foreignElement);
 			}	
+			else if (jaxbElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) jaxbElement.getValue();
+				foreignElement.setId(getID(false));
+			}
+
+
+
 			}
 
 
@@ -365,7 +454,6 @@ public class XMLidFacsUrlSetter {
 			JAXBElement<?> jaxbElement = (JAXBElement<?>) itemElementObject;
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
-				setNinLb(lbElement);
 			}
 			else if (jaxbElement.getValue() instanceof Choice) {
 				Choice choiceElement = (Choice) jaxbElement.getValue();
@@ -381,11 +469,17 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(jaxbElement.getValue() instanceof Pb)
 			{
-				lineNumber = 1;
+				Pb pbElement = (Pb) jaxbElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if(jaxbElement.getValue() instanceof PbFront)
 			{
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) jaxbElement.getValue();
+				pbElement.setId(getID(true));
+			}
+			else if (jaxbElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) jaxbElement.getValue();
+				foreignElement.setId(getID(false));
 			}
 
 
@@ -406,7 +500,6 @@ public class XMLidFacsUrlSetter {
 	
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
-				setNinLb(lbElement);
 			}
 			else if (jaxbElement.getValue() instanceof Row) {
 				Row rowElement = (Row) jaxbElement.getValue();
@@ -418,11 +511,17 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(jaxbElement.getValue() instanceof Pb)
 			{
-				lineNumber = 1;
+				Pb pbElement = (Pb) jaxbElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if(jaxbElement.getValue() instanceof PbFront)
 			{
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) jaxbElement.getValue();
+				pbElement.setId(getID(true));
+			}
+			else if (jaxbElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) jaxbElement.getValue();
+				foreignElement.setId(getID(false));
 			}
 		}
 		}
@@ -439,7 +538,6 @@ public class XMLidFacsUrlSetter {
 	
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
-				setNinLb(lbElement);
 			}
 			else if (jaxbElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
@@ -451,11 +549,17 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(jaxbElement.getValue() instanceof Pb)
 			{
-				lineNumber = 1;
+				Pb pbElement = (Pb) jaxbElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if(jaxbElement.getValue() instanceof PbFront)
 			{
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) jaxbElement.getValue();
+				pbElement.setId(getID(true));
+			}
+			else if (jaxbElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) jaxbElement.getValue();
+				foreignElement.setId(getID(false));
 			}
 		}
 		}
@@ -481,7 +585,6 @@ public class XMLidFacsUrlSetter {
 			else if(divFrontListElement.getValue() instanceof Lb)
 			{
 				Lb lbElement = (Lb)divFrontListElement.getValue();
-				setNinLb(lbElement);
 			}
 			else if(divFrontListElement.getValue() instanceof LbEtc)
 			{
@@ -506,17 +609,25 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(divFrontListElement.getValue() instanceof Pb)
 			{
-				System.out.println("pb element gefunden");
-				lineNumber = 1;
+				Pb pbElement = (Pb) divFrontListElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if(divFrontListElement.getValue() instanceof PbFront)
 			{
-				System.out.println("pbfront element gefunden");
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) divFrontListElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if (divFrontListElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) divFrontListElement.getValue();
 				checkForeign(foreignElement);
+			}
+			else if (divFrontListElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) divFrontListElement.getValue();
+				foreignElement.setId(getID(false));
+			}
+			else if (divFrontListElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) divFrontListElement.getValue();
+				foreignElement.setId(getID(false));
 			}
 
 
@@ -534,7 +645,7 @@ public class XMLidFacsUrlSetter {
 				JAXBElement<?> jaxbHeadListElement = (JAXBElement<?>) headListElement;
 				if (jaxbHeadListElement.getValue() instanceof Lb) {
 					Lb lbElement = (Lb) jaxbHeadListElement.getValue();
-					setNinLb(lbElement);
+
 				}
 				else if (jaxbHeadListElement.getValue() instanceof NameGND) {
 					NameGND nameGNDElement = (NameGND) jaxbHeadListElement.getValue();
@@ -554,11 +665,17 @@ public class XMLidFacsUrlSetter {
 				}
 				else if(jaxbHeadListElement.getValue() instanceof Pb)
 				{
-					lineNumber = 1;
+					Pb pbElement = (Pb) jaxbHeadListElement.getValue();
+					pbElement.setId(getID(true));
 				}
-				else if(jaxbHeadListElement.getValue() instanceof PbFront)
+				else if(jaxbHeadListElement.getValue() instanceof Pb)
 				{
-					lineNumber = 1;
+					PbFront pbElement = (PbFront) jaxbHeadListElement.getValue();
+					pbElement.setId(getID(true));
+				}
+				else if (jaxbHeadListElement.getValue() instanceof Figure) {
+					Figure foreignElement = (Figure) jaxbHeadListElement.getValue();
+					foreignElement.setId(getID(false));
 				}
 
 		}
@@ -579,7 +696,7 @@ public class XMLidFacsUrlSetter {
 				}
 				else if (titlePageListElementObject.getValue() instanceof Lb) {
 					Lb lbElement = (Lb) titlePageListElementObject.getValue();
-					setNinLb(lbElement);
+
 				}
 				else if (titlePageListElementObject.getValue() instanceof Choice) {
 					Choice choice = (Choice) titlePageListElementObject.getValue();
@@ -607,11 +724,17 @@ public class XMLidFacsUrlSetter {
 				}
 				else if(titlePageListElementObject.getValue() instanceof Pb)
 				{
-					lineNumber = 1;
+					Pb pbElement = (Pb) titlePageListElementObject.getValue();
+					pbElement.setId(getID(true));
 				}
 				else if(titlePageListElementObject.getValue() instanceof PbFront)
 				{
-					lineNumber = 1;
+					PbFront pbElement = (PbFront) titlePageListElementObject.getValue();
+					pbElement.setId(getID(true));
+				}
+				else if (titlePageListElementObject.getValue() instanceof Figure) {
+					Figure foreignElement = (Figure) titlePageListElementObject.getValue();
+					foreignElement.setId(getID(false));
 				}
 
 
@@ -632,7 +755,7 @@ public class XMLidFacsUrlSetter {
 						else if(jaxbElement.getValue() instanceof Lb)
 						{
 							Lb LbElement = (Lb) jaxbElement.getValue();
-							setNinLb(LbElement);
+		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -656,11 +779,17 @@ public class XMLidFacsUrlSetter {
 						}
 						else if(jaxbElement.getValue() instanceof Pb)
 						{
-							lineNumber = 1;
+							Pb pbElement = (Pb) jaxbElement.getValue();
+							pbElement.setId(getID(true));
 						}
 						else if(jaxbElement.getValue() instanceof PbFront)
 						{
-							lineNumber = 1;
+							PbFront pbElement = (PbFront) jaxbElement.getValue();
+							pbElement.setId(getID(true));
+						}
+						else if (jaxbElement.getValue() instanceof Figure) {
+							Figure foreignElement = (Figure) jaxbElement.getValue();
+							foreignElement.setId(getID(false));
 						}
 					}
 		
@@ -674,7 +803,7 @@ public class XMLidFacsUrlSetter {
 						if(jaxbElement.getValue() instanceof Lb)
 						{
 							Lb LbElement = (Lb) jaxbElement.getValue();
-							setNinLb(LbElement);
+		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -707,12 +836,19 @@ public class XMLidFacsUrlSetter {
 						}
 						else if(jaxbElement.getValue() instanceof Pb)
 						{
-							lineNumber = 1;
+							Pb pbElement = (Pb) jaxbElement.getValue();
+							pbElement.setId(getID(true));
 						}
 						else if(jaxbElement.getValue() instanceof PbFront)
 						{
-							lineNumber = 1;
+							PbFront pbElement = (PbFront) jaxbElement.getValue();
+							pbElement.setId(getID(true));
 						}
+						else if (jaxbElement.getValue() instanceof Figure) {
+							Figure foreignElement = (Figure) jaxbElement.getValue();
+							foreignElement.setId(getID(false));
+						}
+						
 					}
 
 		}
@@ -727,7 +863,7 @@ public class XMLidFacsUrlSetter {
 						if(jaxbElement.getValue() instanceof Lb)
 						{
 							Lb LbElement = (Lb) jaxbElement.getValue();
-							setNinLb(LbElement);
+		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -755,11 +891,17 @@ public class XMLidFacsUrlSetter {
 						}
 						else if(jaxbElement.getValue() instanceof Pb)
 						{
-							lineNumber = 1;
+							Pb pbElement = (Pb) jaxbElement.getValue();
+							pbElement.setId(getID(true));
 						}
 						else if(jaxbElement.getValue() instanceof PbFront)
 						{
-							lineNumber = 1;
+							PbFront pbElement = (PbFront) jaxbElement.getValue();
+							pbElement.setId(getID(true));
+						}
+						else if (jaxbElement.getValue() instanceof Figure) {
+							Figure foreignElement = (Figure) jaxbElement.getValue();
+							foreignElement.setId(getID(false));
 						}
 					}
 
@@ -775,7 +917,7 @@ public class XMLidFacsUrlSetter {
 						if(jaxbElement.getValue() instanceof Lb)
 						{
 							Lb LbElement = (Lb) jaxbElement.getValue();
-							setNinLb(LbElement);
+		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -803,11 +945,17 @@ public class XMLidFacsUrlSetter {
 						}
 						else if(jaxbElement.getValue() instanceof Pb)
 						{
-							lineNumber = 1;
+							Pb pbElement = (Pb) jaxbElement.getValue();
+							pbElement.setId(getID(true));
 						}
 						else if(jaxbElement.getValue() instanceof PbFront)
 						{
-							lineNumber = 1;
+							PbFront pbElement = (PbFront) jaxbElement.getValue();
+							pbElement.setId(getID(true));
+						}
+						else if (jaxbElement.getValue() instanceof Figure) {
+							Figure foreignElement = (Figure) jaxbElement.getValue();
+							foreignElement.setId(getID(false));
 						}
 					}
 
@@ -823,7 +971,7 @@ public class XMLidFacsUrlSetter {
 						if(jaxbElement.getValue() instanceof Lb)
 						{
 							Lb LbElement = (Lb) jaxbElement.getValue();
-							setNinLb(LbElement);
+		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -851,11 +999,17 @@ public class XMLidFacsUrlSetter {
 						}
 						else if(jaxbElement.getValue() instanceof Pb)
 						{
-							lineNumber = 1;
+							Pb pbElement = (Pb) jaxbElement.getValue();
+							pbElement.setId(getID(true));
 						}
 						else if(jaxbElement.getValue() instanceof PbFront)
 						{
-							lineNumber = 1;
+							PbFront pbElement = (PbFront) jaxbElement.getValue();
+							pbElement.setId(getID(true));
+						}
+						else if (jaxbElement.getValue() instanceof Figure) {
+							Figure foreignElement = (Figure) jaxbElement.getValue();
+							foreignElement.setId(getID(false));
 						}
 					}
 
@@ -892,11 +1046,17 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(delElement instanceof Pb)
 			{
-				lineNumber = 1;
+				Pb pbElement = (Pb) delElement;
+				pbElement.setId(getID(true));
 			}
 			else if(delElement instanceof PbFront)
 			{
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) delElement;
+				pbElement.setId(getID(true));
+			}
+			else if (delElement instanceof Figure) {
+				Figure foreignElement = (Figure) delElement;
+				foreignElement.setId(getID(false));
 			}
 
 		}
@@ -912,7 +1072,7 @@ public class XMLidFacsUrlSetter {
 						if(jaxbElement.getValue() instanceof Lb)
 						{
 							Lb LbElement = (Lb) jaxbElement.getValue();
-							setNinLb(LbElement);
+		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -921,7 +1081,8 @@ public class XMLidFacsUrlSetter {
 						}
 						else if(jaxbElement.getValue() instanceof Pb)
 						{
-							lineNumber = 1;
+							Pb pbElement = (Pb) jaxbElement.getValue();
+							pbElement.setId(getID(true));
 						}
 						else if(jaxbElement.getValue() instanceof Fw)
 						{
@@ -954,11 +1115,17 @@ public class XMLidFacsUrlSetter {
 						}
 						else if(jaxbElement.getValue() instanceof Pb)
 						{
-							lineNumber = 1;
+							Pb pbElement = (Pb) jaxbElement.getValue();
+							pbElement.setId(getID(true));
 						}
 						else if(jaxbElement.getValue() instanceof PbFront)
 						{
-							lineNumber = 1;
+							PbFront pbElement = (PbFront) jaxbElement.getValue();
+							pbElement.setId(getID(true));
+						}
+						else if (jaxbElement.getValue() instanceof Figure) {
+							Figure foreignElement = (Figure) jaxbElement.getValue();
+							foreignElement.setId(getID(false));
 						}
 					}
 				}
@@ -975,7 +1142,7 @@ public class XMLidFacsUrlSetter {
 				else if(jaxbElement.getValue() instanceof Lb) 
 				{
 					Lb lbElement = (Lb) jaxbElement.getValue();
-					setNinLb(lbElement);
+
 				}
 				else if(jaxbElement.getValue() instanceof NameGND) 
 				{
@@ -993,11 +1160,17 @@ public class XMLidFacsUrlSetter {
 				}
 				else if(jaxbElement.getValue() instanceof Pb)
 				{
-					lineNumber = 1;
+					Pb pbElement = (Pb) jaxbElement.getValue();
+					pbElement.setId(getID(true));
 				}
 				else if(jaxbElement.getValue() instanceof PbFront)
 				{
-					lineNumber = 1;
+					PbFront pbElement = (PbFront) jaxbElement.getValue();
+					pbElement.setId(getID(true));
+				}
+				else if (jaxbElement.getValue() instanceof Figure) {
+					Figure foreignElement = (Figure) jaxbElement.getValue();
+					foreignElement.setId(getID(false));
 				}
 
 			}
@@ -1018,7 +1191,7 @@ public class XMLidFacsUrlSetter {
 			 	else if (jaxbLbEtcListElement.getValue() instanceof Lb) 
 				{				
 					Lb lbElement = (Lb) jaxbLbEtcListElement.getValue();
-					setNinLb(lbElement);				
+				
 				}
 				else if (jaxbLbEtcListElement.getValue() instanceof NameGND) 
 				{				
@@ -1041,11 +1214,17 @@ public class XMLidFacsUrlSetter {
 				}
 				else if(jaxbLbEtcListElement.getValue() instanceof Pb)
 				{
-					lineNumber = 1;
+					Pb pbElement = (Pb) jaxbLbEtcListElement.getValue();
+					pbElement.setId(getID(true));
 				}
 				else if(jaxbLbEtcListElement.getValue() instanceof PbFront)
 				{
-					lineNumber = 1;
+					PbFront pbElement = (PbFront) jaxbLbEtcListElement.getValue();
+					pbElement.setId(getID(true));
+				}
+				else if (jaxbLbEtcListElement.getValue() instanceof Figure) {
+					Figure foreignElement = (Figure) jaxbLbEtcListElement.getValue();
+					foreignElement.setId(getID(false));
 				}
 		}
 		}
@@ -1087,11 +1266,17 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(jaxbElement.getValue() instanceof Pb)
 			{
-				lineNumber = 1;
+				Pb pbElement = (Pb) jaxbElement.getValue();
+				pbElement.setId(getID(true));
 			}
 			else if(jaxbElement.getValue() instanceof PbFront)
 			{
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) jaxbElement.getValue();
+				pbElement.setId(getID(true));
+			}
+			else if (jaxbElement.getValue() instanceof Figure) {
+				Figure foreignElement = (Figure) jaxbElement.getValue();
+				foreignElement.setId(getID(false));
 			}
 		}
 
@@ -1124,11 +1309,17 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(substElemenObject instanceof Pb)
 			{
-				lineNumber = 1;
+				Pb pbElement = (Pb) substElemenObject;
+				pbElement.setId(getID(true));
 			}
 			else if(substElemenObject instanceof PbFront)
 			{
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) substElemenObject;
+				pbElement.setId(getID(true));
+			}
+			else if (substElemenObject instanceof Figure) {
+				Figure foreignElement = (Figure) substElemenObject;
+				foreignElement.setId(getID(false));
 			}
 
 		}
@@ -1164,11 +1355,17 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(addElement instanceof Pb)
 			{
-				lineNumber = 1;
+				Pb pbElement = (Pb) addElement;
+				pbElement.setId(getID(true));
 			}
 			else if(addElement instanceof PbFront)
 			{
-				lineNumber = 1;
+				PbFront pbElement = (PbFront) addElement;
+				pbElement.setId(getID(true));
+			}
+			else if (addElement instanceof Figure) {
+				Figure foreignElement = (Figure) addElement;
+				foreignElement.setId(getID(false));
 			}
 
 		}
@@ -1184,7 +1381,7 @@ public class XMLidFacsUrlSetter {
 			 	if (jaxbfwElementListElement.getValue() instanceof Lb) 
 				{				
 					Lb lbElement = (Lb) jaxbfwElementListElement.getValue();
-					setNinLb(lbElement);			
+			
 				}
 				else if (jaxbfwElementListElement.getValue() instanceof Foreign) {
 					Foreign foreignElement = (Foreign) jaxbfwElementListElement.getValue();
@@ -1192,11 +1389,17 @@ public class XMLidFacsUrlSetter {
 				}
 				else if(jaxbfwElementListElement.getValue() instanceof Pb)
 				{
-					lineNumber = 1;
+					Pb pbElement = (Pb) jaxbfwElementListElement.getValue();
+					pbElement.setId(getID(true));
 				}
 				else if(jaxbfwElementListElement.getValue() instanceof PbFront)
 				{
-					lineNumber = 1;
+					PbFront pbElement = (PbFront) jaxbfwElementListElement.getValue();
+					pbElement.setId(getID(true));
+				}
+				else if (jaxbfwElementListElement.getValue() instanceof Figure) {
+					Figure foreignElement = (Figure) jaxbfwElementListElement.getValue();
+					foreignElement.setId(getID(false));
 				}
 				
 		}
@@ -1206,11 +1409,5 @@ public class XMLidFacsUrlSetter {
 	
 
 	
-
-	public static void setNinLb(Lb lbElement) {
-			lbElement.setN(Integer.toString(lineNumber));
-			lineNumber++;
-
-	}
 
 }

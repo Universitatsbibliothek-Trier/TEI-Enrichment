@@ -1439,27 +1439,7 @@ public class EntityListWriter {
 						JSONArray asWKTarray = hasGeometryObject.getJSONArray("asWKT");
 						geoCoordinates = asWKTarray.getString(0);
 					}
-				
-
-
-					// for (String country : countries)
-					// {
-					// 	List<JAXBElement<String>> regionOrGeoOrCountryList = location.getRegionOrGeoOrCountry();
-					// 	for(JAXBElement<String> regionOrGeoOrCountry : regionOrGeoOrCountryList)
-					// 	{
-					// 		if (regionOrGeoOrCountry.getValue().equals(country))
-					// 		{
-					// 			alreadyInList = true;
-					// 		}
-					// 	}
-					// 	if(!alreadyInList)
-					// 	{
-					// 		location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationCountry(country));
-					// 	}
-					// 	alreadyInList = false;
-					// }
-					
-					
+	
 					if(multipleCoordinates)
 					{
 						int j = 25;

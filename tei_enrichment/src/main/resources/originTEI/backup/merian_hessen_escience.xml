@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd" xml:id="band_07">
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" xml:id="band_07">
 
     <teiHeader>
         <fileDesc>
@@ -3700,7 +3700,7 @@
                     viel Vogtheyen / die vom <foreign xml:lang="la"><name ref="https://d-nb.info/gnd/117751235">Petro Bertio</name> <name ref="***">lib. 2. Comment. Rerum Germanic.
                     <fw type="catch">cap. 24.</fw>
                     <pb facs="DOI.jpg" n="23"/>
-                    <pb facs="DOI.jpg" n="24"/>
+                    <pb facs="DOI.jpg" n="24-25"/>
                     <figure corresp="correspID" place="middle" subtype="topographic_maps" type="doublePage" xml:id="stichID2">
                         <graphic url="stichDOI.jpg"/>
                         <figDesc>
@@ -3708,8 +3708,8 @@
                             <width quantity="34.8" unit="cm"/>
                         </figDesc>
                     </figure>
-                    <pb facs="DOI.jpg" n="25"/>
                     <pb facs="DOI.jpg" n="26"/>
+                    <pb facs="DOI.jpg" n="27"/>
                     <fw type="pageNum">15</fw>
                     <fw type="header">in Heſſen und den benachbarten Landen.</fw>
                     <lb/>
@@ -3826,7 +3826,7 @@
                     <lb/>
                     der ſind ohne Meldung des <foreign xml:lang="la">Autoris</foreign>, in 4. beſchrieben; deſſen Autor aber iſt der
                     <fw type="catch">vorneh⸗</fw>
-                    <pb facs="DOI.jpg" n="27"/>
+                    <pb facs="DOI.jpg" n="28"/>
                     <fw type="pageNum">16</fw>
                     <fw type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb/>
@@ -3949,7 +3949,7 @@
                     <lb/>
                     <num value="6.">VI.</num> Die <name ref="https://d-nb.info/gnd/4350182-5">Graffſchafft Witgenſtein</name> mit der <name ref="https://d-nb.info/gnd/4115341-8">Graffſchafft Naſſau⸗Dillenberg</name> /
                     <fw type="catch">der</fw>
-                    <pb facs="DOI.jpg" n="28"/>
+                    <pb facs="DOI.jpg" n="29"/>
                     <fw type="pageNum">17</fw>
                     <fw type="header">in Heſſen und den benachbarten Landen.</fw>
                     <lb/>
@@ -4072,7 +4072,7 @@
                     rer <foreign xml:lang="la">Pagus</foreign> geweſen / <foreign xml:lang="la"><name ref="???">Pagus Loganenſis</name></foreign>, das <name ref="???">Logenehe</name> / oder <name ref="???">Logengau</name> geheiſſen / wie
                     <fw type="catch">dann</fw>
                     <fw type="sig">C</fw>
-                    <pb facs="DOI.jpg" n="29"/>
+                    <pb facs="DOI.jpg" n="30"/>
                     <fw type="pageNum">18</fw>
                     <fw type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb/>
@@ -4178,7 +4178,7 @@
                 </p>
             </div>
             <fw type="catch">Allendorff⸗</fw>
-            <pb facs="DOI.jpg" n="30"/>
+            <pb facs="DOI.jpg" n="31"/>
             <fw type="pageNum">19</fw>
             <fw type="header">in Heſſen / vnd den benachbarten Landen.</fw>
             <figure place="top" subtype="patterns" type="singlePage" xml:id="stichID128">
@@ -4367,7 +4367,7 @@
                     und Gehoͤltz / des <name ref="https://d-nb.info/gnd/4038484-6">Meißners</name> iſt / ) hat die
                     <fw type="catch">Statt</fw>
                     <fw type="sig">C 2</fw>
-                    <pb facs="DOI.jpg" n="31"/>
+                    <pb facs="DOI.jpg" n="32"/>
                     <fw type="pageNum">20</fw>
                     <fw type="header">Beſchreibung der vornehmſten Orth</fw>
                     <lb/>
@@ -4594,8 +4594,8 @@
                     <lb/>
                     nach deſſen Namen der <name ref="https://d-nb.info/gnd/1075827698">Weinsberg</name> genand
                     <fw type="catch">wird.</fw>
-                    <pb facs="DOI.jpg" n="32"/>
                     <pb facs="DOI.jpg" n="33"/>
+                    <pb facs="DOI.jpg" n="34-35"/>
                     <figure corresp="correspID" place="top" subtype="views" type="doublePage" xml:id="stichID3">
                         <graphic url="stichDOI.jpg"/>
                         <figDesc>
@@ -4617,8 +4617,8 @@
                             <width quantity="16.6" unit="cm"/>
                         </figDesc>
                     </figure>
-                    <pb facs="DOI.jpg" n="34"/>
-                    <pb facs="DOI.jpg" n="35"/>
+                    <pb facs="DOI.jpg" n="36"/>
+                    <pb facs="DOI.jpg" n="37"/>
                     <fw type="pageNum">21</fw>
                     <fw type="header">in Heſſen und den benachbarten Landen.</fw>
                     <lb/>
@@ -4834,7 +4834,7 @@
                     tribution geſetzt.
                     <fw type="catch">Jn</fw>
                     <fw type="sig">C 3</fw>
-                    <pb facs="DOI.jpg" n="36"/>
+                    <pb facs="DOI.jpg" n="38"/>
                     <fw type="pageNum">22</fw>
                     <fw type="header">Beſchreibung der fuͤrnehmſten Ort</fw>
                     <lb/>
@@ -5064,7 +5064,7 @@
                     <lb/>
                     der Biſchoff zu Maͤyntz Adolphus / ein
                     <fw type="catch">Graff</fw>
-                    <pb facs="DOI.jpg" n="37"/>
+                    <pb facs="DOI.jpg" n="39"/>
                     <figure corresp="correspID" place="top" subtype="views" type="singlePage" xml:id="stichID6">
                         <graphic url="stichDOI.jpg"/>
                         <figDesc>
@@ -5086,8 +5086,8 @@
                             <width quantity="8.2" unit="cm"/>
                         </figDesc>
                     </figure>
-                    <pb facs="DOI.jpg" n="38"/>
-                    <pb facs="DOI.jpg" n="39"/>
+                    <pb facs="DOI.jpg" n="40"/>
+                    <pb facs="DOI.jpg" n="41"/>
                     <fw type="pageNum">23</fw>
                     <fw type="header">in Heſſen und denen benachbarten Landen.</fw>
                     <lb/>
