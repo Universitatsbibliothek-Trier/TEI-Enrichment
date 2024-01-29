@@ -124,7 +124,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118581090</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Zeiller_Martin">
                         <persName>
@@ -182,7 +182,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118772392</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Georg_Anton_Worms_Bischof">
                         <persName>
@@ -226,7 +226,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/143236229</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Ludwig_Philipp_Pfalz_Simmern_Pfalzgraf">
                         <persName>
@@ -257,7 +257,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/115497773</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Wild_und_Rheingrafen">
                         <persName>
@@ -279,7 +279,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/143317822</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Dilich_Wilhelm">
                         <persName>
@@ -355,7 +355,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119100754</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Bertius_Petrus">
                         <persName>
@@ -447,7 +447,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/117751235</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Ptolemaeus_Claudius">
                         <persName>
@@ -664,7 +664,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118641786</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Katzenelnbogen_Familie">
                         <persName>
@@ -677,7 +677,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118721216</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Rhenanus_Beatus">
                         <persName>
@@ -776,7 +776,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118960563</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Rauw_Johannes">
                         <persName>
@@ -867,7 +867,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/122686314</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Wilhelm_I._Hessen_Landgraf">
                         <persName>
@@ -895,7 +895,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/136902332</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Busche_Hermann_von_dem">
                         <persName>
@@ -1007,7 +1007,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118983741</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Camerarius_Joachim">
                         <persName>
@@ -1161,7 +1161,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118518569</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Tacitus_Cornelius">
                         <persName>
@@ -1376,7 +1376,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118620452</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Caesar_Gaius_Iulius">
                         <persName>
@@ -1585,7 +1585,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118518275</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Trajan_Römisches_Reich_Kaiser">
                         <persName>
@@ -1681,7 +1681,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118623567</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Augustus_Römisches_Reich_Kaiser">
                         <persName>
@@ -1905,7 +1905,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118505122</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Mars_Gott">
                         <persName>
@@ -1922,7 +1922,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118731181</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Ammianus_Marcellinus">
                         <persName>
@@ -1997,7 +1997,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118502581</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Eutropius">
                         <persName>
@@ -2060,7 +2060,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118682768</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Zosimos_Historiker">
                         <persName>
@@ -2077,7 +2077,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118808575</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Irenicus_Franciscus">
                         <persName>
@@ -2113,7 +2113,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119193426</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Althamer_Andreas">
                         <persName>
@@ -2205,7 +2205,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/100010423</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Curio_Jakob">
                         <persName>
@@ -2259,7 +2259,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/124209807</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Freher_Marquard">
                         <persName>
@@ -2342,7 +2342,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118693077</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Gregor_III._Papst">
                         <persName>
@@ -2384,7 +2384,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118541846</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Jesus_Christus">
                         <persName>
@@ -2561,7 +2561,7 @@
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118557513</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Bonifatius_Mainz_Erzbischof_Heiliger">
                         <persName>
@@ -2823,7 +2823,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118513249</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Aimoin_von_Fleury">
                         <persName>
@@ -2871,7 +2871,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/100937101</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Adam_von_Bremen">
                         <persName>
@@ -2952,7 +2952,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11850052X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Kaiser" xml:id="person_Arnulf_Heiliges_Römisches_Reich_Kaiser">
                         <persName>
@@ -3042,7 +3042,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118650440</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Pistorius_Johann">
                         <persName>
@@ -3156,7 +3156,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119199351</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Lazius_Wolfgang">
                         <persName>
@@ -3212,7 +3212,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118726870</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Dietrich_von_Bern">
                         <persName>
@@ -3234,7 +3234,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118638785</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Beuther_Michael">
                         <persName>
@@ -3274,7 +3274,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/116158751</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Aethicus">
                         <persName>
@@ -3290,7 +3290,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119601729</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Clüver_Philipp">
                         <persName>
@@ -3405,7 +3405,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119150867</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Strabo">
                         <persName>
@@ -3537,7 +3537,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118618806</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Cassius_Dio">
                         <persName>
@@ -3783,7 +3783,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118525824</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Schöpper_Jacob">
                         <persName>
@@ -3851,7 +3851,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118795376</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Plinius_Secundus_Gaius">
                         <persName>
@@ -4087,7 +4087,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118595083</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Fuchs_Leonhart">
                         <persName>
@@ -4152,7 +4152,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119059487</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Vadianus_Joachim">
                         <persName>
@@ -4261,7 +4261,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118625780</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Jahwe">
                         <persName>
@@ -4293,7 +4293,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118556703</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Reinkingk_Theodor_von">
                         <persName>
@@ -4408,7 +4408,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118788272</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Limnäus_Johannes">
                         <persName>
@@ -4464,7 +4464,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118728326</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Philipp_von_Katzenelnbogen">
                         <persName>
@@ -4512,7 +4512,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118959778</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Anna_Hessen_Landgräfin">
                         <persName>
@@ -4534,7 +4534,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/137316844</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Heinrich_III._Hessen_Landgraf">
                         <persName>
@@ -4562,7 +4562,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/137944918</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Landgraf" xml:id="person_Wilhelm_III._Hessen_Marburg_Landgraf">
                         <persName>
@@ -4594,7 +4594,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/129236799</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Nassau_Familie">
                         <persName>
@@ -4607,7 +4607,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118738038</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Landgraf" xml:id="person_Philipp_I._Hessen_Landgraf">
                         <persName>
@@ -4730,7 +4730,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11859382X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Hessen_Familie">
                         <persName>
@@ -4748,7 +4748,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119018012</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Diez_Familie">
                         <persName>
@@ -4761,7 +4761,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/123246539</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Gräfin" xml:id="person_Jutta_Nassau_Dillenburg_Gräfin">
                         <persName>
@@ -4792,7 +4792,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1304435490</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Fürst" xml:id="person_Adolf_Nassau_Dillenburg_Graf">
                         <persName>
@@ -4840,7 +4840,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/138719500</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Johann_I._Nassau_Dillenburg_Graf">
                         <persName>
@@ -4880,7 +4880,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/138720320</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Wildenburg_von_Familie_1235_1328">
                         <persName>
@@ -4893,7 +4893,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1075769760</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Ziegenhain_von_Familie_1100_1450">
                         <persName>
@@ -4907,7 +4907,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1075764548</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Ludwig_II._Thüringen_Landgraf">
                         <persName>
@@ -4943,7 +4943,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/100952518</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Johann_II._Ziegenhain_Graf">
                         <persName>
@@ -4977,7 +4977,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1074772709</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Brouwer_Christoph">
                         <persName>
@@ -5041,7 +5041,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/124651380</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Harstall_von_Familie_1200_1990_Thüringen">
                         <persName>
@@ -5054,7 +5054,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1072704412</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Schwertzell_von_Familie">
                         <persName>
@@ -5066,7 +5066,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1304438783</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Weitershausen_Familie">
                         <persName>
@@ -5078,7 +5078,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1305091019</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Berlepsch_Familie">
                         <persName>
@@ -5092,7 +5092,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/132325314</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Lüder_von_Familie_1000_1800">
                         <persName>
@@ -5105,7 +5105,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1075646804</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Linsingen_Familie">
                         <persName>
@@ -5119,7 +5119,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/133124533</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Heinrich_II._Hessen_Landgraf">
                         <persName>
@@ -5147,7 +5147,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/138743800</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Kurfürst" xml:id="person_Gerlach_Mainz_Erzbischof_Kurfürst">
                         <persName>
@@ -5199,7 +5199,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118717057</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Itter_Familie">
                         <persName>
@@ -5212,7 +5212,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/189562978</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Henneberg_Familie">
                         <persName>
@@ -5226,7 +5226,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119228041</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Bertho_Fulda_Fürstabt">
                         <persName>
@@ -5261,7 +5261,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1114516732</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="König" xml:id="person_Heinrich_I._Heiliges_Römisches_Reich_König">
                         <persName>
@@ -5382,7 +5382,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11854831X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Plesse_Familie">
                         <persName>
@@ -5395,7 +5395,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118595032</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Hessen_Kassel_Familie">
                         <persName>
@@ -5407,7 +5407,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118938339</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Hessen_Darmstadt_Familie">
                         <persName>
@@ -5419,7 +5419,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118704214</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Hessen_Homburg_Familie">
                         <persName>
@@ -5431,7 +5431,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1049791673</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Kurfürst" xml:id="person_Friedrich_Wilhelm_Brandenburg_Kurfürst">
                         <persName>
@@ -5741,7 +5741,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11853596X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzog" xml:id="person_Ernst_I._Sachsen_Gotha_Altenburg_Herzog">
                         <persName>
@@ -5852,7 +5852,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118530887</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Johann_Philipp_Mainz_Erzbischof">
                         <persName>
@@ -5941,7 +5941,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118610066</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Kaiser" xml:id="person_Ferdinand_III._Heiliges_Römisches_Reich_Kaiser">
                         <persName>
@@ -6103,7 +6103,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118532529</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Landgraf" xml:id="person_Moritz_Hessen_Kassel_Landgraf_1572_1632">
                         <persName>
@@ -6256,7 +6256,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11858412X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Otto_Hessen_Kassel_Landgraf">
                         <persName>
@@ -6316,7 +6316,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104194618</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Markgräfin" xml:id="person_Katharina_Ursula_Hessen_Kassel_Landgräfin">
                         <persName>
@@ -6376,7 +6376,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104193441</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Landgräfin" xml:id="person_Agnes_Magdalena_Hessen_Kassel_Landgräfin">
                         <persName>
@@ -6438,7 +6438,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/142874698</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Wilhelm_V._Hessen_Kassel_Landgraf">
                         <persName>
@@ -6529,7 +6529,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118807331</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Amalie_Elisabeth_Hessen_Kassel_Landgräfin">
                         <persName>
@@ -6649,7 +6649,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119207826</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Philipp_Ludwig_II._Hanau_Münzenberg_Graf">
                         <persName>
@@ -6733,7 +6733,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119050870</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Wilhelm_VI._Hessen_Kassel_Landgraf">
                         <persName>
@@ -6772,7 +6772,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/102035229</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Hedwig_Sophie_Hessen_Kassel_Landgräfin">
                         <persName>
@@ -6824,7 +6824,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/102324115</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Kurfürst" xml:id="person_Georg_Wilhelm_Brandenburg_Kurfürst">
                         <persName>
@@ -6883,7 +6883,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/102116156</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Prinzessin" xml:id="person_Hessen_Kassel_Emilie_von">
                         <persName>
@@ -6951,7 +6951,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1020051663</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzog" xml:id="person_La_Trémoille_Henri_Charles_de">
                         <persName>
@@ -6995,7 +6995,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1019980869</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Charlotte_Pfalz_Kurfürstin">
                         <persName>
@@ -7027,7 +7027,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/117722944</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Kurfürst" xml:id="person_Karl_Ludwig_Pfalz_Kurfürst">
                         <persName>
@@ -7181,7 +7181,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118560182</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Landgraf" xml:id="person_Hermann_IV._Hessen_Kassel_Landgraf">
                         <persName>
@@ -7297,7 +7297,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/100098355</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Sophia_Juliana_Hessen_Rotenburg_Landgräfin">
                         <persName>
@@ -7337,7 +7337,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/14231773X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Fürstin" xml:id="person_Hessen_Kassel_Kunegunde_Juliane">
                         <persName>
@@ -7369,7 +7369,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1114670995</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Johann_Georg_I._Anhalt_Dessau_Fürst">
                         <persName>
@@ -7400,7 +7400,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104173327</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Friedrich_Hessen_Kassel_Landgraf">
                         <persName>
@@ -7466,7 +7466,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/123961572</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Gräfin" xml:id="person_Eleonora_Catharina_Hessen_Eschwege_Landgräfin">
                         <persName>
@@ -7510,7 +7510,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1034716794</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Pfalzgraf" xml:id="person_Johann_Casimir_Kleeburg_Pfalzgraf">
                         <persName>
@@ -7566,7 +7566,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119314118</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Zweibrücken_Familie">
                         <persName>
@@ -7579,7 +7579,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119462788</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="König" xml:id="person_Karl_X._Gustav_Schweden_König">
                         <persName>
@@ -7696,7 +7696,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118720945</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Ernst_I._Hessen_Rheinfels_Rotenburg_Landgraf">
                         <persName>
@@ -7756,7 +7756,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118963287</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Eleonora_Hessen_Rheinfels_Rotenburg_Landgräfin">
                         <persName>
@@ -7784,7 +7784,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/102547394</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Georg_I._Hessen_Darmstadt_Landgraf">
                         <persName>
@@ -7812,7 +7812,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118690493</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Landgraf" xml:id="person_Ludwig_V._Hessen_Darmstadt_Landgraf">
                         <persName>
@@ -7864,7 +7864,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/102119538</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Georg_II._Hessen_Darmstadt_Landgraf">
                         <persName>
@@ -7904,7 +7904,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118884352</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Sophie_Eleonore_Hessen_Darmstadt_Landgräfin">
                         <persName>
@@ -7956,7 +7956,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/101421796</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Kurfürst" xml:id="person_Johann_Georg_I._Sachsen_Kurfürst">
                         <persName>
@@ -8216,7 +8216,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/100029752</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Ludwig_VI._Hessen_Darmstadt_Landgraf">
                         <persName>
@@ -8260,7 +8260,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/101248571</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Maria_Elisabeth_Hessen_Darmstadt_Landgräfin">
                         <persName>
@@ -8296,7 +8296,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104193379</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzog" xml:id="person_Friedrich_III._Schleswig_Holstein_Gottorf_Herzog">
                         <persName>
@@ -8383,7 +8383,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11870320X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Georg_Hessen_zu_Itter_und_Vöhl_Landgraf">
                         <persName>
@@ -8426,7 +8426,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/115562869</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Goldmayer_Andreas">
                         <persName>
@@ -8486,7 +8486,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/124374387</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Sophie_Eleonore_Hessen_Homburg_Landgräfin">
                         <persName>
@@ -8518,7 +8518,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1018974350</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Wilhelm_Christof_Hessen_Homburg_Landgraf">
                         <persName>
@@ -8549,7 +8549,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/13620306X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Elisabeth_Amalie_Magdalene_Pfalz_Kurfürstin">
                         <persName>
@@ -8615,7 +8615,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/12890285X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Stolberg_Luise_Christine_von">
                         <persName>
@@ -8658,7 +8658,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/120608073</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzog" xml:id="person_Philipp_Wilhelm_Pfalz_Kurfürst">
                         <persName>
@@ -8738,7 +8738,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118742221</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Johann_Hessen_Darmstadt_Landgraf">
                         <persName>
@@ -8777,7 +8777,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/121930882</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzogin" xml:id="person_Johannette_Sachsen_Eisenach_Herzogin">
                         <persName>
@@ -8878,7 +8878,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104158492</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Friedrich_II._Hessen_Darmstadt_Landgraf">
                         <persName>
@@ -8941,7 +8941,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104366869</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzogin" xml:id="person_Elisabeth_Magdalena_Württemberg_Mömpelgard_Herzogin">
                         <persName>
@@ -8993,7 +8993,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/120065290</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Ludwig_Friedrich_Württemberg_Herzog">
                         <persName>
@@ -9012,7 +9012,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1243965061</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzogin" xml:id="person_Anna_Eleonore_Braunschweig_Lüneburg_Herzogin">
                         <persName>
@@ -9072,7 +9072,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/120440407</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzog" xml:id="person_Georg_Braunschweig_Lüneburg_Herzog">
                         <persName>
@@ -9135,7 +9135,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119137356</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Sophie_Agnes_Pfalz_Hilpoltstein_Pfalzgräfin">
                         <persName>
@@ -9170,7 +9170,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118144596</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Johann_Friedrich_Pfalz_Hilpoltstein_Pfalzgraf">
                         <persName>
@@ -9198,7 +9198,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118144588</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Gräfin" xml:id="person_Juliane_Ostfriesland_Gräfin">
                         <persName>
@@ -9236,7 +9236,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104360097</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Ulrich_II._Ostfriesland_Graf">
                         <persName>
@@ -9268,7 +9268,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104360062</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Philipp_Hessen_Butzbach_Landgraf">
                         <persName>
@@ -9340,7 +9340,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/115864660</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Friedrich_I._Hessen_Homburg_Landgraf">
                         <persName>
@@ -9384,7 +9384,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118693492</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Margarethe_Elisabeth_Hessen_Homburg_Landgräfin">
                         <persName>
@@ -9454,7 +9454,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/109617572X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Georg_Christian_Hessen_Homburg_Landgraf">
                         <persName>
@@ -9474,7 +9474,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11874657X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Friedrich_II._Hessen_Homburg_Landgraf">
                         <persName>
@@ -9523,7 +9523,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118535676</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzog" xml:id="person_Philipp_Ludwig_Holstein_Sonderburg_Wiesenburg_Herzog">
                         <persName>
@@ -9555,7 +9555,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/138777497</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzog" xml:id="person_Alexander_Schleswig_Holstein_Sonderburg_Herzog">
                         <persName>
@@ -9579,7 +9579,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/136183921</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Boyneburg_Familie_1120_">
                         <persName>
@@ -9593,7 +9593,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/124587801</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Görtz_Familie">
                         <persName>
@@ -9606,7 +9606,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11869586X</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Textor_Johann">
                         <persName>
@@ -9674,7 +9674,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119105764</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Hermann_von_Buchenau">
                         <persName>
@@ -9718,7 +9718,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/131768859</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Landgraf" xml:id="person_Ludwig_I._Hessen_Landgraf">
                         <persName>
@@ -9750,7 +9750,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/11803698X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Müntzer_Valentin">
                         <persName>
@@ -9806,7 +9806,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119764776</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Adam_Melchior">
                         <persName>
@@ -9838,7 +9838,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/12005860X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Gregor_II._Papst">
                         <persName>
@@ -9886,7 +9886,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118718665</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Herzog" xml:id="person_Ludwig_II._Bayern_Herzog_Kurfürst">
                         <persName>
@@ -9954,7 +9954,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119431386</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Sayn_Familie">
                         <persName>
@@ -9967,7 +9967,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119460327</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Gottfried_von_Sponheim">
                         <persName>
@@ -9991,7 +9991,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1020800097</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Sayn_Wittgenstein_Familie_1361_1605">
                         <persName>
@@ -10005,7 +10005,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1075931002</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Gräfin" xml:id="person_Adelheid_zu_Sayn_Wittgenstein">
                         <persName>
@@ -10035,7 +10035,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/139835113</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Salentin_von_Sayn_Wittgenstein">
                         <persName>
@@ -10061,7 +10061,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/139593608</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Sayn_Wittgenstein_Johann_zu">
                         <persName>
@@ -10125,7 +10125,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/129047015</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Christian_Sayn_Wittgenstein_Graf">
                         <persName>
@@ -10163,7 +10163,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1297873947</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Ernst_Sayn_Wittgenstein_Sayn_Graf">
                         <persName>
@@ -10199,7 +10199,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1020270675</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Sayn_Wittgenstein_Sayn_Ernestine_Salentine">
                         <persName>
@@ -10227,7 +10227,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1018263039</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="König" xml:id="person_Wenzel_Heiliges_Römisches_Reich_König">
                         <persName>
@@ -10339,7 +10339,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118631349</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Sprenger_Johann_Theodor">
                         <persName>
@@ -10417,7 +10417,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/123479851</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Isis">
                         <persName>
@@ -10434,7 +10434,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118932640</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Vitus_Heiliger">
                         <persName>
@@ -10477,7 +10477,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118627279</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Bartholomäus_Apostel_Heiliger">
                         <persName>
@@ -10531,7 +10531,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118822195</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Michael_Erzengel">
                         <persName>
@@ -10564,7 +10564,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118733591</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Andreas_Apostel_Heiliger">
                         <persName>
@@ -10614,7 +10614,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118502891</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Pappenheim_Gottfried_Heinrich_zu">
                         <persName>
@@ -10686,7 +10686,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119020572</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Mentzer_Balthasar">
                         <persName>
@@ -10744,7 +10744,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/116885955</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Hermann_I._Hessen_Landgraf">
                         <persName>
@@ -10766,7 +10766,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/135868882</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Nordeck_zur_Rabenau_Familie">
                         <persName>
@@ -10779,7 +10779,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119393107</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Kurfürst" xml:id="person_Konrad_II._Mainz_Erzbischof_Kurfürst">
                         <persName>
@@ -10842,7 +10842,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/143324667</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Weinsberg_von_Familie_1140_1506">
                         <persName>
@@ -10855,7 +10855,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1075827698</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Laurentius_Heiliger">
                         <persName>
@@ -10910,7 +10910,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119320827</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Elisabeth_Thüringen_Landgräfin_Heilige">
                         <persName>
@@ -11068,7 +11068,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118529927</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Frank_Sebastian">
                         <persName>
@@ -11090,7 +11090,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1075736668</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Adolf_Heiliges_Römisches_Reich_König">
                         <persName>
@@ -11134,7 +11134,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118637606</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Landgraf" xml:id="person_Heinrich_I._Hessen_Landgraf">
                         <persName>
@@ -11166,7 +11166,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119138018</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Schnabel_Tilemann">
                         <persName>
@@ -11186,7 +11186,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/128935561</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Luther_Martin">
                         <persName>
@@ -11604,7 +11604,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/118575449</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Christian_Braunschweig_Lüneburg_Herzog">
                         <persName>
@@ -11671,7 +11671,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/10212809X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Königsmarck_Hans_Christoph_von">
                         <persName>
@@ -11734,7 +11734,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1159073112</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Geyso_Johann_von">
                         <persName>
@@ -11758,7 +11758,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/13648073X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person xml:id="person_Banér_Johan">
                         <persName>
@@ -11829,7 +11829,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/116048611</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Markgräfin" xml:id="person_Johanna_Baden_Durlach_Markgräfin">
                         <persName>
@@ -11901,7 +11901,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1017917787</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Graf" xml:id="person_Wolrad_IV._Waldeck_Graf">
                         <persName>
@@ -11948,7 +11948,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/104194650</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                     <person role="Reichsfürst" xml:id="person_Georg_Friedrich_Waldeck_Fürst">
                         <persName>
@@ -12063,7 +12063,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/119177269</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </person>
                 </listPerson>
             </div>

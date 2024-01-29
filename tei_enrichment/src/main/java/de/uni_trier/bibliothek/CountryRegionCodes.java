@@ -18,91 +18,14 @@
 
 package de.uni_trier.bibliothek;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Serializable;
-import java.math.BigInteger;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import javax.xml.namespace.QName;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import de.uni_trier.bibliothek.xml.events.model.generated.Desc;
-import de.uni_trier.bibliothek.xml.events.model.generated.Event;
-import de.uni_trier.bibliothek.xml.events.model.generated.EventDate;
-import de.uni_trier.bibliothek.xml.events.model.generated.ListEvent;
-import de.uni_trier.bibliothek.xml.listBibl.model.generated.Bibl;
-import de.uni_trier.bibliothek.xml.listBibl.model.generated.ListBibl;
-import de.uni_trier.bibliothek.xml.objects.model.generated.ListObject;
-import de.uni_trier.bibliothek.xml.objects.model.generated.ObjectIdentifier;
-import de.uni_trier.bibliothek.xml.orgs.model.generated.ListOrg;
-import de.uni_trier.bibliothek.xml.orgs.model.generated.Org;
-import de.uni_trier.bibliothek.xml.persons.model.generated.Birth;
-import de.uni_trier.bibliothek.xml.persons.model.generated.Death;
-import de.uni_trier.bibliothek.xml.persons.model.generated.Link;
-import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
-import de.uni_trier.bibliothek.xml.persons.model.generated.PersName;
-import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
-import de.uni_trier.bibliothek.xml.places.model.generated.ListPlace;
-import de.uni_trier.bibliothek.xml.places.model.generated.Location;
-import de.uni_trier.bibliothek.xml.places.model.generated.Note;
-import de.uni_trier.bibliothek.xml.places.model.generated.Place;
-import de.uni_trier.bibliothek.xml.places.model.generated.PlaceIdno;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Add;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Body;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Choice;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Del;
-import de.uni_trier.bibliothek.xml.tei.model.generated.DivFront;
-import de.uni_trier.bibliothek.xml.tei.model.generated.DocImprint;
-import de.uni_trier.bibliothek.xml.tei.model.generated.DocTitle;
-import de.uni_trier.bibliothek.xml.tei.model.generated.FileDesc;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Foreign;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Front;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Fw;
-import de.uni_trier.bibliothek.xml.tei.model.generated.GroupBody;
-import de.uni_trier.bibliothek.xml.tei.model.generated.GroupText;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Head;
-import de.uni_trier.bibliothek.xml.tei.model.generated.InnerGroup;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Item;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Lb;
-import de.uni_trier.bibliothek.xml.tei.model.generated.LbEtc;
-import de.uni_trier.bibliothek.xml.tei.model.generated.NameGND;
-import de.uni_trier.bibliothek.xml.tei.model.generated.OuterGroup;
-import de.uni_trier.bibliothek.xml.tei.model.generated.PFront;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Pb;
-import de.uni_trier.bibliothek.xml.tei.model.generated.PbFront;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Row;
-import de.uni_trier.bibliothek.xml.tei.model.generated.SourceGND;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Subst;
-import de.uni_trier.bibliothek.xml.tei.model.generated.TEI;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Table;
-import de.uni_trier.bibliothek.xml.tei.model.generated.TeiHeader;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Text;
-import de.uni_trier.bibliothek.xml.tei.model.generated.TitlePage;
-import de.uni_trier.bibliothek.xml.tei.model.generated.TitlePart;
-import de.uni_trier.bibliothek.xml.tei.model.generated.TitleStmt;
-import de.uni_trier.bibliothek.xml.tei.model.generated.TitleStmtValue;
-import jakarta.xml.bind.JAXBElement;
-
 public class CountryRegionCodes {
-
-
 	public static Boolean hasLocation = false;
-	
-
 	public static List<String> getCountries(JSONArray geographicAreaCode)
 	{
 		List<String> countries = new ArrayList<>();
@@ -588,7 +511,5 @@ public class CountryRegionCodes {
 					}
 				}
 				return regions;
-	}
-				
-			
+	}		
 }

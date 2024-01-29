@@ -78,13 +78,6 @@ public class XMLidFacsUrlSetter {
 	
 
 	public static TEI setIDs(TEI originalTEIParameter) throws IOException {
-		
-
-
-		// topo-hass-page-0001
-		// topo-hass-figu-0001
-		//url von graphics: https://doi.org/10.25353/topo-hass-figu-0001
-		//facs von pb: https://doi.org/10.25353/topo-hass-page-0001
 		originalTEI = originalTEIParameter;
 		TeiHeader teiHeader = originalTEI.getTeiHeader();
 		FileDesc fileDesc = teiHeader.getFileDesc();
@@ -92,15 +85,9 @@ public class XMLidFacsUrlSetter {
 		TitleStmtValue title = titleStmt.getTitle();
 		reference = title.getRef();
 		String bandReference = reference.substring(1, reference.length());
-		String bandName = "";
-		if(bandReference.equals("band_07"))
-		{
-			bandName = "hass";
-		}
+		String bandName = bandReference.substring(5,8);
 		figuDoiSuffix = "topo-" + bandName + "-figu-";
 		pbDoiSuffix = "topo-" + bandName + "-page-";
-		
-
 		pbCount = 1;
 		figuCount = 1;
 		Text originText = originalTEI.getText();
@@ -117,8 +104,6 @@ public class XMLidFacsUrlSetter {
 			checkBody(text.getBody());
 		}
 		
-		// System.out.println("inhalt von body: " + body.toString() );
-		
 		if(text.getGroup() != null)
 		{
 			checkOuterGroup(text.getGroup());
@@ -126,14 +111,12 @@ public class XMLidFacsUrlSetter {
 		
 		if(text.getBack() != null)
 		{
-			System.out.println("back ist !null!");
 			checkBack(text.getBack());
 		}
 	}
 
 	public static void checkFront(Front front) throws IOException {
 		List<Object> pbOrDivOrTitlePageList = front.getPbOrDivOrTitlePage();
-		// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
 		for (Object pbOrDivOrTitlePage : pbOrDivOrTitlePageList) {
 			if (pbOrDivOrTitlePage instanceof DivFront) {
 				DivFront divFrontElement = (DivFront) pbOrDivOrTitlePage;
@@ -202,9 +185,6 @@ public class XMLidFacsUrlSetter {
 	
 
 	public static void checkBody(Body body) throws IOException {
-		
-		// System.out.println("body as to string: " + body.toString());
-		// System.out.println("body getDivOrPbOrLb: " + body.getDivOrPbOrLb());
 		List<JAXBElement<?>> getDivOrPbOrLbList = body.getDivOrPbOrLb();
 		for (JAXBElement<?> divOrPbOrLbListElement : getDivOrPbOrLbList) {
 			if (divOrPbOrLbListElement.getValue() instanceof DivFront) {
@@ -285,8 +265,6 @@ public class XMLidFacsUrlSetter {
 		{
 			checkFront(groupText.getFront());
 		}
-		
-		
 	}
 
 		
@@ -347,23 +325,17 @@ public class XMLidFacsUrlSetter {
 	}
 
 	public static void checkBack(Back back) throws IOException {
-		System.out.println("inhalt von back: " + back.getDivOrPbOrLb());
 		List<JAXBElement<?>> divOrPbOrLb = back.getDivOrPbOrLb();
-		// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
 		for (JAXBElement<?> divOrPbOrLbElement : divOrPbOrLb) {
-			System.out.println("divOrPbOrLbElement liste wird gecheckt");
 			if (divOrPbOrLbElement.getValue() instanceof DivFront) {
-				System.out.println("divfront gefunden");
 				DivFront divFrontElement = (DivFront) divOrPbOrLbElement.getValue();
 				checkDivFront(divFrontElement);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Table) {
-				System.out.println("table gefunden");
 				Table table = (Table) divOrPbOrLbElement.getValue();
 				checkTable(table);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof de.uni_trier.bibliothek.xml.tei.model.generated.List) {
-				System.out.println("liste gefunden");
 				de.uni_trier.bibliothek.xml.tei.model.generated.List list = (de.uni_trier.bibliothek.xml.tei.model.generated.List) divOrPbOrLbElement.getValue();
 				checkList(list);
 			}
@@ -372,16 +344,13 @@ public class XMLidFacsUrlSetter {
 				pbElement.setId(getID(true));
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof LbEtc) {
-				System.out.println("lbetc gefunden");
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbElement.getValue();
 				checkLbEtc(lbEtcElement);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Lb) {
-				System.out.println("lb element gefunden");
 				Lb lbElement = (Lb) divOrPbOrLbElement.getValue();
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Fw) {
-				System.out.println("fw gefunden");
 				Fw fwElement = (Fw) divOrPbOrLbElement.getValue();
 				checkFw(fwElement);
 			}
@@ -406,8 +375,6 @@ public class XMLidFacsUrlSetter {
 		List<Serializable> listElement = list.getContent();
 		for (Object listElementObject : listElement) {
 			if (!(listElementObject instanceof String)) {
-			
-			
 			JAXBElement<?> jaxbElement = (JAXBElement<?>) listElementObject;
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
@@ -436,9 +403,6 @@ public class XMLidFacsUrlSetter {
 				Figure foreignElement = (Figure) jaxbElement.getValue();
 				foreignElement.setId(getID(false));
 			}
-
-
-
 			}
 
 
@@ -449,8 +413,6 @@ public class XMLidFacsUrlSetter {
 		List<Serializable> itemElement = item.getContent();
 		for (Object itemElementObject : itemElement) {
 			if (!(itemElementObject instanceof String)) {
-			
-			
 			JAXBElement<?> jaxbElement = (JAXBElement<?>) itemElementObject;
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
@@ -481,9 +443,6 @@ public class XMLidFacsUrlSetter {
 				Figure foreignElement = (Figure) jaxbElement.getValue();
 				foreignElement.setId(getID(false));
 			}
-
-
-			
 			}
 
 
@@ -495,9 +454,6 @@ public class XMLidFacsUrlSetter {
 		for (Object tableElement : tableList) {
 			if (!(tableElement instanceof String)) {
 				JAXBElement<?> jaxbElement = (JAXBElement<?>) tableElement;
-	
-			// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
-	
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
 			}
@@ -533,9 +489,6 @@ public class XMLidFacsUrlSetter {
 		for (Object rowElement : rowList) {
 			if (!(rowElement instanceof String)) {
 				JAXBElement<?> jaxbElement = (JAXBElement<?>) rowElement;
-	
-			// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
-	
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
 			}
@@ -572,7 +525,6 @@ public class XMLidFacsUrlSetter {
 			if (divFrontListElement.getValue() instanceof PFront) {
 				PFront pElement = (PFront) divFrontListElement.getValue();
 				checkPFront(pElement);
-				// System.out.println("pElements: " + pElement.getContent());				
 			}
 			else if (divFrontListElement.getValue() instanceof Fw) {
 				Fw fwElement = (Fw) divFrontListElement.getValue();
@@ -588,7 +540,6 @@ public class XMLidFacsUrlSetter {
 			}
 			else if(divFrontListElement.getValue() instanceof LbEtc)
 			{
-				
 				LbEtc lbEtcElement = (LbEtc)divFrontListElement.getValue();
 				checkLbEtc(lbEtcElement);
 			}
@@ -629,17 +580,12 @@ public class XMLidFacsUrlSetter {
 				Figure foreignElement = (Figure) divFrontListElement.getValue();
 				foreignElement.setId(getID(false));
 			}
-
-
-			
 		}
 	}
 
 	public static void checkHead(Head head) throws IOException {
 		List<Serializable> headList = head.getContent();
-		// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
 		for (Object headListElement : headList) {
-			
 			if (!(headListElement instanceof String))
 			{
 				JAXBElement<?> jaxbHeadListElement = (JAXBElement<?>) headListElement;
@@ -677,7 +623,6 @@ public class XMLidFacsUrlSetter {
 					Figure foreignElement = (Figure) jaxbHeadListElement.getValue();
 					foreignElement.setId(getID(false));
 				}
-
 		}
 		}
 	}
@@ -689,7 +634,6 @@ public class XMLidFacsUrlSetter {
 			if (!(titlePageListElement instanceof String))
 			{
 				JAXBElement<?> titlePageListElementObject = (JAXBElement<?>) titlePageListElement;
-
 				if (titlePageListElementObject.getValue() instanceof DocTitle) {
 					DocTitle docTitle = (DocTitle) titlePageListElementObject.getValue();
 					checkDocTitle(docTitle);
@@ -736,10 +680,7 @@ public class XMLidFacsUrlSetter {
 					Figure foreignElement = (Figure) titlePageListElementObject.getValue();
 					foreignElement.setId(getID(false));
 				}
-
-
 			}
-			
 		}
 	}
 
@@ -802,8 +743,7 @@ public class XMLidFacsUrlSetter {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) docTitleElement;
 						if(jaxbElement.getValue() instanceof Lb)
 						{
-							Lb LbElement = (Lb) jaxbElement.getValue();
-		
+							Lb LbElement = (Lb) jaxbElement.getValue();		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -847,10 +787,8 @@ public class XMLidFacsUrlSetter {
 						else if (jaxbElement.getValue() instanceof Figure) {
 							Figure foreignElement = (Figure) jaxbElement.getValue();
 							foreignElement.setId(getID(false));
-						}
-						
+						}						
 					}
-
 		}
 
 	}
@@ -862,8 +800,7 @@ public class XMLidFacsUrlSetter {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) titlePartObject;
 						if(jaxbElement.getValue() instanceof Lb)
 						{
-							Lb LbElement = (Lb) jaxbElement.getValue();
-		
+							Lb LbElement = (Lb) jaxbElement.getValue();		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -904,7 +841,6 @@ public class XMLidFacsUrlSetter {
 							foreignElement.setId(getID(false));
 						}
 					}
-
 		}
 
 	}
@@ -916,8 +852,7 @@ public class XMLidFacsUrlSetter {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) nameGNDObject;
 						if(jaxbElement.getValue() instanceof Lb)
 						{
-							Lb LbElement = (Lb) jaxbElement.getValue();
-		
+							Lb LbElement = (Lb) jaxbElement.getValue();		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -958,7 +893,6 @@ public class XMLidFacsUrlSetter {
 							foreignElement.setId(getID(false));
 						}
 					}
-
 		}
 
 	}
@@ -970,8 +904,7 @@ public class XMLidFacsUrlSetter {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) sourceGNDObject;
 						if(jaxbElement.getValue() instanceof Lb)
 						{
-							Lb LbElement = (Lb) jaxbElement.getValue();
-		
+							Lb LbElement = (Lb) jaxbElement.getValue();		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -1019,7 +952,6 @@ public class XMLidFacsUrlSetter {
 
 	public static void checkDel(Del del) throws IOException {
 		List<Serializable> delElementsList = del.getContent();
-
 		for (Object delElement : delElementsList) {
 			if (delElement instanceof LbEtc) {
 				LbEtc lbEtc = (LbEtc) delElement;
@@ -1058,9 +990,7 @@ public class XMLidFacsUrlSetter {
 				Figure foreignElement = (Figure) delElement;
 				foreignElement.setId(getID(false));
 			}
-
 		}
-
 	}
 	
 
@@ -1071,8 +1001,7 @@ public class XMLidFacsUrlSetter {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) pListElement;
 						if(jaxbElement.getValue() instanceof Lb)
 						{
-							Lb LbElement = (Lb) jaxbElement.getValue();
-		
+							Lb LbElement = (Lb) jaxbElement.getValue();		
 						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
@@ -1133,7 +1062,6 @@ public class XMLidFacsUrlSetter {
 
 	public static void checkChoice(Choice choice) throws IOException {
 			List<JAXBElement<?>> choiceElementsList = choice.getAbbrOrExpanOrOrig();
-
 			for (JAXBElement<?> jaxbElement : choiceElementsList) {
 				if (jaxbElement.getValue() instanceof LbEtc) {
 					LbEtc lbEtc = (LbEtc)jaxbElement.getValue();
@@ -1142,7 +1070,6 @@ public class XMLidFacsUrlSetter {
 				else if(jaxbElement.getValue() instanceof Lb) 
 				{
 					Lb lbElement = (Lb) jaxbElement.getValue();
-
 				}
 				else if(jaxbElement.getValue() instanceof NameGND) 
 				{
@@ -1172,14 +1099,10 @@ public class XMLidFacsUrlSetter {
 					Figure foreignElement = (Figure) jaxbElement.getValue();
 					foreignElement.setId(getID(false));
 				}
-
 			}
-		
-
 	}
 
 	public static void checkLbEtc(LbEtc lbEtc) throws IOException {
-
 		List<Serializable> lbEtcList = lbEtc.getContent();
 		for (Object lbEtcListElement : lbEtcList) {
 			if (!(lbEtcListElement instanceof String)) {
@@ -1191,7 +1114,6 @@ public class XMLidFacsUrlSetter {
 			 	else if (jaxbLbEtcListElement.getValue() instanceof Lb) 
 				{				
 					Lb lbElement = (Lb) jaxbLbEtcListElement.getValue();
-				
 				}
 				else if (jaxbLbEtcListElement.getValue() instanceof NameGND) 
 				{				
@@ -1279,13 +1201,11 @@ public class XMLidFacsUrlSetter {
 				foreignElement.setId(getID(false));
 			}
 		}
-
 		}
 	}
 
 	public static void checkSubst(Subst subst) throws IOException {
 		List<Serializable> substElementsList = subst.getContent();
-
 		for (Object substElemenObject : substElementsList) {
 			if (substElemenObject instanceof LbEtc) {
 				LbEtc lbEtc = (LbEtc) substElemenObject;
@@ -1321,14 +1241,11 @@ public class XMLidFacsUrlSetter {
 				Figure foreignElement = (Figure) substElemenObject;
 				foreignElement.setId(getID(false));
 			}
-
 		}
-
 	}
 
 	public static void checkAdd(Add add) throws IOException {
 		List<Serializable> addElementsList = add.getContent();
-
 		for (Object addElement : addElementsList) {
 			if (addElement instanceof LbEtc) {
 				LbEtc lbEtc = (LbEtc) addElement;
@@ -1367,21 +1284,17 @@ public class XMLidFacsUrlSetter {
 				Figure foreignElement = (Figure) addElement;
 				foreignElement.setId(getID(false));
 			}
-
 		}
-
 	}
 
 	public static void checkFw(Fw fwElement) throws IOException {
-
 		List<Serializable> fwElementList = fwElement.getContent();
 		for (Object fwElementListElement : fwElementList) {
 			if (!(fwElementListElement instanceof String)) {
 				JAXBElement<?> jaxbfwElementListElement = (JAXBElement<?>) fwElementListElement;
 			 	if (jaxbfwElementListElement.getValue() instanceof Lb) 
 				{				
-					Lb lbElement = (Lb) jaxbfwElementListElement.getValue();
-			
+					Lb lbElement = (Lb) jaxbfwElementListElement.getValue();			
 				}
 				else if (jaxbfwElementListElement.getValue() instanceof Foreign) {
 					Foreign foreignElement = (Foreign) jaxbfwElementListElement.getValue();
@@ -1400,8 +1313,7 @@ public class XMLidFacsUrlSetter {
 				else if (jaxbfwElementListElement.getValue() instanceof Figure) {
 					Figure foreignElement = (Figure) jaxbfwElementListElement.getValue();
 					foreignElement.setId(getID(false));
-				}
-				
+				}				
 		}
 		}
 	}

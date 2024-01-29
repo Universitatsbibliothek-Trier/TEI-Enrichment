@@ -118,29 +118,18 @@ public class EntityListEnricher {
 		fileName = bandFileName;
 		objectTEIList = originalObjectTEIList;
 		createJavaObjects();
-
 		TeiHeader teiHeader = originalTEI.getTeiHeader();
 		FileDesc fileDesc = teiHeader.getFileDesc();
 		TitleStmt titleStmt = fileDesc.getTitleStmt();
 		TitleStmtValue title = titleStmt.getTitle();
 		reference = title.getRef();
 		String bandReference = reference.substring(1, reference.length());
-		String bandName = "";
-		if(bandReference.equals("band_07"))
-		{
-			bandName = "hass";
-		}
+		String bandName = bandReference.substring(5, 8);
 		doiSuffix = "topo-" + bandName + "-divi-";
-
-
 		divCount = 1;
 		createLists();
 		Text originText = originalTEI.getText();
 		checkText(originText);
-
-		// JAXBElement<String> persNameJAXB;
-		// persNameJAXB = personsTEIObjectFactory.createPersonPersName("persname2");
-
 		return objectTEIList;
 	}
 
@@ -170,7 +159,7 @@ public class EntityListEnricher {
 			} else if (pbOrDivOrTitlePage instanceof TitlePage) {
 				TitlePage titlePage = (TitlePage) pbOrDivOrTitlePage;
 				checkTitlePage(titlePage);
-			} 
+			}
 
 		}
 	}
@@ -211,34 +200,30 @@ public class EntityListEnricher {
 		List<Serializable> foreignList = foreign.getContent();
 		for (Object foreignListObject : foreignList) {
 			if (!(foreignListObject instanceof String)) {
-			JAXBElement<?> jaxbElement = (JAXBElement<?>) foreignListObject;
-			if (jaxbElement.getValue() instanceof DivFront) {
-				DivFront divFrontElement = (DivFront) jaxbElement.getValue();
-				checkDivFront(divFrontElement);
-			} else if (jaxbElement.getValue() instanceof Choice) {
-				Choice choiceElement = (Choice) jaxbElement.getValue();
-				checkChoice(choiceElement);
-			} else if (jaxbElement.getValue() instanceof NameGND) {
-				NameGND nameElement = (NameGND) jaxbElement.getValue();
-				checkNameGnd(nameElement, null, null);
-			} else if (jaxbElement.getValue() instanceof SourceGND) {
-				SourceGND sourceElement = (SourceGND) jaxbElement.getValue();
-				checkSourceGND(sourceElement, null, null);
-			} else if (jaxbElement.getValue() instanceof LbEtc) {
-				LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
-				checkLbEtc(lbEtcElement, null);
-			} else if (jaxbElement.getValue() instanceof Table) {
-				Table tableElement = (Table) jaxbElement.getValue();
-				checkTable(tableElement);
-			} else if (jaxbElement.getValue() instanceof Subst) {
-				Subst substElement = (Subst) jaxbElement.getValue();
-				checkSubst(substElement);
+				JAXBElement<?> jaxbElement = (JAXBElement<?>) foreignListObject;
+				if (jaxbElement.getValue() instanceof DivFront) {
+					DivFront divFrontElement = (DivFront) jaxbElement.getValue();
+					checkDivFront(divFrontElement);
+				} else if (jaxbElement.getValue() instanceof Choice) {
+					Choice choiceElement = (Choice) jaxbElement.getValue();
+					checkChoice(choiceElement);
+				} else if (jaxbElement.getValue() instanceof NameGND) {
+					NameGND nameElement = (NameGND) jaxbElement.getValue();
+					checkNameGnd(nameElement, null, null);
+				} else if (jaxbElement.getValue() instanceof SourceGND) {
+					SourceGND sourceElement = (SourceGND) jaxbElement.getValue();
+					checkSourceGND(sourceElement, null, null);
+				} else if (jaxbElement.getValue() instanceof LbEtc) {
+					LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
+					checkLbEtc(lbEtcElement, null);
+				} else if (jaxbElement.getValue() instanceof Table) {
+					Table tableElement = (Table) jaxbElement.getValue();
+					checkTable(tableElement);
+				} else if (jaxbElement.getValue() instanceof Subst) {
+					Subst substElement = (Subst) jaxbElement.getValue();
+					checkSubst(substElement);
+				}
 			}
-			else if (jaxbElement.getValue() instanceof String) {
-				String substElement = (String) jaxbElement.getValue();
-			}
-		}
-
 		}
 	}
 
@@ -294,7 +279,7 @@ public class EntityListEnricher {
 			} else if (divOrPbOrLbListElement.getValue() instanceof Subst) {
 				Subst substElement = (Subst) divOrPbOrLbListElement.getValue();
 				checkSubst(substElement);
-			}else if (divOrPbOrLbListElement.getValue() instanceof Foreign) {
+			} else if (divOrPbOrLbListElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) divOrPbOrLbListElement.getValue();
 				checkForeign(foreignElement);
 			}
@@ -341,11 +326,10 @@ public class EntityListEnricher {
 				} else if (jaxbElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbElement.getValue();
 					checkSubst(substElement);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbElement.getValue();
-				checkForeign(foreignElement);
-			}
 			}
 
 		}
@@ -373,11 +357,10 @@ public class EntityListEnricher {
 				} else if (jaxbElement.getValue() instanceof SourceGND) {
 					SourceGND sourceGNDElement = (SourceGND) jaxbElement.getValue();
 					checkSourceGND(sourceGNDElement, null, null);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbElement.getValue();
-				checkForeign(foreignElement);
-			}
 
 			}
 
@@ -395,11 +378,10 @@ public class EntityListEnricher {
 				} else if (jaxbElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbElement.getValue();
 					checkSubst(substElement);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbElement.getValue();
-				checkForeign(foreignElement);
-			}
 			}
 		}
 	}
@@ -415,11 +397,10 @@ public class EntityListEnricher {
 				} else if (jaxbElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbElement.getValue();
 					checkSubst(substElement);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbElement.getValue();
-				checkForeign(foreignElement);
-			}
 			}
 		}
 	}
@@ -427,20 +408,14 @@ public class EntityListEnricher {
 	public static void checkDivFront(DivFront divFrontElement) throws IOException {
 		List<JAXBElement<?>> divFrontList = divFrontElement.getFwOrPOrFigure();
 
-		if(divCount > 9 && divCount < 100)
-		{
+		if (divCount > 9 && divCount < 100) {
 			divFrontElement.setId(doiSuffix + "00" + divCount);
-		}
-		else if(divCount > 99)
-		{
+		} else if (divCount > 99) {
 			divFrontElement.setId(doiSuffix + "0" + divCount);
-		}
-		else
-		{
+		} else {
 			divFrontElement.setId(doiSuffix + "000" + divCount);
 		}
 		divCount++;
-		
 
 		for (JAXBElement<?> divFrontListElement : divFrontList) {
 			if (divFrontListElement.getValue() instanceof PFront) {
@@ -491,11 +466,10 @@ public class EntityListEnricher {
 				} else if (jaxbHeadListElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbHeadListElement.getValue();
 					checkSubst(substElement);
+				} else if (jaxbHeadListElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbHeadListElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbHeadListElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbHeadListElement.getValue();
-				checkForeign(foreignElement);
-			}
 
 			}
 		}
@@ -527,11 +501,10 @@ public class EntityListEnricher {
 				} else if (titlePageListElementObject.getValue() instanceof TitlePart) {
 					TitlePart titlePartElement = (TitlePart) titlePageListElementObject.getValue();
 					checkTitlePart(titlePartElement);
+				} else if (titlePageListElementObject.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) titlePageListElementObject.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (titlePageListElementObject.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) titlePageListElementObject.getValue();
-				checkForeign(foreignElement);
-			}
 
 			}
 
@@ -556,8 +529,7 @@ public class EntityListEnricher {
 			} else if (jaxbElement.getValue() instanceof Subst) {
 				Subst substElement = (Subst) jaxbElement.getValue();
 				checkSubst(substElement);
-			}
-			else if (jaxbElement.getValue() instanceof Foreign) {
+			} else if (jaxbElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) jaxbElement.getValue();
 				checkForeign(foreignElement);
 			}
@@ -588,11 +560,10 @@ public class EntityListEnricher {
 				} else if (jaxbElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbElement.getValue();
 					checkSubst(substElement);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbElement.getValue();
-				checkForeign(foreignElement);
-			}
 			}
 
 		}
@@ -619,11 +590,10 @@ public class EntityListEnricher {
 				} else if (jaxbElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbElement.getValue();
 					checkSubst(substElement);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbElement.getValue();
-				checkForeign(foreignElement);
-			}
 			}
 
 		}
@@ -653,11 +623,10 @@ public class EntityListEnricher {
 				} else if (jaxbElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbElement.getValue();
 					checkSubst(substElement);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbElement.getValue();
-				checkForeign(foreignElement);
-			}
 			}
 		}
 	}
@@ -681,8 +650,7 @@ public class EntityListEnricher {
 			} else if (substElemenObject instanceof Add) {
 				Add addElement = (Add) substElemenObject;
 				checkAdd(addElement);
-			}
-			else if (substElemenObject instanceof Foreign) {
+			} else if (substElemenObject instanceof Foreign) {
 				Foreign foreignElement = (Foreign) substElemenObject;
 				checkForeign(foreignElement);
 			}
@@ -713,8 +681,7 @@ public class EntityListEnricher {
 			} else if (addElement instanceof Add) {
 				Add addElementRec = (Add) addElement;
 				checkAdd(addElementRec);
-			}
-			else if (addElement instanceof Foreign) {
+			} else if (addElement instanceof Foreign) {
 				Foreign foreignElement = (Foreign) addElement;
 				checkForeign(foreignElement);
 			}
@@ -745,8 +712,7 @@ public class EntityListEnricher {
 			} else if (delElement instanceof Del) {
 				Del delElementRec = (Del) delElement;
 				checkDel(delElementRec);
-			}
-			else if (delElement instanceof Foreign) {
+			} else if (delElement instanceof Foreign) {
 				Foreign foreignElement = (Foreign) delElement;
 				checkForeign(foreignElement);
 			}
@@ -771,8 +737,7 @@ public class EntityListEnricher {
 			} else if (jaxbElement.getValue() instanceof Subst) {
 				Subst substElement = (Subst) jaxbElement.getValue();
 				checkSubst(substElement);
-			}
-			else if (jaxbElement.getValue() instanceof Foreign) {
+			} else if (jaxbElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) jaxbElement.getValue();
 				checkForeign(foreignElement);
 			}
@@ -802,11 +767,10 @@ public class EntityListEnricher {
 				} else if (jaxbLbEtcListElement.getValue() instanceof Subst) {
 					Subst substElement = (Subst) jaxbLbEtcListElement.getValue();
 					checkSubst(substElement);
+				} else if (jaxbLbEtcListElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbLbEtcListElement.getValue();
+					checkForeign(foreignElement);
 				}
-				else if (jaxbLbEtcListElement.getValue() instanceof Foreign) {
-				Foreign foreignElement = (Foreign) jaxbLbEtcListElement.getValue();
-				checkForeign(foreignElement);
-			}
 			}
 		}
 	}
@@ -866,44 +830,42 @@ public class EntityListEnricher {
 		boolean multipleURLs = false;
 		SourceGND sourceGND = new SourceGND();
 		if (nameGND.getRef() != null) {
-			if (!(nameGND.getRef().contains("???")) && !(nameGND.getRef().contains("!!!"))&& !(nameGND.getRef().contains("***")) && !(nameGND.getRef().isEmpty()))  {
+			if (!(nameGND.getRef().contains("???")) && !(nameGND.getRef().contains("!!!"))
+					&& !(nameGND.getRef().contains("***")) && !(nameGND.getRef().isEmpty())) {
 				String[] refURLList = nameGND.getRef().split(" ");
 				for (int i = 0; i < refURLList.length; i++) {
 					String refURL = refURLList[i];
 					System.out.println("requestURL: " + refURL);
-					if(i>0)
-					{
+					if (i > 0) {
 						multipleURLs = true;
 					}
 					String prefix = makeHTTPRequest(refURL, nameGND, sourceGND, divFrontElement, multipleURLs);
 				}
-			} }
-			
-			for (Object nameGNDObject : nameGNDList) {
-				if (!(nameGNDObject instanceof String)) {
-					JAXBElement<?> jaxbElement = (JAXBElement<?>) nameGNDObject;
-					if (jaxbElement.getValue() instanceof Choice) {
-						Choice choiceElement = (Choice) jaxbElement.getValue();
-						checkChoice(choiceElement);
-					} else if (jaxbElement.getValue() instanceof NameGND) {
-						NameGND nameInNameGND = (NameGND) jaxbElement.getValue();
-						checkNameGnd(nameInNameGND, head, null);
-					} else if (jaxbElement.getValue() instanceof LbEtc) {
-						LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-						checkLbEtc(lbEtc, null);
-					} else if (jaxbElement.getValue() instanceof SourceGND) {
-						SourceGND sourceGNDrec = (SourceGND) jaxbElement.getValue();
-						checkSourceGND(sourceGNDrec, head, null);
-					} else if (jaxbElement.getValue() instanceof Subst) {
-						Subst substElement = (Subst) jaxbElement.getValue();
-						checkSubst(substElement);
-					}
-					else if (jaxbElement.getValue() instanceof Foreign) {
-						Foreign foreignElement = (Foreign) jaxbElement.getValue();
-						checkForeign(foreignElement);
-					}
-				
-			
+			}
+		}
+
+		for (Object nameGNDObject : nameGNDList) {
+			if (!(nameGNDObject instanceof String)) {
+				JAXBElement<?> jaxbElement = (JAXBElement<?>) nameGNDObject;
+				if (jaxbElement.getValue() instanceof Choice) {
+					Choice choiceElement = (Choice) jaxbElement.getValue();
+					checkChoice(choiceElement);
+				} else if (jaxbElement.getValue() instanceof NameGND) {
+					NameGND nameInNameGND = (NameGND) jaxbElement.getValue();
+					checkNameGnd(nameInNameGND, head, null);
+				} else if (jaxbElement.getValue() instanceof LbEtc) {
+					LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
+					checkLbEtc(lbEtc, null);
+				} else if (jaxbElement.getValue() instanceof SourceGND) {
+					SourceGND sourceGNDrec = (SourceGND) jaxbElement.getValue();
+					checkSourceGND(sourceGNDrec, head, null);
+				} else if (jaxbElement.getValue() instanceof Subst) {
+					Subst substElement = (Subst) jaxbElement.getValue();
+					checkSubst(substElement);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
+				}
 
 			}
 		}
@@ -915,53 +877,53 @@ public class EntityListEnricher {
 		NameGND nameGND = new NameGND();
 		boolean multipleURLs = false;
 		if (sourceGNDGND.getSource() != null) {
-			if (!(sourceGNDGND.getSource().contains("???")) && !(sourceGNDGND.getSource().contains("!!!"))&& !(sourceGNDGND.getSource().contains("***")) && !(sourceGNDGND.getSource().isEmpty()))  {
+			if (!(sourceGNDGND.getSource().contains("???")) && !(sourceGNDGND.getSource().contains("!!!"))
+					&& !(sourceGNDGND.getSource().contains("***")) && !(sourceGNDGND.getSource().isEmpty())) {
 				String[] refURLList = sourceGNDGND.getSource().split(" ");
 				for (int i = 0; i < refURLList.length; i++) {
 					String refURL = refURLList[i];
 					System.out.println("requestURL: " + refURL);
-					if(i>0)
-					{
+					if (i > 0) {
 						multipleURLs = true;
 					}
 					String prefix = makeHTTPRequest(refURL, nameGND, sourceGNDGND, divFrontElement, multipleURLs);
 				}
-			} }
-			
-			for (Object sourceGNDObject : sourceGNDList) {
-				if (!(sourceGNDObject instanceof String)) {
-					JAXBElement<?> jaxbElement = (JAXBElement<?>) sourceGNDObject;
-					if (jaxbElement.getValue() instanceof Choice) {
-						Choice choiceElement = (Choice) jaxbElement.getValue();
-						checkChoice(choiceElement);
-						
-					} else if (jaxbElement.getValue() instanceof NameGND) {
-						System.out.println("name-element in quote gefunden");
-						NameGND nameInNameGND = (NameGND) jaxbElement.getValue();
-						checkNameGnd(nameInNameGND, head, divFrontElement);
-					} else if (jaxbElement.getValue() instanceof LbEtc) {
-						LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
-						checkLbEtc(lbEtc, null);
-					} else if (jaxbElement.getValue() instanceof SourceGND) {
-						SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
-						checkSourceGND(sourceGND, head, divFrontElement);
-					} else if (jaxbElement.getValue() instanceof Subst) {
-						Subst substElement = (Subst) jaxbElement.getValue();
-						checkSubst(substElement);
-					}
-					else if (jaxbElement.getValue() instanceof Foreign) {
-						Foreign foreignElement = (Foreign) jaxbElement.getValue();
-						checkForeign(foreignElement);
-					}
-				
+			}
+		}
+
+		for (Object sourceGNDObject : sourceGNDList) {
+			if (!(sourceGNDObject instanceof String)) {
+				JAXBElement<?> jaxbElement = (JAXBElement<?>) sourceGNDObject;
+				if (jaxbElement.getValue() instanceof Choice) {
+					Choice choiceElement = (Choice) jaxbElement.getValue();
+					checkChoice(choiceElement);
+
+				} else if (jaxbElement.getValue() instanceof NameGND) {
+					System.out.println("name-element in quote gefunden");
+					NameGND nameInNameGND = (NameGND) jaxbElement.getValue();
+					checkNameGnd(nameInNameGND, head, divFrontElement);
+				} else if (jaxbElement.getValue() instanceof LbEtc) {
+					LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
+					checkLbEtc(lbEtc, null);
+				} else if (jaxbElement.getValue() instanceof SourceGND) {
+					SourceGND sourceGND = (SourceGND) jaxbElement.getValue();
+					checkSourceGND(sourceGND, head, divFrontElement);
+				} else if (jaxbElement.getValue() instanceof Subst) {
+					Subst substElement = (Subst) jaxbElement.getValue();
+					checkSubst(substElement);
+				} else if (jaxbElement.getValue() instanceof Foreign) {
+					Foreign foreignElement = (Foreign) jaxbElement.getValue();
+					checkForeign(foreignElement);
+				}
 
 			}
-		
+
 		}
 
 	}
 
-	public static String makeHTTPRequest(String refURL, NameGND nameGND, SourceGND sourceGND, DivFront divFrontElement, Boolean multipleURLs)
+	public static String makeHTTPRequest(String refURL, NameGND nameGND, SourceGND sourceGND, DivFront divFrontElement,
+			Boolean multipleURLs)
 			throws IOException {
 		String entityPrefix = "";
 		String cutURL = refURL.substring(18, refURL.length());
@@ -969,11 +931,11 @@ public class EntityListEnricher {
 		if (divFrontElement == null || divFrontElement.getType() == null) {
 			divFrontElement = new DivFront();
 		} else if (divFrontElement.getType().equals("overview") || divFrontElement.getType().equals("transition")
-				|| divFrontElement.getType().equals("index") || divFrontElement.getN() != null || (divFrontElement.getType().equals("appendix"))){
+				|| divFrontElement.getType().equals("index") || divFrontElement.getN() != null
+				|| (divFrontElement.getType().equals("appendix"))) {
 			isOrtsartikel = false;
 		}
 
-		
 		String completeURL = "https://lobid.org/" + cutURL + ".json";
 		URL url = new URL(completeURL);
 
@@ -989,9 +951,7 @@ public class EntityListEnricher {
 			responseStrBuilder.append(inputStr);
 		JSONObject jsonObject = new JSONObject(responseStrBuilder.toString());
 
-
 		String preferredNameString = jsonObject.getString("preferredName");
-
 
 		preferredNameString = preferredNameString.replaceAll(" ", "_");
 		preferredNameString = preferredNameString.replaceAll("/", "_");
@@ -1021,12 +981,9 @@ public class EntityListEnricher {
 			if (oberkategorie.equals("listBibl")) {
 
 				String oldRef = "";
-				if(!(sourceGND.getRef() == null) && multipleURLs)
-				{
+				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
-				}
-				else if(!(nameGND.getRef() == null) && multipleURLs)
-				{
+				} else if (!(nameGND.getRef() == null) && multipleURLs) {
 					oldRef = nameGND.getRef() + " ";
 				}
 				System.out.println("isBiblList eintrag");
@@ -1036,18 +993,15 @@ public class EntityListEnricher {
 					divFrontElement.setCorresp("mgndbibl:listBibl_" + preferredNameString);
 				}
 				// typeTermslist.remove("Work");
-				EntityListWriter.writeListBiblEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
+				EntityListWriter.writeListBiblEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
+						isOrtsartikel);
 
-			}
-			else if (oberkategorie.equals("person")) {
+			} else if (oberkategorie.equals("person")) {
 				System.out.println("person eintrag");
 				String oldRef = "";
-				if(!(sourceGND.getRef() == null) && multipleURLs)
-				{
+				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
-				}
-				else if(!(nameGND.getRef() == null) && multipleURLs)
-				{
+				} else if (!(nameGND.getRef() == null) && multipleURLs) {
 					oldRef = nameGND.getRef() + " ";
 				}
 
@@ -1056,18 +1010,15 @@ public class EntityListEnricher {
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndper:person_" + preferredNameString);
 				}
-				EntityListWriter.writePersonEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
+				EntityListWriter.writePersonEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
+						isOrtsartikel);
 
-			}
-			else if (oberkategorie.equals("event"))  {
+			} else if (oberkategorie.equals("event")) {
 				System.out.println("event eintrag");
 				String oldRef = "";
-				if(!(sourceGND.getRef() == null) && multipleURLs)
-				{
+				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
-				}
-				else if(!(nameGND.getRef() == null) && multipleURLs)
-				{
+				} else if (!(nameGND.getRef() == null) && multipleURLs) {
 					oldRef = nameGND.getRef() + " ";
 				}
 				nameGND.setRef(oldRef + "mgndeve:event_" + preferredNameString);
@@ -1075,17 +1026,14 @@ public class EntityListEnricher {
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndeve:event_" + preferredNameString);
 				}
-				EntityListWriter.writeEventsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
-			}
-			else if (oberkategorie.equals("org")) {
+				EntityListWriter.writeEventsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
+						isOrtsartikel);
+			} else if (oberkategorie.equals("org")) {
 				System.out.println("orgs eintrag");
 				String oldRef = "";
-				if(!(sourceGND.getRef() == null) && multipleURLs)
-				{
+				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
-				}
-				else if(!(nameGND.getRef() == null) && multipleURLs)
-				{
+				} else if (!(nameGND.getRef() == null) && multipleURLs) {
 					oldRef = nameGND.getRef() + " ";
 				}
 				nameGND.setRef(oldRef + "mgndorgs:org_" + preferredNameString);
@@ -1093,17 +1041,14 @@ public class EntityListEnricher {
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndorgs:org_" + preferredNameString);
 				}
-				EntityListWriter.writeOrgsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
-			}
-			else if (oberkategorie.equals("object")) {
+				EntityListWriter.writeOrgsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
+						isOrtsartikel);
+			} else if (oberkategorie.equals("object")) {
 				System.out.println("object eintrag");
 				String oldRef = "";
-				if(!(sourceGND.getRef() == null) && multipleURLs)
-				{
+				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
-				}
-				else if(!(nameGND.getRef() == null) && multipleURLs)
-				{
+				} else if (!(nameGND.getRef() == null) && multipleURLs) {
 					oldRef = nameGND.getRef() + " ";
 				}
 				nameGND.setRef(oldRef + "mgndobj:object_" + preferredNameString);
@@ -1112,17 +1057,14 @@ public class EntityListEnricher {
 					divFrontElement.setCorresp("mgndeve:object_" + preferredNameString);
 				}
 				objectHasType = true;
-				EntityListWriter.writeObjectsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
-			}
-			else if (oberkategorie.equals("place")) {
+				EntityListWriter.writeObjectsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
+						isOrtsartikel);
+			} else if (oberkategorie.equals("place")) {
 				System.out.println("place eintrag");
 				String oldRef = "";
-				if(!(sourceGND.getRef() == null) && multipleURLs)
-				{
+				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
-				}
-				else if(!(nameGND.getRef() == null) && multipleURLs)
-				{
+				} else if (!(nameGND.getRef() == null) && multipleURLs) {
 					oldRef = nameGND.getRef() + " ";
 				}
 				nameGND.setRef(oldRef + "mgndobj:place_" + preferredNameString);
@@ -1131,14 +1073,13 @@ public class EntityListEnricher {
 					divFrontElement.setCorresp("mgndeve:place_" + preferredNameString);
 				}
 				objectHasType = true;
-				EntityListWriter.writePlacesEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement, isOrtsartikel);
+				EntityListWriter.writePlacesEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
+						isOrtsartikel);
 			}
 		}
 
 		return entityPrefix;
 	}
-
-
 
 	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if (jsonObject.has("broaderTermInstantial")) {
@@ -1148,7 +1089,6 @@ public class EntityListEnricher {
 		}
 
 	}
-
 
 	public static void writePlacesEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
 		if (jsonObject.has("broaderTermInstantial")) {
@@ -1198,7 +1138,7 @@ public class EntityListEnricher {
 					break;
 				case "ConferenceOrEvent":
 				case "SeriesOfConferenceOrEvent":
-				categoriesPoints.put("event", categoriesPoints.get("event") + 1);
+					categoriesPoints.put("event", categoriesPoints.get("event") + 1);
 					break;
 				case "HistoricSingleEventOrEra":
 					categoriesPoints.put("event", categoriesPoints.get("event") + 10);

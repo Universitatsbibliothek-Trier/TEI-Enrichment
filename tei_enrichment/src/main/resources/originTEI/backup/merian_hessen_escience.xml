@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" xml:id="band_07">
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../schemes/teiOrigin.xsd" xml:id="band_hass">
 
     <teiHeader>
         <fileDesc>
 
             <titleStmt>
-                <title ref="#band_07">M.Z. Topographia Hassiæ, Et Regionum Vicinarum. Grundstrukturierte TEI-Daten.</title>
+                <title ref="#band_hass">M.Z. Topographia Hassiæ, Et Regionum Vicinarum. Grundstrukturierte TEI-Daten.</title>
 
                 <!-- Verantwortlichkeiten -->
                 <respStmt>

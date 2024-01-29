@@ -21,8 +21,6 @@ package de.uni_trier.bibliothek.xml.listBibl;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.glassfish.jaxb.runtime.marshaller.NamespacePrefixMapper;
-
 import jakarta.xml.bind.JAXBException;
 import de.uni_trier.bibliothek.xml.Marshaller;
 import de.uni_trier.bibliothek.xml.listBibl.model.generated.TEI;

@@ -40,11 +40,9 @@ public class XMLValidator
             Schema schema = factory.newSchema(new File(xsdPath));
             Validator validator = schema.newValidator();
             validator.validate(new StreamSource(new File(xmlPath)));
-
         }
         catch (IOException | SAXException e)
         {
-            System.out.println("Exception: " + e.getMessage());
             return false;
         }
             return true;
@@ -58,11 +56,9 @@ public class XMLValidator
             Schema schema = factory.newSchema(xsdPath);
             Validator validator = schema.newValidator();
             validator.validate(new StreamSource(new File(xmlPath)));
-
         }
         catch (IOException | SAXException e)
         {
-            System.out.println("Exception: " + e.getMessage());
             return false;
         }
             return true;

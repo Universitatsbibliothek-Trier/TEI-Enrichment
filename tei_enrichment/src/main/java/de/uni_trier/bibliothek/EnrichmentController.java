@@ -73,23 +73,11 @@ public class EnrichmentController {
         chosenButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-
                 String TEIOriginalFilePath = (EnrichmentController.getSelectedFile()).toString();
                 try (InputStream inputStream = new FileInputStream(EnrichmentController.getSelectedFile())) {
 
-                    //commentate after testing
-                    // InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml");
-                    // Reader xmlReader = new InputStreamReader(inputStreamTest);
-                    // TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_all_elements_example_before.xml";
-
-                    InputStream inputStreamTest = new FileInputStream("/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_hessen_escience.xml");
-                    Reader xmlReader = new InputStreamReader(inputStreamTest);
-                    TEIOriginalFilePath = "/home/ackels/Dokumente/test_enrichment/tei_enrichment/tei_enrichment/src/main/resources/originTEI/backup/merian_hessen_escience.xml";
-                    //till here
-
                     Boolean anyCheckBoxSelected = false;
-                    // dekommentieren für production
-                    // Reader xmlReader = new InputStreamReader(inputStream);
+                    Reader xmlReader = new InputStreamReader(inputStream);
                     TEI teiFile = TEIUnmarshaller.unmarshal(xmlReader);
 
                     int lastSlash = TEIOriginalFilePath.lastIndexOf('/');
@@ -97,7 +85,6 @@ public class EnrichmentController {
                             TEIOriginalFilePath.length());
                     fileName = originalTEIFileName;
                     originalTEIFileName = originalTEIFileName.substring(0, originalTEIFileName.length() - 4);
-                    
 
                     originalTEIFileName = originalTEIFileName + "_enriched.xml";
                     String teiPathName = TEIOriginalFilePath.substring(0, lastSlash + 1);
@@ -105,16 +92,14 @@ public class EnrichmentController {
                     
                     List<Object> TEIJavaObjectsList = TEIObjectsListCreator.createTEIJavaObects(teiPathName, teiFile);
 
-                    if (checkBoxXML.isSelected()) {
-                        System.out.println("checkbox xml selected!");             
+                    if (checkBoxXML.isSelected()) {           
                         teiFile = XMLidFacsUrlSetter.setIDs(teiFile);
                         anyCheckBoxSelected = true;
                         infoText.setText("IDs für pb- und figure-Elemente eingetragen als \"merian_****_enriched.xml\"");
                         TEIJavaObjectsList.set(0, teiFile);
                     }
 
-                    if (checkBoxLines.isSelected()) {
-                        System.out.println("checkbox lines selected!");             
+                    if (checkBoxLines.isSelected()) {           
                         teiFile = LineCounter.countLines(teiFile);
                         anyCheckBoxSelected = true;
                         infoText.setText("Zeilen gezählt und gespeichert als \"merian_****_enriched.xml\"");
@@ -122,8 +107,6 @@ public class EnrichmentController {
                     }
 
                     if (checkBoxEntities.isSelected()) {
-                        System.out.println("checkbox Entitätenlisten erstellen selected!");
-                        System.out.println("fileName ist: " + fileName);
                         TEIJavaObjectsList = EntityListEnricher.enrichList(TEIJavaObjectsList, fileName);
                         teiFile = (TEI) TEIJavaObjectsList.get(0);
                         EntityListCreator.createEnrichedEntityLists(teiPathName, TEIJavaObjectsList);

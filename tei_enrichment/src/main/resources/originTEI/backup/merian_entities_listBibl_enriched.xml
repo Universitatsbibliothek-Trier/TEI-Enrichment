@@ -38,7 +38,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4579228-8</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Geographia">
                         <title>Geographia</title>
@@ -58,7 +58,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4219528-7</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Res_Germanicae">
                         <title>Res Germanicae</title>
@@ -70,7 +70,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/7636924-9</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Germania">
                         <title>Germania</title>
@@ -107,7 +107,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4078122-7</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Panegyrici_Latini">
                         <title>Panegyrici Latini</title>
@@ -125,7 +125,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4242487-2</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_De_gentium_aliquot_migrationibus">
                         <title>De gentium aliquot migrationibus</title>
@@ -136,7 +136,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4590291-4</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Cosmographia_2._Hälfte_8._Jh.">
                         <title>Cosmographia (2. Hälfte 8. Jh.)</title>
@@ -149,7 +149,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4285629-2</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Germania_antiqua">
                         <title>Germania antiqua</title>
@@ -159,7 +159,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4341754-1</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Jüngster_Reichsabschied">
                         <title>Jüngster Reichsabschied</title>
@@ -174,7 +174,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/1256053171</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Westfälischer_Frieden_1648_Oktober_24">
                         <title>Westfälischer Frieden (1648 Oktober 24)</title>
@@ -193,7 +193,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4065777-2</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                     <bibl xml:id="listBibl_Peutingersche_Tafel">
                         <title>Peutingersche Tafel</title>
@@ -213,7 +213,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4173971-1</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </bibl>
                 </listBibl>
             </div>

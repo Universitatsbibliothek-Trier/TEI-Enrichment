@@ -53,7 +53,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4709480-1</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </event>
                     <event xml:id="event_Schlacht_von_Riade">
                         <label>Schlacht von Riade</label>
@@ -73,7 +73,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/122388211X</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </event>
                     <event xml:id="event_Nürnberger_Exekutionstag">
                         <label>Nürnberger Exekutionstag</label>
@@ -93,7 +93,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4283589-6</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </event>
                     <event xml:id="event_Reichstag_1653_1654_Regensburg">
                         <label>Reichstag (1653-1654 : Regensburg)</label>
@@ -106,7 +106,7 @@
                             </list>
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/3070085-1</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </event>
                     <event xml:id="event_Dreißigjähriger_Krieg">
                         <label>Dreißigjähriger Krieg</label>
@@ -125,7 +125,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4012985-8</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </event>
                     <event xml:id="event_Reichstag">
                         <label>Reichstag</label>
@@ -139,7 +139,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4049170-5</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </event>
                     <event xml:id="event_Bauernkrieg_1525">
                         <label>Bauernkrieg &lt;1525&gt;</label>
@@ -160,7 +160,7 @@
                         </note>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4069173-1</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                     </event>
                 </listEvent>
             </div>

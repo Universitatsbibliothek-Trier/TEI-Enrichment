@@ -36,7 +36,7 @@
                             <objectName>Griechen</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4022046-1</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -54,7 +54,7 @@
                             <objectName>Katten</objectName>
                             <objectName>Chatti &lt;Volk&gt;</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -70,7 +70,7 @@
                             <objectName>Westfalen &lt;Volk&gt;</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4132760-3</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -87,7 +87,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4122633-1</idno>
                             <objectName>Civis Romanus</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -104,7 +104,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4222644-2</idno>
                             <objectName>Bructeri</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -121,7 +121,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4018610-6</idno>
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -136,7 +136,7 @@
                             <objectName>Chauken</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4229462-9</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -153,7 +153,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4090358-8</idno>
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -171,7 +171,7 @@
                             <objectName>Vangiones</objectName>
                             <objectName>Wangionen</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -189,7 +189,7 @@
                             <objectName>Dazier</objectName>
                             <objectName>Daci</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -206,7 +206,7 @@
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                             <objectName>Siebenbürgen / Deutsche</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -223,7 +223,7 @@
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                             <objectName>Germanische Völker</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -241,7 +241,7 @@
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                             <objectName>Alamannen</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -258,7 +258,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4071340-4</idno>
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -276,7 +276,7 @@
                             <objectName>Donausueben</objectName>
                             <objectName>Quadi</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -292,7 +292,7 @@
                             <objectName>Hessen &lt;Volk&gt;</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4024731-4</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -308,7 +308,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4059980-2</idno>
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -328,7 +328,7 @@
                             <objectName>Gothones</objectName>
                             <objectName>Gothi</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -343,7 +343,7 @@
                             <objectName>Sachsen &lt;Volk&gt;</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4118199-2</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -362,7 +362,7 @@
                             <objectName>Jasy</objectName>
                             <objectName>Assi &lt;Volk&gt;</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -383,7 +383,7 @@
                             <objectName>Sueben</objectName>
                             <objectName>Suawen</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -399,7 +399,7 @@
                             <objectName>Niederdeutsche</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4364982-8</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -416,7 +416,7 @@
                             <objectName>Ermunduren</objectName>
                             <objectName>Hermunduri</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -433,7 +433,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4076935-5</idno>
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -450,7 +450,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/1124569146</idno>
                             <objectName>Mattiaci</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -468,7 +468,7 @@
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                             <objectName>Frühneuhochdeutsche Sprache</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -488,7 +488,7 @@
                             <objectName>Plattdeutsch</objectName>
                             <objectName>Neuniederdeutsch</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -503,7 +503,7 @@
                             <objectName>Veitstag</objectName>
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/1186647310</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -525,7 +525,7 @@
                             <objectName>michaelmas</objectName>
                             <objectName>Michaeli</objectName>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>
@@ -542,7 +542,7 @@
                             <idno type="URI" subtype="GND">https://d-nb.info/gnd/4048946-2</idno>
                             <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         </objectIdentifier>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="categories">
                             <list type="supercategory">
                                 <item>SubjectHeading</item>

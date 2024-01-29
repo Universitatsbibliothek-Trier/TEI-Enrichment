@@ -50,7 +50,7 @@
                         <orgName>Matthaei Meriani Seel. Erben (Frankfurt, Main)</orgName>
                         <orgName>Matthæus Merianus Erben (Frankfurt, Main)</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/6009670-6</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Der Verlag wurde seit dem Tod von Matthäus Merian d.Ä., 1650, unter der Bezeichnung "Matthäus Merians Seel. Erben" (oder ähnlich) geführt, bis zur Auflösung 1727</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -128,7 +128,7 @@
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/43583-1</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Geistlicher Ritterorden, im 12. Jh. aus Spitalbruderschaft (Mitte 11. Jh.) in Jerusalem entwickelt, 1152/53 päpstlich anerkannt, seit Belehnung mit Malta 1530 Kurzbezeichnung Malteserorden üblich, seit 1852 Bezeichnung für katholischen geistl. Ritterorden, Sitz Rom</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -150,7 +150,7 @@
                         <orgName>Reichsabtei Hersfeld</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/5118765-6</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Benediktinerkloster</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -170,7 +170,7 @@
                         <orgName>Abbaye Saint Grégoire Munster</orgName>
                         <orgName>Benediktinerkloster Münster (Münster, Oberelsass)</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4497639-2</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Benediktinerkloster um 660 gegründet, 675 urkundl. erwähnt, 1235-1648 Reichsabtei, August 1791 aufgehoben, Gebäude 1802 abgebrochen</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -186,7 +186,7 @@
                         <orgName>Benediktinerkloster Prüm</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4224267-8</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">gegr. 721; 1802 aufgehoben</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -201,7 +201,7 @@
                         <orgName>Stift Weißenburg</orgName>
                         <orgName>Kollegiatstift Weißenburg</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4498043-7</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Kollegiatstift 1524 aus Benediktinerabtei umgewandelt, 1789 aufgelöst</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -221,7 +221,7 @@
                         <orgName>Stift. Odenheim</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4724937-7</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Gegründet um 1100, 1803 säkularisiert; Benediktinerkloster.</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -237,7 +237,7 @@
                         <orgName>Benediktinerinnenkloster</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4573609-1</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Von Fulda aus gegr., bis zur Reformation bestehendes Frauenkloster</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -257,7 +257,7 @@
                         <orgName>Kaiserliches und des Heiligen Römischen Reichs Kammergericht</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/64409-2</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Oberstes Gericht des Heiligen Römischen Reiches neben dem Reichshofrat, Errichtung 1495 auf dem "Reichstag zu Worms" beschlossen, 1499 Auflösung, 1501 Neuerrichtung, 1519 erneute Auflösung, 1521 nochmalige Neuerrichtung, 1527-1689 in Speyer, seit 1689 in Wetzlar, 1806 endgültige Auflösung; 1501-1519 ständig wechselnde Sitzorte (Nürnberg, Regensburg, Speyer, Worms)</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -297,7 +297,7 @@
                         <orgName>Justus-Liebig-Universität Lahn</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/36154-9</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Mehrfache Umbenennungen der Universität: 1806-1919 Großherzoglich Hessische Ludwigs-Universität zu Gießen (Ludoviciana), 1919-1930 Hessische Ludwigs-Universität zu Gießen, 1930-1935 Hessische Ludwigs-Universität Gießen, 1935-1945 Ludwigs-Universität Gießen, 1945-1956 geschlossen, 1950-1957 Justus-Liebig-Hochschule, 1957 wiedereröffnet und seitdem unter dem Namen Justus-Liebig-Universität Gießen</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -313,7 +313,7 @@
                         <orgName>Johanniterorden auf Malta</orgName>
                         <orgName>Malteserorden</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4168735-8</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Benutzt seit 1530, vorher Johanniter</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -329,7 +329,7 @@
                         <orgName>Abtei Marienstatt</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/2045580-X</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Zisterzienserkloster</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -348,7 +348,7 @@
                         <orgName>Wetterauer Grafenverein</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4231702-2</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Reichsgrafenkollegium</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -360,7 +360,7 @@
                         <orgName>Salzwerk Sooden</orgName>
                         <orgName>Saline Sooden</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/7593344-5</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Saline</note>
                         <note type="categories">
                             <list type="supercategory">
@@ -382,7 +382,7 @@
                         <orgName>Ordo Militae Christi Templi Hierosolymitani</orgName>
                         <idno type="URI" subtype="GND">https://d-nb.info/gnd/4134088-7</idno>
                         <idno type="URI" subtype="WIKIDATA">http://www.wikidata.org/entity/Q2013</idno>
-                        <link target="merian_hessen_escience.xml#band_07"/>
+                        <link target="merian_hessen_escience.xml#band_hass"/>
                         <note type="desc">Geistlicher Ritterorden 1119 von Hugo von Payens in Jerusalem gegründet, 1128/29 päpstl. bestätigt, März 1312 aufgehoben, die Besitzungen fielen großteils an den Johanniterorden; in Schottland, Portugal u. Nord-Italien als militär. christl. Laien-Ritterorden neu formiert (1705 Ordensstatuten), Wiederzulassung in Frankreich unter Napoleon I.; Wiederanerkennung durch kath. Kirche seit 1845 nicht erreicht</note>
                         <note type="categories">
                             <list type="supercategory">

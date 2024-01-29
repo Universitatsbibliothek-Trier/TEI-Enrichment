@@ -107,7 +107,7 @@
                <children>
                   <CheckBox id="checkBoxLines" fx:id="checkBoxEntities" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="90.0" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
                      <GridPane.margin>
-                        <Insets bottom="20.0" right="175.0" top="190.0" />
+                        <Insets bottom="20.0" right="185.0" top="190.0" />
                      </GridPane.margin>
                   </CheckBox>
                   <Label text="Entitätslisten erstellen:" GridPane.columnSpan="2">
@@ -148,7 +148,7 @@
                         <Insets left="50.0" top="230.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label text="Zeilennummern:" GridPane.columnIndex="1">
+                  <Label text="Zeilennummern eintragen:" GridPane.columnIndex="1" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets bottom="20.0" left="60.0" top="190.0" />
                      </GridPane.margin>
@@ -158,23 +158,10 @@
                         <Insets top="230.0" />
                      </GridPane.margin>
                   </CheckBox>
-                  <Label text="Sonderzeichen auflösen:" GridPane.columnIndex="2" GridPane.columnSpan="2">
+                  <CheckBox id="checkBoxGeo" fx:id="checkBoxLines" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="90.0" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="RIGHT">
                      <GridPane.margin>
-                        <Insets bottom="20.0" left="60.0" top="190.0" />
+                        <Insets bottom="20.0" right="150.0" top="190.0" />
                      </GridPane.margin>
-                  </Label>
-                  <CheckBox id="checkBoxGeo" fx:id="checkBoxLines" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="90.0" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
-                     <GridPane.margin>
-                        <Insets bottom="20.0" right="5.0" top="190.0" />
-                     </GridPane.margin>
-                  </CheckBox>
-                  <CheckBox id="checkBoxSpecials" fx:id="checkBoxSpecials" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="18.0" prefWidth="90.0" textAlignment="JUSTIFY" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="LEFT">
-                     <GridPane.margin>
-                        <Insets bottom="20.0" left="30.0" top="190.0" />
-                     </GridPane.margin>
-                     <padding>
-                        <Insets right="10.0" />
-                     </padding>
                   </CheckBox>
                   <Button id="chosenButton" fx:id="chosenButton" mnemonicParsing="false" text="Ausführen" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
                      <GridPane.margin>
