@@ -5,3 +5,4 @@
 /tei_enrichment/lib
 /tei_enrichment/target
 /tei_enrichment/src/main/resources/originTEI
+/tei_enrichment/src/main/resources/originTEI/backup
