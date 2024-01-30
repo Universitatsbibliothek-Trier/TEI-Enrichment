@@ -1,6 +1,7 @@
 /.vscode
+/tei_enrichment/execute_javafx.sh
 *.class
 *.editorconfig
-/tei_enrichment/src/test
 /tei_enrichment/lib
 /tei_enrichment/target
+/tei_enrichment/src/main/resources/originTEI
