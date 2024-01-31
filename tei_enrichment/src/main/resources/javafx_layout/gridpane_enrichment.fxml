@@ -143,7 +143,7 @@
                         <Insets left="50.0" top="140.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label text="XML:ids eintragen für Stiche und Seiten:" GridPane.columnSpan="2">
+                  <Label text="xml:ids eintragen für Stiche und Seiten:" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="50.0" top="230.0" />
                      </GridPane.margin>

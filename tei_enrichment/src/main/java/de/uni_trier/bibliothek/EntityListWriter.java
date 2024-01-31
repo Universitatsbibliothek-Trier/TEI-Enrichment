@@ -18,19 +18,7 @@
 
 package de.uni_trier.bibliothek;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Serializable;
-import java.math.BigInteger;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -51,48 +39,16 @@ import de.uni_trier.bibliothek.xml.orgs.model.generated.ListOrg;
 import de.uni_trier.bibliothek.xml.orgs.model.generated.Org;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Birth;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Death;
-import de.uni_trier.bibliothek.xml.persons.model.generated.Link;
 import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
 import de.uni_trier.bibliothek.xml.persons.model.generated.PersName;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
 import de.uni_trier.bibliothek.xml.places.model.generated.ListPlace;
-import de.uni_trier.bibliothek.xml.places.model.generated.Location;
-import de.uni_trier.bibliothek.xml.places.model.generated.Note;
 import de.uni_trier.bibliothek.xml.places.model.generated.Place;
 import de.uni_trier.bibliothek.xml.places.model.generated.PlaceIdno;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Add;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Body;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Choice;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Del;
 import de.uni_trier.bibliothek.xml.tei.model.generated.DivFront;
-import de.uni_trier.bibliothek.xml.tei.model.generated.DocImprint;
-import de.uni_trier.bibliothek.xml.tei.model.generated.DocTitle;
 import de.uni_trier.bibliothek.xml.tei.model.generated.FileDesc;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Foreign;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Front;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Fw;
-import de.uni_trier.bibliothek.xml.tei.model.generated.GroupBody;
-import de.uni_trier.bibliothek.xml.tei.model.generated.GroupText;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Head;
-import de.uni_trier.bibliothek.xml.tei.model.generated.InnerGroup;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Item;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Lb;
-import de.uni_trier.bibliothek.xml.tei.model.generated.LbEtc;
-import de.uni_trier.bibliothek.xml.tei.model.generated.NameGND;
-import de.uni_trier.bibliothek.xml.tei.model.generated.OuterGroup;
-import de.uni_trier.bibliothek.xml.tei.model.generated.PFront;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Pb;
-import de.uni_trier.bibliothek.xml.tei.model.generated.PbFront;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Row;
-import de.uni_trier.bibliothek.xml.tei.model.generated.SourceGND;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Subst;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TEI;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Table;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TeiHeader;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Text;
-import de.uni_trier.bibliothek.xml.tei.model.generated.TitlePage;
-import de.uni_trier.bibliothek.xml.tei.model.generated.TitlePart;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TitleStmt;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TitleStmtValue;
 import jakarta.xml.bind.JAXBElement;
@@ -186,12 +142,6 @@ public class EntityListWriter {
 		teiPlaces = (de.uni_trier.bibliothek.xml.places.model.generated.TEI) objectTEIList.get(6);
 	}
 
-
-
-
-	//LISTBIBL ENTITY
-	//LISTBIBL ENTITY
-	//LISTBIBL ENTITY
 	//LISTBIBL ENTITY
 	public static void writeListBiblEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
 			DivFront divFrontElement, Boolean isOrtsartikel) {
@@ -223,7 +173,6 @@ public class EntityListWriter {
 							if (titleOrNoteOrLinkElement instanceof de.uni_trier.bibliothek.xml.listBibl.model.generated.Link) {
 								de.uni_trier.bibliothek.xml.listBibl.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.listBibl.model.generated.Link)titleOrNoteOrLinkElement;
 								if ((linkElement.getTarget()).equals(fileName + reference)) {
-									System.out.println("alreadyhaslink: " + alreadyHasLink);
 									alreadyHasLink = true;
 								}
 							}
@@ -236,11 +185,9 @@ public class EntityListWriter {
 
 			Map<QName, String> attributesMap = bibl.getOtherAttributes();
 			attributesMap.put(qname, "listBibl_" + preferredName);
-
 			if (jsonObject.has("biographicalOrHistoricalInformation")) {
 				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
 				String detailedInformationString = detailedInformationArray.getString(0);
-				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
 				de.uni_trier.bibliothek.xml.listBibl.model.generated.Note note = listBiblTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(detailedInformationString);
@@ -257,7 +204,6 @@ public class EntityListWriter {
 			}
 			else if (jsonObject.has("definition")) {
 				JSONArray definitionArray = jsonObject.getJSONArray("definition");
-				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
 				String definitionString = definitionArray.getString(0);
 				de.uni_trier.bibliothek.xml.listBibl.model.generated.Note note = listBiblTEIObjectFactory.createNote();
 				note.setType("desc");
@@ -376,8 +322,6 @@ public class EntityListWriter {
 			listBibl.getBibl().add(bibl);
 		} 
 		if (divFrontElement.getType() != null && isOrtsartikel) {
-			// String referenceWithoutHash = reference.substring(1, reference.length());
-			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.listBibl.model.generated.Link linkArtikel = listBiblTEIObjectFactory.createLink();
 			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			bibl.getTitleOrNoteOrLink().add(linkArtikel);
@@ -389,13 +333,6 @@ public class EntityListWriter {
 		}
 	}
 
-
-
-
-
-	//PERSON ENTITY
-	//PERSON ENTITY
-	//PERSON ENTITY
 	//PERSON ENTITY
 	public static void writePersonEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
 			DivFront divFrontElement, Boolean isOrtsartikel) {
@@ -488,7 +425,6 @@ public class EntityListWriter {
 							if (persNameOrNoteOrBirthElement instanceof de.uni_trier.bibliothek.xml.persons.model.generated.Link) {
 								de.uni_trier.bibliothek.xml.persons.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.persons.model.generated.Link)persNameOrNoteOrBirthElement;
 								if ((linkElement.getTarget()).equals(fileName + reference)) {
-									System.out.println("alreadyhaslink: " + alreadyHasLink);
 									alreadyHasLink = true;
 								}
 							}
@@ -522,7 +458,6 @@ public class EntityListWriter {
 			if (jsonObject.has("biographicalOrHistoricalInformation")) {
 				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
 				String detailedInformationString = detailedInformationArray.getString(0);
-				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
 				de.uni_trier.bibliothek.xml.persons.model.generated.Note note = personsTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(detailedInformationString);
@@ -539,7 +474,6 @@ public class EntityListWriter {
 			}
 			else if (jsonObject.has("definition")) {
 				JSONArray definitionArray = jsonObject.getJSONArray("definition");
-				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
 				String definitionString = definitionArray.getString(0);
 				de.uni_trier.bibliothek.xml.persons.model.generated.Note note = personsTEIObjectFactory.createNote();
 				note.setType("desc");
@@ -657,9 +591,6 @@ public class EntityListWriter {
 		} 
 		
 		if (divFrontElement.getType() != null && isOrtsartikel) {
-			// String referenceWithoutHash = reference.substring(1, reference.length());
-			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
-			// linkArtikel.setTarget(fileName + reference + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.persons.model.generated.Link linkArtikel = personsTEIObjectFactory.createLink();
 			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			person.getPersNameOrNoteOrBirth().add(linkArtikel);
@@ -671,11 +602,6 @@ public class EntityListWriter {
 		}
 	}
 
-
-
-	//EVENTS ENTITY
-	//EVENTS ENTITY
-	//EVENTS ENTITY
 	//EVENTS ENTITY
 	public static void writeEventsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,
 			DivFront divFrontElement, Boolean isOrtsartikel) {
@@ -709,7 +635,6 @@ public class EntityListWriter {
 							if (labelOrDescOrNoteObjectElement instanceof de.uni_trier.bibliothek.xml.events.model.generated.Link) {
 								de.uni_trier.bibliothek.xml.events.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.events.model.generated.Link)labelOrDescOrNoteObjectElement;
 								if ((linkElement.getTarget()).equals(fileName + reference)) {
-									System.out.println("alreadyhaslink: " + alreadyHasLink);
 									alreadyHasLink = true;
 								}
 							}
@@ -775,7 +700,6 @@ public class EntityListWriter {
 			if (jsonObject.has("biographicalOrHistoricalInformation")) {
 				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
 				String detailedInformationString = detailedInformationArray.getString(0);
-				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
 				de.uni_trier.bibliothek.xml.events.model.generated.Note note = eventsTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(detailedInformationString);
@@ -792,7 +716,6 @@ public class EntityListWriter {
 			}
 			else if (jsonObject.has("definition")) {
 				JSONArray definitionArray = jsonObject.getJSONArray("definition");
-				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
 				String definitionString = definitionArray.getString(0);
 				de.uni_trier.bibliothek.xml.events.model.generated.Note note = eventsTEIObjectFactory.createNote();
 				note.setType("desc");
@@ -912,8 +835,6 @@ public class EntityListWriter {
 			eventList.add(event);
 		} 
 		if (divFrontElement.getType() != null && isOrtsartikel) {
-			// String referenceWithoutHash = reference.substring(1, reference.length());
-			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.events.model.generated.Link linkArtikel = eventsTEIObjectFactory.createLink();
 			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			event.getLabelOrDescOrNote().add(linkArtikel);
@@ -925,11 +846,6 @@ public class EntityListWriter {
 		}
 	}
 
-
-
-	//ORGS ENTITY
-	//ORGS ENTITY
-	//ORGS ENTITY
 	//ORGS ENTITY
 	public static void writeOrgsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement, Boolean isOrtsartikel) {
 		Org org = new Org();
@@ -975,14 +891,8 @@ public class EntityListWriter {
 							org.getOrgNameOrIdnoOrLink().add(orgsIdnoWiki);
 						}
 					}
-
 				}
-
 			}
-
-			
-			
-
 
 		ArrayList<Org> arrayListOrgs = new ArrayList<Org>(orgsList);
 		boolean alreadyHasLink = false;
@@ -999,7 +909,6 @@ public class EntityListWriter {
 							if (orgNameOrIdnoOrLinkObjectElement instanceof de.uni_trier.bibliothek.xml.orgs.model.generated.Link) {
 								de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.orgs.model.generated.Link)orgNameOrIdnoOrLinkObjectElement;
 								if ((linkElement.getTarget()).equals(fileName + reference)) {
-									System.out.println("alreadyhaslink: " + alreadyHasLink);
 									alreadyHasLink = true;
 								}
 							}
@@ -1016,8 +925,6 @@ public class EntityListWriter {
 		}
 
 		if (divFrontElement.getType() != null && isOrtsartikel) {
-			// String referenceWithoutHash = reference.substring(1, reference.length());
-			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.orgs.model.generated.Link linkArtikel = orgsTEIObjectFactory.createLink();
 			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			org.getOrgNameOrIdnoOrLink().add(linkArtikel);
@@ -1027,10 +934,6 @@ public class EntityListWriter {
 			Map<QName, String> attributesMap = org.getOtherAttributes();
 			attributesMap.put(qname, "org_" + preferredName);
 
-			
-
-			
-			
 			de.uni_trier.bibliothek.xml.orgs.model.generated.List orgsListSuperList = new de.uni_trier.bibliothek.xml.orgs.model.generated.List();
 
 			de.uni_trier.bibliothek.xml.orgs.model.generated.List orgsListSubList = new de.uni_trier.bibliothek.xml.orgs.model.generated.List();
@@ -1107,7 +1010,6 @@ public class EntityListWriter {
 			if (jsonObject.has("biographicalOrHistoricalInformation")) {
 				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
 				String detailedInformationString = detailedInformationArray.getString(0);
-				// String jsonObjectDetailedInformationTermString = jsonObjectDetailedInformation.getString("label");
 				de.uni_trier.bibliothek.xml.orgs.model.generated.Note note = orgsTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(detailedInformationString);
@@ -1123,16 +1025,12 @@ public class EntityListWriter {
 			}
 			else if (jsonObject.has("definition")) {
 				JSONArray definitionArray = jsonObject.getJSONArray("definition");
-				// JSONObject jsonObjectBroaderTerm = definitionArray.getString(0);
 				String definitionString = definitionArray.getString(0);
 				de.uni_trier.bibliothek.xml.orgs.model.generated.Note note = orgsTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(definitionString);
 				org.getOrgNameOrIdnoOrLink().add(note);
 			}
-
-			
-			System.out.println("org eingetragen");
 			orgsList.add(org);
 		} 
 		
@@ -1143,13 +1041,6 @@ public class EntityListWriter {
 		}
 	}
 
-
-
-
-
-	//OBJECTS
-	//OBJECTS
-	//OBJECTS
 	//OBJECTS
 	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement, Boolean isOrtsartikel) {
 		de.uni_trier.bibliothek.xml.objects.model.generated.Object object = new de.uni_trier.bibliothek.xml.objects.model.generated.Object();
@@ -1172,7 +1063,6 @@ public class EntityListWriter {
 							if (orgNameOrIdnoOrLinkObjectElement instanceof de.uni_trier.bibliothek.xml.objects.model.generated.Link) {
 								de.uni_trier.bibliothek.xml.objects.model.generated.Link linkElement = (de.uni_trier.bibliothek.xml.objects.model.generated.Link)orgNameOrIdnoOrLinkObjectElement;
 								if ((linkElement.getTarget()).equals(fileName + reference)) {
-									// System.out.println("alreadyhaslink: " + alreadyHasLink);
 									alreadyHasLink = true;
 								}
 							}
@@ -1287,13 +1177,10 @@ public class EntityListWriter {
 					}
 				}
 			}
-			System.out.println("object eingetragen");
 			object.getObjectIdentifierOrNoteOrLink().add(objectIdentifier);
 			objectList.add(object);
 		} 
 		if (divFrontElement.getType() != null  && isOrtsartikel) {
-			// String referenceWithoutHash = reference.substring(1, reference.length());
-			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.objects.model.generated.Link linkArtikel = objectsTEIObjectFactory.createLink();
 			linkArtikel.setTarget(fileName + "#" + divFrontElement.getId());
 			object.getObjectIdentifierOrNoteOrLink().add(linkArtikel);
@@ -1350,12 +1237,6 @@ public class EntityListWriter {
 		}
 	}
 
-
-
-
-	//PLACES
-	//PLACES
-	//PLACES
 	//PLACES
 	public static void writePlacesEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist,	DivFront divFrontElement, Boolean isOrtsartikel) {
 		Place place = new Place();
@@ -1407,9 +1288,8 @@ public class EntityListWriter {
 
 			if(typeTermslist.contains("TerritorialCorporateBodyOrAdministrativeUnit") && !jsonObject.has("hasGeometry") && !typeTermslist.contains("AdministrativeUnit")&& !typeTermslist.contains("NaturalGeographicUnit")&& !typeTermslist.contains("BuildingOrMemorial")&& !typeTermslist.contains("Country")&& !typeTermslist.contains("ExtraterrestialTerritory")&& !typeTermslist.contains("FictivePlace")&& !typeTermslist.contains("MemberState")&& !typeTermslist.contains("NameOfSmallGeographicUnityLyingWithinAnotherGeographicUnit")&& !typeTermslist.contains("ReligiousTerritory")&& !typeTermslist.contains("WayBorderOrLine"))
 			{
-				System.out.println("no geometry and territorial");
-				String noGeoCoordinates = "!!!";
-				// dekommentieren, falls wir drin lassen wollen
+				// dekommentieren, falls !!! bei nicht vorhanden Koordinaten erscheinen soll
+				// String noGeoCoordinates = "!!!";
 				// location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(noGeoCoordinates));
 				hasLocation = true;
 			}
@@ -1431,8 +1311,6 @@ public class EntityListWriter {
 						}
 					}
 
-
-					
 					if(hasGeometryObject.has("asWKT"))
 					{
 						hasLocation = true;
@@ -1473,9 +1351,7 @@ public class EntityListWriter {
 					else{
 						geoCoordinates = geoCoordinates.substring(8, 31);
 						location.getRegionOrGeoOrCountry().add(placesTEIObjectFactory.createLocationGeo(geoCoordinates));
-					}
-					
-					
+					}	
 				}
 					
 			}
@@ -1588,8 +1464,6 @@ public class EntityListWriter {
 							.createNoteList(placesListSubList);
 					categoriesNote.getContent().add(placesNoteList);
 				}
-
-				
 			}
 
 			
@@ -1624,8 +1498,6 @@ public class EntityListWriter {
 			}
 		} 
 		if (divFrontElement.getType() != null  && isOrtsartikel) {
-			// String referenceWithoutHash = reference.substring(1, reference.length());
-			// divFrontElement.setId(referenceWithoutHash + "_art_" + preferredName);
 			de.uni_trier.bibliothek.xml.places.model.generated.Link artikelLink = new de.uni_trier.bibliothek.xml.places.model.generated.Link();
 			artikelLink.setTarget(fileName + "#" + divFrontElement.getId());
 			JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Link> artikelLinkJAXB = placesTEIObjectFactory.createPlaceLink(artikelLink);
@@ -1639,13 +1511,11 @@ public class EntityListWriter {
 		}
 
 		if (!alreadyHasTitle) {
-			System.out.println("place eingetragen");
 			placesList.add(place);
 			if (jsonObject.has("biographicalOrHistoricalInformation")) {
 				de.uni_trier.bibliothek.xml.places.model.generated.Note note = new de.uni_trier.bibliothek.xml.places.model.generated.Note();
 				JSONArray detailedInformationArray = jsonObject.getJSONArray("biographicalOrHistoricalInformation");
 				String detailedInformationString = detailedInformationArray.getString(0);
-				// de.uni_trier.bibliothek.xml.places.model.generated.Note note = placesTEIObjectFactory.createNote();
 				note.setType("desc");
 				note.getContent().add(detailedInformationString);
 				JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Note> categoriesNoteJAXB = placesTEIObjectFactory.createPlaceNote(note);
@@ -1673,8 +1543,6 @@ public class EntityListWriter {
 
 			JAXBElement<de.uni_trier.bibliothek.xml.places.model.generated.Note> categoriesNoteJAXB = placesTEIObjectFactory.createPlaceNote(categoriesNote);
 				place.getPlaceNameOrLabelOrLocation().add(categoriesNoteJAXB);
-
-
 		}
 		
 	}

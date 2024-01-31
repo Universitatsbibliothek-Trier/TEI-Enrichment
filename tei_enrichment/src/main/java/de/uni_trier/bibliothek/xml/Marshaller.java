@@ -30,13 +30,6 @@ public class Marshaller<T>
 {
     private jakarta.xml.bind.Marshaller marshaller;
 
-    /*
-     * instead of the rootElementClass the ObjectFactory can be used.
-     * I find the use of the rootElementClass is advantageous.
-     * It is more explicit and does probably prevent name clashes.
-     * We can also use generics this way to allow the java compiler to check types
-     * at compile time.
-     */
     public Marshaller(Class<T> rootElementClass) throws RuntimeException 
     {
         try 

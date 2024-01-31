@@ -24,11 +24,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,16 +35,13 @@ import org.json.JSONObject;
 
 import de.uni_trier.bibliothek.xml.events.model.generated.Event;
 import de.uni_trier.bibliothek.xml.events.model.generated.ListEvent;
-import de.uni_trier.bibliothek.xml.listBibl.model.generated.Bibl;
 import de.uni_trier.bibliothek.xml.listBibl.model.generated.ListBibl;
 import de.uni_trier.bibliothek.xml.objects.model.generated.ListObject;
 import de.uni_trier.bibliothek.xml.orgs.model.generated.ListOrg;
 import de.uni_trier.bibliothek.xml.orgs.model.generated.Org;
-import de.uni_trier.bibliothek.xml.persons.model.generated.Death;
 import de.uni_trier.bibliothek.xml.persons.model.generated.ListPerson;
 import de.uni_trier.bibliothek.xml.persons.model.generated.Person;
 import de.uni_trier.bibliothek.xml.places.model.generated.ListPlace;
-import de.uni_trier.bibliothek.xml.places.model.generated.Note;
 import de.uni_trier.bibliothek.xml.places.model.generated.Place;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Add;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
@@ -60,19 +54,15 @@ import de.uni_trier.bibliothek.xml.tei.model.generated.DocTitle;
 import de.uni_trier.bibliothek.xml.tei.model.generated.FileDesc;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Foreign;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Front;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Fw;
 import de.uni_trier.bibliothek.xml.tei.model.generated.GroupBody;
 import de.uni_trier.bibliothek.xml.tei.model.generated.GroupText;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Head;
 import de.uni_trier.bibliothek.xml.tei.model.generated.InnerGroup;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Item;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Lb;
 import de.uni_trier.bibliothek.xml.tei.model.generated.LbEtc;
 import de.uni_trier.bibliothek.xml.tei.model.generated.NameGND;
 import de.uni_trier.bibliothek.xml.tei.model.generated.OuterGroup;
 import de.uni_trier.bibliothek.xml.tei.model.generated.PFront;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Pb;
-import de.uni_trier.bibliothek.xml.tei.model.generated.PbFront;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Row;
 import de.uni_trier.bibliothek.xml.tei.model.generated.SourceGND;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Subst;
@@ -102,7 +92,6 @@ public class EntityListEnricher {
 	public static de.uni_trier.bibliothek.xml.objects.model.generated.ObjectFactory objectsTEIObjectFactory = new de.uni_trier.bibliothek.xml.objects.model.generated.ObjectFactory();
 	public static de.uni_trier.bibliothek.xml.places.model.generated.ObjectFactory placesTEIObjectFactory = new de.uni_trier.bibliothek.xml.places.model.generated.ObjectFactory();
 	public static List<Person> listPersonList;
-	// public static List<Bibl> listBiblList;
 	public static ListBibl listBibl;
 	public static List<Event> eventList;
 	public static List<de.uni_trier.bibliothek.xml.objects.model.generated.Object> objectList;
@@ -787,7 +776,6 @@ public class EntityListEnricher {
 		de.uni_trier.bibliothek.xml.listBibl.model.generated.Body listBiblBody = listBiblText.getBody();
 		de.uni_trier.bibliothek.xml.listBibl.model.generated.Div listBiblDiv = listBiblBody.getDiv();
 		listBibl = listBiblDiv.getListBibl();
-		// System.out.println("listBibl: " + listBibl.toString());
 
 		de.uni_trier.bibliothek.xml.events.model.generated.Text eventsBiblText = teiEvents.getText();
 		de.uni_trier.bibliothek.xml.events.model.generated.Body eventsBody = eventsBiblText.getBody();
@@ -826,7 +814,6 @@ public class EntityListEnricher {
 
 	public static void checkNameGnd(NameGND nameGND, Head head, DivFront divFrontElement) throws IOException {
 		List<Serializable> nameGNDList = nameGND.getContent();
-		// block für artikel
 		boolean multipleURLs = false;
 		SourceGND sourceGND = new SourceGND();
 		if (nameGND.getRef() != null) {
@@ -835,11 +822,10 @@ public class EntityListEnricher {
 				String[] refURLList = nameGND.getRef().split(" ");
 				for (int i = 0; i < refURLList.length; i++) {
 					String refURL = refURLList[i];
-					System.out.println("requestURL: " + refURL);
 					if (i > 0) {
 						multipleURLs = true;
 					}
-					String prefix = makeHTTPRequest(refURL, nameGND, sourceGND, divFrontElement, multipleURLs);
+					makeHTTPRequest(refURL, nameGND, sourceGND, divFrontElement, multipleURLs);
 				}
 			}
 		}
@@ -882,11 +868,10 @@ public class EntityListEnricher {
 				String[] refURLList = sourceGNDGND.getSource().split(" ");
 				for (int i = 0; i < refURLList.length; i++) {
 					String refURL = refURLList[i];
-					System.out.println("requestURL: " + refURL);
 					if (i > 0) {
 						multipleURLs = true;
 					}
-					String prefix = makeHTTPRequest(refURL, nameGND, sourceGNDGND, divFrontElement, multipleURLs);
+					makeHTTPRequest(refURL, nameGND, sourceGNDGND, divFrontElement, multipleURLs);
 				}
 			}
 		}
@@ -897,9 +882,7 @@ public class EntityListEnricher {
 				if (jaxbElement.getValue() instanceof Choice) {
 					Choice choiceElement = (Choice) jaxbElement.getValue();
 					checkChoice(choiceElement);
-
 				} else if (jaxbElement.getValue() instanceof NameGND) {
-					System.out.println("name-element in quote gefunden");
 					NameGND nameInNameGND = (NameGND) jaxbElement.getValue();
 					checkNameGnd(nameInNameGND, head, divFrontElement);
 				} else if (jaxbElement.getValue() instanceof LbEtc) {
@@ -915,11 +898,8 @@ public class EntityListEnricher {
 					Foreign foreignElement = (Foreign) jaxbElement.getValue();
 					checkForeign(foreignElement);
 				}
-
 			}
-
 		}
-
 	}
 
 	public static String makeHTTPRequest(String refURL, NameGND nameGND, SourceGND sourceGND, DivFront divFrontElement,
@@ -964,12 +944,10 @@ public class EntityListEnricher {
 		preferredNameString = preferredNameString.replaceAll("__", "_");
 		preferredNameString = preferredNameString.replaceAll("[()]", "");
 
-		boolean objectHasType = false;
 
 		if (jsonObject.has("type")) {
 			JSONArray typeTerms = jsonObject.getJSONArray("type");
 			List<String> typeTermslist = new ArrayList<String>();
-			String[] typeTermArray = typeTermslist.toArray(new String[0]);
 			for (int i = 0; i < typeTerms.length(); i++) {
 
 				String jsonObjectString = typeTerms.getString(i);
@@ -986,18 +964,15 @@ public class EntityListEnricher {
 				} else if (!(nameGND.getRef() == null) && multipleURLs) {
 					oldRef = nameGND.getRef() + " ";
 				}
-				System.out.println("isBiblList eintrag");
 				sourceGND.setSource(oldRef + "mgndbibl:listBibl_" + preferredNameString);
 				nameGND.setRef(oldRef + "mgndbibl:listBibl_" + preferredNameString);
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndbibl:listBibl_" + preferredNameString);
 				}
-				// typeTermslist.remove("Work");
 				EntityListWriter.writeListBiblEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
 						isOrtsartikel);
 
 			} else if (oberkategorie.equals("person")) {
-				System.out.println("person eintrag");
 				String oldRef = "";
 				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
@@ -1014,7 +989,6 @@ public class EntityListEnricher {
 						isOrtsartikel);
 
 			} else if (oberkategorie.equals("event")) {
-				System.out.println("event eintrag");
 				String oldRef = "";
 				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
@@ -1029,7 +1003,6 @@ public class EntityListEnricher {
 				EntityListWriter.writeEventsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
 						isOrtsartikel);
 			} else if (oberkategorie.equals("org")) {
-				System.out.println("orgs eintrag");
 				String oldRef = "";
 				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
@@ -1044,7 +1017,6 @@ public class EntityListEnricher {
 				EntityListWriter.writeOrgsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
 						isOrtsartikel);
 			} else if (oberkategorie.equals("object")) {
-				System.out.println("object eintrag");
 				String oldRef = "";
 				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
@@ -1056,11 +1028,9 @@ public class EntityListEnricher {
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndeve:object_" + preferredNameString);
 				}
-				objectHasType = true;
 				EntityListWriter.writeObjectsEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
 						isOrtsartikel);
 			} else if (oberkategorie.equals("place")) {
-				System.out.println("place eintrag");
 				String oldRef = "";
 				if (!(sourceGND.getRef() == null) && multipleURLs) {
 					oldRef = sourceGND.getRef() + " ";
@@ -1072,33 +1042,15 @@ public class EntityListEnricher {
 				if (isOrtsartikel) {
 					divFrontElement.setCorresp("mgndeve:place_" + preferredNameString);
 				}
-				objectHasType = true;
 				EntityListWriter.writePlacesEntity(jsonObject, preferredNameString, typeTermslist, divFrontElement,
 						isOrtsartikel);
 			}
 		}
-
 		return entityPrefix;
 	}
 
-	public static void writeObjectsEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
-		if (jsonObject.has("broaderTermInstantial")) {
-			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-		}
 
-	}
-
-	public static void writePlacesEntity(JSONObject jsonObject, String preferredName, List<String> typeTermslist) {
-		if (jsonObject.has("broaderTermInstantial")) {
-			JSONArray broaderTerm = jsonObject.getJSONArray("broaderTermInstantial");
-			JSONObject jsonObjectBroaderTerm = broaderTerm.getJSONObject(0);
-			String jsonObjectBroaderTermString = jsonObjectBroaderTerm.getString("label");
-		}
-
-	}
-
+	
 	public static String getOberkategorie(List<String> typeTermslist, JSONObject jsonObject) {
 		String supercategories = "";
 
@@ -1199,7 +1151,6 @@ public class EntityListEnricher {
 	public static ArrayList<String> getUnterkategorie(List<String> typeTermslist, JSONObject jsonObject) {
 		ArrayList<String> subcategories = new ArrayList<String>();
 		for (String termString : typeTermslist) {
-			// System.out.println("subcategory: " + termString);
 			subcategories.add(termString);
 		}
 		return subcategories;

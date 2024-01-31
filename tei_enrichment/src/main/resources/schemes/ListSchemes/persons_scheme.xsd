@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- @author       René Ackels
-Copyright (c) 2023 Universität Trier
+Copyright (c) 2024 Universität Trier
 
-This file is part of OCR-To-TEI.
+This file is part of TEI-Enrichment.
 
-OCR-To-TEI is free software: you can redistribute it and/or modify
+TEI-Enrichment is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-OCR-To-TEI is distributed in the hope that it will be useful,
+TEI-Enrichment is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
+along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.tei-c.org/ns/1.0"
   xmlns:self="http://www.tei-c.org/ns/1.0" elementFormDefault="qualified"
   attributeFormDefault="unqualified" xmlns:mods="http://www.loc.gov/mods/v3">
@@ -63,7 +63,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="FileDesc">
     <xs:sequence>
       <xs:element name="titleStmt" type="self:TitleStmt" />
-      <!-- <xs:element name="editionStmt" type="self:EditionStmt" /> -->
       <xs:element name="extent" type="self:Extent" />
       <xs:element name="publicationStmt" type="self:PublicationStmt" />
       <xs:element name="sourceDesc" type="self:SourceDesc" minOccurs="1" maxOccurs="1" />
@@ -185,7 +184,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
   <xs:complexType name="TitleStmt">
     <xs:sequence>
       <xs:element name="title" type="self:TitleStmtValue" maxOccurs="1" />
-      <!-- <xs:element name="author" type="self:Author" maxOccurs="unbounded" /> -->
     </xs:sequence>
   </xs:complexType>
 

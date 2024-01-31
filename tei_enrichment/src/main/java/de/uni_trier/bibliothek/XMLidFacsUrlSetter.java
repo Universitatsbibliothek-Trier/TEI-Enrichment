@@ -20,9 +20,7 @@ package de.uni_trier.bibliothek;
 
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.jar.Attributes.Name;
 
 import de.uni_trier.bibliothek.xml.tei.model.generated.Add;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
@@ -37,16 +35,13 @@ import de.uni_trier.bibliothek.xml.tei.model.generated.FileDesc;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Foreign;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Front;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Fw;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Gap;
 import de.uni_trier.bibliothek.xml.tei.model.generated.GroupBody;
 import de.uni_trier.bibliothek.xml.tei.model.generated.GroupText;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Head;
 import de.uni_trier.bibliothek.xml.tei.model.generated.InnerGroup;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Item;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Lb;
 import de.uni_trier.bibliothek.xml.tei.model.generated.LbEtc;
 import de.uni_trier.bibliothek.xml.tei.model.generated.NameGND;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Num;
 import de.uni_trier.bibliothek.xml.tei.model.generated.ObjectFactory;
 import de.uni_trier.bibliothek.xml.tei.model.generated.OuterGroup;
 import de.uni_trier.bibliothek.xml.tei.model.generated.PFront;
@@ -191,9 +186,6 @@ public class XMLidFacsUrlSetter {
 				DivFront divFrontElement = (DivFront) divOrPbOrLbListElement.getValue();
 				checkDivFront(divFrontElement);
 			}
-			else if (divOrPbOrLbListElement.getValue() instanceof Lb) {
-				Lb lbElement = (Lb) divOrPbOrLbListElement.getValue();
-			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Fw) {
 				Fw fwElement = (Fw) divOrPbOrLbListElement.getValue();
 				checkFw(fwElement);
@@ -277,9 +269,6 @@ public class XMLidFacsUrlSetter {
 				DivFront divFrontElement = (DivFront) divOrPbOrLbListElement.getValue();
 				checkDivFront(divFrontElement);
 			}
-			else if (divOrPbOrLbListElement.getValue() instanceof Lb) {
-				Lb lbElement = (Lb) divOrPbOrLbListElement.getValue();
-			}
 			else if (divOrPbOrLbListElement.getValue() instanceof Fw) {
 				Fw fwElement = (Fw) divOrPbOrLbListElement.getValue();
 				checkFw(fwElement);
@@ -347,9 +336,6 @@ public class XMLidFacsUrlSetter {
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbElement.getValue();
 				checkLbEtc(lbEtcElement);
 			}
-			else if (divOrPbOrLbElement.getValue() instanceof Lb) {
-				Lb lbElement = (Lb) divOrPbOrLbElement.getValue();
-			}
 			else if (divOrPbOrLbElement.getValue() instanceof Fw) {
 				Fw fwElement = (Fw) divOrPbOrLbElement.getValue();
 				checkFw(fwElement);
@@ -376,10 +362,7 @@ public class XMLidFacsUrlSetter {
 		for (Object listElementObject : listElement) {
 			if (!(listElementObject instanceof String)) {
 			JAXBElement<?> jaxbElement = (JAXBElement<?>) listElementObject;
-			if (jaxbElement.getValue() instanceof Lb) {
-				Lb lbElement = (Lb) jaxbElement.getValue();
-			}
-			else if (jaxbElement.getValue() instanceof Item) {
+			if (jaxbElement.getValue() instanceof Item) {
 				Item itemElement = (Item) jaxbElement.getValue();
 				checkItem(itemElement);
 			}
@@ -414,10 +397,7 @@ public class XMLidFacsUrlSetter {
 		for (Object itemElementObject : itemElement) {
 			if (!(itemElementObject instanceof String)) {
 			JAXBElement<?> jaxbElement = (JAXBElement<?>) itemElementObject;
-			if (jaxbElement.getValue() instanceof Lb) {
-				Lb lbElement = (Lb) jaxbElement.getValue();
-			}
-			else if (jaxbElement.getValue() instanceof Choice) {
+			if (jaxbElement.getValue() instanceof Choice) {
 				Choice choiceElement = (Choice) jaxbElement.getValue();
 				checkChoice(choiceElement);
 			}
@@ -454,10 +434,7 @@ public class XMLidFacsUrlSetter {
 		for (Object tableElement : tableList) {
 			if (!(tableElement instanceof String)) {
 				JAXBElement<?> jaxbElement = (JAXBElement<?>) tableElement;
-			if (jaxbElement.getValue() instanceof Lb) {
-				Lb lbElement = (Lb) jaxbElement.getValue();
-			}
-			else if (jaxbElement.getValue() instanceof Row) {
+			if (jaxbElement.getValue() instanceof Row) {
 				Row rowElement = (Row) jaxbElement.getValue();
 				checkRow(rowElement);
 			}
@@ -489,10 +466,7 @@ public class XMLidFacsUrlSetter {
 		for (Object rowElement : rowList) {
 			if (!(rowElement instanceof String)) {
 				JAXBElement<?> jaxbElement = (JAXBElement<?>) rowElement;
-			if (jaxbElement.getValue() instanceof Lb) {
-				Lb lbElement = (Lb) jaxbElement.getValue();
-			}
-			else if (jaxbElement.getValue() instanceof LbEtc) {
+			if (jaxbElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) jaxbElement.getValue();
 				checkLbEtc(lbEtcElement);
 			}
@@ -533,10 +507,6 @@ public class XMLidFacsUrlSetter {
 			else if (divFrontListElement.getValue() instanceof Head) {
 				Head headElement = (Head) divFrontListElement.getValue();
 				checkHead(headElement);
-			}
-			else if(divFrontListElement.getValue() instanceof Lb)
-			{
-				Lb lbElement = (Lb)divFrontListElement.getValue();
 			}
 			else if(divFrontListElement.getValue() instanceof LbEtc)
 			{
@@ -589,11 +559,7 @@ public class XMLidFacsUrlSetter {
 			if (!(headListElement instanceof String))
 			{
 				JAXBElement<?> jaxbHeadListElement = (JAXBElement<?>) headListElement;
-				if (jaxbHeadListElement.getValue() instanceof Lb) {
-					Lb lbElement = (Lb) jaxbHeadListElement.getValue();
-
-				}
-				else if (jaxbHeadListElement.getValue() instanceof NameGND) {
+				if (jaxbHeadListElement.getValue() instanceof NameGND) {
 					NameGND nameGNDElement = (NameGND) jaxbHeadListElement.getValue();
 					checkNameGnd(nameGNDElement);
 				}
@@ -637,10 +603,6 @@ public class XMLidFacsUrlSetter {
 				if (titlePageListElementObject.getValue() instanceof DocTitle) {
 					DocTitle docTitle = (DocTitle) titlePageListElementObject.getValue();
 					checkDocTitle(docTitle);
-				}
-				else if (titlePageListElementObject.getValue() instanceof Lb) {
-					Lb lbElement = (Lb) titlePageListElementObject.getValue();
-
 				}
 				else if (titlePageListElementObject.getValue() instanceof Choice) {
 					Choice choice = (Choice) titlePageListElementObject.getValue();
@@ -693,11 +655,6 @@ public class XMLidFacsUrlSetter {
 							LbEtc lbEtc = (LbEtc) jaxbElement.getValue();
 							checkLbEtc(lbEtc);
 						}
-						else if(jaxbElement.getValue() instanceof Lb)
-						{
-							Lb LbElement = (Lb) jaxbElement.getValue();
-		
-						}
 						else if(jaxbElement.getValue() instanceof Choice)
 						{
 							Choice choiceElement = (Choice) jaxbElement.getValue();
@@ -741,11 +698,7 @@ public class XMLidFacsUrlSetter {
 		for (Object docTitleElement : docTitleList) {
 			if (!(docTitleElement instanceof String)) {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) docTitleElement;
-						if(jaxbElement.getValue() instanceof Lb)
-						{
-							Lb LbElement = (Lb) jaxbElement.getValue();		
-						}
-						else if(jaxbElement.getValue() instanceof Choice)
+						if(jaxbElement.getValue() instanceof Choice)
 						{
 							Choice choiceElement = (Choice) jaxbElement.getValue();
 							checkChoice(choiceElement);
@@ -798,11 +751,7 @@ public class XMLidFacsUrlSetter {
 		for (Object titlePartObject : titlePartList) {
 			if (!(titlePartObject instanceof String)) {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) titlePartObject;
-						if(jaxbElement.getValue() instanceof Lb)
-						{
-							Lb LbElement = (Lb) jaxbElement.getValue();		
-						}
-						else if(jaxbElement.getValue() instanceof Choice)
+						if(jaxbElement.getValue() instanceof Choice)
 						{
 							Choice choiceElement = (Choice) jaxbElement.getValue();
 							checkChoice(choiceElement);
@@ -850,11 +799,7 @@ public class XMLidFacsUrlSetter {
 		for (Object nameGNDObject : nameGNDList) {
 			if (!(nameGNDObject instanceof String)) {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) nameGNDObject;
-						if(jaxbElement.getValue() instanceof Lb)
-						{
-							Lb LbElement = (Lb) jaxbElement.getValue();		
-						}
-						else if(jaxbElement.getValue() instanceof Choice)
+						if(jaxbElement.getValue() instanceof Choice)
 						{
 							Choice choiceElement = (Choice) jaxbElement.getValue();
 							checkChoice(choiceElement);
@@ -902,11 +847,7 @@ public class XMLidFacsUrlSetter {
 		for (Object sourceGNDObject : sourceGNDList) {
 			if (!(sourceGNDObject instanceof String)) {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) sourceGNDObject;
-						if(jaxbElement.getValue() instanceof Lb)
-						{
-							Lb LbElement = (Lb) jaxbElement.getValue();		
-						}
-						else if(jaxbElement.getValue() instanceof Choice)
+						if(jaxbElement.getValue() instanceof Choice)
 						{
 							Choice choiceElement = (Choice) jaxbElement.getValue();
 							checkChoice(choiceElement);
@@ -999,11 +940,7 @@ public class XMLidFacsUrlSetter {
 				for (Object pListElement : pList) {
 					if (!(pListElement instanceof String)) {
 						JAXBElement<?> jaxbElement = (JAXBElement<?>) pListElement;
-						if(jaxbElement.getValue() instanceof Lb)
-						{
-							Lb LbElement = (Lb) jaxbElement.getValue();		
-						}
-						else if(jaxbElement.getValue() instanceof Choice)
+						if(jaxbElement.getValue() instanceof Choice)
 						{
 							Choice choiceElement = (Choice) jaxbElement.getValue();
 							checkChoice(choiceElement);
@@ -1067,10 +1004,6 @@ public class XMLidFacsUrlSetter {
 					LbEtc lbEtc = (LbEtc)jaxbElement.getValue();
 					checkLbEtc(lbEtc);
 				}
-				else if(jaxbElement.getValue() instanceof Lb) 
-				{
-					Lb lbElement = (Lb) jaxbElement.getValue();
-				}
 				else if(jaxbElement.getValue() instanceof NameGND) 
 				{
 					NameGND nameGND = (NameGND) jaxbElement.getValue();
@@ -1110,10 +1043,6 @@ public class XMLidFacsUrlSetter {
 				if (jaxbLbEtcListElement.getValue() instanceof Choice) {
 					Choice choice = (Choice)jaxbLbEtcListElement.getValue();
 					checkChoice(choice);
-				}
-			 	else if (jaxbLbEtcListElement.getValue() instanceof Lb) 
-				{				
-					Lb lbElement = (Lb) jaxbLbEtcListElement.getValue();
 				}
 				else if (jaxbLbEtcListElement.getValue() instanceof NameGND) 
 				{				
@@ -1178,9 +1107,6 @@ public class XMLidFacsUrlSetter {
 			} else if (jaxbElement.getValue() instanceof Subst) {
 				Subst substElement = (Subst) jaxbElement.getValue();
 				checkSubst(substElement);
-			}
-			else if (jaxbElement.getValue() instanceof String) {
-				String substElement = (String) jaxbElement.getValue();
 			}
 			else if (jaxbElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) jaxbElement.getValue();
@@ -1292,11 +1218,7 @@ public class XMLidFacsUrlSetter {
 		for (Object fwElementListElement : fwElementList) {
 			if (!(fwElementListElement instanceof String)) {
 				JAXBElement<?> jaxbfwElementListElement = (JAXBElement<?>) fwElementListElement;
-			 	if (jaxbfwElementListElement.getValue() instanceof Lb) 
-				{				
-					Lb lbElement = (Lb) jaxbfwElementListElement.getValue();			
-				}
-				else if (jaxbfwElementListElement.getValue() instanceof Foreign) {
+				if (jaxbfwElementListElement.getValue() instanceof Foreign) {
 					Foreign foreignElement = (Foreign) jaxbfwElementListElement.getValue();
 					checkForeign(foreignElement);
 				}
@@ -1317,9 +1239,4 @@ public class XMLidFacsUrlSetter {
 		}
 		}
 	}
-
-	
-
-	
-
 }

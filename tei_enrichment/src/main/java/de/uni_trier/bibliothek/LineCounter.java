@@ -20,9 +20,7 @@ package de.uni_trier.bibliothek;
 
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.jar.Attributes.Name;
 
 import de.uni_trier.bibliothek.xml.tei.model.generated.Add;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Back;
@@ -35,7 +33,6 @@ import de.uni_trier.bibliothek.xml.tei.model.generated.DocTitle;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Foreign;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Front;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Fw;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Gap;
 import de.uni_trier.bibliothek.xml.tei.model.generated.GroupBody;
 import de.uni_trier.bibliothek.xml.tei.model.generated.GroupText;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Head;
@@ -44,7 +41,6 @@ import de.uni_trier.bibliothek.xml.tei.model.generated.Item;
 import de.uni_trier.bibliothek.xml.tei.model.generated.Lb;
 import de.uni_trier.bibliothek.xml.tei.model.generated.LbEtc;
 import de.uni_trier.bibliothek.xml.tei.model.generated.NameGND;
-import de.uni_trier.bibliothek.xml.tei.model.generated.Num;
 import de.uni_trier.bibliothek.xml.tei.model.generated.ObjectFactory;
 import de.uni_trier.bibliothek.xml.tei.model.generated.OuterGroup;
 import de.uni_trier.bibliothek.xml.tei.model.generated.PFront;
@@ -69,9 +65,7 @@ public class LineCounter {
 	public static TEI countLines(TEI originalTEIParameter) throws IOException {
 		lineNumber = 1;
 		originalTEI = originalTEIParameter;
-		// System.out.println("start counting Lines, TEI file: " + originalTEIParameter);
 		Text originText = originalTEI.getText();
-		// System.out.println("start counting Lines, body Text: " + originText.toString());
 		checkText(originText);
 		return originalTEI;
 	}
@@ -83,25 +77,20 @@ public class LineCounter {
 		if(text.getBody() != null)
 		{
 			checkBody(text.getBody());
-		}
-		
-		// System.out.println("inhalt von body: " + body.toString() );
+		}		
 		
 		if(text.getGroup() != null)
 		{
 			checkOuterGroup(text.getGroup());
-		}
-		
+		}		
 		if(text.getBack() != null)
 		{
-			System.out.println("back ist !null!");
 			checkBack(text.getBack());
 		}
 	}
 
 	public static void checkFront(Front front) throws IOException {
 		List<Object> pbOrDivOrTitlePageList = front.getPbOrDivOrTitlePage();
-		// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
 		for (Object pbOrDivOrTitlePage : pbOrDivOrTitlePageList) {
 			if (pbOrDivOrTitlePage instanceof DivFront) {
 				DivFront divFrontElement = (DivFront) pbOrDivOrTitlePage;
@@ -122,9 +111,6 @@ public class LineCounter {
 	}
 
 	public static void checkBody(Body body) throws IOException {
-		
-		// System.out.println("body as to string: " + body.toString());
-		// System.out.println("body getDivOrPbOrLb: " + body.getDivOrPbOrLb());
 		List<JAXBElement<?>> getDivOrPbOrLbList = body.getDivOrPbOrLb();
 		for (JAXBElement<?> divOrPbOrLbListElement : getDivOrPbOrLbList) {
 			if (divOrPbOrLbListElement.getValue() instanceof DivFront) {
@@ -151,11 +137,6 @@ public class LineCounter {
 				SourceGND sourceElement = (SourceGND) divOrPbOrLbListElement.getValue();
 				checkSourceGND(sourceElement);
 			}
-			// else if (dS
-			// else if (divOrPbOrLbListElement.getValue() instanceof Num) {
-			// 	Num numElement = (Num) divOrPbOrLbListElement.getValue();
-			// 	checkNum(numElement);
-			// }
 			else if (divOrPbOrLbListElement.getValue() instanceof LbEtc) {
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbListElement.getValue();
 				checkLbEtc(lbEtcElement);
@@ -204,12 +185,9 @@ public class LineCounter {
 		if(groupText.getFront() != null)
 		{
 			checkFront(groupText.getFront());
-		}
-		
+		}		
 		
 	}
-
-		
 	
 
 	private static void checkGroupBody(GroupBody groupBody) throws IOException {
@@ -262,47 +240,36 @@ public class LineCounter {
 	}
 
 	public static void checkBack(Back back) throws IOException {
-		System.out.println("inhalt von back: " + back.getDivOrPbOrLb());
 		List<JAXBElement<?>> divOrPbOrLb = back.getDivOrPbOrLb();
-		// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
 		for (JAXBElement<?> divOrPbOrLbElement : divOrPbOrLb) {
-			System.out.println("divOrPbOrLbElement liste wird gecheckt");
 			if (divOrPbOrLbElement.getValue() instanceof DivFront) {
-				System.out.println("divfront gefunden");
 				DivFront divFrontElement = (DivFront) divOrPbOrLbElement.getValue();
 				checkDivFront(divFrontElement);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Table) {
-				System.out.println("table gefunden");
 				Table table = (Table) divOrPbOrLbElement.getValue();
 				checkTable(table);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof de.uni_trier.bibliothek.xml.tei.model.generated.List) {
-				System.out.println("liste gefunden");
 				de.uni_trier.bibliothek.xml.tei.model.generated.List list = (de.uni_trier.bibliothek.xml.tei.model.generated.List) divOrPbOrLbElement.getValue();
 				checkList(list);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof PbFront) {
-				System.out.println("pbfront gefunden");
 				lineNumber = 1;
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof LbEtc) {
-				System.out.println("lbetc gefunden");
 				LbEtc lbEtcElement = (LbEtc) divOrPbOrLbElement.getValue();
 				checkLbEtc(lbEtcElement);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Lb) {
-				System.out.println("lb element gefunden");
 				Lb lbElement = (Lb) divOrPbOrLbElement.getValue();
 				setNinLb(lbElement);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Fw) {
-				System.out.println("fw gefunden");
 				Fw fwElement = (Fw) divOrPbOrLbElement.getValue();
 				checkFw(fwElement);
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Pb) {
-				System.out.println("pb gefunden");
 				lineNumber = 1;
 			}
 			else if (divOrPbOrLbElement.getValue() instanceof Foreign) {
@@ -318,7 +285,6 @@ public class LineCounter {
 		List<Serializable> listElement = list.getContent();
 		for (Object listElementObject : listElement) {
 			if (!(listElementObject instanceof String)) {
-			
 			
 			JAXBElement<?> jaxbElement = (JAXBElement<?>) listElementObject;
 			if (jaxbElement.getValue() instanceof Lb) {
@@ -344,8 +310,6 @@ public class LineCounter {
 				checkForeign(foreignElement);
 			}	
 			}
-
-
 		}
 	}
 
@@ -380,12 +344,7 @@ public class LineCounter {
 			{
 				lineNumber = 1;
 			}
-
-
-			
 			}
-
-
 		}
 	}
 
@@ -393,10 +352,7 @@ public class LineCounter {
 		List<Serializable> tableList = table.getContent();
 		for (Object tableElement : tableList) {
 			if (!(tableElement instanceof String)) {
-				JAXBElement<?> jaxbElement = (JAXBElement<?>) tableElement;
-	
-			// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
-	
+				JAXBElement<?> jaxbElement = (JAXBElement<?>) tableElement;	
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
 				setNinLb(lbElement);
@@ -426,10 +382,7 @@ public class LineCounter {
 		List<Serializable> rowList = row.getContent();
 		for (Object rowElement : rowList) {
 			if (!(rowElement instanceof String)) {
-				JAXBElement<?> jaxbElement = (JAXBElement<?>) rowElement;
-	
-			// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
-	
+				JAXBElement<?> jaxbElement = (JAXBElement<?>) rowElement;	
 			if (jaxbElement.getValue() instanceof Lb) {
 				Lb lbElement = (Lb) jaxbElement.getValue();
 				setNinLb(lbElement);
@@ -460,8 +413,7 @@ public class LineCounter {
 		for (JAXBElement<?> divFrontListElement : divFrontList) {
 			if (divFrontListElement.getValue() instanceof PFront) {
 				PFront pElement = (PFront) divFrontListElement.getValue();
-				checkPFront(pElement);
-				// System.out.println("pElements: " + pElement.getContent());				
+				checkPFront(pElement);				
 			}
 			else if (divFrontListElement.getValue() instanceof Fw) {
 				Fw fwElement = (Fw) divFrontListElement.getValue();
@@ -499,29 +451,22 @@ public class LineCounter {
 			}
 			else if(divFrontListElement.getValue() instanceof Pb)
 			{
-				System.out.println("pb element gefunden");
 				lineNumber = 1;
 			}
 			else if(divFrontListElement.getValue() instanceof PbFront)
 			{
-				System.out.println("pbfront element gefunden");
 				lineNumber = 1;
 			}
 			else if (divFrontListElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) divFrontListElement.getValue();
 				checkForeign(foreignElement);
 			}
-
-
-			
 		}
 	}
 
 	public static void checkHead(Head head) throws IOException {
 		List<Serializable> headList = head.getContent();
-		// System.out.println("liste von front: " + pbOrDivOrTitlePageList.toString());
 		for (Object headListElement : headList) {
-			
 			if (!(headListElement instanceof String))
 			{
 				JAXBElement<?> jaxbHeadListElement = (JAXBElement<?>) headListElement;
@@ -553,7 +498,6 @@ public class LineCounter {
 				{
 					lineNumber = 1;
 				}
-
 		}
 		}
 	}
@@ -606,10 +550,7 @@ public class LineCounter {
 				{
 					lineNumber = 1;
 				}
-
-
 			}
-			
 		}
 	}
 
@@ -891,9 +832,7 @@ public class LineCounter {
 			{
 				lineNumber = 1;
 			}
-
 		}
-
 	}
 	
 
@@ -992,10 +931,7 @@ public class LineCounter {
 				{
 					lineNumber = 1;
 				}
-
 			}
-		
-
 	}
 
 	public static void checkLbEtc(LbEtc lbEtc) throws IOException {
@@ -1070,9 +1006,6 @@ public class LineCounter {
 			} else if (jaxbElement.getValue() instanceof Subst) {
 				Subst substElement = (Subst) jaxbElement.getValue();
 				checkSubst(substElement);
-			}
-			else if (jaxbElement.getValue() instanceof String) {
-				String substElement = (String) jaxbElement.getValue();
 			}
 			else if (jaxbElement.getValue() instanceof Foreign) {
 				Foreign foreignElement = (Foreign) jaxbElement.getValue();
@@ -1195,11 +1128,6 @@ public class LineCounter {
 		}
 		}
 	}
-
-	
-
-	
-
 	public static void setNinLb(Lb lbElement) {
 			lbElement.setN(Integer.toString(lineNumber));
 			lineNumber++;
