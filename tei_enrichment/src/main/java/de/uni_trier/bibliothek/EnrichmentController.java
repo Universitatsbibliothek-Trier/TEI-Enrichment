@@ -34,6 +34,7 @@ import de.uni_trier.bibliothek.xml.tei.TEIMarshaller;
 import de.uni_trier.bibliothek.xml.tei.TEIUnmarshaller;
 import de.uni_trier.bibliothek.xml.tei.model.generated.TEI;
 import jakarta.xml.bind.JAXBException;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -75,6 +76,8 @@ public class EnrichmentController {
     @FXML
     private Label infoText;
 
+    boolean cutText = false;
+
     @FXML
     public void initialize() throws IOException {
         enrichButton.setOnAction(new EventHandler<ActionEvent>() {
@@ -91,66 +94,131 @@ public class EnrichmentController {
         chosenButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                String TEIOriginalFilePath = (EnrichmentController.getSelectedFile()).toString();
-                try (InputStream inputStream = new FileInputStream(EnrichmentController.getSelectedFile())) {
 
-                    Boolean anyCheckBoxSelected = false;
-                    Reader xmlReader = new InputStreamReader(inputStream);
-                    TEI teiFile = TEIUnmarshaller.unmarshal(xmlReader);
+                Thread thread = new Thread(() -> {
 
-                    int lastSlash = TEIOriginalFilePath.lastIndexOf('/');
-                    String originalTEIFileName = TEIOriginalFilePath.substring(lastSlash + 1,
-                            TEIOriginalFilePath.length());
-                    fileName = originalTEIFileName;
-                    originalTEIFileName = originalTEIFileName.substring(0, originalTEIFileName.length() - 4);
+                    Platform.runLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            infoText.setText("Führe Anreicherung aus. ");
+                        }
+                    });
 
-                    originalTEIFileName = originalTEIFileName + "_enriched.xml";
-                    String teiPathName = TEIOriginalFilePath.substring(0, lastSlash + 1);
-                    String outputPathStringFile = teiPathName + originalTEIFileName;
-                    
-                    List<Object> TEIJavaObjectsList = TEIObjectsListCreator.createTEIJavaObects(teiPathName, teiFile);
+                    String TEIOriginalFilePath = (EnrichmentController.getSelectedFile()).toString();
+                    try (InputStream inputStream = new FileInputStream(EnrichmentController.getSelectedFile())) {
 
-                    if (checkBoxXML.isSelected()) {           
-                        teiFile = XMLidFacsUrlSetter.setIDs(teiFile);
-                        anyCheckBoxSelected = true;
-                        infoText.setText("IDs für pb- und figure-Elemente eingetragen als \"merian_****_enriched.xml\"");
-                        TEIJavaObjectsList.set(0, teiFile);
+                        Boolean anyCheckBoxSelected = false;
+                        Reader xmlReader = new InputStreamReader(inputStream);
+                        TEI teiFile = TEIUnmarshaller.unmarshal(xmlReader);
+
+                        int lastSlash = TEIOriginalFilePath.lastIndexOf('/');
+                        String originalTEIFileName = TEIOriginalFilePath.substring(lastSlash + 1,
+                                TEIOriginalFilePath.length());
+                        fileName = originalTEIFileName;
+                        originalTEIFileName = originalTEIFileName.substring(0, originalTEIFileName.length() - 4);
+
+                        originalTEIFileName = originalTEIFileName + "_enriched.xml";
+                        String teiPathName = TEIOriginalFilePath.substring(0, lastSlash + 1);
+                        String outputPathStringFile = teiPathName + originalTEIFileName;
+                        final String originalTEIFileNameFinal = originalTEIFileName;
+
+                        List<Object> TEIJavaObjectsList = TEIObjectsListCreator.createTEIJavaObects(teiPathName,
+                                teiFile);
+
+                        if (checkBoxXML.isSelected()) {
+                            teiFile = XMLidFacsUrlSetter.setIDs(teiFile);
+                            anyCheckBoxSelected = true;
+
+                            Platform.runLater(new Runnable() {
+                                @Override
+                                public void run() {
+
+                                    infoText.setText("IDs für pb- und figure-Elemente eingetragen als \""
+                                            + originalTEIFileNameFinal + "\". ");
+
+                                    if (checkBoxLines.isSelected() || checkBoxEntities.isSelected()) {
+                                        infoText.setText("IDs für pb- und figure-Elemente eingetragen als \""
+                                                + originalTEIFileNameFinal + "\". Führe weiter aus.");
+                                    } else {
+                                        infoText.setText("IDs für pb- und figure-Elemente eingetragen als \""
+                                                + originalTEIFileNameFinal + "\". Ausführung beendet.");
+                                    }
+
+                                }
+                            });
+
+                            TEIJavaObjectsList.set(0, teiFile);
+                        }
+
+                        if (checkBoxLines.isSelected()) {
+                            teiFile = LineCounter.countLines(teiFile);
+                            anyCheckBoxSelected = true;
+
+                            Platform.runLater(new Runnable() {
+                                @Override
+                                public void run() {
+
+                                    infoText.setText("Zeilen gezählt und gespeichert als \""
+                                            + originalTEIFileNameFinal + "\". Ausführung beendet.");
+                                    if (checkBoxEntities.isSelected()) {
+                                        infoText.setText("Zeilen gezählt und gespeichert als \""
+                                                + originalTEIFileNameFinal + "\". Erstelle Entitätslisten.");
+                                    }
+
+                                }
+                            });
+
+                            TEIJavaObjectsList.set(0, teiFile);
+                        }
+
+                        if (checkBoxEntities.isSelected()) {
+                            TEIJavaObjectsList = EntityListEnricher.enrichList(TEIJavaObjectsList, fileName);
+                            teiFile = (TEI) TEIJavaObjectsList.get(0);
+                            EntityListCreator.createEnrichedEntityLists(teiPathName, TEIJavaObjectsList);
+                            anyCheckBoxSelected = true;
+
+                            Platform.runLater(new Runnable() {
+                                @Override
+                                public void run() {
+
+                                    infoText.setText(
+                                            "Angereicherte Entitätslisten gespeichert als \"merian_entities_***.xml\". "
+                                                    + "Ausführung beendet.");
+
+                                }
+                            });
+
+                        }
+
+                        // write tei
+                        String teiXmlString = TEIMarshaller.marshall(teiFile);
+                        String teiXmlStringSchema = InsertSchema.insertSchema(teiXmlString);
+                        Path outputPath = Paths.get(outputPathStringFile);
+                        Files.writeString(outputPath, teiXmlStringSchema, StandardCharsets.UTF_8);
+                        PathOutput.setText(outputPathStringFile);
+                        if (!anyCheckBoxSelected) {
+
+                            Platform.runLater(new Runnable() {
+                                @Override
+                                public void run() {
+                                    infoText.setText(
+                                            "Nichts getan, bitte wähle eine Datei, eine Option und klicke auf \"Ausführen\"");
+                                }
+                            });
+                        }
+                        xmlReader.close();
+
+                    } catch (JAXBException | IOException e) {
+                        e.printStackTrace();
                     }
-
-                    if (checkBoxLines.isSelected()) {           
-                        teiFile = LineCounter.countLines(teiFile);
-                        anyCheckBoxSelected = true;
-                        infoText.setText("Zeilen gezählt und gespeichert als \"merian_****_enriched.xml\"");
-                        TEIJavaObjectsList.set(0, teiFile);
-                    }
-
-                    if (checkBoxEntities.isSelected()) {
-                        TEIJavaObjectsList = EntityListEnricher.enrichList(TEIJavaObjectsList, fileName);
-                        teiFile = (TEI) TEIJavaObjectsList.get(0);
-                        EntityListCreator.createEnrichedEntityLists(teiPathName, TEIJavaObjectsList);
-                        anyCheckBoxSelected = true;
-                        infoText.setText("Angereicherte Entitätslisten gespeichert als \"merian_****_enriched.xml\"");
-                    }
-
-                    // write tei
-                    String teiXmlString = TEIMarshaller.marshall(teiFile);
-                    String teiXmlStringSchema = InsertSchema.insertSchema(teiXmlString);
-                    Path outputPath = Paths.get(outputPathStringFile);
-                    Files.writeString(outputPath, teiXmlStringSchema, StandardCharsets.UTF_8);
-                    PathOutput.setText(outputPathStringFile);
-                    if(!anyCheckBoxSelected)
-                    {
-                        infoText.setText("Nichts getan, bitte wähle eine Datei, eine Option und klicke auf \"Ausführen\"");
-                    }                    
-                    xmlReader.close();
-
-                } catch (JAXBException | IOException e) {
-                    e.printStackTrace();
-                }
+                });
+                thread.start();
             }
+
         });
 
     }
+
     public static File getSelectedFile() {
         return selectedFile;
     }

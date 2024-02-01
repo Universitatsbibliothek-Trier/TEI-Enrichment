@@ -184,7 +184,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
   <xs:complexType name="TitleStmt">
     <xs:sequence>
       <xs:element name="title" type="self:TitleStmtValue" maxOccurs="1" />
-      <!-- <xs:element name="author" type="self:Author" maxOccurs="unbounded" /> -->
     </xs:sequence>
   </xs:complexType>
 

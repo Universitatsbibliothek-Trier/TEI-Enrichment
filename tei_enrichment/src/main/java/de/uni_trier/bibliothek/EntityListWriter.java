@@ -363,18 +363,31 @@ public class EntityListWriter {
 				JSONArray forename = preferredNameEntityForThePerson.getJSONArray("forename");
 				personName.setForename((String) forename.get(0));
 			}
+			if(preferredNameEntityForThePerson.has("prefix")){
+				JSONArray prefix = preferredNameEntityForThePerson.getJSONArray("prefix");
+				personName.setSurname((String) prefix.get(0));
+			}
+
+
 			if(preferredNameEntityForThePerson.has("surname")){
 				JSONArray surname = preferredNameEntityForThePerson.getJSONArray("surname");
-				personName.setSurname((String) surname.get(0));
+				if(personName.getSurname() != null){
+					String surnameWithPrefix = personName.getSurname();
+					personName.setSurname( surnameWithPrefix + " " + ((String) surname.get(0)));
+				}
+				else
+				{
+					personName.setSurname((String) surname.get(0));
+				}
 			}
+				
 			if(preferredNameEntityForThePerson.has("nameAddition")){
 				JSONArray nameAddition = preferredNameEntityForThePerson.getJSONArray("nameAddition");
 				personName.getAddName().add((String) nameAddition.get(0));
 			}
 			if(preferredNameEntityForThePerson.has("personalName")){
 				JSONArray personalName = preferredNameEntityForThePerson.getJSONArray("personalName");
-				personName.getAddName().add((String) personalName.get(0));
-				
+				personName.setForename((String) personalName.get(0));				
 			}
 			person.getPersNameOrNoteOrBirth().add(personName);
 		}
@@ -383,29 +396,40 @@ public class EntityListWriter {
 		{
 			JSONArray variantNameEntityForThePerson = jsonObject.getJSONArray("variantNameEntityForThePerson");
 			for (int i = 0; i < variantNameEntityForThePerson.length(); i++) {
-				PersName personName = new PersName();
+				PersName variantPersonName = new PersName();
 				JSONObject variantName = variantNameEntityForThePerson.getJSONObject(i);
 
 				if(variantName.has("forename")){
 					JSONArray forename = variantName.getJSONArray("forename");
-					personName.setForename((String) forename.get(0));
+					variantPersonName.setForename((String) forename.get(0));
 				}
+				if(variantName.has("prefix")){
+					JSONArray prefix = variantName.getJSONArray("prefix");
+					variantPersonName.setSurname((String) prefix.get(0));
+				}
+	
 				if(variantName.has("surname")){
 					JSONArray surname = variantName.getJSONArray("surname");
-					personName.setSurname((String) surname.get(0));
+					if(variantPersonName.getSurname() != null){
+						String surnameWithPrefix = variantPersonName.getSurname();
+						variantPersonName.setSurname( surnameWithPrefix + " " + ((String) surname.get(0)));
+					}
+					else
+					{
+						variantPersonName.setSurname((String) surname.get(0));
+					}
 				}
+					
 				if(variantName.has("nameAddition")){
 					JSONArray nameAddition = variantName.getJSONArray("nameAddition");
-					personName.getAddName().add((String) nameAddition.get(0));
+					variantPersonName.getAddName().add((String) nameAddition.get(0));
 				}
 				if(variantName.has("personalName")){
 					JSONArray personalName = variantName.getJSONArray("personalName");
-					personName.getAddName().add((String) personalName.get(0));
-				
+					variantPersonName.setForename((String) personalName.get(0));				
+				}
+				person.getPersNameOrNoteOrBirth().add(variantPersonName);
 			}
-				person.getPersNameOrNoteOrBirth().add(personName);
-			}
-		
 		}
 		
 		

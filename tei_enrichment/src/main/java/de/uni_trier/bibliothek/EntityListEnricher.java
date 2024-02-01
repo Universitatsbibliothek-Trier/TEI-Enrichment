@@ -113,7 +113,7 @@ public class EntityListEnricher {
 		TitleStmtValue title = titleStmt.getTitle();
 		reference = title.getRef();
 		String bandReference = reference.substring(1, reference.length());
-		String bandName = bandReference.substring(5, 8);
+		String bandName = bandReference.substring(5, 9);
 		doiSuffix = "topo-" + bandName + "-divi-";
 		divCount = 1;
 		createLists();

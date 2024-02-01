@@ -1,6 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.uni_trier.bibliothek</groupId>
     <artifactId>tei_enrichment</artifactId>
@@ -13,23 +12,29 @@
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
+            <!-- Lizenz: GPL 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL
+            vereinbar -->
             <artifactId>javafx-controls</artifactId>
             <version>19</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
+            <!-- Lizenz: GPL 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL
+            vereinbar -->
             <artifactId>javafx-fxml</artifactId>
             <version>19</version>
         </dependency>
 
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
+            <!-- Eclipse Distribution License, Version 1.0: ist anderer Name für 3-Klausel-BSD-Lizenz: mit GNU GPL vereinbar -->
             <artifactId>jaxb-impl</artifactId>
             <version>4.0.3</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
+            <!-- Eclipse Distribution License, Version 1.0: ist anderer Name für 3-Klausel-BSD-Lizenz: mit GNU GPL vereinbar -->
             <artifactId>jakarta.xml.bind-api</artifactId>
             <version>4.0.0</version>
         </dependency>
@@ -42,22 +47,13 @@
             <version>20230618</version>
         </dependency>
 
-        <!-- <dependency>
-            Lizenz: Apache 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL
-            vereinbar
-            <groupId>commons-cli</groupId>
-            <artifactId>commons-cli</artifactId>
-            <version>1.5.0</version>
-        </dependency> -->
-
     </dependencies>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <!-- Lizenz: Apache 2.0: fällt unter GNU General Public License, Version 3: mit GNU
-                GPL
-        vereinbar -->
+                GPL vereinbar -->
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
@@ -65,28 +61,27 @@
                 </configuration>
             </plugin>
             <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <!-- Lizenz: Apache 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL
-        vereinbar -->
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-        <configuration>
-          <source>11</source>
-          <target>11</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <!-- Lizenz: Apache 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL
-        vereinbar -->
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>3.1.0</version>
-        <configuration>
-          <mainClass>de.uni_trier.bibliothek.Main</mainClass>
-        </configuration>
-      </plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <!-- Lizenz: Apache 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL vereinbar -->
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <!-- Lizenz: Apache 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL vereinbar -->
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>de.uni_trier.bibliothek.Main</mainClass>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.openjfx</groupId>
+                <!-- Lizenz: Apache 2.0: fällt unter GNU General Public License, Version 3: mit GNU GPL vereinbar -->
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <executions>
